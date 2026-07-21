@@ -1,69 +1,94 @@
 """
-train.py: train the v0a skip-gram on the ingredient-list corpus.
-Reads data/processed/v0a_kerala.txt, trains word2vec, saves the vectors.
+train.py - train the v0a skip-gram on the ingredient-list corpus.
+
+Reads data/processed/v0a_kerala_spacy.txt, trains word2vec, saves the vectors.
 Run from repo root:  python models/v0a_ingredient_sg/train.py
 
-skip-gram learns vectors by trying to predict each
-token's NEIGHBORS from the token itself. In our corpus a "sentence" is one
-recipe's ingredient list, so a token's neighbors are its RECIPE-MATES. Ingredients
-that share recipe-mates get similar vectors, i.e. the model learns CO-OCCURRENCE (complements)
+Each recipe is one "sentence"; its ingredient tokens are each other's neighbours.
+Skip-gram learns similar vectors for ingredients that share recipe-mates, i.e. it
+learns co-occurrence (complements)
+
+This trains on ingredient LISTS, not the recipe INSTRUCTION text Pellegrini's
+food2vec uses. It is the food2vec / ingredient2vec formulation
 """
 
+import json
 from pathlib import Path
 
 from gensim.models import Word2Vec
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
-CORPUS_PATH = REPO_ROOT / "data" / "processed" / "v0a_kerala.txt"
+CORPUS_PATH = REPO_ROOT / "data" / "processed" / "v0a_kerala_spacy.txt"
 MODEL_DIR = REPO_ROOT / "models" / "v0a_ingredient_sg"
+
+# Frequency floor. min_count=2 keeps 121 types but their vectors are barely
+# trained; min_count=5 keeps 67 (86.8% of tokens) and is what we report.
+MIN_COUNT = 5
+
+# Gensim's default (5) assumes a huge corpus. 200 is safely past convergence.
+EPOCHS = 200
+
+PROBES = ["coconut_oil", "curry_leaves", "mustard_seed", "jaggery"] # ingredients to inspect after training
 
 
 def load_corpus(path):
-    """Read the saved corpus back into the list-of-lists gensim expects.
-
-    Each LINE = one recipe; each SPACE-separated token = one ingredient. So one
-    inner list is one "sentence" (recipe), and its tokens are the co-occurring
-    ingredients word2vec will treat as each other's neighbors."""
+    """Read the corpus into the list-of-lists gensim expects: one inner list per
+    recipe, one token per ingredient."""
     recipes = []
     with path.open(encoding="utf-8") as f:
         for line in f:
             tokens = line.split()
-            if tokens: # skip blank lines 
+            if tokens:
                 recipes.append(tokens)
     return recipes
 
 
 def train(recipes):
-    """Train skip-gram. Every keyword below is a deliberate small-corpus choice
-    (most are the OPPOSITE of Pellegrini's large-corpus defaults)."""
+    """Train skip-gram. The non-default settings below are small-corpus choices."""
     model = Word2Vec(
         sentences=recipes,
-        sg=1,                 # skip-gram: better for rare words / small data (Pelligrini uses CBOW)
-        vector_size=50,       # small dims for small data 
-        window=15,            # window spans a whole recipe (important for maintaining context per recipe)
-        min_count=2,          # drop tokens that appear only once (no co-occurrence info to learn from)
-        epochs=60,            # many passes compensate for fewer recipe data 
-        workers=1,            # keep 1 for reproducibility (multi-thread = nondeterministic)
-        seed=42,              # fixed seed so runs are repeatable
+        sg=1,                 # skip-gram, not CBOW: better on rare words / small data
+        vector_size=50,       # 100 would overparameterise 67 types
+        window=15,            # ingredient order is arbitrary, so span the whole recipe
+        min_count=MIN_COUNT,
+        epochs=EPOCHS,
+        workers=1,            # single worker => deterministic (with a fixed seed)
+        seed=42,
     )
     return model
 
 
 def inspect(model):
-    """Print top-5 neighbors for a few high-frequency probe ingredients.
-    Neighbors will be COMPLEMENTS, not substitutes"""
-    # 3-4 probe ingredients from >=10x list prints top 5 neighbors
-    for word in ["coconut_oil", "curry_leav", "mustard_seed"]:
-        print(word, "->", model.wv.most_similar(word, topn=5))
+    """Print top-5 neighbours for a few probe ingredients. These are complements,
+    not substitutes — that is the result, not a bug."""
+    for word in PROBES:
+        if word not in model.wv:
+            print(f"  {word}: not in vocabulary (min_count={MIN_COUNT})")
+            continue
+        neighbors = ", ".join(w for w, _ in model.wv.most_similar(word, topn=5))
+        print(f"  {word} -> {neighbors}")
 
 
 if __name__ == "__main__":
     recipes = load_corpus(CORPUS_PATH)
-    print(f"loaded {len(recipes)} recipes")
+    print(f"loaded {len(recipes)} recipes from {CORPUS_PATH.name}")
+
     model = train(recipes)
+    print(f"vocab: {len(model.wv)} types (min_count={MIN_COUNT}, epochs={EPOCHS})")
 
     MODEL_DIR.mkdir(parents=True, exist_ok=True)
-    model.wv.save(str(MODEL_DIR / "vectors.kv"))   # save just the vectors (KeyedVectors)
-    print(f"saved vectors -> {MODEL_DIR / 'vectors.kv'}")
+    model.wv.save(str(MODEL_DIR / "vectors.kv"))
 
+    # Config travels with the vectors: a neighbour list is meaningless without
+    # knowing which corpus and settings produced it.
+    config = {
+        "corpus": CORPUS_PATH.name,
+        "n_recipes": len(recipes),
+        "sg": 1, "vector_size": 50, "window": 15,
+        "min_count": MIN_COUNT, "epochs": EPOCHS, "seed": 42,
+        "vocab_size": len(model.wv),
+    }
+    (MODEL_DIR / "config.json").write_text(json.dumps(config, indent=2), encoding="utf-8")
+
+    print(f"saved vectors -> {MODEL_DIR / 'vectors.kv'}")
     inspect(model)

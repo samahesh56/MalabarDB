@@ -1,0 +1,11 @@
+{
+  "corpus": "v0a_kerala_spacy.txt",
+  "n_recipes": 145,
+  "sg": 1,
+  "vector_size": 50,
+  "window": 15,
+  "min_count": 5,
+  "epochs": 200,
+  "seed": 42,
+  "vocab_size": 67
+}

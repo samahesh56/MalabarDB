@@ -1,172 +1,77 @@
 """
-build_corpus.py — turn the raw Kaggle recipe table into a word2vec-ready corpus.
+build_corpus.py - vocabulary + extracted names -> word2vec training corpus.
 
-PIPELINE (one recipe -> one "sentence" of canonical ingredient tokens):
-  Stage 1  SELECT: filter the table to our cuisine, drop null-ingredient rows
-  Stage 2  SPLIT: split each recipe's ingredient string into individual lines
-  Stage 3  PARSE: reduce each line to ONE canonical token (Decisions A-D)
-  Stage 4  ASSEMBLE: collect a recipe's tokens into a list; save the corpus to disk
+One recipe becomes one "sentence": a list of canonical ingredient tokens. This is
+the file train.py consumes.
 
-The pipeline follows the conventional shape of text-corpus preprocessing:
-select the data, split into units, clean each unit, reassemble into model input 
+All this does is look each recipe's extracted names up in
+`surface_to_canonical` and underscore-join the result.
+
+Pellegrini's canonical form is space-separated throughout Pass 1 ('flour tortilla hot'); 
+underscores are applied only when ingredients are injected into a token stream. 
+We follow that, which is why vocabulary_*.json holds 'red chilli powder' and this file emits
+'red_chilli_powder'.
+
+Input:  data/interim/extracted_names.json
+        data/processed/vocabulary_{normalizer}.json
+Output: data/processed/v0a_kerala_{normalizer}.txt
 """
 
-from itertools import count
-import json, re # RegEx 
-from pathlib import Path 
+import json
+from pathlib import Path
 
-import pandas as pd
-
-# --- paths (repo root) ---
-RAW_PATH = Path("data/raw/IndianFoodDatasetXLS.xlsx")
+INTERIM = Path("data/interim/extracted_names.json")
 OUT_DIR = Path("data/processed")
 
-"""Units stripped whenever they appear in the leading quantity run.
-# 'gram'/'grams' are deliberately NOT here they collide with ingredient names
-# (Gram flour, black gram, Bengal Gram Dal)""" 
-UNITS = {
-    "cup", "cups", "tablespoon", "tablespoons", "teaspoon", "teaspoons",
-    "tsp", "tbsp", "liter", "litre", "ml", "kg", "sprig", "sprigs",
-    "inch", "clove", "cloves", "pinch", "bunch", "can", "cans",
-}
+MIN_INGREDIENTS = 2   # a 1-ingredient recipe carries no co-occurrence signal
 
-# Decision B — parentheticals: 'Gram flour (besan)', 'Curd (Dahi / Yogurt)'.
-_PAREN = re.compile(r"\(([^)]*)\)")
-def extract_parenthetical(line: str, synonyms: dict) -> str:
-    """Remove '(...)' from the token, but first record it as a synonym of the
-    surrounding name, so 'Curd (Dahi / Yogurt)' both yields token 'curd' AND
-    logs curd -> {dahi, yogurt}. `synonyms` is mutated in place (a collector
-    passed in from build_corpus). We split the gloss on '/' and ',' because
-    that's how this dataset stacks multiple synonyms."""
-    glosses = _PAREN.findall(line)              # ['Dahi / Yogurt']
-    name = _PAREN.sub("", line).strip()         # 'Curd'
-    name = re.sub(r"\s+", " ", name)            # tidy doubled spaces left behind
-    if glosses and name:
-        key = name.lower()
-        for g in glosses:
-            for syn in re.split(r"[/,]", g):
-                syn = syn.strip().lower()
-                if syn:
-                    synonyms.setdefault(key, set()).add(syn)
-    return name
 
-# Decision C — leading quantity + unit tokens: '3 tablespoon Red Chilli powder' -> 'Red Chilli powder'. 
-MASS_UNITS = {"gram", "grams", "g"}   # 'gram(s)/g' count as a unit ONLY directly after a number (250 grams fish)
-CONNECTORS = {"to", "or"}             # range joiners: "2 to 3", "1 or 2"
+def build_corpus(normalizer_name: str = "spacy") -> tuple[list[list[str]], dict]:
+    """Map each recipe's extracted names onto vocabulary tokens.
 
-_NUM = re.compile(r"^[0-9]+([./-][0-9]+)*$")  # 3, 1/2, 1-1/2, 3.5
-def strip_leading_qty(line: str) -> str:
-    """Remove the FRONT run of quantity/unit tokens, stop at the first real word.
-    'gram(s)' is a unit only when it directly follows a number (250 grams ...),
-    so the ingredient word survives in 'Gram flour' and 'black gram'."""
-    tokens = line.split()
-    i = 0
-    prev_was_number = False
-    while i < len(tokens):
-        low = tokens[i].lower()
-        if _NUM.match(tokens[i]):
-            prev_was_number = True
-        elif low in UNITS:
-            prev_was_number = False
-        elif low in MASS_UNITS and prev_was_number:   # '250 grams' -> strip
-            prev_was_number = False
-        elif low in CONNECTORS and prev_was_number:   # '2 to 3'    -> skip the 'to'
-            pass                                       # keep the flag; a number follows
+    Names absent from surface_to_canonical were dropped by Pass 1's filters
+    (>3 words, or <2 chars). They are counted, not silently discarded, so the
+    corpus-side cost of those filters is visible.
+    """
+    data = json.loads(INTERIM.read_text(encoding="utf-8"))
+    vocab = json.loads((OUT_DIR / f"vocabulary_{normalizer_name}.json")
+                       .read_text(encoding="utf-8"))
+    surface_to_canonical = vocab["surface_to_canonical"]
+
+    corpus, stats = [], {"oov_names": 0, "recipes_dropped_short": 0} 
+    for recipe in data["recipes"]:
+        tokens = []
+        for name in recipe["names"]: # for each name, check if it is in the vocabulary and map to canonical form
+            canonical = surface_to_canonical.get(name) 
+            if canonical is None:              # filtered out by Pass 1
+                stats["oov_names"] += 1
+                continue
+            tokens.append(canonical.replace(" ", "_")) # underscores for gensim tokenisation
+        if len(tokens) >= MIN_INGREDIENTS:
+            corpus.append(tokens) # only recipes with >=2 ingredients carry co-occurrence signal
         else:
-            break                                      # first real word -> stop
-        i += 1
-    return " ".join(tokens[i:])
-
-# Decision D — canonicalize: lowercase, collapse simple plurals (so 'onions' and 'onion' don't split-vote -- see audit Check 2),
-#  and underscore-join the surviving words into ONE token ('red_chilli_powder').
-def canonicalize(name: str) -> str | None:
-    """Lowercase, collapse plurals to a CONSISTENT (not necessarily correct)
-    form, underscore-join into one token. Returns None if nothing survives."""
-    name = name.replace("/", " ")      # '/' is a word boundary: pods/seeds -> pods seeds
-    words = name.lower().split()
-    out = []
-    for w in words:
-        # consistent plural collapse — see note below on why crude is fine
-        if w.endswith("ies") and len(w) > 4:
-            w = w[:-3] + "i"      # chillies -> chilli, curries -> curri
-        elif w.endswith("es") and len(w) > 3:
-            w = w[:-2]            # tomatoes -> tomato, leaves stays leave-ish
-        elif w.endswith("s") and not w.endswith("ss") and len(w) > 3:
-            w = w[:-1]            # onions -> onion, seeds -> seed  (ss guard keeps 'grass')
-        out.append(w)
-    token = "_".join(out) if out else None
-    if token is None:
-        return None
-    if not token.isascii():        # drop Devanagari / any non-Latin token (prototype scope)
-        return None
-    return token
-
-def parse_ingredient_line(line: str, synonyms: dict) -> str | None:
-    """
-    One ingredient line -> one canonical token (or None to drop the line).
-    Applies the four cleaning decisions IN ORDER. Order matters: quantity is
-    stripped (C) before the parenthetical is harvested (B), so the synonym key
-    recorded in B is a clean ingredient name, not '1 brinjal'.
-
-    e.g. '6 Karela (Bitter Gourd/ Pavakkai) - deseeded'  ->  'karela'
-         '1 tablespoon Red Chilli powder'                ->  'red_chilli_powder'
-         'Salt - to taste'                               ->  'salt'
-    """
-    # Decision A — trailing qualifier: everything after ' - ' is prep, not identity
-    #   ('Onion - thinly sliced' -> 'Onion'). This one is done for you as the pattern:
-    s = line.strip()
-    if not s:                                # remove empty lines (e.g. from ', , ,') and drop them from the corpus
-        return None
-    s = s.split(" - ")[0]                     
-    s = strip_leading_qty(s)                 # C strip leading quantity/units: kill the qty
-    s = extract_parenthetical(s, synonyms)   # B after: key is clean
-    return canonicalize(s)                   # D lowercase, collapse plurals, underscore-join
-
-def build_corpus(cuisine_filter: str = "Kerala Recipes") -> tuple[list[list[str]], dict]:    
-    """
-    Stages 1-4. Returns a list of recipes, each a list of ingredient tokens.
-    cuisine_filter=None uses the whole dataset (for later expansion).
-    """
-    # SELECT: load, filter to our cuisine, drop null-ingredient rows.
-    df = pd.read_excel(RAW_PATH)
-    if cuisine_filter is not None:
-        df = df[df["Cuisine"] == cuisine_filter]
-    df = df.dropna(subset=["TranslatedIngredients"])
-
-    corpus: list[list[str]] = []
-    synonyms: dict = {}
-    for raw in df["TranslatedIngredients"]:
-        # SPLIT: comma is our BETWEEN-ingredient delimiter 
-        lines = [ln for ln in raw.split(",")]
-
-        # PARSE: line -> token, dropping Nones.
-        tokens = [tok for tok in (parse_ingredient_line(ln, synonyms) for ln in lines)
-                  if tok is not None]
-
-        if len(tokens) >= 2: # Keep only recipes with at least 2 ingredients (1-ingredient recipes are not useful for co-occurrence training)
-            corpus.append(tokens)
-
-    return corpus, synonyms
+            stats["recipes_dropped_short"] += 1
+    return corpus, stats
 
 
-def save_corpus(corpus: list[list[str]], synonyms: dict, name: str) -> None:
-    """Stage 4b — persist as an inspectable artifact: one recipe per line,
-    space-separated tokens. Decouples parsing runs from training runs and makes
-    the corpus diffable in git-review."""
+def save_corpus(corpus: list[list[str]], name: str) -> Path:
+    """One recipe per line, space-separated. Plain text so the corpus is diffable
+    in review and decoupled from any particular training run."""
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     out = OUT_DIR / f"{name}.txt"
     with out.open("w", encoding="utf-8") as f:
         for recipe in corpus:
             f.write(" ".join(recipe) + "\n")
-    print(f"wrote {len(corpus)} recipes -> {out}")
-    with (OUT_DIR / f"{name}_synonyms.json").open("w", encoding="utf-8") as f:
-        json.dump({k: sorted(v) for k, v in synonyms.items()}, f,
-                  ensure_ascii=False, indent=2)
+    return out
 
 
 if __name__ == "__main__":
-    corpus, synonyms = build_corpus(cuisine_filter="Kerala Recipes")
-    save_corpus(corpus, synonyms, "v0a_kerala")
-    print(f"{len(synonyms)} synonym keys harvested")
-    for r in corpus[:3]:
-        print(r)
+    for normalizer_name in ("spacy", "rules"):
+        corpus, stats = build_corpus(normalizer_name)
+        out = save_corpus(corpus, f"v0a_kerala_{normalizer_name}")
+        types = {t for r in corpus for t in r}
+        tokens = sum(len(r) for r in corpus)
+        print(f"[{normalizer_name:5s}] {len(corpus)} recipes, {tokens} tokens, "
+              f"{len(types)} types -> {out}")
+        print(f"          dropped {stats['oov_names']} names (filtered by Pass 1), "
+              f"{stats['recipes_dropped_short']} recipes (<{MIN_INGREDIENTS} ingredients)")

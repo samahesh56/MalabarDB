@@ -1,9 +1,9 @@
 """
-audit.py — verify the v0a corpus BEFORE training.
+audit.py — a basic verification of the v0a corpus BEFORE training.
 Reads data/processed/v0a_kerala.txt and runs three checks:
-  1. split-vote  — did plural collapse (Decision D) work?
-  2. wreckage    — are there malformed tokens the parser mangled?
-  3. frequency   — do common/rare tokens look sane?
+  1. split-vote: did plural collapse work?
+  2. wreckage: are there malformed tokens the parser mangled?
+  3. frequency: do common/rare tokens look sane?
 Run from the repo root:  python preprocessing/audit.py
 """
 

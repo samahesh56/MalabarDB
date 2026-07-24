@@ -12,9 +12,6 @@ and a poor "what can I swap this for" model. Making that failure visible and
 measurable on a Kerala corpus is the point of v0a, and the starting point for the
 fixes that follow.
 
-See `DOCUMENTATION.md` for the reasoning behind the pipeline, the design decisions,
-and results.
-
 ---
 
 ## Project structure
@@ -116,8 +113,7 @@ produce high-quality vectors across the full ingredient vocabulary.
 `train.py` writes:
 
 - `models/v0a_ingredient_sg/vectors.kv` — the trained vectors (gensim KeyedVectors).
-- `models/v0a_ingredient_sg/config.json` — training settings and corpus stats, so a
-  set of vectors can always be traced to the run that produced it.
+- `models/v0a_ingredient_sg/config.json` — training settings and corpus stats
 
 A quick look at the result:
 

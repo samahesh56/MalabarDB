@@ -6,14 +6,10 @@ Run from repo root:  python harness/visualize.py
 """
 
 from pathlib import Path
-
+from src.malabardb import paths
 import matplotlib.pyplot as plt
 from gensim.models import KeyedVectors
 from sklearn.decomposition import PCA
-
-REPO_ROOT = Path(__file__).resolve().parent.parent
-VECTORS_PATH = REPO_ROOT / "models" / "v0a_ingredient_sg" / "vectors.kv"
-OUT_PATH = REPO_ROOT / "harness" / "v0a_pca.png"
 
 # TODO: how many ingredients to plot? Plotting ALL ~200 is an unreadable mess of
 #   labels, and half are rare (noisy vectors). Plotting the most frequent N keeps
@@ -23,7 +19,7 @@ TOP_N = 40
 
 
 def main():
-    wv = KeyedVectors.load(str(VECTORS_PATH))
+    wv = KeyedVectors.load(str(paths.VECTORS))
 
     # wv.index_to_key is ordered by frequency (most common first), so the first
     # TOP_N are exactly our high-confidence, high-frequency ingredients.
@@ -49,8 +45,8 @@ def main():
 
     plt.title(f"v0a ingredient vectors (top {TOP_N} by frequency), PCA to 2D")
     plt.tight_layout()
-    plt.savefig(OUT_PATH, dpi=150)
-    print(f"saved plot -> {OUT_PATH}")
+    plt.savefig(paths.PCA_PLOT, dpi=150)
+    print(f"saved plot -> {paths.PCA_PLOT}")
     plt.show()   # opens a window; close it to end the script
 
 

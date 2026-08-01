@@ -19,9 +19,7 @@ Output: data/processed/v0a_kerala_{normalizer}.txt
 
 import json
 from pathlib import Path
-
-INTERIM = Path("data/interim/extracted_names.json")
-OUT_DIR = Path("data/processed")
+from malabardb import paths
 
 MIN_INGREDIENTS = 2   # a 1-ingredient recipe carries no co-occurrence signal
 
@@ -33,8 +31,8 @@ def build_corpus(normalizer_name: str = "spacy") -> tuple[list[list[str]], dict]
     (>3 words, or <2 chars). They are counted, not silently discarded, so the
     corpus-side cost of those filters is visible.
     """
-    data = json.loads(INTERIM.read_text(encoding="utf-8"))
-    vocab = json.loads((OUT_DIR / f"vocabulary_{normalizer_name}.json")
+    data = json.loads(paths.EXTRACTED_NAMES.read_text(encoding="utf-8"))
+    vocab = json.loads((paths.PROCESSED / f"vocabulary_{normalizer_name}.json")
                        .read_text(encoding="utf-8"))
     surface_to_canonical = vocab["surface_to_canonical"]
 
@@ -53,17 +51,15 @@ def build_corpus(normalizer_name: str = "spacy") -> tuple[list[list[str]], dict]
             stats["recipes_dropped_short"] += 1
     return corpus, stats
 
-
 def save_corpus(corpus: list[list[str]], name: str) -> Path:
     """One recipe per line, space-separated. Plain text so the corpus is diffable
     in review and decoupled from any particular training run."""
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    out = OUT_DIR / f"{name}.txt"
+    paths.PROCESSED.mkdir(parents=True, exist_ok=True)
+    out = paths.PROCESSED / f"{name}.txt"
     with out.open("w", encoding="utf-8") as f:
         for recipe in corpus:
             f.write(" ".join(recipe) + "\n")
     return out
-
 
 if __name__ == "__main__":
     for normalizer_name in ("spacy", "rules"):

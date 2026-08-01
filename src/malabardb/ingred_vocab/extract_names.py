@@ -18,9 +18,8 @@ from collections import Counter
 from pathlib import Path
 
 import pandas as pd
+from malabardb import paths
 
-RAW_PATH = Path("data/raw/IndianFoodDatasetXLS.xlsx")
-OUT_PATH = Path("data/interim/extracted_names.json")
 
 # Units stripped from the leading quantity run. 'gram'/'grams' are handled
 # separately below: they collide with ingredient names (Gram flour, Bengal Gram Dal).
@@ -125,7 +124,7 @@ def extract(cuisine_filter: str | None = "Kerala Recipes") -> dict:
 
     Returns per-recipe name lists AND a frequency counter. build_corpus.py needs
     the former (a recipe is one 'sentence'); normalize_vocab.py needs the latter. """
-    df = pd.read_excel(RAW_PATH).dropna(subset=["TranslatedIngredients"])
+    df = pd.read_csv(paths.RECIPES).dropna(subset=["TranslatedIngredients"])
     if cuisine_filter is not None:
         df = df[df["Cuisine"] == cuisine_filter] # filter to a single cuisine for the corpus and vocabulary
 
@@ -150,7 +149,7 @@ def extract(cuisine_filter: str | None = "Kerala Recipes") -> dict:
 
     return {
         "meta": {
-            "source": str(RAW_PATH),
+            "source": str(paths.RECIPES),
             "cuisine_filter": cuisine_filter,
             "n_recipes": len(recipes),
             "n_names_total": sum(counts.values()),
@@ -167,8 +166,8 @@ def extract(cuisine_filter: str | None = "Kerala Recipes") -> dict:
 
 if __name__ == "__main__":
     result = extract()
-    OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with OUT_PATH.open("w", encoding="utf-8") as f:
+    paths.EXTRACTED_NAMES.parent.mkdir(parents=True, exist_ok=True)
+    with paths.EXTRACTED_NAMES.open("w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
     m = result["meta"]
@@ -177,6 +176,6 @@ if __name__ == "__main__":
     print(f"dropped: {m['n_dropped_empty']} empty, "
           f"{m['n_dropped_non_ascii']} non-ascii")
     print(f"{len(result['synonyms'])} synonym keys harvested")
-    print(f"wrote {OUT_PATH}")
+    print(f"wrote {paths.EXTRACTED_NAMES}")
     for name, count in list(result["counts"].items())[:10]:
         print(f"   {count:4d}  {name}")

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "malabardb"
+version = "0.1.0"
+description = "Ingredient embeddings and nutrition estimation for Kerala cuisine"
+requires-python = ">=3.12,<3.14"
+dynamic = ["dependencies"]
+
+# Dependencies are read FROM requirements.txt rather than duplicated here.
+# Two lists would drift; requirements.txt stays the single source of truth and
+# keeps its version-rationale comments (setuptools ignores '#' lines).
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+# src/ layout: the importable package is `malabardb`, and src/ is only the
+# directory placed on sys.path. This is why there is no src/__init__.py.
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -14,12 +14,9 @@ food2vec uses. It is the food2vec / ingredient2vec formulation
 
 import json
 from pathlib import Path
+from malabardb import paths
 
 from gensim.models import Word2Vec
-
-REPO_ROOT = Path(__file__).resolve().parent.parent.parent
-CORPUS_PATH = REPO_ROOT / "data" / "processed" / "v0a_kerala_spacy.txt"
-MODEL_DIR = REPO_ROOT / "models" / "v0a_ingredient_sg"
 
 # Frequency floor. min_count=2 keeps 121 types but their vectors are barely
 # trained; min_count=5 keeps 67 (86.8% of tokens) and is what we report.
@@ -70,25 +67,25 @@ def inspect(model):
 
 
 if __name__ == "__main__":
-    recipes = load_corpus(CORPUS_PATH)
-    print(f"loaded {len(recipes)} recipes from {CORPUS_PATH.name}")
+    recipes = load_corpus(paths.CORPUS)
+    print(f"loaded {len(recipes)} recipes from {paths.CORPUS.name}")
 
     model = train(recipes)
     print(f"vocab: {len(model.wv)} types (min_count={MIN_COUNT}, epochs={EPOCHS})")
 
-    MODEL_DIR.mkdir(parents=True, exist_ok=True)
-    model.wv.save(str(MODEL_DIR / "vectors.kv"))
+    paths.ensure_dirs()
+    model.wv.save(str(paths.VECTORS))
 
     # Config travels with the vectors: a neighbour list is meaningless without
     # knowing which corpus and settings produced it.
     config = {
-        "corpus": CORPUS_PATH.name,
+        "corpus": paths.CORPUS.name,
         "n_recipes": len(recipes),
         "sg": 1, "vector_size": 50, "window": 15,
         "min_count": MIN_COUNT, "epochs": EPOCHS, "seed": 42,
         "vocab_size": len(model.wv),
     }
-    (MODEL_DIR / "config.json").write_text(json.dumps(config, indent=2), encoding="utf-8")
+    (paths.V0A_CONFIG).write_text(json.dumps(config, indent=2), encoding="utf-8")
 
-    print(f"saved vectors -> {MODEL_DIR / 'vectors.kv'}")
+    print(f"saved vectors -> {paths.VECTORS}")
     inspect(model)

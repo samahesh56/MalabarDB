@@ -1,3 +1,9 @@
 /.venv
 /data/processed
 /data/interim
+reports/figures/v0a_pca.png
+/harness/__pycache__
+/src/malabardb.egg-info
+/src/malabardb/__pycache__
+/src/malabardb/embeddings/__pycache__
+/src/malabardb/ingred_vocab/__pycache__

@@ -9,10 +9,7 @@ Run from the repo root:  python preprocessing/audit.py
 
 from collections import Counter
 from pathlib import Path
-
-REPO_ROOT = Path(__file__).resolve().parent.parent
-CORPUS_PATH = REPO_ROOT / "data" / "processed" / "v0a_kerala.txt"
-
+from malabardb import paths   
 
 def load_tokens(path):
     """Read the saved corpus back into memory.
@@ -87,7 +84,7 @@ def check_frequency(counts):
 
 
 if __name__ == "__main__":
-    recipes, counts = load_tokens(CORPUS_PATH)
+    recipes, counts = load_tokens(paths.CORPUS)
     print(f"loaded {len(recipes)} recipes\n")
     check_split_votes(counts)
     check_wreckage(counts)

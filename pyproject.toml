@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "malabardb"
 version = "0.1.0"
 description = "Ingredient embeddings and nutrition estimation for Kerala cuisine"
-requires-python = ">=3.12,<3.14"
+requires-python = ">=3.10,<3.14"
 dynamic = ["dependencies"]
 
 # Dependencies are read FROM requirements.txt rather than duplicated here.

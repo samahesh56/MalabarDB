@@ -1,0 +1,40 @@
+recipe_id,line_no,raw_line,pos_signature,sample_bucket,name,qty,unit,state,size,temp,dry_fresh,notes
+1,4,1 tablespoon Ghee,NUM NOUN NOUN,top_signature,Ghee,1    ,tablespoon,,,,,
+11,5,2 tbsp sugar,NUM NOUN NOUN,top_signature,sugar,2    ,tbsp,,,,,
+67,4,1 cup Water,NUM NOUN NOUN,top_signature,Water,1    ,cup,,,,,
+99,3,1/2 teaspoon Salt,NUM NOUN NOUN,top_signature,Salt, 1/2,teaspoon,,,,,
+23,1,1 cup Rice,NUM NOUN NOUN,top_signature,Rice,1    ,cup,,,,,
+4,6,Salt - to taste,NOUN PUNCT PART VERB,top_signature,Salt ,,,,,,,to taste
+2,10,1/4 teaspoon Mustard seeds,NUM NOUN NOUN NOUN,top_signature,Mustard seeds, 1/4,teaspoon,,,,,
+84,3,1/4 tablespoon pepper powder,NUM NOUN NOUN NOUN,top_signature,pepper powder, 1/4,tablespoon,,,,,
+75,6,1/2 tablespoon coriander powder,NUM NOUN NOUN NOUN,top_signature,coriander powder, 1/2,tablespoon,,,,,
+3,4,1/2 teaspoon turmeric powder,NUM NOUN NOUN NOUN,top_signature,turmeric powder, 1/2,teaspoon,,,,,
+43,3,1 sprig curry leaf,NUM NOUN NOUN NOUN,top_signature,curry leaf,1    ,sprig,,,,,
+6,7,1/2 teaspoon Turmeric powder (Haldi),NUM NOUN ADJ NOUN PUNCT PROPN PUNCT,top_signature,Turmeric powder (Haldi), 1/2,teaspoon,,,,,
+55,10,1/2 tablespoon Turmeric powder (Haldi),NUM NOUN ADJ NOUN PUNCT PROPN PUNCT,top_signature,Turmeric powder (Haldi), 1/2,tablespoon,,,,,
+2,7,1/4 teaspoon Turmeric powder (Haldi),NUM NOUN ADJ NOUN PUNCT PROPN PUNCT,top_signature,Turmeric powder (Haldi), 1/4,teaspoon,,,,,
+140,10,1 tablespoon Turmeric powder (Haldi),NUM NOUN ADJ NOUN PUNCT PROPN PUNCT,top_signature,Turmeric powder (Haldi),1    ,tablespoon,,,,,
+17,6,1 teaspoon Turmeric powder (Haldi),NUM NOUN ADJ NOUN PUNCT PROPN PUNCT,top_signature,Turmeric powder (Haldi),1    ,teaspoon,,,,,
+2,12,1 sprig Curry leaves,NUM NOUN PROPN VERB,top_signature,Curry leaves,1    ,sprig,,,,,
+8,13,2 sprig Curry leaves,NUM NOUN PROPN VERB,top_signature,Curry leaves,2    ,sprig,,,,,
+9,14,3 sprig Curry leaves,NUM NOUN PROPN VERB,top_signature,Curry leaves,3    ,sprig,,,,,
+41,7,1/2 teaspoon Fennel seeds (Saunf) - in case you don't have fennel seeds you could use cumin seeds,NUM NOUN NOUN NOUN PUNCT PROPN PUNCT PUNCT ADP NOUN PRON AUX PART VERB NOUN NOUN PRON AUX VERB NOUN NOUN,singleton_tail,Fennel seeds (Saunf), 1/2,teaspoon,,,,,in case you don't have fennel seeds you could use cumin seeds
+133,13,1/2 teaspoon Whole Black Peppercorns - ground,NUM NOUN PROPN PROPN PROPN PUNCT NOUN,singleton_tail,Whole Black Peppercorns, 1/2,teaspoon,ground,,,,
+24,6,1/4 teaspoon Asafoetida (hing) - powder,NUM NOUN PROPN PUNCT NOUN PUNCT PUNCT NOUN,singleton_tail,Asafoetida (hing), 1/4,teaspoon,powder,,,,
+93,1,1 cup Cauliflower (gobi) - florets,NUM NOUN PROPN PUNCT PROPN PUNCT PUNCT NOUN,singleton_tail,Cauliflower (gobi),1    ,cup,florets,,,,
+75,7,1/2 teaspoon Fennel - or cumin,NUM NOUN PROPN PUNCT CCONJ NOUN,singleton_tail,Fennel, 1/2,teaspoon,,,,,or cumin
+62,12,1 teaspoons Red Chilli powder - adjustable,NUM VERB ADJ PROPN NOUN PUNCT ADJ,singleton_tail,Red Chilli powder,1    ,teaspoons,,,,,adjustable
+118,1,250 grams Elephant yam (Suran/Senai/Ratalu) - peeled and chopped,NUM NOUN PROPN NOUN PUNCT PROPN SYM PROPN SYM PROPN PUNCT PUNCT VERB CCONJ VERB,singleton_tail,Elephant yam (Suran/Senai/Ratalu),250    ,grams,peeled and chopped,,,,
+60,1,2 Mango (Ripe) - peeled and chopped roughly (reserve the seeds),NUM PROPN PUNCT PROPN PUNCT PUNCT VERB CCONJ VERB ADV PUNCT VERB DET NOUN PUNCT,singleton_tail,Mango ,2    ,,"ripe, peeled and chopped roughly",,,,reserve the seeds
+8,2,1 Brinjal (Baingan / Eggplant) - finely chopped,NUM PROPN PUNCT PROPN SYM PROPN PUNCT PUNCT ADV VERB,singleton_tail,Brinjal (Baingan / Eggplant),1    ,,finely chopped,,,,
+43,2,1/2 cup green peas - optional,NUM NOUN ADJ PROPN PUNCT PROPN,singleton_tail,green peas, 1/2,cup,,,,,optional
+76,8,Coconut Oil - for shallow frying,PROPN PROPN PUNCT ADP ADJ NOUN,singleton_tail,Coconut Oil,,,,,,,for shallow frying
+135,26,2 Shallots - finely sliced (optional),NUM PROPN PUNCT ADV ADJ PUNCT PROPN PUNCT,singleton_tail,Shallots,2    ,,finely sliced,,,,optional
+16,9,2 onions - peel and chop,NUM NOUN PUNCT NOUN CCONJ VERB,singleton_tail,onions,2    ,,peel and chop,,,,
+137,3,6 Bhindi (Lady Finger/Okra) - cut into 1 inch pieces,NUM PROPN PUNCT PROPN PROPN SYM PROPN PUNCT PUNCT VERB ADP NUM NOUN NOUN,singleton_tail,Bhindi (Lady Finger/Okra),6    ,,cut,1 inch pieces,,,
+114,3,1 cup Jaggery - powdered or brown sugar,NUM NOUN PROPN PUNCT ADJ CCONJ ADJ NOUN,singleton_tail,Jaggery,1    ,cup,powdered,,,,or brown sugar
+39,2,2-1 / 2 cups water,NUM SYM NUM SYM NUM NOUN NOUN,singleton_tail,water,2-1/2,cups,,,,,
+24,11,2-3 Dry Red Chillies,NUM SYM NUM PROPN PROPN NOUN,singleton_tail,Red Chillies,2-3,,,,,Dry,
+5,1,2 Banana flower (Vazhaipoo) - ripe,NUM PROPN NOUN PUNCT PROPN PUNCT PUNCT ADJ,singleton_tail,Banana flower (Vazhaipoo),2    ,,ripe,,,,
+120,1,2 cups Elephant yam (Suran/Senai/Ratalu) - scraped well and cubed to bite size,NUM NOUN NOUN NOUN PUNCT PROPN SYM PROPN SYM PROPN PUNCT PUNCT VERB ADV CCONJ VERB PART VERB NOUN,singleton_tail,Elephant yam (Suran/Senai/Ratalu),2    ,cups,cubed,bite size,,,
+131,4,1 cup Drumstick Leaves (Moringa/Murungai Keerai),NUM NOUN PROPN PROPN PUNCT PROPN SYM PROPN PROPN PUNCT,singleton_tail,Drumstick Leaves (Moringa/Murungai Keerai),1    ,cup,,,,,

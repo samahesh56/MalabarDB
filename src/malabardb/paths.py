@@ -53,6 +53,7 @@ INGREDIENTS = FINAL / "ingredients.csv"
 RECIPES_TABLE = FINAL / "recipes.csv"  
 RECIPE_INGREDIENTS_FINAL = FINAL / "recipe_ingredients_final.csv"
 MALABARDB = FINAL / "malabardb.db"
+IFCT_NUTRIENTS = FINAL / "ifct_nutrients.csv"
 
 
 def ensure_dirs() -> None:

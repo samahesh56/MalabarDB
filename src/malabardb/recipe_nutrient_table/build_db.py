@@ -64,10 +64,12 @@ CREATE TABLE ifct_nutrients (
     ifct_code       TEXT PRIMARY KEY,
     ifct_name       TEXT,
     food_group      TEXT,
-    energy_kcal     REAL,
+    energy_kcal     REAL,       -- derived: energy_kj / 4.184; NULL where IFCT publishes none
+    energy_kj       REAL,       -- as published, IFCT 2017
     protein_g       REAL,
     carb_g          REAL,
-    fat_g           REAL
+    fat_g           REAL,
+    fibre_g         REAL
 );
 
 CREATE TABLE unit_conversions (
@@ -91,13 +93,27 @@ def build():
     # recipe_ingredients: load directly from the reviewed final CSV
     # merge_corrections.py already produces the right columns and names,
     recipe_ingredients = pd.read_csv('data/final/recipe_ingredients_final.csv')
-    recipe_ingredients['size'] = ''   # NOT YET EXTRACTED: ingredient-parser's size field not implemented yet
+    recipe_ingredients['size'] = None   # NOT YET EXTRACTED: ingredient-parser's size field not implemented yet
     recipe_ingredients['ingredient_id'] = None   # populated once IFCT linkage is finalized
     recipe_ingredients.to_sql('recipe_ingredients', conn, if_exists='append', index=False)
+
+    # ifct_nutrients: external reference, loaded verbatim from the projection.
+    # Read-only downstream. Nothing in the pipeline writes back to this table.
+    ifct = pd.read_csv('data/final/ifct_nutrients.csv')
+    ifct.to_sql('ifct_nutrients', conn, if_exists='append', index=False)
+
+    linked = conn.execute(
+        'SELECT COUNT(*) FROM recipe_ingredients ri '
+        'JOIN ingredients i ON ri.ingredient_id = i.ingredient_id'
+    ).fetchone()[0]
+    print(f'  {len(ifct)} ifct_nutrients rows, '
+          f'{int(ifct.energy_kcal.isna().sum())} with NULL energy')
+    print(f'  {linked} of {len(recipe_ingredients)} lines linked to an ingredient')
 
     conn.commit()
     conn.close()
     needs_review = (recipe_ingredients['parse_status'] == 'needs_review').sum()
+    
     print(f'{DB_PATH} built: {len(recipes)} recipes, {len(recipe_ingredients)} ingredient lines')
     print(f"  {needs_review} rows still marked parse_status='needs_review'")
 

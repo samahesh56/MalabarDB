@@ -15,13 +15,11 @@ RAW = DATA / "raw"              # untouched downloads; never written to
 INTERIM = DATA / "interim"      # intermediate, disposable, regenerable
 PROCESSED = DATA / "processed"  # pipeline outputs consumed by later stages
 REVIEW = DATA / "review"        # human-edited files; NEVER overwritten by code
+FINAL = DATA / "final"
 
 # --- raw inputs ---------------------------------------------------------
 IFCT_INDEX = RAW / "IFCT_index.csv"
 RECIPES = RAW / "IndianFoodDatasetCSV.csv"
-
-# --- interim ------------------------------------------------------------
-EXTRACTED_NAMES = INTERIM / "extracted_names.json"
 
 # --- models ---
 MODELS    = ROOT / "models"
@@ -39,10 +37,22 @@ VOCAB_RULES = PROCESSED / "vocabulary_rules.json"
 IFCT_NORMALIZED = PROCESSED / "ifct_normalized.csv"
 CANDIDATE_TABLE = PROCESSED / "candidate_table.csv"
 CORPUS = PROCESSED / "v0a_kerala_spacy.txt"
+EXTRACTED_NAMES = PROCESSED / "extracted_names.json"
+RECIPE_INGREDIENTS = PROCESSED / "recipe_ingredients.csv" 
+FULL_CORPUS_LABELS = PROCESSED / "full_corpus_labels.csv"  # regex + ingredient-parser candidate labels
 
 # --- review (human-owned) -----------------------------------------------
-REVIEW_QUEUE = REVIEW / "review_queue.csv"
-LINKAGE_TABLE = REVIEW / "linkage_table.csv"
+REVIEW_QUEUE_NAME_QTY_UNIT = REVIEW / "review_queue_name_qty_unit.csv"
+REVIEW_QUEUE_STATE_PRIORITY = REVIEW / "review_queue_state_priority.csv"
+REVIEW_QUEUE_STATE_ANOMALY = REVIEW / "review_queue_state_anomaly.csv"
+REVIEW_QUEUE_IFCT_AMBIGUOUS = REVIEW / "review_queue_ifct_ambiguous.csv"
+REVIEW_QUEUE_IFCT_UNMATCHED = REVIEW / "review_queue_ifct_unmatched.csv"
+
+# --- final --------------------------------------------------------------
+INGREDIENTS = FINAL / "ingredients.csv"
+RECIPES_TABLE = FINAL / "recipes.csv"  
+RECIPE_INGREDIENTS_FINAL = FINAL / "recipe_ingredients_final.csv"
+MALABARDB = FINAL / "malabardb.db"
 
 
 def ensure_dirs() -> None:

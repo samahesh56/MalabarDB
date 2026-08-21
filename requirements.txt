@@ -9,15 +9,13 @@
 #   spaCy, and scikit-learn all support NumPy 2.x.
 # - openpyxl is required by pandas.read_excel() to read the .xlsx dataset.
 # - spacy is used by preprocessing/normalize_vocab.py (SpacyNormalizer).
-#   After installing, also run:
-#       python -m spacy download en_core_web_sm
-#   (already documented in the README setup steps).
 # - click is pinned explicitly as a workaround for a current spaCy bug:
 #   spaCy's CLI imports `click` directly but relies on typer to pull it in
 #   transitively; typer>=0.26 dropped click as a dependency, so a fresh
 #   `pip install spacy` now fails with `ModuleNotFoundError: No module
 #   named 'click'` unless click is installed separately.
 #   Tracking issue: https://github.com/explosion/spaCy/issues/13971
+# - ingredient-parser-nlp is used by nutrient_table_labeling/build_corpus_labels.py
 
 pandas>=2.0
 openpyxl>=3.1          # pandas needs this to read .xlsx files
@@ -28,3 +26,4 @@ scikit-learn>=1.3       # PCA in harness/visualize.py
 matplotlib>=3.7         # plotting in harness/visualize.py
 spacy>=3.8,<3.9         # normalize_vocab.py SpacyNormalizer; matches en_core_web_sm-3.8.0
 click>=8.1              # workaround for explosion/spaCy#13971 (see notes)
+ingredient-parser-nlp>=2.7,<3.0   # second extraction method in build_corpus_labels.py 

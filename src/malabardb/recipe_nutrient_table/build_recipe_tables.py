@@ -1,7 +1,9 @@
 import pandas as pd
 import re
 
-df = pd.read_csv('data/raw/IndianFoodDatasetCSV.csv')
+from malabardb import paths
+
+df = pd.read_csv(paths.RECIPES)
 kerala = df[df['Cuisine'] == 'Kerala Recipes'].copy()
 
 def has_devanagari(s):
@@ -10,7 +12,7 @@ def has_devanagari(s):
 kerala = kerala[~kerala['TranslatedIngredients'].apply(has_devanagari)].reset_index(drop=True)
 kerala['recipe_id'] = range(1, len(kerala) + 1)
 
-# recipes.csv
+# recipes.csv construction: contains data specific to kerala cuisine from raw dataset
 recipes = kerala[['recipe_id', 'TranslatedRecipeName', 'Cuisine', 'Servings',
                    'TranslatedInstructions', 'Srno']].copy()
 recipes.columns = ['recipe_id', 'dish_name', 'cuisine_raw', 'servings',
@@ -18,9 +20,9 @@ recipes.columns = ['recipe_id', 'dish_name', 'cuisine_raw', 'servings',
 recipes['region'] = 'Kerala'
 recipes = recipes[['recipe_id', 'dish_name', 'region', 'cuisine_raw',
                     'servings', 'instructions', 'source_row_id']]
-recipes.to_csv('recipes.csv', index=False)
+recipes.to_csv(paths.RECIPES_TABLE, index=False)
 
-# recipe_ingredients.csv — structure only, no parsing
+# recipe_ingredients.csv construction
 rows = []
 for _, r in kerala.iterrows():
     phrases = [p.strip() for p in str(r['TranslatedIngredients']).split(',') if p.strip()]
@@ -28,7 +30,7 @@ for _, r in kerala.iterrows():
         rows.append({'recipe_id': r['recipe_id'], 'line_no': i, 'raw_line': raw_line})
 
 recipe_ingredients = pd.DataFrame(rows)
-recipe_ingredients.to_csv('recipe_ingredients.csv', index=False)
+recipe_ingredients.to_csv(paths.RECIPE_INGREDIENTS, index=False)
 
 print('recipes.csv:', len(recipes), 'rows')
 print('recipe_ingredients.csv:', len(recipe_ingredients), 'rows')

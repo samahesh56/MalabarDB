@@ -12,9 +12,6 @@ and a poor "what can I swap this for" model. Making that failure visible and
 measurable on a Kerala corpus is the point of v0a, and the starting point for the
 fixes that follow.
 
-**Paths come from `paths.py`, never from string literals.** Locations are computed
-relative to that file, not to the working directory, so every script behaves the
-same whether run from the repo root, a subdirectory, or a notebook.
 ---
 
 ## Setup
@@ -82,6 +79,53 @@ python harness.visualize             # PCA plot -> reports/figures/v0a_pca.png
 ```
 
 ---
+
+## Phase 1: Normalized recipe table
+
+Where v0a's ingredient vocabulary comes from, and Task A's foundation: turning raw
+recipe text into a table where every ingredient in every recipe has a known
+quantity, unit, name, and (where available) preparation state.
+
+No single tool gets this right alone, so two independent extraction methods run
+on every ingredient line: a **regex extractor** tuned to this dataset's specific
+quantity/unit formats, and the general-purpose **`ingredient-parser`** library.
+Wherever the two disagree, the row is flagged for a person to check. That
+disagreement is the review signal, instead of trusting either method blindly or
+reading all lines by hand.
+
+```
+build_recipe_tables.py   raw Kaggle data        ->  recipes table (final)
+                                                      recipe_ingredients, structure only
+                                                      (recipe_id, line_no, raw_line -- no parsing yet)
+
+build_corpus_labels.py   recipe_ingredients     ->  candidate labels + disagreement flags
+                                                      review queues (flagged rows only)
+
+  [ manual review: fill in the flagged rows ]
+
+merge_corrections.py     labels + corrections   ->  recipe_ingredients table (final)
+
+build_db.py              final tables           ->  malabardb.db
+```
+
+Run from anywhere, in order:
+
+```bash
+python -m malabardb.recipe_nutrient_table.build_recipe_tables
+python -m malabardb.recipe_nutrient_table.build_corpus_labels
+# review the flagged rows in the review queue files here
+python -m malabardb.recipe_nutrient_table.merge_corrections
+python -m malabardb.recipe_nutrient_table.build_db
+```
+
+### What's in `malabardb.recipe_nutrient_table`
+
+| File | Does |
+| --- | --- |
+| `build_recipe_tables.py` | Filters the raw dataset to Kerala recipes, splits each recipe's ingredient text into one row per ingredient line. |
+| `build_corpus_labels.py` | Runs both extraction methods, flags disagreements, writes the review queues. |
+| `merge_corrections.py` | Applies manual corrections on top of the automatic extraction to produce the final table. |
+| `build_db.py` | Loads the final CSVs into `malabardb.db`. |
 
 ## Data
 

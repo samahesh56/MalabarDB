@@ -40,13 +40,17 @@ CORPUS = PROCESSED / "v0a_kerala_spacy.txt"
 EXTRACTED_NAMES = PROCESSED / "extracted_names.json"
 RECIPE_INGREDIENTS = PROCESSED / "recipe_ingredients.csv" 
 FULL_CORPUS_LABELS = PROCESSED / "full_corpus_labels.csv"  # regex + ingredient-parser candidate labels
+NAME_MATCH_REPORT = PROCESSED / "name_match_report.csv"
+RECIPE_KEYS = PROCESSED / "recipe_keys.csv"
 
 # --- review (human-owned) -----------------------------------------------
 REVIEW_QUEUE_NAME_QTY_UNIT = REVIEW / "review_queue_name_qty_unit.csv"
 REVIEW_QUEUE_STATE_PRIORITY = REVIEW / "review_queue_state_priority.csv"
 REVIEW_QUEUE_STATE_ANOMALY = REVIEW / "review_queue_state_anomaly.csv"
+REVIEW_QUEUE_PARSING = REVIEW / 'review_queue_parsing.csv'
 REVIEW_QUEUE_IFCT_AMBIGUOUS = REVIEW / "review_queue_ifct_ambiguous.csv"
 REVIEW_QUEUE_IFCT_UNMATCHED = REVIEW / "review_queue_ifct_unmatched.csv"
+REVIEW_QUEUE_INGREDIENTS = REVIEW / "review_queue_ingredients.csv"
 
 # --- final --------------------------------------------------------------
 INGREDIENTS = FINAL / "ingredients.csv"

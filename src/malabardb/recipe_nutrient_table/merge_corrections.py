@@ -101,6 +101,10 @@ MERGED_ROW_SPLITS = {
         {'qty': '1', 'unit': 'teaspoon', 'name': 'Active dry yeast', 'dry_fresh': 'Dry'},
         {'qty': '1/2', 'unit': 'cup', 'name': 'luke warm water'},
     ],
+    (101, 6): [   # "salt - 1 sprig curry leaves": comma misplaced in source
+       {'qty': '', 'unit': '', 'name': 'salt'},
+       {'qty': '1', 'unit': 'sprig', 'name': 'curry leaves'},
+   ],
 }
 new_rows = []
 split_row_keys = set()   # the (recipe_id, line_no) keys created below

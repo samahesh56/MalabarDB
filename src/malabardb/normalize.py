@@ -1,14 +1,21 @@
 '''
-normalize_vocab.py - candidate names -> controlled vocabulary.
+normalize.py - surface food names -> canonical keys.
 
-Reproduces Pellegrini et al. (2021) `normalisation/generate_final_clean_ingredients.py`
-and `normalisation/helpers/recipe_normalizer.py`
+Shared by BOTH pipeline tracks, which is why it sits at the root:
+    ingredient vocabulary  (embeddings)   build_vocabulary()
+    IFCT linkage           (nutrition)    normalize_ifct()
 
-IFCT extension: the SAME normalizer also runs over IFCT food names, so a
-vocabulary key and an IFCT-name key are comparable by construction.
+A recipe key and an IFCT key are comparable ONLY because the same function
+produced them. Same practice as Kalra et al. (2020), who lemmatize the
+ingredient phrase and the USDA description with one lemmatizer, and StandFood
+(Eftimov et al. 2017), which normalizes both sides before matching. 
 
-  python -m malabardb.vocab.normalize_vocab            # build vocabulary
-  python -m malabardb.vocab.normalize_vocab --ifct     # normalize IFCT names
+The normalizer itself reproduces Pellegrini et al. (2021)
+`normalisation/helpers/recipe_normalizer.py` and
+`normalisation/generate_final_clean_ingredients.py`.
+
+  python -m malabardb.normalize            # build vocabulary   -> vocabulary_{spacy,rules}.json
+  python -m malabardb.normalize --ifct     # normalize IFCT     -> ifct_normalized.csv
 '''
 
 import argparse
@@ -29,13 +36,12 @@ TAG_MAPPING = {
 
 LEMMATIZATION_TYPES = ['NOUN']
 
-MAX_WORDS = 3
-MIN_CHARS = 2
+# Applied to EVERY key, both tracks.
 MIN_TOKEN_CHARS = 2
 
-# LOAD-BEARING: stripping this phrase is what merges IFCT's two "all varieties"
+# Stripping this phrase is what merges IFCT's two "all varieties"
 # rows (D031 brinjal, G008 green chilli) into their variety groups' keys.
-# Removing this regex reverts 512 distinct keys to 514.
+# Removing this regex takes IFCT from 512 distinct keys back to 514.
 AGGREGATE_RE = re.compile(r"\ball\s+varieties\b", re.IGNORECASE)
 
 
@@ -61,12 +67,11 @@ class SpacyNormalizer:
         '''Pre-tagger cleanup. Runs on every input string, both sides.'''
         s = name.lower()
 
-        # hyphen -> space. spaCy keeps 'green-1' as ONE token, so the digit survives
-        # the length filter. Splitting lets the digit be dropped below.
+        # hyphen -> space. spaCy keeps 'green-1' as ONE token, so the digit
+        # survives the length filter. Splitting lets it be dropped below.
         s = re.sub(r"-", " ", s)
 
-        # drop 'all varieties' so D031/G008 share their variety group's key
-        # instead of forming singletons.
+        # drop 'all varieties' so D031/G008 share their variety group's key instead of forming singletons.
         s = AGGREGATE_RE.sub(" ", s)
 
         # collapse whitespace runs left by ' - '.
@@ -74,15 +79,13 @@ class SpacyNormalizer:
 
     def normalize_many(self, names: list[str]) -> list[str]:
         '''Normalize a batch. Lowercasing happens in _preclean, before tagging -
-        diverges from Pellegrini because our input is title-cased and the
-        tagger is case-sensitive.'''
+        diverges from Pellegrini because our input is title-cased and the tagger is case-sensitive.'''
         out = []
         for doc in self.nlp.pipe((self._preclean(n) for n in names), batch_size=200):
             tokens = [
                 self._lemmatize(t)
                 for t in doc
-                # drop pure digits. MIN_TOKEN_CHARS alone misses IFCT's 2-digit
-                # variety indices ('Brinjal 10'..'21').
+                # drop pure digits. MIN_TOKEN_CHARS alone misses IFCT's 2-digit variety indices ('Brinjal 10'..'21').
                 if len(t.text) >= MIN_TOKEN_CHARS and not t.text.isdigit()
             ]
             out.append(" ".join(tokens))
@@ -90,7 +93,11 @@ class SpacyNormalizer:
 
 
 class RuleNormalizer:
-    '''Deterministic control: no POS tagger, no statistical model.'''
+    '''Deterministic control: no POS tagger, no statistical model.
+
+    Exists to answer "does the spaCy dependency earn its place?" by measuring
+    both against the same input, not to be used in the pipeline.
+    '''
 
     name = "rules"
     IRREGULARS: dict[str, str] = {}
@@ -119,8 +126,18 @@ class RuleNormalizer:
         return out
 
 
+# Vocabulary track (embeddings)
+
+# VOCABULARY-ONLY caps. These are NOT applied to the linkage track: match_to_ifct
+# .prepare() calls normalize_many() directly and keeps every key regardless of
+# length, which is why the ingredient review queue legitimately contains keys
+# far longer than three words ('green chawli bean yard long bean karamani barbati'). 
+MAX_WORDS = 3
+MIN_CHARS = 2
+
+
 def build_vocabulary(counts: dict[str, int], normalizer) -> dict:
-    '''Candidate names -> vocabulary artifact.'''
+    '''Candidate names -> controlled vocabulary artifact.'''
     surfaces = list(counts)
     canonicals = normalizer.normalize_many(surfaces)
 
@@ -131,7 +148,7 @@ def build_vocabulary(counts: dict[str, int], normalizer) -> dict:
         if len(canonical) < MIN_CHARS:
             dropped["too_short"].append(surface)
             continue
-        # <=3-word cap doubles as a bug detector: '/ 2 cup water' lands here.
+        # the <=3-word cap doubles as a bug detector: '/ 2 cup water' lands here.
         if len(canonical.split()) > MAX_WORDS:
             dropped["too_long"].append((surface, canonical))
             continue
@@ -156,13 +173,15 @@ def build_vocabulary(counts: dict[str, int], normalizer) -> dict:
     }
 
 
+# Linkage track (nutrition)
+
 def normalize_ifct(ifct_path: Path, out_path: Path, normalizer) -> None:
     '''Run the shared normalizer over IFCT names -> ifct_normalized.csv.
 
     NON-DESTRUCTIVE: `name` is preserved, `name_key` is derived. Variety
-    spreads collapse in the KEY, not in the data - their distinct nutrient rows
-    survive, and the merge surfaces as a logged collision rather than being
-    silently resolved by row order.
+    spreads collapse in the KEY, not in the data, so their distinct nutrient
+    rows survive and the merge surfaces as a logged collision rather than being
+    resolved silently by row order.
     '''
     with open(ifct_path, newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))

@@ -49,15 +49,14 @@ CREATE TABLE recipe_ingredients (
 );
 
 CREATE TABLE ingredients (
-    ingredient_id   INTEGER PRIMARY KEY,
-    generic_name    TEXT,
-    norm_key        TEXT,
-    food_group      TEXT,
-    ifct_code       TEXT,       -- FK to ifct_nutrients.ifct_code, nullable
-    link_rule       TEXT,
-    link_confidence REAL,
-    reviewed_by     TEXT,
-    notes           TEXT
+    ingredient_id INTEGER PRIMARY KEY,
+    norm_key      TEXT NOT NULL UNIQUE,
+    generic_name  TEXT,
+    ifct_code     TEXT,          -- NULL where no source has this food
+    source_db     TEXT,          -- 'IFCT2017' | 'USDA' | 'LOCAL' | NULL
+    hierarchical  TEXT,          -- 'Y' | 'N'
+    link_status   TEXT NOT NULL, -- 'linked' | 'absent'
+    FOREIGN KEY (ifct_code) REFERENCES ifct_nutrients(code)
 );
 
 CREATE TABLE ifct_nutrients (

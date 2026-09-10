@@ -43,8 +43,23 @@ def build(src=paths.IFCT_INDEX, out=paths.IFCT_NUTRIENTS) -> pd.DataFrame:
     # Deriving a value is a separate commit.
     missing_energy = df.energy_kj.eq(0)
     df.loc[missing_energy, ["energy_kj", "energy_kcal"]] = np.nan
+    
 
     df = df[OUT_COLUMNS]
+
+    # Locally-defined rows for foods IFCT does not carry. Kept in a separate
+    # file so the IFCT projection above stays a pure copy of the published
+    # table, and so the provenance of every non-IFCT value is a single grep.
+    if paths.LOCAL_NUTRIENTS.exists():
+        local = pd.read_csv(paths.LOCAL_NUTRIENTS)[OUT_COLUMNS]
+        clash = set(local.ifct_code) & set(df.ifct_code)
+        if clash:
+            raise SystemExit(f"local codes collide with IFCT: {sorted(clash)}")
+        df = pd.concat([df, local], ignore_index=True)
+        print(f"[local] +{len(local)} rows: {list(local.ifct_code)}")
+
+        missing_energy = df.energy_kj.isna()
+
     out.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(out, index=False)
 

@@ -1,0 +1,416 @@
+recipe_id,line_no,raw_line,review_flags,regex_name,ip_patched_name,regex_qty,ip_qty,regex_unit,ip_unit,modifier_text,ip_state,ip_comment,ip_purpose,corrected_name,corrected_qty,corrected_unit,corrected_state
+1,2,2 liter Milk - full cream,name;state,Milk,Milk; full cream,2,2,liter,liter,full cream,,,,Milk,,liter,full cream
+2,1,1-1/2 cups Curd (Dahi / Yogurt) - thick,qty,Curd (Dahi / Yogurt),Curd (Dahi / Yogurt),1/1/2002,2-Jan,cups,cup,thick,thick,Dahi,,Curd (Dahi / Yogurt),1 1/2,cups,
+2,8,Salt - as per your taste,state,Salt,Salt,,,,,as per your taste,,as per your taste,,Salt,,,
+3,3,1/2 cup black gram,name,black gram,black grams,2-Jan,2-Jan,cup,cup,,,,,black gram, 1/2,cup,
+3,6,salt - as per taste,state,salt,salt,,,,,as per taste,,as per taste,,salt,,,
+4,1,2 Sweet Potatoes - medium size,state,Sweet Potatoes,Sweet Potatoes,2,2,,,medium size,,,,Sweet Potatoes,2    ,,medium
+4,4,Turmeric powder (Haldi) - a pinch,qty;unit;state,Turmeric powder (Haldi),Turmeric powder (Haldi),,1,,pinch,a pinch,,,,Turmeric powder (Haldi),1    ,pinch,
+4,5,Asafoetida (hing) - a pinch,qty;unit;state,Asafoetida (hing),Asafoetida (hing),,1,,pinch,a pinch,,,,Asafoetida (hing),1    ,pinch,
+4,6,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+5,1,2 Banana flower (Vazhaipoo) - ripe,name;state,Banana flower (Vazhaipoo),Banana flower (Vazhaipoo) - ripe,2,2,,,ripe,,,,Banana flower (Vazhaipoo),2    ,,ripe
+5,2,1 cup Coconut milk - thick,state,Coconut milk,Coconut milk,1,1,cup,cup,thick,,,,Coconut milk,1    ,cup,thick
+5,3,3 cups Coconut milk - thin,state,Coconut milk,Coconut milk,3,3,cups,cup,thin,,thin,,Coconut milk,3    ,cups,thin
+5,7,2 Cardamom (Elaichi) Pods/Seeds,unit,Cardamom (Elaichi) Pods/Seeds,Cardamom (Elaichi) Pods/Seeds,2,2,,Pods,,,,,Cardamom (Elaichi) Pods/Seeds,2    ,,pods
+5,9,3/4 teaspoon Salt - and some more for cooking the chana dal,state,Salt,Salt,4-Mar,4-Mar,teaspoon,teaspoon,and some more for cooking the chana dal,,and some more,for cooking the chana dal,Salt, 3/4,teaspoon,
+5,10,Water - as required,state,Water,Water,,,,,as required,,as required,,Water,,,
+6,8,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+6,9,Sunflower Oil - for cooking,state,Sunflower Oil,Sunflower Oil,,,,,for cooking,,,for cooking,Sunflower Oil,,,
+7,2,1 Onion - big,state,Onion,Onion,1,1,,,big,,big,,Onion,1    ,,big
+7,4,1 cup Coconut milk - thick,state,Coconut milk,Coconut milk,1,1,cup,cup,thick,,,,Coconut milk,1    ,cup,thick
+7,9,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+8,9,1 tablespoon Ginger - juliennes,name;state,Ginger,Ginger - juliennes,1,1,tablespoon,tablespoon,juliennes,,,,Ginger,1    ,tablespoon,julienned
+8,15,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+9,1,2 Seer fish - slices,unit;state,Seer fish,Seer fish,2,2,,slices,slices,,,,Seer fish,2    ,slice,
+9,3,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+9,7,1 inch Ginger,qty;unit,Ginger,Ginger,1,,inch,,,,,,Ginger,1    ,inch,
+9,10,1 inch Cinnamon Stick (Dalchini),name;qty;unit,Cinnamon Stick (Dalchini),Cinnamon Sticks (Dalchini),1,,inch,,,,,,Cinnamon Stick (Dalchini),1    ,inch,
+9,11,2 Cloves (Laung),name;unit,(Laung),Cloves,2,2,Cloves,,,,(Laung),,Cloves (Laung),2    ,,cloves
+10,3,4 to 5 Shallots,qty,Shallots,Shallots,4to5,4,,,,,,,Shallots,4-5,,
+10,5,1-1/2 cups Hung Curd (Greek Yogurt),qty,Hung Curd (Greek Yogurt),Hung Curd (Greek Yogurt),1/1/2002,2-Jan,cups,cup,,,,,Hung Curd (Greek Yogurt),1 1/2,cups,
+10,6,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+11,3,1 cup coconut - tighten,name;state,coconut,coconut - tighten,1,1,cup,cup,tighten,,,,coconut,1    ,cup,
+11,4,1 tsp active dry yeast - + 1/2 cup lukewarm water,name,active dry yeast,active dry yeast; water,1,1,tsp,teaspoon,+ 1/2 cup lukewarm water,lukewarm,,,active dry yeast,1    ,tsp,
+11,6,salt - as per taste,state,salt,salt,,,,,as per taste,,as per taste,,salt,,,
+12,1,1-1/2 cups Milk,qty,Milk,Milk,1/1/2002,2-Jan,cups,cup,,,,,Milk,1 1/2,cups,
+13,3,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+13,5,Coconut Oil - for cooking,state,Coconut Oil,Coconut Oil,,,,,for cooking,,,for cooking,Coconut Oil,,,
+13,13,Sunflower Oil - for tempering,state,Sunflower Oil,Sunflower Oil,,,,,for tempering,,,for tempering,Sunflower Oil,,,
+14,1,500 Chicken - medium sized pieces,name;state,Chicken,Chicken; sized pieces,500,500,,,medium sized pieces,,,,Chicken,500    ,g,medium sized pieces
+14,3,1 inch Ginger - grated,qty;unit,Ginger,Ginger,1,,inch,,grated,grated,,,Ginger,1    ,inch,
+14,8,Salt - as per taste,state,Salt,Salt,,,,,as per taste,,as per taste,,Salt,,,
+14,9,1/2 cup Coconut milk - or grated fresh coconut,name,Coconut milk,Coconut milk; fresh coconut,2-Jan,2-Jan,cup,cup,or grated fresh coconut,grated,,,Coconut milk, 1/2,cup,
+14,12,1 inch Cinnamon Stick (Dalchini),name;qty;unit,Cinnamon Stick (Dalchini),Cinnamon Sticks (Dalchini),1,,inch,,,,,,Cinnamon Stick (Dalchini),1    ,inch,
+15,1,1 cup Mixed vegetables - (french beans,name;state,Mixed vegetables,Mixed vegetables - french beans,1,1,cup,cup,(french beans,,,,Mixed vegetables,1    ,cup,
+15,4,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+15,10,1 inch Cinnamon Stick (Dalchini),name;qty;unit,Cinnamon Stick (Dalchini),Cinnamon Sticks (Dalchini),1,,inch,,,,,,Cinnamon Stick (Dalchini),1    ,inch,
+15,13,Asafoetida (hing) - A pinch,qty;unit;state,Asafoetida (hing),Asafoetida (hing),,1,,pinch,A pinch,,,,Asafoetida (hing),1    ,pinch,
+15,14,Curry leaves - as required,state,Curry leaves,Curry leaves,,,,,as required,,as required,,Curry leaves,,,
+16,1,250 gm arabic - wash now,state,arabic,arabic,250,250,gm,gm,wash now,,wash now,,arabic,250    ,g,washed
+16,3,1 tamarind - Malabar,name;state,tamarind,tamarind - Malabar,1,1,,,Malabar,,,,tamarind,1    ,,Malabar
+16,4,salt - as per taste,state,salt,salt,,,,,as per taste,,as per taste,,salt,,,
+16,5,1/4 cup coconut - scrape,name;state,coconut,coconut - scrape,4-Jan,4-Jan,cup,cup,scrape,,,,coconut, 1/4,cup,scraped
+16,9,2 onions - peel and chop,state,onions,onions,2,2,,,peel and chop,,peel and chop,,onions,2    ,,peeled and chopped
+16,12,2 dry red chillies - break,name;state,dry red chillies,dry red chillies - break,2,2,,,break,,,,dry red chillies,2    ,,broken
+17,5,1 inch Ginger - chopped,qty;unit,Ginger,Ginger,1,,inch,,chopped,chopped,,,Ginger,1    ,inch,
+17,10,Coconut Oil - for cooking,state,Coconut Oil,Coconut Oil,,,,,for cooking,,,for cooking,Coconut Oil,,,
+17,11,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+17,14,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+18,9,Sunflower Oil - for deep frying,state,Sunflower Oil,Sunflower Oil,,,,,for deep frying,,,for deep frying,Sunflower Oil,,,
+19,1,1/2 kg Fish - (I have used sardine cleaned and cut),state,Fish,Fish,2-Jan,2-Jan,kg,kilogram,(I have used sardine cleaned and cut),,(I have used sardine cleaned and cut),,Fish, 1/2,kg,cleaned and cut
+19,2,Tamarind Water - extract from a big lemon sized tamarind,state,Tamarind Water,Tamarind Water,,,,,extract from a big lemon sized tamarind,,extract from a big lemon sized tamarind,,Tamarind Water,,,
+19,7,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+20,7,1 Cardamom (Elaichi) Pods/Seeds,unit,Cardamom (Elaichi) Pods/Seeds,Cardamom (Elaichi) Pods/Seeds,1,1,,Pod,,,,,Cardamom (Elaichi) Pods/Seeds,1    ,,
+21,5,1/4 cup Gram flour (besan),name,Gram flour (besan),Grams flour (besan),4-Jan,4-Jan,cup,cup,,,,,Gram flour (besan), 1/4,cup,
+21,8,Salt - Pinch,qty;unit;state,Salt,Salt,,1,,Pinch,Pinch,,,,Salt,1    ,pinch,
+22,8,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+22,9,Coconut Oil - for cooking,state,Coconut Oil,Coconut Oil,,,,,for cooking,,,for cooking,Coconut Oil,,,
+23,6,1/4 teaspoon Enos fruit salt - optional,state,Enos fruit salt,Enos fruit salt,4-Jan,4-Jan,teaspoon,teaspoon,optional,,optional,,Enos fruit salt, 1/4,teaspoon,
+23,7,Ghee - for cooking,state,Ghee,Ghee,,,,,for cooking,,,for cooking,Ghee,,,
+23,8,Salt - a pinch,state,Salt,Salt,,,,,a pinch,,a pinches,,Salt,1    ,pinch,
+24,2,Tamarind - small lemon sized,name;state,Tamarind,Tamarind; lemon sized,,,,,small lemon sized,,,,Tamarind,1    ,,small lemon sized
+24,6,1/4 teaspoon Asafoetida (hing) - powder,name;state,Asafoetida (hing),Asafoetida (hing) - powder,4-Jan,4-Jan,teaspoon,teaspoon,powder,,,,Asafoetida (hing), 1/4,teaspoon,powdered
+24,8,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+24,11,2-3 Dry Red Chillies,qty,Dry Red Chillies,Dry Red Chillies,3-Feb,2,,,,,,,Dry Red Chillies,2-3,,
+25,5,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+25,9,2-1/2 teaspoons Coriander Powder (Dhania),qty,Coriander Powder (Dhania),Coriander Powder (Dhania),2/1/2002,2-Jan,teaspoons,teaspoon,,,,,Coriander Powder (Dhania),2 1/2,teaspoons,
+25,10,1-1/2 teaspoons Kashmiri Red Chilli Powder,qty,Kashmiri Red Chilli Powder,Kashmiri Red Chilli Powder,1/1/2002,2-Jan,teaspoons,teaspoon,,,,,Kashmiri Red Chilli Powder,1 1/2,teaspoons,
+25,15,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+25,16,2 tablespoons Coconut Oil - as required,state,Coconut Oil,Coconut Oil,2,2,tablespoons,tablespoon,as required,,as required,,Coconut Oil,2    ,tablespoon,
+26,2,1 Tamarind - malabar,name;state,Tamarind,Tamarind - malabar,1,1,,,malabar,,,,Tamarind,1    ,,Malabar
+26,3,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+27,3,1 cup Curd (Dahi / Yogurt) - or buttermilk,name;state,Curd (Dahi / Yogurt),Curd Yogurt; buttermilk,1,1,cup,cup,or buttermilk,,Dahi,,Curd (Dahi / Yogurt),1    ,cup,
+27,4,pinch Turmeric powder (Haldi) - to reduce bitter from bitter gourd,qty;state,Turmeric powder (Haldi),Turmeric powder (Haldi),,1,pinch,pinch,to reduce bitter from bitter gourd,,to reduce bitter from bitter gourd,,Turmeric powder (Haldi),1    ,pinch,
+27,5,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+27,12,Curry leaves - few,state,Curry leaves,Curry leaves,,,,,few,,,,Curry leaves,,,
+28,6,1 inch Ginger,qty;unit,Ginger,Ginger,1,,inch,,,,,,Ginger,1    ,inch,
+28,9,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+29,2,1 Green Chilli - adjustable,state,Green Chilli,Green Chilli,1,1,,,adjustable,,adjustable,,Green Chilli,1    ,,
+29,11,Tamarind - Gooseberry Sized,name;state,Tamarind,Tamarind; Gooseberry Sized,,,,,Gooseberry Sized,,,,Tamarind,1    ,,gooseberry sized
+29,12,Sunflower Oil - as required,state,Sunflower Oil,Sunflower Oil,,,,,as required,,as required,,Sunflower Oil,,,
+29,13,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+30,4,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+31,8,1 dry red chili - Break it,state,dry red chili,dry red chili,1,1,,,Break it,,Break it,,dry red chili,1    ,,broken
+31,10,salt - as per taste,state,salt,salt,,,,,as per taste,,as per taste,,salt,,,
+32,1,1-1/2 cups Mixed dry fruits - I used apricot,qty;state,Mixed dry fruits,Mixed dry fruits,1/1/2002,2-Jan,cups,cup,I used apricot,,I used apricot,,Mixed dry fruits,1 1/2,cups,
+32,2,3/4 cup Rum - or Double with orange juice,state,Rum,Rum,4-Mar,4-Mar,cup,cup,or Double with orange juice,,or Double with orange juice,,Rum, 3/4,cup,
+32,8,3 Cloves (Laung),name;unit,(Laung),Cloves,3,3,Cloves,,,,(Laung),,Cloves (Laung),3    ,,cloves
+32,9,3 Cardamom (Elaichi) Pods/Seeds,unit,Cardamom (Elaichi) Pods/Seeds,Cardamom (Elaichi) Pods/Seeds,3,3,,Pods,,,,,Cardamom (Elaichi) Pods/Seeds,3    ,,
+32,15,1-1/2 cups Mixed nuts - I used almond,qty;state,Mixed nuts,Mixed nuts,1/1/2002,2-Jan,cups,cup,I used almond,,I used almond,,Mixed nuts,1 1/2,cups,
+33,1,1 Mango (Ripe) - peel & slice,name;unit;state,Mango (Ripe),Mango (Ripe) - peel,1,1,,slice,peel & slice,,,,Mango (Ripe),1    ,,peeled and sliced
+33,9,2 to 3 Dry Red Chilli,qty,Dry Red Chilli,Dry Red Chilli,2to3,2,,,,,,,Dry Red Chilli,2-3,,
+33,12,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+34,7,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+34,8,Coconut Oil - as required,state,Coconut Oil,Coconut Oil,,,,,as required,,as required,,Coconut Oil,,,
+34,12,1 inch Ginger - chopped,qty;unit,Ginger,Ginger,1,,inch,,chopped,chopped,,,Ginger,1    ,inch,
+35,5,3 tablespoons Fresh coconut - or dessicated coconut (grated),name,Fresh coconut,Fresh coconut; dessicated coconut,3,3,tablespoons,tablespoon,or dessicated coconut (grated),(grated),,,Fresh coconut,3    ,tablespoons,
+36,3,500 ml Champagne - or Sparkling wine,name;state,Champagne,Champagne; Sparkling wine,500,500,ml,milliliter,or Sparkling wine,,,,Champagne,500    ,ml,
+36,5,1/4 cup Guava - cubes (optional),name;state,Guava,Guava - cubes,4-Jan,4-Jan,cup,cup,cubes (optional),,(optional),,Guava, 1/4,cup,cubed
+36,6,1/4 cup Papaya - cubes (optional),name;state,Papaya,Papaya - cubes,4-Jan,4-Jan,cup,cup,cubes (optional),,(optional),,Papaya, 1/4,cup,cubed
+37,7,100 ml Rum - or orange juice (adjust),name;state,Rum,Rum; orange juice (adjust),100,100,ml,milliliter,or orange juice (adjust),,,,Rum,100    ,ml,
+38,5,1 inch Ginger,qty;unit,Ginger,Ginger,1,,inch,,,,,,Ginger,1    ,inch,
+38,7,1 inch Cinnamon Stick (Dalchini),name;qty;unit,Cinnamon Stick (Dalchini),Cinnamon Sticks (Dalchini),1,,inch,,,,,,Cinnamon Stick (Dalchini),1    ,inch,
+38,8,1 Cardamom (Elaichi) Pods/Seeds,unit,Cardamom (Elaichi) Pods/Seeds,Cardamom (Elaichi) Pods/Seeds,1,1,,Pod,,,,,Cardamom (Elaichi) Pods/Seeds,1    ,,
+38,15,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+38,16,Coconut Oil - for cooking,state,Coconut Oil,Coconut Oil,,,,,for cooking,,,for cooking,Coconut Oil,,,
+39,2,2-1 / 2 cups water,qty;unit,water,water,2/1/2002,1,cups,,,,,,water,2 1/2,cups,
+39,6,1-1 / 2 teaspoon red chilli powder,qty;unit,red chilli powder,red chilli powder,1/1/2002,1,teaspoon,,,,,,red chilli powder,1 1/2,teaspoon,
+40,1,500 grams Prawns - tiger,name;state,Prawns,Prawns - tiger,500,500,grams,gram,tiger,,,,Prawns,500    ,grams,tiger
+40,8,1-1/2 teaspoon Cumin seeds (Jeera),qty,Cumin seeds (Jeera),Cumin seeds (Jeera),1/1/2002,2-Jan,teaspoon,teaspoon,,,,,Cumin seeds (Jeera),1 1/2,teaspoon,
+40,9,Turmeric powder (Haldi) - a pinch (optional),qty;unit;state,Turmeric powder (Haldi),Turmeric powder (Haldi),,1,,pinch,a pinch (optional),,(optional),,Turmeric powder (Haldi),1    ,pinch,
+40,11,Curry leaves - Few,state,Curry leaves,Curry leaves,,,,,Few,,,,Curry leaves,,,
+40,13,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+41,4,1 to 2 Green Chillies - slit lengthwise (use as per spice tolerance) 1/2 tablespoon kashmiri chili powder (use as per spice tolerance),name;qty,Green Chillies,Green Chillies; kashmiri chili powder,1to2,1,,,slit lengthwise (use as per spice tolerance) 1/2 tablespoon kashmiri chili powder (use as per spice tolerance),slit lengthwise,(use as per spice tolerance),,Green Chillies,1-2,,slit lengthwise
+41,7,1/2 teaspoon Fennel seeds (Saunf) - in case you don't have fennel seeds you could use cumin seeds,state,Fennel seeds (Saunf),Fennel seeds (Saunf),2-Jan,2-Jan,teaspoon,teaspoon,in case you don't have fennel seeds you could use cumin seeds,,in case you don't have fennel seeds you could use cumin seeds,,Fennel seeds (Saunf), 1/2,teaspoon,
+41,10,1/2 cup Coconut milk - thick,state,Coconut milk,Coconut milk,2-Jan,2-Jan,cup,cup,thick,,,,Coconut milk, 1/2,cup,thick
+41,11,Coconut Oil - or vegetable oil as required,name;state,Coconut Oil,Coconut Oil; vegetable oil,,,,,or vegetable oil as required,,as required,,Coconut Oil,,,
+42,8,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+42,9,Curry leaves - a sprig,qty;unit;state,Curry leaves,Curry leaves,,1,,sprig,a sprig,,,,Curry leaves,1    ,sprig,
+43,2,1/2 cup green peas - optional,state,green peas,green peas,2-Jan,2-Jan,cup,cup,optional,,optional,,green peas, 1/2,cup,
+43,3,1 sprig curry leaf,name,curry leaf,curry leaves,1,1,sprig,sprig,,,,,curry leaf,1    ,sprig,
+43,8,Salt - as per taste,state,Salt,Salt,,,,,as per taste,,as per taste,,Salt,,,
+43,9,1 tsp oil - as per use,state,oil,oil,1,1,tsp,teaspoon,as per use,,as per use,,oil,1    ,tsp,
+44,2,20 green beans - chop,state,green beans,green beans,20,20,,,chop,,chop,,green beans,20    ,,chopped
+44,7,1 teaspoon salt - as per taste,state,salt,salt,1,1,teaspoon,teaspoon,as per taste,,as per taste,,salt,1    ,teaspoon,
+45,4,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+45,5,1 tablespoon Extra Virgin Olive Oil - to toss,state,Extra Virgin Olive Oil,Extra Virgin Olive Oil,1,1,tablespoon,tablespoon,to toss,,to toss,,Extra Virgin Olive Oil,1    ,tablespoon,
+46,5,1 3/4 cup Coconut milk,qty,Coconut milk,Coconut milk,1/3/2004,4-Jul,cup,cup,,,,,Coconut milk,1 3/4,cup,
+46,7,Sunflower Oil - for deep frying,state,Sunflower Oil,Sunflower Oil,,,,,for deep frying,,,for deep frying,Sunflower Oil,,,
+47,8,1 inch Ginger,qty;unit,Ginger,Ginger,1,,inch,,,,,,Ginger,1    ,inch,
+47,10,1 inch Cinnamon Stick (Dalchini),name;qty;unit,Cinnamon Stick (Dalchini),Cinnamon Sticks (Dalchini),1,,inch,,,,,,Cinnamon Stick (Dalchini),1    ,inch,
+47,11,4 Cloves (Laung),name;unit,(Laung),Cloves,4,4,Cloves,,,,(Laung),,Cloves (Laung),4    ,,cloves
+47,14,Sunflower Oil - as required,state,Sunflower Oil,Sunflower Oil,,,,,as required,,as required,,Sunflower Oil,,,
+48,2,3 1/2 cups Water,qty,Water,Water,3/1/2002,2-Jul,cups,cup,,,,,Water,3 1/2,cups,
+48,4,1 teaspoon Cardamom (Elaichi) Pods/Seeds,unit,Cardamom (Elaichi) Pods/Seeds,Cardamom (Elaichi) Pods/Seeds,1,1,teaspoon,teaspoon Pod,,,,,Cardamom (Elaichi) Pods/Seeds,1    ,teaspoon,
+49,1,2 Mooli/ Mullangi (Radish) - julienned and steamed,name,Mooli/ Mullangi (Radish),Mooli/Mullangi (Radish),2,2,,,julienned and steamed,julienned and steamed,,,Mooli/ Mullangi (Radish),,,
+49,10,1 inch Ginger,qty;unit,Ginger,Ginger,1,,inch,,,,,,Ginger,1    ,inch,
+49,11,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+51,2,1-1/2 cups Water,qty,Water,Water,1/1/2002,2-Jan,cups,cup,,,,,Water,1 1/2,cups,
+51,3,5 Shallots - (pearl onions),state,Shallots,Shallots,5,5,,,(pearl onions),,(pearl onions),,Shallots (pearl onions),,,
+51,4,1 inch Ginger - finely chopped,qty;unit,Ginger,Ginger,1,,inch,,finely chopped,finely chopped,,,Ginger,1    ,inch,
+51,5,3 Garlic - cloves,unit;state,Garlic,Garlic,3,3,,cloves,cloves,,,,Garlic,3    ,clove,
+51,13,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+52,12,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+53,5,1/2 inch Ginger,qty;unit,Ginger,Ginger,2-Jan,,inch,,,,,,Ginger, 1/2,inch,
+53,8,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+54,5,1 teaspoon Salt - to taste,state,Salt,Salt,1,1,teaspoon,teaspoon,to taste,,to taste,,Salt,1    ,teaspoon,
+55,2,Sunflower Oil - as required,state,Sunflower Oil,Sunflower Oil,,,,,as required,,as required,,Sunflower Oil,,,
+55,11,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+56,4,1-1/2 teaspoons Salt,qty,Salt,Salt,1/1/2002,2-Jan,teaspoons,teaspoon,,,,,Salt,1 1/2,teaspoons,
+56,8,1 inch Ginger - crushed or a coarse paste,name;qty;unit;state,Ginger,Ginger; crushed a coarse paste,1,,inch,,crushed or a coarse paste,,,,Ginger,1    ,inch,crushed
+56,9,6 cloves Garlic - crushed or a coarse paste,name;state,Garlic,Garlic; crushed a coarse paste,6,6,cloves,cloves,crushed or a coarse paste,,,,Garlic,6    ,,"cloves, crushed"
+56,16,1 cup Coconut milk - thick,state,Coconut milk,Coconut milk,1,1,cup,cup,thick,,,,Coconut milk,1    ,cup,thick
+56,17,Salt - as per your taste,state,Salt,Salt,,,,,as per your taste,,as per your taste,,Salt,,,
+57,5,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+58,8,2 Cardamom (Elaichi) Pods/Seeds - powdered,unit,Cardamom (Elaichi) Pods/Seeds,Cardamom (Elaichi) Pods/Seeds,2,2,,Pods,powdered,powdered,,,Cardamom (Elaichi) Pods/Seeds,2    ,,pods/seeds
+59,1,500 grams Sardine fish - (mathi,name;state,Sardine fish,Sardine fish - mathi,500,500,grams,gram,(mathi,,,,Sardine fish,500    ,grams,
+59,4,1-1/2 teaspoon Ginger Garlic Paste,qty,Ginger Garlic Paste,Ginger Garlic Paste,1/1/2002,2-Jan,teaspoon,teaspoon,,,,,Ginger Garlic Paste,1 1/2,teaspoon,
+59,6,1 tablespoon Red Chilli powder - (add more if you like more spicy),state,Red Chilli powder,Red Chilli powder,1,1,tablespoon,tablespoon,(add more if you like more spicy),,(add more if you like more spicy),,Red Chilli powder,1    ,tablespoon,
+59,9,1-1/2 teaspoon Black pepper powder,qty,Black pepper powder,Black pepper powder,1/1/2002,2-Jan,teaspoon,teaspoon,,,,,Black pepper powder,1 1/2,teaspoon,
+59,14,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+59,15,Water - as required,state,Water,Water,,,,,as required,,as required,,Water,,,
+60,2,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+60,4,1 teaspoon Red Chilli powder - (add according to taste),state,Red Chilli powder,Red Chilli powder,1,1,teaspoon,teaspoon,(add according to taste),,(add according to taste),,Red Chilli powder,1    ,teaspoon,
+60,6,2 teaspoons Mustard seeds - ground coarsely using a mortar pestle/ spice grinder,name,Mustard seeds,Mustard seeds spice grinder,2,2,teaspoons,teaspoon,ground coarsely using a mortar pestle/ spice grinder,ground coarsely using a mortar pestle,,,Mustard seeds,2    ,teaspoons,
+61,15,salt - to taste,state,salt,salt,,,,,to taste,,to taste,,salt,,,
+62,2,6 Fresh coconut - chunks,name;state,Fresh coconut,Fresh coconut - chunks,6,6,,,chunks,,,,Fresh coconut,6    ,,chunks
+62,4,1 inch Cinnamon Stick (Dalchini),name;qty;unit,Cinnamon Stick (Dalchini),Cinnamon Sticks (Dalchini),1,,inch,,,,,,Cinnamon Stick (Dalchini),1    ,inch,
+62,5,1 Bay leaf (tej patta),name,Bay leaf (tej patta),Bay leaves (tej patta),1,1,,,,,,,Bay leaf (tej patta),1    ,,
+62,6,2 inch Ginger,qty;unit,Ginger,Ginger,2,,inch,,,,,,Ginger,2    ,inch,
+62,11,2 teaspoons Kashmiri Red Chilli Powder - adjustable,state,Kashmiri Red Chilli Powder,Kashmiri Red Chilli Powder,2,2,teaspoons,teaspoon,adjustable,,adjustable,,Kashmiri Red Chilli Powder,2    ,teaspoons,
+62,12,1 teaspoons Red Chilli powder - adjustable,state,Red Chilli powder,Red Chilli powder,1,1,teaspoons,teaspoon,adjustable,,adjustable,,Red Chilli powder,1    ,teaspoons,
+62,15,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+62,16,Sunflower Oil - as required,state,Sunflower Oil,Sunflower Oil,,,,,as required,,as required,,Sunflower Oil,,,
+63,7,4 Cardamom (Elaichi) Pods/Seeds,unit,Cardamom (Elaichi) Pods/Seeds,Cardamom (Elaichi) Pods/Seeds,4,4,,Pods,,,,,Cardamom (Elaichi) Pods/Seeds,4    ,,
+63,8,3 tablespoons Jaggery - (adjust to taste),state,Jaggery,Jaggery,3,3,tablespoons,tablespoon,(adjust to taste),,(adjust to taste),,Jaggery,3    ,tablespoons,
+63,9,1/4 teaspoon Salt - or to taste,state,Salt,Salt,4-Jan,4-Jan,teaspoon,teaspoon,or to taste,,or to taste,,Salt, 1/4,teaspoon,
+64,4,1 tablespoon Fennel seeds (Saunf) - pound,unit;state,Fennel seeds (Saunf),Fennel seeds (Saunf),1,1,tablespoon,pound * tablespoon,pound,,,,Fennel seeds (Saunf),1    ,tablespoon,pounded
+65,4,1 Cardamom (Elaichi) Pods/Seeds,unit,Cardamom (Elaichi) Pods/Seeds,Cardamom (Elaichi) Pods/Seeds,1,1,,Pod,,,,,Cardamom (Elaichi) Pods/Seeds,1    ,,pods/seeds
+66,4,1 teaspoon Active dry yeast -  + 1/2 cup of luke warm water,name;state,Active dry yeast,Active dry yeast; luke warm water,1,1,teaspoon,teaspoon,+ 1/2 cup of luke warm water,,,,Active dry yeast,1    ,teaspoon,
+66,6,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+67,5,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+67,12,2-1/2 tablespoons Water,qty,Water,Water,2/1/2002,2-Jan,tablespoons,tablespoon,,,,,Water,2 1/2,tablespoons,
+67,13,1-1/2 teaspoons Coconut Oil,qty,Coconut Oil,Coconut Oil,1/1/2002,2-Jan,teaspoons,teaspoon,,,,,Coconut Oil,1 1/2,teaspoons,
+68,9,Ghee - for cooking,state,Ghee,Ghee,,,,,for cooking,,,for cooking,Ghee,,,
+69,1,500 grams Mutton - with bone (adds flavour),name;state,Mutton,Mutton (adds flavour),500,500,grams,gram,with bone (adds flavour),,with bone,,Mutton,500    ,grams,with bone
+69,3,Salt - as per your taste,state,Salt,Salt,,,,,as per your taste,,as per your taste,,Salt,,,
+69,8,2 inch Ginger - finely chopped,qty;unit,Ginger,Ginger,2,,inch,,finely chopped,finely chopped,,,Ginger,2    ,inch,
+69,16,Salt - as per your taste,state,Salt,Salt,,,,,as per your taste,,as per your taste,,Salt,,,
+70,5,1 inch Ginger - chopped,qty;unit,Ginger,Ginger,1,,inch,,chopped,chopped,,,Ginger,1    ,inch,
+70,13,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+70,14,Coconut Oil - for cooking,state,Coconut Oil,Coconut Oil,,,,,for cooking,,,for cooking,Coconut Oil,,,
+71,5,salt - to taste,state,salt,salt,,,,,to taste,,to taste,,salt,,,
+72,8,salt - as per taste,state,salt,salt,,,,,as per taste,,as per taste,,salt,,,
+72,9,oil - as per use,state,oil,oil,,,,,as per use,,as per use,,oil,,,
+73,2,oil - as per use,state,oil,oil,,,,,as per use,,as per use,,oil,,,
+73,11,salt - as per taste,state,salt,salt,,,,,as per taste,,as per taste,,salt,,,
+74,6,1 inch Ginger,qty;unit,Ginger,Ginger,1,,inch,,,,,,Ginger,1    ,inch,
+74,15,Sunflower Oil - as required,state,Sunflower Oil,Sunflower Oil,,,,,as required,,as required,,Sunflower Oil,,,
+74,16,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+75,5,turmeric powder - a pinch,state,turmeric powder,turmeric powder,,,,,a pinch,,a pinches,,turmeric powder,1    ,pinch,
+75,7,1/2 teaspoon Fennel - or cumin,name;state,Fennel,Fennel; cumin,2-Jan,2-Jan,teaspoon,teaspoon,or cumin,,,,Fennel, 1/2,teaspoon,
+75,8,1/2 teaspoon fenugreek seeds - grind,state,fenugreek seeds,fenugreek seeds,2-Jan,2-Jan,teaspoon,teaspoon,grind,,grinds,,fenugreek seeds, 1/2,teaspoon,ground
+75,11,coconut oil - as per use,state,coconut oil,coconut oil,,,,,as per use,,as per use,,coconut oil,,,
+76,3,1 tablespoon Red Chilli powder - (adjust),name;state,Red Chilli powder,Red Chilli powder - (adjust),1,1,tablespoon,tablespoon,(adjust),,,,Red Chilli powder,1    ,tablespoon,
+76,7,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+76,8,Coconut Oil - for shallow frying,state,Coconut Oil,Coconut Oil,,,,,for shallow frying,,,for shallow frying,Coconut Oil,,,
+76,9,Curry leaves - a few sprigs,qty;unit;state,Curry leaves,Curry leaves,,few,,sprigs,a few sprigs,,,,Curry leaves,,sprig,
+77,8,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+78,9,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+79,1,1-1/2 Green peas (Matar),qty,Green peas (Matar),Green peas (Matar),1/1/2002,2-Jan,,,,,,,Green peas (Matar),1 1/2,cups,(fixed from original recipe)
+79,9,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+80,4,1 inch Ginger - minced,qty;unit,Ginger,Ginger,1,,inch,,minced,minced,,,Ginger,1    ,inch,
+80,8,2 teaspoon Chicken masala - (you can use other too but I prefer eastern masalas for kerala style preparations),state,Chicken masala,Chicken masala,2,2,teaspoon,teaspoon,(you can use other too but I prefer eastern masalas for kerala style preparations),,(you cans use other too but I prefer eastern masalas for kerala style preparations),,Chicken masala,2    ,teaspoon,
+80,10,2 Cloves (Laung),name;unit,(Laung),Cloves,2,2,Cloves,,,,(Laung),,Cloves (Laung),2    ,,cloves
+80,11,1 inch Cinnamon Stick (Dalchini),name;qty;unit,Cinnamon Stick (Dalchini),Cinnamon Sticks (Dalchini),1,,inch,,,,,,Cinnamon Stick (Dalchini),1    ,inch,
+80,12,Curry leaves - Handful,state,Curry leaves,Curry leaves,,,,,Handful,,Handfuls,,Curry leaves,1    ,handful,
+81,8,1 inch Ginger - grated,qty;unit,Ginger,Ginger,1,,inch,,grated,grated,,,Ginger,1    ,inch,
+81,9,6 to 7 cloves Garlic - finely chopped,qty,Garlic,Garlic,6to7,6,cloves,clove,finely chopped,finely chopped,,,Garlic,6-7,cloves,
+81,10,Salt - as per taste,state,Salt,Salt,,,,,as per taste,,as per taste,,Salt,,,
+81,11,40 grams Instant Oats (Oatmeal) - Masala one,state,Instant Oats (Oatmeal),Instant Oats (Oatmeal),40,40,grams,gram,Masala one,,Masala,,Instant Oats (Oatmeal),40    ,grams,masala
+81,14,1 inch Cinnamon Stick (Dalchini),name;qty;unit,Cinnamon Stick (Dalchini),Cinnamon Sticks (Dalchini),1,,inch,,,,,,Cinnamon Stick (Dalchini),1    ,inch,
+82,5,1 inch Ginger - chopped,qty;unit,Ginger,Ginger,1,,inch,,chopped,chopped,,,Ginger,1    ,inch,
+82,16,Coconut Oil - for cooking,state,Coconut Oil,Coconut Oil,,,,,for cooking,,,for cooking,Coconut Oil,,,
+82,17,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+83,5,1-1/2 teaspoons Mustard seeds,qty,Mustard seeds,Mustard seeds,1/1/2002,2-Jan,teaspoons,teaspoon,,,,,Mustard seeds,1 1/2,teaspoons,
+83,12,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+84,4,salt - as per taste,state,salt,salt,,,,,as per taste,,as per taste,,salt,,,
+84,5,1 tablespoon olive oil - as per use,state,olive oil,olive oil,1,1,tablespoon,tablespoon,as per use,,as per use,,olive oil,1    ,tablespoon,
+85,4,5 Cardamom (Elaichi) Pods/Seeds,unit,Cardamom (Elaichi) Pods/Seeds,Cardamom (Elaichi) Pods/Seeds,5,5,,Pods,,,,,Cardamom (Elaichi) Pods/Seeds,5    ,,
+85,7,Ghee - as required,state,Ghee,Ghee,,,,,as required,,as required,,Ghee,,,
+86,9,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+86,10,1-1/2 cups Fresh coconut - grated,qty,Fresh coconut,Fresh coconut,1/1/2002,2-Jan,cups,cup,grated,grated,,,Fresh coconut,1 1/2,cups,
+86,15,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+87,6,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+87,9,1/2 cup Fresh coconut - pieces,qty;unit;state,Fresh coconut,Fresh coconut,2-Jan,1,cup,piece,pieces,,,,Fresh coconut, 1/2,cup,pieces
+88,4,1 cup Coconut milk - thick (1st extract),state,Coconut milk,Coconut milk,1,1,cup,cup,thick (1st extract),,thick (1st extract),,Coconut milk,1    ,cup,thick (1st extract)
+88,5,1-1/2 cups Coconut milk - (2nd & 3rd extract),qty;state,Coconut milk,Coconut milk,1/1/2002,2-Jan,cups,cup,(2nd & 3rd extract),,(2nd & 3rd extract),,Coconut milk,1 1/2,cups,2nd & 3rd extract
+88,8,2 teaspoons Fresh coconut - slices,qty;unit;state,Fresh coconut,Fresh coconut,2,1,teaspoons,slice,slices,,,,Fresh coconut,2    ,teaspoons,slices
+88,10,Ghee - as required,state,Ghee,Ghee,,,,,as required,,as required,,Ghee,,,
+89,1,300 grams Banana Stem - peeled and cut into dices,name,Banana Stem,Banana Stems,300,300,grams,gram,peeled and cut into dices,peeled and cut into dices,,,Banana Stem,300    ,grams,
+89,5,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+90,6,2 Cardamom (Elaichi) Pods/Seeds - powdered,unit,Cardamom (Elaichi) Pods/Seeds,Cardamom (Elaichi) Pods/Seeds,2,2,,Pods,powdered,powdered,,,Cardamom (Elaichi) Pods/Seeds,2    ,,pods/seeds
+91,4,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+91,7,1 inch Ginger - grated,qty;unit,Ginger,Ginger,1,,inch,,grated,grated,,,Ginger,1    ,inch,
+92,4,1 inch Ginger - chopped,qty;unit,Ginger,Ginger,1,,inch,,chopped,chopped,,,Ginger,1    ,inch,
+92,9,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+92,10,Coconut Oil - for cooking,state,Coconut Oil,Coconut Oil,,,,,for cooking,,,for cooking,Coconut Oil,,,
+93,1,1 cup Cauliflower (gobi) - florets,name;state,Cauliflower (gobi),Cauliflower (gobi); florets,1,1,cup,cup,florets,,,,Cauliflower (gobi),1    ,cup,florets
+93,3,2 to 3 tablespoons Green peas (Matar) - fresh or frozen,qty;state,Green peas (Matar),Green peas (Matar),2to3,2,tablespoons,tablespoon,fresh or frozen,,fresh or frozen,,Green peas (Matar),2-3,tablespoons,
+93,12,1 inch Cinnamon Stick (Dalchini),name;qty;unit,Cinnamon Stick (Dalchini),Cinnamon Sticks (Dalchini),1,,inch,,,,,,Cinnamon Stick (Dalchini),1    ,inch,
+93,14,1 cup Coconut milk - thin,state,Coconut milk,Coconut milk,1,1,cup,cup,thin,,thin,,Coconut milk,1    ,cup,thin
+93,15,1/2 cup Coconut milk - thick,state,Coconut milk,Coconut milk,2-Jan,2-Jan,cup,cup,thick,,,,Coconut milk, 1/2,cup,thick
+93,16,Salt - as required,state,Salt,Salt,,,,,as required,,as required,,Salt,,,
+93,17,4 to 5 Cashew nuts - broken,qty,Cashew nuts,Cashew nuts,4to5,4,,,broken,broken,,,Cashew nuts,4-5,,
+93,18,Sunflower Oil - as required,state,Sunflower Oil,Sunflower Oil,,,,,as required,,as required,,Sunflower Oil,,,
+94,11,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+95,2,1 Cardamom (Elaichi) Pods/Seeds,unit,Cardamom (Elaichi) Pods/Seeds,Cardamom (Elaichi) Pods/Seeds,1,1,,Pod,,,,,Cardamom (Elaichi) Pods/Seeds,1    ,,pods/seeds
+95,4,5 Cloves (Laung),name;unit,(Laung),Cloves,5,5,Cloves,,,,(Laung),,Cloves (Laung),5    ,,cloves
+95,5,1 inch Cinnamon Stick (Dalchini),name;qty;unit,Cinnamon Stick (Dalchini),Cinnamon Sticks (Dalchini),1,,inch,,,,,,Cinnamon Stick (Dalchini),1    ,inch,
+95,7,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+95,8,1 inch Ginger,qty;unit,Ginger,Ginger,1,,inch,,,,,,Ginger,1    ,inch,
+96,7,1/2 tsp cardamom powder - more or less,state,cardamom powder,cardamom powder,2-Jan,2-Jan,tsp,teaspoon,more or less,,more or less,,cardamom powder, 1/2,tsp,
+96,8,3 tbsp jaggery - Add more or less salt to taste,state,jaggery,jaggery,3,3,tbsp,tablespoon,Add more or less salt to taste,,Add more or less salt to taste,,jaggery,3    ,tbsp,
+97,12,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+98,1,250 grams small potatoes - half cut,state,small potatoes,small potatoes,250,250,grams,gram,half cut,,half cut,,small potatoes,250    ,grams,halved
+98,5,1 inch ginger - chopped,qty;unit,ginger,ginger,1,,inch,,chopped,chopped,,,ginger,1    ,inch,
+98,16,coconut oil - to cook,state,coconut oil,coconut oil,,,,,to cook,,to cook,,coconut oil,,,
+98,17,salt - to taste,state,salt,salt,,,,,to taste,,to taste,,salt,,,
+99,1,1 cup Red matta rice - or Basmati Rice,name;state,Red matta rice,Red matta rice; Basmati Rice,1,1,cup,cup,or Basmati Rice,,,,Red matta rice,1    ,cup,
+99,2,1-1/2 cups Fresh coconut - grated,qty,Fresh coconut,Fresh coconut,1/1/2002,2-Jan,cups,cup,grated,grated,,,Fresh coconut,1 1/2,cups,
+100,2,1 inch Cinnamon Stick (Dalchini),name;qty;unit,Cinnamon Stick (Dalchini),Cinnamon Sticks (Dalchini),1,,inch,,,,,,Cinnamon Stick (Dalchini),1    ,inch,
+100,10,1 inch Ginger - chopped,qty;unit,Ginger,Ginger,1,,inch,,chopped,chopped,,,Ginger,1    ,inch,
+100,14,Coconut Oil - for cooking,state,Coconut Oil,Coconut Oil,,,,,for cooking,,,for cooking,Coconut Oil,,,
+100,15,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+100,19,Coconut Oil - for cooking,state,Coconut Oil,Coconut Oil,,,,,for cooking,,,for cooking,Coconut Oil,,,
+101,2,turmeric powder - a pinch,state,turmeric powder,turmeric powder,,,,,a pinch,,a pinches,,turmeric powder,1    ,pinch,
+101,8,Coconut oil - as per use,state,Coconut oil,Coconut oil,,,,,as per use,,as per use,,Coconut oil,,,
+102,8,Sunflower Oil - as required,state,Sunflower Oil,Sunflower Oil,,,,,as required,,as required,,Sunflower Oil,,,
+102,9,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+102,10,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+103,8,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+104,5,1 raw banana - peel and chop straight,state,raw banana,raw banana,1,1,,,peel and chop straight,,peel and chop straight,,raw banana,1    ,,peeled and cut straight
+104,6,2 potatoes - peel and chop straight,state,potatoes,potatoes,2,2,,,peel and chop straight,,peel and chop straight,,potatoes,2    ,,peeled and cut straight
+104,7,250 grams Yam - peel and chop,state,Yam,Yam,250,250,grams,gram,peel and chop,,peel and chop,,Yam,250    ,grams,peeled and chopped
+104,8,1-1 / 2 cup coconut - grated,qty;unit,coconut,coconut,1/1/2002,1,cup,,grated,grated,,,coconut,1 1/2,cup,
+104,13,salt - as per taste,state,salt,salt,,,,,as per taste,,as per taste,,salt,,,
+105,4,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+106,10,1 inch Ginger - thin slices,qty;unit,Ginger,Ginger,1,,inch,,thin slices,thin slices,,,Ginger,1    ,inch,
+106,13,2 teaspoon Fresh coconut - (1/2 inch size),state,Fresh coconut,Fresh coconut,2,2,teaspoon,teaspoon,(1/2 inch size),,,,Fresh coconut,2    ,teaspoon,1/2 inch size
+108,10,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+109,2,3-1/2 cups Water,qty,Water,Water,3/1/2002,2-Jan,cups,cup,,,,,Water,3 1/2,cups,
+109,3,Salt - (if required),state,Salt,Salt,,,,,(if required),,(if required),,Salt,,,
+110,3,10 Shallots - or 1 large onion,state,Shallots,Shallots,10,10,,,or 1 large onion,,or 1 large onion,,Shallots,10    ,,
+110,5,1 teaspoon Red Chilli flakes - adjust as per spice tolerance,state,Red Chilli flakes,Red Chilli flakes,1,1,teaspoon,teaspoon,adjust as per spice tolerance,,adjust as per spice tolerance,,Red Chilli flakes,1    ,teaspoon,
+110,6,Salt - as per taste,state,Salt,Salt,,,,,as per taste,,as per taste,,Salt,,,
+110,8,Coconut Oil - enough to shallow fry,state,Coconut Oil,Coconut Oil,,,,,enough to shallow fry,,enough to shallow fry,,Coconut Oil,,,
+110,9,2 tablespoons Fresh coconut - pieces,qty;unit;state,Fresh coconut,Fresh coconut,2,1,tablespoons,piece,pieces,,,,Fresh coconut,2    ,tablespoons,pieces
+111,1,1 cup Rice puttu - or wheat puttu,name;state,Rice puttu,Rice puttu; wheat puttu,1,1,cup,cup,or wheat puttu,,,,Rice puttu,1    ,cup,
+111,10,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+112,1,250 grams Horse Gram Dal (Kollu/ Kulith) - Sprouted,name,Horse Gram Dal (Kollu/ Kulith),Horse Grams Dal Kulith,250,250,grams,gram,Sprouted,Sprouted,Kollu,,Horse Gram Dal (Kollu/ Kulith),250    ,grams,
+112,5,1/2 inch Ginger,qty;unit,Ginger,Ginger,2-Jan,,inch,,,,,,Ginger, 1/2,inch,
+112,9,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+113,6,3 Garlic - cloves,unit;state,Garlic,Garlic,3,3,,cloves,cloves,,,,Garlic,3    ,clove,
+114,2,1 cup Cashew nuts - unsalted,name;state,Cashew nuts,Cashew nuts - unsalted,1,1,cup,cup,unsalted,,,,Cashew nuts,1    ,cup,unsalted
+114,3,1 cup Jaggery - powdered or brown sugar,name;state,Jaggery,Jaggery; powdered brown sugar,1,1,cup,cup,powdered or brown sugar,,,,Jaggery,1    ,cup,powdered
+115,15,Coconut Oil - for cooking,state,Coconut Oil,Coconut Oil,,,,,for cooking,,,for cooking,Coconut Oil,,,
+115,16,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+116,4,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+116,6,1 cup Curd (Dahi / Yogurt) - thick and sour,state,Curd (Dahi / Yogurt),Curd (Dahi / Yogurt),1,1,cup,cup,thick and sour,,"Dahi, thick and sour",,Curd (Dahi / Yogurt),1    ,cup,thick and sour
+117,10,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+117,15,2 inch Ginger,qty;unit,Ginger,Ginger,2,,inch,,,,,,Ginger,2    ,inch,
+117,18,1-1/2 teaspoon Whole Black Peppercorns,qty,Whole Black Peppercorns,Whole Black Peppercorns,1/1/2002,2-Jan,teaspoon,teaspoon,,,,,Whole Black Peppercorns,1 1/2,teaspoon,
+117,19,1 inch Cinnamon Stick (Dalchini),name;qty;unit,Cinnamon Stick (Dalchini),Cinnamon Sticks (Dalchini),1,,inch,,,,,,Cinnamon Stick (Dalchini),1    ,inch,
+117,20,3 Cloves (Laung),name;unit,(Laung),Cloves,3,3,Cloves,,,,(Laung),,Cloves (Laung),3    ,,cloves
+118,5,4-5 Black pepper powder,qty,Black pepper powder,Black pepper powder,5-Apr,4,,,,,,,Black pepper powder,4-5,tsp,fixed from original recipe
+118,7,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+119,6,2 inch Ginger,qty;unit,Ginger,Ginger,2,,inch,,,,,,Ginger,2    ,inch,
+119,10,1 teaspoon Coconut Oil - adjustable,state,Coconut Oil,Coconut Oil,1,1,teaspoon,teaspoon,adjustable,,adjustable,,Coconut Oil,1    ,teaspoon,
+119,13,2 Kokum (Malabar Tamarind) - for the curry,state,Kokum (Malabar Tamarind),Kokum (Malabar Tamarind),2,2,,,for the curry,,,for the curry,Kokum (Malabar Tamarind),2    ,,
+119,14,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+120,3,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+120,5,3 Green Chillies - (adjust),name;state,Green Chillies,Green Chillies - (adjust),3,3,,,(adjust),,,,Green Chillies,3    ,,
+121,10,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+122,5,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+123,5,1 Onions - red,state,Onions,Onions,1,1,,,red,,red,,Onions,1    ,,red
+123,7,1/2 inch Ginger - peeled and grated (optional),qty;unit,Ginger,Ginger,2-Jan,,inch,,peeled and grated (optional),peeled and grated,(optional),,Ginger, 1/2,inch,
+123,8,1/2 cup Coconut milk - thin,state,Coconut milk,Coconut milk,2-Jan,2-Jan,cup,cup,thin,,thin,,Coconut milk, 1/2,cup,thin
+123,9,3/4 cup Coconut milk - thick,state,Coconut milk,Coconut milk,4-Mar,4-Mar,cup,cup,thick,,,,Coconut milk, 3/4,cup,thick
+123,10,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+123,11,1/2 inch Cinnamon Stick (Dalchini),name;qty;unit,Cinnamon Stick (Dalchini),Cinnamon Sticks (Dalchini),2-Jan,,inch,,,,,,Cinnamon Stick (Dalchini), 1/2,inch,
+123,12,1 Bay leaf (tej patta),name,Bay leaf (tej patta),Bay leaves (tej patta),1,1,,,,,,,Bay leaf (tej patta),1    ,sprig,
+123,13,10 to 12 Whole Black Peppercorns,qty,Whole Black Peppercorns,Whole Black Peppercorns,10to12,10,,,,,,,Whole Black Peppercorns,10-12,,
+123,14,1 Cardamom (Elaichi) Pods/Seeds,unit,Cardamom (Elaichi) Pods/Seeds,Cardamom (Elaichi) Pods/Seeds,1,1,,Pod,,,,,Cardamom (Elaichi) Pods/Seeds,1    ,,pods/seeds
+124,2,1-1/2 tablespoons Sunflower Oil,qty,Sunflower Oil,Sunflower Oil,1/1/2002,2-Jan,tablespoons,tablespoon,,,,,Sunflower Oil,1 1/2,tablespoons,
+124,4,Curry leaves - few sprigs,qty;unit;state,Curry leaves,Curry leaves,,few,,sprigs,few sprigs,,,,Curry leaves,,sprig,
+124,6,1/2 inch Ginger - grated,qty;unit,Ginger,Ginger,2-Jan,,inch,,grated,grated,,,Ginger, 1/2,inch,
+124,10,1 inch Cinnamon Stick (Dalchini),name;qty;unit,Cinnamon Stick (Dalchini),Cinnamon Sticks (Dalchini),1,,inch,,,,,,Cinnamon Stick (Dalchini),1    ,inch,
+124,11,1 Cardamom (Elaichi) Pods/Seeds,unit,Cardamom (Elaichi) Pods/Seeds,Cardamom (Elaichi) Pods/Seeds,1,1,,Pod,,,,,Cardamom (Elaichi) Pods/Seeds,1    ,,pods/seeds
+124,12,3 Cloves (Laung),name;unit,(Laung),Cloves,3,3,Cloves,,,,(Laung),,Cloves (Laung),3    ,,cloves
+125,1,1 cup cabbage - wash and chop finely,state,cabbage,cabbage,1,1,cup,cup,wash and chop finely,,wash and chop finely,,cabbage,1    ,cup,washed and finely chopped
+125,7,salt - as per taste,state,salt,salt,,,,,as per taste,,as per taste,,salt,,,
+125,8,Oil - 5 tablespoons coconut - as per use,name;qty;unit;state,Oil,Oil; coconut,,5,,tablespoon,5 tablespoons coconut - as per use,,as per use,,Coconut Oil,5    ,tablespoon,
+125,11,3 cloves garlic - chop,name;state,garlic,garlic - chop,3,3,cloves,cloves,chop,,,,garlic,3    ,,"cloves, chopped"
+125,12,2 green chillies - chop,state,green chillies,green chillies,2,2,,,chop,,chop,,green chillies,2    ,,chopped
+126,4,1/2 inch Ginger - grated,qty;unit,Ginger,Ginger,2-Jan,,inch,,grated,grated,,,Ginger, 1/2,inch,
+127,6,1 teaspoon Coconut Oil - or regular oil,name;state,Coconut Oil,Coconut Oil; regular oil,1,1,teaspoon,teaspoon,or regular oil,,,,Coconut Oil,1    ,teaspoon,
+127,12,1 teaspoon Salt - adjust as per your taste,state,Salt,Salt,1,1,teaspoon,teaspoon,adjust as per your taste,,adjust as per your taste,,Salt,1    ,teaspoon,
+128,3,1 inch Ginger - finely chopped,qty;unit,Ginger,Ginger,1,,inch,,finely chopped,finely chopped,,,Ginger,1    ,inch,
+128,8,1/4 cup Fresh coconut - pieces,qty;unit;state,Fresh coconut,Fresh coconut,4-Jan,1,cup,piece,pieces,,,,Fresh coconut, 1/4,cup,pieces
+128,12,Water - enough to cook the prawns,state,Water,Water,,,,,enough to cook the prawns,,enough to cook the prawns,,Water,,,
+128,13,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+129,1,1-1/2 cups Mixed vegetables - (potatoes,name;qty;state,Mixed vegetables,Mixed vegetables - potatoes,1/1/2002,2-Jan,cups,cup,(potatoes,,,,Mixed vegetables,1 1/2,cups,
+129,5,1 inch Ginger - thinly sliced,qty;unit,Ginger,Ginger,1,,inch,,thinly sliced,thinly sliced,,,Ginger,1    ,inch,
+129,8,1 cup Coconut milk - thin,state,Coconut milk,Coconut milk,1,1,cup,cup,thin,,thin,,Coconut milk,1    ,cup,thin
+129,9,1 cup Coconut milk - thick,state,Coconut milk,Coconut milk,1,1,cup,cup,thick,,,,Coconut milk,1    ,cup,thick
+129,15,2 sprig Mint Leaves (Pudina) - made to paste,state,Mint Leaves (Pudina),Mint Leaves (Pudina),2,2,sprig,sprigs,made to paste,,made to paste,,Mint Leaves (Pudina),2    ,sprig,paste
+129,16,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+130,4,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+131,2,1/2 cup Bajra Flour ( Pearl Millet),name,Bajra Flour ( Pearl Millet),Bajra Flour (Pearl Millet),2-Jan,2-Jan,cup,cup,,,,,Bajra Flour (Pearl Millet), 1/2,cup,
+131,5,Salt - as required,state,Salt,Salt,,,,,as required,,as required,,Salt,,,
+131,6,Water - as required,state,Water,Water,,,,,as required,,as required,,Water,,,
+132,2,1 tablespoon Ghee - for dough,state,Ghee,Ghee,1,1,tablespoon,tablespoon,for dough,,,for dough,Ghee,1    ,tablespoon,
+132,7,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+133,2,6 Cardamom (Elaichi) Pods/Seeds,unit,Cardamom (Elaichi) Pods/Seeds,Cardamom (Elaichi) Pods/Seeds,6,6,,Pods,,,,,Cardamom (Elaichi) Pods/Seeds,6    ,,pods/seeds
+133,3,6 Cloves (Laung),name;unit,(Laung),Cloves,6,6,Cloves,,,,(Laung),,Cloves (Laung),6    ,,cloves
+133,4,1 Cinnamon Stick (Dalchini),name,Cinnamon Stick (Dalchini),Cinnamon Sticks (Dalchini),1,1,,,,,,,Cinnamon Stick (Dalchini),1    ,,
+133,8,3-4 tablespoons Lemon juice,qty,Lemon juice,Lemon juice,4-Mar,3,tablespoons,tablespoon,,,,,Lemon juice,3-4,tablespoons,
+133,9,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+133,14,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+133,16,1/2 tablespoon Ginger - paste,name;state,Ginger,Ginger - paste,2-Jan,2-Jan,tablespoon,tablespoon,paste,,,,Ginger, 1/2,tablespoon,paste
+133,17,1/2 tablespoon Garlic - paste,name;state,Garlic,Garlic - paste,2-Jan,2-Jan,tablespoon,tablespoon,paste,,,,Garlic, 1/2,tablespoon,paste
+133,18,5 - 6 Green Chillies,qty;state,Green Chillies,Green Chillies,6-May,5,,,6 Green Chillies,,,,Green Chillies,5-6,,
+133,19,2 - 3 Tomatoes - finely chopped,qty,Tomatoes,Tomatoes,3-Feb,2,,,3 Tomatoes - finely chopped,finely chopped,,,Tomatoes,2-3,,
+133,20,1 Fresh coconut - handful,unit;state,Fresh coconut,Fresh coconut,1,1,,handful,handful,,,,Fresh coconut,1    ,handful,
+133,21,1 Coriander (Dhania) Leaves - handful,unit;state,Coriander (Dhania) Leaves,Coriander (Dhania) Leaves,1,1,,Leaf handful,handful,,,,Coriander (Dhania) Leaves,1    ,handful,
+133,24,6 - 8 Cashew nuts - soaked in 2 tablespoons water,qty,Cashew nuts,Cashew nuts,8-Jun,6,,,8 Cashew nuts - soaked in 2 tablespoons water,soaked in 2 tablespoons water,,,Cashew nuts,6-8,,
+133,26,Sunflower Oil - vegetable oil,name;state,Sunflower Oil,Sunflower Oil - vegetable oil,,,,,vegetable oil,,,,Sunflower Oil,,,
+133,27,1 Salt - to taste,state,Salt,Salt,1,1,,,to taste,,to taste,,Salt,,,
+133,28,1 Cashew nuts - handful,unit;state,Cashew nuts,Cashew nuts,1,1,,handful,handful,,,,Cashew nuts,1    ,handful,
+133,29,1 Raisins - handful,unit;state,Raisins,Raisins,1,1,,handful,handful,,,,Raisins,1    ,handful,
+134,8,Water - as required,state,Water,Water,,,,,as required,,as required,,Water,,,
+134,9,Sunflower Oil - to deep fry,state,Sunflower Oil,Sunflower Oil,,,,,to deep fry,,to deep fry,,Sunflower Oil,,,
+135,8,10 Shallots - whole or cut into half,state,Shallots,Shallots,10,10,,,whole or cut into half,,whole or cut into half,,Shallots,10    ,,whole or halved
+135,9,1-1/2 cup Tamarind Water,qty,Tamarind Water,Tamarind Water,1/1/2002,2-Jan,cup,cup,,,,,Tamarind Water,1 1/2,cup,
+135,14,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+135,22,1 Curry leaves - few,state,Curry leaves,Curry leaves,1,1,,,few,,,,Curry leaves,1    ,,
+136,8,1 inch Ginger - finely chopped,qty;unit,Ginger,Ginger,1,,inch,,finely chopped,finely chopped,,,Ginger,1    ,inch,
+136,12,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+137,4,20 grams Tamarind - lemon sized,state,Tamarind,Tamarind,20,20,grams,gram,lemon sized,,lemon sized,,Tamarind,20    ,grams,lemon sized
+137,13,Coconut Oil - for cooking,state,Coconut Oil,Coconut Oil,,,,,for cooking,,,for cooking,Coconut Oil,,,
+137,14,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+139,12,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+140,1,2 cups Drumstick Leaves (Moringa/Murungai Keerai) - or Murrungai Keerai,name;state,Drumstick Leaves (Moringa/Murungai Keerai),Drumstick Leaves Murungai Keerai; Murrungai Keerai,2,2,cups,cup,or Murrungai Keerai,,Moringa,,Drumstick Leaves (Moringa/Murungai Keerai),2    ,cups,
+140,3,1 inch Ginger - chopped,qty;unit,Ginger,Ginger,1,,inch,,chopped,chopped,,,Ginger,1    ,inch,
+140,6,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+140,7,Coconut Oil - for cooking,state,Coconut Oil,Coconut Oil,,,,,for cooking,,,for cooking,Coconut Oil,,,
+141,5,1 teaspoon Ginger - paste,name;state,Ginger,Ginger - paste,1,1,teaspoon,teaspoon,paste,,,,Ginger,,teaspoon,paste
+141,13,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+142,8,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,
+143,2,2-1/2 cups Water,qty,Water,Water,2/1/2002,2-Jan,cups,cup,,,,,Water,2 1/2,cups,
+143,3,8 Garlic - cloves,unit;state,Garlic,Garlic,8,8,,cloves,cloves,,,,Garlic,8    ,clove,
+143,6,1-1/2 teaspoon Red Chilli powder,qty,Red Chilli powder,Red Chilli powder,1/1/2002,2-Jan,teaspoon,teaspoon,,,,,Red Chilli powder,1 1/2,teaspoon,
+144,11,Salt - as required,state,Salt,Salt,,,,,as required,,as required,,Salt,,,
+145,1,1.5 cups Red Black Eyed Beans (Azuki),qty,Red Black Eyed Beans (Azuki),Red Black Eyed Beans (Azuki),1.5,2-Mar,cups,cup,,,,,Red Black Eyed Beans (Azuki),1 1/2,cups,
+145,6,Coriander (Dhania) Leaves - few sprigs,qty;unit;state,Coriander (Dhania) Leaves,Coriander (Dhania) Leaves,,few,,sprigs,few sprigs,,Leaves,,Coriander (Dhania) Leaves,,sprig,
+145,8,Salt - to taste,state,Salt,Salt,,,,,to taste,,to taste,,Salt,,,

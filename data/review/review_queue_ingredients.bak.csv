@@ -1,245 +1,228 @@
-norm_key,n_lines,generic_name,link_rule,link_confidence,n_candidates,candidate_codes,candidate_names,ifct_code,food_group,chosen_ifct_code,status,notes
-salt,135,Salt,none,,0,,,,,,absent,not in IFCT; zero-macro sentinel
-curry leaves,111,Curry leaves,exact,1.0,1,G010,Curry leaves,G010,Condiments and Spices,,auto,
-turmeric powder haldi,82,Turmeric powder (Haldi),subset,0.8,1,G033,Turmeric powder,G033,Condiments and Spices,,auto,
-fresh coconut,80,Fresh coconut,subset,0.8,1,H007,"Coconut, kernel, fresh",H007,Nuts and Oil Seeds,,auto,
-coconut oil,72,Coconut Oil,exact,1.0,1,T001,Coconut oil,T001,Edible Oils and Fats,,auto,
-green chilli,67,Green Chillies,tokenset,0.9,8,G001;G002;G003;G004;G005;G006;G007;G008,"Chillies, green-1;Chillies, green-2;Chillies, green-3;Chillies, green-4;Chillies, green-5;Chillies, green-6;Chillies, green-7;Chillies, green - all varieties",G008,Condiments and Spices,,auto,IFCT 'all varieties' aggregate
-mustard seed,60,Mustard seeds,exact,1.0,1,H013,Mustard seeds,H013,Nuts and Oil Seeds,,auto,
-garlic,50,Garlic,subset,0.8,3,G011;G012;G013,"Garlic, big cloves;Garlic, small cloves;Garlic, single clove, Kashmir",,,,needs_pick,"3 varieties, no IFCT aggregate row"
-onion,48,Onion,subset,0.8,3,D058;G017;G018,"Onion, stalk;Onion, big;Onion, small",,,,needs_name_fix,candidates span 2 food groups
-cumin seed jeera,41,Cumin seeds (Jeera),subset,0.8,1,G025,Cumin seeds,G025,Condiments and Spices,,auto,
-ginger,40,Ginger,subset,0.8,2,G014;G015,"Ginger, fresh;Mango ginger",,,,needs_pick,"2 varieties, no IFCT aggregate row"
-dry red chilli,38,Dry Red Chillies,subset,0.8,1,G022,"Chillies, red",G022,Condiments and Spices,,auto,
-red chilli powder,34,Red Chilli powder,subset,0.8,1,G022,"Chillies, red",G022,Condiments and Spices,,auto,
-sunflower oil,30,Sunflower Oil,exact,1.0,1,T012,Sunflower oil,T012,Edible Oils and Fats,,auto,
-tomato,29,Tomato,subset,0.8,3,D074;D075;D076,"Tomato, green;Tomato, ripe, hybrid;Tomato, ripe, local",,,,needs_pick,"3 varieties, no IFCT aggregate row"
-water,29,Water,subset,0.8,5,E065;E066;F016;K002;S003,"Water melon, dark green (sugar baby);Water melon, pale green;Water Chestnut;Coconut water;Fresh water Eel",,,,absent,not an IFCT food; melon/coconut hits are modifier collisions
-coconut milk,23,Coconut milk,partial,0.5,7,H006;H007;K002;L001;L002;P037;T001,"Coconut, kernel, dry;Coconut, kernel, fresh;Coconut water;Milk, whole, Buffalo;Milk, whole, Cow;Milk fish;Coconut oil",,,,absent,not in IFCT; derive from H007 or USDA
-black pepper powder,21,Black pepper powder,subset,0.8,1,G031,"Pepper, black",G031,Condiments and Spices,,auto,
-ghee,18,Ghee,exact,1.0,1,T013,Ghee,T013,Edible Oils and Fats,,auto,
-shallot,18,Shallots,none,,0,,,,,,no_candidate,no candidate at any rung
-pearl onion sambar onion,17,Pearl onions (Sambar Onions),partial,0.5,3,D058;G017;G018,"Onion, stalk;Onion, big;Onion, small",,,,needs_partial,3 ranked candidates
-jaggery,16,Jaggery,subset,0.8,1,I001,"Jaggery, cane",I001,Sugars,,auto,
-sugar,16,Sugar,subset,0.8,1,E065,"Water melon, dark green (sugar baby)",,,,absent,refined sugar not in IFCT; melon hit is a modifier collision
-coriander dhania leaves,15,Coriander (Dhania) Leaves,subset,0.8,1,G009,Coriander leaves,G009,Condiments and Spices,,auto,
-coriander powder dhania,14,Coriander Powder (Dhania),partial,0.5,3,G009;G024;G033,Coriander leaves;Coriander seeds;Turmeric powder,,,,needs_partial,3 ranked candidates
-cashew nut,13,Cashew nuts,exact,1.0,1,H005,Cashew nut,H005,Nuts and Oil Seeds,,auto,
-fennel seed saunf,13,Fennel seeds (Saunf),partial,0.5,8,G024;G025;G026;G032;H013;H017;H019;H020,Coriander seeds;Cumin seeds;Fenugreek seeds;Poppy seeds;Mustard seeds;Pine seeds;Safflower seeds;Sunflower seeds,,,,needs_partial,8 ranked candidates
-white urad dal split,13,White Urad Dal (Split),partial,0.5,3,B006;B013;P057,"Cowpea, white;Lentil, dal;Pomfret, white",,,,needs_partial,3 ranked candidates
-cardamom elaichi pod seed,12,Cardamom (Elaichi) Pods/Seeds,partial,0.5,10,G020;G021;G024;G025;G026;G032;H013;H017;H019;H020,"Cardamom, green;Cardamom, black;Coriander seeds;Cumin seeds;Fenugreek seeds;Poppy seeds;Mustard seeds;Pine seeds;Safflower seeds;Sunflower seeds",,,,needs_partial,10 ranked candidates
-cinnamon stick dalchini,12,Cinnamon Stick (Dalchini),none,,0,,,,,,no_candidate,no candidate at any rung
-coconut,12,coconut,subset,0.8,4,H006;H007;K002;T001,"Coconut, kernel, dry;Coconut, kernel, fresh;Coconut water;Coconut oil",,,,needs_name_fix,candidates span 3 food groups
-whole black peppercorn,12,Whole Black Peppercorns,partial,0.667,10,B004;A020;B018;E013;E015;G021;G031;P006;P055;R004,"Black gram, whole;Wheat, whole;Rajmah, black;Black berry;Currants, black;Cardamom, black;Pepper, black;Black snapper;Pomfret, black;Squid, black",,,,needs_partial,10 ranked candidates
-turmeric powder,12,turmeric powder,exact,1.0,1,G033,Turmeric powder,G033,Condiments and Spices,,auto,
-lemon juice,11,Lemon juice,exact,1.0,1,E033,"Lemon, juice",E033,Fruits,,auto,
-cardamom powder elaichi,10,Cardamom Powder (Elaichi),partial,0.5,3,G020;G021;G033,"Cardamom, green;Cardamom, black;Turmeric powder",,,,needs_partial,3 ranked candidates
-chicken,10,Chicken,subset,0.8,7,J002;N001;N002;N003;N004;N005;N006,"Chicken mushroom, fresh;Chicken, poultry, leg, skinless;Chicken, poultry, thigh, skinless;Chicken, poultry, breast, skinless;Chicken, poultry, wing, skinless;Poultry, chicken, liver;Poultry, chicken, gizzard",,,,needs_name_fix,candidates span 2 food groups
-coriander dhania seed,10,Coriander (Dhania) Seeds,subset,0.8,1,G024,Coriander seeds,G024,Condiments and Spices,,auto,
-garam masala powder,10,Garam masala powder,partial,0.5,1,G033,Turmeric powder,,,,needs_partial,1 ranked candidates
-kashmiri red chilli powder,10,Kashmiri Red Chilli Powder,subset,0.8,1,G022,"Chillies, red",G022,Condiments and Spices,,auto,
-methi seed fenugreek seed,10,Methi Seeds (Fenugreek Seeds),subset,0.8,1,G026,Fenugreek seeds,G026,Condiments and Spices,,auto,
-mustard,10,mustard,subset,0.8,3,C026;H013;T006,Mustard leaves;Mustard seeds;Mustard oil,,,,needs_name_fix,candidates span 3 food groups
-carrot gajjar,9,Carrots (Gajjar),partial,0.5,2,F002;F003,"Carrot, orange;Carrot, red",,,,needs_partial,2 ranked candidates
-cloves laung,9,Cloves (Laung),subset,0.8,1,G023,Cloves,G023,Condiments and Spices,,auto,
-curd dahi yogurt,9,Curd (Dahi / Yogurt),none,,0,,,,,,absent,no curd row in Milk & Milk Products; USDA fallback
-rice,9,Rice,subset,0.8,6,A011;A012;A013;A014;A015;T008,"Rice, flakes;Rice, puffed;Rice, raw, brown;Rice, parboiled, milled;Rice, raw, milled;Rice bran oil",,,,needs_name_fix,candidates span 2 food groups
-rice flour,9,Rice flour,partial,0.5,8,A011;A012;A013;A014;A015;A018;A019;T008,"Rice, flakes;Rice, puffed;Rice, raw, brown;Rice, parboiled, milled;Rice, raw, milled;Wheat flour, refined;Wheat flour, atta;Rice bran oil",,,,needs_partial,8 ranked candidates
-milk,8,Milk,subset,0.8,3,L001;L002;P037,"Milk, whole, Buffalo;Milk, whole, Cow;Milk fish",,,,needs_name_fix,candidates span 2 food groups
-potato aloo,8,Potato (Aloo),partial,0.5,5,F006;F007;F008;F013;F014,"Potato, brown skin, big;Potato, brown skin, small;Potato, red skin;Sweet potato, brown skin;Sweet potato, pink skin",,,,needs_partial,5 ranked candidates
-raw banana,8,Raw Banana,partial,0.5,15,A013;A015;D051;D057;D059;E009;E010;E011;E012;M001;M002;M003;M008;M012;M014,"Rice, raw, brown;Rice, raw, milled;Jack fruit, raw;Mango, green, raw;Papaya, raw;Banana, ripe, montham;Banana, ripe, poovam;Banana, ripe, red;Banana, ripe, robusta;Egg, poultry, whole, raw;Egg, poultry, white, raw;Egg, poultry, yolk, raw;Egg, country hen, whole, raw;Egg, duck, whole, raw;Egg, quial, whole, raw",,,,needs_partial,15 ranked candidates
-oil,8,oil,subset,0.8,12,T001;T002;T003;T004;T005;T006;T007;T008;T009;T010;T011;T012,Coconut oil;Corn oil;Cotton seed oil;Gingelly oil;Groundnut oil;Mustard oil;Palm oil;Rice bran oil;Safflower oil;Safflower oil (blended);Soyabean oil;Sunflower oil,,,,needs_pick,"12 varieties, no IFCT aggregate row"
-ginger garlic paste,7,Ginger Garlic Paste,partial,0.5,2,G014;G015,"Ginger, fresh;Mango ginger",,,,needs_partial,2 ranked candidates
-mint leaf pudina,7,Mint Leaves (Pudina),partial,0.5,4,C019;C020;C031;G016,Drumstick leaves;Fenugreek leaves;Radish leaves;Mint leaves,,,,needs_partial,4 ranked candidates
-tamarind,7,Tamarind,subset,0.8,3,C034;E044;E064,"Tamarind leaves, tender;Manila tamarind;Tamarind, pulp",,,,needs_name_fix,candidates span 2 food groups
-baking soda,6,Baking soda,none,,0,,,,,,no_candidate,no candidate at any rung
-elephant yam suran senai ratalu,6,Elephant yam (Suran/Senai/Ratalu),subset,0.8,1,F017,"Yam, elephant",F017,Roots and Tubers,,auto,
-green bean french bean,6,Green beans (French Beans),partial,0.667,20,D049;D050;B016;C015;D032;D033;D039;D063;D074;D077;E002;G001;G002;G003;G004;G005;G006;G007;G008;G020,"French beans, country;French beans, hybrid;Moth bean;Cabbage, green;Broad beans;Capsicum, green;Cluster beans;Plantain, green;Tomato, green;Zucchini, green;Apple, green;Chillies, green-1;Chillies, green-2;Chillies, green-3;Chillies, green-4;Chillies, green-5;Chillies, green-6;Chillies, green-7;Chillies, green - all varieties;Cardamom, green",,,,needs_partial,20 ranked candidates
-kokum malabar tamarind,6,Kokum (Malabar Tamarind),partial,0.5,2,E044;E064,"Manila tamarind;Tamarind, pulp",,,,needs_partial,2 ranked candidates
-red matta rice,6,Red matta rice,partial,0.5,9,A011;A012;B020;D034;E014;F003;G022;P065;R006,"Rice, flakes;Rice, puffed;Rajmah, red;Capsicum, red;Cherries, red;Carrot, red;Chillies, red;Red snapper;Squid, red",,,,needs_partial,9 ranked candidates
-all purpose flour maida,5,All Purpose Flour (Maida),none,,0,,,,,,no_candidate,no candidate at any rung
-asafoetida hing,5,Asafoetida (hing),subset,0.8,1,G019,Asafoetida,G019,Condiments and Spices,,auto,
-bhindi lady finger okra,5,Bhindi (Lady Finger/Okra),subset,0.8,1,D056,Ladies finger,D056,Other Vegetables,,auto,
-drumstick,5,Drumstick,exact,1.0,1,D046,Drumstick,D046,Other Vegetables,,auto,
-fennel powder,5,Fennel Powder,partial,0.5,1,G033,Turmeric powder,,,,needs_partial,1 ranked candidates
-whole egg,5,Whole Eggs,subset,0.8,9,M001;M004;M008;M009;M011;M012;M013;M014;M015,"Egg, poultry, whole, raw;Egg, poultry, whole, boiled;Egg, country hen, whole, raw;Egg, country hen, whole, boiled;Egg, duck, whole, boiled;Egg, duck, whole, raw;Egg, duck, whole, omlet;Egg, quial, whole, raw;Egg, quial, whole, boiled",,,,needs_pick,"9 varieties, no IFCT aggregate row"
-whole wheat flour,5,Whole Wheat Flour,subset,0.8,1,A020,"Wheat, whole",A020,Cereals and Millets,,auto,
-cumin seed,5,cumin seeds,exact,1.0,1,G025,Cumin seeds,G025,Condiments and Spices,,auto,
-small onion,5,small onions,tokenset,0.9,1,G018,"Onion, small",G018,Condiments and Spices,,auto,
-chana dal bengal gram dal,4,Chana dal (Bengal Gram Dal),subset,0.8,1,B001,"Bengal gram, dal",B001,Grain Legumes,,auto,
-cumin powder jeera,4,Cumin powder (Jeera),partial,0.5,2,G025;G033,Cumin seeds;Turmeric powder,,,,needs_partial,2 ranked candidates
-green peas matar,4,Green Peas (Matar),partial,0.5,15,C015;D033;D063;D074;D077;E002;G001;G002;G003;G004;G005;G006;G007;G008;G020,"Cabbage, green;Capsicum, green;Plantain, green;Tomato, green;Zucchini, green;Apple, green;Chillies, green-1;Chillies, green-2;Chillies, green-3;Chillies, green-4;Chillies, green-5;Chillies, green-6;Chillies, green-7;Chillies, green - all varieties;Cardamom, green",,,,needs_partial,15 ranked candidates
-kaddu parangikai/ pumpkin,4,Kaddu (Parangikai/ Pumpkin),none,,0,,,,,,no_candidate,no candidate at any rung
-mango ripe,4,Mango (Ripe),subset,0.8,7,E036;E037;E038;E039;E040;E041;E042,"Mango, ripe, banganapalli;Mango, ripe, gulabkhas;Mango, ripe, himsagar;Mango, ripe, kesar;Mango, ripe, neelam;Mango, ripe, paheri;Mango, ripe, totapari",,,,needs_pick,"7 varieties, no IFCT aggregate row"
-methi powder fenugreek powder,4,Methi Powder (Fenugreek Powder),partial,0.5,3,C020;G026;G033,Fenugreek leaves;Fenugreek seeds;Turmeric powder,,,,needs_partial,3 ranked candidates
-mutton,4,Mutton,none,,0,,,,,,no_candidate,no candidate at any rung
-prawn,4,Prawns,subset,0.8,5,Q007;Q008;S008;S009;S010,"Tiger prawns, brown;Tiger Prawns, orange;Prawns, big;Prawns, small;Tiger prawns",,,,needs_name_fix,candidates span 2 food groups
-raisin,4,Raisins,subset,0.8,2,E057;E058,"Raisins, dried, black;Raisins, dried, golden",,,,needs_pick,"2 varieties, no IFCT aggregate row"
-ripe banana,4,Ripe Bananas,subset,0.8,4,E009;E010;E011;E012,"Banana, ripe, montham;Banana, ripe, poovam;Banana, ripe, red;Banana, ripe, robusta",,,,needs_pick,"4 varieties, no IFCT aggregate row"
-red chili powder,4,red chili powder,partial,0.5,8,B020;D034;E014;F003;G022;G033;P065;R006,"Rajmah, red;Capsicum, red;Cherries, red;Carrot, red;Chillies, red;Turmeric powder;Red snapper;Squid, red",,,,needs_partial,8 ranked candidates
-active dry yeast,3,Active dry yeast,partial,0.5,2,A006;B017,"Maize, dry;Peas, dry",,,,needs_partial,2 ranked candidates
-arhar dal split toor dal,3,Arhar dal (Split Toor Dal),partial,0.5,1,B013,"Lentil, dal",,,,needs_partial,1 ranked candidates
-bay leaf tej patta,3,Bay leaf (tej patta),partial,0.5,3,C019;C020;C031,Drumstick leaves;Fenugreek leaves;Radish leaves,,,,needs_partial,3 ranked candidates
-cinnamon,3,Cinnamon,none,,0,,,,,,no_candidate,no candidate at any rung
-cooked rice,3,Cooked rice,partial,0.5,6,A011;A012;A013;A014;A015;T008,"Rice, flakes;Rice, puffed;Rice, raw, brown;Rice, parboiled, milled;Rice, raw, milled;Rice bran oil",,,,needs_partial,6 ranked candidates
-dry ginger powder,3,Dry ginger powder,partial,0.5,5,A006;B017;G014;G015;G033,"Maize, dry;Peas, dry;Ginger, fresh;Mango ginger;Turmeric powder",,,,needs_partial,5 ranked candidates
-green chilie,3,Green Chilies,partial,0.5,38,B010;B011;C002;C004;C005;C006;C015;C018;C022;D007;D008;D009;D033;D041;D043;D044;D057;D063;D065;D070;D071;D074;D077;E002;E023;E026;E065;E066;G001;G002;G003;G004;G005;G006;G007;G008;G020;R001,"Green gram, dal;Green gram, whole;Amaranth leaves, green;Amaranth leaves, red and green;Amaranth, spinous, leaves, green;Amaranth, spinous, leaves, red and green;Cabbage, green;Colocasia leaves, green;Gogu leaves, green stem;Bottle gourd, elongate, pale green;Bottle gourd, round, pale green;Bottle gourd, elongate, dark green;Capsicum, green;Colocasia, stem, green;Cucumber, green, elongate;Cucumber, green, short;Mango, green, raw;Plantain, green;Pumpkin, green, cylindrical;Snake gourd, long, pale green;Snake gourd, long, dark green;Tomato, green;Zucchini, green;Apple, green;Grapes, seeded, round, green;Grapes, seedless, round, green;Water melon, dark green (sugar baby);Water melon, pale green;Chillies, green-1;Chillies, green-2;Chillies, green-3;Chillies, green-4;Chillies, green-5;Chillies, green-6;Chillies, green-7;Chillies, green - all varieties;Cardamom, green;Clam, green shell",,,,needs_partial,38 ranked candidates
-green moong dal whole,3,Green Moong Dal (Whole),partial,0.667,19,B010;B011;A020;B013;C015;D033;D063;D074;D077;E002;G001;G002;G003;G004;G005;G006;G007;G008;G020,"Green gram, dal;Green gram, whole;Wheat, whole;Lentil, dal;Cabbage, green;Capsicum, green;Plantain, green;Tomato, green;Zucchini, green;Apple, green;Chillies, green-1;Chillies, green-2;Chillies, green-3;Chillies, green-4;Chillies, green-5;Chillies, green-6;Chillies, green-7;Chillies, green - all varieties;Cardamom, green",,,,needs_partial,19 ranked candidates
-jackfruit ripe kathal,3,Jackfruit Ripe (Kathal),partial,0.5,1,E049,"Papaya, ripe",,,,needs_partial,1 ranked candidates
-lukewarm water,3,Lukewarm Water,partial,0.5,5,E065;E066;F016;K002;S003,"Water melon, dark green (sugar baby);Water melon, pale green;Water Chestnut;Coconut water;Fresh water Eel",,,,needs_partial,5 ranked candidates
-mango raw,3,Mango (Raw),subset,0.8,1,D057,"Mango, green, raw",D057,Other Vegetables,,auto,
-tamarind water,3,Tamarind Water,partial,0.5,8,C034;E044;E064;E065;E066;F016;K002;S003,"Tamarind leaves, tender;Manila tamarind;Tamarind, pulp;Water melon, dark green (sugar baby);Water melon, pale green;Water Chestnut;Coconut water;Fresh water Eel",,,,needs_partial,8 ranked candidates
-tapioca root,3,Tapioca root,subset,0.8,1,F015,Tapioca,F015,Roots and Tubers,,auto,
-vellai poosanikai ash gourd white pumpkin,3,Vellai Poosanikai (Ash gourd/White Pumpkin),subset,0.8,1,D001,Ash gourd,D001,Other Vegetables,,auto,
-yellow moong dal split,3,Yellow Moong Dal (Split),partial,0.5,3,B013;D035;D078,"Lentil, dal;Capsicum, yellow;Zucchini, yellow",,,,needs_partial,3 ranked candidates
-coriander powder,3,coriander powder,partial,0.5,3,G009;G024;G033,Coriander leaves;Coriander seeds;Turmeric powder,,,,needs_partial,3 ranked candidates
-badam almond,2,Badam (Almond),subset,0.8,1,H001,Almond,H001,Nuts and Oil Seeds,,auto,
-baking powder,2,Baking powder,partial,0.5,1,G033,Turmeric powder,,,,needs_partial,1 ranked candidates
-basmati rice,2,Basmati rice,partial,0.5,6,A011;A012;A013;A014;A015;T008,"Rice, flakes;Rice, puffed;Rice, raw, brown;Rice, parboiled, milled;Rice, raw, milled;Rice bran oil",,,,needs_partial,6 ranked candidates
-black urad dal split,2,Black Urad Dal (Split),partial,0.667,10,B003;B013;B018;E013;E015;G021;G031;P006;P055;R004,"Black gram, dal;Lentil, dal;Rajmah, black;Black berry;Currants, black;Cardamom, black;Pepper, black;Black snapper;Pomfret, black;Squid, black",,,,needs_partial,10 ranked candidates
-brinjal baingan eggplant,2,Brinjal (Baingan / Eggplant),subset,0.8,22,D010;D011;D012;D013;D014;D015;D016;D017;D018;D019;D020;D021;D022;D023;D024;D025;D026;D027;D028;D029;D030;D031,Brinjal 1;Brinjal 2;Brinjal 3;Brinjal 4;Brinjal 5;Brinjal 6;Brinjal 7;Brinjal 8;Brinjal 9;Brinjal 10;Brinjal 11;Brinjal 12;Brinjal 13;Brinjal 14;Brinjal 15;Brinjal 16;Brinjal 17;Brinjal 18;Brinjal 19;Brinjal 20;Brinjal 21;Brinjal - all varieties,D031,Other Vegetables,,auto,IFCT 'all varieties' aggregate
-butter unsalted,2,Butter (unsalted),none,,0,,,,,,no_candidate,no candidate at any rung
-cardamom elaichi pod seed powdered,2,Cardamom (Elaichi) Pods/Seeds (powdered),partial,0.5,10,G020;G021;G024;G025;G026;G032;H013;H017;H019;H020,"Cardamom, green;Cardamom, black;Coriander seeds;Cumin seeds;Fenugreek seeds;Poppy seeds;Mustard seeds;Pine seeds;Safflower seeds;Sunflower seeds",,,,needs_partial,10 ranked candidates
-chayote,2,Chayote,none,,0,,,,,,no_candidate,no candidate at any rung
-cinnamon powder dalchini,2,Cinnamon Powder (Dalchini),partial,0.5,1,G033,Turmeric powder,,,,needs_partial,1 ranked candidates
-drumstick leaf moringa murungai keerai,2,Drumstick Leaves (Moringa/Murungai Keerai),subset,0.8,2,C019;D046,Drumstick leaves;Drumstick,,,,needs_name_fix,candidates span 2 food groups
-dry red chili,2,Dry Red Chili,partial,0.5,9,A006;B017;B020;D034;E014;F003;G022;P065;R006,"Maize, dry;Peas, dry;Rajmah, red;Capsicum, red;Cherries, red;Carrot, red;Chillies, red;Red snapper;Squid, red",,,,needs_partial,9 ranked candidates
-dry coconut kopra,2,Dry coconut (kopra),partial,0.667,5,H006;A006;B017;K002;T001,"Coconut, kernel, dry;Maize, dry;Peas, dry;Coconut water;Coconut oil",,,,needs_partial,5 ranked candidates
-fish,2,Fish,subset,0.8,15,P004;P009;P016;P030;P037;P038;P051;P060;P061;P064;P077;P079;P092;S001;S004,"Ari fish;Cat fish;Guitar fish;Kite fish;Milk fish;Moon fish;Parrot fish;Queen fish;Raai fish;Ray fish, bow head, spotted;Silk fish;Sole fish;Eggs, cat fish;Cat fish;Gold fish",,,,needs_name_fix,candidates span 2 food groups
-ginger paste,2,Ginger Paste,partial,0.5,2,G014;G015,"Ginger, fresh;Mango ginger",,,,needs_partial,2 ranked candidates
-instant coffee powder,2,Instant Coffee Powder,partial,0.5,1,G033,Turmeric powder,,,,needs_partial,1 ranked candidates
-instant oat oatmeal,2,Instant Oats (Oatmeal),none,,0,,,,,,no_candidate,no candidate at any rung
-jackfruit raw kathal,2,Jackfruit Raw (Kathal),partial,0.5,1,D059,"Papaya, raw",,,,needs_partial,1 ranked candidates
-lemon,2,Lemon,subset,0.8,1,E033,"Lemon, juice",E033,Fruits,,auto,
-meat masala,2,Meat masala,partial,0.5,6,N011;N012;N013;N014;N015;O001,"Duck, meat, with skin;Emu, meat, skinless;Guinea fowl, meat, with skin;Pigeon, meat, with skin;Quail, meat, skinless;Goat, shoulder, meat",,,,needs_partial,6 ranked candidates
-nendra pazham banana ripe,2,Nendra Pazham Banana (Ripe),partial,0.667,5,E009;E010;E011;E012;E049,"Banana, ripe, montham;Banana, ripe, poovam;Banana, ripe, red;Banana, ripe, robusta;Papaya, ripe",,,,needs_partial,5 ranked candidates
-nutmeg powder,2,Nutmeg powder,subset,0.8,1,G028,Nutmeg,G028,Condiments and Spices,,auto,
-paprika powder,2,Paprika powder,partial,0.5,1,G033,Turmeric powder,,,,needs_partial,1 ranked candidates
-raw banana peel,2,Raw banana peel,partial,0.5,1,D059,"Papaya, raw",,,,needs_partial,1 ranked candidates
-raw papaya,2,Raw papaya,tokenset,0.9,1,D059,"Papaya, raw",D059,Other Vegetables,,auto,
-rum,2,Rum,none,,0,,,,,,no_candidate,no candidate at any rung
-seer fish,2,Seer fish,partial,0.5,15,P004;P009;P016;P030;P037;P038;P051;P060;P061;P064;P077;P079;P092;S001;S004,"Ari fish;Cat fish;Guitar fish;Kite fish;Milk fish;Moon fish;Parrot fish;Queen fish;Raai fish;Ray fish, bow head, spotted;Silk fish;Sole fish;Eggs, cat fish;Cat fish;Gold fish",,,,needs_partial,15 ranked candidates
-tamarind paste,2,Tamarind Paste,partial,0.5,3,C034;E044;E064,"Tamarind leaves, tender;Manila tamarind;Tamarind, pulp",,,,needs_partial,3 ranked candidates
-tutti frutti,2,Tutti frutti,none,,0,,,,,,no_candidate,no candidate at any rung
-vinegar,2,Vinegar,none,,0,,,,,,no_candidate,no candidate at any rung
-cabbage,2,cabbage,subset,0.8,4,C013;C014;C015;C016,"Cabbage, Chinese;Cabbage, collard greens;Cabbage, green;Cabbage, violet",,,,needs_pick,"4 varieties, no IFCT aggregate row"
-carrot,2,carrots,subset,0.8,2,F002;F003,"Carrot, orange;Carrot, red",,,,needs_pick,"2 varieties, no IFCT aggregate row"
-cumin,2,cumin,subset,0.8,1,G025,Cumin seeds,G025,Condiments and Spices,,auto,
-dry red chilie,2,dry red chilies,partial,0.5,9,A006;B017;B020;D034;E014;F003;G022;P065;R006,"Maize, dry;Peas, dry;Rajmah, red;Capsicum, red;Cherries, red;Carrot, red;Chillies, red;Red snapper;Squid, red",,,,needs_partial,9 ranked candidates
-green bean,2,green beans,partial,0.5,51,B007;B008;B009;B010;B011;B016;B024;B025;C002;C004;C005;C006;C015;C018;C022;D003;D007;D008;D009;D032;D033;D039;D041;D043;D044;D047;D048;D049;D050;D057;D063;D065;D070;D071;D074;D077;E002;E023;E026;E065;E066;G001;G002;G003;G004;G005;G006;G007;G008;G020;R001,"Field bean, black;Field bean, brown;Field bean, white;Green gram, dal;Green gram, whole;Moth bean;Soya bean, brown;Soya bean, white;Amaranth leaves, green;Amaranth leaves, red and green;Amaranth, spinous, leaves, green;Amaranth, spinous, leaves, red and green;Cabbage, green;Colocasia leaves, green;Gogu leaves, green stem;Bean scarlet, tender;Bottle gourd, elongate, pale green;Bottle gourd, round, pale green;Bottle gourd, elongate, dark green;Broad beans;Capsicum, green;Cluster beans;Colocasia, stem, green;Cucumber, green, elongate;Cucumber, green, short;Field beans, tender, broad;Field beans, tender, lean;French beans, country;French beans, hybrid;Mango, green, raw;Plantain, green;Pumpkin, green, cylindrical;Snake gourd, long, pale green;Snake gourd, long, dark green;Tomato, green;Zucchini, green;Apple, green;Grapes, seeded, round, green;Grapes, seedless, round, green;Water melon, dark green (sugar baby);Water melon, pale green;Chillies, green-1;Chillies, green-2;Chillies, green-3;Chillies, green-4;Chillies, green-5;Chillies, green-6;Chillies, green-7;Chillies, green - all varieties;Cardamom, green;Clam, green shell",,,,needs_partial,51 ranked candidates
-green chili,2,green chili,partial,0.5,38,B010;B011;C002;C004;C005;C006;C015;C018;C022;D007;D008;D009;D033;D041;D043;D044;D057;D063;D065;D070;D071;D074;D077;E002;E023;E026;E065;E066;G001;G002;G003;G004;G005;G006;G007;G008;G020;R001,"Green gram, dal;Green gram, whole;Amaranth leaves, green;Amaranth leaves, red and green;Amaranth, spinous, leaves, green;Amaranth, spinous, leaves, red and green;Cabbage, green;Colocasia leaves, green;Gogu leaves, green stem;Bottle gourd, elongate, pale green;Bottle gourd, round, pale green;Bottle gourd, elongate, dark green;Capsicum, green;Colocasia, stem, green;Cucumber, green, elongate;Cucumber, green, short;Mango, green, raw;Plantain, green;Pumpkin, green, cylindrical;Snake gourd, long, pale green;Snake gourd, long, dark green;Tomato, green;Zucchini, green;Apple, green;Grapes, seeded, round, green;Grapes, seedless, round, green;Water melon, dark green (sugar baby);Water melon, pale green;Chillies, green-1;Chillies, green-2;Chillies, green-3;Chillies, green-4;Chillies, green-5;Chillies, green-6;Chillies, green-7;Chillies, green - all varieties;Cardamom, green;Clam, green shell",,,,needs_partial,38 ranked candidates
-okra,2,okra,none,,0,,,,,,no_candidate,no candidate at any rung
-potato,2,potato,subset,0.8,5,F006;F007;F008;F013;F014,"Potato, brown skin, big;Potato, brown skin, small;Potato, red skin;Sweet potato, brown skin;Sweet potato, pink skin",,,,needs_pick,"5 varieties, no IFCT aggregate row"
-red chili,2,red chili,partial,0.5,21,B020;B021;B022;C003;C004;C006;C023;D034;D067;E011;E014;E024;F003;F008;F009;F011;G022;H003;P065;P066;R006,"Rajmah, red;Red gram, dal;Red gram, whole;Amaranth leaves, red;Amaranth leaves, red and green;Amaranth, spinous, leaves, red and green;Gogu leaves, red stem;Capsicum, red;Red gram, tender, fresh;Banana, ripe, red;Cherries, red;Grapes, seeded, round, red;Carrot, red;Potato, red skin;Radish, elongate, red skin;Radish, round, red skin;Chillies, red;Arecanut, dried, red color;Red snapper;Red snapper, small;Squid, red",,,,needs_partial,21 ranked candidates
-rye,2,rye,none,,0,,,,,,no_candidate,no candidate at any rung
-suran,2,suran,none,,0,,,,,,no_candidate,no candidate at any rung
-tsp cumin seed,1,2 tsp cumin seeds,subset,0.8,1,G025,Cumin seeds,,,,residue,unit token in name_raw; fix in parsing
-aachi fish masala,1,Aachi Fish Masala,partial,0.5,13,P004;P009;P016;P030;P037;P038;P051;P060;P061;P077;P079;S001;S004,Ari fish;Cat fish;Guitar fish;Kite fish;Milk fish;Moon fish;Parrot fish;Queen fish;Raai fish;Silk fish;Sole fish;Cat fish;Gold fish,,,,needs_partial,13 ranked candidates
-ada,1,Ada,none,,0,,,,,,no_candidate,no candidate at any rung
-asafoetida hing pinch,1,Asafoetida (hing) - a pinch,subset,0.8,1,G019,Asafoetida,,,,residue,unit token in name_raw; fix in parsing
-asafoetida hing powder,1,Asafoetida (hing) - powder,subset,0.8,1,G019,Asafoetida,G019,Condiments and Spices,,auto,
-ash gourd,1,Ash gourd,exact,1.0,1,D001,Ash gourd,D001,Other Vegetables,,auto,
-baby potato,1,Baby Potatoes,partial,0.5,7,D042;E065;F006;F007;F008;F013;F014,"Corn, baby;Water melon, dark green (sugar baby);Potato, brown skin, big;Potato, brown skin, small;Potato, red skin;Sweet potato, brown skin;Sweet potato, pink skin",,,,needs_partial,7 ranked candidates
-bajra flour pearl millet,1,Bajra Flour (Pearl Millet),subset,0.8,1,A003,Bajra,A003,Cereals and Millets,,auto,
-banana stem,1,Banana Stem,partial,0.5,9,C022;C023;D040;D041;D064;E009;E010;E011;E012,"Gogu leaves, green stem;Gogu leaves, red stem;Colocasia, stem, black;Colocasia, stem, green;Plantain, stem;Banana, ripe, montham;Banana, ripe, poovam;Banana, ripe, red;Banana, ripe, robusta",,,,needs_partial,9 ranked candidates
-banana flower vazhaipoo,1,Banana flower (Vazhaipoo),partial,0.5,1,D062,"Plantain, flower",,,,needs_partial,1 ranked candidates
-black eyed bean lobia,1,Black Eyed Beans (Lobia),partial,0.667,12,B007;B016;B018;D032;D039;E013;E015;G021;G031;P006;P055;R004,"Field bean, black;Moth bean;Rajmah, black;Broad beans;Cluster beans;Black berry;Currants, black;Cardamom, black;Pepper, black;Black snapper;Pomfret, black;Squid, black",,,,needs_partial,12 ranked candidates
-brown rice,1,Brown Rice,subset,0.8,1,A013,"Rice, raw, brown",A013,Cereals and Millets,,auto,
-butter,1,Butter,none,,0,,,,,,no_candidate,no candidate at any rung
-button mushroom,1,Button mushrooms,subset,0.8,1,J001,"Button mushroom, fresh",J001,Mushrooms,,auto,
-cabbage patta gobi/ muttaikose,1,Cabbage (Patta Gobi/ Muttaikose),partial,0.5,3,C013;C015;C016,"Cabbage, Chinese;Cabbage, green;Cabbage, violet",,,,needs_partial,3 ranked candidates
-candied orange peel,1,Candied orange peel,partial,0.5,2,E047;F002,"Orange, pulp;Carrot, orange",,,,needs_partial,2 ranked candidates
-caramel sauce,1,Caramel Sauce,none,,0,,,,,,no_candidate,no candidate at any rung
-caster sugar,1,Caster Sugar,partial,0.5,1,E065,"Water melon, dark green (sugar baby)",,,,needs_partial,1 ranked candidates
-cauliflower gobi,1,Cauliflower (gobi),subset,0.8,1,D036,Cauliflower,D036,Other Vegetables,,auto,
-champagne,1,Champagne,none,,0,,,,,,no_candidate,no candidate at any rung
-chicken masala,1,Chicken masala,partial,0.5,7,J002;N001;N002;N003;N004;N005;N006,"Chicken mushroom, fresh;Chicken, poultry, leg, skinless;Chicken, poultry, thigh, skinless;Chicken, poultry, breast, skinless;Chicken, poultry, wing, skinless;Poultry, chicken, liver;Poultry, chicken, gizzard",,,,needs_partial,7 ranked candidates
-chinese potato,1,Chinese Potato,partial,0.5,6,C013;F006;F007;F008;F013;F014,"Cabbage, Chinese;Potato, brown skin, big;Potato, brown skin, small;Potato, red skin;Sweet potato, brown skin;Sweet potato, pink skin",,,,needs_partial,6 ranked candidates
-colocasia root arbi,1,Colocasia root (Arbi),subset,0.8,1,F004,Colocasia,F004,Roots and Tubers,,auto,
-cooking soda,1,Cooking soda,none,,0,,,,,,no_candidate,no candidate at any rung
-crab,1,Crabs,exact,1.0,2,Q001;S007,Crab;Crab,,,,needs_name_fix,candidates span 2 food groups
-cucumber,1,Cucumber,subset,0.8,3,D043;D044;D045,"Cucumber, green, elongate;Cucumber, green, short;Cucumber, orange, round",,,,needs_pick,"3 varieties, no IFCT aggregate row"
-curry leaf,1,Curry leaf,partial,0.5,15,C002;C003;C004;C005;C006;C010;C011;C019;C020;C022;C023;C030;C031;C034;G010,"Amaranth leaves, green;Amaranth leaves, red;Amaranth leaves, red and green;Amaranth, spinous, leaves, green;Amaranth, spinous, leaves, red and green;Betel leaves, big (kolkata);Betel leaves, small;Drumstick leaves;Fenugreek leaves;Gogu leaves, green stem;Gogu leaves, red stem;Pumpkin leaves, tender;Radish leaves;Tamarind leaves, tender;Curry leaves",,,,needs_partial,15 ranked candidates
-dried fig,1,Dried Figs,subset,0.8,1,E020,Fig,E020,Fruits,,auto,
-egg white,1,Egg whites,subset,0.8,2,M002;M005,"Egg, poultry, white, raw;Egg, poultry, white, boiled",,,,needs_pick,"2 varieties, no IFCT aggregate row"
-egg yolk,1,Egg yolks,subset,0.8,2,M003;M006,"Egg, poultry, yolk, raw;Egg, poultry, yolk, boiled",,,,needs_pick,"2 varieties, no IFCT aggregate row"
-enos fruit salt,1,Enos fruit salt,partial,0.5,4,E007;E008;E032;E062,Avocado fruit;Bael fruit;Karonda fruit;Star fruit,,,,needs_partial,4 ranked candidates
-extra virgin olive oil,1,Extra Virgin Olive Oil,partial,0.5,9,T001;T002;T004;T005;T006;T007;T009;T011;T012,Coconut oil;Corn oil;Gingelly oil;Groundnut oil;Mustard oil;Palm oil;Safflower oil;Soyabean oil;Sunflower oil,,,,needs_partial,9 ranked candidates
-fish fillet,1,Fish fillet,partial,0.5,15,P004;P009;P016;P030;P037;P038;P051;P060;P061;P064;P077;P079;P092;S001;S004,"Ari fish;Cat fish;Guitar fish;Kite fish;Milk fish;Moon fish;Parrot fish;Queen fish;Raai fish;Ray fish, bow head, spotted;Silk fish;Sole fish;Eggs, cat fish;Cat fish;Gold fish",,,,needs_partial,15 ranked candidates
-galic,1,Galic,none,,0,,,,,,no_candidate,no candidate at any rung
-garlic paste,1,Garlic Paste ,partial,0.5,3,G011;G012;G013,"Garlic, big cloves;Garlic, small cloves;Garlic, single clove, Kashmir",,,,needs_partial,3 ranked candidates
-glazed cherry,1,Glazed Cherries,partial,0.5,1,E014,"Cherries, red",,,,needs_partial,1 ranked candidates
-gram flour besan,1,Gram flour (besan),none,,0,,,,,,no_candidate,no candidate at any rung
-green chawli bean yard long bean karamani barbati,1,Green Chawli Beans (Yard long beans/Karamani/Barbati),partial,0.5,18,B016;C015;D032;D033;D039;D063;D074;D077;E002;G001;G002;G003;G004;G005;G006;G007;G008;G020,"Moth bean;Cabbage, green;Broad beans;Capsicum, green;Cluster beans;Plantain, green;Tomato, green;Zucchini, green;Apple, green;Chillies, green-1;Chillies, green-2;Chillies, green-3;Chillies, green-4;Chillies, green-5;Chillies, green-6;Chillies, green-7;Chillies, green - all varieties;Cardamom, green",,,,needs_partial,18 ranked candidates
-guava,1,Guava,subset,0.8,2,E028;E029,"Guava, white flesh;Guava, pink flesh",,,,needs_pick,"2 varieties, no IFCT aggregate row"
-guava juice,1,Guava juice,partial,0.5,4,E028;E029;E033;I002,"Guava, white flesh;Guava, pink flesh;Lemon, juice;Sugarcane, juice",,,,needs_partial,4 ranked candidates
-homemade tomato puree,1,Homemade tomato puree,partial,0.5,1,D074,"Tomato, green",,,,needs_partial,1 ranked candidates
-horse gram dal kollu/ kulith,1,Horse Gram Dal (Kollu/ Kulith),partial,0.667,5,B001;B003;B010;B012;B021,"Bengal gram, dal;Black gram, dal;Green gram, dal;Horse gram, whole;Red gram, dal",,,,needs_partial,5 ranked candidates
-hot water,1,Hot water,partial,0.5,5,E065;E066;F016;K002;S003,"Water melon, dark green (sugar baby);Water melon, pale green;Water Chestnut;Coconut water;Fresh water Eel",,,,needs_partial,5 ranked candidates
-icing sugar,1,Icing Sugar,partial,0.5,1,E065,"Water melon, dark green (sugar baby)",,,,needs_partial,1 ranked candidates
-jackfruit seed kathal,1,Jackfruit Seeds (Kathal),partial,0.5,8,G024;G025;G026;G032;H013;H017;H019;H020,Coriander seeds;Cumin seeds;Fenugreek seeds;Poppy seeds;Mustard seeds;Pine seeds;Safflower seeds;Sunflower seeds,,,,needs_partial,8 ranked candidates
-kala chana brown chickpea,1,Kala Chana (Brown Chickpeas),partial,0.5,3,B005;B019;Q003,"Cowpea, brown;Rajmah, brown;Lobster, brown",,,,needs_partial,3 ranked candidates
-karela bitter gourd/ pavakkai,1,Karela (Bitter Gourd/ Pavakkai),none,,0,,,,,,no_candidate,no candidate at any rung
-kashmiri red chili powder,1,Kashmiri Red Chili Powder,partial,0.5,8,B020;D034;E014;F003;G022;G033;P065;R006,"Rajmah, red;Capsicum, red;Cherries, red;Carrot, red;Chillies, red;Turmeric powder;Red snapper;Squid, red",,,,needs_partial,8 ranked candidates
-mango,1,Mango,subset,0.8,9,D057;E036;E037;E038;E039;E040;E041;E042;G015,"Mango, green, raw;Mango, ripe, banganapalli;Mango, ripe, gulabkhas;Mango, ripe, himsagar;Mango, ripe, kesar;Mango, ripe, neelam;Mango, ripe, paheri;Mango, ripe, totapari;Mango ginger",,,,needs_name_fix,candidates span 3 food groups
-mixed dry fruit apricot,1,Mixed Dry Fruits - Apricot,partial,0.5,8,A006;B017;E005;E006;E007;E008;E032;E062,"Maize, dry;Peas, dry;Apricot, dried;Apricot, processed;Avocado fruit;Bael fruit;Karonda fruit;Star fruit",,,,needs_partial,8 ranked candidates
-mixed vegetable french bean,1,Mixed Vegetables - french beans,partial,0.667,5,D049;D050;B016;D032;D039,"French beans, country;French beans, hybrid;Moth bean;Broad beans;Cluster beans",,,,needs_partial,5 ranked candidates
-mixed vegetable potato,1,Mixed Vegetables - potatoes,none,,0,,,,,,no_candidate,no candidate at any rung
-mixed nut almond,1,Mixed nuts - Almond,subset,0.8,1,H001,Almond,H001,Nuts and Oil Seeds,,auto,
-mooli mullangi radish,1,Mooli/Mullangi (Radish),partial,0.5,1,C031,Radish leaves,,,,needs_partial,1 ranked candidates
-mustard oil,1,Mustard oil,exact,1.0,1,T006,Mustard oil,T006,Edible Oils and Fats,,auto,
-orange,1,Orange,subset,0.8,6,D045;D066;E045;E047;F002;Q008,"Cucumber, orange, round;Pumpkin, orange, round;Musk melon, orange flesh;Orange, pulp;Carrot, orange;Tiger Prawns, orange",,,,needs_name_fix,candidates span 4 food groups
-palm sugar,1,Palm sugar,partial,0.5,3,E048;E065;T007,"Palm fruit, tender;Water melon, dark green (sugar baby);Palm oil",,,,needs_partial,3 ranked candidates
-papad,1,Papad,none,,0,,,,,,no_candidate,no candidate at any rung
-papaya,1,Papaya,subset,0.8,2,D059;E049,"Papaya, raw;Papaya, ripe",,,,needs_name_fix,candidates span 2 food groups
-papaya juice,1,Papaya juice,partial,0.5,4,D059;E033;E049;I002,"Papaya, raw;Lemon, juice;Papaya, ripe;Sugarcane, juice",,,,needs_partial,4 ranked candidates
-poppy seed,1,Poppy seeds,exact,1.0,1,G032,Poppy seeds,G032,Condiments and Spices,,auto,
-prawn tiger,1,Prawns - tiger,tokenset,0.9,1,S010,Tiger prawns,S010,Fresh Water Fish and Shellfish,,auto,
-ragi flour finger millet/ nagli,1,Ragi Flour (Finger Millet/ Nagli),subset,0.8,1,A010,Ragi,A010,Cereals and Millets,,auto,
-rasam powder,1,Rasam Powder,partial,0.5,1,G033,Turmeric powder,,,,needs_partial,1 ranked candidates
-raw peanut moongphali,1,Raw Peanuts (Moongphali),partial,0.5,1,D059,"Papaya, raw",,,,needs_partial,1 ranked candidates
-red chilli flake,1,Red Chilli flakes,subset,0.8,1,G022,"Chillies, red",G022,Condiments and Spices,,auto,
-red black eyed bean azuki,1,Red black Eyed Beans (Azuki),partial,0.667,19,B007;B016;B018;B020;D032;D034;D039;E013;E014;E015;F003;G021;G022;G031;P006;P055;P065;R004;R006,"Field bean, black;Moth bean;Rajmah, black;Rajmah, red;Broad beans;Capsicum, red;Cluster beans;Black berry;Cherries, red;Currants, black;Carrot, red;Cardamom, black;Chillies, red;Pepper, black;Black snapper;Pomfret, black;Red snapper;Squid, black;Squid, red",,,,needs_partial,19 ranked candidates
-rice ada,1,Rice ada,partial,0.5,6,A011;A012;A013;A014;A015;T008,"Rice, flakes;Rice, puffed;Rice, raw, brown;Rice, parboiled, milled;Rice, raw, milled;Rice bran oil",,,,needs_partial,6 ranked candidates
-rice puttu,1,Rice puttu,partial,0.5,6,A011;A012;A013;A014;A015;T008,"Rice, flakes;Rice, puffed;Rice, raw, brown;Rice, parboiled, milled;Rice, raw, milled;Rice bran oil",,,,needs_partial,6 ranked candidates
-saffron strand,1,Saffron strands,none,,0,,,,,,no_candidate,no candidate at any rung
-sambar powder,1,Sambar Powder,partial,0.5,1,G033,Turmeric powder,,,,needs_partial,1 ranked candidates
-sardine fish mati,1,Sardine Fish - mati,subset,0.8,1,P071,Sardine,P071,Marine Fish,,auto,
-sardine fish,1,Sardine fish,subset,0.8,1,P071,Sardine,P071,Marine Fish,,auto,
-shrimp,1,Shrimps,none,,0,,,,,,no_candidate,no candidate at any rung
-squid,1,Squid,subset,0.8,4,R004;R005;R006;R007,"Squid, black;Squid, hard shell;Squid, red;Squid, white, small",,,,needs_pick,"4 varieties, no IFCT aggregate row"
-sweet potato,1,Sweet Potatoes,subset,0.8,2,F013;F014,"Sweet potato, brown skin;Sweet potato, pink skin",,,,needs_pick,"2 varieties, no IFCT aggregate row"
-tulsi holy basil,1,Tulsi (holy basil),none,,0,,,,,,no_candidate,no candidate at any rung
-vanilla extract,1,Vanilla Extract,none,,0,,,,,,no_candidate,no candidate at any rung
-vivatta maida,1,Vivatta Maida,none,,0,,,,,,no_candidate,no candidate at any rung
-yam,1,Yam,subset,0.8,3,F017;F018;F019,"Yam, elephant;Yam, ordinary;Yam, wild",,,,needs_pick,"3 varieties, no IFCT aggregate row"
-arabic,1,arabic,none,,0,,,,,,no_candidate,no candidate at any rung
-black gram,1,black gram,subset,0.8,2,B003;B004,"Black gram, dal;Black gram, whole",,,,needs_pick,"2 varieties, no IFCT aggregate row"
-brinjal,1,brinjals,exact,1.0,22,D010;D011;D012;D013;D014;D015;D016;D017;D018;D019;D020;D021;D022;D023;D024;D025;D026;D027;D028;D029;D030;D031,Brinjal 1;Brinjal 2;Brinjal 3;Brinjal 4;Brinjal 5;Brinjal 6;Brinjal 7;Brinjal 8;Brinjal 9;Brinjal 10;Brinjal 11;Brinjal 12;Brinjal 13;Brinjal 14;Brinjal 15;Brinjal 16;Brinjal 17;Brinjal 18;Brinjal 19;Brinjal 20;Brinjal 21;Brinjal - all varieties,D031,Other Vegetables,,auto,IFCT 'all varieties' aggregate
-cardamom powder,1,cardamom powder,partial,0.5,3,G020;G021;G033,"Cardamom, green;Cardamom, black;Turmeric powder",,,,needs_partial,3 ranked candidates
-cast curry leaves,1,cast Curry leaves,subset,0.8,1,G010,Curry leaves,G010,Condiments and Spices,,auto,
-coriander,1,coriander,subset,0.8,2,G009;G024,Coriander leaves;Coriander seeds,,,,needs_pick,"2 varieties, no IFCT aggregate row"
-coriander leaves,1,coriander leaves,exact,1.0,1,G009,Coriander leaves,G009,Condiments and Spices,,auto,
-cumin powder,1,cumin powder,partial,0.5,2,G025;G033,Cumin seeds;Turmeric powder,,,,needs_partial,2 ranked candidates
-curd,1,curd,none,,0,,,,,,no_candidate,no candidate at any rung
-egg,1,eggs,subset,0.8,16,M001;M002;M003;M004;M005;M006;M007;M008;M009;M010;M011;M012;M013;M014;M015;P092,"Egg, poultry, whole, raw;Egg, poultry, white, raw;Egg, poultry, yolk, raw;Egg, poultry, whole, boiled;Egg, poultry, white, boiled;Egg, poultry, yolk, boiled;Egg, poultry, omlet;Egg, country hen, whole, raw;Egg, country hen, whole, boiled;Egg, country hen, omlet;Egg, duck, whole, boiled;Egg, duck, whole, raw;Egg, duck, whole, omlet;Egg, quial, whole, raw;Egg, quial, whole, boiled;Eggs, cat fish",,,,needs_name_fix,candidates span 2 food groups
-fenugreek seed,1,fenugreek seeds,exact,1.0,1,G026,Fenugreek seeds,G026,Condiments and Spices,,auto,
-ginger powder,1,ginger powder,partial,0.5,3,G014;G015;G033,"Ginger, fresh;Mango ginger;Turmeric powder",,,,needs_partial,3 ranked candidates
-green coriander,1,green coriander,partial,0.5,40,B010;B011;C002;C004;C005;C006;C015;C018;C022;D007;D008;D009;D033;D041;D043;D044;D057;D063;D065;D070;D071;D074;D077;E002;E023;E026;E065;E066;G001;G002;G003;G004;G005;G006;G007;G008;G009;G020;G024;R001,"Green gram, dal;Green gram, whole;Amaranth leaves, green;Amaranth leaves, red and green;Amaranth, spinous, leaves, green;Amaranth, spinous, leaves, red and green;Cabbage, green;Colocasia leaves, green;Gogu leaves, green stem;Bottle gourd, elongate, pale green;Bottle gourd, round, pale green;Bottle gourd, elongate, dark green;Capsicum, green;Colocasia, stem, green;Cucumber, green, elongate;Cucumber, green, short;Mango, green, raw;Plantain, green;Pumpkin, green, cylindrical;Snake gourd, long, pale green;Snake gourd, long, dark green;Tomato, green;Zucchini, green;Apple, green;Grapes, seeded, round, green;Grapes, seedless, round, green;Water melon, dark green (sugar baby);Water melon, pale green;Chillies, green-1;Chillies, green-2;Chillies, green-3;Chillies, green-4;Chillies, green-5;Chillies, green-6;Chillies, green-7;Chillies, green - all varieties;Coriander leaves;Cardamom, green;Coriander seeds;Clam, green shell",,,,needs_partial,40 ranked candidates
-green pea,1,green peas,partial,0.5,40,B010;B011;B017;C002;C004;C005;C006;C015;C018;C022;D007;D008;D009;D033;D041;D043;D044;D057;D061;D063;D065;D070;D071;D074;D077;E002;E023;E026;E065;E066;G001;G002;G003;G004;G005;G006;G007;G008;G020;R001,"Green gram, dal;Green gram, whole;Peas, dry;Amaranth leaves, green;Amaranth leaves, red and green;Amaranth, spinous, leaves, green;Amaranth, spinous, leaves, red and green;Cabbage, green;Colocasia leaves, green;Gogu leaves, green stem;Bottle gourd, elongate, pale green;Bottle gourd, round, pale green;Bottle gourd, elongate, dark green;Capsicum, green;Colocasia, stem, green;Cucumber, green, elongate;Cucumber, green, short;Mango, green, raw;Peas, fresh;Plantain, green;Pumpkin, green, cylindrical;Snake gourd, long, pale green;Snake gourd, long, dark green;Tomato, green;Zucchini, green;Apple, green;Grapes, seeded, round, green;Grapes, seedless, round, green;Water melon, dark green (sugar baby);Water melon, pale green;Chillies, green-1;Chillies, green-2;Chillies, green-3;Chillies, green-4;Chillies, green-5;Chillies, green-6;Chillies, green-7;Chillies, green - all varieties;Cardamom, green;Clam, green shell",,,,needs_partial,40 ranked candidates
-hot masala powder,1,hot Masala powder,partial,0.5,1,G033,Turmeric powder,,,,needs_partial,1 ranked candidates
-luke warm water,1,luke warm water,partial,0.5,2,F016;K002,Water Chestnut;Coconut water,,,,needs_partial,2 ranked candidates
-nugget curry leaves,1,nuggets curry leaves,subset,0.8,1,G010,Curry leaves,G010,Condiments and Spices,,auto,
-olive oil,1,olive oil,partial,0.5,12,T001;T002;T003;T004;T005;T006;T007;T008;T009;T010;T011;T012,Coconut oil;Corn oil;Cotton seed oil;Gingelly oil;Groundnut oil;Mustard oil;Palm oil;Rice bran oil;Safflower oil;Safflower oil (blended);Soyabean oil;Sunflower oil,,,,needs_partial,12 ranked candidates
-peel,1,peel,none,,0,,,,,,no_candidate,no candidate at any rung
-pepper powder,1,pepper powder,partial,0.5,2,G031;G033,"Pepper, black;Turmeric powder",,,,needs_partial,2 ranked candidates
-red chilli flax,1,red chilli flax,subset,0.8,1,G022,"Chillies, red",G022,Condiments and Spices,,auto,
-small onion sambar,1,small onion sambar,subset,0.8,1,G018,"Onion, small",G018,Condiments and Spices,,auto,
-small onion sambar one,1,small onion sambar ones,subset,0.8,1,G018,"Onion, small",G018,Condiments and Spices,,auto,
-small potato,1,small potatoes,subset,0.8,1,F007,"Potato, brown skin, small",F007,Roots and Tubers,,auto,
-tighten it,1,tighten it,none,,0,,,,,,no_candidate,no candidate at any rung
-tulsi,1,tulsi,none,,0,,,,,,no_candidate,no candidate at any rung
-turmeric,1,turmeric,subset,0.8,1,G033,Turmeric powder,G033,Condiments and Spices,,auto,
-white urad dal,1,white urad dal,partial,0.5,3,B006;B013;P057,"Cowpea, white;Lentil, dal;Pomfret, white",,,,needs_partial,3 ranked candidates
-whole black pepper,1,whole black pepper,subset,0.8,1,G031,"Pepper, black",G031,Condiments and Spices,,auto,
-whole pepper,1,whole pepper,partial,0.5,20,A020;B002;B004;B011;B012;B014;B015;B022;G031;L001;L002;M001;M004;M008;M009;M011;M012;M013;M014;M015,"Wheat, whole;Bengal gram, whole;Black gram, whole;Green gram, whole;Horse gram, whole;Lentil, whole, brown;Lentil, whole, yellowish;Red gram, whole;Pepper, black;Milk, whole, Buffalo;Milk, whole, Cow;Egg, poultry, whole, raw;Egg, poultry, whole, boiled;Egg, country hen, whole, raw;Egg, country hen, whole, boiled;Egg, duck, whole, boiled;Egg, duck, whole, raw;Egg, duck, whole, omlet;Egg, quial, whole, raw;Egg, quial, whole, boiled",,,,needs_partial,20 ranked candidates
+norm_key,n_lines,generic_name,status,link_rule,ifct_code,food_group,n_candidates,candidate_codes,candidate_names,successor_key,chosen_ifct_code,rank_found,hierarchical,reviewer_notes
+salt,135,Salt,none,none,,,0,,Salt,,,absent,,gather from USDA
+curry leaves,112,Curry leaves,auto,exact,G010,Condiments and Spices,1,G010,Curry leaves,,G010,1,N,
+turmeric powder haldi,82,Turmeric powder (Haldi),auto,subset,G033,Condiments and Spices,1,G033,Turmeric powder,,G033,1,N,
+fresh coconut,81,Fresh coconut,auto,subset,H007,Nuts and Oil Seeds,1,H007,"Coconut, kernel, fresh",,H007,1,N,
+coconut oil,72,Coconut Oil,auto,exact,T001,Edible Oils and Fats,1,T001,Coconut oil,,T001,1,N,
+green chilli,70,Green Chillies,auto,tokenset,G008,Condiments and Spices,8,G001;G002;G003;G004;G005;G006;G007;G008,"Chillies, green-1;Chillies, green-2;Chillies, green-3;Chillies, green-4;Chillies, green-5;Chillies, green-6;Chillies, green-7;Chillies, green - all varieties",,G008,8,N,
+mustard seed,60,Mustard seeds,auto,exact,H013,Nuts and Oil Seeds,1,H013,Mustard seeds,,H013,1,N,
+garlic,52,Garlic,review,subset,,,3,G011;G012;G013,"Garlic, big cloves;Garlic, small cloves;Garlic, single clove, Kashmir",,G013,3,N,
+onion,48,Onion,review,subset,,,3,D058;G017;G018,"Onion, stalk;Onion, big;Onion, small",,G017,2,N,"Check normalization for ""small"" onion"
+ginger,42,Ginger,review,subset,,,2,G014;G015,"Ginger, fresh;Mango ginger",,G014,1,N,
+cumin seed jeera,41,Cumin seeds (Jeera),auto,subset,G025,Condiments and Spices,1,G025,Cumin seeds,,G025,1,N,
+dry red chilli,41,Dry Red Chillies,auto,subset,G022,Condiments and Spices,1,G022,"Chillies, red",,G022,1,N,
+red chilli powder,37,Red Chilli powder,auto,subset,G022,Condiments and Spices,1,G022,"Chillies, red",,G022,1,N,"G022 is the whole/raw chilli entry, not a powder-specific row"
+sunflower oil,30,Sunflower Oil,auto,exact,T012,Edible Oils and Fats,1,T012,Sunflower oil,,T012,1,N,
+tomato,29,Tomato,review,subset,,,3,D074;D075;D076,"Tomato, green;Tomato, ripe, hybrid;Tomato, ripe, local",,D075,2,Y,default to hybrid
+water,29,Water,review,subset,,,5,E065;E066;F016;K002;S003,"Water melon, dark green (sugar baby);Water melon, pale green;Water Chestnut;Coconut water;Fresh water Eel",,,absent,,Zero macro count (USDA?)
+coconut milk,23,Coconut milk,review,partial,,,7,H006;H007;K002;L001;L002;P037;T001,"Coconut, kernel, dry;Coconut, kernel, fresh;Coconut water;Milk, whole, Buffalo;Milk, whole, Cow;Milk fish;Coconut oil",,,absent,,gather from USDA
+black pepper powder,21,Black pepper powder,auto,subset,G031,Condiments and Spices,1,G031,"Pepper, black",,G031,1,N,Whole peppercorn is not powder-specific; flag for future conisderation
+ghee,18,Ghee,auto,exact,T013,Edible Oils and Fats,1,T013,Ghee,,T013,1,N,
+pearl onion sambar onion,17,Pearl onions (Sambar Onions),review,partial,,,3,D058;G017;G018,"Onion, stalk;Onion, big;Onion, small",,G018,3,N,pearl/sambar liekly refers to small onions 
+jaggery,16,Jaggery,auto,subset,I001,Sugars,1,I001,"Jaggery, cane",,I001,1,N,
+shallot,16,Shallots,none,none,,,0,,,,,absent,,gather from USDA/use small onion
+sugar,16,Sugar,auto,subset,E065,Fruits,1,E065,"Water melon, dark green (sugar baby)",,,absent,,gather from USDA
+cinnamon stick dalchini,15,Cinnamon Stick (Dalchini),none,none,,,0,,,,,absent,,gather from USDA
+coriander dhania leaves,15,Coriander (Dhania) Leaves,auto,subset,G009,Condiments and Spices,1,G009,Coriander leaves,,G009,1,N,
+cardamom elaichi pod seed,14,Cardamom (Elaichi) Pods/Seeds,review,partial,,,10,G020;G021;G024;G025;G026;G032;H013;H017;H019;H020,"Cardamom, green;Cardamom, black;Coriander seeds;Cumin seeds;Fenugreek seeds;Poppy seeds;Mustard seeds;Pine seeds;Safflower seeds;Sunflower seeds",,G020,1,Y,default to green cardamom (likely more common)
+coriander powder dhania,14,Coriander Powder (Dhania),review,partial,,,3,G009;G024;G033,Coriander leaves;Coriander seeds;Turmeric powder,,G024,2,N,"powder = ground seed, not leaf "
+cashew nut,13,Cashew nuts,auto,exact,H005,Nuts and Oil Seeds,1,H005,Cashew nut,,H005,1,N,
+white urad dal split,13,White Urad Dal (Split),review,partial,,,3,B006;B013;P057,"Cowpea, white;Lentil, dal;Pomfret, white",,B003,miss,N,urad dal = black gram
+fennel seed saunf,12,Fennel seeds (Saunf),review,partial,,,8,G024;G025;G026;G032;H013;H017;H019;H020,Coriander seeds;Cumin seeds;Fenugreek seeds;Poppy seeds;Mustard seeds;Pine seeds;Safflower seeds;Sunflower seeds,,,absent,,gather from USDA
+whole black peppercorn,12,Whole Black Peppercorns,review,partial,,,10,B004;A020;B018;E013;E015;G021;G031;P006;P055;R004,"Black gram, whole;Wheat, whole;Rajmah, black;Black berry;Currants, black;Cardamom, black;Pepper, black;Black snapper;Pomfret, black;Squid, black",,G031,7,N,
+turmeric powder,12,turmeric powder,auto,exact,G033,Condiments and Spices,1,G033,Turmeric powder,,G033,1,N,
+kashmiri red chilli powder,11,Kashmiri Red Chilli Powder,auto,subset,G022,Condiments and Spices,1,G022,"Chillies, red",,G022,1,N,"G022 is the whole/raw chilli entry, not a powder-specific row"
+lemon juice,11,Lemon juice,auto,exact,E033,Fruits,1,E033,"Lemon, juice",,E033,1,N,
+coconut,11,coconut,review,subset,,,4,H006;H007;K002;T001,"Coconut, kernel, dry;Coconut, kernel, fresh;Coconut water;Coconut oil",,H007,2,N,
+cardamom powder elaichi,10,Cardamom Powder (Elaichi),review,partial,,,3,G020;G021;G033,"Cardamom, green;Cardamom, black;Turmeric powder",,G020,1,Y,elaichi' defaults to green cardamom 
+chicken,10,Chicken,review,subset,,,7,J002;N001;N002;N003;N004;N005;N006,"Chicken mushroom, fresh;Chicken, poultry, leg, skinless;Chicken, poultry, thigh, skinless;Chicken, poultry, breast, skinless;Chicken, poultry, wing, skinless;Poultry, chicken, liver;Poultry, chicken, gizzard",,N002,3,Y,defaulted to thigh; check USDA for general
+coriander dhania seed,10,Coriander (Dhania) Seeds,auto,subset,G024,Condiments and Spices,1,G024,Coriander seeds,,G024,1,N,
+garam masala powder,10,Garam masala powder,review,partial,,,1,G033,Turmeric powder,,,absent,,False single candidate match
+methi seed fenugreek seed,10,Methi Seeds (Fenugreek Seeds),auto,subset,G026,Condiments and Spices,1,G026,Fenugreek seeds,,G026,1,N,
+mustard,10,mustard,review,subset,,,3,C026;H013;T006,Mustard leaves;Mustard seeds;Mustard oil,,H013,2,N,mustard defaults to seed (rather than the condiment)
+carrot gajjar,9,Carrots (Gajjar),review,partial,,,2,F002;F003,"Carrot, orange;Carrot, red",,F002,1,Y,default to orange
+cloves laung,9,Cloves (Laung),auto,subset,G023,Condiments and Spices,1,G023,Cloves,,G023,1,N,
+curd dahi yogurt,9,Curd (Dahi / Yogurt),none,none,,,0,,,,,absent,,default to USDA
+rice,9,Rice,review,subset,,,6,A011;A012;A013;A014;A015;T008,"Rice, flakes;Rice, puffed;Rice, raw, brown;Rice, parboiled, milled;Rice, raw, milled;Rice bran oil",,A014,4,N,parboiled is likely more standard than raw rice
+rice flour,9,Rice flour,review,partial,,,8,A011;A012;A013;A014;A015;A018;A019;T008,"Rice, flakes;Rice, puffed;Rice, raw, brown;Rice, parboiled, milled;Rice, raw, milled;Wheat flour, refined;Wheat flour, atta;Rice bran oil",,,absent,,default to USDA
+milk,8,Milk,review,subset,,,3,L001;L002;P037,"Milk, whole, Buffalo;Milk, whole, Cow;Milk fish",,L002,2,N,Whole Milk
+potato aloo,8,Potato (Aloo),review,partial,,,5,F006;F007;F008;F013;F014,"Potato, brown skin, big;Potato, brown skin, small;Potato, red skin;Sweet potato, brown skin;Sweet potato, pink skin",,F006,1,Y,Default to brown-skinned as other types are likely less common
+raw banana,8,Raw Banana,review,partial,,,15,A013;A015;D051;D057;D059;E009;E010;E011;E012;M001;M002;M003;M008;M012;M014,"Rice, raw, brown;Rice, raw, milled;Jack fruit, raw;Mango, green, raw;Papaya, raw;Banana, ripe, montham;Banana, ripe, poovam;Banana, ripe, red;Banana, ripe, robusta;Egg, poultry, whole, raw;Egg, poultry, white, raw;Egg, poultry, yolk, raw;Egg, country hen, whole, raw;Egg, duck, whole, raw;Egg, quial, whole, raw",,D063,miss,Y,Defaulted to Raw variant of plaintain
+oil,8,oil,review,subset,,,12,T001;T002;T003;T004;T005;T006;T007;T008;T009;T010;T011;T012,Coconut oil;Corn oil;Cotton seed oil;Gingelly oil;Groundnut oil;Mustard oil;Palm oil;Rice bran oil;Safflower oil;Safflower oil (blended);Soyabean oil;Sunflower oil,,T001,1,Y,defaulted to coconut oil for base fat (worth rescanning recipe base) 
+asafoetida hing,7,Asafoetida (hing),auto,subset,G019,Condiments and Spices,1,G019,Asafoetida,,G019,1,N,
+ginger garlic paste,7,Ginger Garlic Paste,review,partial,,,2,G014;G015,"Ginger, fresh;Mango ginger",,,absent,,ginger garlic paste is a specific blend - USDA
+mint leaf pudina,7,Mint Leaves (Pudina),review,partial,,,4,C019;C020;C031;G016,Drumstick leaves;Fenugreek leaves;Radish leaves;Mint leaves,,G016,4,N,
+tamarind,7,Tamarind,review,subset,,,3,C034;E044;E064,"Tamarind leaves, tender;Manila tamarind;Tamarind, pulp",,E064,3,N,pulp is more accurate than leaves or manila
+baking soda,6,Baking soda,none,none,,,0,,,,,absent,,
+cumin seed,6,cumin seeds,auto,exact,G025,Condiments and Spices,1,G025,Cumin seeds,,G025,1,N,
+elephant yam suran senai ratalu,6,Elephant yam (Suran/Senai/Ratalu),auto,subset,F017,Roots and Tubers,1,F017,"Yam, elephant",,F017,1,N,
+green bean french bean,6,Green beans (French Beans),review,partial,,,20,D049;D050;B016;C015;D032;D033;D039;D063;D074;D077;E002;G001;G002;G003;G004;G005;G006;G007;G008;G020,"French beans, country;French beans, hybrid;Moth bean;Cabbage, green;Broad beans;Capsicum, green;Cluster beans;Plantain, green;Tomato, green;Zucchini, green;Apple, green;Chillies, green-1;Chillies, green-2;Chillies, green-3;Chillies, green-4;Chillies, green-5;Chillies, green-6;Chillies, green-7;Chillies, green - all varieties;Cardamom, green",,D050,2,Y,default to hybrid
+kokum malabar tamarind,6,Kokum (Malabar Tamarind),review,partial,,,2,E044;E064,"Manila tamarind;Tamarind, pulp",,,absent,,kokum != tamarind
+red matta rice,6,Red matta rice,review,partial,,,9,A011;A012;B020;D034;E014;F003;G022;P065;R006,"Rice, flakes;Rice, puffed;Rajmah, red;Capsicum, red;Cherries, red;Carrot, red;Chillies, red;Red snapper;Squid, red",,,absent,,matta/red not in IFCT
+all purpose flour maida,5,All Purpose Flour (Maida),none,none,,,0,,,,A018,miss,N,maida = refined wheat flour
+bhindi lady finger okra,5,Bhindi (Lady Finger/Okra),auto,subset,D056,Other Vegetables,1,D056,Ladies finger,,D056,1,N,
+drumstick,5,Drumstick,auto,exact,D046,Other Vegetables,1,D046,Drumstick,,D046,1,N,
+fennel powder,5,Fennel Powder,review,partial,,,1,G033,Turmeric powder,,,absent,,gather from USDA
+mango ripe,5,Mango (Ripe),review,subset,,,7,E036;E037;E038;E039;E040;E041;E042,"Mango, ripe, banganapalli;Mango, ripe, gulabkhas;Mango, ripe, himsagar;Mango, ripe, kesar;Mango, ripe, neelam;Mango, ripe, paheri;Mango, ripe, totapari",,E036,1,Y,default to banganapalli
+prawn,5,Prawns,review,subset,,,5,Q007;Q008;S008;S009;S010,"Tiger prawns, brown;Tiger Prawns, orange;Prawns, big;Prawns, small;Tiger prawns",,S008,3,Y,default to large prawns
+whole egg,5,Whole Eggs,review,subset,,,9,M001;M004;M008;M009;M011;M012;M013;M014;M015,"Egg, poultry, whole, raw;Egg, poultry, whole, boiled;Egg, country hen, whole, raw;Egg, country hen, whole, boiled;Egg, duck, whole, boiled;Egg, duck, whole, raw;Egg, duck, whole, omlet;Egg, quial, whole, raw;Egg, quial, whole, boiled",,M001,1,N,
+whole wheat flour,5,Whole Wheat Flour,auto,subset,A020,Cereals and Millets,1,A020,"Wheat, whole",,A020,1,N,
+small onion,5,small onions,auto,tokenset,G018,Condiments and Spices,1,G018,"Onion, small",,G018,1,N,
+chana dal bengal gram dal,4,Chana dal (Bengal Gram Dal),auto,subset,B001,Grain Legumes,1,B001,"Bengal gram, dal",,B001,1,N,
+cumin powder jeera,4,Cumin powder (Jeera),review,partial,,,2,G025;G033,Cumin seeds;Turmeric powder,,G025,1,N,Cumin seed is not in powder form 
+green peas matar,4,Green peas (Matar),review,partial,,,15,C015;D033;D063;D074;D077;E002;G001;G002;G003;G004;G005;G006;G007;G008;G020,"Cabbage, green;Capsicum, green;Plantain, green;Tomato, green;Zucchini, green;Apple, green;Chillies, green-1;Chillies, green-2;Chillies, green-3;Chillies, green-4;Chillies, green-5;Chillies, green-6;Chillies, green-7;Chillies, green - all varieties;Cardamom, green",,B017,miss,Y,difficult to distinguish between dry/fresh peaas
+kaddu parangikai/ pumpkin,4,Kaddu (Parangikai/ Pumpkin),none,none,,,0,,,,D066,miss,N,failure on language terms 
+methi powder fenugreek powder,4,Methi Powder (Fenugreek Powder),review,partial,,,3,C020;G026;G033,Fenugreek leaves;Fenugreek seeds;Turmeric powder,,G026,2,N,fenugreek seed - not powder
+mutton,4,Mutton,none,none,,,0,,,,O016,miss,Y,"mutton =  sheep in IFCT, default to leg"
+raisin,4,Raisins,review,subset,,,2,E057;E058,"Raisins, dried, black;Raisins, dried, golden",,E057,1,Y,default to black raisins
+ripe banana,4,Ripe Bananas,review,subset,,,4,E009;E010;E011;E012,"Banana, ripe, montham;Banana, ripe, poovam;Banana, ripe, red;Banana, ripe, robusta",,E010,2,Y,default to poovam
+active dry yeast,3,Active dry yeast,review,partial,,,2,A006;B017,"Maize, dry;Peas, dry",,,absent,,USDA 
+arhar dal split toor dal,3,Arhar dal (Split Toor Dal),review,partial,,,1,B013,"Lentil, dal",,B021,miss,N,confirmed via lang column; Arhar Dal is red gram
+bay leaf tej patta,3,Bay leaf (tej patta),review,partial,,,3,C019;C020;C031,Drumstick leaves;Fenugreek leaves;Radish leaves,,,absent,,
+cooked rice,3,Cooked rice,review,partial,,,6,A011;A012;A013;A014;A015;T008,"Rice, flakes;Rice, puffed;Rice, raw, brown;Rice, parboiled, milled;Rice, raw, milled;Rice bran oil",,A014,4,N,cooked=parboiled
+dry ginger powder,3,Dry ginger powder,review,partial,,,5,A006;B017;G014;G015;G033,"Maize, dry;Peas, dry;Ginger, fresh;Mango ginger;Turmeric powder",,G014,3,N,dry ginger powder is different from raw ginger. USDA
+green moong dal whole,3,Green Moong Dal (Whole),review,partial,,,19,B010;B011;A020;B013;C015;D033;D063;D074;D077;E002;G001;G002;G003;G004;G005;G006;G007;G008;G020,"Green gram, dal;Green gram, whole;Wheat, whole;Lentil, dal;Cabbage, green;Capsicum, green;Plantain, green;Tomato, green;Zucchini, green;Apple, green;Chillies, green-1;Chillies, green-2;Chillies, green-3;Chillies, green-4;Chillies, green-5;Chillies, green-6;Chillies, green-7;Chillies, green - all varieties;Cardamom, green",,B010,1,N,
+jackfruit ripe kathal,3,Jackfruit Ripe (Kathal),review,partial,,,1,E049,"Papaya, ripe",,,absent,,"raw jackfuit in IFCT, different from ripe"
+lukewarm water,3,Lukewarm Water,review,partial,,,5,E065;E066;F016;K002;S003,"Water melon, dark green (sugar baby);Water melon, pale green;Water Chestnut;Coconut water;Fresh water Eel",,,absent,,USDA
+mango raw,3,Mango (Raw),auto,subset,D057,Other Vegetables,1,D057,"Mango, green, raw",,D057,1,N,
+tamarind water,3,Tamarind Water,review,partial,,,8,C034;E044;E064;E065;E066;F016;K002;S003,"Tamarind leaves, tender;Manila tamarind;Tamarind, pulp;Water melon, dark green (sugar baby);Water melon, pale green;Water Chestnut;Coconut water;Fresh water Eel",,,absent,,tamarind + water
+tapioca root,3,Tapioca root,auto,subset,F015,Roots and Tubers,1,F015,Tapioca,,,absent,,tapioca differs from tapioca root
+vellai poosanikai ash gourd white pumpkin,3,Vellai Poosanikai (Ash gourd/White Pumpkin),auto,subset,D001,Other Vegetables,1,D001,Ash gourd,,D001,1,N,
+yellow moong dal split,3,Yellow Moong Dal (Split),review,partial,,,3,B013;D035;D078,"Lentil, dal;Capsicum, yellow;Zucchini, yellow",,B010,miss,N,moong dal = green dal
+coriander powder,3,coriander powder,review,partial,,,3,G009;G024;G033,Coriander leaves;Coriander seeds;Turmeric powder,,G024,2,N,coriander seed != powder
+badam almond,2,Badam (Almond),auto,subset,H001,Nuts and Oil Seeds,1,H001,Almond,,H001,1,N,
+baking powder,2,Baking powder,review,partial,,,1,G033,Turmeric powder,,,absent,,USDA
+basmati rice,2,Basmati rice,review,partial,,,6,A011;A012;A013;A014;A015;T008,"Rice, flakes;Rice, puffed;Rice, raw, brown;Rice, parboiled, milled;Rice, raw, milled;Rice bran oil",,A015,5,N,general milled rice variant 
+black urad dal split,2,Black Urad Dal (Split),review,partial,,,10,B003;B013;B018;E013;E015;G021;G031;P006;P055;R004,"Black gram, dal;Lentil, dal;Rajmah, black;Black berry;Currants, black;Cardamom, black;Pepper, black;Black snapper;Pomfret, black;Squid, black",,B003,1,N,
+brinjal baingan eggplant,2,Brinjal (Baingan / Eggplant),auto,subset,D031,Other Vegetables,22,D010;D011;D012;D013;D014;D015;D016;D017;D018;D019;D020;D021;D022;D023;D024;D025;D026;D027;D028;D029;D030;D031,Brinjal 1;Brinjal 2;Brinjal 3;Brinjal 4;Brinjal 5;Brinjal 6;Brinjal 7;Brinjal 8;Brinjal 9;Brinjal 10;Brinjal 11;Brinjal 12;Brinjal 13;Brinjal 14;Brinjal 15;Brinjal 16;Brinjal 17;Brinjal 18;Brinjal 19;Brinjal 20;Brinjal 21;Brinjal - all varieties,,D031,22,Y,all varities  
+butter unsalted,2,Butter (unsalted),none,none,,,0,,,,,absent,,USDA
+chayote,2,Chayote,none,none,,,0,,,,D038,miss,N,cho-cho-marrow is the same as chayote
+cinnamon powder dalchini,2,Cinnamon Powder (Dalchini),review,partial,,,1,G033,Turmeric powder,,,absent,,USDA
+colocasia root arbi,2,Colocasia Root (Arbi),auto,subset,F004,Roots and Tubers,1,F004,Colocasia,,F004,1,N,
+drumstick leaf moringa murungai keerai,2,Drumstick Leaves (Moringa/Murungai Keerai),review,subset,,,2,C019;D046,Drumstick leaves;Drumstick,,C019,1,N,
+dry coconut kopra,2,Dry coconut (kopra),review,partial,,,5,H006;A006;B017;K002;T001,"Coconut, kernel, dry;Maize, dry;Peas, dry;Coconut water;Coconut oil",,H006,1,N,Kopra = kernal
+fish,2,Fish,review,subset,,,15,P004;P009;P016;P030;P037;P038;P051;P060;P061;P064;P077;P079;P092;S001;S004,"Ari fish;Cat fish;Guitar fish;Kite fish;Milk fish;Moon fish;Parrot fish;Queen fish;Raai fish;Ray fish, bow head, spotted;Silk fish;Sole fish;Eggs, cat fish;Cat fish;Gold fish",,,absent,,"Requires ""general dish"" variant"
+instant coffee powder,2,Instant Coffee Powder,review,partial,,,1,G033,Turmeric powder,,,absent,,USDA
+instant oat oatmeal,2,Instant Oats (Oatmeal),none,none,,,0,,,,,absent,,USDA
+jackfruit raw kathal,2,Jackfruit Raw (Kathal),review,partial,,,1,D059,"Papaya, raw",,D051,miss,N,mismatch
+lemon,2,Lemon,auto,subset,E033,Fruits,1,E033,"Lemon, juice",,,absent,,lemon != lemon juice
+meat masala,2,Meat masala,review,partial,,,6,N011;N012;N013;N014;N015;O001,"Duck, meat, with skin;Emu, meat, skinless;Guinea fowl, meat, with skin;Pigeon, meat, with skin;Quail, meat, skinless;Goat, shoulder, meat",,,absent,,requires USDA or other
+nendra pazham banana ripe,2,Nendra Pazham Banana (Ripe),review,partial,,,5,E009;E010;E011;E012;E049,"Banana, ripe, montham;Banana, ripe, poovam;Banana, ripe, red;Banana, ripe, robusta;Papaya, ripe",,E009,1,Y,default to montham
+nutmeg powder,2,Nutmeg powder,auto,subset,G028,Condiments and Spices,1,G028,Nutmeg,,G028,1,N,nutmeg/nutmeg powder distinction 
+paprika powder,2,Paprika powder,review,partial,,,1,G033,Turmeric powder,,,absent,,USDA
+raw banana peel,2,Raw banana peel,review,partial,,,1,D059,"Papaya, raw",,,absent,,USDA
+raw papaya,2,Raw papaya,auto,tokenset,D059,Other Vegetables,1,D059,"Papaya, raw",,D059,1,N,
+rum,2,Rum,none,none,,,0,,,,,absent,,USDA
+sardine fish,2,Sardine fish,auto,subset,P071,Marine Fish,1,P071,Sardine,,P071,1,N,
+seer fish,2,Seer fish,review,partial,,,15,P004;P009;P016;P030;P037;P038;P051;P060;P061;P064;P077;P079;P092;S001;S004,"Ari fish;Cat fish;Guitar fish;Kite fish;Milk fish;Moon fish;Parrot fish;Queen fish;Raai fish;Ray fish, bow head, spotted;Silk fish;Sole fish;Eggs, cat fish;Cat fish;Gold fish",,P087,miss,N,panjaram = seer fish 
+small onion sambar,2,Small onion (Sambar),auto,subset,G018,Condiments and Spices,1,G018,"Onion, small",,G018,1,N,
+tamarind paste,2,Tamarind Paste,review,partial,,,3,C034;E044;E064,"Tamarind leaves, tender;Manila tamarind;Tamarind, pulp",,E064,3,N,"Paste != pulp, recheck"
+tutti frutti,2,Tutti frutti,none,none,,,0,,,,,absent,,This is candied raw papaya
+vinegar,2,Vinegar,none,none,,,0,,,,,absent,,USDA
+cabbage,2,cabbage,review,subset,,,4,C013;C014;C015;C016,"Cabbage, Chinese;Cabbage, collard greens;Cabbage, green;Cabbage, violet",,C015,3,Y,default to green cabbage
+carrot,2,carrots,review,subset,,,2,F002;F003,"Carrot, orange;Carrot, red",,F002,1,Y,default to orange carrot
+cumin,2,cumin,auto,subset,G025,Condiments and Spices,1,G025,Cumin seeds,,G025,1,N,Cumin seed/cumin powder? 
+green bean,2,green beans,review,partial,,,51,B007;B008;B009;B010;B011;B016;B024;B025;C002;C004;C005;C006;C015;C018;C022;D003;D007;D008;D009;D032;D033;D039;D041;D043;D044;D047;D048;D049;D050;D057;D063;D065;D070;D071;D074;D077;E002;E023;E026;E065;E066;G001;G002;G003;G004;G005;G006;G007;G008;G020;R001,"Field bean, black;Field bean, brown;Field bean, white;Green gram, dal;Green gram, whole;Moth bean;Soya bean, brown;Soya bean, white;Amaranth leaves, green;Amaranth leaves, red and green;Amaranth, spinous, leaves, green;Amaranth, spinous, leaves, red and green;Cabbage, green;Colocasia leaves, green;Gogu leaves, green stem;Bean scarlet, tender;Bottle gourd, elongate, pale green;Bottle gourd, round, pale green;Bottle gourd, elongate, dark green;Broad beans;Capsicum, green;Cluster beans;Colocasia, stem, green;Cucumber, green, elongate;Cucumber, green, short;Field beans, tender, broad;Field beans, tender, lean;French beans, country;French beans, hybrid;Mango, green, raw;Plantain, green;Pumpkin, green, cylindrical;Snake gourd, long, pale green;Snake gourd, long, dark green;Tomato, green;Zucchini, green;Apple, green;Grapes, seeded, round, green;Grapes, seedless, round, green;Water melon, dark green (sugar baby);Water melon, pale green;Chillies, green-1;Chillies, green-2;Chillies, green-3;Chillies, green-4;Chillies, green-5;Chillies, green-6;Chillies, green-7;Chillies, green - all varieties;Cardamom, green;Clam, green shell",,D050,29,N,Often written as green beans (french beans) 
+green chili,2,green chili,review,partial,,,38,B010;B011;C002;C004;C005;C006;C015;C018;C022;D007;D008;D009;D033;D041;D043;D044;D057;D063;D065;D070;D071;D074;D077;E002;E023;E026;E065;E066;G001;G002;G003;G004;G005;G006;G007;G008;G020;R001,"Green gram, dal;Green gram, whole;Amaranth leaves, green;Amaranth leaves, red and green;Amaranth, spinous, leaves, green;Amaranth, spinous, leaves, red and green;Cabbage, green;Colocasia leaves, green;Gogu leaves, green stem;Bottle gourd, elongate, pale green;Bottle gourd, round, pale green;Bottle gourd, elongate, dark green;Capsicum, green;Colocasia, stem, green;Cucumber, green, elongate;Cucumber, green, short;Mango, green, raw;Plantain, green;Pumpkin, green, cylindrical;Snake gourd, long, pale green;Snake gourd, long, dark green;Tomato, green;Zucchini, green;Apple, green;Grapes, seeded, round, green;Grapes, seedless, round, green;Water melon, dark green (sugar baby);Water melon, pale green;Chillies, green-1;Chillies, green-2;Chillies, green-3;Chillies, green-4;Chillies, green-5;Chillies, green-6;Chillies, green-7;Chillies, green - all varieties;Cardamom, green;Clam, green shell",,G008,36,Y,all varities  
+okra,2,okra,none,none,,,0,,,,D056,miss,N,ladies finger = okra
+potato,2,potato,review,subset,,,5,F006;F007;F008;F013;F014,"Potato, brown skin, big;Potato, brown skin, small;Potato, red skin;Sweet potato, brown skin;Sweet potato, pink skin",,F006,1,Y,default to large brown potato
+red chili,2,red chili,review,partial,,,21,B020;B021;B022;C003;C004;C006;C023;D034;D067;E011;E014;E024;F003;F008;F009;F011;G022;H003;P065;P066;R006,"Rajmah, red;Red gram, dal;Red gram, whole;Amaranth leaves, red;Amaranth leaves, red and green;Amaranth, spinous, leaves, red and green;Gogu leaves, red stem;Capsicum, red;Red gram, tender, fresh;Banana, ripe, red;Cherries, red;Grapes, seeded, round, red;Carrot, red;Potato, red skin;Radish, elongate, red skin;Radish, round, red skin;Chillies, red;Arecanut, dried, red color;Red snapper;Red snapper, small;Squid, red",,G022,17,N,
+rye,2,rye,none,none,,,0,,,,,absent,,USDA equivalent?
+suran,2,suran,none,none,,,0,,,,F017,miss,N,suran = yam
+aachi fish masala,1,Aachi Fish Masala,review,partial,,,13,P004;P009;P016;P030;P037;P038;P051;P060;P061;P077;P079;S001;S004,Ari fish;Cat fish;Guitar fish;Kite fish;Milk fish;Moon fish;Parrot fish;Queen fish;Raai fish;Silk fish;Sole fish;Cat fish;Gold fish,,,absent,,USDA/other
+ada,1,Ada,none,none,,,0,,,,,absent,,"Poha is similar but nutritionally different, requires fallbak"
+ash gourd,1,Ash gourd,auto,exact,D001,Other Vegetables,1,D001,Ash gourd,,D001,1,N,
+baby potato,1,Baby Potatoes,review,partial,,,7,D042;E065;F006;F007;F008;F013;F014,"Corn, baby;Water melon, dark green (sugar baby);Potato, brown skin, big;Potato, brown skin, small;Potato, red skin;Sweet potato, brown skin;Sweet potato, pink skin",,F006,3,N,baby = small potato
+bajra flour pearl millet,1,Bajra Flour (Pearl Millet),auto,subset,A003,Cereals and Millets,1,A003,Bajra,,A003,1,N,
+banana stem,1,Banana Stem,review,partial,,,9,C022;C023;D040;D041;D064;E009;E010;E011;E012,"Gogu leaves, green stem;Gogu leaves, red stem;Colocasia, stem, black;Colocasia, stem, green;Plantain, stem;Banana, ripe, montham;Banana, ripe, poovam;Banana, ripe, red;Banana, ripe, robusta",,,absent,,"No ""stem"" nutrition stats "
+banana flower vazhaipoo,1,Banana flower (Vazhaipoo),review,partial,,,1,D062,"Plantain, flower",,D062,1,N,
+black eyed bean lobia,1,Black Eyed Beans (Lobia),review,partial,,,12,B007;B016;B018;D032;D039;E013;E015;G021;G031;P006;P055;R004,"Field bean, black;Moth bean;Rajmah, black;Broad beans;Cluster beans;Black berry;Currants, black;Cardamom, black;Pepper, black;Black snapper;Pomfret, black;Squid, black",,B006,miss,N,black eyed bean = cow
+brown rice,1,Brown Rice,auto,subset,A013,Cereals and Millets,1,A013,"Rice, raw, brown",,A013,1,N,
+butter,1,Butter,none,none,,,0,,,,,absent,,USDA
+button mushroom,1,Button mushrooms,auto,subset,J001,Mushrooms,1,J001,"Button mushroom, fresh",,J001,1,N,
+cabbage patta gobi/ muttaikose,1,Cabbage (Patta Gobi/ Muttaikose),review,partial,,,3,C013;C015;C016,"Cabbage, Chinese;Cabbage, green;Cabbage, violet",,C015,2,Y,default to green vs violet 
+candied orange peel,1,Candied orange peel,review,partial,,,2,E047;F002,"Orange, pulp;Carrot, orange",,,absent,,
+caramel sauce,1,Caramel Sauce,none,none,,,0,,,,,absent,,USDA
+caster sugar,1,Caster Sugar,review,partial,,,1,E065,"Water melon, dark green (sugar baby)",,,absent,,USDA
+cauliflower gobi,1,Cauliflower (gobi),auto,subset,D036,Other Vegetables,1,D036,Cauliflower,,D036,1,N,
+champagne,1,Champagne,none,none,,,0,,,,,absent,,USDA
+chicken masala,1,Chicken masala,review,partial,,,7,J002;N001;N002;N003;N004;N005;N006,"Chicken mushroom, fresh;Chicken, poultry, leg, skinless;Chicken, poultry, thigh, skinless;Chicken, poultry, breast, skinless;Chicken, poultry, wing, skinless;Poultry, chicken, liver;Poultry, chicken, gizzard",,,absent,,USDA
+chinese potato,1,Chinese Potato,review,partial,,,6,C013;F006;F007;F008;F013;F014,"Cabbage, Chinese;Potato, brown skin, big;Potato, brown skin, small;Potato, red skin;Sweet potato, brown skin;Sweet potato, pink skin",,,absent,,USDA
+cooking soda,1,Cooking soda,none,none,,,0,,,,,absent,,baking soda? 
+crab,1,Crabs,review,exact,,,2,Q001;S007,Crab;Crab,,Q005,miss,Y,mud crab is most common in kerala cuisine
+cucumber,1,Cucumber,review,subset,,,3,D043;D044;D045,"Cucumber, green, elongate;Cucumber, green, short;Cucumber, orange, round",,C002,miss,Y,default to long cucumber
+dried fig,1,Dried Figs,auto,subset,E020,Fruits,1,E020,Fig,,,absent,,dried fig != figs
+egg white,1,Egg whites,review,subset,,,2,M002;M005,"Egg, poultry, white, raw;Egg, poultry, white, boiled",,M002,1,N,
+egg yolk,1,Egg yolks,review,subset,,,2,M003;M006,"Egg, poultry, yolk, raw;Egg, poultry, yolk, boiled",,M003,1,N,
+enos fruit salt,1,Enos fruit salt,review,partial,,,4,E007;E008;E032;E062,Avocado fruit;Bael fruit;Karonda fruit;Star fruit,,,absent,,USDA
+extra virgin olive oil,1,Extra Virgin Olive Oil,review,partial,,,9,T001;T002;T004;T005;T006;T007;T009;T011;T012,Coconut oil;Corn oil;Gingelly oil;Groundnut oil;Mustard oil;Palm oil;Safflower oil;Soyabean oil;Sunflower oil,,,absent,,USDA
+fennel,1,Fennel,none,none,,,0,,,,,absent,,
+fish fillet,1,Fish fillet,review,partial,,,15,P004;P009;P016;P030;P037;P038;P051;P060;P061;P064;P077;P079;P092;S001;S004,"Ari fish;Cat fish;Guitar fish;Kite fish;Milk fish;Moon fish;Parrot fish;Queen fish;Raai fish;Ray fish, bow head, spotted;Silk fish;Sole fish;Eggs, cat fish;Cat fish;Gold fish",,,absent,,"Requires ""general dish"" variant or select most common"
+glazed cherry,1,Glazed Cherries,review,partial,,,1,E014,"Cherries, red",,,absent,,glazed cherries have very different nutrition compared to regular cherries
+gram flour besan,1,Gram flour (besan),none,none,,,0,,,,B001,miss,N,besan is a close match to bengal gram flour
+green chawli bean yard long bean karamani barbati,1,Green Chawli Beans (Yard long beans/Karamani/Barbati),review,partial,,,18,B016;C015;D032;D033;D039;D063;D074;D077;E002;G001;G002;G003;G004;G005;G006;G007;G008;G020,"Moth bean;Cabbage, green;Broad beans;Capsicum, green;Cluster beans;Plantain, green;Tomato, green;Zucchini, green;Apple, green;Chillies, green-1;Chillies, green-2;Chillies, green-3;Chillies, green-4;Chillies, green-5;Chillies, green-6;Chillies, green-7;Chillies, green - all varieties;Cardamom, green",,,absent,,only dried form exists in IFCT
+guava,1,Guava,review,subset,,,2,E028;E029,"Guava, white flesh;Guava, pink flesh",,E028,1,Y,default to white flesh
+guava juice,1,Guava juice,review,partial,,,4,E028;E029;E033;I002,"Guava, white flesh;Guava, pink flesh;Lemon, juice;Sugarcane, juice",,,absent,,USDA
+homemade tomato puree,1,Homemade tomato puree,review,partial,,,1,D074,"Tomato, green",,,absent,,puree offers different nutrition value
+horse gram dal kollu/ kulith,1,Horse Gram Dal (Kollu/ Kulith),review,partial,,,5,B001;B003;B010;B012;B021,"Bengal gram, dal;Black gram, dal;Green gram, dal;Horse gram, whole;Red gram, dal",,B012,4,N,
+hot water,1,Hot water,review,partial,,,5,E065;E066;F016;K002;S003,"Water melon, dark green (sugar baby);Water melon, pale green;Water Chestnut;Coconut water;Fresh water Eel",,,absent,,USDA
+hung curd greek yogurt,1,Hung Curd (Greek Yogurt),none,none,,,0,,,,,absent,,
+icing sugar,1,Icing Sugar,review,partial,,,1,E065,"Water melon, dark green (sugar baby)",,,absent,,USDA
+jackfruit seed kathal,1,Jackfruit Seeds (Kathal),review,partial,,,8,G024;G025;G026;G032;H013;H017;H019;H020,Coriander seeds;Cumin seeds;Fenugreek seeds;Poppy seeds;Mustard seeds;Pine seeds;Safflower seeds;Sunflower seeds,,D052,miss,N,parse error
+kala chana brown chickpea,1,Kala Chana (Brown Chickpeas),review,partial,,,3,B005;B019;Q003,"Cowpea, brown;Rajmah, brown;Lobster, brown",,B002,miss,N,"Chana, kala = bengal gram, wholee"
+karela bitter gourd/ pavakkai,1,Karela (Bitter Gourd/ Pavakkai),none,none,,,0,,,,D005,miss,Y,default to long bitter gourd
+mixed dry fruit apricot,1,Mixed dry fruits (Apricot),review,partial,,,8,A006;B017;E005;E006;E007;E008;E032;E062,"Maize, dry;Peas, dry;Apricot, dried;Apricot, processed;Avocado fruit;Bael fruit;Karonda fruit;Star fruit",,E005,3,N,
+mixed nut almond,1,Mixed nuts (Almond),auto,subset,H001,Nuts and Oil Seeds,1,H001,Almond,,H001,1,N,
+mixed vegetable green bean,1,Mixed vegetables (Green Beans),review,partial,,,18,B016;C015;D032;D033;D039;D063;D074;D077;E002;G001;G002;G003;G004;G005;G006;G007;G008;G020,"Moth bean;Cabbage, green;Broad beans;Capsicum, green;Cluster beans;Plantain, green;Tomato, green;Zucchini, green;Apple, green;Chillies, green-1;Chillies, green-2;Chillies, green-3;Chillies, green-4;Chillies, green-5;Chillies, green-6;Chillies, green-7;Chillies, green - all varieties;Cardamom, green",,D050,miss,Y,"green bean = french bean, hybrid"
+mixed vegetable potato,1,Mixed vegetables (Potatoes),none,none,,,0,,,,F007,miss,Y,default to small brown potatoes
+mooli/ mullangi radish,1,Mooli/ Mullangi (Radish),review,partial,,,1,C031,Radish leaves,,F011,miss,Y,"default to round, red radish"
+mustard oil,1,Mustard oil,auto,exact,T006,Edible Oils and Fats,1,T006,Mustard oil,,T006,1,N,
+orange,1,Orange,review,subset,,,6,D045;D066;E045;E047;F002;Q008,"Cucumber, orange, round;Pumpkin, orange, round;Musk melon, orange flesh;Orange, pulp;Carrot, orange;Tiger Prawns, orange",,,absent,,USDA
+palm sugar,1,Palm sugar,review,partial,,,3,E048;E065;T007,"Palm fruit, tender;Water melon, dark green (sugar baby);Palm oil",,,absent,,USDA
+papad,1,Papad,none,none,,,0,,,,,absent,,"pappadam, find somewhere else"
+papaya,1,Papaya,review,subset,,,2,D059;E049,"Papaya, raw;Papaya, ripe",,E049,2,N,
+papaya juice,1,Papaya juice,review,partial,,,4,D059;E033;E049;I002,"Papaya, raw;Lemon, juice;Papaya, ripe;Sugarcane, juice",,,absent,,USDA
+poppy seed,1,Poppy seeds,auto,exact,G032,Condiments and Spices,1,G032,Poppy seeds,,G032,1,N,
+ragi flour finger millet/ nagli,1,Ragi Flour (Finger Millet/ Nagli),auto,subset,A010,Cereals and Millets,1,A010,Ragi,,A010,1,N,
+rasam powder,1,Rasam Powder,review,partial,,,1,G033,Turmeric powder,,,absent,,USDA
+raw peanut moongphali,1,Raw Peanuts (Moongphali),review,partial,,,1,D059,"Papaya, raw",,H012,miss,N,"Moog Phali is found in ""lang"" of ground nut "
+red black eyed bean azuki,1,Red Black Eyed Beans (Azuki),review,partial,,,19,B007;B016;B018;B020;D032;D034;D039;E013;E014;E015;F003;G021;G022;G031;P006;P055;P065;R004;R006,"Field bean, black;Moth bean;Rajmah, black;Rajmah, red;Broad beans;Capsicum, red;Cluster beans;Black berry;Cherries, red;Currants, black;Carrot, red;Cardamom, black;Chillies, red;Pepper, black;Black snapper;Pomfret, black;Red snapper;Squid, black;Squid, red",,,absent,,azuki not found in ifct
+red chilli flake,1,Red Chilli flakes,auto,subset,G022,Condiments and Spices,1,G022,"Chillies, red",,G022,1,N,"""flake"" may be different from regular red chili"
+rice ada,1,Rice ada,review,partial,,,6,A011;A012;A013;A014;A015;T008,"Rice, flakes;Rice, puffed;Rice, raw, brown;Rice, parboiled, milled;Rice, raw, milled;Rice bran oil",,,absent,,rice ada has no IFCT equiv
+rice puttu,1,Rice puttu,review,partial,,,6,A011;A012;A013;A014;A015;T008,"Rice, flakes;Rice, puffed;Rice, raw, brown;Rice, parboiled, milled;Rice, raw, milled;Rice bran oil",,,absent,,puttu has no IFCT equiv
+saffron strand,1,Saffron strands,none,none,,,0,,,,,absent,,USDA
+sambar powder,1,Sambar Powder,review,partial,,,1,G033,Turmeric powder,,,absent,,USDA
+shallot pearl onion,1,Shallots (pearl onions),review,partial,,,3,D058;G017;G018,"Onion, stalk;Onion, big;Onion, small",,,absent,,could replace with small onion
+shrimp,1,Shrimps,none,none,,,0,,,,Q008,miss,Y,giant tiger prawn likely found in Kerala 
+squid,1,Squid,review,subset,,,4,R004;R005;R006;R007,"Squid, black;Squid, hard shell;Squid, red;Squid, white, small",,R004,1,Y,default to black squid
+sweet potato,1,Sweet Potatoes,review,subset,,,2,F013;F014,"Sweet potato, brown skin;Sweet potato, pink skin",,F013,1,Y,default to brown potato
+tulsi holy basil,1,Tulsi (holy basil),none,none,,,0,,,,,absent,,USDA
+vanilla extract,1,Vanilla Extract,none,none,,,0,,,,,absent,,USDA
+vivatta maida,1,Vivatta Maida,none,none,,,0,,,,A018,miss,N,Maida = wheat flour 
+yam,1,Yam,review,subset,,,3,F017;F018;F019,"Yam, elephant;Yam, ordinary;Yam, wild",,F017,1,Y,default to elephant yam
+black gram,1,black gram,review,subset,,,2,B003;B004,"Black gram, dal;Black gram, whole",,B004,2,Y,default to whole
+brinjal,1,brinjals,auto,exact,D031,Other Vegetables,22,D010;D011;D012;D013;D014;D015;D016;D017;D018;D019;D020;D021;D022;D023;D024;D025;D026;D027;D028;D029;D030;D031,Brinjal 1;Brinjal 2;Brinjal 3;Brinjal 4;Brinjal 5;Brinjal 6;Brinjal 7;Brinjal 8;Brinjal 9;Brinjal 10;Brinjal 11;Brinjal 12;Brinjal 13;Brinjal 14;Brinjal 15;Brinjal 16;Brinjal 17;Brinjal 18;Brinjal 19;Brinjal 20;Brinjal 21;Brinjal - all varieties,,D031,22,Y,
+cardamom powder,1,cardamom powder,review,partial,,,3,G020;G021;G033,"Cardamom, green;Cardamom, black;Turmeric powder",,G020,1,N,
+coriander,1,coriander,review,subset,,,2,G009;G024,Coriander leaves;Coriander seeds,,G024,2,Y,default to seed
+coriander leaves,1,coriander leaves,auto,exact,G009,Condiments and Spices,1,G009,Coriander leaves,,G009,1,N,
+cumin powder,1,cumin powder,review,partial,,,2,G025;G033,Cumin seeds;Turmeric powder,,G025,1,N,
+curd,1,curd,none,none,,,0,,,,,absent,,USDA
+curry leaf,1,curry leaf,review,partial,,,15,C002;C003;C004;C005;C006;C010;C011;C019;C020;C022;C023;C030;C031;C034;G010,"Amaranth leaves, green;Amaranth leaves, red;Amaranth leaves, red and green;Amaranth, spinous, leaves, green;Amaranth, spinous, leaves, red and green;Betel leaves, big (kolkata);Betel leaves, small;Drumstick leaves;Fenugreek leaves;Gogu leaves, green stem;Gogu leaves, red stem;Pumpkin leaves, tender;Radish leaves;Tamarind leaves, tender;Curry leaves",,G010,miss,N,missed parser
+dry red chili,1,dry red chili,review,partial,,,9,A006;B017;B020;D034;E014;F003;G022;P065;R006,"Maize, dry;Peas, dry;Rajmah, red;Capsicum, red;Cherries, red;Carrot, red;Chillies, red;Red snapper;Squid, red",,G022,7,N,"requires ""dry"" variant"
+egg,1,eggs,review,subset,,,16,M001;M002;M003;M004;M005;M006;M007;M008;M009;M010;M011;M012;M013;M014;M015;P092,"Egg, poultry, whole, raw;Egg, poultry, white, raw;Egg, poultry, yolk, raw;Egg, poultry, whole, boiled;Egg, poultry, white, boiled;Egg, poultry, yolk, boiled;Egg, poultry, omlet;Egg, country hen, whole, raw;Egg, country hen, whole, boiled;Egg, country hen, omlet;Egg, duck, whole, boiled;Egg, duck, whole, raw;Egg, duck, whole, omlet;Egg, quial, whole, raw;Egg, quial, whole, boiled;Eggs, cat fish",,M001,1,N,
+fenugreek seed,1,fenugreek seeds,auto,exact,G026,Condiments and Spices,1,G026,Fenugreek seeds,,G026,1,N,
+ginger powder,1,ginger powder,review,partial,,,3,G014;G015;G033,"Ginger, fresh;Mango ginger;Turmeric powder",,,absent,,"USDA, fresh ginger != ginger powder (Dry) "
+green coriander,1,green coriander,review,partial,,,40,B010;B011;C002;C004;C005;C006;C015;C018;C022;D007;D008;D009;D033;D041;D043;D044;D057;D063;D065;D070;D071;D074;D077;E002;E023;E026;E065;E066;G001;G002;G003;G004;G005;G006;G007;G008;G009;G020;G024;R001,"Green gram, dal;Green gram, whole;Amaranth leaves, green;Amaranth leaves, red and green;Amaranth, spinous, leaves, green;Amaranth, spinous, leaves, red and green;Cabbage, green;Colocasia leaves, green;Gogu leaves, green stem;Bottle gourd, elongate, pale green;Bottle gourd, round, pale green;Bottle gourd, elongate, dark green;Capsicum, green;Colocasia, stem, green;Cucumber, green, elongate;Cucumber, green, short;Mango, green, raw;Plantain, green;Pumpkin, green, cylindrical;Snake gourd, long, pale green;Snake gourd, long, dark green;Tomato, green;Zucchini, green;Apple, green;Grapes, seeded, round, green;Grapes, seedless, round, green;Water melon, dark green (sugar baby);Water melon, pale green;Chillies, green-1;Chillies, green-2;Chillies, green-3;Chillies, green-4;Chillies, green-5;Chillies, green-6;Chillies, green-7;Chillies, green - all varieties;Coriander leaves;Cardamom, green;Coriander seeds;Clam, green shell",,G009,miss,N,
+green pea,1,green peas,review,partial,,,40,B010;B011;B017;C002;C004;C005;C006;C015;C018;C022;D007;D008;D009;D033;D041;D043;D044;D057;D061;D063;D065;D070;D071;D074;D077;E002;E023;E026;E065;E066;G001;G002;G003;G004;G005;G006;G007;G008;G020;R001,"Green gram, dal;Green gram, whole;Peas, dry;Amaranth leaves, green;Amaranth leaves, red and green;Amaranth, spinous, leaves, green;Amaranth, spinous, leaves, red and green;Cabbage, green;Colocasia leaves, green;Gogu leaves, green stem;Bottle gourd, elongate, pale green;Bottle gourd, round, pale green;Bottle gourd, elongate, dark green;Capsicum, green;Colocasia, stem, green;Cucumber, green, elongate;Cucumber, green, short;Mango, green, raw;Peas, fresh;Plantain, green;Pumpkin, green, cylindrical;Snake gourd, long, pale green;Snake gourd, long, dark green;Tomato, green;Zucchini, green;Apple, green;Grapes, seeded, round, green;Grapes, seedless, round, green;Water melon, dark green (sugar baby);Water melon, pale green;Chillies, green-1;Chillies, green-2;Chillies, green-3;Chillies, green-4;Chillies, green-5;Chillies, green-6;Chillies, green-7;Chillies, green - all varieties;Cardamom, green;Clam, green shell",,B017,3,N,dry form default 
+hot masala powder,1,hot Masala powder,review,partial,,,1,G033,Turmeric powder,,,absent,,USDA
+luke warm water,1,luke warm water,review,partial,,,2,F016;K002,Water Chestnut;Coconut water,,,absent,,USDA
+olive oil,1,olive oil,review,partial,,,12,T001;T002;T003;T004;T005;T006;T007;T008;T009;T010;T011;T012,Coconut oil;Corn oil;Cotton seed oil;Gingelly oil;Groundnut oil;Mustard oil;Palm oil;Rice bran oil;Safflower oil;Safflower oil (blended);Soyabean oil;Sunflower oil,,,absent,,USDA
+pepper powder,1,pepper powder,review,partial,,,2,G031;G033,"Pepper, black;Turmeric powder",,G031,1,N,
+red chili powder,1,red chili powder,review,partial,,,8,B020;D034;E014;F003;G022;G033;P065;R006,"Rajmah, red;Capsicum, red;Cherries, red;Carrot, red;Chillies, red;Turmeric powder;Red snapper;Squid, red",,G022,5,N,"G022 is the whole/raw chilli entry, not a powder-specific row"
+red chilli flax,1,red chilli flax,auto,subset,G022,Condiments and Spices,1,G022,"Chillies, red",,G022,1,N,
+small potato,1,small potatoes,auto,subset,F007,Roots and Tubers,1,F007,"Potato, brown skin, small",,F007,1,N,
+tulsi,1,tulsi,none,none,,,0,,,,,absent,,basil is absent
+turmeric,1,turmeric,auto,subset,G033,Condiments and Spices,1,G033,Turmeric powder,,G033,1,N,
+white urad dal,1,white urad dal,review,partial,,,3,B006;B013;P057,"Cowpea, white;Lentil, dal;Pomfret, white",,B003,miss,N,Urad dal = black gram dal
+whole black pepper,1,whole black pepper,auto,subset,G031,Condiments and Spices,1,G031,"Pepper, black",,G031,1,N,
+whole pepper,1,whole pepper,review,partial,,,20,A020;B002;B004;B011;B012;B014;B015;B022;G031;L001;L002;M001;M004;M008;M009;M011;M012;M013;M014;M015,"Wheat, whole;Bengal gram, whole;Black gram, whole;Green gram, whole;Horse gram, whole;Lentil, whole, brown;Lentil, whole, yellowish;Red gram, whole;Pepper, black;Milk, whole, Buffalo;Milk, whole, Cow;Egg, poultry, whole, raw;Egg, poultry, whole, boiled;Egg, country hen, whole, raw;Egg, country hen, whole, boiled;Egg, duck, whole, boiled;Egg, duck, whole, raw;Egg, duck, whole, omlet;Egg, quial, whole, raw;Egg, quial, whole, boiled",,G031,9,Y,default to black pepper

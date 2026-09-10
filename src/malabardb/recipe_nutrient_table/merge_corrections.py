@@ -1,20 +1,21 @@
 """
-Merge base extraction + manual review corrections -> final recipe_ingredients
+Step 3: inputs the labeled corpus and the review queue to produce finalized recipe_ingredients table 
+
+This produces the schema containing QTY, UNIT, NAME_RAW, STATE, DRY_FRESH, PARSE_STATUS got every ingredient, in every recipe.
+These are the minimum requirements for determining nutritional calculations in the future. 
 
 Run this AFTER filling in the corrected_* columns in review_queue_parsing.csv.
 Safe to rerun at any point, including mid-review -- rows not yet reached keep
 their automatic extraction and stay marked 'needs_review'.
 
-Only the four corrected_* columns are read back. The queue's context columns
-(modifier_text, ip_state, ip_comment, ip_purpose) exist to help a reviewer
-judge a flagged line and are never merged.
-
+Inputs: . full_corpus_labels.csv, review_queue_parsing.csv
 Output: recipe_ingredients_final.csv, the input to build_db.py
 """
 
 import pandas as pd
 
 from malabardb import paths
+from malabardb.recipe_nutrient_table.review_queue_parsing import normalize_qty
 
 KEY = ['recipe_id', 'line_no']
 
@@ -26,21 +27,22 @@ queue = pd.read_csv(paths.REVIEW_QUEUE_PARSING)
 
 
 def nonblank(s):
-    """True where a cell holds real text. Covers NaN and the literal string
-    'nan', which appears whenever a blank cell has been through a CSV
-    round-trip via astype(str)."""
-    return s.astype(str).str.strip().replace({'nan': '', 'NaN': ''}).ne('')
+    """True where a cell holds real text. Bug fix since come values were holding NaN values"""
+    return s.fillna('').astype(str).str.strip().ne('')
 
 
 def apply_corrections(base_df, review_df, mapping):
     """mapping: {base_column: corrected_column}. Overrides base_column with
     corrected_column ONLY where the correction is filled in. Blank means
-    'not reviewed yet', not 'clear this field'."""
+    'not reviewed yet', not 'clear this field'. Every correction is stripped before
+    it lands in the final table. """
+
     merged = base_df.merge(review_df[KEY + list(mapping.values())],
                            on=KEY, how='left')
     for base_col, corr_col in mapping.items():
         has_correction = nonblank(merged[corr_col])
-        merged.loc[has_correction, base_col] = merged.loc[has_correction, corr_col]
+        value = merged[corr_col].astype(str).str.strip()
+        merged.loc[has_correction, base_col] = value.loc[has_correction]
     return merged.drop(columns=list(mapping.values()))
 
 
@@ -51,24 +53,45 @@ final = apply_corrections(base, queue, {
     'ip_state':   'corrected_state',
 })
 
-# Fix 1: bulk-resolve the 'inch' rows. Regex was already right,
-# ip is structurally blind to this unit, decision already verified.
+# normalize the qty 
+final['regex_qty'] = final['regex_qty'].astype(str).apply(normalize_qty)
+
+# Fix 1: bulk-resolve the 'inch' rows. 
 inch_keys = set(zip(final.loc[final['regex_unit'] == 'inch', 'recipe_id'],
                     final.loc[final['regex_unit'] == 'inch', 'line_no']))
 print(f'bulk-resolving {len(inch_keys)} "inch" rows as regex-correct')
 
 # Fix 2: the 3 known blind-spot rows
 BLIND_SPOT_FIXES = {
-    (23, 8): {'qty': '1', 'unit': 'pinch'},    # Salt - a pinch
-    (75, 5): {'qty': '1', 'unit': 'pinch'},    # turmeric powder - a pinch
-    (101, 2): {'qty': '1', 'unit': 'pinch'},   # turmeric powder - a pinch
+    (23, 8):  {'qty': '1', 'unit': 'pinch'},
+    (75, 5):  {'qty': '1', 'unit': 'pinch'},
+    (101, 2): {'qty': '1', 'unit': 'pinch'},
+    # neither parser knows these count-nouns, so both agreed and no flag fired
+    (71, 8):  {'qty': '1', 'unit': 'sprig', 'name': 'Curry leaves'},
+    (98, 11): {'qty': '2', 'unit': 'sprig', 'name': 'Curry leaves'},
+    (98, 12): {'qty': '1', 'unit': 'cup',   'name': 'Small onion (Sambar)'},
+    (3, 7):   {'qty': '2', 'unit': 'tsp',   'name': 'Cumin seeds'},
 }
 for (rid, ln), vals in BLIND_SPOT_FIXES.items():
     mask = (final['recipe_id'] == rid) & (final['line_no'] == ln)
-    final.loc[mask, 'regex_qty'] = vals['qty']
+    final.loc[mask, 'regex_qty']  = vals['qty']
     final.loc[mask, 'regex_unit'] = vals['unit']
+    if 'name' in vals:
+        final.loc[mask, 'regex_name'] = vals['name']
 
-# Fix 3: split known merged-ingredient rows into two rows
+# Fix 3: Lines that are not ingredients: stray instruction fragments in the source.
+DROP_LINES = {
+    (16, 2),    # "peel"
+    (125, 9),   # "tighten it"
+    (101, 7),   # "as per taste" - orphaned modifier, see split below
+}
+before = len(final)
+for rid, ln in DROP_LINES:
+    final = final[~((final['recipe_id'] == rid) & (final['line_no'] == ln))]
+print(f'dropped {before - len(final)} non-ingredient lines')
+
+# Fix 4: split known merged-ingredient rows into two rows
+# add more rows as necessary 
 MERGED_ROW_SPLITS = {
     (11, 4): [   # "1 tsp active dry yeast - + 1/2 cup lukewarm water"
         {'qty': '1', 'unit': 'tsp', 'name': 'active dry yeast', 'dry_fresh': 'Dry'},

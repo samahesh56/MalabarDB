@@ -3,6 +3,16 @@ import re
 
 from malabardb import paths
 
+'''
+STEP 1: Inputs the raw kaggle dataset, filters by kerala cuisine, and produces a recipes.csv table, and a recipe_ingredients.csv table
+
+Recipes.csv assigns a recipe_id for each recipe, with attributes dish_name, region, cuisine_raw, servings, instructions, and source_row_id (tracking)
+    Output: data/final/recipes.csv 
+
+Recipe_ingredients.csv consists of a recipe_id attached to each ingredient's original recipe, the line_no, and raw_line (the found ingredient)
+raw_line is produced using comma-splitting the TranslatedIngredients column, which will allow us to identify each recipes' individual ingredients, states, qty sizes, etc. 
+    Output: data/processed/recipe_ingredients.csv'''
+
 df = pd.read_csv(paths.RECIPES)
 kerala = df[df['Cuisine'] == 'Kerala Recipes'].copy()
 

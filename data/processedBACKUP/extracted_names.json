@@ -1,0 +1,3250 @@
+{
+  "meta": {
+    "source": "C:\\Users\\Akku\\Documents\\GitHub\\MalabarDB\\data\\raw\\IndianFoodDatasetCSV.csv",
+    "cuisine_filter": "Kerala Recipes",
+    "n_recipes": 163,
+    "n_names_total": 1725,
+    "n_names_distinct": 275,
+    "n_dropped_empty": 12,
+    "n_dropped_non_ascii": 224
+  },
+  "recipes": [
+    {
+      "srno": 40,
+      "names": [
+        "Ada",
+        "Milk",
+        "Sugar",
+        "Ghee",
+        "Cardamom Powder"
+      ]
+    },
+    {
+      "srno": 92,
+      "names": [
+        "Curd",
+        "Fresh coconut",
+        "Vellai Poosanikai",
+        "Green Chillies",
+        "Black pepper powder",
+        "Water",
+        "Turmeric powder",
+        "Salt",
+        "Coconut Oil",
+        "Mustard seeds",
+        "Methi Seeds",
+        "Curry leaves",
+        "Dry Red Chilli"
+      ]
+    },
+    {
+      "srno": 114,
+      "names": [
+        "raw banana",
+        "suran",
+        "black gram",
+        "turmeric powder",
+        "red chili powder",
+        "salt",
+        "cumin seeds",
+        "coconut",
+        "whole black pepper",
+        "garlic",
+        "green chili",
+        "oil",
+        "mustard"
+      ]
+    },
+    {
+      "srno": 138,
+      "names": [
+        "Sweet Potatoes",
+        "Onion",
+        "Rasam Powder",
+        "Turmeric powder",
+        "Asafoetida",
+        "Salt",
+        "Sunflower Oil",
+        "Mustard seeds",
+        "White Urad Dal",
+        "Curry leaves"
+      ]
+    },
+    {
+      "srno": 205,
+      "names": [
+        "Banana flower",
+        "Coconut milk",
+        "Coconut milk",
+        "Rice",
+        "Chana dal",
+        "Onion",
+        "Cardamom Pods/Seeds",
+        "Sugar",
+        "Salt",
+        "Water"
+      ]
+    },
+    {
+      "srno": 209,
+      "names": [
+        "Bhindi",
+        "Pearl onions",
+        "Fresh coconut",
+        "Green Chillies",
+        "Curry leaves",
+        "Mustard seeds",
+        "Turmeric powder",
+        "Salt",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "srno": 343,
+      "names": [
+        "Bhindi",
+        "Onion",
+        "Green Chilli",
+        "Coconut milk",
+        "Ginger",
+        "Mustard seeds",
+        "Curry leaves",
+        "Coconut Oil",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 353,
+      "names": [
+        "Carrot",
+        "Brinjal",
+        "Potato",
+        "Elephant yam",
+        "Green beans",
+        "Mango",
+        "Turmeric powder",
+        "Fresh coconut",
+        "Ginger",
+        "Green Chillies",
+        "Cumin seeds",
+        "Pearl onions",
+        "Curry leaves",
+        "Coconut Oil",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 356,
+      "names": [
+        "Seer fish",
+        "Turmeric powder",
+        "Salt",
+        "Aachi Fish Masala",
+        "Fresh coconut",
+        "Garlic",
+        "Ginger",
+        "Coriander Leaves",
+        "Tomato",
+        "Cinnamon Stick",
+        "Kokum",
+        "Coconut Oil",
+        "Curry leaves",
+        "Pearl onions",
+        "Sambar Powder"
+      ]
+    },
+    {
+      "srno": 367,
+      "names": [
+        "Tapioca root",
+        "Fresh coconut",
+        "Shallots",
+        "Green Chillies",
+        "Hung Curd",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 377,
+      "names": [
+        "rice",
+        "rice",
+        "coconut",
+        "active dry yeast",
+        "sugar",
+        "salt"
+      ]
+    },
+    {
+      "srno": 400,
+      "names": [
+        "Milk",
+        "Coconut milk",
+        "Yellow Moong Dal",
+        "Chana dal",
+        "Fresh coconut",
+        "Jaggery",
+        "Cashew nuts",
+        "Cardamom Powder",
+        "Ghee"
+      ]
+    },
+    {
+      "srno": 421,
+      "names": [
+        "Nendra Pazham Banana",
+        "Turmeric powder",
+        "Salt",
+        "Curd",
+        "Coconut Oil",
+        "Fresh coconut",
+        "Green Chilli",
+        "Curry leaves",
+        "Cumin seeds",
+        "Mustard seeds",
+        "Curry leaves",
+        "White Urad Dal",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "srno": 434,
+      "names": [
+        "Chicken",
+        "Onion",
+        "Ginger",
+        "Garlic",
+        "Mustard seeds",
+        "Curry leaves",
+        "Coconut Oil",
+        "Salt",
+        "Coconut milk",
+        "Whole Black Peppercorns",
+        "Coriander Seeds",
+        "Cinnamon Stick",
+        "Fennel seeds",
+        "Dry Red Chillies"
+      ]
+    },
+    {
+      "srno": 438,
+      "names": [
+        "Mixed vegetables",
+        "Raw Peanuts",
+        "Arhar dal",
+        "Salt",
+        "Jaggery",
+        "Fresh coconut",
+        "Dry Red Chillies",
+        "Chana dal",
+        "White Urad Dal",
+        "Cinnamon Stick",
+        "Sunflower Oil",
+        "Mustard seeds",
+        "Asafoetida",
+        "Curry leaves"
+      ]
+    },
+    {
+      "srno": 529,
+      "names": [
+        "gm arabic",
+        "peel",
+        "tamarind",
+        "salt",
+        "coconut",
+        "red chilli powder",
+        "onions",
+        "coconut oil",
+        "onions",
+        "mustard",
+        "cumin seeds",
+        "dry red chillies",
+        "curry leaves"
+      ]
+    },
+    {
+      "srno": 555,
+      "names": [
+        "Chicken",
+        "Onion",
+        "Curry leaves",
+        "Garlic",
+        "Ginger",
+        "Turmeric powder",
+        "Red Chilli powder",
+        "Garam masala powder",
+        "Black pepper powder",
+        "Coconut Oil",
+        "Salt",
+        "Whole Wheat Flour",
+        "All Purpose Flour",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 616,
+      "names": [
+        "Nendra Pazham Banana",
+        "All Purpose Flour",
+        "Rice flour",
+        "Baking soda",
+        "Salt",
+        "Turmeric powder",
+        "Cardamom Powder",
+        "Sugar",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "srno": 667,
+      "names": [
+        "Fish",
+        "Tamarind Water",
+        "Shallots",
+        "Coconut Oil",
+        "Mustard seeds",
+        "Curry leaves",
+        "Salt",
+        "Garlic",
+        "Ginger Garlic Paste",
+        "Kashmiri Red Chilli Powder",
+        "Coriander Powder",
+        "Methi Powder"
+      ]
+    },
+    {
+      "srno": 735,
+      "names": [
+        "Jackfruit Ripe",
+        "Rice flour",
+        "Sunflower Oil",
+        "Salt",
+        "Lukewarm Water",
+        "Fresh coconut",
+        "Cardamom Pods/Seeds"
+      ]
+    },
+    {
+      "srno": 739,
+      "names": [
+        "Green Moong Dal",
+        "Jaggery",
+        "Cardamom Powder",
+        "Fresh coconut",
+        "Gram flour",
+        "Rice flour",
+        "Turmeric powder",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 757,
+      "names": []
+    },
+    {
+      "srno": 777,
+      "names": [
+        "Green Moong Dal",
+        "Yellow Moong Dal",
+        "Pearl onions",
+        "Mustard seeds",
+        "Curry leaves",
+        "Dry Red Chilli",
+        "Turmeric powder",
+        "Salt",
+        "Coconut Oil",
+        "Fresh coconut",
+        "Green Chilli",
+        "Cumin seeds"
+      ]
+    },
+    {
+      "srno": 782,
+      "names": [
+        "Rice",
+        "Jaggery",
+        "Ripe Bananas",
+        "Fresh coconut",
+        "Cardamom Powder",
+        "Enos fruit salt",
+        "Ghee",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 861,
+      "names": []
+    },
+    {
+      "srno": 894,
+      "names": [
+        "Bhindi",
+        "Tamarind",
+        "Turmeric powder",
+        "Coconut Oil",
+        "Mustard seeds",
+        "Asafoetida",
+        "Curry leaves",
+        "Salt",
+        "Methi Seeds",
+        "Rice",
+        "Dry Red Chillies"
+      ]
+    },
+    {
+      "srno": 918,
+      "names": []
+    },
+    {
+      "srno": 922,
+      "names": [
+        "Chicken",
+        "Turmeric powder",
+        "Kashmiri Red Chilli Powder",
+        "Lemon juice",
+        "Salt",
+        "Onions",
+        "Ginger",
+        "Garlic",
+        "Coriander Powder",
+        "Kashmiri Red Chilli Powder",
+        "Garam masala powder",
+        "Fennel Powder",
+        "Tomatoes",
+        "Curry leaves",
+        "Salt",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "srno": 923,
+      "names": [
+        "Colocasia root",
+        "Tamarind",
+        "Salt",
+        "Fresh coconut",
+        "Red Chilli powder",
+        "Onions",
+        "Coconut Oil",
+        "Onions",
+        "Mustard seeds",
+        "Cumin seeds",
+        "Dry Red Chilli",
+        "Curry leaves"
+      ]
+    },
+    {
+      "srno": 924,
+      "names": [
+        "Karela",
+        "Onion",
+        "Curd",
+        "Turmeric powder",
+        "Salt",
+        "Fresh coconut",
+        "Mustard seeds",
+        "Green Chilli",
+        "Coconut Oil",
+        "Mustard seeds",
+        "Dry Red Chilli",
+        "Curry leaves"
+      ]
+    },
+    {
+      "srno": 948,
+      "names": [
+        "Fresh coconut",
+        "Coriander Leaves",
+        "Mint Leaves",
+        "Green Chillies",
+        "Garlic",
+        "Ginger",
+        "Cumin seeds",
+        "Lemon juice",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 955,
+      "names": [
+        "Raw papaya",
+        "Green Chilli",
+        "Fresh coconut",
+        "Pearl onions",
+        "Curry leaves",
+        "Red Chilli powder",
+        "Turmeric powder",
+        "Cumin seeds",
+        "Mustard seeds",
+        "Dry Red Chillies",
+        "Tamarind",
+        "Sunflower Oil",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 993,
+      "names": [
+        "Mango",
+        "Green Chillies",
+        "Curd",
+        "Salt",
+        "Fresh coconut",
+        "Cumin seeds",
+        "Turmeric powder",
+        "Red Chilli powder",
+        "Coconut Oil",
+        "Mustard seeds",
+        "Methi Seeds",
+        "Dry Red Chilli",
+        "Curry leaves"
+      ]
+    },
+    {
+      "srno": 1101,
+      "names": [
+        "okra",
+        "green chillies",
+        "curd",
+        "curry leaves",
+        "coconut",
+        "cumin seeds",
+        "mustard",
+        "dry red chili",
+        "oil",
+        "salt"
+      ]
+    },
+    {
+      "srno": 1206,
+      "names": [
+        "Mixed dry fruits",
+        "Rum",
+        "Sugar",
+        "Hot water",
+        "Vivatta Maida",
+        "Baking powder",
+        "Baking soda",
+        "Cardamom Pods/Seeds",
+        "Cinnamon Powder",
+        "Nutmeg powder",
+        "Butter",
+        "Sugar",
+        "Whole Eggs",
+        "Mixed nuts",
+        "Tutti frutti",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 1211,
+      "names": [
+        "Mango",
+        "Green Chillies",
+        "Fresh coconut",
+        "Cumin seeds",
+        "Jaggery",
+        "Turmeric powder",
+        "Curd",
+        "Coconut Oil",
+        "Dry Red Chilli",
+        "Curry leaves",
+        "Mustard seeds",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 1342,
+      "names": [
+        "Seer fish",
+        "Curry leaves",
+        "Tamarind Water",
+        "Turmeric powder",
+        "Coconut milk",
+        "Lemon juice",
+        "Salt",
+        "Coconut Oil",
+        "Onion",
+        "Dry Red Chillies",
+        "Garlic",
+        "Ginger",
+        "Green Chilli"
+      ]
+    },
+    {
+      "srno": 1522,
+      "names": [
+        "Mango",
+        "Coconut milk",
+        "Palm sugar",
+        "Cardamom Powder",
+        "Fresh coconut",
+        "Badam",
+        "Ghee"
+      ]
+    },
+    {
+      "srno": 1541,
+      "names": []
+    },
+    {
+      "srno": 1542,
+      "names": [
+        "Guava juice",
+        "Papaya juice",
+        "Champagne",
+        "Lemon",
+        "Guava",
+        "Papaya"
+      ]
+    },
+    {
+      "srno": 1577,
+      "names": [
+        "Raisins",
+        "Glazed Cherries",
+        "Dried Figs",
+        "Tutti frutti",
+        "Badam",
+        "Cashew nuts",
+        "Rum",
+        "Butter",
+        "Ghee",
+        "Caster Sugar",
+        "Egg yolks",
+        "Vanilla Extract",
+        "Candied orange peel",
+        "Caramel Sauce",
+        "Orange",
+        "All Purpose Flour",
+        "Baking powder",
+        "Baking soda",
+        "Cinnamon Powder",
+        "Nutmeg powder",
+        "Dry ginger powder",
+        "Milk",
+        "Egg whites",
+        "Lemon juice",
+        "Sugar"
+      ]
+    },
+    {
+      "srno": 1579,
+      "names": [
+        "Shrimps",
+        "Pearl onions",
+        "Tomato",
+        "Green Chilli",
+        "Ginger",
+        "Garlic",
+        "Cinnamon Stick",
+        "Cardamom Pods/Seeds",
+        "Whole Black Peppercorns",
+        "Curry leaves",
+        "Coconut milk",
+        "Turmeric powder",
+        "Lemon juice",
+        "Sugar",
+        "Salt",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "srno": 1829,
+      "names": [
+        "suran",
+        "/ 2 cups water",
+        "garlic",
+        "onion",
+        "turmeric powder",
+        "/ 2 teaspoon red chilli powder",
+        "Black pepper powder",
+        "fennel powder",
+        "oil",
+        "mustard",
+        "curry leaves"
+      ]
+    },
+    {
+      "srno": 1856,
+      "names": [
+        "Prawns",
+        "Fresh coconut",
+        "Coriander Seeds",
+        "Dry Red Chillies",
+        "Shallots",
+        "Garlic",
+        "Methi Seeds",
+        "Cumin seeds",
+        "Turmeric powder",
+        "Mustard seeds",
+        "Curry leaves",
+        "Tamarind",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 1893,
+      "names": [
+        "Brinjal",
+        "Mustard seeds",
+        "Onion",
+        "Green Chillies",
+        "Turmeric powder",
+        "Coriander Powder",
+        "Fennel seeds",
+        "Methi Seeds",
+        "Tomatoes",
+        "Coconut milk",
+        "Coconut Oil",
+        "Curry leaves",
+        "Coriander Leaves"
+      ]
+    },
+    {
+      "srno": 2035,
+      "names": []
+    },
+    {
+      "srno": 2111,
+      "names": [
+        "Yellow Moong Dal",
+        "Chayote",
+        "Potato",
+        "Carrot",
+        "Green peas",
+        "Green Chillies",
+        "Turmeric powder",
+        "Salt",
+        "Curry leaves",
+        "Black pepper powder",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "srno": 2308,
+      "names": [
+        "cabbage",
+        "green peas",
+        "curry leaf",
+        "rye",
+        "red chili",
+        "white urad dal",
+        "turmeric powder",
+        "Salt",
+        "oil",
+        "coconut",
+        "small onions",
+        "garlic",
+        "green chili",
+        "curry leaves"
+      ]
+    },
+    {
+      "srno": 2311,
+      "names": [
+        "carrots",
+        "green beans",
+        "onion",
+        "green chillies",
+        "cumin powder",
+        "turmeric powder",
+        "salt",
+        "oil",
+        "mustard",
+        "curry leaves"
+      ]
+    },
+    {
+      "srno": 2374,
+      "names": [
+        "Raw Banana",
+        "Paprika powder",
+        "Black pepper powder",
+        "Salt",
+        "Extra Virgin Olive Oil"
+      ]
+    },
+    {
+      "srno": 2413,
+      "names": [
+        "Rice flour",
+        "Icing Sugar",
+        "Fennel seeds",
+        "Salt",
+        "Coconut milk",
+        "Whole Eggs",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "srno": 2414,
+      "names": [
+        "Mutton",
+        "Fresh coconut",
+        "Onions",
+        "Potatoes",
+        "Tomatoes",
+        "Green Chillies",
+        "Garlic",
+        "Ginger",
+        "Poppy seeds",
+        "Cinnamon Stick",
+        "Coriander Seeds",
+        "Coriander Leaves",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "srno": 2449,
+      "names": [
+        "Red matta rice",
+        "Water",
+        "Jaggery",
+        "Cardamom Pods/Seeds",
+        "Coconut milk",
+        "Water",
+        "Ghee",
+        "Cashew nuts",
+        "Dry coconut"
+      ]
+    },
+    {
+      "srno": 2501,
+      "names": [
+        "Mooli/ Mullangi",
+        "Coconut Oil",
+        "Mustard seeds",
+        "Cumin seeds",
+        "Curry leaves",
+        "Turmeric powder",
+        "Fresh coconut",
+        "Green Chillies",
+        "Curry leaves",
+        "Ginger",
+        "Salt",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "srno": 2510,
+      "names": [
+        "Rice",
+        "Methi Seeds",
+        "Fresh coconut",
+        "Cooked rice",
+        "Sugar",
+        "Baking soda",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 2632,
+      "names": [
+        "Curd",
+        "Water",
+        "Shallots",
+        "Ginger",
+        "Garlic",
+        "Green Chilli",
+        "Turmeric powder",
+        "Mustard seeds",
+        "Methi Seeds",
+        "Curry leaves",
+        "Dry Red Chillies",
+        "Coconut Oil",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 2649,
+      "names": [
+        "Raw Banana",
+        "Coconut Oil",
+        "Mustard seeds",
+        "Dry Red Chillies",
+        "Curry leaves",
+        "Pearl onions",
+        "Garlic",
+        "Turmeric powder",
+        "Fresh coconut",
+        "Green Chillies",
+        "Coriander Leaves",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 2671,
+      "names": [
+        "Fresh coconut",
+        "Shallots",
+        "Tamarind",
+        "Dry Red Chilli",
+        "Ginger",
+        "Dry Red Chillies",
+        "Curry leaves",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 2727,
+      "names": []
+    },
+    {
+      "srno": 2736,
+      "names": [
+        "All Purpose Flour",
+        "Ghee",
+        "Milk",
+        "Sugar",
+        "Salt",
+        "Lukewarm Water"
+      ]
+    },
+    {
+      "srno": 2934,
+      "names": [
+        "Tomatoes",
+        "Sunflower Oil",
+        "Mustard seeds",
+        "Dry Red Chillies",
+        "Curry leaves",
+        "Onions",
+        "Ginger Garlic Paste",
+        "Green Chillies",
+        "Kashmiri Red Chilli Powder",
+        "Turmeric powder",
+        "Salt",
+        "Coriander Leaves"
+      ]
+    },
+    {
+      "srno": 2943,
+      "names": [
+        "Chicken",
+        "Red Chilli powder",
+        "Turmeric powder",
+        "Salt",
+        "Onions",
+        "Curry leaves",
+        "Green Chillies",
+        "Ginger",
+        "Garlic",
+        "Tomato",
+        "Red Chilli powder",
+        "Coriander Powder",
+        "Turmeric powder",
+        "Fennel Powder",
+        "Garam masala powder",
+        "Coconut milk",
+        "Salt",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "srno": 3014,
+      "names": [
+        "Kaddu",
+        "Black Eyed Beans",
+        "Red Chilli powder",
+        "Turmeric powder",
+        "Salt",
+        "Fresh coconut",
+        "Cumin seeds",
+        "Green Chilli",
+        "Coconut Oil",
+        "Mustard seeds",
+        "Curry leaves",
+        "Dry Red Chillies",
+        "Fresh coconut",
+        "Pearl onions"
+      ]
+    },
+    {
+      "srno": 3029,
+      "names": [
+        "Rice",
+        "Cooked rice",
+        "Fresh coconut",
+        "Cumin seeds",
+        "Active dry yeast",
+        "Sugar",
+        "Salt",
+        "Cardamom Pods/Seeds",
+        "Ghee",
+        "Raisins"
+      ]
+    },
+    {
+      "srno": 3107,
+      "names": [
+        "Sardine fish",
+        "Shallots",
+        "Tomatoes",
+        "Ginger Garlic Paste",
+        "Turmeric powder",
+        "Red Chilli powder",
+        "Coriander Powder",
+        "Fennel Powder",
+        "Black pepper powder",
+        "Kokum",
+        "Coconut Oil",
+        "Mustard seeds",
+        "Curry leaves",
+        "Salt",
+        "Water"
+      ]
+    },
+    {
+      "srno": 3121,
+      "names": [
+        "Mango",
+        "Salt",
+        "Turmeric powder",
+        "Red Chilli powder",
+        "Curry leaves",
+        "Mustard seeds",
+        "Fresh coconut",
+        "Jaggery"
+      ]
+    },
+    {
+      "srno": 3147,
+      "names": [
+        "eggs",
+        "onions",
+        "tomatoes",
+        "garlic",
+        "ginger",
+        "curry leaves",
+        "hot Masala powder",
+        "black pepper powder",
+        "Kashmiri red chilli powder",
+        "coriander powder",
+        "turmeric powder",
+        "coriander leaves",
+        "water",
+        "coconut oil",
+        "salt"
+      ]
+    },
+    {
+      "srno": 3204,
+      "names": [
+        "Crabs",
+        "Fresh coconut",
+        "Coriander Leaves",
+        "Cinnamon Stick",
+        "Bay leaf",
+        "Ginger",
+        "Garlic",
+        "Onion",
+        "Onion",
+        "Tomato",
+        "Kashmiri Red Chilli Powder",
+        "Red Chilli powder",
+        "Coriander Powder",
+        "Turmeric powder",
+        "Salt",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "srno": 3413,
+      "names": [
+        "Water",
+        "Dry ginger powder",
+        "Black pepper powder",
+        "Instant Coffee Powder",
+        "Tulsi",
+        "Cumin seeds",
+        "Cardamom Pods/Seeds",
+        "Jaggery",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 3584,
+      "names": [
+        "Elephant yam",
+        "Red Chilli powder",
+        "Turmeric powder",
+        "Fennel seeds",
+        "Black pepper powder",
+        "Mustard seeds",
+        "Curry leaves",
+        "Coconut Oil",
+        "Pearl onions",
+        "Garlic"
+      ]
+    },
+    {
+      "srno": 3680,
+      "names": [
+        "Jackfruit Raw",
+        "Brown Rice",
+        "Milk",
+        "Cardamom Pods/Seeds",
+        "Ghee",
+        "Cashew nuts"
+      ]
+    },
+    {
+      "srno": 3742,
+      "names": [
+        "Rice",
+        "Cooked rice",
+        "Fresh coconut",
+        "Active dry yeast",
+        "Sugar",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 3776,
+      "names": [
+        "Drumstick",
+        "Mango",
+        "Green Chilli",
+        "Water",
+        "Salt",
+        "Arhar dal",
+        "Turmeric powder",
+        "Water",
+        "Fresh coconut",
+        "Cumin seeds",
+        "Green Chillies",
+        "Water",
+        "Coconut Oil",
+        "Mustard seeds",
+        "White Urad Dal",
+        "Dry Red Chillies",
+        "Curry leaves"
+      ]
+    },
+    {
+      "srno": 3832,
+      "names": [
+        "Rice flour",
+        "All Purpose Flour",
+        "Dry ginger powder",
+        "Cardamom Powder",
+        "Ripe Bananas",
+        "Jaggery",
+        "Cashew nuts",
+        "Salt",
+        "Ghee"
+      ]
+    },
+    {
+      "srno": 3921,
+      "names": [
+        "Mutton",
+        "Black pepper powder",
+        "Salt",
+        "Turmeric powder",
+        "Coconut Oil",
+        "Onion",
+        "Tomato",
+        "Ginger",
+        "Garlic",
+        "Red Chilli powder",
+        "Turmeric powder",
+        "Coriander Powder",
+        "Garam masala powder",
+        "Fennel seeds",
+        "Curry leaves",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 4063,
+      "names": [
+        "Tapioca root",
+        "Chicken",
+        "Onion",
+        "Garlic",
+        "Ginger",
+        "Curry leaves",
+        "Green Chilli",
+        "Turmeric powder",
+        "Red Chilli powder",
+        "Garam masala powder",
+        "Black pepper powder",
+        "Fresh coconut",
+        "Salt",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "srno": 4161,
+      "names": [
+        "tomatoes",
+        "green chillies",
+        "turmeric powder",
+        "red chilli powder",
+        "salt",
+        "coconut oil",
+        "mustard",
+        "cast Curry leaves",
+        "coconut",
+        "cumin seeds",
+        "onions"
+      ]
+    },
+    {
+      "srno": 4168,
+      "names": [
+        "okra",
+        "small onions",
+        "coconut",
+        "green chillies",
+        "curry leaves",
+        "mustard",
+        "turmeric Powder",
+        "salt",
+        "oil"
+      ]
+    },
+    {
+      "srno": 4330,
+      "names": [
+        "tomatoes",
+        "oil",
+        "rye",
+        "dry red chillies",
+        "curry leaves",
+        "onions",
+        "ginger garlic paste",
+        "green chillies",
+        "Kashmiri red chilli powder",
+        "turmeric powder",
+        "salt",
+        "green coriander"
+      ]
+    },
+    {
+      "srno": 4365,
+      "names": [
+        "Whole Eggs",
+        "Cashew nuts",
+        "Onion",
+        "Tomato",
+        "Potato",
+        "Ginger",
+        "Garlic",
+        "Coriander Powder",
+        "Red Chilli powder",
+        "Turmeric powder",
+        "Garam masala powder",
+        "Fennel seeds",
+        "Coriander Leaves",
+        "Curry leaves",
+        "Sunflower Oil",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 4538,
+      "names": []
+    },
+    {
+      "srno": 4595,
+      "names": [
+        "brinjals",
+        "mustard",
+        "onion",
+        "green chillies",
+        "turmeric powder",
+        "coriander powder",
+        "Fennel",
+        "fenugreek seeds",
+        "tomato",
+        "coconut milk",
+        "coconut oil",
+        "curry leaves",
+        "coriander"
+      ]
+    },
+    {
+      "srno": 4667,
+      "names": [
+        "Fish fillet",
+        "Ginger Garlic Paste",
+        "Red Chilli powder",
+        "Turmeric powder",
+        "Black pepper powder",
+        "Lemon",
+        "Salt",
+        "Coconut Oil",
+        "Curry leaves"
+      ]
+    },
+    {
+      "srno": 4816,
+      "names": [
+        "Chayote",
+        "Fresh coconut",
+        "Green Chillies",
+        "Curry leaves",
+        "Cumin seeds",
+        "Mustard seeds",
+        "Turmeric powder",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 4832,
+      "names": [
+        "Red matta rice",
+        "Green Moong Dal",
+        "Fresh coconut",
+        "Garlic",
+        "Cumin seeds",
+        "Green Chilli",
+        "Turmeric powder",
+        "Curry leaves",
+        "Salt",
+        "Papad"
+      ]
+    },
+    {
+      "srno": 4834,
+      "names": [
+        "Green peas",
+        "Onion",
+        "Fresh coconut",
+        "Green Chillies",
+        "Cumin seeds",
+        "Curry leaves",
+        "Fennel seeds",
+        "Mustard seeds",
+        "Salt",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "srno": 4972,
+      "names": [
+        "Chicken",
+        "Onions",
+        "Tomatoes",
+        "Ginger",
+        "Garlic",
+        "Red Chilli powder",
+        "Turmeric powder",
+        "Chicken masala",
+        "Fresh coconut",
+        "Cinnamon Stick",
+        "Curry leaves",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "srno": 4976,
+      "names": [
+        "Chicken",
+        "Curd",
+        "Turmeric powder",
+        "Sunflower Oil",
+        "Mustard seeds",
+        "Curry leaves",
+        "Onion",
+        "Ginger",
+        "Garlic",
+        "Salt",
+        "Instant Oats",
+        "Whole Black Peppercorns",
+        "Coriander Seeds",
+        "Cinnamon Stick",
+        "Fennel seeds",
+        "Dry Red Chillies"
+      ]
+    },
+    {
+      "srno": 5178,
+      "names": [
+        "Baby Potatoes",
+        "Pearl onions",
+        "Tomato",
+        "Green Chillies",
+        "Ginger",
+        "Garlic",
+        "Coriander Powder",
+        "Red Chilli powder",
+        "Turmeric powder",
+        "Garam masala powder",
+        "Curry leaves",
+        "Pearl onions",
+        "Fresh coconut",
+        "Cumin seeds",
+        "Whole Black Peppercorns",
+        "Coconut Oil",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 5191,
+      "names": [
+        "Kaddu",
+        "Fresh coconut",
+        "Fresh coconut",
+        "Green Chilli",
+        "Mustard seeds",
+        "White Urad Dal",
+        "Curry leaves",
+        "Dry Red Chillies",
+        "Turmeric powder",
+        "Cumin seeds",
+        "Coconut Oil",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 5193,
+      "names": [
+        "raw bananas",
+        "paprika powder",
+        "pepper powder",
+        "salt",
+        "olive oil"
+      ]
+    },
+    {
+      "srno": 5207,
+      "names": [
+        "Rice flour",
+        "Jaggery",
+        "Water",
+        "Cardamom Pods/Seeds",
+        "Ripe Bananas",
+        "Baking soda",
+        "Ghee"
+      ]
+    },
+    {
+      "srno": 5296,
+      "names": [
+        "Vellai Poosanikai",
+        "Drumstick",
+        "Carrots",
+        "Green beans",
+        "Raw Banana",
+        "Potatoes",
+        "Elephant yam",
+        "Turmeric powder",
+        "Salt",
+        "Fresh coconut",
+        "Green Chillies",
+        "Curry leaves",
+        "Cumin seeds",
+        "Coconut Oil",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 5301,
+      "names": [
+        "Jackfruit Ripe",
+        "Water",
+        "Red Chilli powder",
+        "Turmeric powder",
+        "Black pepper powder",
+        "Salt",
+        "Fresh coconut",
+        "Cumin seeds",
+        "Fresh coconut",
+        "Curry leaves",
+        "Dry Red Chillies",
+        "Garlic",
+        "Mustard seeds",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "srno": 5350,
+      "names": [
+        "Rice ada",
+        "Jaggery",
+        "Water",
+        "Coconut milk",
+        "Coconut milk",
+        "Cashew nuts",
+        "Raisins",
+        "Fresh coconut",
+        "Cardamom Powder",
+        "Ghee"
+      ]
+    },
+    {
+      "srno": 5382,
+      "names": [
+        "Banana Stem",
+        "Fresh coconut",
+        "Green Chillies",
+        "Curry leaves",
+        "Salt",
+        "Coconut Oil",
+        "Mustard seeds",
+        "White Urad Dal",
+        "Curry leaves"
+      ]
+    },
+    {
+      "srno": 5456,
+      "names": []
+    },
+    {
+      "srno": 5512,
+      "names": []
+    },
+    {
+      "srno": 5552,
+      "names": []
+    },
+    {
+      "srno": 5555,
+      "names": [
+        "Rice flour",
+        "Fresh coconut",
+        "Jackfruit Ripe",
+        "Sugar",
+        "Salt",
+        "Cardamom Pods/Seeds"
+      ]
+    },
+    {
+      "srno": 5601,
+      "names": [
+        "Kaddu",
+        "Turmeric powder",
+        "Jaggery",
+        "Salt",
+        "Fresh coconut",
+        "Green Chilli",
+        "Ginger",
+        "Curry leaves",
+        "Sunflower Oil",
+        "Mustard seeds",
+        "White Urad Dal",
+        "Curry leaves"
+      ]
+    },
+    {
+      "srno": 5656,
+      "names": [
+        "Tapioca root",
+        "Mustard seeds",
+        "Shallots",
+        "Ginger",
+        "Curry leaves",
+        "Dry Red Chilli",
+        "Fresh coconut",
+        "Turmeric powder",
+        "Salt",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "srno": 5765,
+      "names": [
+        "Cauliflower",
+        "Carrots",
+        "Green peas",
+        "Onion",
+        "Ginger Garlic Paste",
+        "Green Chillies",
+        "Tomato",
+        "Turmeric powder",
+        "Red Chilli powder",
+        "Coriander Powder",
+        "Cumin powder",
+        "Cinnamon Stick",
+        "Curry leaves",
+        "Coconut milk",
+        "Coconut milk",
+        "Salt",
+        "Cashew nuts",
+        "Sunflower Oil",
+        "Coriander Leaves"
+      ]
+    },
+    {
+      "srno": 5806,
+      "names": [
+        "Prawns",
+        "Coconut milk",
+        "Tamarind Paste",
+        "Curry leaves",
+        "Mustard seeds",
+        "Methi Seeds",
+        "Dry Red Chillies",
+        "Pearl onions",
+        "Turmeric powder",
+        "Kashmiri Red Chilli Powder",
+        "Salt",
+        "Lemon juice",
+        "Mustard oil",
+        "Fresh coconut",
+        "Ginger",
+        "Garlic",
+        "Green Chillies",
+        "Turmeric powder",
+        "Cumin powder",
+        "Coriander Powder"
+      ]
+    },
+    {
+      "srno": 5960,
+      "names": [
+        "Bay leaves",
+        "Cardamom Pods/Seeds",
+        "Whole Black Peppercorns",
+        "Cinnamon Stick",
+        "Red matta rice",
+        "Salt",
+        "Ginger",
+        "Garlic",
+        "Green Chilli",
+        "Chicken",
+        "Onions",
+        "Tomatoes",
+        "Red Chilli powder",
+        "Turmeric powder",
+        "Garam masala powder",
+        "Coriander Leaves",
+        "Mint Leaves",
+        "Lemon juice",
+        "Milk",
+        "Saffron strands",
+        "Cashew nuts",
+        "Ghee"
+      ]
+    },
+    {
+      "srno": 5995,
+      "names": [
+        "water",
+        "ginger powder",
+        "black pepper powder",
+        "instant coffee powder",
+        "tulsi",
+        "cumin seeds",
+        "cardamom powder",
+        "jaggery"
+      ]
+    },
+    {
+      "srno": 6013,
+      "names": [
+        "Cucumber",
+        "Mango",
+        "Green Chillies",
+        "Turmeric powder",
+        "Water",
+        "Fresh coconut",
+        "Cumin seeds",
+        "Mustard seeds",
+        "White Urad Dal",
+        "Curry leaves",
+        "Dry Red Chilli",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 6134,
+      "names": [
+        "small potatoes",
+        "small onion sambar",
+        "tomato",
+        "green chillies",
+        "ginger",
+        "pieces garlic",
+        "coriander Powder",
+        "red chilli powder",
+        "turmeric",
+        "garam masala powder",
+        "nuggets curry leaves",
+        "small onion sambar ones",
+        "coconut",
+        "cumin",
+        "whole pepper",
+        "coconut oil",
+        "salt"
+      ]
+    },
+    {
+      "srno": 6150,
+      "names": [
+        "Red matta rice",
+        "Fresh coconut",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 6432,
+      "names": [
+        "Chicken",
+        "Cinnamon Stick",
+        "Whole Black Peppercorns",
+        "Carrot",
+        "Green beans",
+        "Potato",
+        "Onion",
+        "Green Chilli",
+        "Garlic",
+        "Ginger",
+        "Cashew nuts",
+        "Turmeric powder",
+        "Black pepper powder",
+        "Coconut Oil",
+        "Salt",
+        "Onion",
+        "Garlic",
+        "Curry leaves",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "srno": 6455,
+      "names": []
+    },
+    {
+      "srno": 6696,
+      "names": [
+        "potato",
+        "turmeric powder",
+        "small onions",
+        "garlic",
+        "red chilli flax",
+        "salt",
+        "as per taste",
+        "Coconut oil",
+        "coconut"
+      ]
+    },
+    {
+      "srno": 6701,
+      "names": [
+        "Jackfruit Seeds",
+        "Pearl onions",
+        "Garlic",
+        "Kashmiri Red Chilli Powder",
+        "Black pepper powder",
+        "Curry leaves",
+        "Fresh coconut",
+        "Sunflower Oil",
+        "Salt",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 6852,
+      "names": [
+        "Raw papaya",
+        "Mustard seeds",
+        "White Urad Dal",
+        "Curry leaves",
+        "Asafoetida",
+        "Green Chilli",
+        "Fresh coconut",
+        "Salt",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "srno": 7123,
+      "names": [
+        "Ash gourd",
+        "drumsticks",
+        "carrots",
+        "green beans",
+        "raw banana",
+        "potatoes",
+        "Yam",
+        "/ 2 cup coconut",
+        "green chillies",
+        "curry leaves",
+        "cumin seeds",
+        "coconut oil",
+        "salt"
+      ]
+    },
+    {
+      "srno": 7207,
+      "names": [
+        "Whole Wheat Flour",
+        "Basmati rice",
+        "Fresh coconut",
+        "Salt",
+        "Sugar"
+      ]
+    },
+    {
+      "srno": 7225,
+      "names": [
+        "Mutton",
+        "Cumin powder",
+        "Red Chilli powder",
+        "Coriander Powder",
+        "Turmeric powder",
+        "Salt",
+        "Lemon juice",
+        "Onion",
+        "Garlic",
+        "Ginger",
+        "Curry leaves",
+        "Black pepper powder",
+        "Fresh coconut",
+        "Salt",
+        "Water",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "srno": 7382,
+      "names": []
+    },
+    {
+      "srno": 7419,
+      "names": [
+        "Instant Oats",
+        "Whole Wheat Flour",
+        "Rice flour",
+        "Jaggery",
+        "Ripe Bananas",
+        "Water",
+        "Baking soda",
+        "Ghee"
+      ]
+    },
+    {
+      "srno": 7450,
+      "names": []
+    },
+    {
+      "srno": 7493,
+      "names": [
+        "Chicken",
+        "Garlic",
+        "Ginger",
+        "Kashmiri Red Chilli Powder",
+        "Turmeric powder",
+        "Vinegar",
+        "Green Chilli",
+        "Meat masala",
+        "Fresh coconut",
+        "Salt",
+        "Curry leaves",
+        "Coconut Oil",
+        "Water"
+      ]
+    },
+    {
+      "srno": 7561,
+      "names": []
+    },
+    {
+      "srno": 7709,
+      "names": [
+        "Red matta rice",
+        "Water",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 7743,
+      "names": [
+        "Chinese Potato",
+        "Turmeric powder",
+        "Shallots",
+        "Garlic",
+        "Red Chilli flakes",
+        "Salt",
+        "Curry leaves",
+        "Coconut Oil",
+        "Fresh coconut"
+      ]
+    },
+    {
+      "srno": 7931,
+      "names": [
+        "Rice puttu",
+        "Whole Egg",
+        "Cumin seeds",
+        "Mustard seeds",
+        "Curry leaves",
+        "Turmeric powder",
+        "Green Chilli",
+        "Black Urad Dal",
+        "Sunflower Oil",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 7951,
+      "names": [
+        "Horse Gram Dal",
+        "Fresh coconut",
+        "Green Chilli",
+        "Cumin seeds",
+        "Ginger",
+        "Cumin seeds",
+        "Turmeric powder",
+        "Red Chilli powder",
+        "Salt",
+        "Tomato"
+      ]
+    },
+    {
+      "srno": 8005,
+      "names": [
+        "Raw banana peel",
+        "Turmeric powder",
+        "Water",
+        "Salt",
+        "Fresh coconut",
+        "Garlic",
+        "Cumin seeds",
+        "Green Chillies",
+        "Shallots",
+        "Salt",
+        "Sunflower Oil",
+        "Mustard seeds",
+        "Dry Red Chillies",
+        "Curry leaves"
+      ]
+    },
+    {
+      "srno": 8191,
+      "names": [
+        "Red matta rice",
+        "Cashew nuts",
+        "Jaggery",
+        "Dry coconut"
+      ]
+    },
+    {
+      "srno": 8413,
+      "names": [
+        "Onion",
+        "Garlic",
+        "Coriander Seeds",
+        "Cumin seeds",
+        "Fresh coconut",
+        "Dry Red Chillies",
+        "Turmeric powder",
+        "Prawns",
+        "Drumstick",
+        "Green Chilli",
+        "Onion",
+        "Red Chilli powder",
+        "Mustard seeds",
+        "Curry leaves",
+        "Coconut Oil",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 8615,
+      "names": [
+        "Mango",
+        "Coconut Oil",
+        "Turmeric powder",
+        "Salt",
+        "Fresh coconut",
+        "Curd",
+        "Cumin seeds",
+        "Green Chillies",
+        "Coconut Oil",
+        "Mustard seeds",
+        "White Urad Dal",
+        "Curry leaves",
+        "Methi Powder",
+        "Curry leaves",
+        "Dry Red Chillies"
+      ]
+    },
+    {
+      "srno": 8671,
+      "names": [
+        "Mutton",
+        "Shallots",
+        "Tomatoes",
+        "Curry leaves",
+        "Green Chilli",
+        "Cumin seeds",
+        "Turmeric powder",
+        "Red Chilli powder",
+        "Fresh coconut",
+        "Salt",
+        "Coconut Oil",
+        "Coriander Seeds",
+        "Dry Red Chillies",
+        "Garlic",
+        "Ginger",
+        "Cumin seeds",
+        "Fennel seeds",
+        "Whole Black Peppercorns",
+        "Cinnamon Stick",
+        "Cardamom Powder",
+        "Curry leaves",
+        "Fresh coconut",
+        "Shallots",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "srno": 8718,
+      "names": [
+        "Elephant yam",
+        "Raw Banana",
+        "Turmeric powder",
+        "Kashmiri Red Chilli Powder",
+        "Black pepper powder",
+        "Coconut Oil",
+        "Salt",
+        "Fresh coconut",
+        "Cumin seeds",
+        "Water",
+        "Fresh coconut",
+        "Coconut Oil",
+        "Cumin seeds",
+        "Mustard seeds",
+        "Turmeric powder",
+        "Red Chilli powder",
+        "Dry Red Chillies",
+        "Curry leaves"
+      ]
+    },
+    {
+      "srno": 8720,
+      "names": [
+        "Sardine fish",
+        "Fresh coconut",
+        "Shallots",
+        "Green Chillies",
+        "Dry Red Chilli",
+        "Ginger",
+        "Garlic",
+        "Methi Powder",
+        "Turmeric powder",
+        "Coconut Oil",
+        "Curry leaves",
+        "Kokum",
+        "Kokum",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 8759,
+      "names": [
+        "Elephant yam",
+        "Turmeric powder",
+        "Salt",
+        "Fresh coconut",
+        "Green Chillies",
+        "Cumin seeds",
+        "Whole Black Peppercorns",
+        "Coconut Oil",
+        "Mustard seeds",
+        "Curry leaves"
+      ]
+    },
+    {
+      "srno": 9016,
+      "names": [
+        "Green Chawli Beans",
+        "Coconut Oil",
+        "Mustard seeds",
+        "Cumin seeds",
+        "Curry leaves",
+        "Turmeric powder",
+        "Fresh coconut",
+        "Green Chillies",
+        "Curry leaves",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 9349,
+      "names": [
+        "Tomatoes",
+        "Green Chillies",
+        "Turmeric powder",
+        "Red Chilli powder",
+        "Salt",
+        "Coconut Oil",
+        "Mustard seeds",
+        "Curry leaves",
+        "Fresh coconut",
+        "Cumin seeds",
+        "Pearl onions"
+      ]
+    },
+    {
+      "srno": 9398,
+      "names": [
+        "Potato",
+        "Carrot",
+        "Green beans",
+        "Green peas",
+        "Onions",
+        "Garlic",
+        "Ginger",
+        "Coconut milk",
+        "Coconut milk",
+        "Salt",
+        "Cinnamon Stick",
+        "Bay leaf",
+        "Whole Black Peppercorns",
+        "Cardamom Pods/Seeds",
+        "Curry leaves",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "srno": 9610,
+      "names": [
+        "Whole Eggs",
+        "Sunflower Oil",
+        "Mustard seeds",
+        "Curry leaves",
+        "Onion",
+        "Ginger",
+        "Garlic",
+        "Tomato",
+        "Dry Red Chillies",
+        "Cinnamon Stick",
+        "Cardamom Pods/Seeds",
+        "Coriander Seeds",
+        "Whole Black Peppercorns",
+        "Shallots",
+        "Fresh coconut",
+        "Fennel seeds"
+      ]
+    },
+    {
+      "srno": 9639,
+      "names": [
+        "cabbage",
+        "curry leaves",
+        "mustard",
+        "red chili",
+        "white urad dal",
+        "turmeric powder",
+        "salt",
+        "Oil",
+        "tighten it",
+        "small onions",
+        "garlic",
+        "green chillies",
+        "curry leaves",
+        "Green Chillies",
+        "curry leaves"
+      ]
+    },
+    {
+      "srno": 9712,
+      "names": [
+        "Squid",
+        "Shallots",
+        "Tomatoes",
+        "Ginger",
+        "Garlic",
+        "Curry leaves",
+        "Coriander Powder",
+        "Red Chilli powder",
+        "Turmeric powder",
+        "Fennel seeds",
+        "Whole Black Peppercorns",
+        "Meat masala",
+        "Mustard seeds",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "srno": 9998,
+      "names": [
+        "Fresh coconut",
+        "Green Chillies",
+        "Cumin seeds",
+        "Carrots",
+        "Green beans",
+        "Coconut Oil",
+        "Mustard seeds",
+        "White Urad Dal",
+        "Pearl onions",
+        "Curry leaves",
+        "Turmeric powder",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 10120,
+      "names": [
+        "Prawns",
+        "Onions",
+        "Ginger",
+        "Garlic",
+        "Red Chilli powder",
+        "Coriander Powder",
+        "Turmeric powder",
+        "Fresh coconut",
+        "Kokum",
+        "Kokum",
+        "Curry leaves",
+        "Water",
+        "Salt",
+        "Coconut Oil",
+        "Mustard seeds",
+        "Methi Powder",
+        "Curry leaves"
+      ]
+    },
+    {
+      "srno": 10125,
+      "names": [
+        "Mixed vegetables",
+        "Onion",
+        "Tomato",
+        "Green Chilli",
+        "Ginger",
+        "Garlic",
+        "Curry leaves",
+        "Coconut milk",
+        "Coconut milk",
+        "Mustard seeds",
+        "Black pepper powder",
+        "Sunflower Oil",
+        "Coconut Oil",
+        "Lemon juice",
+        "Mint Leaves",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 10180,
+      "names": [
+        "Button mushrooms",
+        "Turmeric powder",
+        "Sunflower Oil",
+        "Salt",
+        "Fresh coconut",
+        "Shallots",
+        "Green Chillies",
+        "Curry leaves",
+        "Cumin seeds",
+        "Mustard seeds",
+        "Cumin seeds",
+        "Curry leaves",
+        "Dry Red Chillies"
+      ]
+    },
+    {
+      "srno": 10291,
+      "names": [
+        "Ragi Flour",
+        "Bajra Flour",
+        "Rice flour",
+        "Drumstick Leaves",
+        "Salt",
+        "Water",
+        "Ghee",
+        "Fresh coconut"
+      ]
+    },
+    {
+      "srno": 10322,
+      "names": [
+        "Whole Wheat Flour",
+        "Ghee",
+        "Milk",
+        "Sugar",
+        "Water",
+        "Ghee",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 10388,
+      "names": []
+    },
+    {
+      "srno": 10594,
+      "names": []
+    },
+    {
+      "srno": 10910,
+      "names": [
+        "Basmati rice",
+        "Cardamom Pods/Seeds",
+        "Cinnamon Stick",
+        "Coriander Leaves",
+        "Mint Leaves",
+        "Ghee",
+        "Lemon juice",
+        "Salt",
+        "Prawns",
+        "Ginger Garlic Paste",
+        "Red Chilli powder",
+        "Whole Black Peppercorns",
+        "Salt",
+        "Onions",
+        "Ginger",
+        "Garlic",
+        "Fresh coconut",
+        "Coriander Leaves",
+        "Mint Leaves",
+        "Curd",
+        "Garam masala powder",
+        "Sunflower Oil",
+        "Salt",
+        "Cashew nuts",
+        "Raisins",
+        "Onion",
+        "Coriander Leaves",
+        "Mint Leaves",
+        "Mint Leaves"
+      ]
+    },
+    {
+      "srno": 11123,
+      "names": [
+        "Whole Wheat Flour",
+        "Sugar",
+        "Cooking soda",
+        "Butter",
+        "Salt",
+        "Cardamom Powder",
+        "Milk",
+        "Water",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "srno": 11171,
+      "names": [
+        "Arhar dal",
+        "Potato",
+        "Drumstick",
+        "Vellai Poosanikai",
+        "Carrots",
+        "Bhindi",
+        "Tomato",
+        "Shallots",
+        "Tamarind Water",
+        "Turmeric powder",
+        "Green Chillies",
+        "Curry leaves",
+        "Coriander Leaves",
+        "Salt",
+        "Fresh coconut",
+        "Coriander Seeds",
+        "Dry Red Chillies",
+        "Black Urad Dal",
+        "Chana dal",
+        "Methi Seeds",
+        "Asafoetida",
+        "Curry leaves",
+        "Coconut Oil",
+        "Coconut Oil",
+        "Mustard seeds",
+        "Shallots",
+        "Dry Red Chillies",
+        "Curry leaves"
+      ]
+    },
+    {
+      "srno": 11222,
+      "names": [
+        "Kala Chana",
+        "Coconut Oil",
+        "Mustard seeds",
+        "Curry leaves",
+        "Green Chillies",
+        "Pearl onions",
+        "Garlic",
+        "Ginger",
+        "Homemade tomato puree",
+        "Turmeric powder",
+        "Red Chilli powder",
+        "Salt",
+        "Fresh coconut",
+        "Coriander Seeds",
+        "Fennel seeds"
+      ]
+    },
+    {
+      "srno": 11442,
+      "names": [
+        "Raw Banana",
+        "Kaddu",
+        "Bhindi",
+        "Tamarind",
+        "Turmeric powder",
+        "Jaggery",
+        "Rice",
+        "Methi Seeds",
+        "Dry Red Chillies",
+        "Mustard seeds",
+        "Curry leaves",
+        "Asafoetida",
+        "Coconut Oil",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 11579,
+      "names": [
+        "raw banana peel",
+        "turmeric powder",
+        "water",
+        "salt",
+        "coconut",
+        "garlic",
+        "cumin",
+        "green chillies",
+        "small onions",
+        "salt",
+        "oil",
+        "mustard",
+        "dry red chillies",
+        "curry leaves"
+      ]
+    },
+    {
+      "srno": 11612,
+      "names": [
+        "Jackfruit Raw",
+        "Turmeric powder",
+        "Fresh coconut",
+        "Dry Red Chillies",
+        "Onion",
+        "Green Chillies",
+        "Cumin seeds",
+        "Mustard seeds",
+        "White Urad Dal",
+        "Curry leaves",
+        "Asafoetida",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 11771,
+      "names": [
+        "Drumstick Leaves",
+        "Pearl onions",
+        "Ginger",
+        "Curry leaves",
+        "Mustard seeds",
+        "Salt",
+        "Coconut Oil",
+        "Fresh coconut",
+        "Cumin seeds",
+        "Turmeric powder",
+        "Red Chilli powder"
+      ]
+    },
+    {
+      "srno": 12215,
+      "names": []
+    },
+    {
+      "srno": 12250,
+      "names": [
+        "Fish",
+        "Sunflower Oil",
+        "Cumin seeds",
+        "Onion",
+        "Ginger",
+        "Tomatoes",
+        "Garlic",
+        "Turmeric powder",
+        "Red Chilli powder",
+        "Vinegar",
+        "Lemon juice",
+        "Coconut milk",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 12305,
+      "names": [
+        "Green beans",
+        "Onion",
+        "Mustard seeds",
+        "Curry leaves",
+        "Turmeric powder",
+        "Black pepper powder",
+        "Coconut Oil",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 12433,
+      "names": [
+        "Elephant yam",
+        "Water",
+        "Garlic",
+        "Onion",
+        "Turmeric powder",
+        "Red Chilli powder",
+        "Black pepper powder",
+        "Fennel Powder",
+        "Sunflower Oil",
+        "Mustard seeds",
+        "Curry leaves"
+      ]
+    },
+    {
+      "srno": 12702,
+      "names": []
+    },
+    {
+      "srno": 12788,
+      "names": [
+        "Carrots",
+        "Cabbage",
+        "Onion",
+        "Green Chillies",
+        "Turmeric powder",
+        "Cumin powder",
+        "Sunflower Oil",
+        "Mustard seeds",
+        "Fresh coconut",
+        "Curry leaves",
+        "Salt"
+      ]
+    },
+    {
+      "srno": 13221,
+      "names": [
+        "Red Black Eyed Beans",
+        "Fresh coconut",
+        "Coriander Seeds",
+        "Dry Red Chillies",
+        "Tamarind Paste",
+        "Coriander Leaves",
+        "Sunflower Oil",
+        "Salt"
+      ]
+    }
+  ],
+  "counts": {
+    "Salt": 119,
+    "Curry leaves": 96,
+    "Turmeric powder": 82,
+    "Fresh coconut": 81,
+    "Coconut Oil": 64,
+    "Mustard seeds": 60,
+    "Garlic": 44,
+    "Cumin seeds": 41,
+    "Ginger": 40,
+    "Green Chillies": 36,
+    "Red Chilli powder": 33,
+    "Sunflower Oil": 30,
+    "Onion": 29,
+    "Dry Red Chillies": 28,
+    "Water": 25,
+    "Green Chilli": 23,
+    "Coconut milk": 22,
+    "Black pepper powder": 19,
+    "Ghee": 18,
+    "Pearl onions": 17,
+    "Shallots": 17,
+    "salt": 16,
+    "Sugar": 15,
+    "Coriander Leaves": 15,
+    "Cinnamon Stick": 15,
+    "Jaggery": 15,
+    "Cardamom Pods/Seeds": 14,
+    "curry leaves": 14,
+    "Coriander Powder": 14,
+    "White Urad Dal": 12,
+    "Tomato": 12,
+    "Cashew nuts": 12,
+    "Whole Black Peppercorns": 12,
+    "Fennel seeds": 12,
+    "turmeric powder": 11,
+    "Lemon juice": 11,
+    "Onions": 11,
+    "Tomatoes": 11,
+    "Cardamom Powder": 10,
+    "Methi Seeds": 10,
+    "Dry Red Chilli": 10,
+    "coconut": 10,
+    "mustard": 10,
+    "Chicken": 10,
+    "Coriander Seeds": 10,
+    "green chillies": 10,
+    "Curd": 9,
+    "Garam masala powder": 9,
+    "Rice flour": 9,
+    "Kashmiri Red Chilli Powder": 9,
+    "Milk": 8,
+    "oil": 8,
+    "Mango": 8,
+    "garlic": 7,
+    "Asafoetida": 7,
+    "Rice": 7,
+    "Mint Leaves": 7,
+    "cumin seeds": 6,
+    "Potato": 6,
+    "Elephant yam": 6,
+    "Green beans": 6,
+    "Kokum": 6,
+    "coconut oil": 6,
+    "Baking soda": 6,
+    "Ginger Garlic Paste": 6,
+    "Tamarind": 6,
+    "Red matta rice": 6,
+    "Bhindi": 5,
+    "onions": 5,
+    "Whole Wheat Flour": 5,
+    "All Purpose Flour": 5,
+    "Prawns": 5,
+    "small onions": 5,
+    "Raw Banana": 5,
+    "Carrots": 5,
+    "Chana dal": 4,
+    "Carrot": 4,
+    "Methi Powder": 4,
+    "Ripe Bananas": 4,
+    "Fennel Powder": 4,
+    "Whole Eggs": 4,
+    "Raisins": 4,
+    "Green peas": 4,
+    "Mutton": 4,
+    "Kaddu": 4,
+    "Drumstick": 4,
+    "Cumin powder": 4,
+    "Vellai Poosanikai": 3,
+    "Tapioca root": 3,
+    "Yellow Moong Dal": 3,
+    "Arhar dal": 3,
+    "red chilli powder": 3,
+    "dry red chillies": 3,
+    "Tamarind Water": 3,
+    "Jackfruit Ripe": 3,
+    "Green Moong Dal": 3,
+    "Butter": 3,
+    "Dry ginger powder": 3,
+    "onion": 3,
+    "Cooked rice": 3,
+    "tomatoes": 3,
+    "water": 3,
+    "raw banana": 2,
+    "suran": 2,
+    "green chili": 2,
+    "Brinjal": 2,
+    "Seer fish": 2,
+    "rice": 2,
+    "Nendra Pazham Banana": 2,
+    "Mixed vegetables": 2,
+    "Fish": 2,
+    "Lukewarm Water": 2,
+    "Raw papaya": 2,
+    "okra": 2,
+    "Rum": 2,
+    "Baking powder": 2,
+    "Cinnamon Powder": 2,
+    "Nutmeg powder": 2,
+    "Tutti frutti": 2,
+    "Badam": 2,
+    "Lemon": 2,
+    "Chayote": 2,
+    "cabbage": 2,
+    "rye": 2,
+    "red chili": 2,
+    "white urad dal": 2,
+    "carrots": 2,
+    "green beans": 2,
+    "Potatoes": 2,
+    "Dry coconut": 2,
+    "Active dry yeast": 2,
+    "Sardine fish": 2,
+    "ginger": 2,
+    "black pepper powder": 2,
+    "Kashmiri red chilli powder": 2,
+    "coriander powder": 2,
+    "Bay leaf": 2,
+    "Jackfruit Raw": 2,
+    "tomato": 2,
+    "Instant Oats": 2,
+    "Tamarind Paste": 2,
+    "cumin": 2,
+    "Basmati rice": 2,
+    "Vinegar": 2,
+    "Meat masala": 2,
+    "Black Urad Dal": 2,
+    "Drumstick Leaves": 2,
+    "Ada": 1,
+    "black gram": 1,
+    "red chili powder": 1,
+    "whole black pepper": 1,
+    "Sweet Potatoes": 1,
+    "Rasam Powder": 1,
+    "Banana flower": 1,
+    "Aachi Fish Masala": 1,
+    "Sambar Powder": 1,
+    "Hung Curd": 1,
+    "active dry yeast": 1,
+    "sugar": 1,
+    "Raw Peanuts": 1,
+    "gm arabic": 1,
+    "peel": 1,
+    "tamarind": 1,
+    "Gram flour": 1,
+    "Enos fruit salt": 1,
+    "Colocasia root": 1,
+    "Karela": 1,
+    "curd": 1,
+    "dry red chili": 1,
+    "Mixed dry fruits": 1,
+    "Hot water": 1,
+    "Vivatta Maida": 1,
+    "Mixed nuts": 1,
+    "Palm sugar": 1,
+    "Guava juice": 1,
+    "Papaya juice": 1,
+    "Champagne": 1,
+    "Guava": 1,
+    "Papaya": 1,
+    "Glazed Cherries": 1,
+    "Dried Figs": 1,
+    "Caster Sugar": 1,
+    "Egg yolks": 1,
+    "Vanilla Extract": 1,
+    "Candied orange peel": 1,
+    "Caramel Sauce": 1,
+    "Orange": 1,
+    "Egg whites": 1,
+    "Shrimps": 1,
+    "/ 2 cups water": 1,
+    "/ 2 teaspoon red chilli powder": 1,
+    "fennel powder": 1,
+    "green peas": 1,
+    "curry leaf": 1,
+    "cumin powder": 1,
+    "Paprika powder": 1,
+    "Extra Virgin Olive Oil": 1,
+    "Icing Sugar": 1,
+    "Poppy seeds": 1,
+    "Mooli/ Mullangi": 1,
+    "Black Eyed Beans": 1,
+    "eggs": 1,
+    "hot Masala powder": 1,
+    "coriander leaves": 1,
+    "Crabs": 1,
+    "Instant Coffee Powder": 1,
+    "Tulsi": 1,
+    "Brown Rice": 1,
+    "cast Curry leaves": 1,
+    "turmeric Powder": 1,
+    "ginger garlic paste": 1,
+    "green coriander": 1,
+    "brinjals": 1,
+    "Fennel": 1,
+    "fenugreek seeds": 1,
+    "coconut milk": 1,
+    "coriander": 1,
+    "Fish fillet": 1,
+    "Papad": 1,
+    "Chicken masala": 1,
+    "Baby Potatoes": 1,
+    "raw bananas": 1,
+    "paprika powder": 1,
+    "pepper powder": 1,
+    "olive oil": 1,
+    "Rice ada": 1,
+    "Banana Stem": 1,
+    "Cauliflower": 1,
+    "Mustard oil": 1,
+    "Bay leaves": 1,
+    "Saffron strands": 1,
+    "ginger powder": 1,
+    "instant coffee powder": 1,
+    "tulsi": 1,
+    "cardamom powder": 1,
+    "jaggery": 1,
+    "Cucumber": 1,
+    "small potatoes": 1,
+    "small onion sambar": 1,
+    "pieces garlic": 1,
+    "coriander Powder": 1,
+    "turmeric": 1,
+    "garam masala powder": 1,
+    "nuggets curry leaves": 1,
+    "small onion sambar ones": 1,
+    "whole pepper": 1,
+    "potato": 1,
+    "red chilli flax": 1,
+    "as per taste": 1,
+    "Coconut oil": 1,
+    "Jackfruit Seeds": 1,
+    "Ash gourd": 1,
+    "drumsticks": 1,
+    "potatoes": 1,
+    "Yam": 1,
+    "/ 2 cup coconut": 1,
+    "Chinese Potato": 1,
+    "Red Chilli flakes": 1,
+    "Rice puttu": 1,
+    "Whole Egg": 1,
+    "Horse Gram Dal": 1,
+    "Raw banana peel": 1,
+    "Green Chawli Beans": 1,
+    "Oil": 1,
+    "tighten it": 1,
+    "Squid": 1,
+    "Button mushrooms": 1,
+    "Ragi Flour": 1,
+    "Bajra Flour": 1,
+    "Cooking soda": 1,
+    "Kala Chana": 1,
+    "Homemade tomato puree": 1,
+    "raw banana peel": 1,
+    "Cabbage": 1,
+    "Red Black Eyed Beans": 1
+  },
+  "synonyms": {
+    "cardamom powder": [
+      "elaichi"
+    ],
+    "curd": [
+      "dahi",
+      "yogurt"
+    ],
+    "vellai poosanikai": [
+      "ash gourd",
+      "white pumpkin"
+    ],
+    "turmeric powder": [
+      "haldi"
+    ],
+    "methi seeds": [
+      "fenugreek seeds"
+    ],
+    "asafoetida": [
+      "hing"
+    ],
+    "white urad dal": [
+      "split"
+    ],
+    "banana flower": [
+      "vazhaipoo"
+    ],
+    "chana dal": [
+      "bengal gram dal"
+    ],
+    "cardamom pods/seeds": [
+      "elaichi"
+    ],
+    "bhindi": [
+      "lady finger",
+      "okra"
+    ],
+    "pearl onions": [
+      "sambar onions"
+    ],
+    "carrot": [
+      "gajjar"
+    ],
+    "brinjal": [
+      "baingan",
+      "eggplant"
+    ],
+    "potato": [
+      "aloo"
+    ],
+    "elephant yam": [
+      "ratalu",
+      "senai",
+      "suran"
+    ],
+    "green beans": [
+      "french beans"
+    ],
+    "mango": [
+      "raw",
+      "ripe"
+    ],
+    "cumin seeds": [
+      "jeera"
+    ],
+    "coriander leaves": [
+      "dhania"
+    ],
+    "cinnamon stick": [
+      "dalchini"
+    ],
+    "kokum": [
+      "malabar tamarind"
+    ],
+    "hung curd": [
+      "greek yogurt"
+    ],
+    "yellow moong dal": [
+      "split"
+    ],
+    "nendra pazham banana": [
+      "ripe"
+    ],
+    "coriander seeds": [
+      "dhania"
+    ],
+    "fennel seeds": [
+      "saunf"
+    ],
+    "raw peanuts": [
+      "moongphali"
+    ],
+    "arhar dal": [
+      "split toor dal"
+    ],
+    "all purpose flour": [
+      "maida"
+    ],
+    "coriander powder": [
+      "dhania"
+    ],
+    "methi powder": [
+      "fenugreek powder"
+    ],
+    "jackfruit ripe": [
+      "kathal"
+    ],
+    "green moong dal": [
+      "whole"
+    ],
+    "gram flour": [
+      "besan"
+    ],
+    "colocasia root": [
+      "arbi"
+    ],
+    "karela": [
+      "bitter gourd",
+      "pavakkai"
+    ],
+    "mint leaves": [
+      "pudina"
+    ],
+    "cinnamon powder": [
+      "dalchini"
+    ],
+    "butter": [
+      "unsalted"
+    ],
+    "badam": [
+      "almond"
+    ],
+    "green peas": [
+      "matar"
+    ],
+    "potatoes": [
+      "aloo"
+    ],
+    "dry coconut": [
+      "kopra"
+    ],
+    "mooli/ mullangi": [
+      "radish"
+    ],
+    "kaddu": [
+      "parangikai",
+      "pumpkin"
+    ],
+    "black eyed beans": [
+      "lobia"
+    ],
+    "bay leaf": [
+      "tej patta"
+    ],
+    "tulsi": [
+      "holy basil"
+    ],
+    "jackfruit raw": [
+      "kathal"
+    ],
+    "instant oats": [
+      "oatmeal"
+    ],
+    "carrots": [
+      "gajjar"
+    ],
+    "cauliflower": [
+      "gobi"
+    ],
+    "cumin powder": [
+      "jeera"
+    ],
+    "bay leaves": [
+      "tej patta"
+    ],
+    "jackfruit seeds": [
+      "kathal"
+    ],
+    "black urad dal": [
+      "split"
+    ],
+    "horse gram dal": [
+      "kollu",
+      "kulith"
+    ],
+    "green chawli beans": [
+      "barbati",
+      "karamani",
+      "yard long beans"
+    ],
+    "ragi flour": [
+      "finger millet",
+      "nagli"
+    ],
+    "bajra flour": [
+      "pearl millet"
+    ],
+    "drumstick leaves": [
+      "moringa",
+      "murungai keerai"
+    ],
+    "kala chana": [
+      "brown chickpeas"
+    ],
+    "cabbage": [
+      "muttaikose",
+      "patta gobi"
+    ],
+    "red black eyed beans": [
+      "azuki"
+    ]
+  },
+  "dropped_non_ascii": [
+    "ग्राम भिंडी",
+    "इमली",
+    "छोटा चमच्च हल्दी पाउडर",
+    "बड़ा चमच्च नारियल का तेल",
+    "छोटा चमच्च राइ",
+    "छोटा चमच्च हींग",
+    "टहनी कढ़ी पत्ता",
+    "नमक",
+    "छोटा चमच्च मेथी",
+    "बड़े चमच्च चावल",
+    "सुखी लाल मिर्च",
+    "कप नारियल",
+    "टहनी हरा चना",
+    "पुदीना",
+    "हरी मिर्च",
+    "कली लहसुन",
+    "इंच अदरक",
+    "छोटा चमच्च जीरा",
+    "निम्बू का रस",
+    "नमक",
+    "बटन मशरुम",
+    "छोटा चम्मच हल्दी पाउडर",
+    "बड़े चम्मच तेल",
+    "नमक",
+    "बड़े चम्मच नारियल",
+    "छोटे प्याज़",
+    "हरी मिर्च",
+    "कढ़ी पत्ता",
+    "छोटा चम्मच जीरा",
+    "छोटा चम्मच राइ",
+    "छोटा चम्मच जीरा",
+    "टहनी कढ़ी पत्ता",
+    "सुखी लाल मिर्च",
+    "कप काला चना",
+    "प्याज",
+    "टमाटर",
+    "कली लहसुन",
+    "इंच अदरक",
+    "छोटा चमच्च हल्दी पाउडर",
+    "कप पानी",
+    "तेल",
+    "नमक",
+    "कप नारियल",
+    "हरी मिर्च",
+    "बड़े चमच्च धनिये के बीज",
+    "छोटा चमच्च सौंफ",
+    "छोटा चमच्च लाल मिर्च पाउडर",
+    "छोटा चमच्च राइ",
+    "टहनी कढ़ी पत्ता",
+    "कप कटहल के बीज",
+    "प्याज",
+    "लौंग लहसुन",
+    "छोटा चमच्च लाल मिर्च पाउडर",
+    "छोटा चमच्च हल्दी पाउडर",
+    "छोटा चमच्च धनिया पाउडर",
+    "छोटा चमच्च जीरा",
+    "छोटा चमच्च राई",
+    "नारियल",
+    "नमक",
+    "तेल",
+    "कप काला चना",
+    "प्याज",
+    "कली लहसुन",
+    "हरी मिर्च",
+    "कप टमाटर प्यूरी",
+    "छोटा चमच्च लाल मिर्च पाउडर",
+    "छोटा चमच्च धनिया पाउडर",
+    "छोटा चमच्च गरम मसाला पाउडर",
+    "टहनी कढ़ी पत्ता",
+    "कप नारियल का दूध",
+    "छोटा चमच्च इमली का पेस्ट",
+    "बड़ा चमच्च गुड़",
+    "नमक",
+    "तेल",
+    "कच्चा केला",
+    "छोटा चमच्च नारियल तेल",
+    "छोटा चमच्च राइ",
+    "सुखी लाल मिर्च",
+    "कढ़ी पत्ता",
+    "छोटे प्याज",
+    "कली लहसुन",
+    "छोटा चमच्च हल्दी पाउडर",
+    "कप नारियल",
+    "हरी मिर्च",
+    "कप हरा धनिया",
+    "नमक",
+    "चाउ चाउ",
+    "कप नारियल",
+    "हरी मिर्च",
+    "टहनी कढ़ी पत्ता",
+    "जीरा",
+    "छोटा चमच्च राइ",
+    "छोटा चमच्च हल्दी पाउडर",
+    "नमक",
+    "बटन मशरुम",
+    "छोटा चमच्च हल्दी पाउडर",
+    "बड़ा चमच्च तेल",
+    "नमक",
+    "बड़ा चमच्च नारियल",
+    "छोटे प्याज",
+    "हरी मिर्च",
+    "कढ़ी पत्ता",
+    "छोटा चमच्च जीरा",
+    "छोटा चमच्च राइ",
+    "छोटा चमच्च जीरा",
+    "टहनी कढ़ी पत्ता",
+    "सुखी लाल मिर्च",
+    "कप गोभी",
+    "कप गाजर",
+    "बड़े चमच्च हरा मटर",
+    "प्याज",
+    "बड़े चमच्च अदरक लहसुन का पेस्ट",
+    "हरी मिर्च",
+    "टमाटर",
+    "छोटा चमच्च हल्दी पाउडर",
+    "छोटा चमच्च लाल मिर्च पाउडर",
+    "छोटे चमच्च धनिया पाउडर",
+    "छोटा चमच्च जीरा पाउडर",
+    "इंच दाल चीनी",
+    "टहनी कढ़ी पत्ता",
+    "कप नारियल का दूध",
+    "कप नारियल का दूध",
+    "नमक",
+    "काजू",
+    "तेल",
+    "बड़े चमच्च हरा धनिया",
+    "कच्चा केला",
+    "छोटा चमच्च हल्दी पाउडर",
+    "कप दही",
+    "छोटा चमच्च हल्दी पाउडर",
+    "छोटा चमच्च लाल मिर्च पाउडर",
+    "नमक",
+    "हरी मिर्च",
+    "छोटा चमच्च जीरा",
+    "कप नारियल",
+    "छोटा चमच्च नारियल का तेल",
+    "छोटा चमच्च जीरा",
+    "छोटा चमच्च राइ",
+    "छोटा चमच्च मेथी के दाने",
+    "सुखी लाल मिर्च",
+    "टहनी कढ़ी पत्ता",
+    "फिश",
+    "छोटा चम्मच अदरक लहसुन का पेस्ट",
+    "बड़ा चम्मच लाल मिर्च पाउडर",
+    "छोटा चम्मच हल्दी पाउडर",
+    "काली मिर्च पाउडर",
+    "निम्बू",
+    "नमक",
+    "नारियल का तेल",
+    "कढ़ी पत्ता",
+    "चाउ चाउ",
+    "कप नारियल",
+    "हरी मिर्च",
+    "टहनी कढ़ी पत्ता",
+    "जीरा",
+    "छोटा चम्मच राइ",
+    "छोटा चम्मच हल्दी पाउडर",
+    "नमक",
+    "गाजर",
+    "पत्ता गोभी",
+    "प्याज",
+    "हरी मिर्च",
+    "छोटा चमच्च हल्दी पाउडर",
+    "छोटा चमच्च जीरा पाउडर",
+    "बड़ा चमच्च तेल",
+    "छोटा चमच्च राइ",
+    "कप नारियल",
+    "कढ़ी पत्ता",
+    "नमक",
+    "आलू",
+    "गाजर",
+    "हरा बीन्स",
+    "कप हरे मटर",
+    "प्याज",
+    "लहसुन",
+    "इंच अदरक",
+    "कप नारियल का दूध",
+    "कप नारियल का दूध",
+    "नमक",
+    "इंच दाल चीनी",
+    "तेज पत्ता",
+    "लॉन्ग",
+    "पूरी काली मिर्च",
+    "इलाइची",
+    "टहनी कढ़ी पत्ता",
+    "छोटा चमच्च नारियल का तेल",
+    "ग्राम भिंडी",
+    "कप नारियल",
+    "हरी मिर्च",
+    "छोटे प्याज",
+    "इंच अदरक",
+    "छोटा चम्मच राइ",
+    "छोटा चम्मच सफ़ेद उरद दाल",
+    "नमक",
+    "कढ़ी पत्ता",
+    "बड़े चम्मच तेल",
+    "अंडे",
+    "काजू",
+    "प्याज",
+    "टमाटर",
+    "आलू",
+    "इंच अदरक",
+    "लहसुन",
+    "छोटे चम्मच धनिया पाउडर",
+    "छोटा चम्मच लाल मिर्च पाउडर",
+    "छोटा चम्मच हल्दी पाउडर",
+    "छोटा चम्मच गरम मसाला पाउडर",
+    "बड़ा चम्मच सौंफ",
+    "बड़े चम्मच हरा धनिया",
+    "टहनी कढ़ी पत्ता",
+    "तेल",
+    "नमक",
+    "ग्राम छोटे प्याज",
+    "टहनी कढ़ी पत्ता",
+    "कप इमली का पानी",
+    "छोटा चमच्च राइ",
+    "छोटा चमच्च हींग",
+    "छोटा चमच्च हल्दी पाउडर",
+    "बड़े चमच्च तेल",
+    "नमक",
+    "बड़े चमच्च धनिये के बीज",
+    "छोटा चमच्च जीरा",
+    "सुखी लाल मिर्च",
+    "कप नारियल"
+  ]
+}

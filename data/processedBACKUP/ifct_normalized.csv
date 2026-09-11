@@ -1,0 +1,543 @@
+code,name,grup,name_key,n_sharing_key
+A001,"Amaranth seed, black",Cereals and Millets,amaranth seed black,1
+A002,"Amaranth seed, pale brown",Cereals and Millets,amaranth seed pale brown,1
+A003,Bajra,Cereals and Millets,bajra,1
+A004,Barley,Cereals and Millets,barley,1
+A005,Jowar,Cereals and Millets,jowar,1
+A006,"Maize, dry",Cereals and Millets,maize dry,1
+A007,"Maize, tender, local",Cereals and Millets,maize tender local,1
+A008,"Maize, tender, sweet",Cereals and Millets,maize tender sweet,1
+A009,Quinoa,Cereals and Millets,quinoa,1
+A010,Ragi,Cereals and Millets,ragi,1
+A011,"Rice, flakes",Cereals and Millets,rice flake,1
+A012,"Rice, puffed",Cereals and Millets,rice puffed,1
+A013,"Rice, raw, brown",Cereals and Millets,rice raw brown,1
+A014,"Rice, parboiled, milled",Cereals and Millets,rice parboiled milled,1
+A015,"Rice, raw, milled",Cereals and Millets,rice raw milled,1
+A016,Samai,Cereals and Millets,samai,1
+A017,Varagu,Cereals and Millets,varagu,1
+A018,"Wheat flour, refined",Cereals and Millets,wheat flour refined,1
+A019,"Wheat flour, atta",Cereals and Millets,wheat flour atta,1
+A020,"Wheat, whole",Cereals and Millets,wheat whole,1
+A021,"Wheat, bulgur",Cereals and Millets,wheat bulgur,1
+A022,"Wheat, semolina",Cereals and Millets,wheat semolina,1
+A023,"Wheat, vermicelli",Cereals and Millets,wheat vermicelli,1
+A024,"Wheat, vermicelli, roasted",Cereals and Millets,wheat vermicelli roasted,1
+B001,"Bengal gram, dal",Grain Legumes,bengal gram dal,1
+B002,"Bengal gram, whole",Grain Legumes,bengal gram whole,1
+B003,"Black gram, dal",Grain Legumes,black gram dal,1
+B004,"Black gram, whole",Grain Legumes,black gram whole,1
+B005,"Cowpea, brown",Grain Legumes,cowpea brown,1
+B006,"Cowpea, white",Grain Legumes,cowpea white,1
+B007,"Field bean, black",Grain Legumes,field bean black,1
+B008,"Field bean, brown",Grain Legumes,field bean brown,1
+B009,"Field bean, white",Grain Legumes,field bean white,1
+B010,"Green gram, dal",Grain Legumes,green gram dal,1
+B011,"Green gram, whole",Grain Legumes,green gram whole,1
+B012,"Horse gram, whole",Grain Legumes,horse gram whole,1
+B013,"Lentil, dal",Grain Legumes,lentil dal,1
+B014,"Lentil, whole, brown",Grain Legumes,lentil whole brown,1
+B015,"Lentil, whole, yellowish",Grain Legumes,lentil whole yellowish,1
+B016,Moth bean,Grain Legumes,moth bean,1
+B017,"Peas, dry",Grain Legumes,pea dry,1
+B018,"Rajmah, black",Grain Legumes,rajmah black,1
+B019,"Rajmah, brown",Grain Legumes,rajmah brown,1
+B020,"Rajmah, red",Grain Legumes,rajmah red,1
+B021,"Red gram, dal",Grain Legumes,red gram dal,1
+B022,"Red gram, whole",Grain Legumes,red gram whole,1
+B023,Ricebean,Grain Legumes,ricebean,1
+B024,"Soya bean, brown",Grain Legumes,soya bean brown,1
+B025,"Soya bean, white",Grain Legumes,soya bean white,1
+C001,Agathi leaves,Green Leafy Vegetables,agathi leaves,1
+C002,"Amaranth leaves, green",Green Leafy Vegetables,amaranth leaf green,1
+C003,"Amaranth leaves, red",Green Leafy Vegetables,amaranth leaf red,1
+C004,"Amaranth leaves, red and green",Green Leafy Vegetables,amaranth leaf red and green,1
+C005,"Amaranth, spinous, leaves, green",Green Leafy Vegetables,amaranth spinous leaf green,1
+C006,"Amaranth, spinous, leaves, red and green",Green Leafy Vegetables,amaranth spinous leaf red and green,1
+C007,Basella leaves,Green Leafy Vegetables,basella leaves,1
+C008,Bathua leaves,Green Leafy Vegetables,bathua leaves,1
+C009,Beetroot leaves,Green Leafy Vegetables,beetroot leaves,1
+C010,"Betel leaves, big (kolkata)",Green Leafy Vegetables,betel leaf big kolkata,1
+C011,"Betel leaves, small",Green Leafy Vegetables,betel leaf small,1
+C012,Brussels sprouts,Green Leafy Vegetables,brussels sprouts,1
+C013,"Cabbage, Chinese",Green Leafy Vegetables,cabbage chinese,1
+C014,"Cabbage, collard greens",Green Leafy Vegetables,cabbage collard greens,1
+C015,"Cabbage, green",Green Leafy Vegetables,cabbage green,1
+C016,"Cabbage, violet",Green Leafy Vegetables,cabbage violet,1
+C017,Cauliflower leaves,Green Leafy Vegetables,cauliflower leaves,1
+C018,"Colocasia leaves, green",Green Leafy Vegetables,colocasia leaves green,1
+C019,Drumstick leaves,Green Leafy Vegetables,drumstick leaf,1
+C020,Fenugreek leaves,Green Leafy Vegetables,fenugreek leaf,1
+C021,Garden cress,Green Leafy Vegetables,garden cress,1
+C022,"Gogu leaves, green stem",Green Leafy Vegetables,gogu leaf green stem,1
+C023,"Gogu leaves, red stem",Green Leafy Vegetables,gogu leaf red stem,1
+C024,"Knol-Khol, leaves",Green Leafy Vegetables,knol khol leaves,1
+C025,Lettuce,Green Leafy Vegetables,lettuce,1
+C026,Mustard leaves,Green Leafy Vegetables,mustard leaves,1
+C027,Pak Choi leaves,Green Leafy Vegetables,pak choi leaves,1
+C028,Parsley,Green Leafy Vegetables,parsley,1
+C029,Ponnaganni,Green Leafy Vegetables,ponnaganni,1
+C030,"Pumpkin leaves, tender",Green Leafy Vegetables,pumpkin leaf tender,1
+C031,Radish leaves,Green Leafy Vegetables,radish leaf,1
+C032,Rumex leaves,Green Leafy Vegetables,rumex leaves,1
+C033,Spinach,Green Leafy Vegetables,spinach,1
+C034,"Tamarind leaves, tender",Green Leafy Vegetables,tamarind leaf tender,1
+D001,Ash gourd,Other Vegetables,ash gourd,1
+D002,"Bamboo shoot, tender",Other Vegetables,bamboo shoot tender,1
+D003,"Bean scarlet, tender",Other Vegetables,bean scarlet tender,1
+D004,"Bitter gourd, jagged, teeth ridges, elongate",Other Vegetables,bitter gourd jagged tooth ridge elongate,1
+D005,"Bitter gourd, jagged, teeth ridges, short",Other Vegetables,bitter gourd jagged tooth ridge short,1
+D006,"Bitter gourd, jagged, smooth ridges, elongate",Other Vegetables,bitter gourd jagged smooth ridge elongate,1
+D007,"Bottle gourd, elongate, pale green",Other Vegetables,bottle gourd elongate pale green,1
+D008,"Bottle gourd, round, pale green",Other Vegetables,bottle gourd round pale green,1
+D009,"Bottle gourd, elongate, dark green",Other Vegetables,bottle gourd elongate dark green,1
+D010,Brinjal 1,Other Vegetables,brinjal,22
+D011,Brinjal 2,Other Vegetables,brinjal,22
+D012,Brinjal 3,Other Vegetables,brinjal,22
+D013,Brinjal 4,Other Vegetables,brinjal,22
+D014,Brinjal 5,Other Vegetables,brinjal,22
+D015,Brinjal 6,Other Vegetables,brinjal,22
+D016,Brinjal 7,Other Vegetables,brinjal,22
+D017,Brinjal 8,Other Vegetables,brinjal,22
+D018,Brinjal 9,Other Vegetables,brinjal,22
+D019,Brinjal 10,Other Vegetables,brinjal,22
+D020,Brinjal 11,Other Vegetables,brinjal,22
+D021,Brinjal 12,Other Vegetables,brinjal,22
+D022,Brinjal 13,Other Vegetables,brinjal,22
+D023,Brinjal 14,Other Vegetables,brinjal,22
+D024,Brinjal 15,Other Vegetables,brinjal,22
+D025,Brinjal 16,Other Vegetables,brinjal,22
+D026,Brinjal 17,Other Vegetables,brinjal,22
+D027,Brinjal 18,Other Vegetables,brinjal,22
+D028,Brinjal 19,Other Vegetables,brinjal,22
+D029,Brinjal 20,Other Vegetables,brinjal,22
+D030,Brinjal 21,Other Vegetables,brinjal,22
+D031,Brinjal - all varieties,Other Vegetables,brinjal,22
+D032,Broad beans,Other Vegetables,broad bean,1
+D033,"Capsicum, green",Other Vegetables,capsicum green,1
+D034,"Capsicum, red",Other Vegetables,capsicum red,1
+D035,"Capsicum, yellow",Other Vegetables,capsicum yellow,1
+D036,Cauliflower,Other Vegetables,cauliflower,1
+D037,Celery stalk,Other Vegetables,celery stalk,1
+D038,Cho-cho-marrow,Other Vegetables,cho cho marrow,1
+D039,Cluster beans,Other Vegetables,cluster bean,1
+D040,"Colocasia, stem, black",Other Vegetables,colocasia stem black,1
+D041,"Colocasia, stem, green",Other Vegetables,colocasia stem green,1
+D042,"Corn, baby",Other Vegetables,corn baby,1
+D043,"Cucumber, green, elongate",Other Vegetables,cucumber green elongate,1
+D044,"Cucumber, green, short",Other Vegetables,cucumber green short,1
+D045,"Cucumber, orange, round",Other Vegetables,cucumber orange round,1
+D046,Drumstick,Other Vegetables,drumstick,1
+D047,"Field beans, tender, broad",Other Vegetables,field bean tender broad,1
+D048,"Field beans, tender, lean",Other Vegetables,field bean tender lean,1
+D049,"French beans, country",Other Vegetables,french bean country,1
+D050,"French beans, hybrid",Other Vegetables,french bean hybrid,1
+D051,"Jack fruit, raw",Other Vegetables,jack fruit raw,1
+D052,"Jack fruit, seeds, mature",Other Vegetables,jack fruit seed mature,1
+D053,Knol - Khol,Other Vegetables,knol khol,1
+D054,"Kovai, big",Other Vegetables,kovai big,1
+D055,"Kovai, small",Other Vegetables,kovai small,1
+D056,Ladies finger,Other Vegetables,lady finger,1
+D057,"Mango, green, raw",Other Vegetables,mango green raw,1
+D058,"Onion, stalk",Other Vegetables,onion stalk,1
+D059,"Papaya, raw",Other Vegetables,papaya raw,1
+D060,Parwar,Other Vegetables,parwar,1
+D061,"Peas, fresh",Other Vegetables,pea fresh,1
+D062,"Plantain, flower",Other Vegetables,plantain flower,1
+D063,"Plantain, green",Other Vegetables,plantain green,1
+D064,"Plantain, stem",Other Vegetables,plantain stem,1
+D065,"Pumpkin, green, cylindrical",Other Vegetables,pumpkin green cylindrical,1
+D066,"Pumpkin, orange, round",Other Vegetables,pumpkin orange round,1
+D067,"Red gram, tender, fresh",Other Vegetables,red gram tender fresh,1
+D068,Ridge gourd,Other Vegetables,ridge gourd,1
+D069,"Ridge gourd, smooth skin",Other Vegetables,ridge gourd smooth skin,1
+D070,"Snake gourd, long, pale green",Other Vegetables,snake gourd long pale green,1
+D071,"Snake gourd, long, dark green",Other Vegetables,snake gourd long dark green,1
+D072,"Snake gourd, short",Other Vegetables,snake gourd short,1
+D073,"Tinda, tender",Other Vegetables,tinda tender,1
+D074,"Tomato, green",Other Vegetables,tomato green,1
+D075,"Tomato, ripe, hybrid",Other Vegetables,tomato ripe hybrid,1
+D076,"Tomato, ripe, local",Other Vegetables,tomato ripe local,1
+D077,"Zucchini, green",Other Vegetables,zucchini green,1
+D078,"Zucchini, yellow",Other Vegetables,zucchini yellow,1
+E001,"Apple, big",Fruits,apple big,1
+E002,"Apple, green",Fruits,apple green,1
+E003,"Apple, small",Fruits,apple small,1
+E004,"Apple, small, Kashmir",Fruits,apple small kashmir,1
+E005,"Apricot, dried",Fruits,apricot dried,1
+E006,"Apricot, processed",Fruits,apricot processed,1
+E007,Avocado fruit,Fruits,avocado fruit,1
+E008,Bael fruit,Fruits,bael fruit,1
+E009,"Banana, ripe, montham",Fruits,banana ripe montham,1
+E010,"Banana, ripe, poovam",Fruits,banana ripe poovam,1
+E011,"Banana, ripe, red",Fruits,banana ripe red,1
+E012,"Banana, ripe, robusta",Fruits,banana ripe robusta,1
+E013,Black berry,Fruits,black berry,1
+E014,"Cherries, red",Fruits,cherry red,1
+E015,"Currants, black",Fruits,currant black,1
+E016,Custard apple,Fruits,custard apple,1
+E017,"Dates, dry, pale brown",Fruits,date dry pale brown,1
+E018,"Dates, dry, dark brown",Fruits,date dry dark brown,1
+E019,"Dates, processed",Fruits,date processed,1
+E020,Fig,Fruits,fig,1
+E021,Goosberry,Fruits,goosberry,1
+E022,"Grapes, seeded, round, black",Fruits,grape seeded round black,1
+E023,"Grapes, seeded, round, green",Fruits,grape seeded round green,1
+E024,"Grapes, seeded, round, red",Fruits,grape seeded round red,1
+E025,"Grapes, seedless, oval, black",Fruits,grape seedless oval black,1
+E026,"Grapes, seedless, round, green",Fruits,grape seedless round green,1
+E027,"Grapes, seedless, round, black",Fruits,grape seedless round black,1
+E028,"Guava, white flesh",Fruits,guava white flesh,1
+E029,"Guava, pink flesh",Fruits,guava pink flesh,1
+E030,"Jack fruit, ripe",Fruits,jack fruit ripe,1
+E031,"Jambu fruit, ripe",Fruits,jambu fruit ripe,1
+E032,Karonda fruit,Fruits,karonda fruit,1
+E033,"Lemon, juice",Fruits,lemon juice,1
+E034,"Lime, sweet, pulp",Fruits,lime sweet pulp,1
+E035,Litchi,Fruits,litchi,1
+E036,"Mango, ripe, banganapalli",Fruits,mango ripe banganapalli,1
+E037,"Mango, ripe, gulabkhas",Fruits,mango ripe gulabkhas,1
+E038,"Mango, ripe, himsagar",Fruits,mango ripe himsagar,1
+E039,"Mango, ripe, kesar",Fruits,mango ripe kesar,1
+E040,"Mango, ripe, neelam",Fruits,mango ripe neelam,1
+E041,"Mango, ripe, paheri",Fruits,mango ripe paheri,1
+E042,"Mango, ripe, totapari",Fruits,mango ripe totapari,1
+E043,Mangosteen,Fruits,mangosteen,1
+E044,Manila tamarind,Fruits,manila tamarind,1
+E045,"Musk melon, orange flesh",Fruits,musk melon orange flesh,1
+E046,"Musk melon, yellow flesh",Fruits,musk melon yellow flesh,1
+E047,"Orange, pulp",Fruits,orange pulp,1
+E048,"Palm fruit, tender",Fruits,palm fruit tender,1
+E049,"Papaya, ripe",Fruits,papaya ripe,1
+E050,Peach,Fruits,peach,1
+E051,Pear,Fruits,pear,1
+E052,Phalsa,Fruits,phalsa,1
+E053,Pineapple,Fruits,pineapple,1
+E054,Plum,Fruits,plum,1
+E055,"Pomegranate, maroon seeds",Fruits,pomegranate maroon seed,1
+E056,Pummelo,Fruits,pummelo,1
+E057,"Raisins, dried, black",Fruits,raisin dried black,1
+E058,"Raisins, dried, golden",Fruits,raisin dried golden,1
+E059,Rambutan,Fruits,rambutan,1
+E060,Sapota,Fruits,sapota,1
+E061,Soursop,Fruits,soursop,1
+E062,Star fruit,Fruits,star fruit,1
+E063,Strawberry,Fruits,strawberry,1
+E064,"Tamarind, pulp",Fruits,tamarind pulp,1
+E065,"Water melon, dark green (sugar baby)",Fruits,water melon dark green sugar baby,1
+E066,"Water melon, pale green",Fruits,water melon pale green,1
+E067,Wood apple,Fruits,wood apple,1
+E068,Zizyphus,Fruits,zizyphus,1
+F001,Beetroot,Roots and Tubers,beetroot,1
+F002,"Carrot, orange",Roots and Tubers,carrot orange,1
+F003,"Carrot, red",Roots and Tubers,carrot red,1
+F004,Colocasia,Roots and Tubers,colocasia,1
+F005,Lotus root,Roots and Tubers,lotus root,1
+F006,"Potato, brown skin, big",Roots and Tubers,potato brown skin big,1
+F007,"Potato, brown skin, small",Roots and Tubers,potato brown skin small,1
+F008,"Potato, red skin",Roots and Tubers,potato red skin,1
+F009,"Radish, elongate, red skin",Roots and Tubers,radish elongate red skin,1
+F010,"Radish, elongate, white skin",Roots and Tubers,radish elongate white skin,1
+F011,"Radish, round, red skin",Roots and Tubers,radish round red skin,1
+F012,"Radish, round, white skin",Roots and Tubers,radish round white skin,1
+F013,"Sweet potato, brown skin",Roots and Tubers,sweet potato brown skin,1
+F014,"Sweet potato, pink skin",Roots and Tubers,sweet potato pink skin,1
+F015,Tapioca,Roots and Tubers,tapioca,1
+F016,Water Chestnut,Roots and Tubers,water chestnut,1
+F017,"Yam, elephant",Roots and Tubers,yam elephant,1
+F018,"Yam, ordinary",Roots and Tubers,yam ordinary,1
+F019,"Yam, wild",Roots and Tubers,yam wild,1
+G001,"Chillies, green-1",Condiments and Spices,chilli green,8
+G002,"Chillies, green-2",Condiments and Spices,chilli green,8
+G003,"Chillies, green-3",Condiments and Spices,chilli green,8
+G004,"Chillies, green-4",Condiments and Spices,chilli green,8
+G005,"Chillies, green-5",Condiments and Spices,chilli green,8
+G006,"Chillies, green-6",Condiments and Spices,chilli green,8
+G007,"Chillies, green-7",Condiments and Spices,chilli green,8
+G008,"Chillies, green - all varieties",Condiments and Spices,chilli green,8
+G009,Coriander leaves,Condiments and Spices,coriander leaves,1
+G010,Curry leaves,Condiments and Spices,curry leaves,1
+G011,"Garlic, big cloves",Condiments and Spices,garlic big clove,1
+G012,"Garlic, small cloves",Condiments and Spices,garlic small clove,1
+G013,"Garlic, single clove, Kashmir",Condiments and Spices,garlic single clove kashmir,1
+G014,"Ginger, fresh",Condiments and Spices,ginger fresh,1
+G015,Mango ginger,Condiments and Spices,mango ginger,1
+G016,Mint leaves,Condiments and Spices,mint leaves,1
+G017,"Onion, big",Condiments and Spices,onion big,1
+G018,"Onion, small",Condiments and Spices,onion small,1
+G019,Asafoetida,Condiments and Spices,asafoetida,1
+G020,"Cardamom, green",Condiments and Spices,cardamom green,1
+G021,"Cardamom, black",Condiments and Spices,cardamom black,1
+G022,"Chillies, red",Condiments and Spices,chilli red,1
+G023,Cloves,Condiments and Spices,cloves,1
+G024,Coriander seeds,Condiments and Spices,coriander seed,1
+G025,Cumin seeds,Condiments and Spices,cumin seed,1
+G026,Fenugreek seeds,Condiments and Spices,fenugreek seed,1
+G027,Mace,Condiments and Spices,mace,1
+G028,Nutmeg,Condiments and Spices,nutmeg,1
+G029,Omum,Condiments and Spices,omum,1
+G030,Pippali,Condiments and Spices,pippali,1
+G031,"Pepper, black",Condiments and Spices,pepper black,1
+G032,Poppy seeds,Condiments and Spices,poppy seed,1
+G033,Turmeric powder,Condiments and Spices,turmeric powder,1
+H001,Almond,Nuts and Oil Seeds,almond,1
+H002,"Arecanut, dried, brown",Nuts and Oil Seeds,arecanut dried brown,1
+H003,"Arecanut, dried, red color",Nuts and Oil Seeds,arecanut dried red color,1
+H004,"Arecanut, fresh",Nuts and Oil Seeds,arecanut fresh,1
+H005,Cashew nut,Nuts and Oil Seeds,cashew nut,1
+H006,"Coconut, kernel, dry",Nuts and Oil Seeds,coconut kernel dry,1
+H007,"Coconut, kernel, fresh",Nuts and Oil Seeds,coconut kernel fresh,1
+H008,"Garden cress, seeds",Nuts and Oil Seeds,garden cress seed,1
+H009,"Gingelly seeds, black",Nuts and Oil Seeds,gingelly seed black,1
+H010,"Gingelly seeds, brown",Nuts and Oil Seeds,gingelly seed brown,1
+H011,"Gingelly seeds, white",Nuts and Oil Seeds,gingelly seed white,1
+H012,Ground nut,Nuts and Oil Seeds,ground nut,1
+H013,Mustard seeds,Nuts and Oil Seeds,mustard seed,1
+H014,Linseeds,Nuts and Oil Seeds,linseeds,1
+H015,"Niger seeds, black",Nuts and Oil Seeds,niger seed black,1
+H016,"Niger seeds, grey",Nuts and Oil Seeds,niger seed grey,1
+H017,Pine seeds,Nuts and Oil Seeds,pine seed,1
+H018,Pistachio nuts,Nuts and Oil Seeds,pistachio nut,1
+H019,Safflower seeds,Nuts and Oil Seeds,safflower seed,1
+H020,Sunflower seeds,Nuts and Oil Seeds,sunflower seed,1
+H021,Walnut,Nuts and Oil Seeds,walnut,1
+I001,"Jaggery, cane",Sugars,jaggery cane,1
+I002,"Sugarcane, juice",Sugars,sugarcane juice,1
+J001,"Button mushroom, fresh",Mushrooms,button mushroom fresh,1
+J002,"Chicken mushroom, fresh",Mushrooms,chicken mushroom fresh,1
+J003,"Shiitake mushroom, fresh",Mushrooms,shiitake mushroom fresh,1
+J004,"Oyster mushroom, dried",Mushrooms,oyster mushroom dried,1
+K001,Toddy,Miscellaneous Foods,toddy,1
+K002,Coconut water,Miscellaneous Foods,coconut water,1
+L001,"Milk, whole, Buffalo",Milk and Milk Products,milk whole buffalo,1
+L002,"Milk, whole, Cow",Milk and Milk Products,milk whole cow,1
+L003,Paneer,Milk and Milk Products,paneer,1
+L004,Khoa,Milk and Milk Products,khoa,1
+M001,"Egg, poultry, whole, raw",Egg and Egg Products,egg poultry whole raw,1
+M002,"Egg, poultry, white, raw",Egg and Egg Products,egg poultry white raw,1
+M003,"Egg, poultry, yolk, raw",Egg and Egg Products,egg poultry yolk raw,1
+M004,"Egg, poultry, whole, boiled",Egg and Egg Products,egg poultry whole boiled,1
+M005,"Egg, poultry, white, boiled",Egg and Egg Products,egg poultry white boiled,1
+M006,"Egg, poultry, yolk, boiled",Egg and Egg Products,egg poultry yolk boiled,1
+M007,"Egg, poultry, omlet",Egg and Egg Products,egg poultry omlet,1
+M008,"Egg, country hen, whole, raw",Egg and Egg Products,egg country hen whole raw,1
+M009,"Egg, country hen, whole, boiled",Egg and Egg Products,egg country hen whole boiled,1
+M010,"Egg, country hen, omlet",Egg and Egg Products,egg country hen omlet,1
+M011,"Egg, duck, whole, boiled",Egg and Egg Products,egg duck whole boiled,1
+M012,"Egg, duck, whole, raw",Egg and Egg Products,egg duck whole raw,1
+M013,"Egg, duck, whole, omlet",Egg and Egg Products,egg duck whole omlet,1
+M014,"Egg, quial, whole, raw",Egg and Egg Products,egg quial whole raw,1
+M015,"Egg, quial, whole, boiled",Egg and Egg Products,egg quial whole boiled,1
+N001,"Chicken, poultry, leg, skinless",Poultry,chicken poultry leg skinless,1
+N002,"Chicken, poultry, thigh, skinless",Poultry,chicken poultry thigh skinless,1
+N003,"Chicken, poultry, breast, skinless",Poultry,chicken poultry breast skinless,1
+N004,"Chicken, poultry, wing, skinless",Poultry,chicken poultry wing skinless,1
+N005,"Poultry, chicken, liver",Poultry,poultry chicken liver,1
+N006,"Poultry, chicken, gizzard",Poultry,poultry chicken gizzard,1
+N007,"Country hen, leg, with skin",Poultry,country hen leg with skin,1
+N008,"Country hen, thigh, with skin",Poultry,country hen thigh with skin,1
+N009,"Country hen, breast, with skin",Poultry,country hen breast with skin,1
+N010,"Country hen, wing, with skin",Poultry,country hen wing with skin,1
+N011,"Duck, meat, with skin",Poultry,duck meat with skin,1
+N012,"Emu, meat, skinless",Poultry,emu meat skinless,1
+N013,"Guinea fowl, meat, with skin",Poultry,guinea fowl meat with skin,1
+N014,"Pigeon, meat, with skin",Poultry,pigeon meat with skin,1
+N015,"Quail, meat, skinless",Poultry,quail meat skinless,1
+N016,"Turkey, leg, with skin",Poultry,turkey leg with skin,1
+N017,"Turkey, thigh, with skin",Poultry,turkey thigh with skin,1
+N018,"Turkey, breast, with skin",Poultry,turkey breast with skin,1
+N019,"Turkey, wing, with skin",Poultry,turkey wing with skin,1
+O001,"Goat, shoulder, meat",Animal Meat,goat shoulder meat,1
+O002,"Goat, chops",Animal Meat,goat chop,1
+O003,"Goat, legs",Animal Meat,goat leg,1
+O004,"Goat, brain",Animal Meat,goat brain,1
+O005,"Goat, tongue",Animal Meat,goat tongue,1
+O006,"Goat, lungs",Animal Meat,goat lung,1
+O007,"Goat, heart",Animal Meat,goat heart,1
+O008,"Goat, liver",Animal Meat,goat liver,1
+O009,"Goat, tripe",Animal Meat,goat tripe,1
+O010,"Goat, spleen",Animal Meat,goat spleen,1
+O011,"Goat, kidneys",Animal Meat,goat kidney,1
+O012,"Goat, tube (small intestine)",Animal Meat,goat tube small intestine,1
+O013,"Goat, testis",Animal Meat,goat testis,1
+O014,"Sheep, shoulder",Animal Meat,sheep shoulder,1
+O015,"Sheep, chops",Animal Meat,sheep chop,1
+O016,"Sheep, leg",Animal Meat,sheep leg,1
+O017,"Sheep, brain",Animal Meat,sheep brain,1
+O018,"Sheep, tongue",Animal Meat,sheep tongue,1
+O019,"Sheep, lungs",Animal Meat,sheep lung,1
+O020,"Sheep, heart",Animal Meat,sheep heart,1
+O021,"Sheep, liver",Animal Meat,sheep liver,1
+O022,"Sheep, tripe",Animal Meat,sheep tripe,1
+O023,"Sheep, spleen",Animal Meat,sheep spleen,1
+O024,"Sheep, kidneys",Animal Meat,sheep kidney,1
+O025,"Beef, shoulder",Animal Meat,beef shoulder,1
+O026,"Beef, chops",Animal Meat,beef chop,1
+O027,"Beef, round (leg)",Animal Meat,beef round leg,1
+O028,"Beef, brain",Animal Meat,beef brain,1
+O029,"Beef, tongue",Animal Meat,beef tongue,1
+O030,"Beef, lungs",Animal Meat,beef lung,1
+O031,"Beef, heart",Animal Meat,beef heart,1
+O032,"Beef, liver",Animal Meat,beef liver,1
+O033,"Beef, tripe",Animal Meat,beef tripe,1
+O034,"Beef, spleen",Animal Meat,beef spleen,1
+O035,"Beef, kidneys",Animal Meat,beef kidney,1
+O036,"Calf, shoulder",Animal Meat,calf shoulder,1
+O037,"Calf, chops",Animal Meat,calf chop,1
+O038,"Calf, round (leg)",Animal Meat,calf round leg,1
+O039,"Calf, brain",Animal Meat,calf brain,1
+O040,"Calf, tongue",Animal Meat,calf tongue,1
+O041,"Calf, heart",Animal Meat,calf heart,1
+O042,"Calf, liver",Animal Meat,calf liver,1
+O043,"Calf, spleen",Animal Meat,calf spleen,1
+O044,"Calf, kidneys",Animal Meat,calf kidney,1
+O045,"Mithun, shoulder",Animal Meat,mithun shoulder,1
+O046,"Mithun, chops",Animal Meat,mithun chop,1
+O047,"Mithun, round (leg)",Animal Meat,mithun round leg,1
+O048,"Pork, shoulder",Animal Meat,pork shoulder,1
+O049,"Pork, chops",Animal Meat,pork chop,1
+O050,"Pork, ham",Animal Meat,pork ham,1
+O051,"Pork, lungs",Animal Meat,pork lung,1
+O052,"Pork, heart",Animal Meat,pork heart,1
+O053,"Pork, liver",Animal Meat,pork liver,1
+O054,"Pork, stomach",Animal Meat,pork stomach,1
+O055,"Pork, spleen",Animal Meat,pork spleen,1
+O056,"Pork, kidneys",Animal Meat,pork kidney,1
+O057,"Pork, tube (small intestine)",Animal Meat,pork tube small intestine,1
+O058,"Hare, shoulder",Animal Meat,hare shoulder,1
+O059,"Hare, chops",Animal Meat,hare chop,1
+O060,"Hare, leg",Animal Meat,hare leg,1
+O061,"Rabbit, shoulder",Animal Meat,rabbit shoulder,1
+O062,"Rabbit, chops",Animal Meat,rabbit chop,1
+O063,"Rabbit, leg",Animal Meat,rabbit leg,1
+P001,Allathi,Marine Fish,allathi,1
+P002,Aluva,Marine Fish,aluva,1
+P003,Anchovy,Marine Fish,anchovy,1
+P004,Ari fish,Marine Fish,ari fish,1
+P005,Betki,Marine Fish,betki,1
+P006,Black snapper,Marine Fish,black snapper,1
+P007,Bombay duck,Marine Fish,bombay duck,1
+P008,Bommuralu,Marine Fish,bommuralu,1
+P009,Cat fish,Marine Fish,cat fish,2
+P010,Chakla,Marine Fish,chakla,1
+P011,Chappal,Marine Fish,chappal,1
+P012,Chelu,Marine Fish,chelu,1
+P013,Chembali,Marine Fish,chembali,1
+P014,Eri meen,Marine Fish,eri meen,1
+P015,Gobro,Marine Fish,gobro,1
+P016,Guitar fish,Marine Fish,guitar fish,1
+P017,Hilsa,Marine Fish,hilsa,1
+P018,Jallal,Marine Fish,jallal,1
+P019,Jathi vela meen,Marine Fish,jathi vela meen,1
+P020,Kadal bral,Marine Fish,kadal bral,1
+P021,Kadali,Marine Fish,kadali,1
+P022,Kalamaara,Marine Fish,kalamaara,1
+P023,Kalava,Marine Fish,kalava,1
+P024,Kanamayya,Marine Fish,kanamayya,1
+P025,Kannadi paarai,Marine Fish,kannadi paarai,1
+P026,Karimeen,Marine Fish,karimeen,1
+P027,Karnagawala,Marine Fish,karnagawala,1
+P028,Kayrai,Marine Fish,kayrai,1
+P029,Kiriyan,Marine Fish,kiriyan,1
+P030,Kite fish,Marine Fish,kite fish,1
+P031,Korka,Marine Fish,korka,1
+P032,Kulam paarai,Marine Fish,kulam paarai,1
+P033,Maagaa,Marine Fish,maagaa,1
+P034,Mackerel,Marine Fish,mackerel,1
+P035,Manda clathi,Marine Fish,manda clathi,1
+P036,Matha,Marine Fish,matha,1
+P037,Milk fish,Marine Fish,milk fish,1
+P038,Moon fish,Marine Fish,moon fish,1
+P039,Mullet,Marine Fish,mullet,1
+P040,Mural,Marine Fish,mural,1
+P041,Myil meen,Marine Fish,myil meen,1
+P042,Nalla bontha,Marine Fish,nalla bontha,1
+P043,Narba,Marine Fish,narba,1
+P044,Paarai,Marine Fish,paarai,1
+P045,Padayappa,Marine Fish,padayappa,1
+P046,Pali kora,Marine Fish,pali kora,1
+P047,Pambada,Marine Fish,pambada,1
+P048,Pandukopa,Marine Fish,pandukopa,1
+P049,Parava,Marine Fish,parava,1
+P050,Parcus,Marine Fish,parcus,1
+P051,Parrot fish,Marine Fish,parrot fish,1
+P052,Perinkilichai,Marine Fish,perinkilichai,1
+P053,Phopat,Marine Fish,phopat,1
+P054,Piranha,Marine Fish,piranha,1
+P055,"Pomfret, black",Marine Fish,pomfret black,1
+P056,"Pomfret, snub nose",Marine Fish,pomfret snub nose,1
+P057,"Pomfret, white",Marine Fish,pomfret white,1
+P058,Pranel,Marine Fish,pranel,1
+P059,Pulli paarai,Marine Fish,pulli paarai,1
+P060,Queen fish,Marine Fish,queen fish,1
+P061,Raai fish,Marine Fish,raai fish,1
+P062,Raai vanthu,Marine Fish,raai vanthu,1
+P063,Rani,Marine Fish,rani,1
+P064,"Ray fish, bow head, spotted",Marine Fish,ray fish bow head spotted,1
+P065,Red snapper,Marine Fish,red snapper,1
+P066,"Red snapper, small",Marine Fish,red snapper small,1
+P067,Sadaya,Marine Fish,sadaya,1
+P068,Salmon,Marine Fish,salmon,1
+P069,Sangada,Marine Fish,sangada,1
+P070,Sankata parai,Marine Fish,sankata parai,1
+P071,Sardine,Marine Fish,sardine,1
+P072,Shark,Marine Fish,shark,1
+P073,"Shark, hammer head",Marine Fish,shark hammer head,1
+P074,"Shark, spotted",Marine Fish,shark spotted,1
+P075,Shelavu,Marine Fish,shelavu,1
+P076,Silan,Marine Fish,silan,1
+P077,Silk fish,Marine Fish,silk fish,1
+P078,Silver carp,Marine Fish,silver carp,1
+P079,Sole fish,Marine Fish,sole fish,1
+P080,Stingray,Marine Fish,stingray,1
+P081,Tarlava,Marine Fish,tarlava,1
+P082,Tholam,Marine Fish,tholam,1
+P083,Tilapia,Marine Fish,tilapia,1
+P084,Tuna,Marine Fish,tuna,1
+P085,"Tuna, striped",Marine Fish,tuna striped,1
+P086,Valava,Marine Fish,valava,1
+P087,Vanjaram,Marine Fish,vanjaram,1
+P088,Vela meen,Marine Fish,vela meen,1
+P089,Vora,Marine Fish,vora,1
+P090,Whale shark,Marine Fish,whale shark,1
+P091,Xiphinis,Marine Fish,xiphini,1
+P092,"Eggs, cat fish",Marine Fish,egg cat fish,1
+Q001,Crab,Marine Shellfish,crab,2
+Q002,"Crab, sea",Marine Shellfish,crab sea,1
+Q003,"Lobster, brown",Marine Shellfish,lobster brown,1
+Q004,"Lobster, king size",Marine Shellfish,lobster king size,1
+Q005,Mud crab,Marine Shellfish,mud crab,1
+Q006,Oyster,Marine Shellfish,oyster,1
+Q007,"Tiger prawns, brown",Marine Shellfish,tiger prawn brown,1
+Q008,"Tiger Prawns, orange",Marine Shellfish,tiger prawn orange,1
+R001,"Clam, green shell",Marine Mollusks,clam green shell,1
+R002,"Clam, white shell, ribbed",Marine Mollusks,clam white shell ribbed,1
+R003,Octopus,Marine Mollusks,octopus,1
+R004,"Squid, black",Marine Mollusks,squid black,1
+R005,"Squid, hard shell",Marine Mollusks,squid hard shell,1
+R006,"Squid, red",Marine Mollusks,squid red,1
+R007,"Squid, white, small",Marine Mollusks,squid white small,1
+S001,Cat fish,Fresh Water Fish and Shellfish,cat fish,2
+S002,Catla,Fresh Water Fish and Shellfish,catla,1
+S003,Fresh water Eel,Fresh Water Fish and Shellfish,fresh water eel,1
+S004,Gold fish,Fresh Water Fish and Shellfish,gold fish,1
+S005,Pangas,Fresh Water Fish and Shellfish,pangas,1
+S006,Rohu,Fresh Water Fish and Shellfish,rohu,1
+S007,Crab,Fresh Water Fish and Shellfish,crab,2
+S008,"Prawns, big",Fresh Water Fish and Shellfish,prawn big,1
+S009,"Prawns, small",Fresh Water Fish and Shellfish,prawn small,1
+S010,Tiger prawns,Fresh Water Fish and Shellfish,tiger prawn,1
+T001,Coconut oil,Edible Oils and Fats,coconut oil,1
+T002,Corn oil,Edible Oils and Fats,corn oil,1
+T003,Cotton seed oil,Edible Oils and Fats,cotton seed oil,1
+T004,Gingelly oil,Edible Oils and Fats,gingelly oil,1
+T005,Groundnut oil,Edible Oils and Fats,groundnut oil,1
+T006,Mustard oil,Edible Oils and Fats,mustard oil,1
+T007,Palm oil,Edible Oils and Fats,palm oil,1
+T008,Rice bran oil,Edible Oils and Fats,rice bran oil,1
+T009,Safflower oil,Edible Oils and Fats,safflower oil,1
+T010,Safflower oil (blended),Edible Oils and Fats,safflower oil blended,1
+T011,Soyabean oil,Edible Oils and Fats,soyabean oil,1
+T012,Sunflower oil,Edible Oils and Fats,sunflower oil,1
+T013,Ghee,Edible Oils and Fats,ghee,1
+T014,Vanaspati,Edible Oils and Fats,vanaspati,1

@@ -1,0 +1,1738 @@
+recipe_id,line_no,raw_line,qty,unit,name_raw,state,dry_fresh,parse_status
+1,1,1 cup Ada,1,cup,Ada,,,clean
+1,2,2 liter Milk - full cream,2,liter,Milk,full cream,,reviewed
+1,3,3/4 cup Sugar,3/4,cup,Sugar,,,clean
+1,4,1 tablespoon Ghee,1,tablespoon,Ghee,,,clean
+1,5,1/2 teaspoon Cardamom Powder (Elaichi),1/2,teaspoon,Cardamom Powder (Elaichi),,,clean
+2,1,1-1/2 cups Curd (Dahi / Yogurt) - thick,1-1/2,cups,Curd (Dahi / Yogurt),thick,,reviewed
+2,2,1/2 cup Fresh coconut,1/2,cup,Fresh coconut,,Fresh,clean
+2,3,1 cup Vellai Poosanikai (Ash gourd/White Pumpkin) - cubed,1,cup,Vellai Poosanikai (Ash gourd/White Pumpkin),cubed,,clean
+2,4,4 Green Chillies,4,,Green Chillies,,,clean
+2,5,1/4 teaspoon Black pepper powder,1/4,teaspoon,Black pepper powder,,,clean
+2,6,1/3 cup Water,1/3,cup,Water,,,clean
+2,7,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+2,8,Salt - as per your taste,nan,,Salt,,,reviewed
+2,9,1 teaspoon Coconut Oil,1,teaspoon,Coconut Oil,,,clean
+2,10,1/4 teaspoon Mustard seeds,1/4,teaspoon,Mustard seeds,,,clean
+2,11,1/4 teaspoon Methi Seeds (Fenugreek Seeds),1/4,teaspoon,Methi Seeds (Fenugreek Seeds),,,clean
+2,12,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+2,13,1 Dry Red Chilli,1,,Dry Red Chilli,,Dry,clean
+3,1,1/2 cup raw banana - chopped,1/2,cup,raw banana,chopped,,clean
+3,2,1/2 cup suran - chopped,1/2,cup,suran,chopped,,clean
+3,3,1/2 cup black gram,1/2,cup,black gram,,,reviewed
+3,4,1/2 teaspoon turmeric powder,1/2,teaspoon,turmeric powder,,,clean
+3,5,1/2 teaspoon red chili powder,1/2,teaspoon,red chili powder,,,clean
+3,6,salt - as per taste,nan,,salt,,,reviewed
+3,7,1/2 2 tsp cumin seeds,2,tsp,Cumin seeds,,,reviewed
+3,8,1 cup coconut - grated,1,cup,coconut,grated,,clean
+3,9,1/4 tsp whole black pepper,1/4,tsp,whole black pepper,,,clean
+3,10,3 cloves garlic,3,cloves,garlic,,,clean
+3,11,1 green chili,1,,green chili,,,clean
+3,12,1 tsp oil,1,tsp,oil,,,clean
+3,13,1/2 tsp mustard,1/2,tsp,mustard,,,clean
+4,1,2 Sweet Potatoes - medium size,2,,Sweet Potatoes,medium,,reviewed
+4,2,1 Onion,1,,Onion,,,clean
+4,3,1/2 teaspoon Rasam Powder,1/2,teaspoon,Rasam Powder,,,clean
+4,4,Turmeric powder (Haldi) - a pinch,1,pinch,Turmeric powder (Haldi),,,reviewed
+4,5,Asafoetida (hing) - a pinch,1,pinch,Asafoetida (hing),,,reviewed
+4,6,Salt - to taste,nan,,Salt,,,reviewed
+4,7,2 teaspoons Sunflower Oil,2,teaspoons,Sunflower Oil,,,clean
+4,8,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+4,9,1 teaspoon White Urad Dal (Split),1,teaspoon,White Urad Dal (Split),,,clean
+4,10,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+5,1,2 Banana flower (Vazhaipoo) - ripe,2,,Banana flower (Vazhaipoo),ripe,,reviewed
+5,2,1 cup Coconut milk - thick,1,cup,Coconut milk,thick,,reviewed
+5,3,3 cups Coconut milk - thin,3,cups,Coconut milk,thin,,reviewed
+5,4,1/2 cup Rice - raw,1/2,cup,Rice,raw,,clean
+5,5,1/2 cup Chana dal (Bengal Gram Dal),1/2,cup,Chana dal (Bengal Gram Dal),,,clean
+5,6,1/4 Onion,1/4,,Onion,,,clean
+5,7,2 Cardamom (Elaichi) Pods/Seeds,2,,Cardamom (Elaichi) Pods/Seeds,pods,,reviewed
+5,8,1 cup Sugar,1,cup,Sugar,,,clean
+5,9,3/4 teaspoon Salt - and some more for cooking the chana dal,3/4,teaspoon,Salt,,,reviewed
+5,10,Water - as required,nan,,Water,,,reviewed
+6,1,500 grams Bhindi (Lady Finger/Okra) - slit into half and cut into 1 inch pieces,500,grams,Bhindi (Lady Finger/Okra),slit into half and cut into 1 inch pieces,,clean
+6,2,10 Pearl onions (Sambar Onions) - finely chopped,10,,Pearl onions (Sambar Onions),finely chopped,,clean
+6,3,1/4 cup Fresh coconut - grated,1/4,cup,Fresh coconut,grated,Fresh,clean
+6,4,2 Green Chillies - finely chopped,2,,Green Chillies,finely chopped,,clean
+6,5,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+6,6,1/2 teaspoon Mustard seeds,1/2,teaspoon,Mustard seeds,,,clean
+6,7,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+6,8,Salt - to taste,nan,,Salt,,,reviewed
+6,9,Sunflower Oil - for cooking,nan,,Sunflower Oil,,,reviewed
+7,1,500 grams Bhindi (Lady Finger/Okra) - cut into 1 inch pieces,500,grams,Bhindi (Lady Finger/Okra),cut into 1 inch pieces,,clean
+7,2,1 Onion - big,1,,Onion,big,,reviewed
+7,3,1 Green Chilli - slit,1,,Green Chilli,slit,,clean
+7,4,1 cup Coconut milk - thick,1,cup,Coconut milk,thick,,reviewed
+7,5,2 teaspoons Ginger - grated,2,teaspoons,Ginger,grated,,clean
+7,6,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+7,7,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+7,8,1 tablespoon Coconut Oil,1,tablespoon,Coconut Oil,,,clean
+7,9,Salt - to taste,nan,,Salt,,,reviewed
+8,1,1 Carrot (Gajjar) - finely chopped,1,,Carrot (Gajjar),finely chopped,,clean
+8,2,1 Brinjal (Baingan / Eggplant) - finely chopped,1,,Brinjal (Baingan / Eggplant),finely chopped,,clean
+8,3,1 Potato (Aloo) - finely diced,1,,Potato (Aloo),finely diced,,clean
+8,4,1 Elephant yam (Suran/Senai/Ratalu) - finely diced,1,,Elephant yam (Suran/Senai/Ratalu),finely diced,,clean
+8,5,6 Green beans (French Beans) - cut into 1 inch pieces,6,,Green beans (French Beans),cut into 1 inch pieces,,clean
+8,6,1 Mango (Raw) - cut into 1 inch lengthwise,1,,Mango (Raw),cut into 1 inch lengthwise,,clean
+8,7,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+8,8,1 cup Fresh coconut - grated,1,cup,Fresh coconut,grated,Fresh,clean
+8,9,1 tablespoon Ginger - juliennes,1,tablespoon,Ginger,julienned,,reviewed
+8,10,6 Green Chillies,6,,Green Chillies,,,clean
+8,11,1/2 teaspoon Cumin seeds (Jeera),1/2,teaspoon,Cumin seeds (Jeera),,,clean
+8,12,1 cup Pearl onions (Sambar Onions),1,cup,Pearl onions (Sambar Onions),,,clean
+8,13,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+8,14,1 tablespoon Coconut Oil,1,tablespoon,Coconut Oil,,,clean
+8,15,Salt - to taste,nan,,Salt,,,reviewed
+9,1,2 Seer fish - slices,2,slice,Seer fish,,,reviewed
+9,2,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+9,3,Salt - to taste,nan,,Salt,,,reviewed
+9,4,2 teaspoons Aachi Fish Masala,2,teaspoons,Aachi Fish Masala,,,clean
+9,5,1/3 cup Fresh coconut,1/3,cup,Fresh coconut,,Fresh,clean
+9,6,6 cloves Garlic,6,cloves,Garlic,,,clean
+9,7,1 inch Ginger,1,inch,Ginger,,,reviewed
+9,8,2 sprig Coriander (Dhania) Leaves - washed and finely chopped,2,sprig,Coriander (Dhania) Leaves,washed and finely chopped,,clean
+9,9,1 Tomato - finely chopped,1,,Tomato,finely chopped,,clean
+9,10,1 inch Cinnamon Stick (Dalchini),1,inch,Cinnamon Stick (Dalchini),,,reviewed
+9,11,2 Cloves (Laung),2,Cloves,Cloves (Laung),cloves,,reviewed
+9,12,1 Kokum (Malabar Tamarind),1,,Kokum (Malabar Tamarind),,,clean
+9,13,2 tablespoons Coconut Oil,2,tablespoons,Coconut Oil,,,clean
+9,14,3 sprig Curry leaves,3,sprig,Curry leaves,,,clean
+9,15,8 Pearl onions (Sambar Onions) - sliced,8,,Pearl onions (Sambar Onions),sliced,,clean
+9,16,2 tablespoons Sambar Powder,2,tablespoons,Sambar Powder,,,clean
+10,1,1 kg Tapioca root,1,kg,Tapioca root,,,clean
+10,2,1 cup Fresh coconut - grated,1,cup,Fresh coconut,grated,Fresh,clean
+10,3,4 to 5 Shallots,4.5,,Shallots,,,reviewed
+10,4,2 Green Chillies - chopped,2,,Green Chillies,chopped,,clean
+10,5,1-1/2 cups Hung Curd (Greek Yogurt),1-1/2,cups,Hung Curd (Greek Yogurt),,,reviewed
+10,6,Salt - to taste,nan,,Salt,,,reviewed
+11,1,2 cups rice - soaked for 3 hours,2,cups,rice,soaked for 3 hours,,clean
+11,2,1 cup rice - cooked,1,cup,rice,cooked,,clean
+11,3,1 cup coconut - tighten,1,cup,coconut,,,reviewed
+11,5,2 tbsp sugar,2,tbsp,sugar,,,clean
+11,6,salt - as per taste,nan,,salt,,,reviewed
+12,1,1-1/2 cups Milk,1-1/2,cups,Milk,,,reviewed
+12,2,1 cup Coconut milk,1,cup,Coconut milk,,,clean
+12,3,1/4 cup Yellow Moong Dal (Split) - washed and soaked,1/4,cup,Yellow Moong Dal (Split),washed and soaked,,clean
+12,4,2 tablespoons Chana dal (Bengal Gram Dal) - washed and soaked,2,tablespoons,Chana dal (Bengal Gram Dal),washed and soaked,,clean
+12,5,2 tablespoons Fresh coconut - grated,2,tablespoons,Fresh coconut,grated,Fresh,clean
+12,6,1/2 cup Jaggery,1/2,cup,Jaggery,,,clean
+12,7,10 Cashew nuts - halved,10,,Cashew nuts,halved,,clean
+12,8,1 teaspoon Cardamom Powder (Elaichi),1,teaspoon,Cardamom Powder (Elaichi),,,clean
+12,9,2 tablespoons Ghee,2,tablespoons,Ghee,,,clean
+13,1,2 Nendra Pazham Banana (Ripe) - sliced into rounds,2,,Nendra Pazham Banana (Ripe),sliced into rounds,,clean
+13,2,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+13,3,Salt - to taste,nan,,Salt,,,reviewed
+13,4,1 cup Curd (Dahi / Yogurt),1,cup,Curd (Dahi / Yogurt),,,clean
+13,5,Coconut Oil - for cooking,nan,,Coconut Oil,,,reviewed
+13,6,1/2 cup Fresh coconut,1/2,cup,Fresh coconut,,Fresh,clean
+13,7,2 Green Chilli,2,,Green Chilli,,,clean
+13,8,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+13,9,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+13,10,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+13,11,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+13,12,1 teaspoon White Urad Dal (Split),1,teaspoon,White Urad Dal (Split),,,clean
+13,13,Sunflower Oil - for tempering,nan,,Sunflower Oil,,,reviewed
+14,1,500 Chicken - medium sized pieces,500,g,Chicken,medium sized pieces,,reviewed
+14,2,1 Onion - roughly chopped,1,,Onion,roughly chopped,,clean
+14,3,1 inch Ginger - grated,1,inch,Ginger,grated,,reviewed
+14,4,6 cloves Garlic - finely chopped,6,cloves,Garlic,finely chopped,,clean
+14,5,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+14,6,8 Curry leaves,8,,Curry leaves,,,clean
+14,7,Coconut Oil,nan,,Coconut Oil,,,clean
+14,8,Salt - as per taste,nan,,Salt,,,reviewed
+14,9,1/2 cup Coconut milk - or grated fresh coconut,1/2,cup,Coconut milk,grated,Fresh,reviewed
+14,10,1 tablespoon Whole Black Peppercorns,1,tablespoon,Whole Black Peppercorns,,,clean
+14,11,1 teaspoon Coriander (Dhania) Seeds,1,teaspoon,Coriander (Dhania) Seeds,,,clean
+14,12,1 inch Cinnamon Stick (Dalchini),1,inch,Cinnamon Stick (Dalchini),,,reviewed
+14,13,1 teaspoon Fennel seeds (Saunf),1,teaspoon,Fennel seeds (Saunf),,,clean
+14,14,2 Dry Red Chillies,2,,Dry Red Chillies,,Dry,clean
+15,1,1 cup Mixed vegetables - (french beans,1,cup,Mixed vegetables (Green Beans),,,reviewed
+15,2,1/4 cup Raw Peanuts (Moongphali),1/4,cup,Raw Peanuts (Moongphali),,,clean
+15,3,1/2 cup Arhar dal (Split Toor Dal),1/2,cup,Arhar dal (Split Toor Dal),,,clean
+15,4,Salt - to taste,nan,,Salt,,,reviewed
+15,5,1 tablespoon Jaggery,1,tablespoon,Jaggery,,,clean
+15,6,1/4 cup Fresh coconut - grated,1/4,cup,Fresh coconut,grated,Fresh,clean
+15,7,6 Dry Red Chillies,6,,Dry Red Chillies,,Dry,clean
+15,8,1 tablespoon Chana dal (Bengal Gram Dal),1,tablespoon,Chana dal (Bengal Gram Dal),,,clean
+15,9,1 tablespoon White Urad Dal (Split),1,tablespoon,White Urad Dal (Split),,,clean
+15,10,1 inch Cinnamon Stick (Dalchini),1,inch,Cinnamon Stick (Dalchini),,,reviewed
+15,11,1 tablespoon Sunflower Oil,1,tablespoon,Sunflower Oil,,,clean
+15,12,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+15,13,Asafoetida (hing) - A pinch,1,pinch,Asafoetida (hing),,,reviewed
+15,14,Curry leaves - as required,nan,,Curry leaves,,,reviewed
+16,1,250 gm arabic - wash now,250,g,Colocasia Root (Arbi),washed,,reviewed
+16,3,1 tamarind - Malabar,1,,tamarind,Malabar,,reviewed
+16,4,salt - as per taste,nan,,salt,,,reviewed
+16,5,1/4 cup coconut - scrape,1/4,cup,coconut,scraped,,reviewed
+16,6,1 teaspoon red chilli powder,1,teaspoon,red chilli powder,,,clean
+16,7,2 onions - peeled,2,,onions,peeled,,clean
+16,8,1 tablespoon coconut oil,1,tablespoon,coconut oil,,,clean
+16,9,2 onions - peel and chop,2,,onions,peeled and chopped,,reviewed
+16,10,1 teaspoon mustard,1,teaspoon,mustard,,,clean
+16,11,1 teaspoon cumin seeds,1,teaspoon,cumin seeds,,,clean
+16,12,2 dry red chillies - break,2,,dry red chillies,broken,Dry,reviewed
+16,13,7 curry leaves,7,,curry leaves,,,clean
+17,1,300 grams Chicken - minced,300,grams,Chicken,minced,,clean
+17,2,1 Onion - sliced,1,,Onion,sliced,,clean
+17,3,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+17,4,4 cloves Garlic - chopped,4,cloves,Garlic,chopped,,clean
+17,5,1 inch Ginger - chopped,1,inch,Ginger,chopped,,reviewed
+17,6,1 teaspoon Turmeric powder (Haldi),1,teaspoon,Turmeric powder (Haldi),,,clean
+17,7,2 teaspoons Red Chilli powder,2,teaspoons,Red Chilli powder,,,clean
+17,8,2 teaspoons Garam masala powder,2,teaspoons,Garam masala powder,,,clean
+17,9,1 teaspoon Black pepper powder,1,teaspoon,Black pepper powder,,,clean
+17,10,Coconut Oil - for cooking,nan,,Coconut Oil,,,reviewed
+17,11,Salt - to taste,nan,,Salt,,,reviewed
+17,12,1/2 cup Whole Wheat Flour,1/2,cup,Whole Wheat Flour,,,clean
+17,13,1/2 cup All Purpose Flour (Maida),1/2,cup,All Purpose Flour (Maida),,,clean
+17,14,Salt - to taste,nan,,Salt,,,reviewed
+18,1,2 Nendra Pazham Banana (Ripe),2,,Nendra Pazham Banana (Ripe),,,clean
+18,2,1 cup All Purpose Flour (Maida),1,cup,All Purpose Flour (Maida),,,clean
+18,3,1/4 cup Rice flour,1/4,cup,Rice flour,,,clean
+18,4,1/8 teaspoon Baking soda,1/8,teaspoon,Baking soda,,,clean
+18,5,1/8 teaspoon Salt,1/8,teaspoon,Salt,,,clean
+18,6,1/8 teaspoon Turmeric powder (Haldi),1/8,teaspoon,Turmeric powder (Haldi),,,clean
+18,7,2 Cardamom Powder (Elaichi) - powdered,2,,Cardamom Powder (Elaichi),powdered,,clean
+18,8,3 tablespoons Sugar,3,tablespoons,Sugar,,,clean
+18,9,Sunflower Oil - for deep frying,nan,,Sunflower Oil,,,reviewed
+19,1,1/2 kg Fish - (I have used sardine cleaned and cut),1/2,kg,Fish,cleaned and cut,,reviewed
+19,2,Tamarind Water - extract from a big lemon sized tamarind,nan,,Tamarind Water,,,reviewed
+19,3,2 Shallots - finely chopped,2,,Shallots,finely chopped,,clean
+19,4,2 tablespoons Coconut Oil,2,tablespoons,Coconut Oil,,,clean
+19,5,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+19,6,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+19,7,Salt - to taste,nan,,Salt,,,reviewed
+19,8,10 cloves Garlic - split length-wise,10,cloves,Garlic,split lengths-wise,,clean
+19,9,1 tablespoon Ginger Garlic Paste,1,tablespoon,Ginger Garlic Paste,,,clean
+19,10,2 tablespoons Kashmiri Red Chilli Powder,2,tablespoons,Kashmiri Red Chilli Powder,,,clean
+19,11,1 tablespoon Coriander Powder (Dhania),1,tablespoon,Coriander Powder (Dhania),,,clean
+19,12,1/2 teaspoon Methi Powder (Fenugreek Powder),1/2,teaspoon,Methi Powder (Fenugreek Powder),,,clean
+20,1,1 cup Jackfruit Ripe (Kathal) - chopped finely,1,cup,Jackfruit Ripe (Kathal),chopped finely,,clean
+20,2,1/2 cup Rice flour,1/2,cup,Rice flour,,,clean
+20,3,1 tablespoon Sunflower Oil,1,tablespoon,Sunflower Oil,,,clean
+20,4,1 teaspoon Salt,1,teaspoon,Salt,,,clean
+20,5,Lukewarm Water - to knead,nan,,Lukewarm Water,Lukewarm,,clean
+20,6,1 cup Fresh coconut - grated,1,cup,Fresh coconut,grated,Fresh,clean
+20,7,1 Cardamom (Elaichi) Pods/Seeds,1,,Cardamom (Elaichi) Pods/Seeds,,,reviewed
+21,1,1 cup Green Moong Dal (Whole) - soaked for 2 hours,1,cup,Green Moong Dal (Whole),soaked for 2 hours,,clean
+21,2,1/2 cup Jaggery,1/2,cup,Jaggery,,,clean
+21,3,1 Cardamom Powder (Elaichi),1,,Cardamom Powder (Elaichi),,,clean
+21,4,1/2 cup Fresh coconut,1/2,cup,Fresh coconut,,Fresh,clean
+21,5,1/4 cup Gram flour (besan),1/4,cup,Gram flour (besan),,,reviewed
+21,6,1/2 cup Rice flour,1/2,cup,Rice flour,,,clean
+21,7,1 teaspoon Turmeric powder (Haldi),1,teaspoon,Turmeric powder (Haldi),,,clean
+21,8,Salt - Pinch,1,pinch,Salt,,,reviewed
+22,1,1 cup Green Moong Dal (Whole),1,cup,Green Moong Dal (Whole),,,clean
+22,2,1/2 cup Yellow Moong Dal (Split),1/2,cup,Yellow Moong Dal (Split),,,clean
+22,3,10 Pearl onions (Sambar Onions),10,,Pearl onions (Sambar Onions),,,clean
+22,4,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+22,5,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+22,6,2 Dry Red Chilli,2,,Dry Red Chilli,,Dry,clean
+22,7,1 teaspoon Turmeric powder (Haldi),1,teaspoon,Turmeric powder (Haldi),,,clean
+22,8,Salt - to taste,nan,,Salt,,,reviewed
+22,9,Coconut Oil - for cooking,nan,,Coconut Oil,,,reviewed
+22,10,1/2 cup Fresh coconut,1/2,cup,Fresh coconut,,Fresh,clean
+22,11,2 Green Chilli,2,,Green Chilli,,,clean
+22,12,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+23,1,1 cup Rice,1,cup,Rice,,,clean
+23,2,3/4 cup Jaggery - powdered,3/4,cup,Jaggery,powdered,,clean
+23,3,1 cup Ripe Bananas - mashed,1,cup,Ripe Bananas,mashed,,clean
+23,4,1/2 cup Fresh coconut - grated,1/2,cup,Fresh coconut,grated,Fresh,clean
+23,5,2 teaspoons Cardamom Powder (Elaichi),2,teaspoons,Cardamom Powder (Elaichi),,,clean
+23,6,1/4 teaspoon Enos fruit salt - optional,1/4,teaspoon,Enos fruit salt,,,reviewed
+23,7,Ghee - for cooking,nan,,Ghee,,,reviewed
+23,8,Salt - a pinch,1,pinch,Salt,,,reviewed
+24,1,200 grams Bhindi (Lady Finger/Okra) - cut into 1 inch pieces,200,grams,Bhindi (Lady Finger/Okra),cut into 1 inch pieces,,clean
+24,2,Tamarind - small lemon sized,1,,Tamarind,small lemon sized,,reviewed
+24,3,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+24,4,1 tablespoon Coconut Oil,1,tablespoon,Coconut Oil,,,clean
+24,5,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+24,6,1/4 teaspoon Asafoetida (hing) - powder,1/4,teaspoon,Asafoetida (hing),powdered,,reviewed
+24,7,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+24,8,Salt - to taste,nan,,Salt,,,reviewed
+24,9,1 teaspoon Methi Seeds (Fenugreek Seeds),1,teaspoon,Methi Seeds (Fenugreek Seeds),,,clean
+24,10,2 tablespoons Rice - raw,2,tablespoons,Rice,raw,,clean
+24,11,2-3 Dry Red Chillies,2.5,,Dry Red Chillies,,Dry,reviewed
+25,1,500 grams Chicken,500,grams,Chicken,,,clean
+25,2,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+25,3,1 teaspoon Kashmiri Red Chilli Powder,1,teaspoon,Kashmiri Red Chilli Powder,,,clean
+25,4,1 teaspoon Lemon juice,1,teaspoon,Lemon juice,,,clean
+25,5,Salt - to taste,nan,,Salt,,,reviewed
+25,6,3 Onions - thinly sliced,3,,Onions,thinly sliced,,clean
+25,7,1 tablespoon Ginger - finely chopped,1,tablespoon,Ginger,finely chopped,,clean
+25,8,1 tablespoon Garlic - finely chopped,1,tablespoon,Garlic,finely chopped,,clean
+25,9,2-1/2 teaspoons Coriander Powder (Dhania),2-1/2,teaspoons,Coriander Powder (Dhania),,,reviewed
+25,10,1-1/2 teaspoons Kashmiri Red Chilli Powder,1-1/2,teaspoons,Kashmiri Red Chilli Powder,,,reviewed
+25,11,1 teaspoon Garam masala powder,1,teaspoon,Garam masala powder,,,clean
+25,12,1/2 teaspoon Fennel Powder,1/2,teaspoon,Fennel Powder,,,clean
+25,13,3 Tomatoes - thinly sliced,3,,Tomatoes,thinly sliced,,clean
+25,14,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+25,15,Salt - to taste,nan,,Salt,,,reviewed
+25,16,2 tablespoons Coconut Oil - as required,2,tablespoon,Coconut Oil,,,reviewed
+26,1,250 grams Colocasia root (Arbi) - washed thoroughly and peeled,250,grams,Colocasia root (Arbi),washed thoroughly and peeled,,clean
+26,2,1 Tamarind - malabar,1,,Tamarind,Malabar,,reviewed
+26,3,Salt - to taste,nan,,Salt,,,reviewed
+26,4,1/4 cup Fresh coconut - scrapped,1/4,cup,Fresh coconut,scrapped,Fresh,clean
+26,5,1 teaspoon Red Chilli powder,1,teaspoon,Red Chilli powder,,,clean
+26,6,2 Onions - peeled,2,,Onions,peeled,,clean
+26,7,1 tablespoon Coconut Oil,1,tablespoon,Coconut Oil,,,clean
+26,8,2 Onions - peeled and chopped,2,,Onions,peeled and chopped,,clean
+26,9,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+26,10,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+26,11,2 Dry Red Chilli - broken,2,,Dry Red Chilli,broken,Dry,clean
+26,12,7 Curry leaves,7,,Curry leaves,,,clean
+27,1,3 Karela (Bitter Gourd/ Pavakkai),3,,Karela (Bitter Gourd/ Pavakkai),,,clean
+27,2,1 Onion - chopped,1,,Onion,chopped,,clean
+27,3,1 cup Curd (Dahi / Yogurt) - or buttermilk,1,cup,Curd (Dahi / Yogurt),,,reviewed
+27,4,pinch Turmeric powder (Haldi) - to reduce bitter from bitter gourd,1,pinch,Turmeric powder (Haldi),,,reviewed
+27,5,Salt - to taste,nan,,Salt,,,reviewed
+27,6,1/4 cup Fresh coconut - grated,1/4,cup,Fresh coconut,grated,Fresh,clean
+27,7,1/2 teaspoon Mustard seeds,1/2,teaspoon,Mustard seeds,,,clean
+27,8,2 Green Chilli,2,,Green Chilli,,,clean
+27,9,2 teaspoon Coconut Oil,2,teaspoon,Coconut Oil,,,clean
+27,10,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+27,11,1 Dry Red Chilli,1,,Dry Red Chilli,,Dry,clean
+27,12,Curry leaves - few,nan,,Curry leaves,,,reviewed
+28,1,1 cup Fresh coconut,1,cup,Fresh coconut,,Fresh,clean
+28,2,6 sprig Coriander (Dhania) Leaves,6,sprig,Coriander (Dhania) Leaves,,,clean
+28,3,10 Mint Leaves (Pudina),10,,Mint Leaves (Pudina),,,clean
+28,4,2 Green Chillies,2,,Green Chillies,,,clean
+28,5,4 cloves Garlic,4,cloves,Garlic,,,clean
+28,6,1 inch Ginger,1,inch,Ginger,,,reviewed
+28,7,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+28,8,1 Lemon juice,1,,Lemon juice,,,clean
+28,9,Salt - to taste,nan,,Salt,,,reviewed
+29,1,1/2 Raw papaya,1/2,,Raw papaya,,,clean
+29,2,1 Green Chilli - adjustable,1,,Green Chilli,,,reviewed
+29,3,1 cup Fresh coconut - grated,1,cup,Fresh coconut,grated,Fresh,clean
+29,4,3 Pearl onions (Sambar Onions) - thinly sliced,3,,Pearl onions (Sambar Onions),thinly sliced,,clean
+29,5,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+29,6,2 teaspoons Red Chilli powder,2,teaspoons,Red Chilli powder,,,clean
+29,7,1 teaspoon Turmeric powder (Haldi),1,teaspoon,Turmeric powder (Haldi),,,clean
+29,8,1/2 teaspoon Cumin seeds (Jeera),1/2,teaspoon,Cumin seeds (Jeera),,,clean
+29,9,1/4 teaspoon Mustard seeds,1/4,teaspoon,Mustard seeds,,,clean
+29,10,2 Dry Red Chillies,2,,Dry Red Chillies,,Dry,clean
+29,11,Tamarind - Gooseberry Sized,1,,Tamarind,gooseberry sized,,reviewed
+29,12,Sunflower Oil - as required,nan,,Sunflower Oil,,,reviewed
+29,13,Salt - to taste,nan,,Salt,,,reviewed
+30,1,4 Mango (Ripe),4,,Mango (Ripe),,,clean
+30,2,2 Green Chillies - sliced lengthwise,2,,Green Chillies,sliced lengthwise,,clean
+30,3,1 cup Curd (Dahi / Yogurt) - whisked,1,cup,Curd (Dahi / Yogurt),whisked,,clean
+30,4,Salt - to taste,nan,,Salt,,,reviewed
+30,5,1 cup Fresh coconut - grated,1,cup,Fresh coconut,grated,Fresh,clean
+30,6,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+30,7,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+30,8,1 teaspoon Red Chilli powder,1,teaspoon,Red Chilli powder,,,clean
+30,9,2 teaspoon Coconut Oil,2,teaspoon,Coconut Oil,,,clean
+30,10,1/2 teaspoon Mustard seeds,1/2,teaspoon,Mustard seeds,,,clean
+30,11,1/4 teaspoon Methi Seeds (Fenugreek Seeds),1/4,teaspoon,Methi Seeds (Fenugreek Seeds),,,clean
+30,12,2 Dry Red Chilli - cut into halves,2,,Dry Red Chilli,cut into halves,Dry,clean
+30,13,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+31,1,25 okra,25,,okra,,,clean
+31,2,5 green chillies - finely chopped,5,,green chillies,finely chopped,,clean
+31,3,1/4 cup curd,1/4,cup,curd,,,clean
+31,4,1 sprig curry leaves,1,sprig,curry leaves,,,clean
+31,5,1/2 cup coconut - grated,1/2,cup,coconut,grated,,clean
+31,6,1/2 teaspoon cumin seeds,1/2,teaspoon,cumin seeds,,,clean
+31,7,1/2 teaspoon mustard,1/2,teaspoon,mustard,,,clean
+31,8,1 dry red chili - Break it,1,,dry red chili,broken,Dry,reviewed
+31,9,2 teaspoons oil,2,teaspoons,oil,,,clean
+31,10,salt - as per taste,nan,,salt,,,reviewed
+32,1,1-1/2 cups Mixed dry fruits - I used apricot,1-1/2,cups,Mixed dry fruits (Apricot),,Dry,reviewed
+32,2,3/4 cup Rum - or Double with orange juice,3/4,cup,Rum,,,reviewed
+32,3,1/2 cup Sugar,1/2,cup,Sugar,,,clean
+32,4,1/2 cup Hot water,1/2,cup,Hot water,,,clean
+32,5,1 cup Vivatta Maida,1,cup,Vivatta Maida,,,clean
+32,6,1/2 teaspoon Baking powder,1/2,teaspoon,Baking powder,,,clean
+32,7,1/2 teaspoon Baking soda,1/2,teaspoon,Baking soda,,,clean
+32,8,3 Cloves (Laung),3,Cloves,Cloves (Laung),cloves,,reviewed
+32,9,3 Cardamom (Elaichi) Pods/Seeds,3,,Cardamom (Elaichi) Pods/Seeds,,,reviewed
+32,10,1 pinch Cinnamon Powder (Dalchini),1,pinch,Cinnamon Powder (Dalchini),,,clean
+32,11,1 pinch Nutmeg powder,1,pinch,Nutmeg powder,,,clean
+32,12,5 tablespoons Butter (unsalted),5,tablespoons,Butter (unsalted),,,clean
+32,13,1/2 cup Sugar,1/2,cup,Sugar,,,clean
+32,14,2 Whole Eggs,2,,Whole Eggs,,,clean
+32,15,1-1/2 cups Mixed nuts - I used almond,1-1/2,cups,Mixed nuts (Almond),,,reviewed
+32,16,1/2 cup Tutti frutti,1/2,cup,Tutti frutti,,,clean
+32,17,1 pinch Salt,1,pinch,Salt,,,clean
+33,1,1 Mango (Ripe) - peel & slice,1,,Mango (Ripe),peeled and sliced,,reviewed
+33,2,3 Green Chillies - slit,3,,Green Chillies,slit,,clean
+33,3,1/4 cup Fresh coconut - grated,1/4,cup,Fresh coconut,grated,Fresh,clean
+33,4,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+33,5,1 tablespoon Jaggery,1,tablespoon,Jaggery,,,clean
+33,6,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+33,7,1/4 cup Curd (Dahi / Yogurt),1/4,cup,Curd (Dahi / Yogurt),,,clean
+33,8,1 tablespoons Coconut Oil,1,tablespoons,Coconut Oil,,,clean
+33,9,2 to 3 Dry Red Chilli,2.5,,Dry Red Chilli,,Dry,reviewed
+33,10,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+33,11,1/2 teaspoon Mustard seeds,1/2,teaspoon,Mustard seeds,,,clean
+33,12,Salt - to taste,nan,,Salt,,,reviewed
+34,1,2 Seer fish - cleaned and cut,2,,Seer fish,cleaned and cut,,clean
+34,2,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+34,3,1 cup Tamarind Water,1,cup,Tamarind Water,,,clean
+34,4,1 teaspoon Turmeric powder (Haldi),1,teaspoon,Turmeric powder (Haldi),,,clean
+34,5,1 cup Coconut milk,1,cup,Coconut milk,,,clean
+34,6,1 Lemon juice,1,,Lemon juice,,,clean
+34,7,Salt - to taste,nan,,Salt,,,reviewed
+34,8,Coconut Oil - as required,nan,,Coconut Oil,,,reviewed
+34,9,1 Onion - sliced,1,,Onion,sliced,,clean
+34,10,2 Dry Red Chillies,2,,Dry Red Chillies,,Dry,clean
+34,11,4 cloves Garlic,4,cloves,Garlic,,,clean
+34,12,1 inch Ginger - chopped,1,inch,Ginger,chopped,,reviewed
+34,13,1 Green Chilli - chopped,1,,Green Chilli,chopped,,clean
+35,1,2 Mango (Ripe),2,,Mango (Ripe),,,clean
+35,2,1 cup Coconut milk,1,cup,Coconut milk,,,clean
+35,3,1/4 cup Palm sugar,1/4,cup,Palm sugar,,,clean
+35,4,1 teaspoons Cardamom Powder (Elaichi),1,teaspoons,Cardamom Powder (Elaichi),,,clean
+35,5,3 tablespoons Fresh coconut - or dessicated coconut (grated),3,tablespoons,Fresh coconut,(grated),Fresh,reviewed
+35,6,2 tablespoons Badam (Almond) - sliced or chopped,2,tablespoons,Badam (Almond),sliced or chopped,,clean
+35,7,1 teaspoon Ghee,1,teaspoon,Ghee,,,clean
+36,1,1 cup Guava juice - chilled,1,cup,Guava juice,chilled,,clean
+36,2,1 cup Papaya juice - chilled,1,cup,Papaya juice,chilled,,clean
+36,3,500 ml Champagne - or Sparkling wine,500,ml,Champagne,,,reviewed
+36,4,1 Lemon - juiced,1,,Lemon,juiced,,clean
+36,5,1/4 cup Guava - cubes (optional),1/4,cup,Guava,cubed,,reviewed
+36,6,1/4 cup Papaya - cubes (optional),1/4,cup,Papaya,cubed,,reviewed
+37,1,100 grams Raisins,100,grams,Raisins,,,clean
+37,2,100 grams Glazed Cherries,100,grams,Glazed Cherries,,,clean
+37,3,100 grams Dried Figs,100,grams,Dried Figs,,Dried,clean
+37,4,100 grams Tutti frutti,100,grams,Tutti frutti,,,clean
+37,5,50 grams Badam (Almond),50,grams,Badam (Almond),,,clean
+37,6,50 grams Cashew nuts,50,grams,Cashew nuts,,,clean
+37,7,100 ml Rum - or orange juice (adjust),100,ml,Rum,,,reviewed
+37,8,100 grams Butter (unsalted),100,grams,Butter (unsalted),,,clean
+37,9,125 grams Ghee,125,grams,Ghee,,,clean
+37,10,300 grams Caster Sugar,300,grams,Caster Sugar,,,clean
+37,11,4 Egg yolks,4,,Egg yolks,,,clean
+37,12,1 teaspoon Vanilla Extract,1,teaspoon,Vanilla Extract,,,clean
+37,13,3 tablespoons Candied orange peel,3,tablespoons,Candied orange peel,,,clean
+37,14,1/4 cup Caramel Sauce,1/4,cup,Caramel Sauce,,,clean
+37,15,1 Orange,1,,Orange,,,clean
+37,16,250 grams All Purpose Flour (Maida),250,grams,All Purpose Flour (Maida),,,clean
+37,17,1/2 teaspoon Baking powder,1/2,teaspoon,Baking powder,,,clean
+37,18,1/4 teaspoon Baking soda,1/4,teaspoon,Baking soda,,,clean
+37,19,1 teaspoon Cinnamon Powder (Dalchini),1,teaspoon,Cinnamon Powder (Dalchini),,,clean
+37,20,1/4 teaspoon Nutmeg powder,1/4,teaspoon,Nutmeg powder,,,clean
+37,21,1/2 teaspoon Cloves (Laung) - powdered,1/2,teaspoon,Cloves (Laung),powdered,,clean
+37,22,1/2 teaspoon Dry ginger powder,1/2,teaspoon,Dry ginger powder,,Dry,clean
+37,23,1/4 cup Milk,1/4,cup,Milk,,,clean
+37,24,4 Egg whites,4,,Egg whites,,,clean
+37,25,3 tablespoons Lemon juice,3,tablespoons,Lemon juice,,,clean
+37,26,4 tablespoons Sugar,4,tablespoons,Sugar,,,clean
+38,1,500 grams Shrimps - cleaned and deveined,500,grams,Shrimps,cleaned and deveined,,clean
+38,2,1/2 cup Pearl onions (Sambar Onions),1/2,cup,Pearl onions (Sambar Onions),,,clean
+38,3,1 Tomato - chopped,1,,Tomato,chopped,,clean
+38,4,1 Green Chilli - slit,1,,Green Chilli,slit,,clean
+38,5,1 inch Ginger,1,inch,Ginger,,,reviewed
+38,6,4 cloves Garlic,4,cloves,Garlic,,,clean
+38,7,1 inch Cinnamon Stick (Dalchini),1,inch,Cinnamon Stick (Dalchini),,,reviewed
+38,8,1 Cardamom (Elaichi) Pods/Seeds,1,,Cardamom (Elaichi) Pods/Seeds,,,reviewed
+38,9,1 teaspoon Whole Black Peppercorns,1,teaspoon,Whole Black Peppercorns,,,clean
+38,10,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+38,11,1 cup Coconut milk,1,cup,Coconut milk,,,clean
+38,12,1 teaspoon Turmeric powder (Haldi),1,teaspoon,Turmeric powder (Haldi),,,clean
+38,13,1 Lemon juice,1,,Lemon juice,,,clean
+38,14,1 teaspoon Sugar,1,teaspoon,Sugar,,,clean
+38,15,Salt - to taste,nan,,Salt,,,reviewed
+38,16,Coconut Oil - for cooking,nan,,Coconut Oil,,,reviewed
+39,1,2 cups suran - chopped,2,cups,suran,chopped,,clean
+39,2,2-1 / 2 cups water,2-1/2,cups,water,,,reviewed
+39,3,8 cloves garlic,8,cloves,garlic,,,clean
+39,4,1 onion - finely chopped,1,,onion,finely chopped,,clean
+39,5,1/2 teaspoon turmeric powder,1/2,teaspoon,turmeric powder,,,clean
+39,6,1-1 / 2 teaspoon red chilli powder,1-1/2,teaspoon,red chilli powder,,,reviewed
+39,7,1/2 teaspoon Black pepper powder,1/2,teaspoon,Black pepper powder,,,clean
+39,8,1/2 teaspoon fennel powder,1/2,teaspoon,fennel powder,,,clean
+39,9,1 tablespoon oil,1,tablespoon,oil,,,clean
+39,10,1 teaspoon mustard,1,teaspoon,mustard,,,clean
+39,11,6 curry leaves,6,,curry leaves,,,clean
+40,1,500 grams Prawns - tiger,500,grams,Prawns,tiger,,reviewed
+40,2,1 cup Fresh coconut - grated,1,cup,Fresh coconut,grated,Fresh,clean
+40,3,2 tablespoons Coriander (Dhania) Seeds,2,tablespoons,Coriander (Dhania) Seeds,,,clean
+40,4,4 Dry Red Chillies,4,,Dry Red Chillies,,Dry,clean
+40,5,8 Shallots,8,,Shallots,,,clean
+40,6,8 cloves Garlic - split lengthwise,8,cloves,Garlic,split lengthwise,,clean
+40,7,1 teaspoon Methi Seeds (Fenugreek Seeds),1,teaspoon,Methi Seeds (Fenugreek Seeds),,,clean
+40,8,1-1/2 teaspoon Cumin seeds (Jeera),1-1/2,teaspoon,Cumin seeds (Jeera),,,reviewed
+40,9,Turmeric powder (Haldi) - a pinch (optional),1,pinch,Turmeric powder (Haldi),,,reviewed
+40,10,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+40,11,Curry leaves - Few,nan,,Curry leaves,,,reviewed
+40,12,30 grams Tamarind,30,grams,Tamarind,,,clean
+40,13,Salt - to taste,nan,,Salt,,,reviewed
+41,1,2 Brinjal (Baingan / Eggplant) - finely chopped (use the regular small eggplant and not the ones used for baingan bhartha),2,,Brinjal (Baingan / Eggplant),finely chopped,,clean
+41,2,1/4 teaspoon Mustard seeds,1/4,teaspoon,Mustard seeds,,,clean
+41,3,1 Onion - finely chopped,1,,Onion,finely chopped,,clean
+41,4,1 to 2 Green Chillies - slit lengthwise (use as per spice tolerance) 1/2 tablespoon kashmiri chili powder (use as per spice tolerance),1.5,,Green Chillies,slit lengthwise,,reviewed
+41,5,1 pinch Turmeric powder (Haldi),1,pinch,Turmeric powder (Haldi),,,clean
+41,6,1/2 tablespoon Coriander Powder (Dhania),1/2,tablespoon,Coriander Powder (Dhania),,,clean
+41,7,1/2 teaspoon Fennel seeds (Saunf) - in case you don't have fennel seeds you could use cumin seeds,1/2,teaspoon,Fennel seeds (Saunf),,,reviewed
+41,8,1/2 teaspoon Methi Seeds (Fenugreek Seeds) - grounded,1/2,teaspoon,Methi Seeds (Fenugreek Seeds),grounded,,clean
+41,9,1 Tomatoes - finely chopped,1,,Tomatoes,finely chopped,,clean
+41,10,1/2 cup Coconut milk - thick,1/2,cup,Coconut milk,thick,,reviewed
+41,11,Coconut Oil - or vegetable oil as required,nan,,Coconut Oil,,,reviewed
+41,12,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+41,13,3 sprig Coriander (Dhania) Leaves - finely chopped (optional),3,sprig,Coriander (Dhania) Leaves,finely chopped,,clean
+42,1,1/2 cup Yellow Moong Dal (Split),1/2,cup,Yellow Moong Dal (Split),,,clean
+42,2,1 Chayote - peeled and diced,1,,Chayote,peeled and diced,,clean
+42,3,1 Potato (Aloo) - peeled and diced,1,,Potato (Aloo),peeled and diced,,clean
+42,4,2 Carrot (Gajjar) - peeled and diced,2,,Carrot (Gajjar),peeled and diced,,clean
+42,5,1/4 cup Green peas (Matar),1/4,cup,Green peas (Matar),,,clean
+42,6,2 Green Chillies - slit,2,,Green Chillies,slit,,clean
+42,7,1 teaspoon Turmeric powder (Haldi),1,teaspoon,Turmeric powder (Haldi),,,clean
+42,8,Salt - to taste,nan,,Salt,,,reviewed
+42,9,Curry leaves - a sprig,1,sprig,Curry leaves,,,reviewed
+42,10,1/4 teaspoon Black pepper powder,1/4,teaspoon,Black pepper powder,,,clean
+42,11,1 tablespoon Coconut Oil,1,tablespoon,Coconut Oil,,,clean
+43,1,1 cabbage - finely chopped,1,,cabbage,finely chopped,,clean
+43,2,1/2 cup green peas - optional,1/2,cup,green peas,,,reviewed
+43,3,1 sprig curry leaf,1,sprig,curry leaf,,,reviewed
+43,4,1/4 tsp rye,1/4,tsp,rye,,,clean
+43,5,1 red chili,1,,red chili,,,clean
+43,6,1 tsp white urad dal,1,tsp,white urad dal,,,clean
+43,7,1/4 tsp turmeric powder,1/4,tsp,turmeric powder,,,clean
+43,8,Salt - as per taste,nan,,Salt,,,reviewed
+43,9,1 tsp oil - as per use,1,tsp,oil,,,reviewed
+43,10,5 tbsp coconut - grated,5,tbsp,coconut,grated,,clean
+43,11,6 small onions - chopped,6,,small onions,chopped,,clean
+43,12,3 cloves garlic - chopped,3,cloves,garlic,chopped,,clean
+43,13,green chili - chopped,nan,,green chili,chopped,,clean
+43,14,3 sprig curry leaves,3,sprig,curry leaves,,,clean
+44,1,3 carrots - chop,3,,carrots,chop,,clean
+44,2,20 green beans - chop,20,,green beans,chopped,,reviewed
+44,3,1 onion - chop,1,,onion,chop,,clean
+44,4,3 green chillies - cut straight,3,,green chillies,cut straight,,clean
+44,5,1 teaspoon cumin powder,1,teaspoon,cumin powder,,,clean
+44,6,1/2 teaspoon turmeric powder,1/2,teaspoon,turmeric powder,,,clean
+44,7,1 teaspoon salt - as per taste,1,teaspoon,salt,,,reviewed
+44,8,1 Tablespoon oil,1,Tablespoon,oil,,,clean
+44,9,1/4 teaspoon mustard,1/4,teaspoon,mustard,,,clean
+44,10,10 curry leaves,10,,curry leaves,,,clean
+45,1,3 Raw Banana - peeled and thinly sliced,3,,Raw Banana,peeled and thinly sliced,,clean
+45,2,1/2 tablespoon Paprika powder,1/2,tablespoon,Paprika powder,,,clean
+45,3,1/4 tablespoon Black pepper powder,1/4,tablespoon,Black pepper powder,,,clean
+45,4,Salt - to taste,nan,,Salt,,,reviewed
+45,5,1 tablespoon Extra Virgin Olive Oil - to toss,1,tablespoon,Extra Virgin Olive Oil,,,reviewed
+46,1,3 cups Rice flour,3,cups,Rice flour,,,clean
+46,2,1 cup Icing Sugar - powdered,1,cup,Icing Sugar,powdered,,clean
+46,3,1 teaspoon Fennel seeds (Saunf),1,teaspoon,Fennel seeds (Saunf),,,clean
+46,4,1 pinch Salt,1,pinch,Salt,,,clean
+46,5,1 3/4 cup Coconut milk,1-3/4,cup,Coconut milk,,,reviewed
+46,6,1 Whole Eggs,1,,Whole Eggs,,,clean
+46,7,Sunflower Oil - for deep frying,nan,,Sunflower Oil,,,reviewed
+47,1,250 grams Mutton,250,grams,Mutton,,,clean
+47,2,2 tablespoon Fresh coconut - grated,2,tablespoon,Fresh coconut,grated,Fresh,clean
+47,3,2 Onions,2,,Onions,,,clean
+47,4,2 Potatoes (Aloo),2,,Potatoes (Aloo),,,clean
+47,5,3 Tomatoes,3,,Tomatoes,,,clean
+47,6,6 Green Chillies,6,,Green Chillies,,,clean
+47,7,8 cloves Garlic,8,cloves,Garlic,,,clean
+47,8,1 inch Ginger,1,inch,Ginger,,,reviewed
+47,9,1 teaspoon Poppy seeds,1,teaspoon,Poppy seeds,,,clean
+47,10,1 inch Cinnamon Stick (Dalchini),1,inch,Cinnamon Stick (Dalchini),,,reviewed
+47,11,4 Cloves (Laung),4,Cloves,Cloves (Laung),cloves,,reviewed
+47,12,1 teaspoon Coriander (Dhania) Seeds,1,teaspoon,Coriander (Dhania) Seeds,,,clean
+47,13,4 sprig Coriander (Dhania) Leaves - chopped,4,sprig,Coriander (Dhania) Leaves,chopped,,clean
+47,14,Sunflower Oil - as required,nan,,Sunflower Oil,,,reviewed
+48,1,1 cup Red matta rice,1,cup,Red matta rice,,,clean
+48,2,3 1/2 cups Water,3-1/2,cups,Water,,,reviewed
+48,3,1/2 cup Jaggery,1/2,cup,Jaggery,,,clean
+48,4,1 teaspoon Cardamom (Elaichi) Pods/Seeds,1,teaspoon,Cardamom (Elaichi) Pods/Seeds,,,reviewed
+48,5,1 cup Coconut milk,1,cup,Coconut milk,,,clean
+48,6,1/4 cup Water,1/4,cup,Water,,,clean
+48,7,1 tablespoon Ghee,1,tablespoon,Ghee,,,clean
+48,8,12 Cashew nuts,12,,Cashew nuts,,,clean
+48,9,2 tablespoons Dry coconut (kopra) - cut into small pieces,2,tablespoons,Dry coconut (kopra),cut into small pieces,Dry,clean
+49,1,2 Mooli/ Mullangi (Radish) - julienned and steamed,2,,Mooli/ Mullangi (Radish),julienned and steamed,,reviewed
+49,2,1 teaspoon Coconut Oil,1,teaspoon,Coconut Oil,,,clean
+49,3,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+49,4,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+49,5,8 Curry leaves,8,,Curry leaves,,,clean
+49,6,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+49,7,1/4 cup Fresh coconut - grated,1/4,cup,Fresh coconut,grated,Fresh,clean
+49,8,2 Green Chillies,2,,Green Chillies,,,clean
+49,9,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+49,10,1 inch Ginger,1,inch,Ginger,,,reviewed
+49,11,Salt - to taste,nan,,Salt,,,reviewed
+49,12,Sunflower Oil,nan,,Sunflower Oil,,,clean
+50,1,500 grams Rice - raw,500,grams,Rice,raw,,clean
+50,2,2 teaspoon Methi Seeds (Fenugreek Seeds),2,teaspoon,Methi Seeds (Fenugreek Seeds),,,clean
+50,3,1 cup Fresh coconut - grated,1,cup,Fresh coconut,grated,Fresh,clean
+50,4,1 cup Cooked rice,1,cup,Cooked rice,Cooked,,clean
+50,5,4 tablespoons Sugar,4,tablespoons,Sugar,,,clean
+50,6,1/4 teaspoon Baking soda,1/4,teaspoon,Baking soda,,,clean
+50,7,1 teaspoon Salt,1,teaspoon,Salt,,,clean
+51,1,2 cups Curd (Dahi / Yogurt),2,cups,Curd (Dahi / Yogurt),,,clean
+51,2,1-1/2 cups Water,1-1/2,cups,Water,,,reviewed
+51,3,5 Shallots - (pearl onions),5,,Shallots (pearl onions),,,reviewed
+51,4,1 inch Ginger - finely chopped,1,inch,Ginger,finely chopped,,reviewed
+51,5,3 Garlic - cloves,3,clove,Garlic,,,reviewed
+51,6,1 Green Chilli - finely chopped,1,,Green Chilli,finely chopped,,clean
+51,7,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+51,8,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+51,9,1/2 teaspoon Methi Seeds (Fenugreek Seeds),1/2,teaspoon,Methi Seeds (Fenugreek Seeds),,,clean
+51,10,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+51,11,2 Dry Red Chillies,2,,Dry Red Chillies,,Dry,clean
+51,12,2 teaspoons Coconut Oil,2,teaspoons,Coconut Oil,,,clean
+51,13,Salt - to taste,nan,,Salt,,,reviewed
+52,1,2 Raw Banana - boiled and diced,2,,Raw Banana,boiled and diced,,clean
+52,2,1 teaspoon Coconut Oil,1,teaspoon,Coconut Oil,,,clean
+52,3,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+52,4,2 Dry Red Chillies,2,,Dry Red Chillies,,Dry,clean
+52,5,8 Curry leaves,8,,Curry leaves,,,clean
+52,6,10 Pearl onions (Sambar Onions) - finely chopped,10,,Pearl onions (Sambar Onions),finely chopped,,clean
+52,7,2 cloves Garlic - finely chopped,2,cloves,Garlic,finely chopped,,clean
+52,8,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+52,9,1/4 cup Fresh coconut - grated,1/4,cup,Fresh coconut,grated,Fresh,clean
+52,10,2 Green Chillies,2,,Green Chillies,,,clean
+52,11,1/4 cup Coriander (Dhania) Leaves - roughly chopped,1/4,cup,Coriander (Dhania) Leaves,roughly chopped,,clean
+52,12,Salt - to taste,nan,,Salt,,,reviewed
+53,1,1 cup Fresh coconut - grated,1,cup,Fresh coconut,grated,Fresh,clean
+53,2,3 Shallots,3,,Shallots,,,clean
+53,3,20 grams Tamarind,20,grams,Tamarind,,,clean
+53,4,3 Dry Red Chilli,3,,Dry Red Chilli,,Dry,clean
+53,5,1/2 inch Ginger,1/2,inch,Ginger,,,reviewed
+53,6,3 Dry Red Chillies,3,,Dry Red Chillies,,Dry,clean
+53,7,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+53,8,Salt - to taste,nan,,Salt,,,reviewed
+54,1,2 cups All Purpose Flour (Maida),2,cups,All Purpose Flour (Maida),,,clean
+54,2,2 tablespoons Ghee,2,tablespoons,Ghee,,,clean
+54,3,1/2 cup Milk,1/2,cup,Milk,,,clean
+54,4,1/2 teaspoon Sugar,1/2,teaspoon,Sugar,,,clean
+54,5,1 teaspoon Salt - to taste,1,teaspoon,Salt,,,reviewed
+54,6,Lukewarm Water - as required,nan,,Lukewarm Water,Lukewarm,,clean
+55,1,4 Tomatoes - chopped (big pieces),4,,Tomatoes,chopped,,clean
+55,2,Sunflower Oil - as required,nan,,Sunflower Oil,,,reviewed
+55,3,1 tablespoon Mustard seeds,1,tablespoon,Mustard seeds,,,clean
+55,4,3 Dry Red Chillies - torn into pieces,3,,Dry Red Chillies,torn into pieces,Dry,clean
+55,5,5 Curry leaves,5,,Curry leaves,,,clean
+55,6,2 Onions - thinly sliced,2,,Onions,thinly sliced,,clean
+55,7,1 tablespoon Ginger Garlic Paste,1,tablespoon,Ginger Garlic Paste,,,clean
+55,8,2 Green Chillies - chopped,2,,Green Chillies,chopped,,clean
+55,9,1/2 tablespoon Kashmiri Red Chilli Powder,1/2,tablespoon,Kashmiri Red Chilli Powder,,,clean
+55,10,1/2 tablespoon Turmeric powder (Haldi),1/2,tablespoon,Turmeric powder (Haldi),,,clean
+55,11,Salt - to taste,nan,,Salt,,,reviewed
+55,12,2 tablespoons Coriander (Dhania) Leaves - finely chopped,2,tablespoons,Coriander (Dhania) Leaves,finely chopped,,clean
+56,1,500 grams Chicken - curry-cut with bones,500,grams,Chicken,curry-cut with bones,,clean
+56,2,2 teaspoons Red Chilli powder,2,teaspoons,Red Chilli powder,,,clean
+56,3,1 teaspoon Turmeric powder (Haldi),1,teaspoon,Turmeric powder (Haldi),,,clean
+56,4,1-1/2 teaspoons Salt,1-1/2,teaspoons,Salt,,,reviewed
+56,5,2 Onions - thinly sliced,2,,Onions,thinly sliced,,clean
+56,6,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+56,7,2 Green Chillies,2,,Green Chillies,,,clean
+56,8,1 inch Ginger - crushed or a coarse paste,1,inch,Ginger,crushed,,reviewed
+56,9,6 cloves Garlic - crushed or a coarse paste,6,cloves,Garlic,"cloves, crushed",,reviewed
+56,10,1 Tomato - chopped,1,,Tomato,chopped,,clean
+56,11,2 tablespoon Red Chilli powder,2,tablespoon,Red Chilli powder,,,clean
+56,12,1 tablespoon Coriander Powder (Dhania),1,tablespoon,Coriander Powder (Dhania),,,clean
+56,13,1 teaspoon Turmeric powder (Haldi),1,teaspoon,Turmeric powder (Haldi),,,clean
+56,14,1 tablespoon Fennel Powder,1,tablespoon,Fennel Powder,,,clean
+56,15,1 teaspoon Garam masala powder,1,teaspoon,Garam masala powder,,,clean
+56,16,1 cup Coconut milk - thick,1,cup,Coconut milk,thick,,reviewed
+56,17,Salt - as per your taste,nan,,Salt,,,reviewed
+56,18,2 tablespoons Coconut Oil,2,tablespoons,Coconut Oil,,,clean
+57,1,2 cups Kaddu (Parangikai/ Pumpkin) - chopped,2,cups,Kaddu (Parangikai/ Pumpkin),chopped,,clean
+57,2,1/2 cup Black Eyed Beans (Lobia),1/2,cup,Black Eyed Beans (Lobia),,,clean
+57,3,1/2 teaspoon Red Chilli powder,1/2,teaspoon,Red Chilli powder,,,clean
+57,4,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+57,5,Salt - to taste,nan,,Salt,,,reviewed
+57,6,1/2 cup Fresh coconut - grated,1/2,cup,Fresh coconut,grated,Fresh,clean
+57,7,1/2 teaspoon Cumin seeds (Jeera),1/2,teaspoon,Cumin seeds (Jeera),,,clean
+57,8,1 Green Chilli,1,,Green Chilli,,,clean
+57,9,1 tablespoon Coconut Oil,1,tablespoon,Coconut Oil,,,clean
+57,10,1/2 teaspoon Mustard seeds,1/2,teaspoon,Mustard seeds,,,clean
+57,11,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+57,12,2 Dry Red Chillies,2,,Dry Red Chillies,,Dry,clean
+57,13,1 tablespoon Fresh coconut,1,tablespoon,Fresh coconut,,Fresh,clean
+57,14,4 Pearl onions (Sambar Onions) - sliced,4,,Pearl onions (Sambar Onions),sliced,,clean
+58,1,1 cup Rice,1,cup,Rice,,,clean
+58,2,1/4 cup Cooked rice,1/4,cup,Cooked rice,Cooked,,clean
+58,3,1/2 cup Fresh coconut - grated,1/2,cup,Fresh coconut,grated,Fresh,clean
+58,4,1/4 teaspoon Cumin seeds (Jeera),1/4,teaspoon,Cumin seeds (Jeera),,,clean
+58,5,1 teaspoon Active dry yeast - soaked in luke warm water (2 tablespoon),1,teaspoon,Active dry yeast,soaked in luke warm water,Dry,clean
+58,6,5 tablespoon Sugar,5,tablespoon,Sugar,,,clean
+58,7,1/4 teaspoon Salt,1/4,teaspoon,Salt,,,clean
+58,8,2 Cardamom (Elaichi) Pods/Seeds - powdered,2,,Cardamom (Elaichi) Pods/Seeds,pods/seeds,,reviewed
+58,9,1 tablespoon Ghee,1,tablespoon,Ghee,,,clean
+58,10,2 teaspoons Raisins,2,teaspoons,Raisins,,,clean
+59,1,500 grams Sardine fish - (mathi,500,grams,Sardine fish,,,reviewed
+59,2,1 cup Shallots - chopped,1,cup,Shallots,chopped,,clean
+59,3,2 Tomatoes - pureed,2,,Tomatoes,pureed,,clean
+59,4,1-1/2 teaspoon Ginger Garlic Paste,1-1/2,teaspoon,Ginger Garlic Paste,,,reviewed
+59,5,1/2 Turmeric powder (Haldi),1/2,,Turmeric powder (Haldi),,,clean
+59,6,1 tablespoon Red Chilli powder - (add more if you like more spicy),1,tablespoon,Red Chilli powder,,,reviewed
+59,7,1 tablespoon Coriander Powder (Dhania),1,tablespoon,Coriander Powder (Dhania),,,clean
+59,8,1 teaspoon Fennel Powder,1,teaspoon,Fennel Powder,,,clean
+59,9,1-1/2 teaspoon Black pepper powder,1-1/2,teaspoon,Black pepper powder,,,reviewed
+59,10,4 Kokum (Malabar Tamarind),4,,Kokum (Malabar Tamarind),,,clean
+59,11,4 tablespoon Coconut Oil,4,tablespoon,Coconut Oil,,,clean
+59,12,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+59,13,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+59,14,Salt - to taste,nan,,Salt,,,reviewed
+59,15,Water - as required,nan,,Water,,,reviewed
+60,1,2 Mango (Ripe) - peeled and chopped roughly (reserve the seeds),2,,Mango (Ripe),peeled and chopped roughly (reserve the seeds),,clean
+60,2,Salt - to taste,nan,,Salt,,,reviewed
+60,3,1 teaspoon Turmeric powder (Haldi),1,teaspoon,Turmeric powder (Haldi),,,clean
+60,4,1 teaspoon Red Chilli powder - (add according to taste),1,teaspoon,Red Chilli powder,,,reviewed
+60,5,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+60,6,2 teaspoons Mustard seeds - ground coarsely using a mortar pestle/ spice grinder,2,teaspoons,Mustard seeds,ground coarsely using a mortar pestle,,reviewed
+60,7,3 tablespoons Fresh coconut - grated,3,tablespoons,Fresh coconut,grated,Fresh,clean
+60,8,1/2 tablespoon Jaggery - powdered,1/2,tablespoon,Jaggery,powdered,,clean
+61,1,2 eggs - boiled and cut into pieces,2,,eggs,boiled and cut into pieces,,clean
+61,2,2 onions - finely chopped,2,,onions,finely chopped,,clean
+61,3,2 tomatoes - finely chopped,2,,tomatoes,finely chopped,,clean
+61,4,2 cloves garlic - finely chopped,2,cloves,garlic,finely chopped,,clean
+61,5,1 ginger - finely chopped,1,,ginger,finely chopped,,clean
+61,6,1 sprig curry leaves,1,sprig,curry leaves,,,clean
+61,7,3/4 teaspoon hot Masala powder,3/4,teaspoon,hot Masala powder,,,clean
+61,8,1/4 teaspoon black pepper powder,1/4,teaspoon,black pepper powder,,,clean
+61,9,1 teaspoon Kashmiri red chilli powder,1,teaspoon,Kashmiri red chilli powder,,,clean
+61,10,1/4 teaspoon coriander powder,1/4,teaspoon,coriander powder,,,clean
+61,11,1/4 teaspoon turmeric powder,1/4,teaspoon,turmeric powder,,,clean
+61,12,coriander leaves - finely chopped,nan,,coriander leaves,finely chopped,,clean
+61,13,1/4 cup water,1/4,cup,water,,,clean
+61,14,2 Tablespoon coconut oil,2,Tablespoon,coconut oil,,,clean
+61,15,salt - to taste,nan,,salt,,,reviewed
+62,1,4 Crabs,4,,Crabs,,,clean
+62,2,6 Fresh coconut - chunks,6,,Fresh coconut,chunks,Fresh,reviewed
+62,3,5 sprig Coriander (Dhania) Leaves,5,sprig,Coriander (Dhania) Leaves,,,clean
+62,4,1 inch Cinnamon Stick (Dalchini),1,inch,Cinnamon Stick (Dalchini),,,reviewed
+62,5,1 Bay leaf (tej patta),1,,Bay leaf (tej patta),,,reviewed
+62,6,2 inch Ginger,2,inch,Ginger,,,reviewed
+62,7,4 cloves Garlic,4,cloves,Garlic,,,clean
+62,8,3/4 cup Onion - fried,3/4,cup,Onion,fried,,clean
+62,9,1 Onion - chopped,1,,Onion,chopped,,clean
+62,10,2 Tomato - finely chopped,2,,Tomato,finely chopped,,clean
+62,11,2 teaspoons Kashmiri Red Chilli Powder - adjustable,2,teaspoons,Kashmiri Red Chilli Powder,,,reviewed
+62,12,1 teaspoons Red Chilli powder - adjustable,1,teaspoons,Red Chilli powder,,,reviewed
+62,13,1 tablespoon Coriander Powder (Dhania),1,tablespoon,Coriander Powder (Dhania),,,clean
+62,14,1 teaspoon Turmeric powder (Haldi),1,teaspoon,Turmeric powder (Haldi),,,clean
+62,15,Salt - to taste,nan,,Salt,,,reviewed
+62,16,Sunflower Oil - as required,nan,,Sunflower Oil,,,reviewed
+63,1,4 cups Water,4,cups,Water,,,clean
+63,2,1 tablespoon Dry ginger powder,1,tablespoon,Dry ginger powder,,Dry,clean
+63,3,1 teaspoon Black pepper powder,1,teaspoon,Black pepper powder,,,clean
+63,4,1 tablespoon Instant Coffee Powder,1,tablespoon,Instant Coffee Powder,,,clean
+63,5,20 Tulsi (holy basil),20,,Tulsi (holy basil),,,clean
+63,6,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+63,7,4 Cardamom (Elaichi) Pods/Seeds,4,,Cardamom (Elaichi) Pods/Seeds,,,reviewed
+63,8,3 tablespoons Jaggery - (adjust to taste),3,tablespoons,Jaggery,,,reviewed
+63,9,1/4 teaspoon Salt - or to taste,1/4,teaspoon,Salt,,,reviewed
+64,1,2 cups Elephant yam (Suran/Senai/Ratalu) - chopped into small cubes,2,cups,Elephant yam (Suran/Senai/Ratalu),chopped into small cubes,,clean
+64,2,1 tablespoon Red Chilli powder,1,tablespoon,Red Chilli powder,,,clean
+64,3,1 teaspoon Turmeric powder (Haldi),1,teaspoon,Turmeric powder (Haldi),,,clean
+64,4,1 tablespoon Fennel seeds (Saunf) - pound,1,tablespoon,Fennel seeds (Saunf),pounded,,reviewed
+64,5,1 teaspoon Black pepper powder,1,teaspoon,Black pepper powder,,,clean
+64,6,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+64,7,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+64,8,1 tablespoon Coconut Oil,1,tablespoon,Coconut Oil,,,clean
+64,9,1 cup Pearl onions (Sambar Onions),1,cup,Pearl onions (Sambar Onions),,,clean
+64,10,6 cloves Garlic,6,cloves,Garlic,,,clean
+65,1,1 cup Jackfruit Raw (Kathal) - chopped finely,1,cup,Jackfruit Raw (Kathal),chopped finely,,clean
+65,2,1 cup Brown Rice,1,cup,Brown Rice,,,clean
+65,3,1 cup Milk,1,cup,Milk,,,clean
+65,4,1 Cardamom (Elaichi) Pods/Seeds,1,,Cardamom (Elaichi) Pods/Seeds,pods/seeds,,reviewed
+65,5,1 tablespoon Ghee,1,tablespoon,Ghee,,,clean
+65,6,2 teaspoon Cashew nuts - chopped,2,teaspoon,Cashew nuts,chopped,,clean
+66,1,2 cups Rice - raw,2,cups,Rice,raw,,clean
+66,2,1 cup Cooked rice,1,cup,Cooked rice,Cooked,,clean
+66,3,1 cup Fresh coconut - freshly grated,1,cup,Fresh coconut,freshly grated,Fresh,clean
+66,5,2 tablespoons Sugar,2,tablespoons,Sugar,,,clean
+66,6,Salt - to taste,nan,,Salt,,,reviewed
+67,1,1 Drumstick - chopped to about 1.5 inch,1,,Drumstick,chopped to about 1.5 inch,,clean
+67,2,1 Mango (Raw) - peeled & chopped to bite-size,1,,Mango (Raw),peeled & chopped to bite-size,,clean
+67,3,1 Green Chilli,1,,Green Chilli,,,clean
+67,4,1 cup Water,1,cup,Water,,,clean
+67,5,Salt - to taste,nan,,Salt,,,reviewed
+67,6,1/2 cup Arhar dal (Split Toor Dal) - soaked for 30 minutes,1/2,cup,Arhar dal (Split Toor Dal),soaked for 30 minutes,,clean
+67,7,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+67,8,2 cups Water,2,cups,Water,,,clean
+67,9,1/4 cup Fresh coconut - grated,1/4,cup,Fresh coconut,grated,Fresh,clean
+67,10,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+67,11,2 Green Chillies,2,,Green Chillies,,,clean
+67,12,2-1/2 tablespoons Water,2-1/2,tablespoons,Water,,,reviewed
+67,13,1-1/2 teaspoons Coconut Oil,1-1/2,teaspoons,Coconut Oil,,,reviewed
+67,14,1/4 teaspoon Mustard seeds,1/4,teaspoon,Mustard seeds,,,clean
+67,15,1/4 teaspoon White Urad Dal (Split),1/4,teaspoon,White Urad Dal (Split),,,clean
+67,16,2 Dry Red Chillies,2,,Dry Red Chillies,,Dry,clean
+67,17,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+68,1,1 cup Rice flour,1,cup,Rice flour,,,clean
+68,2,1/2 cup All Purpose Flour (Maida),1/2,cup,All Purpose Flour (Maida),,,clean
+68,3,1 teaspoon Dry ginger powder,1,teaspoon,Dry ginger powder,,Dry,clean
+68,4,1/2 teaspoon Cardamom Powder (Elaichi),1/2,teaspoon,Cardamom Powder (Elaichi),,,clean
+68,5,2 Ripe Bananas - mashed,2,,Ripe Bananas,mashed,,clean
+68,6,4 tablespoon Jaggery,4,tablespoon,Jaggery,,,clean
+68,7,2 tablespoon Cashew nuts - ground,2,tablespoon,Cashew nuts,ground,,clean
+68,8,1 pinch Salt,1,pinch,Salt,,,clean
+68,9,Ghee - for cooking,nan,,Ghee,,,reviewed
+69,1,500 grams Mutton - with bone (adds flavour),500,grams,Mutton,with bone,,reviewed
+69,2,1/2 teaspoon Black pepper powder,1/2,teaspoon,Black pepper powder,,,clean
+69,3,Salt - as per your taste,nan,,Salt,,,reviewed
+69,4,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+69,5,3 tablespoons Coconut Oil,3,tablespoons,Coconut Oil,,,clean
+69,6,1 Onion - finely chopped,1,,Onion,finely chopped,,clean
+69,7,1 Tomato - finely chopped,1,,Tomato,finely chopped,,clean
+69,8,2 inch Ginger - finely chopped,2,inch,Ginger,finely chopped,,reviewed
+69,9,6 cloves Garlic - finely chopped,6,cloves,Garlic,finely chopped,,clean
+69,10,3/4 teaspoon Red Chilli powder,3/4,teaspoon,Red Chilli powder,,,clean
+69,11,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+69,12,1/4 teaspoon Coriander Powder (Dhania),1/4,teaspoon,Coriander Powder (Dhania),,,clean
+69,13,1/2 teaspoon Garam masala powder,1/2,teaspoon,Garam masala powder,,,clean
+69,14,1/2 teaspoon Fennel seeds (Saunf),1/2,teaspoon,Fennel seeds (Saunf),,,clean
+69,15,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+69,16,Salt - as per your taste,nan,,Salt,,,reviewed
+70,1,500 grams Tapioca root - skin peeled and chopped into small cubes,500,grams,Tapioca root,skin peeled and chopped into small cubes,,clean
+70,2,250 grams Chicken - minced,250,grams,Chicken,minced,,clean
+70,3,1 Onion - sliced,1,,Onion,sliced,,clean
+70,4,5 cloves Garlic - chopped,5,cloves,Garlic,chopped,,clean
+70,5,1 inch Ginger - chopped,1,inch,Ginger,chopped,,reviewed
+70,6,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+70,7,1 Green Chilli - sliced,1,,Green Chilli,sliced,,clean
+70,8,1 teaspoon Turmeric powder (Haldi),1,teaspoon,Turmeric powder (Haldi),,,clean
+70,9,1 teaspoon Red Chilli powder,1,teaspoon,Red Chilli powder,,,clean
+70,10,2 teaspoons Garam masala powder,2,teaspoons,Garam masala powder,,,clean
+70,11,1 teaspoon Black pepper powder,1,teaspoon,Black pepper powder,,,clean
+70,12,3 tablespoons Fresh coconut - grated,3,tablespoons,Fresh coconut,grated,Fresh,clean
+70,13,Salt - to taste,nan,,Salt,,,reviewed
+70,14,Coconut Oil - for cooking,nan,,Coconut Oil,,,reviewed
+71,1,5 tomatoes - finely chopped,5,,tomatoes,finely chopped,,clean
+71,2,2 green chillies - chopped,2,,green chillies,chopped,,clean
+71,3,1/4 teaspoon turmeric powder,1/4,teaspoon,turmeric powder,,,clean
+71,4,1/2 teaspoon red chilli powder,1/2,teaspoon,red chilli powder,,,clean
+71,5,salt - to taste,nan,,salt,,,reviewed
+71,6,1 teaspoon coconut oil,1,teaspoon,coconut oil,,,clean
+71,7,1/2 teaspoon mustard,1/2,teaspoon,mustard,,,clean
+71,8,1 cast Curry leaves,1,sprig,Curry leaves,,,reviewed
+71,9,1/4 cup coconut - chopped,1/4,cup,coconut,chopped,,clean
+71,10,1 teaspoon cumin seeds,1,teaspoon,cumin seeds,,,clean
+71,11,5 onions - halved,5,,onions,halved,,clean
+72,1,500 grams okra - cut,500,grams,okra,cut,,clean
+72,2,10 small onions - finely chopped,10,,small onions,finely chopped,,clean
+72,3,1/4 cup coconut - grated,1/4,cup,coconut,grated,,clean
+72,4,2 green chillies - finely chopped,2,,green chillies,finely chopped,,clean
+72,5,1 sprig curry leaves,1,sprig,curry leaves,,,clean
+72,6,1/2 teaspoon mustard,1/2,teaspoon,mustard,,,clean
+72,7,1/2 teaspoon turmeric Powder,1/2,teaspoon,turmeric Powder,,,clean
+72,8,salt - as per taste,nan,,salt,,,reviewed
+72,9,oil - as per use,nan,,oil,,,reviewed
+73,1,4 tomatoes - chopped,4,,tomatoes,chopped,,clean
+73,2,oil - as per use,nan,,oil,,,reviewed
+73,3,1 tablespoon rye,1,tablespoon,rye,,,clean
+73,4,3 dry red chillies - broken,3,,dry red chillies,broken,Dry,clean
+73,5,5 curry leaves,5,,curry leaves,,,clean
+73,6,2 onions - finely chopped,2,,onions,finely chopped,,clean
+73,7,1 tablespoon ginger garlic paste,1,tablespoon,ginger garlic paste,,,clean
+73,8,2 green chillies - chopped,2,,green chillies,chopped,,clean
+73,9,1/2 tablespoon Kashmiri red chilli powder,1/2,tablespoon,Kashmiri red chilli powder,,,clean
+73,10,1/2 tablespoon turmeric powder,1/2,tablespoon,turmeric powder,,,clean
+73,11,salt - as per taste,nan,,salt,,,reviewed
+73,12,2 tablespoons green coriander - finely chopped,2,tablespoons,green coriander,finely chopped,,clean
+74,1,2 Whole Eggs - hard boiled and cut to half,2,,Whole Eggs,hard boiled and cut to half,,clean
+74,2,7 Cashew nuts,7,,Cashew nuts,,,clean
+74,3,1 Onion - chopped,1,,Onion,chopped,,clean
+74,4,1 Tomato - chopped,1,,Tomato,chopped,,clean
+74,5,2 Potato (Aloo),2,,Potato (Aloo),,,clean
+74,6,1 inch Ginger,1,inch,Ginger,,,reviewed
+74,7,3 Garlic,3,,Garlic,,,clean
+74,8,2 teaspoon Coriander Powder (Dhania),2,teaspoon,Coriander Powder (Dhania),,,clean
+74,9,1 teaspoon Red Chilli powder,1,teaspoon,Red Chilli powder,,,clean
+74,10,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+74,11,1/4 teaspoon Garam masala powder,1/4,teaspoon,Garam masala powder,,,clean
+74,12,1 tablespoon Fennel seeds (Saunf),1,tablespoon,Fennel seeds (Saunf),,,clean
+74,13,2 tablespoons Coriander (Dhania) Leaves - chopped,2,tablespoons,Coriander (Dhania) Leaves,chopped,,clean
+74,14,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+74,15,Sunflower Oil - as required,nan,,Sunflower Oil,,,reviewed
+74,16,Salt - to taste,nan,,Salt,,,reviewed
+75,1,2 brinjals - finely chopped,2,,brinjals,finely chopped,,clean
+75,2,1/4 teaspoon mustard,1/4,teaspoon,mustard,,,clean
+75,3,1 onion - finely chopped,1,,onion,finely chopped,,clean
+75,4,2 green chillies - thin and straight cut,2,,green chillies,thin and straight cut,,clean
+75,5,turmeric powder - a pinch,1,pinch,turmeric powder,,,reviewed
+75,6,1/2 tablespoon coriander powder,1/2,tablespoon,coriander powder,,,clean
+75,7,1/2 teaspoon Fennel - or cumin,1/2,teaspoon,Fennel,,,reviewed
+75,8,1/2 teaspoon fenugreek seeds - grind,1/2,teaspoon,fenugreek seeds,ground,,reviewed
+75,9,1 tomato - finely chopped,1,,tomato,finely chopped,,clean
+75,10,1/2 cup coconut milk - thick,1/2,cup,coconut milk,thick,,clean
+75,11,coconut oil - as per use,nan,,coconut oil,,,reviewed
+75,12,2 sprig curry leaves,2,sprig,curry leaves,,,clean
+75,13,3 sprig coriander - Finely chop,3,sprig,coriander,Finely chop,,clean
+76,1,5 Fish fillet,5,,Fish fillet,,,clean
+76,2,1 teaspoon Ginger Garlic Paste,1,teaspoon,Ginger Garlic Paste,,,clean
+76,3,1 tablespoon Red Chilli powder - (adjust),1,tablespoon,Red Chilli powder,,,reviewed
+76,4,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+76,5,Black pepper powder - freshly ground to taste,nan,,Black pepper powder,freshly ground,,clean
+76,6,1/2 Lemon - juiced,1/2,,Lemon,juiced,,clean
+76,7,Salt - to taste,nan,,Salt,,,reviewed
+76,8,Coconut Oil - for shallow frying,nan,,Coconut Oil,,,reviewed
+76,9,Curry leaves - a few sprigs,nan,sprig,Curry leaves,,,reviewed
+77,1,3 Chayote,3,,Chayote,,,clean
+77,2,1/2 cup Fresh coconut - grated,1/2,cup,Fresh coconut,grated,Fresh,clean
+77,3,2 Green Chillies,2,,Green Chillies,,,clean
+77,4,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+77,5,Cumin seeds (Jeera),nan,,Cumin seeds (Jeera),,,clean
+77,6,1/2 teaspoon Mustard seeds,1/2,teaspoon,Mustard seeds,,,clean
+77,7,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+77,8,Salt - to taste,nan,,Salt,,,reviewed
+78,1,1 cup Red matta rice,1,cup,Red matta rice,,,clean
+78,2,1 cup Green Moong Dal (Whole),1,cup,Green Moong Dal (Whole),,,clean
+78,3,1/2 cup Fresh coconut - grated,1/2,cup,Fresh coconut,grated,Fresh,clean
+78,4,2 cloves Garlic,2,cloves,Garlic,,,clean
+78,5,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+78,6,1 Green Chilli - finely chopped,1,,Green Chilli,finely chopped,,clean
+78,7,1 teaspoon Turmeric powder (Haldi),1,teaspoon,Turmeric powder (Haldi),,,clean
+78,8,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+78,9,Salt - to taste,nan,,Salt,,,reviewed
+78,10,4 Papad,4,,Papad,,,clean
+79,1,1-1/2 Green peas (Matar),1-1/2,cups,Green peas (Matar),(fixed from original recipe),,reviewed
+79,2,1 Onion - finely chopped,1,,Onion,finely chopped,,clean
+79,3,1/2 cup Fresh coconut - grated,1/2,cup,Fresh coconut,grated,Fresh,clean
+79,4,4 Green Chillies,4,,Green Chillies,,,clean
+79,5,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+79,6,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+79,7,1 teaspoon Fennel seeds (Saunf),1,teaspoon,Fennel seeds (Saunf),,,clean
+79,8,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+79,9,Salt - to taste,nan,,Salt,,,reviewed
+79,10,1 teaspoon Sunflower Oil,1,teaspoon,Sunflower Oil,,,clean
+80,1,500 grams Chicken - curry cut,500,grams,Chicken,curry cut,,clean
+80,2,3 Onions - sliced,3,,Onions,sliced,,clean
+80,3,4 Tomatoes - chopped,4,,Tomatoes,chopped,,clean
+80,4,1 inch Ginger - minced,1,inch,Ginger,minced,,reviewed
+80,5,10 cloves Garlic - minced,10,cloves,Garlic,minced,,clean
+80,6,1/2 teaspoon Red Chilli powder,1/2,teaspoon,Red Chilli powder,,,clean
+80,7,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+80,8,2 teaspoon Chicken masala - (you can use other too but I prefer eastern masalas for kerala style preparations),2,teaspoon,Chicken masala,,,reviewed
+80,9,1 cup Fresh coconut - grated,1,cup,Fresh coconut,grated,Fresh,clean
+80,10,2 Cloves (Laung),2,Cloves,Cloves (Laung),cloves,,reviewed
+80,11,1 inch Cinnamon Stick (Dalchini),1,inch,Cinnamon Stick (Dalchini),,,reviewed
+80,12,Curry leaves - Handful,1,handful,Curry leaves,,,reviewed
+80,13,2 tablespoons Coconut Oil,2,tablespoons,Coconut Oil,,,clean
+81,1,400 grams Chicken - cut into medium sized pieces,400,grams,Chicken,cut into medium sized pieces,,clean
+81,2,1/2 cup Curd (Dahi / Yogurt),1/2,cup,Curd (Dahi / Yogurt),,,clean
+81,3,1 teaspoon Turmeric powder (Haldi),1,teaspoon,Turmeric powder (Haldi),,,clean
+81,4,1 teaspoon Sunflower Oil,1,teaspoon,Sunflower Oil,,,clean
+81,5,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+81,6,10 Curry leaves,10,,Curry leaves,,,clean
+81,7,1 Onion - roughly chopped,1,,Onion,roughly chopped,,clean
+81,8,1 inch Ginger - grated,1,inch,Ginger,grated,,reviewed
+81,9,6 to 7 cloves Garlic - finely chopped,6.5,cloves,Garlic,finely chopped,,reviewed
+81,10,Salt - as per taste,nan,,Salt,,,reviewed
+81,11,40 grams Instant Oats (Oatmeal) - Masala one,40,grams,Instant Oats (Oatmeal),masala,,reviewed
+81,12,1 tablespoon Whole Black Peppercorns,1,tablespoon,Whole Black Peppercorns,,,clean
+81,13,1 teaspoon Coriander (Dhania) Seeds,1,teaspoon,Coriander (Dhania) Seeds,,,clean
+81,14,1 inch Cinnamon Stick (Dalchini),1,inch,Cinnamon Stick (Dalchini),,,reviewed
+81,15,1 teaspoon Fennel seeds (Saunf),1,teaspoon,Fennel seeds (Saunf),,,clean
+81,16,2 Dry Red Chillies,2,,Dry Red Chillies,,Dry,clean
+82,1,250 grams Baby Potatoes - halved,250,grams,Baby Potatoes,halved,,clean
+82,2,1/2 cup Pearl onions (Sambar Onions),1/2,cup,Pearl onions (Sambar Onions),,,clean
+82,3,1 Tomato - finely chopped,1,,Tomato,finely chopped,,clean
+82,4,5 Green Chillies - slit,5,,Green Chillies,slit,,clean
+82,5,1 inch Ginger - chopped,1,inch,Ginger,chopped,,reviewed
+82,6,5 cloves Garlic - chopped,5,cloves,Garlic,chopped,,clean
+82,7,2 teaspoon Coriander Powder (Dhania),2,teaspoon,Coriander Powder (Dhania),,,clean
+82,8,2 tablespoon Red Chilli powder,2,tablespoon,Red Chilli powder,,,clean
+82,9,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+82,10,1/2 teaspoon Garam masala powder,1/2,teaspoon,Garam masala powder,,,clean
+82,11,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+82,12,1 cup Pearl onions (Sambar Onions),1,cup,Pearl onions (Sambar Onions),,,clean
+82,13,1 cup Fresh coconut - grated,1,cup,Fresh coconut,grated,Fresh,clean
+82,14,1/2 teaspoon Cumin seeds (Jeera),1/2,teaspoon,Cumin seeds (Jeera),,,clean
+82,15,1 teaspoon Whole Black Peppercorns - crushed,1,teaspoon,Whole Black Peppercorns,crushed,,clean
+82,16,Coconut Oil - for cooking,nan,,Coconut Oil,,,reviewed
+82,17,Salt - to taste,nan,,Salt,,,reviewed
+83,1,300 grams Kaddu (Parangikai/ Pumpkin) - peeled and chopped,300,grams,Kaddu (Parangikai/ Pumpkin),peeled and chopped,,clean
+83,2,1/2 cup Fresh coconut - grated coconut to be ground,1/2,cup,Fresh coconut,grated coconut to be ground,Fresh,clean
+83,3,1/4 cup Fresh coconut - to be roasted,1/4,cup,Fresh coconut,to be roasted,Fresh,clean
+83,4,1 Green Chilli,1,,Green Chilli,,,clean
+83,5,1-1/2 teaspoons Mustard seeds,1-1/2,teaspoons,Mustard seeds,,,reviewed
+83,6,2 teaspoons White Urad Dal (Split),2,teaspoons,White Urad Dal (Split),,,clean
+83,7,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+83,8,3 Dry Red Chillies,3,,Dry Red Chillies,,Dry,clean
+83,9,3/4 teaspoon Turmeric powder (Haldi),3/4,teaspoon,Turmeric powder (Haldi),,,clean
+83,10,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+83,11,1 tablespoon Coconut Oil,1,tablespoon,Coconut Oil,,,clean
+83,12,Salt - to taste,nan,,Salt,,,reviewed
+84,1,3 raw bananas - peeled and cut into thin,3,,raw bananas,peeled and cut into thin,,clean
+84,2,1/2 tablespoon paprika powder,1/2,tablespoon,paprika powder,,,clean
+84,3,1/4 tablespoon pepper powder,1/4,tablespoon,pepper powder,,,clean
+84,4,salt - as per taste,nan,,salt,,,reviewed
+84,5,1 tablespoon olive oil - as per use,1,tablespoon,olive oil,,,reviewed
+85,1,1 cup Rice flour,1,cup,Rice flour,,,clean
+85,2,1 cup Jaggery,1,cup,Jaggery,,,clean
+85,3,1/2 cup Water,1/2,cup,Water,,,clean
+85,4,5 Cardamom (Elaichi) Pods/Seeds,5,,Cardamom (Elaichi) Pods/Seeds,,,reviewed
+85,5,2 Ripe Bananas,2,,Ripe Bananas,,,clean
+85,6,1 teaspoon Baking soda,1,teaspoon,Baking soda,,,clean
+85,7,Ghee - as required,nan,,Ghee,,,reviewed
+86,1,1 cup Vellai Poosanikai (Ash gourd/White Pumpkin) - cut lengthwise,1,cup,Vellai Poosanikai (Ash gourd/White Pumpkin),cut lengthwise,,clean
+86,2,2 Drumstick - cut lengthwise,2,,Drumstick,cut lengthwise,,clean
+86,3,2 Carrots (Gajjar) - cut lengthwise,2,,Carrots (Gajjar),cut lengthwise,,clean
+86,4,10 Green beans (French Beans) -  cut lengthwise,10,,Green beans (French Beans),cut lengthwise,,clean
+86,5,1 Raw Banana - peeled and cut lengthwise,1,,Raw Banana,peeled and cut lengthwise,,clean
+86,6,2 Potatoes (Aloo) - peeled and cut lengthwise,2,,Potatoes (Aloo),peeled and cut lengthwise,,clean
+86,7,1 cup Elephant yam (Suran/Senai/Ratalu) - peeled and cut lengthwise,1,cup,Elephant yam (Suran/Senai/Ratalu),peeled and cut lengthwise,,clean
+86,8,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+86,9,Salt - to taste,nan,,Salt,,,reviewed
+86,10,1-1/2 cups Fresh coconut - grated,1-1/2,cups,Fresh coconut,grated,Fresh,reviewed
+86,11,3 Green Chillies,3,,Green Chillies,,,clean
+86,12,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+86,13,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+86,14,1 tablespoons Coconut Oil,1,tablespoons,Coconut Oil,,,clean
+86,15,Salt - to taste,nan,,Salt,,,reviewed
+87,1,300 grams Jackfruit Ripe (Kathal) - chopped coarsely,300,grams,Jackfruit Ripe (Kathal),chopped coarsely,,clean
+87,2,1 cup Water,1,cup,Water,,,clean
+87,3,1 teaspoon Red Chilli powder,1,teaspoon,Red Chilli powder,,,clean
+87,4,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+87,5,1/2 teaspoon Black pepper powder,1/2,teaspoon,Black pepper powder,,,clean
+87,6,Salt - to taste,nan,,Salt,,,reviewed
+87,7,1/2 cup Fresh coconut - grated,1/2,cup,Fresh coconut,grated,Fresh,clean
+87,8,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+87,9,1/2 cup Fresh coconut - pieces,1/2,cup,Fresh coconut,pieces,Fresh,reviewed
+87,10,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+87,11,2 Dry Red Chillies,2,,Dry Red Chillies,,Dry,clean
+87,12,6 cloves Garlic,6,cloves,Garlic,,,clean
+87,13,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+87,14,3 teaspoon Coconut Oil,3,teaspoon,Coconut Oil,,,clean
+88,1,1 cup Rice ada,1,cup,Rice ada,,,clean
+88,2,1 cup Jaggery - grated,1,cup,Jaggery,grated,,clean
+88,3,1/2 cup Water,1/2,cup,Water,,,clean
+88,4,1 cup Coconut milk - thick (1st extract),1,cup,Coconut milk,thick (1st extract),,reviewed
+88,5,1-1/2 cups Coconut milk - (2nd & 3rd extract),1-1/2,cups,Coconut milk,2nd & 3rd extract,,reviewed
+88,6,5 Cashew nuts,5,,Cashew nuts,,,clean
+88,7,7 Raisins,7,,Raisins,,,clean
+88,8,2 teaspoons Fresh coconut - slices,2,teaspoons,Fresh coconut,slices,Fresh,reviewed
+88,9,1/2 teaspoon Cardamom Powder (Elaichi),1/2,teaspoon,Cardamom Powder (Elaichi),,,clean
+88,10,Ghee - as required,nan,,Ghee,,,reviewed
+89,1,300 grams Banana Stem - peeled and cut into dices,300,grams,Banana Stem,peeled and cut into dices,,reviewed
+89,2,1/2 cup Fresh coconut - grated,1/2,cup,Fresh coconut,grated,Fresh,clean
+89,3,2 Green Chillies,2,,Green Chillies,,,clean
+89,4,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+89,5,Salt - to taste,nan,,Salt,,,reviewed
+89,6,1 teaspoon Coconut Oil,1,teaspoon,Coconut Oil,,,clean
+89,7,1/2 teaspoon Mustard seeds,1/2,teaspoon,Mustard seeds,,,clean
+89,8,1 teaspoon White Urad Dal (Split),1,teaspoon,White Urad Dal (Split),,,clean
+89,9,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+90,1,2 cup Rice flour,2,cup,Rice flour,,,clean
+90,2,1/4 cup Fresh coconut - grated,1/4,cup,Fresh coconut,grated,Fresh,clean
+90,3,1 cup Jackfruit Ripe (Kathal) - seeds removed and chopped,1,cup,Jackfruit Ripe (Kathal),seeds removed and chopped,,clean
+90,4,5 tablespoon Sugar,5,tablespoon,Sugar,,,clean
+90,5,1/4 teaspoon Salt,1/4,teaspoon,Salt,,,clean
+90,6,2 Cardamom (Elaichi) Pods/Seeds - powdered,2,,Cardamom (Elaichi) Pods/Seeds,pods/seeds,,reviewed
+91,1,300 grams Kaddu (Parangikai/ Pumpkin),300,grams,Kaddu (Parangikai/ Pumpkin),,,clean
+91,2,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+91,3,2 teaspoons Jaggery,2,teaspoons,Jaggery,,,clean
+91,4,Salt - to taste,nan,,Salt,,,reviewed
+91,5,1/2 cup Fresh coconut - grated,1/2,cup,Fresh coconut,grated,Fresh,clean
+91,6,1 Green Chilli,1,,Green Chilli,,,clean
+91,7,1 inch Ginger - grated,1,inch,Ginger,grated,,reviewed
+91,8,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+91,9,1 teaspoon Sunflower Oil,1,teaspoon,Sunflower Oil,,,clean
+91,10,1/2 teaspoon Mustard seeds,1/2,teaspoon,Mustard seeds,,,clean
+91,11,1/2 teaspoon White Urad Dal (Split),1/2,teaspoon,White Urad Dal (Split),,,clean
+91,12,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+92,1,2 Tapioca root,2,,Tapioca root,,,clean
+92,2,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+92,3,1 cup Shallots - chopped,1,cup,Shallots,chopped,,clean
+92,4,1 inch Ginger - chopped,1,inch,Ginger,chopped,,reviewed
+92,5,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+92,6,2 Dry Red Chilli,2,,Dry Red Chilli,,Dry,clean
+92,7,2 tablespoon Fresh coconut - grated,2,tablespoon,Fresh coconut,grated,Fresh,clean
+92,8,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+92,9,Salt - to taste,nan,,Salt,,,reviewed
+92,10,Coconut Oil - for cooking,nan,,Coconut Oil,,,reviewed
+93,1,1 cup Cauliflower (gobi) - florets,1,cup,Cauliflower (gobi),florets,,reviewed
+93,2,1/2 cup Carrots (Gajjar) - diced,1/2,cup,Carrots (Gajjar),diced,,clean
+93,3,2 to 3 tablespoons Green peas (Matar) - fresh or frozen,2.5,tablespoons,Green peas (Matar),,Fresh,reviewed
+93,4,1 Onion - finely chopped,1,,Onion,finely chopped,,clean
+93,5,2 tablespoons Ginger Garlic Paste,2,tablespoons,Ginger Garlic Paste,,,clean
+93,6,2 Green Chillies - slit,2,,Green Chillies,slit,,clean
+93,7,1 Tomato - pureed,1,,Tomato,pureed,,clean
+93,8,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+93,9,1 teaspoon Red Chilli powder,1,teaspoon,Red Chilli powder,,,clean
+93,10,2 teaspoons Coriander Powder (Dhania),2,teaspoons,Coriander Powder (Dhania),,,clean
+93,11,1/2 teaspoon Cumin powder (Jeera),1/2,teaspoon,Cumin powder (Jeera),,,clean
+93,12,1 inch Cinnamon Stick (Dalchini),1,inch,Cinnamon Stick (Dalchini),,,reviewed
+93,13,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+93,14,1 cup Coconut milk - thin,1,cup,Coconut milk,thin,,reviewed
+93,15,1/2 cup Coconut milk - thick,1/2,cup,Coconut milk,thick,,reviewed
+93,16,Salt - as required,nan,,Salt,,,reviewed
+93,17,4 to 5 Cashew nuts - broken,4.5,,Cashew nuts,broken,,reviewed
+93,18,Sunflower Oil - as required,nan,,Sunflower Oil,,,reviewed
+93,19,2 tablespoons Coriander (Dhania) Leaves - finely chopped,2,tablespoons,Coriander (Dhania) Leaves,finely chopped,,clean
+94,1,250 grams Prawns,250,grams,Prawns,,,clean
+94,2,1 cup Coconut milk,1,cup,Coconut milk,,,clean
+94,3,1 teaspoon Tamarind Paste,1,teaspoon,Tamarind Paste,,,clean
+94,4,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+94,5,1/2 teaspoon Mustard seeds,1/2,teaspoon,Mustard seeds,,,clean
+94,6,1/2 teaspoon Methi Seeds (Fenugreek Seeds),1/2,teaspoon,Methi Seeds (Fenugreek Seeds),,,clean
+94,7,2 Dry Red Chillies,2,,Dry Red Chillies,,Dry,clean
+94,8,3 Pearl onions (Sambar Onions),3,,Pearl onions (Sambar Onions),,,clean
+94,9,1 teaspoon Turmeric powder (Haldi),1,teaspoon,Turmeric powder (Haldi),,,clean
+94,10,1 teaspoon Kashmiri Red Chilli Powder,1,teaspoon,Kashmiri Red Chilli Powder,,,clean
+94,11,Salt - to taste,nan,,Salt,,,reviewed
+94,12,1 teaspoon Lemon juice,1,teaspoon,Lemon juice,,,clean
+94,13,3 teaspoon Mustard oil,3,teaspoon,Mustard oil,,,clean
+94,14,3/4 cup Fresh coconut - grated,3/4,cup,Fresh coconut,grated,Fresh,clean
+94,15,1 teaspoon Ginger - chopped,1,teaspoon,Ginger,chopped,,clean
+94,16,2 teaspoon Garlic - chopped,2,teaspoon,Garlic,chopped,,clean
+94,17,2 Green Chillies,2,,Green Chillies,,,clean
+94,18,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+94,19,1/2 teaspoon Cumin powder (Jeera),1/2,teaspoon,Cumin powder (Jeera),,,clean
+94,20,1 teaspoon Coriander Powder (Dhania),1,teaspoon,Coriander Powder (Dhania),,,clean
+95,1,2 Bay leaves (tej patta),2,,Bay leaves (tej patta),,,clean
+95,2,1 Cardamom (Elaichi) Pods/Seeds,1,,Cardamom (Elaichi) Pods/Seeds,pods/seeds,,reviewed
+95,3,1 tablespoon Whole Black Peppercorns,1,tablespoon,Whole Black Peppercorns,,,clean
+95,4,5 Cloves (Laung),5,Cloves,Cloves (Laung),cloves,,reviewed
+95,5,1 inch Cinnamon Stick (Dalchini),1,inch,Cinnamon Stick (Dalchini),,,reviewed
+95,6,1 cup Red matta rice - washed thoroughly,1,cup,Red matta rice,washed thoroughly,,clean
+95,7,Salt - to taste,nan,,Salt,,,reviewed
+95,8,1 inch Ginger,1,inch,Ginger,,,reviewed
+95,9,5 cloves Garlic,5,cloves,Garlic,,,clean
+95,10,3 Green Chilli,3,,Green Chilli,,,clean
+95,11,300 grams Chicken - curry cut,300,grams,Chicken,curry cut,,clean
+95,12,2 Onions - sliced,2,,Onions,sliced,,clean
+95,13,3 Tomatoes - chopped,3,,Tomatoes,chopped,,clean
+95,14,1 teaspoon Red Chilli powder,1,teaspoon,Red Chilli powder,,,clean
+95,15,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+95,16,2 tablespoon Garam masala powder,2,tablespoon,Garam masala powder,,,clean
+95,17,1/4 cup Coriander (Dhania) Leaves - chopped,1/4,cup,Coriander (Dhania) Leaves,chopped,,clean
+95,18,1/4 cup Mint Leaves (Pudina) - chopped,1/4,cup,Mint Leaves (Pudina),chopped,,clean
+95,19,1 Lemon juice,1,,Lemon juice,,,clean
+95,20,1/2 cup Milk,1/2,cup,Milk,,,clean
+95,21,5 Saffron strands,5,,Saffron strands,,,clean
+95,22,1 tablespoon Cashew nuts,1,tablespoon,Cashew nuts,,,clean
+95,23,1 tablespoon Ghee,1,tablespoon,Ghee,,,clean
+96,1,4 cups water,4,cups,water,,,clean
+96,2,1 tbsp ginger powder,1,tbsp,ginger powder,,,clean
+96,3,1 tsp black pepper powder,1,tsp,black pepper powder,,,clean
+96,4,1 tbsp instant coffee powder,1,tbsp,instant coffee powder,,,clean
+96,5,20 tulsi,20,,tulsi,,,clean
+96,6,1 tsp cumin seeds,1,tsp,cumin seeds,,,clean
+96,7,1/2 tsp cardamom powder - more or less,1/2,tsp,cardamom powder,,,reviewed
+96,8,3 tbsp jaggery - Add more or less salt to taste,3,tbsp,jaggery,,,reviewed
+97,1,1 Cucumber - peeled and diced,1,,Cucumber,peeled and diced,,clean
+97,2,1 Mango (Raw) - peeled and diced,1,,Mango (Raw),peeled and diced,,clean
+97,3,2 Green Chillies - slit,2,,Green Chillies,slit,,clean
+97,4,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+97,5,1 cup Water,1,cup,Water,,,clean
+97,6,1/4 cup Fresh coconut - grated,1/4,cup,Fresh coconut,grated,Fresh,clean
+97,7,2 teaspoons Cumin seeds (Jeera),2,teaspoons,Cumin seeds (Jeera),,,clean
+97,8,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+97,9,1/2 teaspoon White Urad Dal (Split),1/2,teaspoon,White Urad Dal (Split),,,clean
+97,10,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+97,11,1 Dry Red Chilli,1,,Dry Red Chilli,,Dry,clean
+97,12,Salt - to taste,nan,,Salt,,,reviewed
+98,1,250 grams small potatoes - half cut,250,grams,small potatoes,halved,,reviewed
+98,2,1/2 cup small onion sambar,1/2,cup,small onion sambar,,,clean
+98,3,1 tomato - finely chopped,1,,tomato,finely chopped,,clean
+98,4,5 green chillies - sliced,5,,green chillies,sliced,,clean
+98,5,1 inch ginger - chopped,1,inch,ginger,chopped,,reviewed
+98,6,5 pieces garlic - chopped,5,pieces,garlic,chopped,,clean
+98,7,2 teaspoon coriander Powder,2,teaspoon,coriander Powder,,,clean
+98,8,2 tablespoons red chilli powder,2,tablespoons,red chilli powder,,,clean
+98,9,1/2 teaspoon turmeric,1/2,teaspoon,turmeric,,,clean
+98,10,1/2 teaspoon garam masala powder,1/2,teaspoon,garam masala powder,,,clean
+98,11,2 nuggets curry leaves,2,sprig,Curry leaves,,,reviewed
+98,12,1 cup small onion sambar ones,1,cup,Small onion (Sambar),,,reviewed
+98,13,1 cup coconut - grated,1,cup,coconut,grated,,clean
+98,14,1/2 teaspoon cumin,1/2,teaspoon,cumin,,,clean
+98,15,1 teaspoon whole pepper - ground,1,teaspoon,whole pepper,ground,,clean
+98,16,coconut oil - to cook,nan,,coconut oil,,,reviewed
+98,17,salt - to taste,nan,,salt,,,reviewed
+99,1,1 cup Red matta rice - or Basmati Rice,1,cup,Red matta rice,,,reviewed
+99,2,1-1/2 cups Fresh coconut - grated,1-1/2,cups,Fresh coconut,grated,Fresh,reviewed
+99,3,1/2 teaspoon Salt,1/2,teaspoon,Salt,,,clean
+100,1,300 grams Chicken - with bone cut into small pieces,300,grams,Chicken,with bone cut into small pieces,,clean
+100,2,1 inch Cinnamon Stick (Dalchini),1,inch,Cinnamon Stick (Dalchini),,,reviewed
+100,3,1 tablespoon Whole Black Peppercorns,1,tablespoon,Whole Black Peppercorns,,,clean
+100,4,1 Carrot (Gajjar) - peeled and cubed,1,,Carrot (Gajjar),peeled and cubed,,clean
+100,5,100 grams Green beans (French Beans) - chopped small,100,grams,Green beans (French Beans),chopped,,clean
+100,6,1 Potato (Aloo) - skin peeled and cubed,1,,Potato (Aloo),skin peeled and cubed,,clean
+100,7,1 Onion - sliced,1,,Onion,sliced,,clean
+100,8,1 Green Chilli,1,,Green Chilli,,,clean
+100,9,4 cloves Garlic - chopped,4,cloves,Garlic,chopped,,clean
+100,10,1 inch Ginger - chopped,1,inch,Ginger,chopped,,reviewed
+100,11,10 Cashew nuts - boiled in water and ground to a paste,10,,Cashew nuts,boiled in water and ground to a paste,,clean
+100,12,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+100,13,1 teaspoon Black pepper powder,1,teaspoon,Black pepper powder,,,clean
+100,14,Coconut Oil - for cooking,nan,,Coconut Oil,,,reviewed
+100,15,Salt - to taste,nan,,Salt,,,reviewed
+100,16,1 Onion - sliced,1,,Onion,sliced,,clean
+100,17,2 cloves Garlic - chopped,2,cloves,Garlic,chopped,,clean
+100,18,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+100,19,Coconut Oil - for cooking,nan,,Coconut Oil,,,reviewed
+101,1,250 g potato - cut straight and thick,250,g,potato,cut straight and thick,,clean
+101,2,turmeric powder - a pinch,1,pinch,turmeric powder,,,reviewed
+101,3,10 small onions - cut it straight and thin,10,,small onions,cut it straight and thin,,clean
+101,4,3 cloves garlic - finely chopped,3,cloves,garlic,finely chopped,,clean
+101,5,1 teaspoon red chilli flax,1,teaspoon,red chilli flax,,,clean
+101,8,Coconut oil - as per use,nan,,Coconut oil,,,reviewed
+101,9,2 tablespoons coconut - cut into pieces,2,tablespoons,coconut,cut into pieces,,clean
+102,1,1 cup Jackfruit Seeds (Kathal) - cleaned and sliced,1,cup,Jackfruit Seeds (Kathal),cleaned and sliced,,clean
+102,2,8 Pearl onions (Sambar Onions) - sliced,8,,Pearl onions (Sambar Onions),sliced,,clean
+102,3,4 cloves Garlic - chopped finely,4,cloves,Garlic,chopped finely,,clean
+102,4,1/2 teaspoon Kashmiri Red Chilli Powder,1/2,teaspoon,Kashmiri Red Chilli Powder,,,clean
+102,5,1/4 teaspoon Black pepper powder,1/4,teaspoon,Black pepper powder,,,clean
+102,6,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+102,7,1/2 cup Fresh coconut - grated,1/2,cup,Fresh coconut,grated,Fresh,clean
+102,8,Sunflower Oil - as required,nan,,Sunflower Oil,,,reviewed
+102,9,Salt - to taste,nan,,Salt,,,reviewed
+102,10,Salt - to taste,nan,,Salt,,,reviewed
+103,1,300 grams Raw papaya - skin peeled and cut into medium sized pieces,300,grams,Raw papaya,skin peeled and cut into medium sized pieces,,clean
+103,2,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+103,3,1 teaspoon White Urad Dal (Split),1,teaspoon,White Urad Dal (Split),,,clean
+103,4,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+103,5,1 pinch Asafoetida (hing),1,pinch,Asafoetida (hing),,,clean
+103,6,1 Green Chilli - chopped,1,,Green Chilli,chopped,,clean
+103,7,2 tablespoon Fresh coconut - grated,2,tablespoon,Fresh coconut,grated,Fresh,clean
+103,8,Salt - to taste,nan,,Salt,,,reviewed
+103,9,Sunflower Oil,nan,,Sunflower Oil,,,clean
+104,1,250 grams Ash gourd - cut straight,250,grams,Ash gourd,cut straight,,clean
+104,2,2 drumsticks - cut straight,2,,drumsticks,cut straight,,clean
+104,3,2 carrots - cut straight,2,,carrots,cut straight,,clean
+104,4,10 green beans - cut straight,10,,green beans,cut straight,,clean
+104,5,1 raw banana - peel and chop straight,1,,raw banana,peeled and cut straight,,reviewed
+104,6,2 potatoes - peel and chop straight,2,,potatoes,peeled and cut straight,,reviewed
+104,7,250 grams Yam - peel and chop,250,grams,Yam,peeled and chopped,,reviewed
+104,8,1-1 / 2 cup coconut - grated,1-1/2,cup,coconut,grated,,reviewed
+104,9,3 green chillies,3,,green chillies,,,clean
+104,10,1 sprig curry leaves,1,sprig,curry leaves,,,clean
+104,11,1 teaspoon cumin seeds,1,teaspoon,cumin seeds,,,clean
+104,12,1 tablespoon coconut oil,1,tablespoon,coconut oil,,,clean
+104,13,salt - as per taste,nan,,salt,,,reviewed
+105,1,3/4 cup Whole Wheat Flour,3/4,cup,Whole Wheat Flour,,,clean
+105,2,2 tablespoons Basmati rice - boiled,2,tablespoons,Basmati rice,boiled,,clean
+105,3,1/4 cup Fresh coconut - grated,1/4,cup,Fresh coconut,grated,Fresh,clean
+105,4,Salt - to taste,nan,,Salt,,,reviewed
+105,5,1 tablespoon Sugar,1,tablespoon,Sugar,,,clean
+106,1,400 grams Mutton,400,grams,Mutton,,,clean
+106,2,1 teaspoon Cumin powder (Jeera),1,teaspoon,Cumin powder (Jeera),,,clean
+106,3,1 teaspoon Red Chilli powder,1,teaspoon,Red Chilli powder,,,clean
+106,4,1 teaspoon Coriander Powder (Dhania),1,teaspoon,Coriander Powder (Dhania),,,clean
+106,5,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+106,6,1 teaspoon Salt,1,teaspoon,Salt,,,clean
+106,7,2 teaspoon Lemon juice,2,teaspoon,Lemon juice,,,clean
+106,8,1 Onion - finely chopped,1,,Onion,finely chopped,,clean
+106,9,5 cloves Garlic - finely chopped,5,cloves,Garlic,finely chopped,,clean
+106,10,1 inch Ginger - thin slices,1,inch,Ginger,thin slices,,reviewed
+106,11,10 Curry leaves,10,,Curry leaves,,,clean
+106,12,4 tablespoon Black pepper powder,4,tablespoon,Black pepper powder,,,clean
+106,13,2 teaspoon Fresh coconut - (1/2 inch size),2,teaspoon,Fresh coconut,1/2 inch size,Fresh,reviewed
+106,14,3/4 teaspoon Salt,3/4,teaspoon,Salt,,,clean
+106,15,1/4 cup Water,1/4,cup,Water,,,clean
+106,16,2 tablespoons Coconut Oil,2,tablespoons,Coconut Oil,,,clean
+107,1,1 cup Instant Oats (Oatmeal),1,cup,Instant Oats (Oatmeal),,,clean
+107,2,1/8 cup Whole Wheat Flour,1/8,cup,Whole Wheat Flour,,,clean
+107,3,1/8 cup Rice flour,1/8,cup,Rice flour,,,clean
+107,4,3/4 cup Jaggery - powdered,3/4,cup,Jaggery,powdered,,clean
+107,5,1 Ripe Bananas - mashed,1,,Ripe Bananas,mashed,,clean
+107,6,1/4 cup Water,1/4,cup,Water,,,clean
+107,7,1/4 teaspoon Baking soda,1/4,teaspoon,Baking soda,,,clean
+107,8,4 tablespoon Ghee,4,tablespoon,Ghee,,,clean
+108,1,500 grams Chicken - cleaned and cut into 1 inch cubes,500,grams,Chicken,cleaned and cut into 1 inch cubes,,clean
+108,2,1 teaspoon Garlic - minced,1,teaspoon,Garlic,minced,,clean
+108,3,1 teaspoon Ginger - minced,1,teaspoon,Ginger,minced,,clean
+108,4,2 teaspoons Kashmiri Red Chilli Powder,2,teaspoons,Kashmiri Red Chilli Powder,,,clean
+108,5,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+108,6,2 tablespoon Vinegar,2,tablespoon,Vinegar,,,clean
+108,7,1 Green Chilli - slit lengthwise,1,,Green Chilli,slit lengthwise,,clean
+108,8,1 tablespoon Meat masala,1,tablespoon,Meat masala,,,clean
+108,9,3 tablespoons Fresh coconut - grated,3,tablespoons,Fresh coconut,grated,Fresh,clean
+108,10,Salt - to taste,nan,,Salt,,,reviewed
+108,11,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+108,12,3 tablespoons Coconut Oil,3,tablespoons,Coconut Oil,,,clean
+108,13,100 ml Water,100,ml,Water,,,clean
+109,1,1 cup Red matta rice,1,cup,Red matta rice,,,clean
+109,2,3-1/2 cups Water,3-1/2,cups,Water,,,reviewed
+109,3,Salt - (if required),nan,,Salt,,,reviewed
+110,1,250 grams Chinese Potato - cut into medium size pieces,250,grams,Chinese Potato,cut into medium size pieces,,clean
+110,2,1 pinch Turmeric powder (Haldi),1,pinch,Turmeric powder (Haldi),,,clean
+110,3,10 Shallots - or 1 large onion,10,,Shallots,,,reviewed
+110,4,3 cloves Garlic - finely chopped,3,cloves,Garlic,finely chopped,,clean
+110,5,1 teaspoon Red Chilli flakes - adjust as per spice tolerance,1,teaspoon,Red Chilli flakes,,,reviewed
+110,6,Salt - as per taste,nan,,Salt,,,reviewed
+110,7,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+110,8,Coconut Oil - enough to shallow fry,nan,,Coconut Oil,,,reviewed
+110,9,2 tablespoons Fresh coconut - pieces,2,tablespoons,Fresh coconut,pieces,Fresh,reviewed
+111,1,1 cup Rice puttu - or wheat puttu,1,cup,Rice puttu,,,reviewed
+111,2,1 Whole Egg,1,,Whole Egg,,,clean
+111,3,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+111,4,1/4 teaspoon Mustard seeds,1/4,teaspoon,Mustard seeds,,,clean
+111,5,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+111,6,1 pinch Turmeric powder (Haldi),1,pinch,Turmeric powder (Haldi),,,clean
+111,7,2 Green Chilli - slit/cut,2,,Green Chilli,cut,,clean
+111,8,1/4 teaspoon Black Urad Dal (Split),1/4,teaspoon,Black Urad Dal (Split),,,clean
+111,9,2 teaspoon Sunflower Oil,2,teaspoon,Sunflower Oil,,,clean
+111,10,Salt - to taste,nan,,Salt,,,reviewed
+112,1,250 grams Horse Gram Dal (Kollu/ Kulith) - Sprouted,250,grams,Horse Gram Dal (Kollu/ Kulith),Sprouted,,reviewed
+112,2,1/2 cup Fresh coconut - grated,1/2,cup,Fresh coconut,grated,Fresh,clean
+112,3,1 Green Chilli,1,,Green Chilli,,,clean
+112,4,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+112,5,1/2 inch Ginger,1/2,inch,Ginger,,,reviewed
+112,6,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+112,7,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+112,8,1/2 teaspoon Red Chilli powder,1/2,teaspoon,Red Chilli powder,,,clean
+112,9,Salt - to taste,nan,,Salt,,,reviewed
+112,10,1 Tomato - chopped - optional,1,,Tomato,chopped,,clean
+113,1,2 Raw banana peel,2,,Raw banana peel,,,clean
+113,2,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+113,3,2 cups Water,2,cups,Water,,,clean
+113,4,Salt,nan,,Salt,,,clean
+113,5,1/2 cup Fresh coconut - grated,1/2,cup,Fresh coconut,grated,Fresh,clean
+113,6,3 Garlic - cloves,3,clove,Garlic,,,reviewed
+113,7,1/2 teaspoon Cumin seeds (Jeera),1/2,teaspoon,Cumin seeds (Jeera),,,clean
+113,8,4 Green Chillies,4,,Green Chillies,,,clean
+113,9,6 Shallots,6,,Shallots,,,clean
+113,10,Salt,nan,,Salt,,,clean
+113,11,1 tablespoon Sunflower Oil,1,tablespoon,Sunflower Oil,,,clean
+113,12,1/4 teaspoon Mustard seeds,1/4,teaspoon,Mustard seeds,,,clean
+113,13,2 Dry Red Chillies,2,,Dry Red Chillies,,Dry,clean
+113,14,8 Curry leaves,8,,Curry leaves,,,clean
+114,1,1/2 cup Red matta rice,1/2,cup,Red matta rice,,,clean
+114,2,1 cup Cashew nuts - unsalted,1,cup,Cashew nuts,unsalted,,reviewed
+114,3,1 cup Jaggery - powdered or brown sugar,1,cup,Jaggery,powdered,,reviewed
+114,4,1 cup Dry coconut (kopra),1,cup,Dry coconut (kopra),,Dry,clean
+115,1,1 Onion - chopped,1,,Onion,chopped,,clean
+115,2,4 cloves Garlic - chopped,4,cloves,Garlic,chopped,,clean
+115,3,2 tablespoon Coriander (Dhania) Seeds,2,tablespoon,Coriander (Dhania) Seeds,,,clean
+115,4,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+115,5,1/4 cup Fresh coconut - grated,1/4,cup,Fresh coconut,grated,Fresh,clean
+115,6,4 Dry Red Chillies,4,,Dry Red Chillies,,Dry,clean
+115,7,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+115,8,300 grams Prawns - shells removed and deveined,300,grams,Prawns,shells removed and deveined,,clean
+115,9,1 Drumstick - cut into 3 inch pieces,1,,Drumstick,cut into 3 inch pieces,,clean
+115,10,1 Green Chilli - slit,1,,Green Chilli,slit,,clean
+115,11,1 Onion - sliced,1,,Onion,sliced,,clean
+115,12,1/2 teaspoon Red Chilli powder,1/2,teaspoon,Red Chilli powder,,,clean
+115,13,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+115,14,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+115,15,Coconut Oil - for cooking,nan,,Coconut Oil,,,reviewed
+115,16,Salt - to taste,nan,,Salt,,,reviewed
+116,1,2 Mango (Ripe) - cut into medium sized cubes,2,,Mango (Ripe),cut into medium sized cubes,,clean
+116,2,1 tablespoon Coconut Oil,1,tablespoon,Coconut Oil,,,clean
+116,3,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+116,4,Salt - to taste,nan,,Salt,,,reviewed
+116,5,1/2 cup Fresh coconut - grated,1/2,cup,Fresh coconut,grated,Fresh,clean
+116,6,1 cup Curd (Dahi / Yogurt) - thick and sour,1,cup,Curd (Dahi / Yogurt),thick and sour,,reviewed
+116,7,1/2 teaspoon Cumin seeds (Jeera),1/2,teaspoon,Cumin seeds (Jeera),,,clean
+116,8,3 Green Chillies,3,,Green Chillies,,,clean
+116,9,1 teaspoon Coconut Oil,1,teaspoon,Coconut Oil,,,clean
+116,10,1/4 teaspoon Mustard seeds,1/4,teaspoon,Mustard seeds,,,clean
+116,11,1/4 teaspoon White Urad Dal (Split),1/4,teaspoon,White Urad Dal (Split),,,clean
+116,12,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+116,13,1/2 teaspoon Methi Powder (Fenugreek Powder),1/2,teaspoon,Methi Powder (Fenugreek Powder),,,clean
+116,14,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+116,15,2 Dry Red Chillies,2,,Dry Red Chillies,,Dry,clean
+117,1,500 grams Mutton,500,grams,Mutton,,,clean
+117,2,1/2 cup Shallots,1/2,cup,Shallots,,,clean
+117,3,1/3 cup Tomatoes,1/3,cup,Tomatoes,,,clean
+117,4,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+117,5,1 Green Chilli,1,,Green Chilli,,,clean
+117,6,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+117,7,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+117,8,1 tablespoon Red Chilli powder,1,tablespoon,Red Chilli powder,,,clean
+117,9,Fresh coconut - few sliced pieces,nan,,Fresh coconut,few sliced pieces,Fresh,clean
+117,10,Salt - to taste,nan,,Salt,,,reviewed
+117,11,1 tablespoon Coconut Oil,1,tablespoon,Coconut Oil,,,clean
+117,12,1 tablespoon Coriander (Dhania) Seeds,1,tablespoon,Coriander (Dhania) Seeds,,,clean
+117,13,8 Dry Red Chillies,8,,Dry Red Chillies,,Dry,clean
+117,14,8 cloves Garlic,8,cloves,Garlic,,,clean
+117,15,2 inch Ginger,2,inch,Ginger,,,reviewed
+117,16,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+117,17,1 teaspoon Fennel seeds (Saunf),1,teaspoon,Fennel seeds (Saunf),,,clean
+117,18,1-1/2 teaspoon Whole Black Peppercorns,1-1/2,teaspoon,Whole Black Peppercorns,,,reviewed
+117,19,1 inch Cinnamon Stick (Dalchini),1,inch,Cinnamon Stick (Dalchini),,,reviewed
+117,20,3 Cloves (Laung),3,Cloves,Cloves (Laung),cloves,,reviewed
+117,21,2 Cardamom Powder (Elaichi),2,,Cardamom Powder (Elaichi),,,clean
+117,22,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+117,23,1/2 cup Fresh coconut - grated,1/2,cup,Fresh coconut,grated,Fresh,clean
+117,24,1/2 cup Shallots,1/2,cup,Shallots,,,clean
+117,25,1 teaspoon Coconut Oil,1,teaspoon,Coconut Oil,,,clean
+118,1,250 grams Elephant yam (Suran/Senai/Ratalu) - peeled and chopped,250,grams,Elephant yam (Suran/Senai/Ratalu),peeled and chopped,,clean
+118,2,2 Raw Banana - peeled and chopped,2,,Raw Banana,peeled and chopped,,clean
+118,3,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+118,4,1/4 teaspoon Kashmiri Red Chilli Powder,1/4,teaspoon,Kashmiri Red Chilli Powder,,,clean
+118,5,4-5 Black pepper powder,4.5,tsp,Black pepper powder,fixed from original recipe,,reviewed
+118,6,1 teaspoon Coconut Oil,1,teaspoon,Coconut Oil,,,clean
+118,7,Salt - to taste,nan,,Salt,,,reviewed
+118,8,1 cup Fresh coconut - grated,1,cup,Fresh coconut,grated,Fresh,clean
+118,9,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+118,10,1/2 cup Water,1/2,cup,Water,,,clean
+118,11,1/4 cup Fresh coconut - grated,1/4,cup,Fresh coconut,grated,Fresh,clean
+118,12,1 teaspoon Coconut Oil,1,teaspoon,Coconut Oil,,,clean
+118,13,1/2 teaspoon Cumin seeds (Jeera),1/2,teaspoon,Cumin seeds (Jeera),,,clean
+118,14,1/4 teaspoon Mustard seeds,1/4,teaspoon,Mustard seeds,,,clean
+118,15,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+118,16,1/4 teaspoon Red Chilli powder,1/4,teaspoon,Red Chilli powder,,,clean
+118,17,2 Dry Red Chillies - cut into small pieces,2,,Dry Red Chillies,cut into small pieces,Dry,clean
+118,18,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+119,1,500 grams Sardine fish,500,grams,Sardine fish,,,clean
+119,2,1 cup Fresh coconut - grated,1,cup,Fresh coconut,grated,Fresh,clean
+119,3,10 Shallots,10,,Shallots,,,clean
+119,4,3 Green Chillies,3,,Green Chillies,,,clean
+119,5,1/4 tablespoon Dry Red Chilli - crushed,1/4,tablespoon,Dry Red Chilli,crushed,Dry,clean
+119,6,2 inch Ginger,2,inch,Ginger,,,reviewed
+119,7,3 clove Garlic,3,clove,Garlic,,,clean
+119,8,1/4 teaspoon Methi Powder (Fenugreek Powder),1/4,teaspoon,Methi Powder (Fenugreek Powder),,,clean
+119,9,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+119,10,1 teaspoon Coconut Oil - adjustable,1,teaspoon,Coconut Oil,,,reviewed
+119,11,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+119,12,1 Kokum (Malabar Tamarind) - soaked,1,,Kokum (Malabar Tamarind),soaked,,clean
+119,13,2 Kokum (Malabar Tamarind) - for the curry,2,,Kokum (Malabar Tamarind),,,reviewed
+119,14,Salt - to taste,nan,,Salt,,,reviewed
+120,1,2 cups Elephant yam (Suran/Senai/Ratalu) - scraped well and cubed to bite size,2,cups,Elephant yam (Suran/Senai/Ratalu),scraped well and cubed to bite size,,clean
+120,2,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+120,3,Salt - to taste,nan,,Salt,,,reviewed
+120,4,1 cup Fresh coconut - grated,1,cup,Fresh coconut,grated,Fresh,clean
+120,5,3 Green Chillies - (adjust),3,,Green Chillies,,,reviewed
+120,6,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+120,7,1/2 teaspoon Whole Black Peppercorns,1/2,teaspoon,Whole Black Peppercorns,,,clean
+120,8,1 teaspoons Coconut Oil,1,teaspoons,Coconut Oil,,,clean
+120,9,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+120,10,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+121,1,300 grams Green Chawli Beans (Yard long beans/Karamani/Barbati) - chopped,300,grams,Green Chawli Beans (Yard long beans/Karamani/Barbati),chopped,,clean
+121,2,1 teaspoon Coconut Oil,1,teaspoon,Coconut Oil,,,clean
+121,3,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+121,4,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+121,5,8 Curry leaves,8,,Curry leaves,,,clean
+121,6,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+121,7,1/4 cup Fresh coconut - grated,1/4,cup,Fresh coconut,grated,Fresh,clean
+121,8,2 Green Chillies,2,,Green Chillies,,,clean
+121,9,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+121,10,Salt - to taste,nan,,Salt,,,reviewed
+122,1,5 Tomatoes - finely chopped,5,,Tomatoes,finely chopped,,clean
+122,2,2 Green Chillies - chopped,2,,Green Chillies,chopped,,clean
+122,3,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+122,4,1/2 teaspoon Red Chilli powder,1/2,teaspoon,Red Chilli powder,,,clean
+122,5,Salt - to taste,nan,,Salt,,,reviewed
+122,6,1 teaspoon Coconut Oil,1,teaspoon,Coconut Oil,,,clean
+122,7,1/2 teaspoon Mustard seeds,1/2,teaspoon,Mustard seeds,,,clean
+122,8,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+122,9,1/4 cup Fresh coconut - chopped,1/4,cup,Fresh coconut,chopped,Fresh,clean
+122,10,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+122,11,5 Pearl onions (Sambar Onions) - halved,5,,Pearl onions (Sambar Onions),halved,,clean
+123,1,1 Potato (Aloo) - peeled and cut lengthwise,1,,Potato (Aloo),peeled and cut lengthwise,,clean
+123,2,1 Carrot (Gajjar) - peeled and cut lengthwise,1,,Carrot (Gajjar),peeled and cut lengthwise,,clean
+123,3,15 Green beans (French Beans) - cut lengthwise,15,,Green beans (French Beans),cut lengthwise,,clean
+123,4,1/4 cup Green peas (Matar),1/4,cup,Green peas (Matar),,,clean
+123,5,1 Onions - red,1,,Onions,red,,reviewed
+123,6,1 Garlic - grated,1,,Garlic,grated,,clean
+123,7,1/2 inch Ginger - peeled and grated (optional),1/2,inch,Ginger,peeled and grated,,reviewed
+123,8,1/2 cup Coconut milk - thin,1/2,cup,Coconut milk,thin,,reviewed
+123,9,3/4 cup Coconut milk - thick,3/4,cup,Coconut milk,thick,,reviewed
+123,10,Salt - to taste,nan,,Salt,,,reviewed
+123,11,1/2 inch Cinnamon Stick (Dalchini),1/2,inch,Cinnamon Stick (Dalchini),,,reviewed
+123,12,1 Bay leaf (tej patta),1,sprig,Bay leaf (tej patta),,,reviewed
+123,13,10 to 12 Whole Black Peppercorns,11,,Whole Black Peppercorns,,,reviewed
+123,14,1 Cardamom (Elaichi) Pods/Seeds,1,,Cardamom (Elaichi) Pods/Seeds,pods/seeds,,reviewed
+123,15,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+123,16,1 teaspoon Coconut Oil,1,teaspoon,Coconut Oil,,,clean
+124,1,4 Whole Eggs,4,,Whole Eggs,,,clean
+124,2,1-1/2 tablespoons Sunflower Oil,1-1/2,tablespoons,Sunflower Oil,,,reviewed
+124,3,1/2 teaspoon Mustard seeds,1/2,teaspoon,Mustard seeds,,,clean
+124,4,Curry leaves - few sprigs,nan,sprig,Curry leaves,,,reviewed
+124,5,1 Onion - finely chopped,1,,Onion,finely chopped,,clean
+124,6,1/2 inch Ginger - grated,1/2,inch,Ginger,grated,,reviewed
+124,7,3 cloves Garlic,3,cloves,Garlic,,,clean
+124,8,1 Tomato - finely chopped,1,,Tomato,finely chopped,,clean
+124,9,6 Dry Red Chillies,6,,Dry Red Chillies,,Dry,clean
+124,10,1 inch Cinnamon Stick (Dalchini),1,inch,Cinnamon Stick (Dalchini),,,reviewed
+124,11,1 Cardamom (Elaichi) Pods/Seeds,1,,Cardamom (Elaichi) Pods/Seeds,pods/seeds,,reviewed
+124,12,3 Cloves (Laung),3,Cloves,Cloves (Laung),cloves,,reviewed
+124,13,2 tablespoons Coriander (Dhania) Seeds,2,tablespoons,Coriander (Dhania) Seeds,,,clean
+124,14,1/2 teaspoon Whole Black Peppercorns,1/2,teaspoon,Whole Black Peppercorns,,,clean
+124,15,7 Shallots,7,,Shallots,,,clean
+124,16,1/4 cup Fresh coconut,1/4,cup,Fresh coconut,,Fresh,clean
+124,17,1/2 teaspoon Fennel seeds (Saunf),1/2,teaspoon,Fennel seeds (Saunf),,,clean
+125,1,1 cup cabbage - wash and chop finely,1,cup,cabbage,washed and finely chopped,,reviewed
+125,2,1 sprig curry leaves,1,sprig,curry leaves,,,clean
+125,3,1/4 teaspoon mustard,1/4,teaspoon,mustard,,,clean
+125,4,1 red chili,1,,red chili,,,clean
+125,5,1 teaspoon white urad dal (split),1,teaspoon,white urad dal (split),,,clean
+125,6,1/4 teaspoon turmeric powder,1/4,teaspoon,turmeric powder,,,clean
+125,7,salt - as per taste,nan,,salt,,,reviewed
+125,8,Oil - 5 tablespoons coconut - as per use,5,tablespoon,Coconut Oil,,,reviewed
+125,10,6 small onions - cut it from the middle,6,,small onions,cut it from the middle,,clean
+125,11,3 cloves garlic - chop,3,cloves,garlic,"cloves, chopped",,reviewed
+125,12,2 green chillies - chop,2,,green chillies,chopped,,reviewed
+125,13,3 sprig curry leaves,3,sprig,curry leaves,,,clean
+125,14,Green Chillies - halved,nan,,Green Chillies,halved,,clean
+125,15,3 sprig curry leaves,3,sprig,curry leaves,,,clean
+126,1,250 grams Squid - (Cleaned and cut into rings),250,grams,Squid,(Cleaned and cut into rings),,clean
+126,2,10 Shallots,10,,Shallots,,,clean
+126,3,2 Tomatoes,2,,Tomatoes,,,clean
+126,4,1/2 inch Ginger - grated,1/2,inch,Ginger,grated,,reviewed
+126,5,4 cloves Garlic - minced,4,cloves,Garlic,minced,,clean
+126,6,3 sprig Curry leaves,3,sprig,Curry leaves,,,clean
+126,7,1 teaspoon Coriander Powder (Dhania),1,teaspoon,Coriander Powder (Dhania),,,clean
+126,8,1 teaspoon Red Chilli powder,1,teaspoon,Red Chilli powder,,,clean
+126,9,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+126,10,1 teaspoon Fennel seeds (Saunf),1,teaspoon,Fennel seeds (Saunf),,,clean
+126,11,1 teaspoon Whole Black Peppercorns,1,teaspoon,Whole Black Peppercorns,,,clean
+126,12,1/2 teaspoon Meat masala,1/2,teaspoon,Meat masala,,,clean
+126,13,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+126,14,1 tablespoon Coconut Oil,1,tablespoon,Coconut Oil,,,clean
+127,1,1/2 cup Fresh coconut - grated,1/2,cup,Fresh coconut,grated,Fresh,clean
+127,2,2 Green Chillies - roughly chopped,2,,Green Chillies,roughly chopped,,clean
+127,3,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+127,4,3 Carrots (Gajjar) - chopped,3,,Carrots (Gajjar),chopped,,clean
+127,5,1 cup Green beans (French Beans) - chopped,1,cup,Green beans (French Beans),chopped,,clean
+127,6,1 teaspoon Coconut Oil - or regular oil,1,teaspoon,Coconut Oil,,,reviewed
+127,7,1/2 teaspoon Mustard seeds,1/2,teaspoon,Mustard seeds,,,clean
+127,8,1 teaspoon White Urad Dal (Split),1,teaspoon,White Urad Dal (Split),,,clean
+127,9,1/4 cup Pearl onions (Sambar Onions) - finely chopped,1/4,cup,Pearl onions (Sambar Onions),finely chopped,,clean
+127,10,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+127,11,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+127,12,1 teaspoon Salt - adjust as per your taste,1,teaspoon,Salt,,,reviewed
+128,1,500 grams Prawns,500,grams,Prawns,,,clean
+128,2,2 Onions - finely chopped,2,,Onions,finely chopped,,clean
+128,3,1 inch Ginger - finely chopped,1,inch,Ginger,finely chopped,,reviewed
+128,4,6 cloves Garlic,6,cloves,Garlic,,,clean
+128,5,1 tablespoons Red Chilli powder,1,tablespoons,Red Chilli powder,,,clean
+128,6,3/4 tablespoon Coriander Powder (Dhania),3/4,tablespoon,Coriander Powder (Dhania),,,clean
+128,7,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+128,8,1/4 cup Fresh coconut - pieces,1/4,cup,Fresh coconut,pieces,Fresh,reviewed
+128,9,1 Kokum (Malabar Tamarind) - soaked,1,,Kokum (Malabar Tamarind),soaked,,clean
+128,10,2 Kokum (Malabar Tamarind) - soaked (for the curry),2,,Kokum (Malabar Tamarind),soaked,,clean
+128,11,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+128,12,Water - enough to cook the prawns,nan,,Water,,,reviewed
+128,13,Salt - to taste,nan,,Salt,,,reviewed
+128,14,1 tablespoon Coconut Oil,1,tablespoon,Coconut Oil,,,clean
+128,15,1/4 teaspoon Mustard seeds,1/4,teaspoon,Mustard seeds,,,clean
+128,16,1 pinch Methi Powder (Fenugreek Powder),1,pinch,Methi Powder (Fenugreek Powder),,,clean
+128,17,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+129,1,1-1/2 cups Mixed vegetables - (potatoes,1-1/2,cups,Mixed vegetables (Potatoes),,,reviewed
+129,2,1 Onion - thinly sliced,1,,Onion,thinly sliced,,clean
+129,3,1 Tomato - roughly chopped,1,,Tomato,roughly chopped,,clean
+129,4,1 Green Chilli - slit,1,,Green Chilli,slit,,clean
+129,5,1 inch Ginger - thinly sliced,1,inch,Ginger,thinly sliced,,reviewed
+129,6,2 Garlic - sliced,2,,Garlic,sliced,,clean
+129,7,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+129,8,1 cup Coconut milk - thin,1,cup,Coconut milk,thin,,reviewed
+129,9,1 cup Coconut milk - thick,1,cup,Coconut milk,thick,,reviewed
+129,10,1/2 teaspoon Mustard seeds,1/2,teaspoon,Mustard seeds,,,clean
+129,11,1/2 teaspoon Black pepper powder,1/2,teaspoon,Black pepper powder,,,clean
+129,12,2 teaspoon Sunflower Oil,2,teaspoon,Sunflower Oil,,,clean
+129,13,1 teaspoon Coconut Oil,1,teaspoon,Coconut Oil,,,clean
+129,14,1 teaspoon Lemon juice,1,teaspoon,Lemon juice,,,clean
+129,15,2 sprig Mint Leaves (Pudina) - made to paste,2,sprig,Mint Leaves (Pudina),paste,,reviewed
+129,16,Salt - to taste,nan,,Salt,,,reviewed
+130,1,20 Button mushrooms - finely chopped,20,,Button mushrooms,finely chopped,,clean
+130,2,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+130,3,2 tablespoon Sunflower Oil,2,tablespoon,Sunflower Oil,,,clean
+130,4,Salt - to taste,nan,,Salt,,,reviewed
+130,5,4 tablespoon Fresh coconut - grated,4,tablespoon,Fresh coconut,grated,Fresh,clean
+130,6,4 Shallots,4,,Shallots,,,clean
+130,7,2 Green Chillies,2,,Green Chillies,,,clean
+130,8,5 Curry leaves,5,,Curry leaves,,,clean
+130,9,1/2 teaspoon Cumin seeds (Jeera),1/2,teaspoon,Cumin seeds (Jeera),,,clean
+130,10,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+130,11,1 teaspoon Cumin seeds (Jeera),1,teaspoon,Cumin seeds (Jeera),,,clean
+130,12,2 sprig Curry leaves,2,sprig,Curry leaves,,,clean
+130,13,2 Dry Red Chillies,2,,Dry Red Chillies,,Dry,clean
+131,1,1/2 cup Ragi Flour (Finger Millet/ Nagli),1/2,cup,Ragi Flour (Finger Millet/ Nagli),,,clean
+131,2,1/2 cup Bajra Flour ( Pearl Millet),1/2,cup,Bajra Flour (Pearl Millet),,,reviewed
+131,3,1 cup Rice flour,1,cup,Rice flour,,,clean
+131,4,1 cup Drumstick Leaves (Moringa/Murungai Keerai),1,cup,Drumstick Leaves (Moringa/Murungai Keerai),,,clean
+131,5,Salt - as required,nan,,Salt,,,reviewed
+131,6,Water - as required,nan,,Water,,,reviewed
+131,7,2 teaspoons Ghee,2,teaspoons,Ghee,,,clean
+131,8,1 cup Fresh coconut - grated,1,cup,Fresh coconut,grated,Fresh,clean
+132,1,2 cups Whole Wheat Flour,2,cups,Whole Wheat Flour,,,clean
+132,2,1 tablespoon Ghee - for dough,1,tablespoon,Ghee,,,reviewed
+132,3,1/2 cup Milk,1/2,cup,Milk,,,clean
+132,4,1/2 teaspoon Sugar,1/2,teaspoon,Sugar,,,clean
+132,5,Water - Lukewarm,nan,,Water,Lukewarm,,clean
+132,6,Ghee - Melted,nan,,Ghee,Melted,,clean
+132,7,Salt - to taste,nan,,Salt,,,reviewed
+133,1,3 cups Basmati rice - soaked for 25-35 minutes,3,cups,Basmati rice,soaked for 25-35 minutes,,clean
+133,2,6 Cardamom (Elaichi) Pods/Seeds,6,,Cardamom (Elaichi) Pods/Seeds,pods/seeds,,reviewed
+133,3,6 Cloves (Laung),6,Cloves,Cloves (Laung),cloves,,reviewed
+133,4,1 Cinnamon Stick (Dalchini),1,,Cinnamon Stick (Dalchini),,,reviewed
+133,5,1 teaspoon Coriander (Dhania) Leaves - finely chopped,1,teaspoon,Coriander (Dhania) Leaves,finely chopped,,clean
+133,6,1 teaspoon Mint Leaves (Pudina) - finely chopped,1,teaspoon,Mint Leaves (Pudina),finely chopped,,clean
+133,7,3 tablespoons Ghee,3,tablespoons,Ghee,,,clean
+133,8,3-4 tablespoons Lemon juice,3.5,tablespoons,Lemon juice,,,reviewed
+133,9,Salt - to taste,nan,,Salt,,,reviewed
+133,10,1/2 kg Prawns - cleaned and deveined,1/2,kg,Prawns,cleaned and deveined,,clean
+133,11,1 tablespoon Ginger Garlic Paste,1,tablespoon,Ginger Garlic Paste,,,clean
+133,12,1/2 tablespoon Red Chilli powder,1/2,tablespoon,Red Chilli powder,,,clean
+133,13,1/2 teaspoon Whole Black Peppercorns - ground,1/2,teaspoon,Whole Black Peppercorns,ground,,clean
+133,14,Salt - to taste,nan,,Salt,,,reviewed
+133,15,3 Onions - finely chopped,3,,Onions,finely chopped,,clean
+133,16,1/2 tablespoon Ginger - paste,1/2,tablespoon,Ginger,paste,,reviewed
+133,17,1/2 tablespoon Garlic - paste,1/2,tablespoon,Garlic,paste,,reviewed
+133,18,5 - 6 Green Chillies,5.5,,Green Chillies,,,reviewed
+133,19,2 - 3 Tomatoes - finely chopped,2.5,,Tomatoes,finely chopped,,reviewed
+133,20,1 Fresh coconut - handful,1,handful,Fresh coconut,,Fresh,reviewed
+133,21,1 Coriander (Dhania) Leaves - handful,1,handful,Coriander (Dhania) Leaves,,,reviewed
+133,22,1/4 cup Mint Leaves (Pudina) - finely chopped,1/4,cup,Mint Leaves (Pudina),finely chopped,,clean
+133,23,1/2 cup Curd (Dahi / Yogurt),1/2,cup,Curd (Dahi / Yogurt),,,clean
+133,24,6 - 8 Cashew nuts - soaked in 2 tablespoons water,7,,Cashew nuts,soaked in 2 tablespoons water,,reviewed
+133,25,1 teaspoon Garam masala powder,1,teaspoon,Garam masala powder,,,clean
+133,26,Sunflower Oil - vegetable oil,nan,,Sunflower Oil,,,reviewed
+133,27,1 Salt - to taste,1,,Salt,,,reviewed
+133,28,1 Cashew nuts - handful,1,handful,Cashew nuts,,,reviewed
+133,29,1 Raisins - handful,1,handful,Raisins,,,reviewed
+133,30,1 Onion - finely sliced,1,,Onion,finely sliced,,clean
+133,31,1 teaspoon Coriander (Dhania) Leaves - finely chopped,1,teaspoon,Coriander (Dhania) Leaves,finely chopped,,clean
+133,32,1 teaspoon Mint Leaves (Pudina) - finely chopped,1,teaspoon,Mint Leaves (Pudina),finely chopped,,clean
+133,33,1 teaspoon Mint Leaves (Pudina) - finely chopped,1,teaspoon,Mint Leaves (Pudina),finely chopped,,clean
+134,1,2 cups Whole Wheat Flour,2,cups,Whole Wheat Flour,,,clean
+134,2,1 cup Sugar,1,cup,Sugar,,,clean
+134,3,1/2 teaspoon Cooking soda,1/2,teaspoon,Cooking soda,,,clean
+134,4,1 teaspoon Butter,1,teaspoon,Butter,,,clean
+134,5,1/4 teaspoon Salt,1/4,teaspoon,Salt,,,clean
+134,6,1 teaspoon Cardamom Powder (Elaichi),1,teaspoon,Cardamom Powder (Elaichi),,,clean
+134,7,1/2 cup Milk,1/2,cup,Milk,,,clean
+134,8,Water - as required,nan,,Water,,,reviewed
+134,9,Sunflower Oil - to deep fry,nan,,Sunflower Oil,,,reviewed
+135,1,1/2 cup Arhar dal (Split Toor Dal),1/2,cup,Arhar dal (Split Toor Dal),,,clean
+135,2,2 Potato (Aloo) - peel the skin and cut into large cubes,2,,Potato (Aloo),peel the skin and cut into large cubes,,clean
+135,3,1 Drumstick - cut into 2 inch pieces,1,,Drumstick,cut into 2 inch pieces,,clean
+135,4,2 cups Vellai Poosanikai (Ash gourd/White Pumpkin) - cut into medium sized cubes,2,cups,Vellai Poosanikai (Ash gourd/White Pumpkin),cut into medium sized cubes,,clean
+135,5,2 Carrots (Gajjar) - cubed,2,,Carrots (Gajjar),cubed,,clean
+135,6,6 Bhindi (Lady Finger/Okra) - cut into 1 and ½ inch pieces,6,,Bhindi (Lady Finger/Okra),cut into 1 and 1/2 inch pieces,,clean
+135,7,1 Tomato - diced,1,,Tomato,diced,,clean
+135,8,10 Shallots - whole or cut into half,10,,Shallots,whole or halved,,reviewed
+135,9,1-1/2 cup Tamarind Water,1-1/2,cup,Tamarind Water,,,reviewed
+135,10,1 teaspoon Turmeric powder (Haldi),1,teaspoon,Turmeric powder (Haldi),,,clean
+135,11,2 Green Chillies - slit lengthwise,2,,Green Chillies,slit lengthwise,,clean
+135,12,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+135,13,5 sprig Coriander (Dhania) Leaves - freshly chopped,5,sprig,Coriander (Dhania) Leaves,freshly chopped,,clean
+135,14,Salt - to taste,nan,,Salt,,,reviewed
+135,15,1/2 cup Fresh coconut - grated,1/2,cup,Fresh coconut,grated,Fresh,clean
+135,16,3 teaspoon Coriander (Dhania) Seeds,3,teaspoon,Coriander (Dhania) Seeds,,,clean
+135,17,4 Dry Red Chillies,4,,Dry Red Chillies,,Dry,clean
+135,18,1 teaspoon Black Urad Dal (Split),1,teaspoon,Black Urad Dal (Split),,,clean
+135,19,1 teaspoon Chana dal (Bengal Gram Dal),1,teaspoon,Chana dal (Bengal Gram Dal),,,clean
+135,20,1/4 teaspoon Methi Seeds (Fenugreek Seeds),1/4,teaspoon,Methi Seeds (Fenugreek Seeds),,,clean
+135,21,1/4 teaspoon Asafoetida (hing),1/4,teaspoon,Asafoetida (hing),,,clean
+135,22,1 Curry leaves - few,1,,Curry leaves,,,reviewed
+135,23,1 teaspoon Coconut Oil,1,teaspoon,Coconut Oil,,,clean
+135,24,2 teaspoons Coconut Oil,2,teaspoons,Coconut Oil,,,clean
+135,25,1/2 teaspoon Mustard seeds,1/2,teaspoon,Mustard seeds,,,clean
+135,26,2 Shallots - finely sliced (optional),2,,Shallots,finely sliced,,clean
+135,27,2 Dry Red Chillies,2,,Dry Red Chillies,,Dry,clean
+135,28,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+136,1,1 cup Kala Chana (Brown Chickpeas) - soaked overnight and cooked,1,cup,Kala Chana (Brown Chickpeas),soaked overnight and cooked,,clean
+136,2,1 tablespoon Coconut Oil,1,tablespoon,Coconut Oil,,,clean
+136,3,1/2 teaspoon Mustard seeds,1/2,teaspoon,Mustard seeds,,,clean
+136,4,2 sprig Curry leaves - finely chopped,2,sprig,Curry leaves,finely chopped,,clean
+136,5,2 Green Chillies - slit,2,,Green Chillies,slit,,clean
+136,6,15 Pearl onions (Sambar Onions) - finely chopped,15,,Pearl onions (Sambar Onions),finely chopped,,clean
+136,7,5 cloves Garlic - finely chopped,5,cloves,Garlic,finely chopped,,clean
+136,8,1 inch Ginger - finely chopped,1,inch,Ginger,finely chopped,,reviewed
+136,9,1/2 cup Homemade tomato puree,1/2,cup,Homemade tomato puree,,,clean
+136,10,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+136,11,1/2 teaspoon Red Chilli powder,1/2,teaspoon,Red Chilli powder,,,clean
+136,12,Salt - to taste,nan,,Salt,,,reviewed
+136,13,1 cup Fresh coconut,1,cup,Fresh coconut,,Fresh,clean
+136,14,2 tablespoons Coriander (Dhania) Seeds,2,tablespoons,Coriander (Dhania) Seeds,,,clean
+136,15,1 teaspoon Fennel seeds (Saunf),1,teaspoon,Fennel seeds (Saunf),,,clean
+137,1,1 Raw Banana - peeled and cut into small cubes,1,,Raw Banana,peeled and cut into small cubes,,clean
+137,2,1 cup Kaddu (Parangikai/ Pumpkin) - cut into small cubes,1,cup,Kaddu (Parangikai/ Pumpkin),cut into small cubes,,clean
+137,3,6 Bhindi (Lady Finger/Okra) - cut into 1 inch pieces,6,,Bhindi (Lady Finger/Okra),cut into 1 inch pieces,,clean
+137,4,20 grams Tamarind - lemon sized,20,grams,Tamarind,lemon sized,,reviewed
+137,5,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+137,6,1 teaspoon Jaggery,1,teaspoon,Jaggery,,,clean
+137,7,2 tablespoons Rice,2,tablespoons,Rice,,,clean
+137,8,1 teaspoon Methi Seeds (Fenugreek Seeds),1,teaspoon,Methi Seeds (Fenugreek Seeds),,,clean
+137,9,7 Dry Red Chillies,7,,Dry Red Chillies,,Dry,clean
+137,10,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+137,11,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+137,12,1/4 teaspoon Asafoetida (hing),1/4,teaspoon,Asafoetida (hing),,,clean
+137,13,Coconut Oil - for cooking,nan,,Coconut Oil,,,reviewed
+137,14,Salt - to taste,nan,,Salt,,,reviewed
+138,1,2 raw banana peel,2,,raw banana peel,,,clean
+138,2,1/4 teaspoon turmeric powder,1/4,teaspoon,turmeric powder,,,clean
+138,3,2 cups water,2,cups,water,,,clean
+138,4,salt,nan,,salt,,,clean
+138,5,1/2 cup coconut - grated,1/2,cup,coconut,grated,,clean
+138,6,3 cloves garlic,3,cloves,garlic,,,clean
+138,7,1/2 teaspoon cumin,1/2,teaspoon,cumin,,,clean
+138,8,4 green chillies,4,,green chillies,,,clean
+138,9,4 small onions,4,,small onions,,,clean
+138,10,salt,nan,,salt,,,clean
+138,11,1 tablespoon oil,1,tablespoon,oil,,,clean
+138,12,1/4 teaspoon mustard,1/4,teaspoon,mustard,,,clean
+138,13,2 dry red chillies,2,,dry red chillies,,Dry,clean
+138,14,8 curry leaves,8,,curry leaves,,,clean
+139,1,1 Jackfruit Raw (Kathal) - with skin shaved off,1,,Jackfruit Raw (Kathal),with skin shaved off,,clean
+139,2,1 teaspoon Turmeric powder (Haldi),1,teaspoon,Turmeric powder (Haldi),,,clean
+139,3,1/2 cup Fresh coconut - grated,1/2,cup,Fresh coconut,grated,Fresh,clean
+139,4,3 Dry Red Chillies,3,,Dry Red Chillies,,Dry,clean
+139,5,1 Onion - finely chopped,1,,Onion,finely chopped,,clean
+139,6,2 Green Chillies - finely chopped,2,,Green Chillies,finely chopped,,clean
+139,7,1/2 teaspoon Cumin seeds (Jeera),1/2,teaspoon,Cumin seeds (Jeera),,,clean
+139,8,1/2 teaspoon Mustard seeds,1/2,teaspoon,Mustard seeds,,,clean
+139,9,1 teaspoon White Urad Dal (Split),1,teaspoon,White Urad Dal (Split),,,clean
+139,10,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+139,11,1/2 teaspoon Asafoetida (hing),1/2,teaspoon,Asafoetida (hing),,,clean
+139,12,Salt - to taste,nan,,Salt,,,reviewed
+140,1,2 cups Drumstick Leaves (Moringa/Murungai Keerai) - or Murrungai Keerai,2,cups,Drumstick Leaves (Moringa/Murungai Keerai),,,reviewed
+140,2,1 cup Pearl onions (Sambar Onions) - chopped,1,cup,Pearl onions (Sambar Onions),chopped,,clean
+140,3,1 inch Ginger - chopped,1,inch,Ginger,chopped,,reviewed
+140,4,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+140,5,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+140,6,Salt - to taste,nan,,Salt,,,reviewed
+140,7,Coconut Oil - for cooking,nan,,Coconut Oil,,,reviewed
+140,8,1/2 cup Fresh coconut,1/2,cup,Fresh coconut,,Fresh,clean
+140,9,1 tablespoon Cumin seeds (Jeera),1,tablespoon,Cumin seeds (Jeera),,,clean
+140,10,1 tablespoon Turmeric powder (Haldi),1,tablespoon,Turmeric powder (Haldi),,,clean
+140,11,1 tablespoon Red Chilli powder,1,tablespoon,Red Chilli powder,,,clean
+141,1,300 gram Fish,300,gram,Fish,,,clean
+141,2,3 teaspoon Sunflower Oil,3,teaspoon,Sunflower Oil,,,clean
+141,3,1/2 teaspoon Cumin seeds (Jeera),1/2,teaspoon,Cumin seeds (Jeera),,,clean
+141,4,1 Onion - chopped,1,,Onion,chopped,,clean
+141,5,1 teaspoon Ginger - paste,1,teaspoon,Ginger,paste,,reviewed
+141,6,2 Tomatoes - chopped,2,,Tomatoes,chopped,,clean
+141,7,3 cloves Garlic - finely chopped,3,cloves,Garlic,finely chopped,,clean
+141,8,1/4 teaspoon Turmeric powder (Haldi),1/4,teaspoon,Turmeric powder (Haldi),,,clean
+141,9,1/2 teaspoon Red Chilli powder,1/2,teaspoon,Red Chilli powder,,,clean
+141,10,1/4 teaspoon Vinegar,1/4,teaspoon,Vinegar,,,clean
+141,11,1/4 Lemon juice,1/4,,Lemon juice,,,clean
+141,12,50 ml Coconut milk,50,ml,Coconut milk,,,clean
+141,13,Salt - to taste,nan,,Salt,,,reviewed
+142,1,300 grams Green beans (French Beans) - cut into inch long pieces,300,grams,Green beans (French Beans),cut into inch long pieces,,clean
+142,2,2 Onion - thinly sliced,2,,Onion,thinly sliced,,clean
+142,3,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+142,4,1 sprig Curry leaves,1,sprig,Curry leaves,,,clean
+142,5,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+142,6,1 teaspoon Black pepper powder,1,teaspoon,Black pepper powder,,,clean
+142,7,1 teaspoon Coconut Oil,1,teaspoon,Coconut Oil,,,clean
+142,8,Salt - to taste,nan,,Salt,,,reviewed
+143,1,2 cups Elephant yam (Suran/Senai/Ratalu) - cubed,2,cups,Elephant yam (Suran/Senai/Ratalu),cubed,,clean
+143,2,2-1/2 cups Water,2-1/2,cups,Water,,,reviewed
+143,3,8 Garlic - cloves,8,clove,Garlic,,,reviewed
+143,4,1 Onion - finely chopped,1,,Onion,finely chopped,,clean
+143,5,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+143,6,1-1/2 teaspoon Red Chilli powder,1-1/2,teaspoon,Red Chilli powder,,,reviewed
+143,7,1/2 teaspoon Black pepper powder,1/2,teaspoon,Black pepper powder,,,clean
+143,8,1/2 teaspoon Fennel Powder,1/2,teaspoon,Fennel Powder,,,clean
+143,9,1 tablespoon Sunflower Oil,1,tablespoon,Sunflower Oil,,,clean
+143,10,1 teaspoon Mustard seeds,1,teaspoon,Mustard seeds,,,clean
+143,11,6 Curry leaves,6,,Curry leaves,,,clean
+144,1,3 Carrots (Gajjar) - grated,3,,Carrots (Gajjar),grated,,clean
+144,2,1/2 Cabbage (Patta Gobi/ Muttaikose) - finely chopped,1/2,,Cabbage (Patta Gobi/ Muttaikose),finely chopped,,clean
+144,3,1 Onion - finely chopped,1,,Onion,finely chopped,,clean
+144,4,4 Green Chillies - slit,4,,Green Chillies,slit,,clean
+144,5,1/2 teaspoon Turmeric powder (Haldi),1/2,teaspoon,Turmeric powder (Haldi),,,clean
+144,6,1 teaspoon Cumin powder (Jeera),1,teaspoon,Cumin powder (Jeera),,,clean
+144,7,1 tablespoon Sunflower Oil,1,tablespoon,Sunflower Oil,,,clean
+144,8,1/2 teaspoon Mustard seeds,1/2,teaspoon,Mustard seeds,,,clean
+144,9,1/2 cup Fresh coconut - grated,1/2,cup,Fresh coconut,grated,Fresh,clean
+144,10,6 Curry leaves,6,,Curry leaves,,,clean
+144,11,Salt - as required,nan,,Salt,,,reviewed
+145,1,1.5 cups Red Black Eyed Beans (Azuki),1-1/2,cups,Red Black Eyed Beans (Azuki),,,reviewed
+145,2,1/2 cup Fresh coconut - grated,1/2,cup,Fresh coconut,grated,Fresh,clean
+145,3,3 tablespoons Coriander (Dhania) Seeds,3,tablespoons,Coriander (Dhania) Seeds,,,clean
+145,4,4 Dry Red Chillies,4,,Dry Red Chillies,,Dry,clean
+145,5,2 tablespoons Tamarind Paste,2,tablespoons,Tamarind Paste,,,clean
+145,6,Coriander (Dhania) Leaves - few sprigs,nan,sprig,Coriander (Dhania) Leaves,,,reviewed
+145,7,1 tablespoon Sunflower Oil,1,tablespoon,Sunflower Oil,,,clean
+145,8,Salt - to taste,nan,,Salt,,,reviewed
+11,7,1 tsp active dry yeast - + 1/2 cup lukewarm water,1,tsp,active dry yeast,,Dry,reviewed
+11,8,1 tsp active dry yeast - + 1/2 cup lukewarm water,1/2,cup,lukewarm water,,,reviewed
+66,7,1 teaspoon Active dry yeast -  + 1/2 cup of luke warm water,1,teaspoon,Active dry yeast,,Dry,reviewed
+66,8,1 teaspoon Active dry yeast -  + 1/2 cup of luke warm water,1/2,cup,luke warm water,,,reviewed
+101,10,salt - 1 sprig curry leaves,,,salt,,,reviewed
+101,11,salt - 1 sprig curry leaves,1,sprig,curry leaves,,,reviewed

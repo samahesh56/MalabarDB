@@ -1,0 +1,228 @@
+norm_key,generic_name,n_lines,chosen_ifct_code,hierarchical,rank_found,fallback_code,fallback_source,reviewer_notes
+salt,Salt,135,,,absent,LOC001,LOCAL,gather from USDA
+curry leaves,Curry leaves,113,G010,N,1,,,
+turmeric powder haldi,Turmeric powder (Haldi),82,G033,N,1,,,
+fresh coconut,Fresh coconut,81,H007,N,1,,,
+coconut oil,Coconut Oil,72,T001,N,1,,,
+green chilli,Green Chillies,70,G008,N,8,,,
+mustard seed,Mustard seeds,60,H013,N,1,,,
+garlic,Garlic,52,G013,N,3,,,
+onion,Onion,48,G017,N,2,,,"Check normalization for ""small"" onion"
+ginger,Ginger,42,G014,N,1,,,
+cumin seed jeera,Cumin seeds (Jeera),41,G025,N,1,,,
+dry red chilli,Dry Red Chillies,41,G022,N,1,,,
+red chilli powder,Red Chilli powder,37,G022,N,1,,,"G022 is the whole/raw chilli entry, not a powder-specific row"
+sunflower oil,Sunflower Oil,30,T012,N,1,,,
+tomato,Tomato,29,D075,Y,2,,,default to hybrid
+water,Water,29,,,absent,LOC002,LOCAL,Zero macro count (USDA?)
+coconut milk,Coconut milk,23,,,absent,,,gather from USDA
+black pepper powder,Black pepper powder,21,G031,N,1,,,Whole peppercorn is not powder-specific; flag for future conisderation
+ghee,Ghee,18,T013,N,1,,,
+pearl onion sambar onion,Pearl onions (Sambar Onions),17,G018,N,3,,,pearl/sambar liekly refers to small onions 
+jaggery,Jaggery,16,I001,N,1,,,
+shallot,Shallots,16,,,absent,,,gather from USDA/use small onion
+sugar,Sugar,16,I001,N,miss,,,could substitute for jaggery
+cinnamon stick dalchini,Cinnamon Stick (Dalchini),15,,,absent,,,gather from USDA
+coriander dhania leaves,Coriander (Dhania) Leaves,15,G009,N,1,,,
+cardamom elaichi pod seed,Cardamom (Elaichi) Pods/Seeds,14,G020,Y,1,,,default to green cardamom (likely more common)
+coriander powder dhania,Coriander Powder (Dhania),14,G024,N,2,,,"powder = ground seed, not leaf "
+cashew nut,Cashew nuts,13,H005,N,1,,,
+white urad dal split,White Urad Dal (Split),13,B003,N,miss,,,urad dal = black gram
+fennel seed saunf,Fennel seeds (Saunf),12,,,absent,,,gather from USDA
+whole black peppercorn,Whole Black Peppercorns,12,G031,N,7,,,
+turmeric powder,turmeric powder,12,G033,N,1,,,
+kashmiri red chilli powder,Kashmiri Red Chilli Powder,11,G022,N,1,,,"G022 is the whole/raw chilli entry, not a powder-specific row"
+lemon juice,Lemon juice,11,E033,N,1,,,
+coconut,coconut,11,H007,N,2,,,
+cardamom powder elaichi,Cardamom Powder (Elaichi),10,G020,Y,1,,,elaichi' defaults to green cardamom 
+chicken,Chicken,10,N002,Y,3,,,defaulted to thigh; check USDA for general
+coriander dhania seed,Coriander (Dhania) Seeds,10,G024,N,1,,,
+garam masala powder,Garam masala powder,10,,,absent,,,False single candidate match
+methi seed fenugreek seed,Methi Seeds (Fenugreek Seeds),10,G026,N,1,,,
+mustard,mustard,10,H013,N,2,,,mustard defaults to seed (rather than the condiment)
+carrot gajjar,Carrots (Gajjar),9,F002,Y,1,,,default to orange
+cloves laung,Cloves (Laung),9,G023,N,1,,,
+curd dahi yogurt,Curd (Dahi / Yogurt),9,,,absent,,,default to USDA
+rice,Rice,9,A014,N,4,,,parboiled is likely more standard than raw rice
+rice flour,Rice flour,9,,,absent,,,default to USDA
+milk,Milk,8,L002,N,2,,,Whole Milk
+potato aloo,Potato (Aloo),8,F006,Y,1,,,Default to brown-skinned as other types are likely less common
+raw banana,Raw Banana,8,D063,Y,miss,,,Defaulted to Raw variant of plaintain
+oil,oil,8,T001,Y,1,,,defaulted to coconut oil for base fat (worth rescanning recipe base) 
+asafoetida hing,Asafoetida (hing),7,G019,N,1,,,
+ginger garlic paste,Ginger Garlic Paste,7,,,absent,,,ginger garlic paste is a specific blend - USDA
+mint leaf pudina,Mint Leaves (Pudina),7,G016,N,4,,,
+tamarind,Tamarind,7,E064,N,3,,,pulp is more accurate than leaves or manila
+baking soda,Baking soda,6,,,absent,,,
+cumin seed,cumin seeds,6,G025,N,1,,,
+elephant yam suran senai ratalu,Elephant yam (Suran/Senai/Ratalu),6,F017,N,1,,,
+green bean french bean,Green beans (French Beans),6,D050,Y,2,,,default to hybrid
+kokum malabar tamarind,Kokum (Malabar Tamarind),6,,,absent,,,kokum != tamarind
+red matta rice,Red matta rice,6,,,absent,,,matta/red not in IFCT
+all purpose flour maida,All Purpose Flour (Maida),5,A018,N,miss,,,maida = refined wheat flour
+bhindi lady finger okra,Bhindi (Lady Finger/Okra),5,D056,N,1,,,
+drumstick,Drumstick,5,D046,N,1,,,
+fennel powder,Fennel Powder,5,,,absent,,,gather from USDA
+mango ripe,Mango (Ripe),5,E036,Y,1,,,default to banganapalli
+prawn,Prawns,5,S008,Y,3,,,default to large prawns
+whole egg,Whole Eggs,5,M001,N,1,,,
+whole wheat flour,Whole Wheat Flour,5,A020,N,1,,,
+small onion,small onions,5,G018,N,1,,,
+chana dal bengal gram dal,Chana dal (Bengal Gram Dal),4,B001,N,1,,,
+cumin powder jeera,Cumin powder (Jeera),4,G025,N,1,,,Cumin seed is not in powder form 
+green peas matar,Green peas (Matar),4,B017,Y,miss,,,difficult to distinguish between dry/fresh peaas
+kaddu parangikai/ pumpkin,Kaddu (Parangikai/ Pumpkin),4,D066,N,miss,,,failure on language terms 
+methi powder fenugreek powder,Methi Powder (Fenugreek Powder),4,G026,N,2,,,fenugreek seed - not powder
+mutton,Mutton,4,O016,Y,miss,,,"mutton =  sheep in IFCT, default to leg"
+raisin,Raisins,4,E057,Y,1,,,default to black raisins
+ripe banana,Ripe Bananas,4,E010,Y,2,,,default to poovam
+active dry yeast,Active dry yeast,3,,,absent,,,USDA 
+arhar dal split toor dal,Arhar dal (Split Toor Dal),3,B021,N,miss,,,confirmed via lang column; Arhar Dal is red gram
+bay leaf tej patta,Bay leaf (tej patta),3,,,absent,,,
+cooked rice,Cooked rice,3,A014,N,4,,,cooked=parboiled
+dry ginger powder,Dry ginger powder,3,G014,N,3,,,dry ginger powder is different from raw ginger. USDA
+green moong dal whole,Green Moong Dal (Whole),3,B010,N,1,,,
+jackfruit ripe kathal,Jackfruit Ripe (Kathal),3,,,absent,,,"raw jackfuit in IFCT, different from ripe"
+lukewarm water,Lukewarm Water,3,,,absent,,,USDA
+mango raw,Mango (Raw),3,D057,N,1,,,
+tamarind water,Tamarind Water,3,,,absent,,,tamarind + water
+tapioca root,Tapioca root,3,,,absent,,,tapioca differs from tapioca root
+vellai poosanikai ash gourd white pumpkin,Vellai Poosanikai (Ash gourd/White Pumpkin),3,D001,N,1,,,
+yellow moong dal split,Yellow Moong Dal (Split),3,B010,N,miss,,,moong dal = green dal
+coriander powder,coriander powder,3,G024,N,2,,,coriander seed != powder
+badam almond,Badam (Almond),2,H001,N,1,,,
+baking powder,Baking powder,2,,,absent,,,USDA
+basmati rice,Basmati rice,2,A015,N,5,,,general milled rice variant 
+black urad dal split,Black Urad Dal (Split),2,B003,N,1,,,
+brinjal baingan eggplant,Brinjal (Baingan / Eggplant),2,D031,Y,22,,,all varities  
+butter unsalted,Butter (unsalted),2,,,absent,,,USDA
+chayote,Chayote,2,D038,N,miss,,,cho-cho-marrow is the same as chayote
+cinnamon powder dalchini,Cinnamon Powder (Dalchini),2,,,absent,,,USDA
+colocasia root arbi,Colocasia Root (Arbi),2,F004,N,1,,,
+drumstick leaf moringa murungai keerai,Drumstick Leaves (Moringa/Murungai Keerai),2,C019,N,1,,,
+dry coconut kopra,Dry coconut (kopra),2,H006,N,1,,,Kopra = kernal
+fish,Fish,2,,,absent,,,"Requires ""general dish"" variant"
+instant coffee powder,Instant Coffee Powder,2,,,absent,,,USDA
+instant oat oatmeal,Instant Oats (Oatmeal),2,,,absent,,,USDA
+jackfruit raw kathal,Jackfruit Raw (Kathal),2,D051,N,miss,,,mismatch
+lemon,Lemon,2,,,absent,,,lemon != lemon juice
+meat masala,Meat masala,2,,,absent,,,requires USDA or other
+nendra pazham banana ripe,Nendra Pazham Banana (Ripe),2,E009,Y,1,,,default to montham
+nutmeg powder,Nutmeg powder,2,G028,N,1,,,nutmeg/nutmeg powder distinction 
+paprika powder,Paprika powder,2,,,absent,,,USDA
+raw banana peel,Raw banana peel,2,,,absent,,,USDA
+raw papaya,Raw papaya,2,D059,N,1,,,
+rum,Rum,2,,,absent,,,USDA
+sardine fish,Sardine fish,2,P071,N,1,,,
+seer fish,Seer fish,2,P087,N,miss,,,panjaram = seer fish 
+small onion sambar,Small onion (Sambar),2,G018,N,1,,,
+tamarind paste,Tamarind Paste,2,E064,N,3,,,"Paste != pulp, recheck"
+tutti frutti,Tutti frutti,2,,,absent,,,This is candied raw papaya
+vinegar,Vinegar,2,,,absent,,,USDA
+cabbage,cabbage,2,C015,Y,3,,,default to green cabbage
+carrot,carrots,2,F002,Y,1,,,default to orange carrot
+cumin,cumin,2,G025,N,1,,,Cumin seed/cumin powder? 
+green bean,green beans,2,D050,N,29,,,Often written as green beans (french beans) 
+green chili,green chili,2,G008,Y,36,,,all varities  
+okra,okra,2,D056,N,miss,,,ladies finger = okra
+potato,potato,2,F006,Y,1,,,default to large brown potato
+red chili,red chili,2,G022,N,17,,,
+rye,rye,2,,,absent,,,USDA equivalent?
+suran,suran,2,F017,N,miss,,,suran = yam
+aachi fish masala,Aachi Fish Masala,1,,,absent,,,USDA/other
+ada,Ada,1,,,absent,,,"Poha is similar but nutritionally different, requires fallbak"
+ash gourd,Ash gourd,1,D001,N,1,,,
+baby potato,Baby Potatoes,1,F006,N,3,,,baby = small potato
+bajra flour pearl millet,Bajra Flour (Pearl Millet),1,A003,N,1,,,
+banana stem,Banana Stem,1,,,absent,,,"No ""stem"" nutrition stats "
+banana flower vazhaipoo,Banana flower (Vazhaipoo),1,D062,N,1,,,
+black eyed bean lobia,Black Eyed Beans (Lobia),1,B006,N,miss,,,black eyed bean = cow
+brown rice,Brown Rice,1,A013,N,1,,,
+butter,Butter,1,,,absent,,,USDA
+button mushroom,Button mushrooms,1,J001,N,1,,,
+cabbage patta gobi/ muttaikose,Cabbage (Patta Gobi/ Muttaikose),1,C015,Y,2,,,default to green vs violet 
+candied orange peel,Candied orange peel,1,,,absent,,,
+caramel sauce,Caramel Sauce,1,,,absent,,,USDA
+caster sugar,Caster Sugar,1,,,absent,,,USDA
+cauliflower gobi,Cauliflower (gobi),1,D036,N,1,,,
+champagne,Champagne,1,,,absent,,,USDA
+chicken masala,Chicken masala,1,,,absent,,,USDA
+chinese potato,Chinese Potato,1,,,absent,,,USDA
+cooking soda,Cooking soda,1,,,absent,,,baking soda? 
+crab,Crabs,1,Q005,Y,miss,,,mud crab is most common in kerala cuisine
+cucumber,Cucumber,1,C002,Y,miss,,,default to long cucumber
+dried fig,Dried Figs,1,,,absent,,,dried fig != figs
+egg white,Egg whites,1,M002,N,1,,,
+egg yolk,Egg yolks,1,M003,N,1,,,
+enos fruit salt,Enos fruit salt,1,,,absent,,,USDA
+extra virgin olive oil,Extra Virgin Olive Oil,1,,,absent,,,USDA
+fennel,Fennel,1,,,absent,,,
+fish fillet,Fish fillet,1,,,absent,,,"Requires ""general dish"" variant or select most common"
+glazed cherry,Glazed Cherries,1,,,absent,,,glazed cherries have very different nutrition compared to regular cherries
+gram flour besan,Gram flour (besan),1,B001,N,miss,,,besan is a close match to bengal gram flour
+green chawli bean yard long bean karamani barbati,Green Chawli Beans (Yard long beans/Karamani/Barbati),1,,,absent,,,only dried form exists in IFCT
+guava,Guava,1,E028,Y,1,,,default to white flesh
+guava juice,Guava juice,1,,,absent,,,USDA
+homemade tomato puree,Homemade tomato puree,1,,,absent,,,puree offers different nutrition value
+horse gram dal kollu/ kulith,Horse Gram Dal (Kollu/ Kulith),1,B012,N,4,,,
+hot water,Hot water,1,,,absent,,,USDA
+hung curd greek yogurt,Hung Curd (Greek Yogurt),1,,,absent,,,
+icing sugar,Icing Sugar,1,,,absent,,,USDA
+jackfruit seed kathal,Jackfruit Seeds (Kathal),1,D052,N,miss,,,parse error
+kala chana brown chickpea,Kala Chana (Brown Chickpeas),1,B002,N,miss,,,"Chana, kala = bengal gram, wholee"
+karela bitter gourd/ pavakkai,Karela (Bitter Gourd/ Pavakkai),1,D005,Y,miss,,,default to long bitter gourd
+mixed dry fruit apricot,Mixed dry fruits (Apricot),1,E005,N,3,,,
+mixed nut almond,Mixed nuts (Almond),1,H001,N,1,,,
+mixed vegetable green bean,Mixed vegetables (Green Beans),1,D050,Y,miss,,,"green bean = french bean, hybrid"
+mixed vegetable potato,Mixed vegetables (Potatoes),1,F007,Y,miss,,,default to small brown potatoes
+mooli/ mullangi radish,Mooli/ Mullangi (Radish),1,F011,Y,miss,,,"default to round, red radish"
+mustard oil,Mustard oil,1,T006,N,1,,,
+orange,Orange,1,,,absent,,,USDA
+palm sugar,Palm sugar,1,,,absent,,,USDA
+papad,Papad,1,,,absent,,,"pappadam, find somewhere else"
+papaya,Papaya,1,E049,N,2,,,
+papaya juice,Papaya juice,1,,,absent,,,USDA
+poppy seed,Poppy seeds,1,G032,N,1,,,
+ragi flour finger millet/ nagli,Ragi Flour (Finger Millet/ Nagli),1,A010,N,1,,,
+rasam powder,Rasam Powder,1,,,absent,,,USDA
+raw peanut moongphali,Raw Peanuts (Moongphali),1,H012,N,miss,,,"Moog Phali is found in ""lang"" of ground nut "
+red black eyed bean azuki,Red Black Eyed Beans (Azuki),1,,,absent,,,azuki not found in ifct
+red chilli flake,Red Chilli flakes,1,G022,N,1,,,"""flake"" may be different from regular red chili"
+rice ada,Rice ada,1,,,absent,,,rice ada has no IFCT equiv
+rice puttu,Rice puttu,1,,,absent,,,puttu has no IFCT equiv
+saffron strand,Saffron strands,1,,,absent,,,USDA
+sambar powder,Sambar Powder,1,,,absent,,,USDA
+shallot pearl onion,Shallots (pearl onions),1,,,absent,,,could replace with small onion
+shrimp,Shrimps,1,Q008,Y,miss,,,giant tiger prawn likely found in Kerala 
+squid,Squid,1,R004,Y,1,,,default to black squid
+sweet potato,Sweet Potatoes,1,F013,Y,1,,,default to brown potato
+tulsi holy basil,Tulsi (holy basil),1,,,absent,,,USDA
+vanilla extract,Vanilla Extract,1,,,absent,,,USDA
+vivatta maida,Vivatta Maida,1,A018,N,miss,,,Maida = wheat flour 
+yam,Yam,1,F017,Y,1,,,default to elephant yam
+black gram,black gram,1,B004,Y,2,,,default to whole
+brinjal,brinjals,1,D031,Y,22,,,
+cardamom powder,cardamom powder,1,G020,N,1,,,
+coriander,coriander,1,G024,Y,2,,,default to seed
+coriander leaves,coriander leaves,1,G009,N,1,,,
+cumin powder,cumin powder,1,G025,N,1,,,
+curd,curd,1,,,absent,,,USDA
+curry leaf,curry leaf,1,G010,N,miss,,,missed parser
+dry red chili,dry red chili,1,G022,N,7,,,"requires ""dry"" variant"
+egg,eggs,1,M001,N,1,,,
+fenugreek seed,fenugreek seeds,1,G026,N,1,,,
+ginger powder,ginger powder,1,,,absent,,,"USDA, fresh ginger != ginger powder (Dry) "
+green coriander,green coriander,1,G009,N,miss,,,
+green pea,green peas,1,B017,N,3,,,dry form default 
+hot masala powder,hot Masala powder,1,,,absent,,,USDA
+luke warm water,luke warm water,1,,,absent,,,USDA
+olive oil,olive oil,1,,,absent,,,USDA
+pepper powder,pepper powder,1,G031,N,1,,,
+red chili powder,red chili powder,1,G022,N,5,,,"G022 is the whole/raw chilli entry, not a powder-specific row"
+red chilli flax,red chilli flax,1,G022,N,1,,,
+small potato,small potatoes,1,F007,N,1,,,
+tulsi,tulsi,1,,,absent,,,basil is absent
+turmeric,turmeric,1,G033,N,1,,,
+white urad dal,white urad dal,1,B003,N,miss,,,Urad dal = black gram dal
+whole black pepper,whole black pepper,1,G031,N,1,,,
+whole pepper,whole pepper,1,G031,Y,9,,,default to black pepper

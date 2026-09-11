@@ -15,15 +15,24 @@ Output: recipe_ingredients_final.csv, the input to build_db.py
 import pandas as pd
 
 from malabardb import paths
-from malabardb.recipe_nutrient_table.review_queue_parsing import normalize_qty
-
+from malabardb.recipe_nutrient_table.review_queue_parsing import (
+    normalize_qty, find_moved_lines)
 KEY = ['recipe_id', 'line_no']
 
 CORRECTION_COLS = ['corrected_name', 'corrected_qty', 'corrected_unit',
                    'corrected_state']
 
 base = pd.read_csv(paths.FULL_CORPUS_LABELS)
+
 queue = pd.read_csv(paths.REVIEW_QUEUE_PARSING)
+
+# Every queue row must still describe the same source line as the corpus.
+moved = find_moved_lines(queue, base)
+if len(moved):
+    raise SystemExit(
+        f'{len(moved)} queue rows do not match full_corpus_labels.csv; '
+        f'rerun review_queue_parsing, or undo edits to raw_line:\n'
+        f'{moved.to_string(index=False)}')
 
 
 def nonblank(s):

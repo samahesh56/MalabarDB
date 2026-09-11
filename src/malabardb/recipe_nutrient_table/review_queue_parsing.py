@@ -166,14 +166,51 @@ def _norm_unit(x):
     return UNIT_ALIASES.get(_norm(x), _norm(x))
  
  
-def write_review_queue(queue, path):
-    """Write the queue, preserving corrections already typed into an earlier
-    version. A row still flagged keeps its correction; newly flagged rows
-    arrive blank. Blank always means 'not reviewed', never 'clear this field'."""
+def has_correction(df):
+    """True for rows where a human typed at least one corrected_* value."""
+    return (df[CORRECTION_COLUMNS].fillna('').astype(str)
+            .apply(lambda col: col.str.strip().ne('')).any(axis=1))
+
+
+def find_moved_lines(review_rows, corpus):
+    """Rows whose (recipe_id, line_no) no longer holds the same raw_line in the
+    corpus, including lines that no longer exist. Corrections are matched by
+    position, so this confirms each position still means the same line."""
+    m = review_rows[KEY_COLUMNS + ['raw_line']].merge(
+        corpus[KEY_COLUMNS + ['raw_line']], on=KEY_COLUMNS, how='left',
+        suffixes=('_review', '_corpus'))
+    return m[m['raw_line_review'] != m['raw_line_corpus']]
+
+
+def write_review_queue(ri, path):
+    """Write the queue: every flagged line, plus every line that already holds a
+    correction, flagged or not. A correction is never dropped: if its line is no
+    longer flagged it stays (review_flags blank), and if its line changed or
+    disappeared the run stops before the file is touched.
+    Blank always means 'not reviewed', never 'clear this field'."""
+    keep = ri['review_flags'] != ''
+    prior = None
     if os.path.exists(path):
-        prior = pd.read_csv(path)[KEY_COLUMNS + CORRECTION_COLUMNS]
-        queue = queue.drop(columns=CORRECTION_COLUMNS, errors='ignore').merge(
-            prior, on=KEY_COLUMNS, how='left')
+        prior = pd.read_csv(path)
+        done = prior[has_correction(prior)]
+
+        moved = find_moved_lines(done, ri)
+        if len(moved):
+            raise SystemExit(
+                f'{len(moved)} corrected rows no longer match the source line '
+                f'(queue left unchanged):\n{moved.to_string(index=False)}')
+
+        was_corrected = ri.set_index(KEY_COLUMNS).index.isin(
+            done.set_index(KEY_COLUMNS).index)
+        n_unflagged = int((was_corrected & ~keep).sum())
+        if n_unflagged:
+            print(f'kept {n_unflagged} corrected rows that are no longer flagged')
+        keep = keep | was_corrected
+
+    queue = ri[keep].copy()
+    if prior is not None:
+        queue = queue.merge(prior[KEY_COLUMNS + CORRECTION_COLUMNS],
+                            on=KEY_COLUMNS, how='left')
     for col in CORRECTION_COLUMNS:
         if col not in queue.columns:
             queue[col] = ''
@@ -212,11 +249,9 @@ def build():
         axis=1)
  
     ri.to_csv(paths.FULL_CORPUS_LABELS, index=False)
- 
-    queue = ri[ri['review_flags'] != ''].copy()
-    for col in CORRECTION_COLUMNS:
-        queue[col] = ''
-    queue = write_review_queue(queue, paths.REVIEW_QUEUE_PARSING)
+
+    # write the queue 
+    queue = write_review_queue(ri, paths.REVIEW_QUEUE_PARSING) 
  
     print(f'full_corpus_labels.csv   {len(ri)} lines')
     print(f'review_queue_parsing.csv {len(queue)} lines '

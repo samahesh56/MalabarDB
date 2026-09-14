@@ -52,6 +52,7 @@ REVIEW_QUEUE_PARSING = REVIEW / 'review_queue_parsing.csv'
 REVIEW_QUEUE_IFCT_AMBIGUOUS = REVIEW / "review_queue_ifct_ambiguous.csv"
 REVIEW_QUEUE_IFCT_UNMATCHED = REVIEW / "review_queue_ifct_unmatched.csv"
 REVIEW_QUEUE_INGREDIENTS = REVIEW / "review_queue_ingredients.csv"
+MANUAL_FIXES = REVIEW / "manual_fixes.csv"
 
 # --- final --------------------------------------------------------------
 INGREDIENTS = FINAL / "ingredients.csv"

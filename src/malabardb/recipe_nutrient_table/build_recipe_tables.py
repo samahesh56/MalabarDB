@@ -13,14 +13,17 @@ Recipe_ingredients.csv consists of a recipe_id attached to each ingredient's ori
 raw_line is produced using comma-splitting the TranslatedIngredients column, which will allow us to identify each recipes' individual ingredients, states, qty sizes, etc. 
     Output: data/processed/recipe_ingredients.csv'''
 
+paths.ensure_dirs() # ensures processed/ folder is created 
+
 df = pd.read_csv(paths.RECIPES)
 kerala = df[df['Cuisine'] == 'Kerala Recipes'].copy()
 
 def has_devanagari(s):
     return bool(re.search(r'[\u0900-\u097F]', str(s)))
-
+n_cuisine = len(kerala)
 kerala = kerala[~kerala['TranslatedIngredients'].apply(has_devanagari)].reset_index(drop=True)
 kerala['recipe_id'] = range(1, len(kerala) + 1)
+print(f'{len(df)} source -> {n_cuisine} Kerala -> {len(kerala)} after translation filter')
 
 # recipes.csv construction: contains data specific to kerala cuisine from raw dataset
 recipes = kerala[['recipe_id', 'TranslatedRecipeName', 'Cuisine', 'Servings',

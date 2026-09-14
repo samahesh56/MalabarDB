@@ -1,62 +1,29 @@
 """
-Step 6: build_ingred_review.py: walk the matching ladder over every recipe key
-and write ONE file for human review.
+Step 6: build_ingred_review.py - walk the matching ladder over every recipe
+key and write a queue for human review.
+    recipe_keys.csv + ifct_normalized.csv -> review_queue_ingredients.csv
 
-    python -m malabardb.recipe_nutrient_table.build_ingred_review
+For each distinct ingredient key, try the rungs in match_to_ifct strictest
+first (exact, tokenset, subset), stopping at the first that finds anything.
+Each key then lands in one bucket:
+    auto     exactly one code found, pre-filled   -> confirm it, or correct it
+    review   several candidates, or partial only  -> pick one, or mark absent
+    none     nothing at any rung                  -> search IFCT by hand
 
-    For each distinct ingredient key (recipe_keys.csv), try the rungs in
-    match_to_ifct.py strictest-first: exact, tokenset, subset. Stop at the
-    first that finds anything. If none do, rank the partial candidates.
-    Then sort every key into one of three buckets:
-
-        auto       one boolean-rung hit, code filled in   -> confirm or correct
-        review     several candidates                     -> pick one, or none
-        none       no candidate at any rung               -> search IFCT by hand,
-                                                             or mark absent
-
-    Strictest-first matters: 'drumstick' is unique (D046) at exact but ties
-    (C019, D046) at subset. Stopping early keeps the confident answer.
-
-REVIEW COLUMNS (the only ones that survive a rerun)
-    chosen_ifct_code  the final code for this key. Fill it on EVERY row you
-                      review, including auto rows (copy the code if it is
-                      right). Blank = not reviewed.
-    rank_found        where the right answer sat in candidate_codes:
-                        1, 2, ...   position in the list (1 on a correct auto)
-                        miss        a correct IFCT row exists but no rung found it
-                        absent      IFCT has no usable row for this food
-                      This column is the evaluation: precision of auto rows,
-                      top-k recall of the candidate generator.
+    chosen_ifct_code  the final code for this key. Fill it on EVERY reviewed
+                      row, auto rows included (copy the code if it is right).
+    rank_found        where the right answer sat in candidate_codes: 1, 2, ...
+                      / 'miss' (a correct IFCT row exists, no rung found it)
+                      / 'absent' (IFCT has no usable row). report() computes evaluation 
     hierarchical      Y if the accepted code is broader than a strict match
-                      (dry red chilli -> G022 "Chillies, red"). Counted as
-                      correct by convention; tracked so the strict number is
-                      still computable.
+                      (dry red chilli -> G022 "Chillies, red"). 
     reviewer_notes    free text.
 
-ORPHANS (n_lines = 0)
-    Fixing name_raw upstream renames keys: 'ginger paste' became 'ginger',
-    'mixed nut almond' became 'mixed nut'. A tagged key that no longer appears
-    in recipe_keys.csv is kept in this file rather than dropped, so the
-    decision stays visible and the audit trail survives.
+Design follows StandFood (Eftimov et al. 2017): the machine generates candidates, a human accepts. 
+    python -m malabardb.recipe_nutrient_table.build_ingred_review"""
 
-    Its n_lines is 0 because zero lines of the CURRENT corpus use that
-    spelling. That is not a demotion, it is the true count: the line it used
-    to describe is now counted under the successor key. Giving orphans their
-    old counts would push sum(n_lines) past the corpus total and inflate every
-    coverage percentage computed from this file.
-
-    successor_key names the current key the orphan most likely became (highest
-    token overlap). It is a HINT, never an automatic transfer: 'mixed nut
-    almond' -> H001 (almond) was decided when the key still said almond, and
-    'mixed nut' may deserve a different code. Move the tag across yourself,
-    then delete the orphan row -- it will not come back.
-
-Design follows StandFood (Eftimov et al. 2017): the machine generates
-candidates, a human accepts.
-"""
 import csv
 import re
-import shutil
 from collections import Counter
 from pathlib import Path
 
@@ -69,9 +36,7 @@ PARTIAL_TOP_K = 5   # ties at the cutoff are kept
 
 HUMAN_COLUMNS = ["chosen_ifct_code", "rank_found", "hierarchical", "reviewer_notes"]
 
-# IFCT publishes an "all varieties" aggregate for some variety spreads
-# (brinjal D031, green chilli G008). When a key ties across nothing but
-# varieties of one food, IFCT's own average is the defensible default.
+# IFCT publishes an "all varieties" aggregate for some variety spreads (brinjal D031, green chilli G008).
 ALL_VARIETIES_RE = re.compile(r"\ball\s+varieties\b", re.IGNORECASE)
 
 
@@ -87,8 +52,7 @@ def load_keys(path: Path) -> dict[str, dict]:
 
 
 def load_prior(path: Path) -> dict[str, dict]:
-    """Old queue -> {norm_key: {human column: value}}. Only HUMAN_COLUMNS are
-    read; everything else is machine output that must be regenerated."""
+    """Old queue -> {norm_key: {human column: value}}."""
     if not path.exists():
         return {}
     return {r["norm_key"]: {c: r.get(c, "") for c in HUMAN_COLUMNS}
@@ -109,14 +73,28 @@ def match_key(key: str, ifct: list[dict]) -> tuple[str, list[dict]]:
 
 
 def classify(rule: str, hits: list[dict]) -> tuple[str, str]:
-    """(status, auto_code). Partial candidates never auto-fill."""
+    """Decide whether the machine is confident enough to fill in a code.
+    Returns (status, auto_code); auto_code is blank unless status is 'auto'.
+
+    Four cases, in order:
+    1. No hits            -> ('none', '').  Nothing to confirm.
+    2. Partial rule       -> ('review', ''). Partial candidates are ranked by
+       a score BELOW 1.0, so by construction no candidate contains the key.
+    3. One distinct code  -> ('auto', code). Every hit agrees on same ifct row 
+    4. Several codes      -> a tie. Usually a human decides
+
+    The single-food-group test is what keeps this narrow. Without it,
+    'coconut' ties across Nuts and Oil Seeds, Edible Oils and Fats, and Misc."""
+
     if not hits:
         return "none", ""
     if rule == "partial":
         return "review", ""
+
     codes = {h["code"] for h in hits}
     if len(codes) == 1:
         return "auto", hits[0]["code"]
+
     aggregate = [h for h in hits if ALL_VARIETIES_RE.search(h["name"])]
     if aggregate and len({h["grup"] for h in hits}) == 1:
         return "auto", aggregate[0]["code"]
@@ -124,9 +102,7 @@ def classify(rule: str, hits: list[dict]) -> tuple[str, str]:
 
 
 def best_successor(orphan: str, current: list[str]) -> str:
-    """Current key with the highest token overlap against an orphaned key.
-    Same measure the ladder uses. Blank below PARTIAL_MIN_SCORE, where the two
-    keys share less than a head noun and the guess would be noise."""
+    """Current key with the highest token overlap against an orphaned key."""
     scored = sorted(((overlap(orphan, k), k) for k in current),
                     key=lambda sk: (-sk[0], sk[1]))
     return scored[0][1] if scored and scored[0][0] >= PARTIAL_MIN_SCORE else ""
@@ -164,37 +140,72 @@ def main() -> None:
                       ifct, prior)
             for key, d in sorted(keys.items(), key=lambda kv: -kv[1]["n_lines"])]
 
-    # Tagged keys that upstream renaming removed from the corpus.
+    # ORPHANS: a tagged key that upstream renaming removed from the corpus ('ginger paste' became 'ginger'). Kept with n_lines=0 
     current = sorted(keys)
     orphans = sorted(k for k, v in prior.items()
                      if any(x.strip() for x in v.values()) and k not in keys)
     rows += [build_row(k, 0, "", ifct, prior, best_successor(k, current))
              for k in orphans]
 
-    if out.exists():
-        shutil.copy2(out, out.with_suffix(".bak.csv"))
+    if not rows:
+        raise SystemExit("no recipe keys; run match_to_ifct prepare first")
+
     out.parent.mkdir(parents=True, exist_ok=True)
     with out.open("w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=list(rows[0]))
         w.writeheader()
         w.writerows(rows)
 
-    # ---- report. Orphans excluded: they describe zero current lines. ----
-    live = [r for r in rows if r["n_lines"] > 0]
-    total = sum(r["n_lines"] for r in live)
+    report(rows, orphans, bool(prior), out)
+
+
+def report(rows, orphans, had_prior, out) -> None:
+    """Coverage, then the evaluation that rank_found exists to support.
+    Orphans are excluded from every count: they describe zero current lines."""
+    live = [r for r in rows if int(r["n_lines"]) > 0]
+    total = sum(int(r["n_lines"]) for r in live)
     print(f"{len(live)} keys / {total} lines -> {out}\n")
+
     print(f"{'status':<8}{'keys':>6}{'lines':>8}{'line%':>8}")
     for s in ("auto", "review", "none"):
         sel = [r for r in live if r["status"] == s]
-        ln = sum(r["n_lines"] for r in sel)
+        ln = sum(int(r["n_lines"]) for r in sel)
         print(f"{s:<8}{len(sel):>6}{ln:>8}{ln / total * 100:>7.1f}%")
     print("\nby rung: " + ", ".join(
         f"{k}={sum(r['link_rule'] == k for r in live)}"
         for k in ("exact", "tokenset", "subset", "partial", "none")))
 
-    if prior:
+    reviewed = [r for r in live if r["chosen_ifct_code"].strip()
+                or r["rank_found"].strip()]
+    if not reviewed:
+        return
+
+    # Auto precision: on rows the machine filled in, how often did the reviewer keep that code?  reported accuracy.
+    auto = [r for r in reviewed if r["status"] == "auto"]
+    kept = [r for r in auto if r["chosen_ifct_code"] == r["ifct_code"]]
+    if auto:
+        print(f"\nauto precision: {len(kept)}/{len(auto)} "
+              f"({len(kept) / len(auto) * 100:.0f}%) machine codes accepted")
+
+    # Candidate recall: of the keys that HAVE a right answer in IFCT, where did it sit in the candidate list? 
+    ranked = [r for r in reviewed if r["rank_found"].strip().isdigit()]
+    missed = [r for r in reviewed if r["rank_found"].strip() == "miss"]
+    absent = [r for r in reviewed if r["rank_found"].strip() == "absent"]
+    findable = len(ranked) + len(missed)
+    if findable:
+        top1 = sum(1 for r in ranked if r["rank_found"].strip() == "1")
+        top5 = sum(1 for r in ranked if int(r["rank_found"]) <= PARTIAL_TOP_K)
+        print(f"candidate recall over {findable} findable keys: "
+              f"rank 1 {top1} ({top1 / findable * 100:.0f}%), "
+              f"top {PARTIAL_TOP_K} {top5} ({top5 / findable * 100:.0f}%), "
+              f"anywhere {len(ranked)} ({len(ranked) / findable * 100:.0f}%)")
+    print(f"not in IFCT: {len(absent)} keys "
+          f"({sum(int(r['n_lines']) for r in absent)} lines)")
+
+    if had_prior:
         tagged = sum(any(r[c] for c in HUMAN_COLUMNS) for r in live)
-        print(f"\ncarried forward: {tagged} tagged keys")
+        print(f"carried forward: {tagged} tagged keys")
+
     if orphans:
         by_key = {r["norm_key"]: r for r in rows}
         print(f"\n{len(orphans)} orphaned keys kept with n_lines=0 "

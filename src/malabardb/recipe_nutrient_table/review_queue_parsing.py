@@ -2,15 +2,13 @@
 Step 2: verify that every ingredient line parsed correctly.
 
 Checking 1739 lines by hand is not viable, so two independent extractors parse 
-every line and their DISAGREEMENT selects the rows a human looks at:
+every line and their disagreement selects the rows a human looks at:
     regex             qty / unit / name : the label source
     ingredient-parser qty / unit / name : second opinion, used only to disagree
     ingredient-parser state             : sole source
     keyword regex     dry_fresh         : sole source
 
-Where the two agree on a field, that field is accepted. Where they disagree,
-the row enters the review queue. State disagreement is checked by observing if 
-a line has a " - X" modifier where state info would live but was undetected 
+State disagreement is checked by observing if  a line has a " - X" modifier where state info would live but was undetected 
 
 OUTPUTS
     full_corpus_labels.csv    every line, every extracted field, every flag. Do not hand-edit.
@@ -27,8 +25,7 @@ from ingredient_parser import parse_ingredient
  
 from malabardb import paths
  
-# Unit vocabulary derived by scanning the corpus for the word following a
-# leading quantity, not from a generic English unit list. 
+# Unit vocabulary derived by scanning the corpus for the word following a leading quantity
 UNITS = {
     'teaspoon', 'teaspoons', 'tsp', 'tsps', 'tablespoon', 'tablespoons', 'tbsp', 'tbsps',
     'cup', 'cups', 'gram', 'grams', 'gm', 'gms', 'g', 'kg', 'ml', 'liter', 'litre',
@@ -45,10 +42,8 @@ UNIT_ALIASES = {
     'pieces': 'piece', 'handfuls': 'handful', 'kg': 'kilogram', 'ml': 'milliliter',
 }
  
-# Alternation returns the FIRST match, not the longest, so every compound form
-# must be tried before the bare integer that is its prefix: "2-1/2" before the
-# range "2-3" (else it slices as "2-1"), "3 1/2" and "1.5" before "\d+" (else
-# they slice as "3" and "1", stranding the rest of the number in the NAME).
+# Alternation returns the FIRST match, not the longest, so every compound form must be tried 
+# before the bare integer that is its prefix: "2-1/2" before the range "2-3" (else it slices as "2-1")
 QTY_RE = re.compile(
     r'^\s*('
     r'\d+\s+to\s+\d+'             # 2 to 3
@@ -77,7 +72,6 @@ DRY_FRESH_RE = re.compile(r'\b(dry|dried|fresh|frozen)\b', re.IGNORECASE)
  
 # CONTEXT columns (read-only, shown so a human can decide) come before
 # CORRECTION columns (typed in, and the only ones merge_corrections.py reads back).
-# ip_comment/ip_purpose exist to explain a state miss
 QUEUE_COLUMNS = [
     'recipe_id', 'line_no', 'raw_line', 'review_flags',
     'regex_name', 'ip_patched_name',
@@ -143,9 +137,8 @@ def _tokens(s):
  
  
 def name_patch(regex_name, ip_name):
-    """Restore terms ingredient-parser drops from slash-separated
-    parentheticals: "Elephant yam (Suran/Senai/Ratalu)" becomes "Elephant yam
-    Ratalu", with the rest pushed into comment. """
+    """Restore terms ingredient-parser drops from slash-separated parentheticals: 
+    "Elephant yam (Suran/Senai/Ratalu)" becomes "Elephant yam Ratalu", with the rest pushed into comment. """
 
     t_ip, t_regex = _tokens(ip_name), _tokens(regex_name)
     return regex_name if t_ip and t_ip < t_regex else ip_name

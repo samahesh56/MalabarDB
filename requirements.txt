@@ -26,4 +26,4 @@ scikit-learn>=1.3       # PCA in harness/visualize.py
 matplotlib>=3.7         # plotting in harness/visualize.py
 spacy>=3.8,<3.9         # normalize_vocab.py SpacyNormalizer; matches en_core_web_sm-3.8.0
 click>=8.1              # workaround for explosion/spaCy#13971 (see notes)
-ingredient-parser-nlp>=2.7,<3.0   # second extraction method in build_corpus_labels.py 
+ingredient-parser-nlp==2.7.0   # second extraction method in build_corpus_labels.py 

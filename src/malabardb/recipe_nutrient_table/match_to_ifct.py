@@ -1,51 +1,37 @@
 """
 Step 5: match_to_ifct.py: the recipe side of the recipe->IFCT join, plus the operators
 that decide whether two keys name the same food.
-
-    prepare        DB.recipe_ingredients.name_raw -> recipe_keys.csv
+    prepare        recipe_ingredients_final.csv -> recipe_keys.csv
                    One row per distinct spelling: name_raw, norm_key, n_lines.
     operators      op_exact / op_tokenset / op_subset / rank_partial.
                    build_ingred_review.py IMPORTS these and walks the ladder itself. 
     match          Applies ONE rung to every key and prints the keys/lines
-                   table for that rung. Writes diag_<rung>.csv. 
-                   Exists to measure how much each rung contributes, which is a methods-section number.
+                   table for that rung. Writes diag_<rung>.csv. Measures how much each rung contributes
 
-Run:
     python -m malabardb.recipe_nutrient_table.match_to_ifct prepare
-    python -m malabardb.recipe_nutrient_table.match_to_ifct match --operator subset   # optional
+    python -m malabardb.recipe_nutrient_table.match_to_ifct match --operator subset   # optional"""
 
-Both sides are normalized by the SAME function (malabardb.normalize), which is
-what makes a recipe key and an IFCT key comparable at all. 
-"""
 import argparse
 import csv
-import sqlite3
 from collections import Counter
 from pathlib import Path
 
 from malabardb import paths
 
+'''THE OPERATORS: one number, four thresholds
 
-'''The operators: one number, four thresholds
-
-Every rung is a condition on the overlap coefficient of the two token sets,
+Every rung is a condition on the overlap coefficient of the two token sets: 
       overlap(A, B) = |A & B| / min(|A|, |B|)
 read as "what share of the SHORTER name's words does the other name account for?" Extra words on either side are free.
 
-  rung      condition                          example that reaches this rung
-  exact     overlap = 1, same length, same order   'salt' / 'salt'
-  tokenset  overlap = 1, same length               'green chilli' / 'chilli green'
-  subset    overlap = 1                            'garlic' / 'garlic big clove'
-  partial   overlap >= 0.5, ranked, human picks    'carrot gajjar' / 'carrot orange'
+  rung      condition                             reaches this rung
+  exact     overlap = 1, same length, same order  'salt' / 'salt'
+  tokenset  overlap = 1, same length              'green chilli' / 'chilli green'
+  subset    overlap = 1                           'garlic' / 'garlic big clove'
+  partial   overlap >= 0.5, ranked, human picks   'carrot gajjar' / 'carrot orange'
 
-Relation to Kalra's modified Jaccard J* = |A & B| / |A| (A = recipe phrase):
-identical whenever the recipe phrase is the shorter one, which is the normal
-case. They differ only when the recipe phrase is LONGER, e.g. bilingual lines:
-
-  A = {turmeric, powder, haldi}   B = IFCT G033 {turmeric, powder}
-  J*      = 2/3 = 0.67   (imperfect: 'haldi' is an unexplained recipe word)
-  overlap = 2/2 = 1.0    (perfect containment -> subset rung)'''
-
+KNOWN LIMITATION: overlap is direction-blind, so a single token generic key also matches IFCT foods 
+that merely start with that word ('water' reaches 'Water melon', 'ginger' reaches 'Mango ginger')'''
 
 def tokens(key: str) -> set[str]:
     return set(key.split())
@@ -70,26 +56,17 @@ def op_tokenset(q: str, c: str) -> bool:
 
 
 def op_subset(q: str, c: str) -> bool:
-    """One key's words are fully contained in the other's, either direction.
-    This IS overlap == 1.0; written that way so the ladder reads as thresholds
-    on one number rather than as four unrelated tests."""
+    """One key's words are fully contained in the other's, either direction."""
     return overlap(q, c) == 1.0
 
-
-# Why 0.5: a shared head noun plus one unshared qualifier on each side scores
-# exactly 1/2 ('carrot gajjar' vs 'carrot orange'). Below that, the two names
-# share less than the head noun, and the candidate is noise.
+# Why 0.5: a shared head noun plus one unshared qualifier on each side scores exactly 1/2 ('carrot gajjar' vs 'carrot orange').
 PARTIAL_MIN_SCORE = 0.5
-
 
 def rank_partial(key: str, ifct: list[dict],
                  min_score: float = PARTIAL_MIN_SCORE,
                  top_k: int = 5) -> list[tuple[dict, float]]:
     """Score every IFCT row against `key`, return the best few above min_score.
-
-    Only reached when the three boolean rungs all found nothing, so no
-    candidate here can score 1.0. Full containment was caught a rung up.
-    Ties at the top_k cutoff are kept, never cut mid-tie. """
+    Only reached when the three boolean rungs all found nothing"""
 
     scored = [(c, overlap(key, c["name_key"])) for c in ifct]
     scored = [(c, s) for c, s in scored if s >= min_score]
@@ -102,22 +79,18 @@ def rank_partial(key: str, ifct: list[dict],
 
 OPERATORS = {"exact": op_exact, "tokenset": op_tokenset, "subset": op_subset}
 
-
 # prepare: the recipe side of the join
-def prepare(db: Path, out: Path) -> None:
-    """DB -> recipe_keys.csv, one row per distinct name_raw spelling.
+def prepare(src: Path, out: Path) -> None:
+    """recipe_ingredients_final.csv -> recipe_keys.csv, one row per spelling.
 
-    n_lines is the number of ingredient LINES using that spelling, summed over
-    every recipe. It is the review priority: the key with the most lines is
-    the decision that affects the most data. It is not a recipe count; two
-    lines in one recipe count twice.
-    """
+    n_lines is the number of ingredient LINES using that spelling, summed over every recipe. 
+    It is the review priority: the key with the most lines is the decision that affects the most data."""
     from malabardb.normalize import SpacyNormalizer
 
-    con = sqlite3.connect(db)
-    lines = Counter(name for (name,) in
-                    con.execute("SELECT name_raw FROM recipe_ingredients"))
-    con.close()
+    # read the reviewed names 
+    with src.open(newline="", encoding="utf-8") as fh:
+        lines = Counter(r["name_raw"] for r in csv.DictReader(fh)
+                        if r["name_raw"].strip())
 
     names = sorted(lines)
     keys = SpacyNormalizer().normalize_many(names)   # keys[i] <-> names[i]
@@ -133,13 +106,11 @@ def prepare(db: Path, out: Path) -> None:
 
 
 # match: per-rung diagnostic (not consumed by the pipeline)
-
 def match(queries: Path, index: Path, operator: str, out: Path) -> None:
     """Apply one rung to every key and report keys/lines per bucket.
 
     Output is long format: one row per (key, matched code) pair, so a key that
-    ties 8 codes gives 8 rows and a no_hit key gives 1 row with blank code
-    columns. Every key appears; nothing disappears. """
+    ties 8 codes gives 8 rows and a no_hit key gives 1 row with blank code columns."""
     
     op = OPERATORS[operator]
 
@@ -161,6 +132,10 @@ def match(queries: Path, index: Path, operator: str, out: Path) -> None:
             rows.append({"norm_key": key, "n_lines": n_lines, "bucket": bucket,
                          "n_codes": len(codes),
                          "ifct_code": c["code"], "ifct_name": c["name"]})
+
+    if not rows:
+        print(f"operator {operator}: no keys to score")
+        return
 
     out.parent.mkdir(parents=True, exist_ok=True)
     with out.open("w", newline="", encoding="utf-8") as fh:
@@ -187,7 +162,7 @@ def main() -> None:
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     p = sub.add_parser("prepare")
-    p.add_argument("--db", type=Path, default=paths.MALABARDB)
+    p.add_argument("--src", type=Path, default=paths.RECIPE_INGREDIENTS_FINAL)
     p.add_argument("--out", type=Path, default=paths.RECIPE_KEYS)
 
     m = sub.add_parser("match", help="per-rung diagnostic; not a pipeline stage")
@@ -198,7 +173,7 @@ def main() -> None:
 
     a = ap.parse_args()
     if a.cmd == "prepare":
-        prepare(a.db, a.out)
+        prepare(a.src, a.out)
     else:
         match(a.queries, a.index, a.operator,
               a.out or paths.PROCESSED / f"diag_{a.operator}.csv")

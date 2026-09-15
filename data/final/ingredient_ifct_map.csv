@@ -1,5 +1,5 @@
 norm_key,generic_name,n_lines,chosen_ifct_code,hierarchical,rank_found,fallback_code,fallback_source,reviewer_notes
-salt,Salt,135,,,absent,LOC001,LOCAL,gather from USDA
+salt,Salt,135,,,absent,,,gather from USDA
 curry leaves,Curry leaves,113,G010,N,1,,,
 turmeric powder haldi,Turmeric powder (Haldi),82,G033,N,1,,,
 fresh coconut,Fresh coconut,81,H007,N,1,,,
@@ -14,7 +14,7 @@ dry red chilli,Dry Red Chillies,41,G022,N,1,,,
 red chilli powder,Red Chilli powder,37,G022,N,1,,,"G022 is the whole/raw chilli entry, not a powder-specific row"
 sunflower oil,Sunflower Oil,30,T012,N,1,,,
 tomato,Tomato,29,D075,Y,2,,,default to hybrid
-water,Water,29,,,absent,LOC002,LOCAL,Zero macro count (USDA?)
+water,Water,29,,,absent,,,Zero macro count (USDA?)
 coconut milk,Coconut milk,23,,,absent,,,gather from USDA
 black pepper powder,Black pepper powder,21,G031,N,1,,,Whole peppercorn is not powder-specific; flag for future conisderation
 ghee,Ghee,18,T013,N,1,,,

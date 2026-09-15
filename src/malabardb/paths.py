@@ -67,5 +67,5 @@ FALLBACK_MAP = FINAL / "fallback_map.csv"
 
 def ensure_dirs() -> None:
     '''Create output directories. Safe to call repeatedly.'''
-    for d in (INTERIM, PROCESSED, REVIEW, MODEL_V0A, FIGURES):
+    for d in (INTERIM, PROCESSED, REVIEW, FINAL, MODEL_V0A, FIGURES):
         d.mkdir(parents=True, exist_ok=True)

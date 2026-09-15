@@ -1731,8 +1731,8 @@ recipe_id,line_no,raw_line,qty,unit,name_raw,state,dry_fresh,parse_status
 145,7,1 tablespoon Sunflower Oil,1,tablespoon,Sunflower Oil,,,auto
 145,8,Salt - to taste,nan,,Salt,,,reviewed
 11,7,1 tsp active dry yeast - + 1/2 cup lukewarm water,1,teaspoon,active dry yeast,,Dry,reviewed
-11,8,1 tsp active dry yeast - + 1/2 cup lukewarm water,1/2,cup,lukewarm water,,,reviewed
+11,8,1 tsp active dry yeast - + 1/2 cup lukewarm water,2-Jan,cup,lukewarm water,,,reviewed
 66,7,1 teaspoon Active dry yeast -  + 1/2 cup of luke warm water,1,teaspoon,Active dry yeast,,Dry,reviewed
-66,8,1 teaspoon Active dry yeast -  + 1/2 cup of luke warm water,1/2,cup,luke warm water,,,reviewed
+66,8,1 teaspoon Active dry yeast -  + 1/2 cup of luke warm water,2-Jan,cup,luke warm water,,,reviewed
 101,10,salt - 1 sprig curry leaves,,,salt,,,reviewed
 101,11,salt - 1 sprig curry leaves,1,sprig,curry leaves,,,reviewed

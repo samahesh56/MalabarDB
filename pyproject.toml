@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "malabardb"
 version = "0.1.0"
 description = "Ingredient embeddings and nutrition estimation for Kerala cuisine"
-requires-python = ">=3.10,<3.15"
+requires-python = ">=3.10,<3.14"
 dynamic = ["dependencies"]
 
 # Dependencies are read FROM requirements.txt rather than duplicated here.
@@ -14,6 +14,12 @@ dynamic = ["dependencies"]
 # keeps its version-rationale comments (setuptools ignores '#' lines).
 [tool.setuptools.dynamic]
 dependencies = { file = ["requirements.txt"] }
+
+# BUG FIX FOR GENSIM ERROR:
+# run 'pip install -e ".[embeddings,viz]"' for specific dependencies 
+[project.optional-dependencies]
+embeddings = ["gensim>=4.4,<5.0", "scipy>=1.10"]
+viz = ["scikit-learn>=1.3", "matplotlib>=3.7"]
 
 # src/ layout: the importable package is `malabardb`, and src/ is only the
 # directory placed on sys.path. This is why there is no src/__init__.py.

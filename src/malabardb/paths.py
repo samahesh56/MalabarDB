@@ -21,6 +21,8 @@ FINAL = DATA / "final"
 IFCT_INDEX = RAW / "IFCT_index.csv"
 RECIPES = RAW / "IndianFoodDatasetCSV.csv"
 LOCAL_NUTRIENTS = RAW / "local_nutrients.csv"
+FALLBACK_MAP = RAW / "fallback_map.csv"
+MANUAL_FIXES = RAW / "manual_fixes.csv"
 
 # --- models ---
 MODELS    = ROOT / "models"
@@ -52,7 +54,6 @@ REVIEW_QUEUE_PARSING = REVIEW / 'review_queue_parsing.csv'
 REVIEW_QUEUE_IFCT_AMBIGUOUS = REVIEW / "review_queue_ifct_ambiguous.csv"
 REVIEW_QUEUE_IFCT_UNMATCHED = REVIEW / "review_queue_ifct_unmatched.csv"
 REVIEW_QUEUE_INGREDIENTS = REVIEW / "review_queue_ingredients.csv"
-MANUAL_FIXES = REVIEW / "manual_fixes.csv"
 
 # --- final --------------------------------------------------------------
 INGREDIENTS = FINAL / "ingredients.csv"

@@ -11,15 +11,8 @@ data/final/malabardb.db
 /src/malabardb/recipe_nutrient_table/__pycache__
 *.pyc
 src/malabardb/recipe_nutrient_table/__pycache__/merge_corrections.cpython-312.pyc
-/src/malabardb/recipe_nutrient_table/__pycache__
-/src/malabardb/recipe_nutrient_table/__pycache__
-/src/malabardb/recipe_nutrient_table/__pycache__
-/src/malabardb/recipe_nutrient_table/__pycache__
 /data/old_final
-/src/malabardb/recipe_nutrient_table/__pycache__
 /data/old_final
-/src/malabardb/recipe_nutrient_table/__pycache__
-/src/malabardb/recipe_nutrient_table/__pycache__
 .vscode/settings.json
-/src/malabardb/recipe_nutrient_table/__pycache__
-/src/malabardb/recipe_nutrient_table/__pycache__
+__pycache__/
+

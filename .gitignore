@@ -8,7 +8,10 @@ reports/figures/v0a_pca.png
 /src/malabardb/embeddings/__pycache__
 /src/malabardb/ingred_vocab/__pycache__
 data/final/malabardb.db
-/data/final
 /src/malabardb/recipe_nutrient_table/__pycache__
 *.pyc
 src/malabardb/recipe_nutrient_table/__pycache__/merge_corrections.cpython-312.pyc
+/data/old_final
+/data/old_final
+.vscode/settings.json
+__pycache__/

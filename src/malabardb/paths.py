@@ -20,6 +20,9 @@ FINAL = DATA / "final"
 # --- raw inputs ---------------------------------------------------------
 IFCT_INDEX = RAW / "IFCT_index.csv"
 RECIPES = RAW / "IndianFoodDatasetCSV.csv"
+LOCAL_NUTRIENTS = RAW / "local_nutrients.csv"
+FALLBACK_MAP = RAW / "fallback_map.csv"
+MANUAL_FIXES = RAW / "manual_fixes.csv"
 
 # --- models ---
 MODELS    = ROOT / "models"
@@ -58,9 +61,11 @@ RECIPES_TABLE = FINAL / "recipes.csv"
 RECIPE_INGREDIENTS_FINAL = FINAL / "recipe_ingredients_final.csv"
 MALABARDB = FINAL / "malabardb.db"
 IFCT_NUTRIENTS = FINAL / "ifct_nutrients.csv"
+INGREDIENT_IFCT_MAP = FINAL / "ingredient_ifct_map.csv"
+FALLBACK_MAP = FINAL / "fallback_map.csv"
 
 
 def ensure_dirs() -> None:
     '''Create output directories. Safe to call repeatedly.'''
-    for d in (INTERIM, PROCESSED, REVIEW, MODEL_V0A, FIGURES):
+    for d in (INTERIM, PROCESSED, REVIEW, FINAL, MODEL_V0A, FIGURES):
         d.mkdir(parents=True, exist_ok=True)

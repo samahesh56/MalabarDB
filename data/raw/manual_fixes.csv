@@ -1,0 +1,14 @@
+recipe_id,line_no,action,qty,unit,name,dry_fresh,note
+71,8,set,1,sprig,Curry leaves,,"source reads ""1 cast Curry leaves""; both extractors accepted ""cast"" as the name, so no flag fired"
+98,11,set,2,sprig,Curry leaves,,"source reads ""2 nuggets curry leaves""; unflagged for the same reason"
+98,12,set,1,cup,Small onion (Sambar),,"source reads ""1 cup small onion sambar ones"""
+3,7,set,2,tsp,Cumin seeds,,"source reads ""1/2 2 tsp cumin seeds"": two quantities, the 1/2 belongs to the preceding line; taking the qty adjacent to the unit"
+16,2,drop,,,,,"source line is the instruction fragment ""peel"", not an ingredient"
+125,9,drop,,,,,"source line is the instruction fragment ""tighten it"", not an ingredient"
+101,7,drop,,,,,"orphaned modifier ""as per taste"" left behind by the misplaced comma in line 6"
+11,4,split,1,tsp,active dry yeast,Dry,"source packs two ingredients into one line: ""1 tsp active dry yeast - + 1/2 cup lukewarm water"""
+11,4,split,2-Jan,cup,lukewarm water,,
+66,4,split,1,teaspoon,Active dry yeast,Dry,same two-ingredient packing as recipe 11
+66,4,split,2-Jan,cup,luke warm water,,
+101,6,split,,,salt,,"comma misplaced in source: ""salt - 1 sprig curry leaves"" is two ingredients"
+101,6,split,1,sprig,curry leaves,,

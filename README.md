@@ -1,182 +1,157 @@
-# MalabarDB - Ingredient Embeddings for Kerala Cuisine
+# MalabarDB - Recipe to Nutrition for Kerala Cuisine
 
-Computational gastronomy for Kerala / Malabar food: nutrition estimation and
-ingredient substitution. This repository holds **v0a**, the first model in the
-substitution track: a naive skip-gram trained on Kerala recipe ingredient lists.
+MalabarDB maps Kerala recipes to the Indian Food Composition Tables (IFCT 2017)
+so that each ingredient in each recipe carries a per-100 g
+nutritional profile. This is the foundation for
+per-serving nutrition estimation and, later, for nutrient-aware ingredient
+substitution. NOTE: Gram normalization is incomplete and required for substitution. 
 
-v0a exists to establish a baseline and demonstrate its limitation. A skip-gram
-trained on ingredient lists learns which ingredients appear *together*
-(complements), not which ingredients *replace* one another (substitutes). Nearest
-neighbour in the embedding space is therefore a good "what pairs with this" model
-and a poor "what can I swap this for" model. Making that failure visible and
-measurable on a Kerala corpus is the point of v0a, and the starting point for the
-fixes that follow.
+The problem is a language one, solved using NLP methods. Recipe text says `2 sprigs curry leaves` or
+`1/2 tsp turmeric powder haldi`; IFCT says `Curry leaves` (G010) or
+`Turmeric powder` (G033). Getting from one to the other means parsing free text
+into quantity, unit and name, normalizing the name, and matching it to the
+right IFCT row. No single tool does this reliably, so the pipeline runs two
+independent methods at each step and sends only their disagreements to a human.
+That keeps the manual work small and the machine's decisions auditable.
 
 ---
 
 ## Setup
 
-Requires Python 3.12 or 3.13 (gensim has no prebuilt wheel for 3.14 yet).
+**Requires Python 3.12** and **GNU Make 4.3 or newer**. Everything else is
+installed for you.
 
-```bash
-git clone https://github.com/samahesh56/MalabarDB.git
-cd MalabarDB
+Python 3.13 also works. 3.14 does not - several dependencies have no
+prebuilt wheels for it yet.
 
-python -m venv .venv
-# Windows:        .venv\Scripts\activate
-# macOS / Linux:  source .venv/bin/activate
+### Installing Make on Windows
 
-pip install -e .
-python -m spacy download en_core_web_sm
+Open VS Code as administrator (so its terminal runs as administrator), then:
+
+```powershell
+choco install make
 ```
 
-`pip install -e .` installs the dependencies from `requirements.txt` **and** puts
-`src/` on the import path, which is what makes `python -m malabardb....` work from
-any directory.
-### Data files
+`winget install -e --id ezwinports.make` also works. Check it is installed correclly by running `make --version`. 
+On macOS, `brew install make` installs it as `gmake`; use that in place of `make` below.
 
-Two inputs are required in `data/raw/`:
+### Build
 
-| File | Source |
-| --- | --- |
-| `IndianFoodDatasetXLS.xlsx` | [6000+ Indian Food Recipes Dataset](https://www.kaggle.com/datasets/kanishk307/6000-indian-food-recipes-dataset) (Kaggle) |
-| `IFCT_index.csv` | Indian Food Composition Tables 2017, National Institute of Nutrition |
+```bash
+git clone -b main https://github.com/samahesh56/MalabarDB.git
+cd MalabarDB
+make db
+```
 
+`make db` creates a virtual environment, installs dependencies, downloads the
+spaCy model, and runs every pipeline stage. The result is
+`data/final/malabardb.db`. `make help` lists the other targets.
+
+### Changing the Python version
+
+If `python` on your machine is not 3.12, the build stops with a message saying
+so. Open the `Makefile` and edit the `BOOTSTRAP` line near the top:
+
+```make
+BOOTSTRAP ?= py -3.12        # Windows
+BOOTSTRAP ?= python3.12      # macOS / Linux
+```
 ---
 
 ## Pipeline
 
+Two independent tracks: recipe text and the IFCT reference. 
+Make runs them in the right order and rebuilds only what has changed.
+
 ```
-extract_names.py      recipe line   ->  candidate ingredient name
-normalize_vocab.py    candidate     ->  controlled vocabulary (lemmatized, deduped)
-  └─ --ifct           IFCT names    ->  normalized IFCT keys
-build_corpus.py       vocabulary    ->  training corpus (one recipe per line)
-train.py              corpus        ->  skip-gram vectors
+data/raw/IndianFoodDatasetCSV.csv           data/raw/IFCT_index.csv
+              |                                        |
+     build_recipe_tables.py                   build_ifct_nutrients.py
+              |                                        |
+     review_queue_parsing.py   [human]                 |
+              |                                        |
+     merge_corrections.py                              |
+              |                                        |
+     match_to_ifct.py  ------------>  normalize.py  <--+
+              |                                        |
+     build_ingred_review.py    [human]                 |
+              |                                        |
+     ingredient_ifct_map.py                            |
+              |                                        |
+     build_db.py   <-  the only database writer, runs last
 ```
 
-`normalize_vocab.py` runs in two modes: the **same** normalizer produces both the recipe vocabulary
-and the IFCT keys (to match recipe ingredents and IFCT terms). A vocabulary key and an IFCT-name key are therefore comparable
-by construction. 
+| Script | Input | Output | Does |
+| --- | --- | --- | --- |
+| `build_recipe_tables.py` | raw Kaggle CSV | `recipes.csv`, `recipe_ingredients.csv` | Keeps `Cuisine == "Kerala Recipes"`, drops untranslated rows, splits each recipe's ingredient text into one row per line. Assigns `(recipe_id, line_no)`, the key everything downstream joins on. |
+| `review_queue_parsing.py` | `recipe_ingredients.csv` | `full_corpus_labels.csv`, `review_queue_parsing.csv` | Parses every line into quantity, unit, name and state using two extractors: a regex tuned to this corpus and the `ingredient-parser` library. Any line where they disagree is written to the review queue. |
+| `merge_corrections.py` | labels + reviewed queue + `manual_fixes.csv` | `recipe_ingredients_final.csv` | Overlays human corrections on the machine labels, canonicalizes units, and stamps each row `auto` or `reviewed`. |
+| `build_ifct_nutrients.py` | `IFCT_index.csv` | `ifct_nutrients.csv` | Projects IFCT 2017 into a per-100 g nutrient table: energy, protein, fat, carbohydrate, fibre. Converts kJ to kcal; derives energy for the 14 rows IFCT publishes without it. |
+| `normalize.py` | any food name | canonical key | Lemmatizes and strips a name to a comparison key so `curry leaves` and `Curry leaves` are equal. The same normalizer runs on both recipe names and IFCT names, so keys from either side are comparable by construction. |
+| `match_to_ifct.py` | `recipe_ingredients_final.csv` | `recipe_keys.csv` | Collects the distinct ingredient names and their keys, with line counts as review priority. |
+| `build_ingred_review.py` | `recipe_keys.csv`, `ifct_normalized.csv` | `review_queue_ingredients.csv` | Matches each key to IFCT by a ladder of progressively looser string-overlap rules. Unambiguous matches are auto-accepted; the rest go to the review queue with ranked candidates. |
+| `ingredient_ifct_map.py` | reviewed queue + `fallback_map.csv` | `ingredient_ifct_map.csv` | Freezes the human decisions into the committed key-to-IFCT mapping. |
+| `build_db.py` | all final CSVs | `malabardb.db` | Loads the tables into SQLite with foreign keys and indexes. |
 
-Run from anywhere, in order:
+### Human Review
+
+Both review queues are committed in their reviewed state, so a fresh clone
+builds with no input from you. You only need them if you change something
+upstream and lines get re-flagged, or if you want to revisit a decision:
 
 ```bash
-python -m malabardb.ingred_vocab.extract_names          # -> data/interim/extracted_names.json
-python -m malabardb.ingred_vocab.normalize_vocab        # -> data/processed/vocabulary_{spacy,rules}.json
-python -m malabardb.ingred_vocab.normalize_vocab --ifct # -> data/processed/ifct_normalized.csv
-python -m malabardb.embeddings.build_corpus             # -> data/processed/v0a_kerala_{spacy,rules}.txt
-python -m malabardb.embeddings.train                    # -> models/v0a_ingredient_sg/vectors.kv
+make parse-queue     # regenerate the parsing queue and stop
+make ingred-queue    # regenerate the ingredient queue and stop
+make check           # count rows still awaiting a decision
 ```
 
-The `--ifct` step belongs to Task A and does not feed `build_corpus`; it produces
-the normalized nutrient-table keys the linkage step consumes.
-
-Optional:
-
-```bash
-python -m malabardb.ingred_vocab.audit   # corpus sanity checks (WIP)
-python harness.visualize             # PCA plot -> reports/figures/v0a_pca.png
-```
+Edit the queue, then `make db` again; only the affected stages rerun.
+Corrections already in a queue are carried forward when it regenerates. A
+blank cell always means "not reviewed", never "clear this field". 
 
 ---
 
-## Phase 1: Normalized recipe table
-
-Where v0a's ingredient vocabulary comes from, and Task A's foundation: turning raw
-recipe text into a table where every ingredient in every recipe has a known
-quantity, unit, name, and (where available) preparation state.
-
-No single tool gets this right alone, so two independent extraction methods run
-on every ingredient line: a **regex extractor** tuned to this dataset's specific
-quantity/unit formats, and the general-purpose **`ingredient-parser`** library.
-Wherever the two disagree, the row is flagged for a person to check. That
-disagreement is the review signal, instead of trusting either method blindly or
-reading all lines by hand.
-
-```
-build_recipe_tables.py   raw Kaggle data        ->  recipes table (final)
-                                                      recipe_ingredients, structure only
-                                                      (recipe_id, line_no, raw_line -- no parsing yet)
-
-build_corpus_labels.py   recipe_ingredients     ->  candidate labels + disagreement flags
-                                                      review queues (flagged rows only)
-
-  [ manual review: fill in the flagged rows ]
-
-merge_corrections.py     labels + corrections   ->  recipe_ingredients table (final)
-
-build_db.py              final tables           ->  malabardb.db
-```
-
-Run from anywhere, in order:
-
-```bash
-python -m malabardb.recipe_nutrient_table.build_recipe_tables
-python -m malabardb.recipe_nutrient_table.build_corpus_labels
-# review the flagged rows in the review queue files here
-python -m malabardb.recipe_nutrient_table.merge_corrections
-python -m malabardb.recipe_nutrient_table.build_db
-```
-
-### What's in `malabardb.recipe_nutrient_table`
-
-| File | Does |
-| --- | --- |
-| `build_recipe_tables.py` | Filters the raw dataset to Kerala recipes, splits each recipe's ingredient text into one row per ingredient line. |
-| `build_corpus_labels.py` | Runs both extraction methods, flags disagreements, writes the review queues. |
-| `merge_corrections.py` | Applies manual corrections on top of the automatic extraction to produce the final table. |
-| `build_db.py` | Loads the final CSVs into `malabardb.db`. |
-
 ## Data
 
-- **Source:** *6000+ Indian Food Recipes Dataset* (Kaggle).
-- **Columns used:** `TranslatedRecipeName`, `TranslatedIngredients`,
-  `TranslatedInstructions`, `Servings`, `Cuisine`.
-- **Filter for v0a:** `Cuisine == "Kerala Recipes"`, giving 163 recipes with
-  non-null ingredients. 145 survive preprocessing.
-- **Nutrient reference:** IFCT 2017, 542 food rows, normalized to 512 distinct
-  keys. The four collisions are two variety spreads (brinjal, green chilli) and
-  two genuine name clashes IFCT itself contains (cat fish and crab each appear as
-  both a marine and a freshwater entry).
+| File | Source |
+| --- | --- |
+| `data/raw/IndianFoodDatasetCSV.csv` | [6000+ Indian Food Recipes Dataset](https://www.kaggle.com/datasets/kanishk307/6000-indian-food-recipes-dataset) (Kaggle) |
+| `data/raw/IFCT_index.csv` | Indian Food Composition Tables 2017, National Institute of Nutrition, ICMR |
 
-The corpus is small by design. It is enough to demonstrate the complements-vs-
-substitutes phenomenon, which lives on the high-frequency ingredients, but not to
-produce high-quality vectors across the full ingredient vocabulary.
+6,871 recipes in the source; 163 labelled Kerala; **145** after dropping rows
+with untranslated ingredients. Those give **1,737** ingredient lines and
+**227** distinct ingredient keys. IFCT contributes **544** nutrient rows.
 
+The CSVs in `data/final/` and `data/review/` are committed because they hold
+hand-reviewed decisions that re-running the code cannot reproduce. 
 ---
 
 ## Output
 
-`train.py` writes:
+`data/final/malabardb.db`, five tables:
 
-- `models/v0a_ingredient_sg/vectors.kv` — the trained vectors (gensim KeyedVectors).
-- `models/v0a_ingredient_sg/config.json` — training settings and corpus stats.
+| Table | Rows | Holds |
+| --- | --- | --- |
+| `recipes` | 145 | dish name, servings, instructions |
+| `recipe_ingredients` | 1,737 | one row per ingredient line: quantity, unit, name, `ingredient_id` |
+| `ingredients` | 227 | each distinct ingredient, its IFCT code, and how it was linked |
+| `ifct_nutrients` | 544 | per-100 g energy and macronutrients from IFCT |
+| `unit_conversions` | 0 | grams per unit per ingredient - next phase |
 
-A quick look at the result:
-
-```python
-from gensim.models import KeyedVectors
-from malabardb import paths
-
-kv = KeyedVectors.load(str(paths.VECTORS))
-kv.most_similar("coconut_oil", topn=5)
-# -> pearl_onion, cumin_seed, turmeric_powder, green_chilli, curry_leaves
-```
-
-Those neighbours are the tempering set: ingredients that go into hot oil together at
-the start of a Kerala dish. They are what coconut oil is *used with*, not what you
-would *replace* it with.
+The next stage - unit to grams, then per-serving aggregation - is what turns
+these per-100 g values into a nutrition estimate for the whole dish.
 
 ---
 
 ## References
-ss
+
+- Batra, D., et al. (2020). *RecipeDB: A Resource for Exploring Recipes.* -
+  database model and per-line ingredient schema.
+- Kalra, J., Batra, D., Diwan, N., Bagler, G. (2020). *Nutritional Profile
+  Estimation in Cooking Recipes.* ICDEW. - linkage method.
+- Eftimov, T., Korošec, P., Koroušić Seljak, B. (2017). *StandFood.* -
+  semi-automatic matching design.
 - Pellegrini, C., Özsoy, E., Wintergerst, M., Groh, G. (2021). *Exploiting Food
-  Embeddings for Ingredient Substitution.* HEALTHINF.
-- Lawo, D., Böhm, L., Esau, M. (2020). *Supporting plant-based diets with
-  ingredient2vec.*
-- Fatemi, B., Duval, Q., Girdhar, R., Drozdzal, M., Romero-Soriano, A. (2023).
-  *Learning to substitute ingredients in recipes (GISMo).* arXiv:2302.07960.
-- Shirai, S. S., et al. (2021). *Identifying Ingredient Substitutions Using a
-  Knowledge Graph of Food (DIISH).* Frontiers in Artificial Intelligence.
-- Indian Food Composition Tables (IFCT) 2017, National Institute of Nutrition, ICMR.
+  Embeddings for Ingredient Substitution.* HEALTHINF. - normalizer; Task B.
+- Indian Food Composition Tables (IFCT) 2017, National Institute of Nutrition,
+  ICMR.

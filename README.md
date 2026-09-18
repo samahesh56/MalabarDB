@@ -24,6 +24,17 @@ installed for you.
 Python 3.13 also works. 3.14 does not - several dependencies have no
 prebuilt wheels for it yet.
 
+### Changing the Python version
+
+If `python` on your machine is not 3.12, the build stops with a message saying
+so. Open the `Makefile` and edit the `BOOTSTRAP` line near the top:
+
+```make
+BOOTSTRAP ?= py -3.12        # Windows
+BOOTSTRAP ?= python3.12      # macOS / Linux
+```
+---
+
 ### Installing Make on Windows
 
 Open VS Code as administrator (so its terminal runs as administrator), then:
@@ -44,55 +55,44 @@ make db
 ```
 
 `make db` creates a virtual environment, installs dependencies, downloads the
-spaCy model, and runs every pipeline stage. The result is
-`data/final/malabardb.db`. `make help` lists the other targets.
-
-### Changing the Python version
-
-If `python` on your machine is not 3.12, the build stops with a message saying
-so. Open the `Makefile` and edit the `BOOTSTRAP` line near the top:
-
-```make
-BOOTSTRAP ?= py -3.12        # Windows
-BOOTSTRAP ?= python3.12      # macOS / Linux
-```
----
+spaCy model, and runs every pipeline stage. The result is `data/final/malabardb.db`. 
 
 ## Pipeline
-
-Two independent tracks: recipe text and the IFCT reference. 
-Make runs them in the right order and rebuilds only what has changed.
-
+ 
 ```
-data/raw/IndianFoodDatasetCSV.csv           data/raw/IFCT_index.csv
-              |                                        |
-     build_recipe_tables.py                   build_ifct_nutrients.py
-              |                                        |
-     review_queue_parsing.py   [human]                 |
-              |                                        |
-     merge_corrections.py                              |
-              |                                        |
-     match_to_ifct.py  ------------>  normalize.py  <--+
-              |                                        |
-     build_ingred_review.py    [human]                 |
-              |                                        |
-     ingredient_ifct_map.py                            |
-              |                                        |
-     build_db.py   <-  the only database writer, runs last
+data/raw/IndianFoodDatasetCSV.csv                   data/raw/IFCT_index.csv
+              |                                              |
+   build_recipe_tables.py                          build_ifct_nutrients.py
+              |  recipe_ingredients.csv                       |  ifct_nutrients.csv
+              v                                               |
+   review_queue_parsing.py ---> review_queue_parsing.csv  [HUMAN]
+              |  full_corpus_labels.csv                       |
+              v                                               |
+   merge_corrections.py  (+ manual_fixes.csv)                 |
+              |  recipe_ingredients_final.csv                 |
+              v                                               v
+   match_to_ifct.py  ------------------> normalize.py <--------
+              |  recipe_keys.csv                    ifct_normalized.csv
+              v
+   build_ingred_review.py ---> review_queue_ingredients.csv  [HUMAN]
+              |
+              v
+   ingredient_ifct_map.py  (+ fallback_map.csv)
+              |  ingredient_ifct_map.csv
+              v
+   build_db.py  --->  data/final/malabardb.db
 ```
-
-| Script | Input | Output | Does |
-| --- | --- | --- | --- |
-| `build_recipe_tables.py` | raw Kaggle CSV | `recipes.csv`, `recipe_ingredients.csv` | Keeps `Cuisine == "Kerala Recipes"`, drops untranslated rows, splits each recipe's ingredient text into one row per line. Assigns `(recipe_id, line_no)`, the key everything downstream joins on. |
-| `review_queue_parsing.py` | `recipe_ingredients.csv` | `full_corpus_labels.csv`, `review_queue_parsing.csv` | Parses every line into quantity, unit, name and state using two extractors: a regex tuned to this corpus and the `ingredient-parser` library. Any line where they disagree is written to the review queue. |
-| `merge_corrections.py` | labels + reviewed queue + `manual_fixes.csv` | `recipe_ingredients_final.csv` | Overlays human corrections on the machine labels, canonicalizes units, and stamps each row `auto` or `reviewed`. |
-| `build_ifct_nutrients.py` | `IFCT_index.csv` | `ifct_nutrients.csv` | Projects IFCT 2017 into a per-100 g nutrient table: energy, protein, fat, carbohydrate, fibre. Converts kJ to kcal; derives energy for the 14 rows IFCT publishes without it. |
-| `normalize.py` | any food name | canonical key | Lemmatizes and strips a name to a comparison key so `curry leaves` and `Curry leaves` are equal. The same normalizer runs on both recipe names and IFCT names, so keys from either side are comparable by construction. |
-| `match_to_ifct.py` | `recipe_ingredients_final.csv` | `recipe_keys.csv` | Collects the distinct ingredient names and their keys, with line counts as review priority. |
-| `build_ingred_review.py` | `recipe_keys.csv`, `ifct_normalized.csv` | `review_queue_ingredients.csv` | Matches each key to IFCT by a ladder of progressively looser string-overlap rules. Unambiguous matches are auto-accepted; the rest go to the review queue with ranked candidates. |
-| `ingredient_ifct_map.py` | reviewed queue + `fallback_map.csv` | `ingredient_ifct_map.csv` | Freezes the human decisions into the committed key-to-IFCT mapping. |
-| `build_db.py` | all final CSVs | `malabardb.db` | Loads the tables into SQLite with foreign keys and indexes. |
-
+ 
+Two independent tracks. The left one turns recipe text into a clean table of
+parsed ingredient lines; the right one turns IFCT 2017 into a per-100 g
+nutrient table. They meet at `normalize.py`, which reduces a food name to a
+comparison key. The same normalizer runs on both sides, so keys from either
+are comparable by construction.
+ 
+Matching then walks a ladder of progressively looser string-overlap rules and
+records which rung each ingredient reached, so every linkage decision carries
+its own provenance. 
+ 
 ### Human Review
 
 Both review queues are committed in their reviewed state, so a fresh clone

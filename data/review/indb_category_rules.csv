@@ -1,0 +1,46 @@
+unit,food_group,grams_per_unit,indb_line,note
+teaspoon,A,2.5,173,cereals
+teaspoon,B,2,168,pulses (dry teaspoon)
+teaspoon,C,0.5,193,leafy vegetables
+teaspoon,D,2,170,other vegetables incl. chillies
+teaspoon,E,5,200-201,fruits (INDB comment: orange juice)
+teaspoon,G,2,168,condiments and spices (dry teaspoon)
+teaspoon,H,2,168,nuts and oilseeds (dry teaspoon)
+teaspoon,I,4,181,sugars
+teaspoon,K,5,200,miscellaneous (INDB comment: water)
+teaspoon,L,5,187,milk and milk products
+teaspoon,M,5,174,egg
+teaspoon,T,4,177; 195,oils and fats
+tablespoon,A,7,175,cereals
+tablespoon,B,7,169,pulses (dry tablespoon)
+tablespoon,C,5,194,leafy vegetables
+tablespoon,D,7,169,other vegetables (dry tablespoon)
+tablespoon,E,15,202-203,fruits (INDB comment: orange juice)
+tablespoon,F,40,171,roots and tubers (INDB comment: potatoes)
+tablespoon,G,7,169,condiments and spices (dry tablespoon)
+tablespoon,H,7,169,nuts and oilseeds (dry tablespoon)
+tablespoon,I,12,182,sugars
+tablespoon,K,15,202,miscellaneous (INDB comment: water)
+tablespoon,L,15,188,milk and milk products
+tablespoon,T,13.5,178,oils and fats
+sprig,A,2,192,
+sprig,C,2,192,
+sprig,G,2,192,
+pinch,*,0.125,210,any group; INDB sets the line total to 0.125 g regardless of count
+cup,K,240,197,liquid cup (INDB comment: cups liquid)
+cup,L,240,189; 206,milk and milk products
+cup,T,240,197,liquid cup (oils)
+milliliter,E,1,199,density 1 g/ml
+milliliter,G,1,172,density 1 g/ml
+milliliter,H,1,172,density 1 g/ml
+milliliter,I,1,172,density 1 g/ml
+milliliter,K,1,198,density 1 g/ml (water)
+milliliter,L,1,190,density 1 g/ml
+milliliter,T,1,196,density 1 g/ml (oils)
+liter,E,1000,199,INDB ml rule x 1000
+liter,G,1000,172,INDB ml rule x 1000
+liter,H,1000,172,INDB ml rule x 1000
+liter,I,1000,172,INDB ml rule x 1000
+liter,K,1000,198,INDB ml rule x 1000
+liter,L,1000,190,INDB ml rule x 1000
+liter,T,1000,196,INDB ml rule x 1000

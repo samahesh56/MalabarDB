@@ -15,3 +15,4 @@ src/malabardb/recipe_nutrient_table/__pycache__/merge_corrections.cpython-312.py
 /data/old_final
 .vscode/settings.json
 __pycache__/
+src/malabardb/recipe_nutrient_table/build_annotation_sheet.py

@@ -1,12 +1,12 @@
 norm_key,generic_name,n_lines,chosen_ifct_code,hierarchical,rank_found,fallback_code,fallback_source,reviewer_notes
-salt,Salt,135,,,absent,,,gather from USDA
+salt,Salt,135,,,absent,LOC001,LOCAL,gather from USDA
 curry leaves,Curry leaves,113,G010,N,1,,,
 turmeric powder haldi,Turmeric powder (Haldi),82,G033,N,1,,,
 fresh coconut,Fresh coconut,81,H007,N,1,,,
 coconut oil,Coconut Oil,72,T001,N,1,,,
 green chilli,Green Chillies,70,G008,N,8,,,
 mustard seed,Mustard seeds,60,H013,N,1,,,
-garlic,Garlic,52,G013,N,3,,,
+garlic,Garlic,52,G012,N,2,,,
 onion,Onion,48,G017,N,2,,,"Check normalization for ""small"" onion"
 ginger,Ginger,42,G014,N,1,,,
 cumin seed jeera,Cumin seeds (Jeera),41,G025,N,1,,,
@@ -14,13 +14,13 @@ dry red chilli,Dry Red Chillies,41,G022,N,1,,,
 red chilli powder,Red Chilli powder,37,G022,N,1,,,"G022 is the whole/raw chilli entry, not a powder-specific row"
 sunflower oil,Sunflower Oil,30,T012,N,1,,,
 tomato,Tomato,29,D075,Y,2,,,default to hybrid
-water,Water,29,,,absent,,,Zero macro count (USDA?)
+water,Water,29,,,absent,LOC002,LOCAL,Zero macro count (USDA?)
 coconut milk,Coconut milk,23,,,absent,,,gather from USDA
 black pepper powder,Black pepper powder,21,G031,N,1,,,Whole peppercorn is not powder-specific; flag for future conisderation
 ghee,Ghee,18,T013,N,1,,,
 pearl onion sambar onion,Pearl onions (Sambar Onions),17,G018,N,3,,,pearl/sambar liekly refers to small onions 
 jaggery,Jaggery,16,I001,N,1,,,
-shallot,Shallots,16,,,absent,,,gather from USDA/use small onion
+shallot,Shallots,16,G018,N,miss,,,small onion = shallot
 sugar,Sugar,16,I001,N,miss,,,could substitute for jaggery
 cinnamon stick dalchini,Cinnamon Stick (Dalchini),15,,,absent,,,gather from USDA
 coriander dhania leaves,Coriander (Dhania) Leaves,15,G009,N,1,,,
@@ -70,7 +70,7 @@ whole wheat flour,Whole Wheat Flour,5,A020,N,1,,,
 small onion,small onions,5,G018,N,1,,,
 chana dal bengal gram dal,Chana dal (Bengal Gram Dal),4,B001,N,1,,,
 cumin powder jeera,Cumin powder (Jeera),4,G025,N,1,,,Cumin seed is not in powder form 
-green peas matar,Green peas (Matar),4,B017,Y,miss,,,difficult to distinguish between dry/fresh peaas
+green peas matar,Green peas (Matar),4,D061,N,miss,,,difficult to distinguish between dry/fresh peaas
 kaddu parangikai/ pumpkin,Kaddu (Parangikai/ Pumpkin),4,D066,N,miss,,,failure on language terms 
 methi powder fenugreek powder,Methi Powder (Fenugreek Powder),4,G026,N,2,,,fenugreek seed - not powder
 mutton,Mutton,4,O016,Y,miss,,,"mutton =  sheep in IFCT, default to leg"
@@ -79,14 +79,14 @@ ripe banana,Ripe Bananas,4,E010,Y,2,,,default to poovam
 active dry yeast,Active dry yeast,3,,,absent,,,USDA 
 arhar dal split toor dal,Arhar dal (Split Toor Dal),3,B021,N,miss,,,confirmed via lang column; Arhar Dal is red gram
 bay leaf tej patta,Bay leaf (tej patta),3,,,absent,,,
-cooked rice,Cooked rice,3,A014,N,4,,,cooked=parboiled
+cooked rice,Cooked rice,3,,,absent,,,USDA
 dry ginger powder,Dry ginger powder,3,G014,N,3,,,dry ginger powder is different from raw ginger. USDA
 green moong dal whole,Green Moong Dal (Whole),3,B010,N,1,,,
 jackfruit ripe kathal,Jackfruit Ripe (Kathal),3,,,absent,,,"raw jackfuit in IFCT, different from ripe"
 lukewarm water,Lukewarm Water,3,,,absent,,,USDA
 mango raw,Mango (Raw),3,D057,N,1,,,
 tamarind water,Tamarind Water,3,,,absent,,,tamarind + water
-tapioca root,Tapioca root,3,,,absent,,,tapioca differs from tapioca root
+tapioca root,Tapioca root,3,F015,N,1,,,tapioca differs from tapioca root
 vellai poosanikai ash gourd white pumpkin,Vellai Poosanikai (Ash gourd/White Pumpkin),3,D001,N,1,,,
 yellow moong dal split,Yellow Moong Dal (Split),3,B010,N,miss,,,moong dal = green dal
 coriander powder,coriander powder,3,G024,N,2,,,coriander seed != powder
@@ -134,7 +134,7 @@ ada,Ada,1,,,absent,,,"Poha is similar but nutritionally different, requires fall
 ash gourd,Ash gourd,1,D001,N,1,,,
 baby potato,Baby Potatoes,1,F006,N,3,,,baby = small potato
 bajra flour pearl millet,Bajra Flour (Pearl Millet),1,A003,N,1,,,
-banana stem,Banana Stem,1,,,absent,,,"No ""stem"" nutrition stats "
+banana stem,Banana Stem,1,D064,N,5,,,"No ""stem"" nutrition stats "
 banana flower vazhaipoo,Banana flower (Vazhaipoo),1,D062,N,1,,,
 black eyed bean lobia,Black Eyed Beans (Lobia),1,B006,N,miss,,,black eyed bean = cow
 brown rice,Brown Rice,1,A013,N,1,,,
@@ -150,7 +150,7 @@ chicken masala,Chicken masala,1,,,absent,,,USDA
 chinese potato,Chinese Potato,1,,,absent,,,USDA
 cooking soda,Cooking soda,1,,,absent,,,baking soda? 
 crab,Crabs,1,Q005,Y,miss,,,mud crab is most common in kerala cuisine
-cucumber,Cucumber,1,C002,Y,miss,,,default to long cucumber
+cucumber,Cucumber,1,D043,Y,1,,,default to long cucumber
 dried fig,Dried Figs,1,,,absent,,,dried fig != figs
 egg white,Egg whites,1,M002,N,1,,,
 egg yolk,Egg yolks,1,M003,N,1,,,
@@ -192,7 +192,7 @@ rice ada,Rice ada,1,,,absent,,,rice ada has no IFCT equiv
 rice puttu,Rice puttu,1,,,absent,,,puttu has no IFCT equiv
 saffron strand,Saffron strands,1,,,absent,,,USDA
 sambar powder,Sambar Powder,1,,,absent,,,USDA
-shallot pearl onion,Shallots (pearl onions),1,,,absent,,,could replace with small onion
+shallot pearl onion,Shallots (pearl onions),1,G018,N,3,,,could replace with small onion
 shrimp,Shrimps,1,Q008,Y,miss,,,giant tiger prawn likely found in Kerala 
 squid,Squid,1,R004,Y,1,,,default to black squid
 sweet potato,Sweet Potatoes,1,F013,Y,1,,,default to brown potato
@@ -213,7 +213,7 @@ egg,eggs,1,M001,N,1,,,
 fenugreek seed,fenugreek seeds,1,G026,N,1,,,
 ginger powder,ginger powder,1,,,absent,,,"USDA, fresh ginger != ginger powder (Dry) "
 green coriander,green coriander,1,G009,N,miss,,,
-green pea,green peas,1,B017,N,3,,,dry form default 
+green pea,green peas,1,D061,N,19,,,fresy form default 
 hot masala powder,hot Masala powder,1,,,absent,,,USDA
 luke warm water,luke warm water,1,,,absent,,,USDA
 olive oil,olive oil,1,,,absent,,,USDA

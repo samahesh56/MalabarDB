@@ -1,0 +1,363 @@
+norm_key,code,food_group,ifct_name,kcal_per_100g,unit,has_qty,n_lines,n_recipes,total_qty,example_line,linked,grams_per_unit,source,notes
+salt,LOC001,G,"Salt, common (sodium chloride)",0.0,(none),False,114,106,0.0,Salt - as per your taste,True,1.0,indb_default,Salt to taste: 0.5 tsp. G = spices: 0.5*2 = 1g
+curry leaves,G010,G,Curry leaves,63.6,sprig,True,89,80,125.0,1 sprig Curry leaves,True,2.0,indb_rule,INDB.do line 192
+turmeric powder haldi,G033,G,Turmeric powder,280.6,teaspoon,True,73,69,39.625,1/4 teaspoon Turmeric powder (Haldi),True,2.0,indb_rule,INDB.do line 168
+green chilli,G008,G,"Chillies, green - all varieties",42.3,(count),True,69,68,158.0,4 Green Chillies,True,3.33,indb_units,Units: Green chilies 3 nos 10g. 10/3
+fresh coconut,H007,H,"Coconut, kernel, fresh",408.9,cup,True,65,62,38.583333333333336,1/2 cup Fresh coconut,True,80.0,indb_units,"Units: Coconut meat, raw 1cup 80g (USDA 170169)"
+mustard seed,H013,H,Mustard seeds,509.6,teaspoon,True,59,58,45.25,1/4 teaspoon Mustard seeds,True,2.0,indb_rule,INDB.do line 168
+onion,G017,G,"Onion, big",48.0,(count),True,47,42,68.25,1 Onion,True,60.0,indb_units,"Units: Onion 1 medium 60g; size not extracted, medium assumed"
+garlic,G012,G,"Garlic, small cloves",122.8,clove,True,44,43,210.5,3 cloves garlic,True,0.625,indb_units,Units: Garlic 8 cloves 5g (BFP manual)
+dry red chilli,G022,G,"Chillies, red",236.6,(count),True,40,38,111.0,1 Dry Red Chilli,True,3.33,indb_units,Units: Dry chilies 3 nos 10g
+cumin seed jeera,G025,G,Cumin seeds,304.5,teaspoon,True,39,35,34.75,1/2 teaspoon Cumin seeds (Jeera),True,2.0,indb_rule,INDB.do line 168
+ginger,G014,G,"Ginger, fresh",55.0,inch,True,34,34,35.5,1 inch Ginger,True,12.66,indb_units,Units: Ginger 1inch 12.66g
+coconut oil,T001,T,Coconut oil,900.0,tablespoon,True,28,28,46.0,1 tablespoon Coconut Oil,True,13.5,indb_rule,INDB.do line 178
+tomato,D075,D,"Tomato, ripe, hybrid",18.9,(count),True,28,28,57.5,1 Tomato - finely chopped,True,50.0,indb_units,Units: Tomato 1 medium 50g; medium assumed
+red chilli powder,G022,G,"Chillies, red",236.6,teaspoon,True,27,27,26.0,1 teaspoon red chilli powder,True,2.0,indb_rule,INDB.do line 168
+coconut oil,T001,T,Coconut oil,900.0,teaspoon,True,24,22,30.5,1 teaspoon Coconut Oil,True,4.0,indb_rule,INDB.do line 177; 195
+water,LOC002,K,"Water, drinking",0.0,cup,True,21,19,33.333333333333336,1/3 cup Water,True,240.0,indb_rule,INDB.do line 197
+coconut oil,T001,T,Coconut oil,900.0,(none),False,20,19,0.0,Coconut Oil - for cooking,True,27.0,indb_default,Oil Tempering = 2tbsp x 13.5g = 27g
+black pepper powder,G031,G,"Pepper, black",217.5,teaspoon,True,18,18,16.5,1/4 teaspoon Black pepper powder,True,2.0,indb_rule,INDB.do line 168
+curry leaves,G010,G,Curry leaves,63.6,(count),True,18,18,126.0,8 Curry leaves,True,0.44,indb_units+rule,Units: Curry leaves 4-5 leaves = 1 sprig -> 2g/4.5
+salt,LOC001,G,"Salt, common (sodium chloride)",0.0,teaspoon,True,15,14,10.625,3/4 teaspoon Salt - and some more for cooking the chana dal,True,2.0,indb_rule,INDB.do line 168
+sunflower oil,T012,T,Sunflower oil,900.0,(none),False,15,15,0.0,Sunflower Oil - for cooking,True,27.0,indb_default,Oil Tempering 2tbsp x  13.5g
+cardamom elaichi pod seed,G020,G,"Cardamom, green",255.0,(count),True,13,13,30.0,2 Cardamom (Elaichi) Pods/Seeds,True,0.5,indb_units+rule,Cardamon powder 2nos 0.5tsp -> 0.25tsp x G tsp rule 2g
+shallot,G018,G,"Onion, small",56.6,(count),True,12,11,76.5,4 to 5 Shallots,True,30.0,indb_units,pearl onion = small onion default
+white urad dal split,B003,B,"Black gram, dal",324.1,teaspoon,True,12,12,10.5,1 teaspoon White Urad Dal (Split),True,2.0,indb_rule,INDB.do line 168
+fresh coconut,H007,H,"Coconut, kernel, fresh",408.9,tablespoon,True,11,11,27.0,2 tablespoons Fresh coconut - grated,True,5.0,indb_units," Coconut meat, raw 1cup 80g -> 80/16; overrides H tbsp rule 7g"
+chicken,N002,N,"Chicken, poultry, thigh, skinless",199.8,gram,True,10,10,4050.0,500 Chicken - medium sized pieces,True,1.0,exact,
+ghee,T013,T,Ghee,900.0,tablespoon,True,10,10,17.0,1 tablespoon Ghee,True,13.5,indb_rule,INDB.do line 178
+methi seed fenugreek seed,G026,G,Fenugreek seeds,234.9,teaspoon,True,10,10,7.25,1/4 teaspoon Methi Seeds (Fenugreek Seeds),True,2.0,indb_rule,INDB.do line 168
+mustard,H013,H,Mustard seeds,509.6,teaspoon,True,10,10,5.0,1/2 tsp mustard,True,2.0,indb_rule,INDB.do line 168
+pearl onion sambar onion,G018,G,"Onion, small",56.6,(count),True,10,10,76.0,10 Pearl onions (Sambar Onions) - finely chopped,True,30.0,indb_units,small onion = 30g
+red chilli powder,G022,G,"Chillies, red",236.6,tablespoon,True,10,10,12.5,2 tablespoon Red Chilli powder,True,7.0,indb_rule,INDB.do line 169
+coconut,H007,H,"Coconut, kernel, fresh",408.9,cup,True,9,9,6.25,1 cup coconut - grated,True,80.0,indb_units,"Units: Coconut meat, raw 1cup 80g (USDA 170169)"
+turmeric powder,G033,G,Turmeric powder,280.6,teaspoon,True,9,9,3.25,1/2 teaspoon turmeric powder,True,2.0,indb_rule,INDB.do line 168
+carrot gajjar,F002,F,"Carrot, orange",33.2,(count),True,8,8,15.0,1 Carrot (Gajjar) - finely chopped,True,60.0,indb_units,Units: Carrot 1 medium 60g
+cloves laung,G023,G,Cloves,186.7,clove,True,8,8,28.0,2 Cloves (Laung),True,0.5,indb_units+rule,Units: Cloves 1nos 0.25tsp x G tsp rule 2g
+coriander powder dhania,G024,G,Coriander seeds,268.9,teaspoon,True,8,8,11.75,2-1/2 teaspoons Coriander Powder (Dhania),True,2.0,indb_rule,INDB.do line 168
+jaggery,I001,I,"Jaggery, cane",353.7,cup,True,8,8,6.0,1/2 cup Jaggery,True,200.0,indb_units,Units: Jaggery 1cup 200g
+kashmiri red chilli powder,G022,G,"Chillies, red",236.6,teaspoon,True,8,7,9.25,1 teaspoon Kashmiri Red Chilli Powder,True,2.0,indb_rule,INDB.do line 168
+potato aloo,F006,F,"Potato, brown skin, big",69.8,(count),True,8,8,12.0,1 Potato (Aloo) - finely diced,True,70.0,indb_units,Units: Potato 1 medium 70g (BFP manual)
+sugar,I001,I,"Jaggery, cane",353.7,tablespoon,True,8,8,26.0,2 tbsp sugar,True,12.0,indb_rule,INDB.do line 182
+sunflower oil,T012,T,Sunflower oil,900.0,tablespoon,True,8,8,9.5,1 tablespoon Sunflower Oil,True,13.5,indb_rule,INDB.do line 178
+cardamom powder elaichi,G020,G,"Cardamom, green",255.0,teaspoon,True,7,7,6.5,1/2 teaspoon Cardamom Powder (Elaichi),True,2.0,indb_rule,INDB.do line 168
+cashew nut,H005,H,Cashew nut,582.7,(count),True,7,7,55.5,10 Cashew nuts - halved,True,1.67,indb_units,Units: Cashewnut 1nos 1.67g
+milk,L002,L,"Milk, whole, Cow",72.9,cup,True,7,7,4.75,1-1/2 cups Milk,True,240.0,indb_rule,INDB.do line 189; 206
+pearl onion sambar onion,G018,G,"Onion, small",56.6,cup,True,7,6,5.25,1 cup Pearl onions (Sambar Onions),True,160.0,indb_units,"raw shallot, 160g"
+raw banana,D063,D,"Plantain, green",79.8,(count),True,7,7,13.0,3 Raw Banana - peeled and thinly sliced,True,100.0,indb_units,raw medium banana: 100g
+sunflower oil,T012,T,Sunflower oil,900.0,teaspoon,True,7,7,12.0,2 teaspoons Sunflower Oil,True,4.0,indb_rule,INDB.do line 177; 195
+whole black peppercorn,G031,G,"Pepper, black",217.5,teaspoon,True,7,7,6.0,1 teaspoon Whole Black Peppercorns,True,2.0,indb_rule,INDB.do line 168
+coriander dhania leaves,G009,G,Coriander leaves,31.1,sprig,True,6,6,25.0,2 sprig Coriander (Dhania) Leaves - washed and finely chopped,True,2.0,indb_rule,INDB.do line 192
+coriander dhania seed,G024,G,Coriander seeds,268.9,tablespoon,True,6,6,12.0,2 tablespoons Coriander (Dhania) Seeds,True,5.0,indb_units,Units: Coriander seed 1tbsp 5g (USDA 170922); overrides G tbsp rule 7g
+coriander powder dhania,G024,G,Coriander seeds,268.9,tablespoon,True,6,6,5.25,1 tablespoon Coriander Powder (Dhania),True,7.0,indb_rule,INDB.do line 169
+cumin seed,G025,G,Cumin seeds,304.5,teaspoon,True,6,6,6.5,1/2 2 tsp cumin seeds,True,2.0,indb_rule,INDB.do line 168
+jaggery,I001,I,"Jaggery, cane",353.7,tablespoon,True,6,6,12.5,1 tablespoon Jaggery,True,12.0,indb_rule,INDB.do line 182
+rice,A014,A,"Rice, parboiled, milled",351.6,cup,True,6,5,7.5,1/2 cup Rice - raw,True,160.0,indb_units,Units: Rice 1cup 160g (BFP manual)
+turmeric powder haldi,G033,G,Turmeric powder,280.6,pinch,True,6,6,6.0,Turmeric powder (Haldi) - a pinch,True,0.125,indb_rule,INDB.do line 210
+water,LOC002,K,"Water, drinking",0.0,(none),False,6,6,0.0,Water - as required,True,,,
+drumstick,D046,D,Drumstick,29.4,(count),True,5,5,7.0,1 Drumstick - chopped to about 1.5 inch,True,70.0,indb_units,Units: Drum stick 1nos 70g
+ghee,T013,T,Ghee,900.0,(none),False,5,5,0.0,Ghee - for cooking,True,27.0,indb_default,per line. Units: Oil Tempering 2tbsp x T tbsp rule 13.5g (ghee treated as oil)
+lemon juice,E033,E,"Lemon, juice",36.6,(count),True,5,5,4.25,1 Lemon juice,True,20.0,estimate,[check] juice of 1 lemon; Units 'half lemon = 3 tbsp' (45g) exceeds Units 'Lemon 1 no 30g'
+mango ripe,E036,E,"Mango, ripe, banganapalli",41.8,(count),True,5,5,11.0,4 Mango (Ripe),True,200.0,indb_units,Units: Mango 1 medium 200g (BFP manual)
+salt,LOC001,G,"Salt, common (sodium chloride)",0.0,pinch,True,5,5,5.0,Salt - Pinch,True,0.125,indb_rule,INDB.do line 210
+small onion,G018,G,"Onion, small",56.6,(count),True,5,5,36.0,6 small onions - chopped,True,30.0,indb_units,pearl onion = small onion default
+sugar,I001,I,"Jaggery, cane",353.7,cup,True,5,4,3.75,3/4 cup Sugar,True,200.0,indb_units,Units: Sugar 1cup 200g (USDA 169655). LINKAGE: sugar is linked to I001 jaggery
+whole egg,M001,M,"Egg, poultry, whole, raw",134.8,(count),True,5,5,10.0,2 Whole Eggs,True,50.0,indb_units,Units: Egg 1 no 50g
+whole wheat flour,A020,A,"Wheat, whole",321.9,cup,True,5,5,5.375,1/2 cup Whole Wheat Flour,True,130.0,indb_units,Units: Wheat flour 1cup 130g (BFP manual)
+all purpose flour maida,A018,A,"Wheat flour, refined",351.8,cup,True,4,4,4.0,1/2 cup All Purpose Flour (Maida),True,120.0,indb_units,Units: Flour 1cup 120g (BFP manual)
+asafoetida hing,G019,G,Asafoetida,331.5,teaspoon,True,4,4,1.25,1/4 teaspoon Asafoetida (hing) - powder,True,2.0,indb_rule,INDB.do line 168
+coriander dhania seed,G024,G,Coriander seeds,268.9,teaspoon,True,4,4,6.0,1 teaspoon Coriander (Dhania) Seeds,True,2.0,indb_rule,INDB.do line 168
+cumin powder jeera,G025,G,Cumin seeds,304.5,teaspoon,True,4,4,3.0,1/2 teaspoon Cumin powder (Jeera),True,2.0,indb_rule,INDB.do line 168
+elephant yam suran senai ratalu,F017,F,"Yam, elephant",84.4,cup,True,4,4,7.0,2 cups Elephant yam (Suran/Senai/Ratalu) - chopped into small cubes,True,150.0,usda,diced potato used as analogous to diced yam
+ginger,G014,G,"Ginger, fresh",55.0,teaspoon,True,4,4,5.0,2 teaspoons Ginger - grated,True,2.0,indb_rule,INDB.do line 168
+lemon juice,E033,E,"Lemon, juice",36.6,teaspoon,True,4,4,5.0,1 teaspoon Lemon juice,True,5.0,indb_rule,INDB.do line 200-201
+mutton,O016,O,"Sheep, leg",164.0,gram,True,4,4,1650.0,250 grams Mutton,True,1.0,exact,
+prawn,S008,S,"Prawns, big",90.8,gram,True,4,4,1550.0,500 grams Prawns - tiger,True,1.0,exact,
+shallot,G018,G,"Onion, small",56.6,cup,True,4,3,3.0,1 cup Shallots - chopped,True,160.0,indb_units,"Shallots, raw 1 cup"
+tamarind,E064,E,"Tamarind, pulp",288.5,(count),True,4,4,4.0,1 tamarind - Malabar,True,5.0,estimate,"Malabar' tamarind = kudampuli (Garcinia), not tamarind. LINKAGE: linked to E064 tamarind pulp"
+whole black peppercorn,G031,G,"Pepper, black",217.5,tablespoon,True,4,4,4.0,1 tablespoon Whole Black Peppercorns,True,7.0,indb_rule,INDB.do line 169
+arhar dal split toor dal,B021,B,"Red gram, dal",330.8,cup,True,3,3,1.5,1/2 cup Arhar dal (Split Toor Dal),True,175.0,indb_units,Units: Red gram dal (Arhar dal) 1cup 175g (ASC manual)
+asafoetida hing,G019,G,Asafoetida,331.5,pinch,True,3,3,3.0,Asafoetida (hing) - a pinch,True,0.125,indb_rule,INDB.do line 210
+bhindi lady finger okra,D056,D,Ladies finger,27.5,gram,True,3,3,1200.0,500 grams Bhindi (Lady Finger/Okra) - slit into half and cut into 1 inch pieces,True,1.0,exact,
+cardamom powder elaichi,G020,G,"Cardamom, green",255.0,(count),True,3,3,5.0,2 Cardamom Powder (Elaichi) - powdered,True,0.5,indb_units+rule,Units: Cardamon powder 2nos 0.5tsp -> 0.25tsp x G tsp rule 2g
+coriander dhania leaves,G009,G,Coriander leaves,31.1,tablespoon,True,3,3,6.0,2 tablespoons Coriander (Dhania) Leaves - finely chopped,True,7.0,indb_rule,INDB.do line 169
+curry leaves,G010,G,Curry leaves,63.6,(none),False,3,3,0.0,Curry leaves - as required,True,2.0,indb_default,per line. Units: Curry leaves few = 1 sprig x sprig rule 2g
+garlic,G012,G,"Garlic, small cloves",122.8,(count),True,3,3,6.0,3 Garlic,True,0.625,indb_units,Garlic 8 cloves 5g
+ginger,G014,G,"Ginger, fresh",55.0,tablespoon,True,3,3,2.5,1 tablespoon Ginger - juliennes,True,7.0,indb_rule,INDB.do line 169
+green bean french bean,D050,D,"French beans, hybrid",22.2,(count),True,3,3,31.0,6 Green beans (French Beans) - cut into 1 inch pieces,True,6.0,indb_units,Units: French beans 1nos 6g (USDA)
+green moong dal whole,B010,B,"Green gram, dal",325.8,cup,True,3,3,3.0,1 cup Green Moong Dal (Whole) - soaked for 2 hours,True,175.0,indb_units,Units: Green gram 1cup 175g (ASC manual)
+green peas matar,D061,D,"Peas, fresh",81.3,cup,True,3,3,2.0,1/4 cup Green peas (Matar),True,145.0,indb_units,"Units: Peas, green, raw 1cup 145g. LINKAGE: linked to B017 Peas, dry"
+kashmiri red chilli powder,G022,G,"Chillies, red",236.6,tablespoon,True,3,3,3.0,2 tablespoons Kashmiri Red Chilli Powder,True,7.0,indb_rule,INDB.do line 169
+mango raw,D057,D,"Mango, green, raw",49.0,(count),True,3,3,3.0,1 Mango (Raw) - cut into 1 inch lengthwise,True,200.0,indb_units,Units: Mango 1 medium 200g (BFP manual)
+methi powder fenugreek powder,G026,G,Fenugreek seeds,234.9,teaspoon,True,3,3,1.25,1/2 teaspoon Methi Powder (Fenugreek Powder),True,2.0,indb_rule,INDB.do line 168
+mint leaf pudina,G016,G,Mint leaves,37.0,teaspoon,True,3,1,3.0,1 teaspoon Mint Leaves (Pudina) - finely chopped,True,2.0,indb_rule,INDB.do line 168
+oil,T001,T,Coconut oil,900.0,tablespoon,True,3,3,3.0,1 tablespoon oil,True,13.5,indb_rule,INDB.do line 178
+oil,T001,T,Coconut oil,900.0,teaspoon,True,3,3,4.0,1 tsp oil,True,4.0,indb_rule,INDB.do line 177; 195
+ripe banana,E010,E,"Banana, ripe, poovam",106.4,(count),True,3,3,5.0,2 Ripe Bananas - mashed,True,100.0,indb_units,Units: Banana 1 medium 100g
+sugar,I001,I,"Jaggery, cane",353.7,teaspoon,True,3,3,2.0,1 teaspoon Sugar,True,4.0,indb_rule,INDB.do line 181
+tamarind,E064,E,"Tamarind, pulp",288.5,gram,True,3,3,70.0,30 grams Tamarind,True,1.0,exact,
+vellai poosanikai ash gourd white pumpkin,D001,D,Ash gourd,17.4,cup,True,3,3,4.0,1 cup Vellai Poosanikai (Ash gourd/White Pumpkin) - cubed,True,116.0,indb_units (analogy),"analogy: Units Gourd, white-flowered 0.5cup 58g x2"
+yellow moong dal split,B010,B,"Green gram, dal",325.8,cup,True,3,3,1.25,1/4 cup Yellow Moong Dal (Split) - washed and soaked,True,175.0,indb_units,Units: Green gram 1cup 175g (ASC manual)
+bhindi lady finger okra,D056,D,Ladies finger,27.5,(count),True,2,2,12.0,6 Bhindi (Lady Finger/Okra) - cut into 1 and ½ inch pieces,True,10.0,estimate, approx. per pod; not in Units
+black pepper powder,G031,G,"Pepper, black",217.5,tablespoon,True,2,2,4.25,1/4 tablespoon Black pepper powder,True,7.0,indb_rule,INDB.do line 169
+black urad dal split,B003,B,"Black gram, dal",324.1,teaspoon,True,2,2,1.25,1/4 teaspoon Black Urad Dal (Split),True,2.0,indb_rule,INDB.do line 168
+brinjal baingan eggplant,D031,D,Brinjal - all varieties,25.3,(count),True,2,2,3.0,1 Brinjal (Baingan / Eggplant) - finely chopped,True,90.0,estimate,approx. Indian brinjal. Surya variety is analogous to its size
+carrot,F002,F,"Carrot, orange",33.2,(count),True,2,2,5.0,3 carrots - chop,True,60.0,indb_units,Units: Carrot 1 medium 60g
+cashew nut,H005,H,Cashew nut,582.7,tablespoon,True,2,2,3.0,2 tablespoon Cashew nuts - ground,True,7.0,indb_rule,INDB.do line 169
+chana dal bengal gram dal,B001,B,"Bengal gram, dal",329.1,tablespoon,True,2,2,3.0,2 tablespoons Chana dal (Bengal Gram Dal) - washed and soaked,True,7.0,indb_rule,INDB.do line 169
+chayote,D038,D,Cho-cho-marrow,18.9,(count),True,2,2,4.0,1 Chayote - peeled and diced,True,200.0,estimate,approx. per fruit (FoodStruct)
+coconut,H007,H,"Coconut, kernel, fresh",408.9,tablespoon,True,2,2,7.0,5 tbsp coconut - grated,True,5.0,indb_units,"Units: Coconut meat, raw 1cup 80g -> 80/16; overrides H tbsp rule 7g"
+colocasia root arbi,F004,F,Colocasia,88.9,gram,True,2,2,500.0,250 gm arabic - wash now,True,1.0,exact,
+coriander dhania leaves,G009,G,Coriander leaves,31.1,cup,True,2,2,0.5,1/4 cup Coriander (Dhania) Leaves - roughly chopped,True,16.0,indb_units,Units: Coriander leaves 0.25cup 4g
+coriander dhania leaves,G009,G,Coriander leaves,31.1,teaspoon,True,2,1,2.0,1 teaspoon Coriander (Dhania) Leaves - finely chopped,True,2.0,indb_rule,INDB.do line 168
+coriander powder,G024,G,Coriander seeds,268.9,teaspoon,True,2,2,2.25,1/4 teaspoon coriander powder,True,2.0,indb_rule,INDB.do line 168
+cumin,G025,G,Cumin seeds,304.5,teaspoon,True,2,2,1.0,1/2 teaspoon cumin,True,2.0,indb_rule,INDB.do line 168
+curry leaves,G010,G,Curry leaves,63.6,sprig,False,2,2,0.0,Curry leaves - a few sprigs,True,4.0,indb_default,per line. Units: Coriander leaves few sprigs = 2 sprigs (applied to curry leaves) x 2g
+drumstick leaf moringa murungai keerai,C019,C,Drumstick leaves,67.4,cup,True,2,2,3.0,1 cup Drumstick Leaves (Moringa/Murungai Keerai),True,16.0,indb_units (analogy),"analogy: Coriander leaves 0.25cup 4g (INDB uses same for fenugreek, mint)"
+dry ginger powder,G014,G,"Ginger, fresh",55.0,teaspoon,True,2,2,1.5,1/2 teaspoon Dry ginger powder,True,2.0,indb_rule,INDB.do line 168
+fresh coconut,H007,H,"Coconut, kernel, fresh",408.9,teaspoon,True,2,2,4.0,2 teaspoons Fresh coconut - slices,True,1.67,indb_units,"Units: Coconut meat, raw 1cup 80g -> 80/48; overrides H tsp rule 2g"
+garlic,G012,G,"Garlic, small cloves",122.8,tablespoon,True,2,2,1.5,1 tablespoon Garlic - finely chopped,True,7.0,indb_rule,INDB.do line 169
+garlic,G012,G,"Garlic, small cloves",122.8,teaspoon,True,2,2,3.0,2 teaspoon Garlic - chopped,True,2.0,indb_rule,INDB.do line 168
+ghee,T013,T,Ghee,900.0,teaspoon,True,2,2,3.0,1 teaspoon Ghee,True,4.0,indb_rule,INDB.do line 177; 195
+green bean,D050,D,"French beans, hybrid",22.2,(count),True,2,2,30.0,20 green beans - chop,True,6.0,indb_units,Units: French beans 1nos 6g (USDA)
+green bean french bean,D050,D,"French beans, hybrid",22.2,gram,True,2,2,400.0,100 grams Green beans (French Beans) - chopped small,True,1.0,exact,
+jaggery,I001,I,"Jaggery, cane",353.7,teaspoon,True,2,2,3.0,2 teaspoons Jaggery,True,4.0,indb_rule,INDB.do line 181
+kaddu parangikai/ pumpkin,D066,D,"Pumpkin, orange, round",23.2,cup,True,2,2,3.0,2 cups Kaddu (Parangikai/ Pumpkin) - chopped,True,116.0,indb_units (analogy),"analogy: Units Gourd, white-flowered 0.5cup 58g x2"
+kaddu parangikai/ pumpkin,D066,D,"Pumpkin, orange, round",23.2,gram,True,2,2,600.0,300 grams Kaddu (Parangikai/ Pumpkin) - peeled and chopped,True,1.0,exact,
+lemon juice,E033,E,"Lemon, juice",36.6,tablespoon,True,2,2,6.5,3 tablespoons Lemon juice,True,15.0,indb_rule,INDB.do line 202-203
+mint leaf pudina,G016,G,Mint leaves,37.0,cup,True,2,2,0.5,1/4 cup Mint Leaves (Pudina) - chopped,True,16.0,indb_units,Units: Mint leaves 0.25cup 4g
+nendra pazham banana ripe,E009,E,"Banana, ripe, montham",110.7,(count),True,2,2,4.0,2 Nendra Pazham Banana (Ripe) - sliced into rounds,True,150.0,indb_units,"larger, ripe variant of banana"
+oil,T001,T,Coconut oil,900.0,(none),False,2,2,0.0,oil - as per use,True,27.0,indb_default,per line. Units: Oil Tempering 2tbsp x T tbsp rule 13.5g
+red chili,G022,G,"Chillies, red",236.6,(count),True,2,2,2.0,1 red chili,True,3.33,indb_units,Units: Dry chilies 3 nos 10g
+rice,A014,A,"Rice, parboiled, milled",351.6,tablespoon,True,2,2,4.0,2 tablespoons Rice - raw,True,7.0,indb_rule,INDB.do line 175
+sardine fish,P071,P,Sardine,152.2,gram,True,2,2,1000.0,500 grams Sardine fish - (mathi,True,1.0,exact,
+small onion sambar,G018,G,"Onion, small",56.6,cup,True,2,1,1.5,1/2 cup small onion sambar,True,160.0,indb_units,"Shallots, raw 1 cup"
+suran,F017,F,"Yam, elephant",84.4,cup,True,2,2,2.5,1/2 cup suran - chopped,True,150.0,usda,diced potato used as analogous to diced yam
+turmeric powder,G033,G,Turmeric powder,280.6,pinch,True,2,2,2.0,turmeric powder - a pinch,True,0.125,indb_rule,INDB.do line 210
+turmeric powder haldi,G033,G,Turmeric powder,280.6,tablespoon,True,2,2,1.5,1/2 tablespoon Turmeric powder (Haldi),True,7.0,indb_rule,INDB.do line 169
+all purpose flour maida,A018,A,"Wheat flour, refined",351.8,gram,True,1,1,250.0,250 grams All Purpose Flour (Maida),True,1.0,exact,
+ash gourd,D001,D,Ash gourd,17.4,gram,True,1,1,250.0,250 grams Ash gourd - cut straight,True,1.0,exact,
+baby potato,F006,F,"Potato, brown skin, big",69.8,gram,True,1,1,250.0,250 grams Baby Potatoes - halved,True,1.0,exact,
+badam almond,H001,H,Almond,609.2,gram,True,1,1,50.0,50 grams Badam (Almond),True,1.0,exact,
+badam almond,H001,H,Almond,609.2,tablespoon,True,1,1,2.0,2 tablespoons Badam (Almond) - sliced or chopped,True,7.0,indb_rule,INDB.do line 169
+bajra flour pearl millet,A003,A,Bajra,348.0,cup,True,1,1,0.5,1/2 cup Bajra Flour ( Pearl Millet),True,120.0,indb_units (analogy),analogy: Flour 1cup 120g (INDB does the same for rice flour)
+banana flower vazhaipoo,D062,D,"Plantain, flower",21.3,(count),True,1,1,2.0,2 Banana flower (Vazhaipoo) - ripe,True,300.0,estimate, approx. per flower. Whole banana flower is much larger than average banana
+banana stem,D064,D,"Plantain, stem",39.4,gram,True,1,1,300.0,300 grams Banana Stem - peeled and cut into dices,True,1.0,exact,
+basmati rice,A015,A,"Rice, raw, milled",356.4,cup,True,1,1,3.0,3 cups Basmati rice - soaked for 25-35 minutes,True,160.0,indb_units,Units: Rice 1cup 160g (BFP manual)
+basmati rice,A015,A,"Rice, raw, milled",356.4,tablespoon,True,1,1,2.0,2 tablespoons Basmati rice - boiled,True,7.0,indb_rule,INDB.do line 175
+black eyed bean lobia,B006,B,"Cowpea, white",320.3,cup,True,1,1,0.5,1/2 cup Black Eyed Beans (Lobia),True,184.0,indb_units (analogy),"analogy: Kidney beans, raw 1cup 184g"
+black gram,B004,B,"Black gram, whole",291.3,cup,True,1,1,0.5,1/2 cup black gram,True,175.0,indb_units,"Units: Urad dal, raw 1cup 175g (ASC manual)"
+black pepper powder,G031,G,"Pepper, black",217.5,(none),False,1,1,0.0,Black pepper powder - freshly ground to taste,True,1.0,indb_default,per line. Units: Pepper to taste 0.5tsp x G tsp rule 2g
+brinjal,D031,D,Brinjal - all varieties,25.3,(count),True,1,1,2.0,2 brinjals - finely chopped,True,90.0,estimate,approx. Indian brinjal. Surya variety is analogous to its size
+brown rice,A013,A,"Rice, raw, brown",353.7,cup,True,1,1,1.0,1 cup Brown Rice,True,160.0,indb_units,Units: Rice 1cup 160g (BFP manual)
+button mushroom,J001,J,"Button mushroom, fresh",27.5,(count),True,1,1,20.0,20 Button mushrooms - finely chopped,True,15.0,indb_units,USDA mushroom: 70g/cup. 5 mushroom/cup = ~15g
+cabbage,C015,C,"Cabbage, green",21.5,(count),True,1,1,1.0,1 cabbage - finely chopped,True,400.0,indb_units,Units: Cabbage 1 medium 400g
+cabbage,C015,C,"Cabbage, green",21.5,cup,True,1,1,1.0,1 cup cabbage - wash and chop finely,True,89.0,indb_units,"Units: Cabbage, raw (chopped) 1cup 89g"
+cabbage patta gobi/ muttaikose,C015,C,"Cabbage, green",21.5,(count),True,1,1,0.5,1/2 Cabbage (Patta Gobi/ Muttaikose) - finely chopped,True,400.0,indb_units,Units: Cabbage 1 medium 400g
+cardamom elaichi pod seed,G020,G,"Cardamom, green",255.0,teaspoon,True,1,1,1.0,1 teaspoon Cardamom (Elaichi) Pods/Seeds,True,2.0,indb_rule,INDB.do line 168
+cardamom powder,G020,G,"Cardamom, green",255.0,teaspoon,True,1,1,0.5,1/2 tsp cardamom powder - more or less,True,2.0,indb_rule,INDB.do line 168
+carrot gajjar,F002,F,"Carrot, orange",33.2,cup,True,1,1,0.5,1/2 cup Carrots (Gajjar) - diced,True,128.0,indb_units,Units: Carrot 1cup 128g
+cashew nut,H005,H,Cashew nut,582.7,cup,True,1,1,1.0,1 cup Cashew nuts - unsalted,True,137.0,indb_units,Units: Cashewnut 1cup 137g
+cashew nut,H005,H,Cashew nut,582.7,gram,True,1,1,50.0,50 grams Cashew nuts,True,1.0,exact,
+cashew nut,H005,H,Cashew nut,582.7,handful,True,1,1,1.0,1 Cashew nuts - handful,True,35.0,indb_units (analogy),analogy: Groundnut 1handful 35g
+cashew nut,H005,H,Cashew nut,582.7,teaspoon,True,1,1,2.0,2 teaspoon Cashew nuts - chopped,True,2.0,indb_rule,INDB.do line 168
+cauliflower gobi,D036,D,Cauliflower,22.9,cup,True,1,1,1.0,1 cup Cauliflower (gobi) - florets,True,100.0,usda, approx. florets/cup; USDA gives 100g/cup
+chana dal bengal gram dal,B001,B,"Bengal gram, dal",329.1,cup,True,1,1,0.5,1/2 cup Chana dal (Bengal Gram Dal),True,175.0,indb_units (analogy),analogy: ASC dal convention 1cup 175g
+chana dal bengal gram dal,B001,B,"Bengal gram, dal",329.1,teaspoon,True,1,1,1.0,1 teaspoon Chana dal (Bengal Gram Dal),True,2.0,indb_rule,INDB.do line 168
+cloves laung,G023,G,Cloves,186.7,teaspoon,True,1,1,0.5,1/2 teaspoon Cloves (Laung) - powdered,True,2.0,indb_rule,INDB.do line 168
+coriander,G024,G,Coriander seeds,268.9,sprig,True,1,1,3.0,3 sprig coriander - Finely chop,True,2.0,indb_rule,INDB.do line 192
+coriander dhania leaves,G009,G,Coriander leaves,31.1,handful,True,1,1,1.0,1 Coriander (Dhania) Leaves - handful,True,5.0,estimate,[check] no source for a handful of leaves
+coriander dhania leaves,G009,G,Coriander leaves,31.1,sprig,False,1,1,0.0,Coriander (Dhania) Leaves - few sprigs,True,4.0,indb_default,per line. Units: Coriander leaves few sprigs = 2 sprigs x sprig rule 2g
+coriander leaves,G009,G,Coriander leaves,31.1,(none),False,1,1,0.0,coriander leaves - finely chopped,True,4.0,indb_default,[check] per line. garnish assumed = Units 'few sprigs' (2 sprigs x 2g)
+coriander powder,G024,G,Coriander seeds,268.9,tablespoon,True,1,1,0.5,1/2 tablespoon coriander powder,True,7.0,indb_rule,INDB.do line 169
+crab,Q005,Q,Mud crab,45.4,(count),True,1,1,4.0,4 Crabs,True,70.0,estimate,300g whole crab; 70g picked meat (CIFT study)
+cucumber,D043,D,"Cucumber, green, elongate",19.6,(count),True,1,1,1.0,1 Cucumber - peeled and diced,True,150.0,indb_units,Cucumber 1 medium 150g. LINKAGE
+cumin powder,G025,G,Cumin seeds,304.5,teaspoon,True,1,1,1.0,1 teaspoon cumin powder,True,2.0,indb_rule,INDB.do line 168
+cumin seed jeera,G025,G,Cumin seeds,304.5,(none),False,1,1,0.0,Cumin seeds (Jeera),True,1.0,indb_default,[check] per line. qty missing; Units: Spice powders to taste 0.5tsp x 2g
+cumin seed jeera,G025,G,Cumin seeds,304.5,tablespoon,True,1,1,1.0,1 tablespoon Cumin seeds (Jeera),True,7.0,indb_rule,INDB.do line 169
+curry leaf,G010,G,Curry leaves,63.6,sprig,True,1,1,1.0,1 sprig curry leaf,True,2.0,indb_rule,INDB.do line 192
+curry leaves,G010,G,Curry leaves,63.6,handful,True,1,1,1.0,Curry leaves - Handful,True,4.0,estimate,"""handful"" = 2 sprigs"
+dry coconut kopra,H006,H,"Coconut, kernel, dry",624.0,cup,True,1,1,1.0,1 cup Dry coconut (kopra),True,80.0,indb_units (analogy)," analogy: Coconut meat, raw 1cup 80g; kopra pieces"
+dry coconut kopra,H006,H,"Coconut, kernel, dry",624.0,tablespoon,True,1,1,2.0,2 tablespoons Dry coconut (kopra) - cut into small pieces,True,7.0,indb_rule,INDB.do line 169
+dry ginger powder,G014,G,"Ginger, fresh",55.0,tablespoon,True,1,1,1.0,1 tablespoon Dry ginger powder,True,7.0,indb_rule,INDB.do line 169
+dry red chili,G022,G,"Chillies, red",236.6,(count),True,1,1,1.0,1 dry red chili - Break it,True,3.33,indb_units,Units: Dry chilies 3 nos 10g
+dry red chilli,G022,G,"Chillies, red",236.6,tablespoon,True,1,1,0.25,1/4 tablespoon Dry Red Chilli - crushed,True,7.0,indb_rule,INDB.do line 169
+egg,M001,M,"Egg, poultry, whole, raw",134.8,(count),True,1,1,2.0,2 eggs - boiled and cut into pieces,True,50.0,indb_units,Units: Egg 1 no 50g
+egg white,M002,M,"Egg, poultry, white, raw",44.7,(count),True,1,1,4.0,4 Egg whites,True,34.0,indb_units,Units: Egg white 1 no 34g
+egg yolk,M003,M,"Egg, poultry, yolk, raw",296.8,(count),True,1,1,4.0,4 Egg yolks,True,16.0,indb_units,Units: Egg yolk 1 no 16g
+elephant yam suran senai ratalu,F017,F,"Yam, elephant",84.4,(count),True,1,1,1.0,1 Elephant yam (Suran/Senai/Ratalu) - finely diced,True,150.0,usda,diced potato used as analogous to diced yam
+elephant yam suran senai ratalu,F017,F,"Yam, elephant",84.4,gram,True,1,1,250.0,250 grams Elephant yam (Suran/Senai/Ratalu) - peeled and chopped,True,1.0,exact,
+fenugreek seed,G026,G,Fenugreek seeds,234.9,teaspoon,True,1,1,0.5,1/2 teaspoon fenugreek seeds - grind,True,2.0,indb_rule,INDB.do line 168
+fresh coconut,H007,H,"Coconut, kernel, fresh",408.9,(count),True,1,1,6.0,6 Fresh coconut - chunks,True,10.0,estimate,"chunks', not whole coconuts; "
+fresh coconut,H007,H,"Coconut, kernel, fresh",408.9,(none),False,1,1,0.0,Fresh coconut - few sliced pieces,True,20.0,estimate, 'few sliced pieces'; no source
+fresh coconut,H007,H,"Coconut, kernel, fresh",408.9,handful,True,1,1,1.0,1 Fresh coconut - handful,True,27.0,estimate, approx. 1/3 cup grated; (80/3)
+garlic,G012,G,"Garlic, small cloves",122.8,piece,True,1,1,5.0,5 pieces garlic - chopped,True,0.625,indb_units,Garlic 8 cloves 5g
+ghee,T013,T,Ghee,900.0,gram,True,1,1,125.0,125 grams Ghee,True,1.0,exact,
+ginger,G014,G,"Ginger, fresh",55.0,(count),True,1,1,1.0,1 ginger - finely chopped,True,12.66,indb_units,1 ginger' read as 1 inch; Units: Ginger 1inch 12.66g
+gram flour besan,B001,B,"Bengal gram, dal",329.1,cup,True,1,1,0.25,1/4 cup Gram flour (besan),True,92.0,indb_units,Units: Chickpea flour (besan) 1cup 92g (USDA 174288)
+green bean french bean,D050,D,"French beans, hybrid",22.2,cup,True,1,1,1.0,1 cup Green beans (French Beans) - chopped,True,100.0,indb_units,"Units: Green beans, raw 1cup 100g"
+green chili,G008,G,"Chillies, green - all varieties",42.3,(count),True,1,1,1.0,1 green chili,True,3.33,indb_units,Units: Green chilies 3 nos 10g
+green chili,G008,G,"Chillies, green - all varieties",42.3,(none),False,1,1,0.0,green chili - chopped,True,3.33,indb_default,one chilli assumed; Units: Green chilies 3 nos 10g
+green chilli,G008,G,"Chillies, green - all varieties",42.3,(none),False,1,1,0.0,Green Chillies - halved,True,3.33,indb_default, one chilli assumed; Units: Green chilies 3 nos 10g
+green coriander,G009,G,Coriander leaves,31.1,tablespoon,True,1,1,2.0,2 tablespoons green coriander - finely chopped,True,7.0,indb_rule,INDB.do line 169
+green pea,D061,D,"Peas, fresh",81.3,cup,True,1,1,0.5,1/2 cup green peas - optional,True,145.0,indb_units,"Units: Peas, green, raw 1cup 145g. LINKAGE: linked to B017 Peas, dry"
+green peas matar,D061,D,"Peas, fresh",81.3,tablespoon,True,1,1,2.5,2 to 3 tablespoons Green peas (Matar) - fresh or frozen,True,7.0,indb_rule,INDB.do line 169
+guava,E028,E,"Guava, white flesh",32.3,cup,True,1,1,0.25,1/4 cup Guava - cubes (optional),True,165.0,estimate,approx. cubed guava/cup; not in Units
+horse gram dal kollu/ kulith,B012,B,"Horse gram, whole",329.6,gram,True,1,1,250.0,250 grams Horse Gram Dal (Kollu/ Kulith) - Sprouted,True,1.0,exact,
+jackfruit raw kathal,D051,D,"Jack fruit, raw",26.3,(count),True,1,1,1.0,1 Jackfruit Raw (Kathal) - with skin shaved off,True,150.0,estimate,Approx 165g/jackfruit (CalorieKing)
+jackfruit raw kathal,D051,D,"Jack fruit, raw",26.3,cup,True,1,1,1.0,1 cup Jackfruit Raw (Kathal) - chopped finely,True,150.0,estimate,Approx 165g/jackfruit (CalorieKing)
+jackfruit seed kathal,D052,D,"Jack fruit, seeds, mature",77.0,cup,True,1,1,1.0,1 cup Jackfruit Seeds (Kathal) - cleaned and sliced,True,150.0,estimate,Approx 165g/jackfruit (CalorieKing)
+kala chana brown chickpea,B002,B,"Bengal gram, whole",287.0,cup,True,1,1,1.0,1 cup Kala Chana (Brown Chickpeas) - soaked overnight and cooked,True,200.0,indb_units,"Units: Chickpeas, raw 1cup 200g (USDA 173756); measured dry"
+karela bitter gourd/ pavakkai,D005,D,"Bitter gourd, jagged, teeth ridges, short",18.9,(count),True,1,1,3.0,3 Karela (Bitter Gourd/ Pavakkai),True,100.0,estimate,approx. per gourd; (Fertilia Health)
+methi powder fenugreek powder,G026,G,Fenugreek seeds,234.9,pinch,True,1,1,1.0,1 pinch Methi Powder (Fenugreek Powder),True,0.125,indb_rule,INDB.do line 210
+milk,L002,L,"Milk, whole, Cow",72.9,liter,True,1,1,2.0,2 liter Milk - full cream,True,1000.0,indb_rule,INDB.do line 190
+mint leaf pudina,G016,G,Mint leaves,37.0,(count),True,1,1,10.0,10 Mint Leaves (Pudina),True,0.5,indb_units,Units: Mint leaf 1nos 0.5g
+mint leaf pudina,G016,G,Mint leaves,37.0,sprig,True,1,1,2.0,2 sprig Mint Leaves (Pudina) - made to paste,True,2.0,indb_rule,INDB.do line 192
+mixed dry fruit apricot,E005,E,"Apricot, dried",315.7,cup,True,1,1,1.5,1-1/2 cups Mixed dry fruits - I used apricot,True,144.0,indb_units, approx. dried  mixed apricot analogous to mixed dry nuts
+mixed nut almond,H001,H,Almond,609.2,cup,True,1,1,1.5,1-1/2 cups Mixed nuts - I used almond,True,144.0,indb_units,Units: Mixed nuts 1cup 144g
+mixed vegetable green bean,D050,D,"French beans, hybrid",22.2,cup,True,1,1,1.0,1 cup Mixed vegetables - (french beans,True,100.0,indb_units,"Units: Green beans, raw 1cup 100g"
+mixed vegetable potato,F007,F,"Potato, brown skin, small",60.9,cup,True,1,1,1.5,1-1/2 cups Mixed vegetables - (potatoes,True,150.0,estimate,1 medium potato = 70g. Diced raw potato at 1 cup ~150g (2 potatoes)
+mooli/ mullangi radish,F011,F,"Radish, round, red skin",31.1,(count),True,1,1,2.0,2 Mooli/ Mullangi (Radish) - julienned and steamed,True,150.0,indb_units,Units: Radish with leaves 1 medium 150g
+mustard oil,T006,T,Mustard oil,900.0,teaspoon,True,1,1,3.0,3 teaspoon Mustard oil,True,4.0,indb_rule,INDB.do line 177; 195
+mustard seed,H013,H,Mustard seeds,509.6,tablespoon,True,1,1,1.0,1 tablespoon Mustard seeds,True,7.0,indb_rule,INDB.do line 169
+nutmeg powder,G028,G,Nutmeg,463.7,pinch,True,1,1,1.0,1 pinch Nutmeg powder,True,0.125,indb_rule,INDB.do line 210
+nutmeg powder,G028,G,Nutmeg,463.7,teaspoon,True,1,1,0.25,1/4 teaspoon Nutmeg powder,True,2.0,indb_rule,INDB.do line 168
+okra,D056,D,Ladies finger,27.5,(count),True,1,1,25.0,25 okra,True,10.0,estimate, approx. per pod; not in Units
+okra,D056,D,Ladies finger,27.5,gram,True,1,1,500.0,500 grams okra - cut,True,1.0,exact,
+onion,G017,G,"Onion, big",48.0,cup,True,1,1,0.75,3/4 cup Onion - fried,True,160.0,indb_units,"Units: Onions, raw (chopped) 1cup 160g"
+papaya,E049,E,"Papaya, ripe",23.9,cup,True,1,1,0.25,1/4 cup Papaya - cubes (optional),True,145.0,usda,"1 cup, papaya = 145g (USDA)"
+pepper powder,G031,G,"Pepper, black",217.5,tablespoon,True,1,1,0.25,1/4 tablespoon pepper powder,True,7.0,indb_rule,INDB.do line 169
+poppy seed,G032,G,Poppy seeds,422.6,teaspoon,True,1,1,1.0,1 teaspoon Poppy seeds,True,2.0,indb_rule,INDB.do line 168
+potato,F006,F,"Potato, brown skin, big",69.8,(count),True,1,1,2.0,2 potatoes - peel and chop straight,True,70.0,indb_units,Units: Potato 1 medium 70g (BFP manual)
+potato,F006,F,"Potato, brown skin, big",69.8,gram,True,1,1,250.0,250 g potato - cut straight and thick,True,1.0,exact,
+prawn,S008,S,"Prawns, big",90.8,kilogram,True,1,1,0.5,1/2 kg Prawns - cleaned and deveined,True,1000.0,exact,
+ragi flour finger millet/ nagli,A010,A,Ragi,320.7,cup,True,1,1,0.5,1/2 cup Ragi Flour (Finger Millet/ Nagli),True,120.0,indb_units (analogy),analogy: Flour 1cup 120g (INDB does the same for rice flour)
+raisin,E057,E,"Raisins, dried, black",305.7,(count),True,1,1,7.0,7 Raisins,True,0.22,indb_units,Units: Raisin 45nos 10g
+raisin,E057,E,"Raisins, dried, black",305.7,gram,True,1,1,100.0,100 grams Raisins,True,1.0,exact,
+raisin,E057,E,"Raisins, dried, black",305.7,handful,True,1,1,1.0,1 Raisins - handful,True,35.0,indb_units (analogy),analogy: Groundnut 1handful 35g
+raisin,E057,E,"Raisins, dried, black",305.7,teaspoon,True,1,1,2.0,2 teaspoons Raisins,True,5.0,indb_rule,INDB.do line 200-201
+raw banana,D063,D,"Plantain, green",79.8,cup,True,1,1,0.5,1/2 cup raw banana - chopped,True,100.0,indb_units,raw medium banana: 100g
+raw papaya,D059,D,"Papaya, raw",23.9,(count),True,1,1,0.5,1/2 Raw papaya,True,600.0,indb_units,Units: Papaya 1 medium 600g
+raw papaya,D059,D,"Papaya, raw",23.9,gram,True,1,1,300.0,300 grams Raw papaya - skin peeled and cut into medium sized pieces,True,1.0,exact,
+raw peanut moongphali,H012,H,Ground nut,520.1,cup,True,1,1,0.25,1/4 cup Raw Peanuts (Moongphali),True,146.0,indb_units,"Units: Peanuts, all types, raw 1cup 146g"
+red chili powder,G022,G,"Chillies, red",236.6,teaspoon,True,1,1,0.5,1/2 teaspoon red chili powder,True,2.0,indb_rule,INDB.do line 168
+red chilli flake,G022,G,"Chillies, red",236.6,teaspoon,True,1,1,1.0,1 teaspoon Red Chilli flakes - adjust as per spice tolerance,True,2.0,indb_rule,INDB.do line 168
+red chilli flax,G022,G,"Chillies, red",236.6,teaspoon,True,1,1,1.0,1 teaspoon red chilli flax,True,2.0,indb_rule,INDB.do line 168
+rice,A014,A,"Rice, parboiled, milled",351.6,gram,True,1,1,500.0,500 grams Rice - raw,True,1.0,exact,
+ripe banana,E010,E,"Banana, ripe, poovam",106.4,cup,True,1,1,1.0,1 cup Ripe Bananas - mashed,True,100.0,estimate,"smaller variant of banana, roughly 100g "
+salt,LOC001,G,"Salt, common (sodium chloride)",0.0,(count),True,1,1,1.0,1 Salt - to taste,True,1.0,indb_default,'1 Salt - to taste'; Units: Salt to taste 0.5tsp x 2g
+seer fish,P087,P,Vanjaram,136.2,(count),True,1,1,2.0,2 Seer fish - cleaned and cut,True,150.0,estimate,approx. per steak (eseafoods.in)
+seer fish,P087,P,Vanjaram,136.2,slice,True,1,1,2.0,2 Seer fish - slices,True,150.0,estimate,approx. per steak (eseafoods.in)
+shallot pearl onion,G018,G,"Onion, small",56.6,(count),True,1,1,5.0,5 Shallots - (pearl onions),True,60.0,indb_units,"Units: Onion 1 medium 60g; size not extracted, medium assumed"
+shrimp,Q008,Q,"Tiger Prawns, orange",64.5,gram,True,1,1,500.0,500 grams Shrimps - cleaned and deveined,True,1.0,exact,
+small potato,F007,F,"Potato, brown skin, small",60.9,gram,True,1,1,250.0,250 grams small potatoes - half cut,True,1.0,exact,
+squid,R004,R,"Squid, black",80.1,gram,True,1,1,250.0,250 grams Squid - (Cleaned and cut into rings),True,1.0,exact,
+sweet potato,F013,F,"Sweet potato, brown skin",109.0,(count),True,1,1,2.0,2 Sweet Potatoes - medium size,True,130.0,indb_units,Units: Sweet potato 1nos 130g (USDA 168482)
+tamarind paste,E064,E,"Tamarind, pulp",288.5,tablespoon,True,1,1,2.0,2 tablespoons Tamarind Paste,True,15.0,indb_rule,INDB.do line 202-203
+tamarind paste,E064,E,"Tamarind, pulp",288.5,teaspoon,True,1,1,1.0,1 teaspoon Tamarind Paste,True,5.0,indb_rule,INDB.do line 200-201
+tapioca root,F015,F,Tapioca,79.8,(count),True,1,1,2.0,2 Tapioca root,True,400.0,estimate,USDA equivalent to root is roughly 400g
+tapioca root,F015,F,Tapioca,79.8,gram,True,1,1,500.0,500 grams Tapioca root - skin peeled and chopped into small cubes,True,1.0,exact,
+tapioca root,F015,F,Tapioca,79.8,kilogram,True,1,1,1.0,1 kg Tapioca root,True,1000.0,exact,
+tomato,D075,D,"Tomato, ripe, hybrid",18.9,cup,True,1,1,0.3333333333333333,1/3 cup Tomatoes,True,180.0,indb_units,"Units: Tomatoes, raw/ripe 1cup 180g"
+turmeric,G033,G,Turmeric powder,280.6,teaspoon,True,1,1,0.5,1/2 teaspoon turmeric,True,2.0,indb_rule,INDB.do line 168
+turmeric powder,G033,G,Turmeric powder,280.6,tablespoon,True,1,1,0.5,1/2 tablespoon turmeric powder,True,7.0,indb_rule,INDB.do line 169
+turmeric powder haldi,G033,G,Turmeric powder,280.6,(count),True,1,1,0.5,1/2 Turmeric powder (Haldi),True,2.0,indb_rule (manual),"[check] unit missing in source ('1/2 Turmeric powder'); teaspoon assumed, G tsp rule"
+vivatta maida,A018,A,"Wheat flour, refined",351.8,cup,True,1,1,1.0,1 cup Vivatta Maida,True,120.0,indb_units,Units: Flour 1cup 120g (BFP manual)
+water,LOC002,K,"Water, drinking",0.0,milliliter,True,1,1,100.0,100 ml Water,True,1.0,indb_rule,INDB.do line 198
+water,LOC002,K,"Water, drinking",0.0,tablespoon,True,1,1,2.5,2-1/2 tablespoons Water,True,15.0,indb_rule,INDB.do line 202
+white urad dal,B003,B,"Black gram, dal",324.1,teaspoon,True,1,1,1.0,1 tsp white urad dal,True,2.0,indb_rule,INDB.do line 168
+white urad dal split,B003,B,"Black gram, dal",324.1,tablespoon,True,1,1,1.0,1 tablespoon White Urad Dal (Split),True,7.0,indb_rule,INDB.do line 169
+whole black pepper,G031,G,"Pepper, black",217.5,teaspoon,True,1,1,0.25,1/4 tsp whole black pepper,True,2.0,indb_rule,INDB.do line 168
+whole black peppercorn,G031,G,"Pepper, black",217.5,(count),True,1,1,11.0,10 to 12 Whole Black Peppercorns,True,0.5,indb_units+rule,Units: Pepper corns 1 corn 0.25tsp x 2g; implausibly high but ~3 kcal/serving
+whole pepper,G031,G,"Pepper, black",217.5,teaspoon,True,1,1,1.0,1 teaspoon whole pepper - ground,True,2.0,indb_rule,INDB.do line 168
+yam,F017,F,"Yam, elephant",84.4,gram,True,1,1,250.0,250 grams Yam - peel and chop,True,1.0,exact,
+coconut milk,,,,,cup,True,22,17,22.5,1 cup Coconut milk - thick,False,,,
+cinnamon stick dalchini,,,,,inch,True,14,14,13.5,1 inch Cinnamon Stick (Dalchini),False,,,
+fennel seed saunf,,,,,teaspoon,True,10,10,8.5,1 teaspoon Fennel seeds (Saunf),False,,,
+curd dahi yogurt,,,,,cup,True,9,9,8.75,1-1/2 cups Curd (Dahi / Yogurt) - thick,False,,,
+garam masala powder,,,,,teaspoon,True,9,9,8.75,2 teaspoons Garam masala powder,False,,,
+rice flour,,,,,cup,True,9,9,9.375,1/4 cup Rice flour,False,,,
+baking soda,,,,,teaspoon,True,6,6,2.375,1/8 teaspoon Baking soda,False,,,
+kokum malabar tamarind,,,,,(count),True,6,4,11.0,1 Kokum (Malabar Tamarind),False,,,
+red matta rice,,,,,cup,True,6,6,5.5,1 cup Red matta rice,False,,,
+ginger garlic paste,,,,,tablespoon,True,5,5,6.0,1 tablespoon Ginger Garlic Paste,False,,,
+fennel powder,,,,,teaspoon,True,4,4,2.5,1/2 teaspoon Fennel Powder,False,,,
+active dry yeast,,,,,teaspoon,True,3,3,3.0,1 teaspoon Active dry yeast - soaked in luke warm water (2 tablespoon),False,,,
+cooked rice,,,,,cup,True,3,3,2.25,1 cup Cooked rice,False,,,
+baking powder,,,,,teaspoon,True,2,2,1.0,1/2 teaspoon Baking powder,False,,,
+bay leaf tej patta,,,,,(count),True,2,2,3.0,1 Bay leaf (tej patta),False,,,
+fennel seed saunf,,,,,tablespoon,True,2,2,2.0,1 tablespoon Fennel seeds (Saunf) - pound,False,,,
+ginger garlic paste,,,,,teaspoon,True,2,2,2.5,1-1/2 teaspoon Ginger Garlic Paste,False,,,
+instant coffee powder,,,,,tablespoon,True,2,2,2.0,1 tablespoon Instant Coffee Powder,False,,,
+jackfruit ripe kathal,,,,,cup,True,2,2,2.0,1 cup Jackfruit Ripe (Kathal) - chopped finely,False,,,
+lemon,,,,,(count),True,2,2,1.5,1 Lemon - juiced,False,,,
+lukewarm water,,,,,(none),False,2,2,0.0,Lukewarm Water - to knead,False,,,
+paprika powder,,,,,tablespoon,True,2,2,1.0,1/2 tablespoon Paprika powder,False,,,
+raw banana peel,,,,,(count),True,2,2,4.0,2 Raw banana peel,False,,,
+tamarind water,,,,,cup,True,2,2,2.5,1 cup Tamarind Water,False,,,
+aachi fish masala,,,,,teaspoon,True,1,1,2.0,2 teaspoons Aachi Fish Masala,False,,,
+ada,,,,,cup,True,1,1,1.0,1 cup Ada,False,,,
+bay leaf tej patta,,,,,sprig,True,1,1,1.0,1 Bay leaf (tej patta),False,,,
+butter,,,,,teaspoon,True,1,1,1.0,1 teaspoon Butter,False,,,
+butter unsalted,,,,,gram,True,1,1,100.0,100 grams Butter (unsalted),False,1.0,exact,
+butter unsalted,,,,,tablespoon,True,1,1,5.0,5 tablespoons Butter (unsalted),False,,,
+candied orange peel,,,,,tablespoon,True,1,1,3.0,3 tablespoons Candied orange peel,False,,,
+caramel sauce,,,,,cup,True,1,1,0.25,1/4 cup Caramel Sauce,False,,,
+caster sugar,,,,,gram,True,1,1,300.0,300 grams Caster Sugar,False,1.0,exact,
+champagne,,,,,milliliter,True,1,1,500.0,500 ml Champagne - or Sparkling wine,False,,,
+chicken masala,,,,,teaspoon,True,1,1,2.0,2 teaspoon Chicken masala - (you can use other too but I prefer eastern masalas for kerala style preparations),False,,,
+chinese potato,,,,,gram,True,1,1,250.0,250 grams Chinese Potato - cut into medium size pieces,False,1.0,exact,
+cinnamon powder dalchini,,,,,pinch,True,1,1,1.0,1 pinch Cinnamon Powder (Dalchini),False,,,
+cinnamon powder dalchini,,,,,teaspoon,True,1,1,1.0,1 teaspoon Cinnamon Powder (Dalchini),False,,,
+cinnamon stick dalchini,,,,,(count),True,1,1,1.0,1 Cinnamon Stick (Dalchini),False,,,
+coconut milk,,,,,milliliter,True,1,1,50.0,50 ml Coconut milk,False,,,
+cooking soda,,,,,teaspoon,True,1,1,0.5,1/2 teaspoon Cooking soda,False,,,
+curd,,,,,cup,True,1,1,0.25,1/4 cup curd,False,,,
+dried fig,,,,,gram,True,1,1,100.0,100 grams Dried Figs,False,1.0,exact,
+enos fruit salt,,,,,teaspoon,True,1,1,0.25,1/4 teaspoon Enos fruit salt - optional,False,,,
+extra virgin olive oil,,,,,tablespoon,True,1,1,1.0,1 tablespoon Extra Virgin Olive Oil - to toss,False,,,
+fennel,,,,,teaspoon,True,1,1,0.5,1/2 teaspoon Fennel - or cumin,False,,,
+fennel powder,,,,,tablespoon,True,1,1,1.0,1 tablespoon Fennel Powder,False,,,
+fish,,,,,gram,True,1,1,300.0,300 gram Fish,False,1.0,exact,
+fish,,,,,kilogram,True,1,1,0.5,1/2 kg Fish - (I have used sardine cleaned and cut),False,1000.0,exact,
+fish fillet,,,,,(count),True,1,1,5.0,5 Fish fillet,False,,,
+garam masala powder,,,,,tablespoon,True,1,1,2.0,2 tablespoon Garam masala powder,False,,,
+ginger powder,,,,,tablespoon,True,1,1,1.0,1 tbsp ginger powder,False,,,
+glazed cherry,,,,,gram,True,1,1,100.0,100 grams Glazed Cherries,False,1.0,exact,
+green chawli bean yard long bean karamani barbati,,,,,gram,True,1,1,300.0,300 grams Green Chawli Beans (Yard long beans/Karamani/Barbati) - chopped,False,1.0,exact,
+guava juice,,,,,cup,True,1,1,1.0,1 cup Guava juice - chilled,False,,,
+homemade tomato puree,,,,,cup,True,1,1,0.5,1/2 cup Homemade tomato puree,False,,,
+hot masala powder,,,,,teaspoon,True,1,1,0.75,3/4 teaspoon hot Masala powder,False,,,
+hot water,,,,,cup,True,1,1,0.5,1/2 cup Hot water,False,,,
+hung curd greek yogurt,,,,,cup,True,1,1,1.5,1-1/2 cups Hung Curd (Greek Yogurt),False,,,
+icing sugar,,,,,cup,True,1,1,1.0,1 cup Icing Sugar - powdered,False,,,
+instant oat oatmeal,,,,,cup,True,1,1,1.0,1 cup Instant Oats (Oatmeal),False,,,
+instant oat oatmeal,,,,,gram,True,1,1,40.0,40 grams Instant Oats (Oatmeal) - Masala one,False,1.0,exact,
+jackfruit ripe kathal,,,,,gram,True,1,1,300.0,300 grams Jackfruit Ripe (Kathal) - chopped coarsely,False,1.0,exact,
+luke warm water,,,,,cup,True,1,1,0.5,1 teaspoon Active dry yeast -  + 1/2 cup of luke warm water,False,,,
+lukewarm water,,,,,cup,True,1,1,0.5,1 tsp active dry yeast - + 1/2 cup lukewarm water,False,,,
+meat masala,,,,,tablespoon,True,1,1,1.0,1 tablespoon Meat masala,False,,,
+meat masala,,,,,teaspoon,True,1,1,0.5,1/2 teaspoon Meat masala,False,,,
+olive oil,,,,,tablespoon,True,1,1,1.0,1 tablespoon olive oil - as per use,False,,,
+orange,,,,,(count),True,1,1,1.0,1 Orange,False,,,
+palm sugar,,,,,cup,True,1,1,0.25,1/4 cup Palm sugar,False,,,
+papad,,,,,(count),True,1,1,4.0,4 Papad,False,,,
+papaya juice,,,,,cup,True,1,1,1.0,1 cup Papaya juice - chilled,False,,,
+rasam powder,,,,,teaspoon,True,1,1,0.5,1/2 teaspoon Rasam Powder,False,,,
+red black eyed bean azuki,,,,,cup,True,1,1,1.5,1.5 cups Red Black Eyed Beans (Azuki),False,,,
+rice ada,,,,,cup,True,1,1,1.0,1 cup Rice ada,False,,,
+rice puttu,,,,,cup,True,1,1,1.0,1 cup Rice puttu - or wheat puttu,False,,,
+rum,,,,,cup,True,1,1,0.75,3/4 cup Rum - or Double with orange juice,False,,,
+rum,,,,,milliliter,True,1,1,100.0,100 ml Rum - or orange juice (adjust),False,,,
+rye,,,,,tablespoon,True,1,1,1.0,1 tablespoon rye,False,,,
+rye,,,,,teaspoon,True,1,1,0.25,1/4 tsp rye,False,,,
+saffron strand,,,,,(count),True,1,1,5.0,5 Saffron strands,False,,,
+sambar powder,,,,,tablespoon,True,1,1,2.0,2 tablespoons Sambar Powder,False,,,
+tamarind water,,,,,(none),False,1,1,0.0,Tamarind Water - extract from a big lemon sized tamarind,False,,,
+tulsi,,,,,(count),True,1,1,20.0,20 tulsi,False,,,
+tulsi holy basil,,,,,(count),True,1,1,20.0,20 Tulsi (holy basil),False,,,
+tutti frutti,,,,,cup,True,1,1,0.5,1/2 cup Tutti frutti,False,,,
+tutti frutti,,,,,gram,True,1,1,100.0,100 grams Tutti frutti,False,1.0,exact,
+vanilla extract,,,,,teaspoon,True,1,1,1.0,1 teaspoon Vanilla Extract,False,,,
+vinegar,,,,,tablespoon,True,1,1,2.0,2 tablespoon Vinegar,False,,,
+vinegar,,,,,teaspoon,True,1,1,0.25,1/4 teaspoon Vinegar,False,,,

@@ -23,6 +23,7 @@ RECIPES = RAW / "IndianFoodDatasetCSV.csv"
 LOCAL_NUTRIENTS = RAW / "local_nutrients.csv"
 FALLBACK_MAP = RAW / "fallback_map.csv"
 MANUAL_FIXES = RAW / "manual_fixes.csv"
+INDB_RULES = RAW / "indb_category_rules.csv"          # hand-transcribed from INDB.do
 
 # --- models ---
 MODELS    = ROOT / "models"
@@ -54,6 +55,7 @@ REVIEW_QUEUE_PARSING = REVIEW / 'review_queue_parsing.csv'
 REVIEW_QUEUE_IFCT_AMBIGUOUS = REVIEW / "review_queue_ifct_ambiguous.csv"
 REVIEW_QUEUE_IFCT_UNMATCHED = REVIEW / "review_queue_ifct_unmatched.csv"
 REVIEW_QUEUE_INGREDIENTS = REVIEW / "review_queue_ingredients.csv"
+REVIEW_QUEUE_UNITS = REVIEW / "review_queue_units.csv"
 
 # --- final --------------------------------------------------------------
 INGREDIENTS = FINAL / "ingredients.csv"
@@ -62,7 +64,6 @@ RECIPE_INGREDIENTS_FINAL = FINAL / "recipe_ingredients_final.csv"
 MALABARDB = FINAL / "malabardb.db"
 IFCT_NUTRIENTS = FINAL / "ifct_nutrients.csv"
 INGREDIENT_IFCT_MAP = FINAL / "ingredient_ifct_map.csv"
-FALLBACK_MAP = FINAL / "fallback_map.csv"
 
 
 def ensure_dirs() -> None:

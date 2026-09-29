@@ -1,6 +1,6 @@
-# MalabarDB - Recipe to Nutrition for Kerala Cuisine
+# KeralaDB - Recipe to Nutrition for Kerala Cuisine
 
-MalabarDB maps Kerala recipes to the Indian Food Composition Tables (IFCT 2017)
+KeralaDB maps Kerala recipes to the Indian Food Composition Tables (IFCT 2017)
 so that each ingredient in each recipe carries a per-100 g
 nutritional profile. This is the foundation for
 per-serving nutrition estimation and, later, for nutrient-aware ingredient
@@ -49,13 +49,13 @@ On macOS, `brew install make` installs it as `gmake`; use that in place of `make
 ### Build
 
 ```bash
-git clone -b main https://github.com/samahesh56/MalabarDB.git
-cd MalabarDB
+git clone -b main https://github.com/samahesh56/KeralaDB.git
+cd KeralaDB
 make db
 ```
 
 `make db` creates a virtual environment, installs dependencies, downloads the
-spaCy model, and runs every pipeline stage. The result is `data/final/malabardb.db`. 
+spaCy model, and runs every pipeline stage. The result is `data/final/KeralaDB.db`. 
 
 ## Pipeline
  
@@ -80,7 +80,7 @@ data/raw/IndianFoodDatasetCSV.csv                   data/raw/IFCT_index.csv
    ingredient_ifct_map.py  (+ fallback_map.csv)
               |  ingredient_ifct_map.csv
               v
-   build_db.py  --->  data/final/malabardb.db
+   build_db.py  --->  data/final/KeralaDB.db
 ```
  
 Two independent tracks. The left one turns recipe text into a clean table of
@@ -128,7 +128,7 @@ hand-reviewed decisions that re-running the code cannot reproduce.
 
 ## Output
 
-`data/final/malabardb.db`, five tables:
+`data/final/KeralaDB.db`, five tables:
 
 | Table | Rows | Holds |
 | --- | --- | --- |

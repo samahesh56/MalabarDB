@@ -64,6 +64,7 @@ RECIPE_INGREDIENTS_FINAL = FINAL / "recipe_ingredients_final.csv"
 MALABARDB = FINAL / "malabardb.db"
 IFCT_NUTRIENTS = FINAL / "ifct_nutrients.csv"
 INGREDIENT_IFCT_MAP = FINAL / "ingredient_ifct_map.csv"
+EXPLORER_TEMPLATE = ROOT / "src" / "malabardb" / "explorer_template.html"
 
 
 def ensure_dirs() -> None:

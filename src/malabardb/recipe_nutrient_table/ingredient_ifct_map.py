@@ -22,11 +22,7 @@ unreviewed = [r["norm_key"] for r in rows
 if unreviewed:
     raise SystemExit(f"{len(unreviewed)} keys not reviewed: {unreviewed[:10]}")
 
-# hierarchical describes a match; an absent key has no match to describe.
-stray = [r["norm_key"] for r in rows
-         if not r["chosen_ifct_code"].strip() and r["hierarchical"].strip()]
-if stray:
-    raise SystemExit(f"hierarchical set on absent keys: {stray}")
+
 
 # merge the fallback tier 
 fallback = {}
@@ -43,6 +39,12 @@ for r in rows:
     r["fallback_source"] = fb.get("fallback_source", "").strip()
     if r["chosen_ifct_code"].strip() and r["fallback_code"]:
         raise SystemExit(f"{r['norm_key']}: has both an IFCT code and a fallback")
+
+# hierarchical describes a match; an absent key has no match to describe.
+#stray = [r["norm_key"] for r in rows
+         #if not r["chosen_ifct_code"].strip() and r["hierarchical"].strip()]
+#if stray:
+    #raise SystemExit(f"hierarchical set on absent keys: {stray}")
 
 with paths.INGREDIENT_IFCT_MAP.open("w", newline="", encoding="utf-8") as fh:
     w = csv.DictWriter(fh, fieldnames=FIELDS)

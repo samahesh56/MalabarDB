@@ -1,3 +1,24 @@
-ifct_code,ifct_name,food_group,energy_kcal,energy_kj,protein_g,carb_g,fat_g,fibre_g
-LOC001,"Salt, common (sodium chloride)",Local,0,0,0,0,0,0
-LOC002,"Water, drinking",Local,0,0,0,0,0,0
+ifct_code,ifct_name,food_group,energy_source,energy_kcal,energy_kj,protein_g,carb_g,fat_g,fibre_g,source_ref
+LOC001,"Salt, common (sodium chloride)",Local,local,0.0,0.0,0.0,0.0,0.0,0.0,"USDA FDC 'Salt, table' (SR Legacy 02047); zero macros"
+LOC002,"Water, drinking",Local,local,0.0,0.0,0.0,0.0,0.0,0.0,zero macros
+A505,"Flour, rice (UK-11-021, via INDB)",INDB supplementary,indb,366.0,1531.0,6.4,80.1,0.8,,INDB UK_fct.xlsx row A505 = UK-11-021
+A508,"Porridge oats, unfortified (UK-11-788, via INDB)",INDB supplementary,indb,381.0,1614.0,10.9,70.7,8.1,7.8,INDB UK_fct.xlsx row A508 = UK-11-788
+E511,"Cherries, glace (UK-14-335, via INDB)",INDB supplementary,indb,294.0,1256.0,0.4,78.1,0.0,,INDB UK_fct.xlsx row E511 = UK-14-335
+G512,"Bay leaf, dried (UK-13-806, via INDB)",INDB supplementary,indb,313.0,1312.0,7.6,48.6,8.4,,INDB UK_fct.xlsx row G512 = UK-13-806
+G520,"Curry powder (UK-13-876, via INDB)",INDB supplementary,indb,233.0,979.0,9.5,26.1,10.8,,INDB UK_fct.xlsx row G520 = UK-13-876
+G523,"Garam masala (UK-13-829, via INDB)",INDB supplementary,indb,379.0,1592.0,15.6,45.2,15.1,,INDB UK_fct.xlsx row G523 = UK-13-829
+G529,"Saffron (UK-13-852, via INDB)",INDB supplementary,indb,310.0,1298.0,11.4,61.5,5.9,,INDB UK_fct.xlsx row G529 = UK-13-852
+G532,"Vinegar (UK-17-339, via INDB)",INDB supplementary,indb,22.0,89.0,0.4,0.6,0.0,0.0,INDB UK_fct.xlsx row G532 = UK-17-339
+G544,"Vanilla extract (US-173471, via INDB)",INDB supplementary,indb,288.0,1200.0,0.06,12.6,0.06,0.0,INDB US_fct.xlsx row G544 = US-173471
+G554,"Ginger, ground (UK-13-832, via INDB)",INDB supplementary,indb,284.0,1208.0,7.4,60.0,3.3,14.1,INDB UK_fct.xlsx row G554 = UK-13-832
+I502,"Sugar, white (UK-17-063, via INDB)",INDB supplementary,indb,394.0,1680.0,0.0,105.0,0.0,0.0,INDB UK_fct.xlsx row I502 = UK-17-063
+I504,"Sugar, icing (UK-17-062, via INDB)",INDB supplementary,indb,393.0,1678.0,0.0,104.9,0.0,0.0,INDB UK_fct.xlsx row I504 = UK-17-062
+K500,"Baking powder (UK-17-355, via INDB)",INDB supplementary,indb,163.0,693.0,5.2,37.8,0.0,0.0,INDB UK_fct.xlsx row K500 = UK-17-355
+K502,"Spirits, 40% volume (UK-17-247, via INDB)",INDB supplementary,indb,222.0,919.0,0.0,0.0,0.0,0.0,INDB UK_fct.xlsx row K502 = UK-17-247; values per 100 ml
+L520,"Yogurt, whole milk, plain (UK-12-184, via INDB)",INDB supplementary,indb,79.0,333.0,5.7,7.8,3.0,0.0,INDB UK_fct.xlsx row L520 = UK-12-184
+T501,"Butter, unsalted (UK-17-661, via INDB)",INDB supplementary,indb,744.0,3059.0,0.6,0.6,82.2,0.0,INDB UK_fct.xlsx row T501 = UK-17-661
+T502,"Oil, olive (UK-17-038, via INDB)",INDB supplementary,indb,899.0,3696.0,0.0,0.0,99.9,0.0,INDB UK_fct.xlsx row T502 = UK-17-038
+V502,"Coffee, powder, instant (UK-17-158, via INDB)",INDB supplementary,indb,75.0,320.0,14.6,4.5,0.0,0.0,INDB UK_fct.xlsx row V502 = UK-17-158
+H901,"Coconut milk (derived: IFCT H007 fresh coconut + water, 1:1 by mass)",Derived,derived,204.45,855.5,1.92,3.15,20.69,5.21,IFCT H007 x 0.5; assumes all kernel solids pass into the milk
+G901,"Ginger-garlic paste (derived: IFCT G014 + G012, 1:1 by mass)",Derived,derived,88.9,372.0,4.49,15.4,0.5,5.42,0.5 x G014 + 0.5 x G012; INDB splits this paste into the same two codes
+E901,"Tamarind water (derived: IFCT E064 pulp, 50 g per 240 g)",Derived,derived,60.1,251.46,0.61,14.03,0.03,1.11,"E064 x 50/240; INDB Units: tamarind 1 ball = 50 g, one ball per cup (240 g)"

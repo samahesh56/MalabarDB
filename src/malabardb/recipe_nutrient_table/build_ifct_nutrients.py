@@ -75,7 +75,8 @@ def build(src=paths.IFCT_INDEX, out=paths.IFCT_NUTRIENTS) -> pd.DataFrame:
     # file so the IFCT projection above stays a pure copy of the published table.
     if paths.LOCAL_NUTRIENTS.exists():
         local = pd.read_csv(paths.LOCAL_NUTRIENTS)
-        local["energy_source"] = "local"
+        if "energy_source" not in local.columns:
+            local["energy_source"] = "local"
         clash = set(local.ifct_code) & set(df.ifct_code)
         if clash:
             raise SystemExit(f"local codes collide with IFCT: {sorted(clash)}")

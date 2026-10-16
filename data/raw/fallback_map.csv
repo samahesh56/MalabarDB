@@ -1,3 +1,39 @@
 norm_key,fallback_code,fallback_source,note
 salt,LOC001,LOCAL,"NaCl. Zero for all tracked macronutrients. USDA FDC 'Salt, table' (SR Legacy 02047)."
-water,LOC002,LOCAL,"Zero for all tracked macronutrients."
+water,LOC002,LOCAL,Zero for all tracked macronutrients.
+curd dahi yogurt,L520,INDB,INDB recipes.xlsx maps curd/curds/yogurt to L520 (119 ingredient rows)
+rice flour,A505,INDB,INDB recipes.xlsx maps rice flour to A505 (5 rows)
+hung curd greek yogurt,L520,INDB,strained curd is more concentrated [flag: underestimates; or leave absent]
+caster sugar,I502,INDB,caster = fine white sugar
+rum,K502,INDB,values are per 100 ml [flag: alcohol; cake soak]
+butter unsalted,T501,INDB,
+icing sugar,I504,INDB,
+instant oat oatmeal,A508,INDB,
+rice puttu,A505,INDB,INDB recipes.xlsx maps 'puttu flour' to A505; puttu podi = roasted rice flour
+glazed cherry,E511,INDB,
+curd,L520,INDB,INDB recipes.xlsx maps curd/curds/yogurt to L520 (119 ingredient rows)
+garam masala powder,G523,INDB,INDB recipes.xlsx maps garam masala to G523 (187 ingredient rows)
+vinegar,G532,INDB,
+instant coffee powder,V502,INDB,
+sambar powder,G520,INDB,chilli-coriander blend -> curry powder [flag: hierarchical]
+olive oil,T502,INDB,
+extra virgin olive oil,T502,INDB,
+meat masala,G523,INDB,spice blend -> nearest blend row [flag: hierarchical]
+ginger powder,G554,INDB,
+vanilla extract,G544,INDB,
+baking powder,K500,INDB,
+chicken masala,G523,INDB,spice blend -> nearest blend row [flag: hierarchical]
+aachi fish masala,G520,INDB,chilli-coriander blend -> curry powder [flag: hierarchical]
+butter,T501,INDB,
+hot masala powder,G523,INDB,spice blend -> nearest blend row [flag: hierarchical]
+bay leaf tej patta,G512,INDB,INDB recipes.xlsx maps bay leaf/leaves to G512 (64 rows)
+rasam powder,G520,INDB,chilli-coriander blend -> curry powder [flag: hierarchical]
+saffron strand,G529,INDB,
+coconut milk,H901,DERIVED,"IFCT H007 fresh coconut + water 1:1 by mass, all solids assumed extracted [flag: needs citable ratio; thick/thin not separated]"
+tamarind water,E901,DERIVED,"IFCT E064 pulp x 50/240: one 'ball' of tamarind (INDB Units, 50 g) per cup (240 g) [flag: one recipe line literally says 'extract from a big lemon sized tamarind']"
+ginger garlic paste,G901,DERIVED,50:50 IFCT G014 ginger + G012 garlic; INDB splits this paste into the same two codes
+lukewarm water,LOC002,LOCAL,Water at a different temperature; same food as water
+luke warm water,LOC002,LOCAL,Water at a different temperature; same food as water
+hot water,LOC002,LOCAL,Water at a different temperature; same food as water
+sugar,I502,INDB,white sugar; INDB UK_fct.xlsx I502 = UK-17-063
+dry ginger powder,G554,INDB,dried ground ginger; INDB UK_fct.xlsx G554 = UK-13-832

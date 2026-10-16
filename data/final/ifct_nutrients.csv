@@ -543,3 +543,24 @@ T013,Ghee,Edible Oils and Fats,900.0,,atwater,0.0,0.0,100.0,0.0
 T014,Vanaspati,Edible Oils and Fats,900.0,,atwater,0.0,0.0,100.0,0.0
 LOC001,"Salt, common (sodium chloride)",Local,0.0,0.0,local,0.0,0.0,0.0,0.0
 LOC002,"Water, drinking",Local,0.0,0.0,local,0.0,0.0,0.0,0.0
+A505,"Flour, rice (UK-11-021, via INDB)",INDB supplementary,366.0,1531.0,indb,6.4,80.1,0.8,
+A508,"Porridge oats, unfortified (UK-11-788, via INDB)",INDB supplementary,381.0,1614.0,indb,10.9,70.7,8.1,7.8
+E511,"Cherries, glace (UK-14-335, via INDB)",INDB supplementary,294.0,1256.0,indb,0.4,78.1,0.0,
+G512,"Bay leaf, dried (UK-13-806, via INDB)",INDB supplementary,313.0,1312.0,indb,7.6,48.6,8.4,
+G520,"Curry powder (UK-13-876, via INDB)",INDB supplementary,233.0,979.0,indb,9.5,26.1,10.8,
+G523,"Garam masala (UK-13-829, via INDB)",INDB supplementary,379.0,1592.0,indb,15.6,45.2,15.1,
+G529,"Saffron (UK-13-852, via INDB)",INDB supplementary,310.0,1298.0,indb,11.4,61.5,5.9,
+G532,"Vinegar (UK-17-339, via INDB)",INDB supplementary,22.0,89.0,indb,0.4,0.6,0.0,0.0
+G544,"Vanilla extract (US-173471, via INDB)",INDB supplementary,288.0,1200.0,indb,0.06,12.6,0.06,0.0
+G554,"Ginger, ground (UK-13-832, via INDB)",INDB supplementary,284.0,1208.0,indb,7.4,60.0,3.3,14.1
+I502,"Sugar, white (UK-17-063, via INDB)",INDB supplementary,394.0,1680.0,indb,0.0,105.0,0.0,0.0
+I504,"Sugar, icing (UK-17-062, via INDB)",INDB supplementary,393.0,1678.0,indb,0.0,104.9,0.0,0.0
+K500,"Baking powder (UK-17-355, via INDB)",INDB supplementary,163.0,693.0,indb,5.2,37.8,0.0,0.0
+K502,"Spirits, 40% volume (UK-17-247, via INDB)",INDB supplementary,222.0,919.0,indb,0.0,0.0,0.0,0.0
+L520,"Yogurt, whole milk, plain (UK-12-184, via INDB)",INDB supplementary,79.0,333.0,indb,5.7,7.8,3.0,0.0
+T501,"Butter, unsalted (UK-17-661, via INDB)",INDB supplementary,744.0,3059.0,indb,0.6,0.6,82.2,0.0
+T502,"Oil, olive (UK-17-038, via INDB)",INDB supplementary,899.0,3696.0,indb,0.0,0.0,99.9,0.0
+V502,"Coffee, powder, instant (UK-17-158, via INDB)",INDB supplementary,75.0,320.0,indb,14.6,4.5,0.0,0.0
+H901,"Coconut milk (derived: IFCT H007 fresh coconut + water, 1:1 by mass)",Derived,204.45,855.5,derived,1.92,3.15,20.69,5.21
+G901,"Ginger-garlic paste (derived: IFCT G014 + G012, 1:1 by mass)",Derived,88.9,372.0,derived,4.49,15.4,0.5,5.42
+E901,"Tamarind water (derived: IFCT E064 pulp, 50 g per 240 g)",Derived,60.1,251.46,derived,0.61,14.03,0.03,1.11

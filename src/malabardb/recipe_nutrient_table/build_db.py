@@ -38,7 +38,8 @@ CREATE TABLE recipes (
     dish_name       TEXT,
     region          TEXT,
     cuisine_raw     TEXT,
-    servings        REAL,
+    servings        REAL,       -- value used; corrected where checked against the source page
+    servings_source REAL,       -- as in the Kaggle dataset (servings_corrections.csv)
     instructions    TEXT,
     source_row_id   INTEGER
 );

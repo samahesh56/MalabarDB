@@ -24,6 +24,8 @@ LOCAL_NUTRIENTS = RAW / "local_nutrients.csv"
 FALLBACK_MAP = RAW / "fallback_map.csv"
 MANUAL_FIXES = RAW / "manual_fixes.csv"
 INDB_RULES = RAW / "indb_category_rules.csv"          # hand-transcribed from INDB.do
+KERALA_SOURCE = RAW / "kerala_source.csv"          
+SERVINGS_CORRECTIONS = RAW / "servings_corrections.csv"  # hand-edits to fix bad servings data
 
 # --- models ---
 MODELS    = ROOT / "models"

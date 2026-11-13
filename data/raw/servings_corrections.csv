@@ -1,0 +1,5 @@
+recipe_id,servings_original,servings_page,servings_corrected,note
+37,6,12,12,page checked 2026-11-10
+78,2,4,4,page checked 2026-11-10
+76,2,4-5,4,page shows a range; low end used
+32,1,,8,page unreachable; estimated from ingredient weight at 160 g per serving (portion size of recipe 37)

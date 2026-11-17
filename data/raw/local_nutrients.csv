@@ -22,3 +22,11 @@ V502,"Coffee, powder, instant (UK-17-158, via INDB)",INDB supplementary,indb,75.
 H901,"Coconut milk (derived: IFCT H007 fresh coconut + water, 1:1 by mass)",Derived,derived,204.45,855.5,1.92,3.15,20.69,5.21,IFCT H007 x 0.5; assumes all kernel solids pass into the milk
 G901,"Ginger-garlic paste (derived: IFCT G014 + G012, 1:1 by mass)",Derived,derived,88.9,372.0,4.49,15.4,0.5,5.42,0.5 x G014 + 0.5 x G012; INDB splits this paste into the same two codes
 E901,"Tamarind water (derived: IFCT E064 pulp, 50 g per 240 g)",Derived,derived,60.1,251.46,0.61,14.03,0.03,1.11,"E064 x 50/240; INDB Units: tamarind 1 ball = 50 g, one ball per cup (240 g)"
+D601,"Yardlong bean, raw (USDA SR Legacy, FDC 169222)",USDA supplementary,usda,47,197,2.8,8.35,0.4,,"USDA SR Legacy FDC 169222, Yardlong beans, raw; fibre not reported, so carb_g includes fibre"
+E601,"Figs, dried, uncooked (USDA SR Legacy, FDC 174665)",USDA supplementary,usda,249,1040,3.3,54.1,0.93,9.8,"USDA FDC 174665 (SR Legacy); carb_g = carbohydrate by difference 63.9 minus fibre 9.8"
+A601,"Rice, white, cooked (USDA SR Legacy, FDC 168930)",USDA supplementary,usda,130,544,2.38,28.6,0.21,,"USDA FDC 168930 (SR Legacy); fibre not reported, so carb_g is carbohydrate by difference and includes fibre"
+G601,"Fennel seed (USDA SR Legacy, FDC 171323)",USDA supplementary,usda,345,1440,15.8,12.5,14.9,39.8,"USDA FDC 171323 (SR Legacy); carb_g = carbohydrate by difference 52.3 minus fibre 39.8"
+G602,"Cinnamon, ground (USDA SR Legacy, FDC 171320)",USDA supplementary,usda,247,1040,3.99,27.5,1.24,53.1,"USDA FDC 171320 (SR Legacy); carb_g = carbohydrate by difference 80.6 minus fibre 53.1"
+K601,"Yeast, baker's, active dry (USDA SR Legacy, FDC 175043)",USDA supplementary,usda,325,1360,40.4,14.3,7.61,26.9,"USDA FDC 175043 (SR Legacy); carb_g = carbohydrate by difference 41.2 minus fibre 26.9"
+K602,"Baking soda (USDA SR Legacy, FDC 175040)",USDA supplementary,usda,0,0,0,0,0,0,"USDA FDC 175040 (SR Legacy); zero for all tracked nutrients"
+B601,"Adzuki beans, mature seeds, raw (USDA SR Legacy, FDC 173727)",USDA supplementary,usda,329,1380,19.9,50.2,0.53,12.7,"USDA FDC 173727 (SR Legacy); carb_g = carbohydrate by difference 62.9 minus fibre 12.7"

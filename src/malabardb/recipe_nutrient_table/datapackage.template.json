@@ -1,0 +1,995 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/tabular-data-package.json",
+  "profile": "tabular-data-package",
+  "name": "keraladb",
+  "title": "KeralaDB: a recipe-level nutrition database for Kerala cuisine linked to the Indian Food Composition Tables (IFCT 2017)",
+  "version": "1.0.0",
+  "description": "KeralaDB links 131 Kerala recipes (1,582 ingredient lines) to the Indian Food Composition Tables 2017, with gaps filled from the Indian Nutrient Databank (INDB) and USDA FoodData Central. Every ingredient line carries a parsed quantity, unit and gram weight, and a link to a per-100 g nutrient profile, giving per-serving energy, protein, carbohydrate and fat for each recipe. Every linkage and conversion decision records how it was made. Recipe instructions are not redistributed; each recipe links to its source page.",
+  "keywords": [
+    "Kerala",
+    "food composition",
+    "recipes",
+    "nutrition",
+    "IFCT 2017",
+    "INDB",
+    "USDA FoodData Central",
+    "record linkage",
+    "India"
+  ],
+  "contributors": [
+    {
+      "title": "Sankeerth Mahesh",
+      "path": "",
+      "role": "author"
+    },
+    {
+      "title": "Shabeesh Balan",
+      "path": "https://orcid.org/0000-0002-1098-1290",
+      "role": "author"
+    },
+    {
+      "title": "Jijo Ulahannan",
+      "path": "https://orcid.org/0000-0002-5072-9700",
+      "role": "author"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Jain, K. (2020). 6000+ Indian Food Recipes Dataset, v1. Mendeley Data (recipes scraped from archanaskitchen.com)",
+      "path": "https://doi.org/10.17632/xsphgmmh7b.1"
+    },
+    {
+      "title": "Longvah, T., Ananthan, R., Bhaskarachary, K., Venkaiah, K. (2017). Indian Food Composition Tables. National Institute of Nutrition, ICMR"
+    },
+    {
+      "title": "Vijayakumar, A., et al. (2024). Development of an Indian Food Composition Database (INDB). Current Developments in Nutrition",
+      "path": "https://github.com/lindsayjaacks/Indian-Nutrient-Databank-INDB-"
+    },
+    {
+      "title": "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central (SR Legacy)",
+      "path": "https://fdc.nal.usda.gov/"
+    },
+    {
+      "title": "Public Health England. McCance and Widdowson's The Composition of Foods Integrated Dataset (CoFID); source of the INDB supplementary rows",
+      "path": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    }
+  ],
+  "homepage": "https://github.com/samahesh56/MalabarDB",
+  "created": "2026-10-16T15:28:54-04:00",
+  "resources": [
+    {
+      "name": "recipe_nutrition",
+      "title": "Per-serving nutrition by recipe",
+      "description": "Start here. One row per recipe: estimated energy and macronutrients per serving, and how much of the recipe those numbers cover. Values are sums over raw ingredients; no cooking losses or yields applied.",
+      "path": "recipe_nutrition.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "recipe_id",
+            "title": "Recipe ID",
+            "type": "integer",
+            "description": "Recipe identifier; see recipes.",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "dish_name",
+            "title": "Dish name",
+            "type": "string",
+            "description": "Recipe title, repeated from recipes for convenience.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "servings",
+            "title": "Servings",
+            "type": "number",
+            "description": "Servings used as the divisor for every per-serving value; see recipes.servings.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "n_lines",
+            "title": "Ingredient lines",
+            "type": "integer",
+            "description": "Number of ingredient lines in the recipe.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "n_linked",
+            "title": "Lines linked",
+            "type": "integer",
+            "description": "Lines whose ingredient is linked to a nutrient profile (any source_db).",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "n_grams",
+            "title": "Lines with grams",
+            "type": "integer",
+            "description": "Lines with a gram weight.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "n_counted",
+            "title": "Lines counted",
+            "type": "integer",
+            "description": "Lines with BOTH a gram weight and a nutrient profile: the only lines that contribute to the per-serving values.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "coverage_lines",
+            "title": "Line coverage",
+            "type": "number",
+            "description": "n_counted / n_lines (0-1).",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "coverage_mass",
+            "title": "Mass coverage",
+            "type": "number",
+            "description": "Share of the recipe's ingredient mass that is linked to a nutrient profile (0-1), excluding salt and water. The dataset's headline coverage metric, aggregated over all recipes."
+          },
+          {
+            "name": "low_coverage",
+            "title": "Low coverage",
+            "type": "boolean",
+            "description": "true when coverage_mass is below 0.90: a substantial ingredient has no nutrient profile, so the per-serving values are underestimates and should not be used as complete.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "kcal_per_serving",
+            "title": "Energy (kcal/serving)",
+            "type": "number",
+            "description": "Energy per serving in kilocalories."
+          },
+          {
+            "name": "protein_g_per_serving",
+            "title": "Protein (g/serving)",
+            "type": "number",
+            "description": "Protein per serving, grams."
+          },
+          {
+            "name": "carb_g_per_serving",
+            "title": "Carbohydrate (g/serving)",
+            "type": "number",
+            "description": "Carbohydrate per serving, grams. See nutrients.carb_g for how carbohydrate is defined in each source."
+          },
+          {
+            "name": "fat_g_per_serving",
+            "title": "Fat (g/serving)",
+            "type": "number",
+            "description": "Total fat per serving, grams."
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": [
+          "recipe_id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "recipe_id"
+            ],
+            "reference": {
+              "resource": "recipes",
+              "fields": [
+                "recipe_id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "recipes",
+      "title": "Recipes",
+      "description": "One row per recipe: the Kerala-labelled recipes of the source dataset, after removing untranslated recipes and confirmed duplicates.",
+      "path": "recipes.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "recipe_id",
+            "title": "Recipe ID",
+            "type": "integer",
+            "description": "KeralaDB recipe identifier.",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "dish_name",
+            "title": "Dish name",
+            "type": "string",
+            "description": "Recipe title in English as given by the source. A few titles end in '(Recipe In Hindi)' because the source page was the Hindi edition of the recipe.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "servings",
+            "title": "Servings",
+            "type": "number",
+            "description": "Number of servings used for every per-serving value. Equal to servings_source unless the value was corrected after checking the source page.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "servings_source",
+            "title": "Servings in source dataset",
+            "type": "number",
+            "description": "Servings as recorded in the source dataset (Jain 2020). Differs from servings on the few recipes that were corrected against the source page.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "source_id",
+            "title": "Source record",
+            "type": "integer",
+            "description": "Srno of the recipe in the source dataset (Jain 2020).",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "source_url",
+            "title": "Source URL",
+            "type": "string",
+            "description": "The original recipe page. Instructions are not redistributed in this dataset; follow this link for them.",
+            "format": "uri"
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": [
+          "recipe_id"
+        ]
+      }
+    },
+    {
+      "name": "recipe_ingredients",
+      "title": "Recipe ingredient lines",
+      "description": "One row per ingredient line of each recipe, parsed into quantity, unit and name, with an estimated weight and a link to the ingredient.",
+      "path": "recipe_ingredients.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "recipe_id",
+            "title": "Recipe ID",
+            "type": "integer",
+            "description": "Recipe the line belongs to.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "line_no",
+            "title": "Line number",
+            "type": "integer",
+            "description": "Position of the line in the recipe's ingredient list. Numbers can skip where a fragment that was not an ingredient was removed.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "raw_line",
+            "title": "Ingredient line as written",
+            "type": "string",
+            "description": "The ingredient line as it appears in the source, e.g. '1/2 teaspoon Turmeric powder (Haldi)'.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "qty",
+            "title": "Quantity as written",
+            "type": "string",
+            "description": "Quantity text: '1', '3/4', '1-1/2'. Blank when the line states none ('salt to taste')."
+          },
+          {
+            "name": "qty_num",
+            "title": "Quantity",
+            "type": "number",
+            "description": "qty as a decimal number: '1-1/2' -> 1.5."
+          },
+          {
+            "name": "unit",
+            "title": "Unit as written",
+            "type": "string",
+            "description": "Unit named in the line, normalised to one spelling. Blank when the line names none.",
+            "constraints": {
+              "enum": [
+                "teaspoon",
+                "tablespoon",
+                "cup",
+                "gram",
+                "kilogram",
+                "milliliter",
+                "liter",
+                "pinch",
+                "sprig",
+                "clove",
+                "inch",
+                "handful",
+                "slice"
+              ]
+            }
+          },
+          {
+            "name": "unit_key",
+            "title": "Unit used for conversion",
+            "type": "string",
+            "description": "The unit looked up in unit_conversions: the parsed unit, else '(count)' or '(none)'.",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "teaspoon",
+                "tablespoon",
+                "cup",
+                "gram",
+                "kilogram",
+                "milliliter",
+                "liter",
+                "pinch",
+                "sprig",
+                "clove",
+                "inch",
+                "handful",
+                "slice",
+                "(count)",
+                "(none)"
+              ]
+            }
+          },
+          {
+            "name": "grams",
+            "title": "Weight (g)",
+            "type": "number",
+            "description": "Estimated weight of the line in grams: qty_num x the gram value in unit_conversions, or that value alone when there is no quantity. Blank for six 'water as required' lines."
+          },
+          {
+            "name": "name_raw",
+            "title": "Ingredient name as written",
+            "type": "string",
+            "description": "Ingredient name with quantity, unit and preparation removed. Joins to synonyms.name_raw.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "state",
+            "title": "Preparation",
+            "type": "string",
+            "description": "Preparation or form as written ('grated', 'finely chopped'). Free text."
+          },
+          {
+            "name": "dry_fresh",
+            "title": "Dry / fresh",
+            "type": "string",
+            "description": "Whether the line specifies a dry or fresh form.",
+            "constraints": {
+              "enum": [
+                "Dry",
+                "Fresh"
+              ]
+            }
+          },
+          {
+            "name": "parse_status",
+            "title": "Parse status",
+            "type": "string",
+            "description": "How the line's quantity, unit and name were decided.",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "auto",
+                "reviewed"
+              ]
+            }
+          },
+          {
+            "name": "ingredient_id",
+            "title": "Ingredient ID",
+            "type": "integer",
+            "description": "The canonical ingredient this line names; see ingredients.",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": [
+          "recipe_id",
+          "line_no"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "recipe_id"
+            ],
+            "reference": {
+              "resource": "recipes",
+              "fields": [
+                "recipe_id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "ingredient_id"
+            ],
+            "reference": {
+              "resource": "ingredients",
+              "fields": [
+                "ingredient_id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "ingredients",
+      "title": "Ingredients and their nutrient links",
+      "description": "One row per canonical ingredient used by a recipe in this release, with the food-composition entry it is linked to and a record of how that link was made.",
+      "path": "ingredients.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "ingredient_id",
+            "title": "Ingredient ID",
+            "type": "integer",
+            "description": "KeralaDB ingredient identifier.",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "norm_key",
+            "title": "Canonical key",
+            "type": "string",
+            "description": "The ingredient name reduced to a comparison key: lowercased, nouns singularised, digits and one-letter tokens removed. 'Green Chillies' -> 'green chilli'.",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "generic_name",
+            "title": "Ingredient name",
+            "type": "string",
+            "description": "Readable name of the ingredient.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "food_code",
+            "title": "Food code",
+            "type": "string",
+            "description": "Code of the linked nutrient profile; see nutrients.food_code for the code ranges. Blank when no source has the food."
+          },
+          {
+            "name": "food_name",
+            "title": "Linked food",
+            "type": "string",
+            "description": "Name of the linked nutrient profile, from nutrients."
+          },
+          {
+            "name": "source_db",
+            "title": "Nutrient source",
+            "type": "string",
+            "description": "Which database the nutrient profile comes from. Blank when absent.",
+            "constraints": {
+              "enum": [
+                "IFCT2017",
+                "INDB",
+                "USDA",
+                "DERIVED",
+                "LOCAL"
+              ]
+            }
+          },
+          {
+            "name": "link_status",
+            "title": "Link status",
+            "type": "string",
+            "description": "Whether the ingredient has a nutrient profile.",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "linked",
+                "absent"
+              ]
+            }
+          },
+          {
+            "name": "link_method",
+            "title": "Link method",
+            "type": "string",
+            "description": "How the link was decided. Every ingredient was reviewed by a person.",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "auto_confirmed",
+                "reviewer_selected",
+                "reviewer_manual",
+                "fallback",
+                "absent"
+              ]
+            }
+          },
+          {
+            "name": "match_rule",
+            "title": "Matcher rule",
+            "type": "string",
+            "description": "The first rung of the string-matching ladder that found any IFCT candidate. Describes the machine's evidence, not the final decision.",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "exact",
+                "tokenset",
+                "subset",
+                "partial",
+                "none"
+              ]
+            }
+          },
+          {
+            "name": "candidate_rank",
+            "title": "Candidate rank",
+            "type": "integer",
+            "description": "Position of the chosen food in the matcher's ranked candidate list (1 = top). Blank when the food was not among the candidates."
+          },
+          {
+            "name": "hierarchical",
+            "title": "Proxy link",
+            "type": "string",
+            "description": "Whether the link is a proxy (hierarchical match, after Kalra et al. 2020). Blank when absent.",
+            "constraints": {
+              "enum": [
+                "Y",
+                "N"
+              ]
+            }
+          },
+          {
+            "name": "n_lines",
+            "title": "Lines using it",
+            "type": "integer",
+            "description": "Number of recipe lines in this release that use the ingredient (always at least 1).",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "notes",
+            "title": "Notes",
+            "type": "string",
+            "description": "Reviewer's note on the linking decision."
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": [
+          "ingredient_id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "food_code"
+            ],
+            "reference": {
+              "resource": "nutrients",
+              "fields": [
+                "food_code"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "synonyms",
+      "title": "Synonym table",
+      "description": "Every ingredient name as written in the recipes, the canonical key it normalises to, and the food it is linked to. Names sharing a food_code are treated as the same food: 'okra' and 'Bhindi (Lady Finger/Okra)' both resolve to IFCT D056 Ladies finger.",
+      "path": "synonyms.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "name_raw",
+            "title": "Name as written",
+            "type": "string",
+            "description": "Ingredient name exactly as written in a recipe.",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "norm_key",
+            "title": "Canonical key",
+            "type": "string",
+            "description": "Key the name normalises to.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "ingredient_id",
+            "title": "Ingredient ID",
+            "type": "integer",
+            "description": "Canonical ingredient; see ingredients.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "food_code",
+            "title": "Food code",
+            "type": "string",
+            "description": "Linked nutrient profile. Blank when absent."
+          },
+          {
+            "name": "food_name",
+            "title": "Linked food",
+            "type": "string",
+            "description": "Name of the linked nutrient profile."
+          },
+          {
+            "name": "n_lines",
+            "title": "Lines",
+            "type": "integer",
+            "description": "Recipe lines in this release that use this spelling.",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": [
+          "name_raw"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "ingredient_id"
+            ],
+            "reference": {
+              "resource": "ingredients",
+              "fields": [
+                "ingredient_id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "unit_conversions",
+      "title": "Unit-to-gram conversions",
+      "description": "Gram weight for each (ingredient, unit) pair used in the recipes, and the source of that weight.",
+      "path": "unit_conversions.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "ingredient_id",
+            "title": "Ingredient ID",
+            "type": "integer",
+            "description": "Ingredient; see ingredients.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "norm_key",
+            "title": "Canonical key",
+            "type": "string",
+            "description": "Ingredient key, repeated for readability.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "unit",
+            "title": "Unit",
+            "type": "string",
+            "description": "Unit, as in recipe_ingredients.unit_key.",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "teaspoon",
+                "tablespoon",
+                "cup",
+                "gram",
+                "kilogram",
+                "milliliter",
+                "liter",
+                "pinch",
+                "sprig",
+                "clove",
+                "inch",
+                "handful",
+                "slice",
+                "(count)",
+                "(none)"
+              ]
+            }
+          },
+          {
+            "name": "has_qty",
+            "title": "Per unit?",
+            "type": "boolean",
+            "description": "true: grams is the weight of ONE unit and is multiplied by the line's quantity ('2 sprigs' -> 2 x 2 g). false: grams is the weight of the whole line, which states no quantity ('a few sprigs' -> 4 g).",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "grams",
+            "title": "Grams",
+            "type": "number",
+            "description": "Gram weight (per unit, or per line; see has_qty).",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "method",
+            "title": "Method",
+            "type": "string",
+            "description": "Where the gram value comes from.",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "exact",
+                "indb_rule",
+                "indb_units",
+                "indb_units_rule",
+                "indb_default",
+                "usda",
+                "estimate"
+              ]
+            }
+          },
+          {
+            "name": "by_analogy",
+            "title": "By analogy",
+            "type": "boolean",
+            "description": "true when the value was taken from a similar food (e.g. pumpkin cup weight from white gourd) because the source lists none for this one.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "assigned_by",
+            "title": "Assigned by",
+            "type": "string",
+            "description": "Whether the value was filled automatically or by a person.",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "pipeline",
+                "reviewer"
+              ]
+            }
+          },
+          {
+            "name": "notes",
+            "title": "Notes",
+            "type": "string",
+            "description": "Basis of the value (source row, rule line, reasoning)."
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": [
+          "ingredient_id",
+          "unit",
+          "has_qty"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "ingredient_id"
+            ],
+            "reference": {
+              "resource": "ingredients",
+              "fields": [
+                "ingredient_id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "nutrients",
+      "title": "Nutrient profiles (per 100 g)",
+      "description": "Per-100 g energy and macronutrients for every food linked by an ingredient. Values from IFCT 2017 unless data_source says otherwise.",
+      "path": "nutrients.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "food_code",
+            "title": "Food code",
+            "type": "string",
+            "description": "IFCT 2017 code (e.g. G033); INDB supplementary code (5xx); USDA FoodData Central food, lettered by IFCT food group (6xx); KeralaDB derived composite (9xx); or KeralaDB local code (LOC*).",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "food_name",
+            "title": "Food",
+            "type": "string",
+            "description": "Food name as published by the source.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "food_group",
+            "title": "Food group",
+            "type": "string",
+            "description": "IFCT food group; 'INDB supplementary', 'USDA supplementary', 'Derived' or 'Local' for non-IFCT rows.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "data_source",
+            "title": "Data source",
+            "type": "string",
+            "description": "Database the values come from.",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "IFCT2017",
+                "INDB",
+                "USDA",
+                "DERIVED",
+                "LOCAL"
+              ]
+            }
+          },
+          {
+            "name": "energy_kcal",
+            "title": "Energy (kcal/100 g)",
+            "type": "number",
+            "description": "Energy in kilocalories. IFCT rows: published kJ / 4.184, or computed with Atwater general factors (4/4/9) where IFCT publishes none. Other rows: as published by their source; see energy_source.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "energy_kj",
+            "title": "Energy (kJ/100 g)",
+            "type": "number",
+            "description": "Energy in kilojoules as published. Blank on Atwater-derived rows."
+          },
+          {
+            "name": "energy_source",
+            "title": "Energy source",
+            "type": "string",
+            "description": "How energy_kcal was obtained.",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "published",
+                "atwater",
+                "indb",
+                "usda",
+                "derived",
+                "local"
+              ]
+            }
+          },
+          {
+            "name": "protein_g",
+            "title": "Protein (g/100 g)",
+            "type": "number",
+            "description": "Protein, grams per 100 g.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "carb_g",
+            "title": "Carbohydrate (g/100 g)",
+            "type": "number",
+            "description": "Carbohydrate, grams per 100 g. IFCT rows: available carbohydrate by difference (excludes fibre). USDA rows: carbohydrate by difference minus fibre, or carbohydrate by difference where the source reports no fibre (stated in source_ref). INDB rows: as published in the UK table, in monosaccharide equivalents.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "fat_g",
+            "title": "Fat (g/100 g)",
+            "type": "number",
+            "description": "Total fat, grams per 100 g.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "fibre_g",
+            "title": "Fibre (g/100 g)",
+            "type": "number",
+            "description": "Total dietary fibre, grams per 100 g. Blank where the source reports none. Not used in per-serving values."
+          },
+          {
+            "name": "source_ref",
+            "title": "Source reference",
+            "type": "string",
+            "description": "For non-IFCT rows: the originating database row, or how a derived value was computed."
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": [
+          "food_code"
+        ]
+      }
+    }
+  ]
+}

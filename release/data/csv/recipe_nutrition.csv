@@ -1,0 +1,132 @@
+recipe_id,dish_name,servings,n_lines,n_linked,n_grams,n_counted,coverage_lines,coverage_mass,low_coverage,kcal_per_serving,protein_g_per_serving,carb_g_per_serving,fat_g_per_serving
+1,Kerala pala pradham recipe,4.0,5,4,5,4,0.8,0.9752,False,543.3,16.3,64.2,25.8
+2,White Pumpkin Mor Kuzhambu Recipe - Kerala Style White Pumpkin Curry,2.0,13,13,13,13,1.0,1.0,False,262.6,12.1,18.2,16.1
+3,Kerala Style Raw Banana and Suran Kotu Curry Recipe - Kerala Style Plantain & Yam Thoran Recipe,4.0,13,13,13,13,1.0,1.0,False,187.1,6.5,17.0,10.0
+4,Dry Sweet Potato Thoran Recipe,4.0,10,10,10,10,1.0,1.0,False,101.3,1.4,17.7,2.4
+5,Malabar Kaai Curry Recipe With Nenthra Pazham,4.0,10,10,9,9,0.9,1.0,False,872.6,13.2,89.5,52.7
+6,Vedakkai Thoran Recipe - Kerala Style Bhindi Stir Fry,4.0,9,9,9,9,1.0,1.0,False,161.0,4.3,13.8,9.3
+7,Vendakka Stew Recipe (Kerala Style Okra Stew),4.0,9,9,9,9,1.0,1.0,False,200.4,4.2,8.1,16.5
+8,Kerala Style Pacha Mango Avial Recipe,4.0,15,15,15,15,1.0,1.0,False,220.7,4.0,22.8,12.1
+9,Meen Vevichathu Recipe - Kottayam Style Fish Curry,6.0,16,15,16,15,0.9375,0.9971,False,162.6,12.6,6.6,9.4
+10,Kerala Style Tapioca with Coconut Curd Chutney Recipe,4.0,6,6,6,6,1.0,1.0,False,372.2,9.1,56.8,11.5
+12,Lentil Sauce Recipe - Stewed Coconut Milk Sauce,4.0,9,9,9,9,1.0,1.0,False,422.5,8.9,36.4,26.7
+13,Nendra Pazham Pulissery Recipe - Ayurvedic Recipe,4.0,13,13,13,13,1.0,1.0,False,300.2,5.1,24.7,20.0
+14,Kerala Chicken Curry Recipe With Freshly Ground Spices,4.0,14,14,14,14,1.0,1.0,False,398.4,24.4,4.4,31.4
+15,Karnataka Special Huli Tovve Recipe,2.0,14,14,14,14,1.0,1.0,False,429.1,18.5,41.3,20.2
+17,Kerala Style Chicken Chatti Pathiri Recipe,4.0,14,14,14,14,1.0,1.0,False,334.4,17.7,24.7,18.1
+18,Kerala Pazham Pori Recipe - Banana Fritters Recipe | Nedra Pazham Fry,4.0,9,9,9,9,1.0,1.0,False,313.0,4.6,56.6,7.3
+19,Kerala Style Fish Curry Recipe,4.0,12,12,12,12,1.0,1.0,False,278.8,25.5,12.2,14.0
+20,Kerala Style Chakka Pal Kozhukattai Recipe-Rice Dumpling In Jackfruit flavored Coconut Milk,4.0,7,7,7,7,1.0,1.0,False,194.4,2.8,18.6,11.8
+21,Kerala Style Sugiyan Recipe (Sweet Moong Dal Bondas),4.0,8,8,8,8,1.0,1.0,False,333.4,13.0,57.0,5.1
+22,Kerala Cherupayar Curry Recipe (Green Moong and Yellow Moong Dal Recipe),4.0,12,12,12,12,1.0,1.0,False,354.3,17.3,42.1,12.2
+23,Nei Appam / Unniyappam Recipe - Coconut Banana Fritters,4.0,8,7,8,7,0.875,0.9974,False,404.1,4.7,69.7,11.3
+24,Kerala Style Vendakka Uppadan Recipe,4.0,11,11,11,11,1.0,1.0,False,69.8,1.9,6.3,3.9
+25,Kerala Chicken Roast Recipe,4.0,16,16,16,16,1.0,1.0,False,352.8,24.3,6.9,25.2
+26,Kerala Style Taro Root Curry Recipe (Colocasia),3.0,12,12,12,12,1.0,1.0,False,198.0,4.9,25.2,8.2
+27,Pavakka Pachadi Recipe - Bitter Gourd Pachadi,4.0,12,12,12,12,1.0,1.0,False,114.1,5.2,8.8,6.5
+28,Biryani Chammanthi Recipe (Green Chutney Recipe),4.0,9,9,9,9,1.0,1.0,False,89.7,1.2,2.0,8.5
+29,Omakka Curry Recipe - Kerala Style Papaya Curry,3.0,13,13,13,13,1.0,1.0,False,249.2,2.8,12.3,20.7
+30,Kerala Special Mambazha Puliserry Recipe,6.0,13,13,13,13,1.0,1.0,False,160.2,3.9,15.5,9.0
+31,Kerala Style Vedakkai Pachadi Recipe - Kerala Style Vendakkai Pachadi (Recipe in Hindi),4.0,10,10,10,10,1.0,1.0,False,94.0,2.9,4.7,7.0
+32,Caramel Folded Plum Cake Recipe,8.0,17,16,17,16,0.9412,0.9023,False,532.0,9.1,58.1,24.2
+33,Mambazha Pulissery Recipe - Mango Mor Kuzhambu Recipe,3.0,12,12,12,12,1.0,1.0,False,138.6,2.5,12.2,8.7
+34,Neymeen Vatti Pattichathu Recipe - Seer Fish In Spicy Masala,4.0,13,13,13,13,1.0,1.0,False,341.5,18.9,13.0,23.5
+35,Aam Ki Kheer Recipe - Mango Coconut Payasam Recipe,4.0,7,7,7,7,1.0,1.0,False,257.7,2.8,21.3,17.8
+36,Guava And Papaya Mimosa Drink Recipe,2.0,6,3,6,3,0.5,0.0989,True,16.5,0.4,1.9,0.2
+37,Kerala Style Christmas Plum Cake Recipe,12.0,26,23,26,23,0.8846,0.9008,False,513.3,6.6,65.2,23.6
+38,Kerala Style Chemmeen Moilee Recipe - Prawn Curry,4.0,16,16,16,16,1.0,1.0,False,293.1,19.8,6.8,20.5
+40,Prawns Theeyal Recipe (Chemeen Theeyal),4.0,13,13,13,13,1.0,1.0,False,273.4,27.3,15.2,10.0
+41,Kerala Style Eggplant Curry Recipe,4.0,13,13,13,13,1.0,1.0,False,150.2,2.0,4.7,13.6
+42,Mulakushyam Recipe - A Mixed Vegetable Lentil Curry,4.0,11,11,11,11,1.0,1.0,False,143.3,6.9,19.0,4.0
+43,Cabbage Thoran / Poriyal Recipe - Cabbage Thoran Recipe,4.0,14,14,14,14,1.0,1.0,False,103.0,4.2,11.8,3.9
+44, Carrot and Beans Thoran (Recipe In Hindi),4.0,10,10,10,10,1.0,1.0,False,63.8,1.5,5.2,3.9
+45,Baked Banana Chips Recipe,2.0,5,5,5,5,1.0,1.0,False,186.4,2.1,27.2,7.2
+46,Achappam Recipe | Kerala Style Fried Rose Cookies,10.0,7,7,7,7,1.0,1.0,False,313.7,3.8,47.0,12.3
+47,Kerala Style Mutton Stew Recipe,2.0,14,14,14,14,1.0,1.0,False,462.7,30.6,21.4,27.7
+48,Semma Rice Coconut Milk Sauce Recipe- Red Rice Sauce,4.0,9,9,9,9,1.0,1.0,False,436.5,6.0,55.8,20.7
+49,Mulangi Thoran Recipe - Radish Stir Fry With Coconut,4.0,12,12,12,12,1.0,1.0,False,121.9,1.3,5.7,10.3
+50,Kerala Style Appam Recipe Without Yeast,8.0,7,7,7,7,1.0,1.0,False,311.5,5.9,60.9,4.6
+51,Moru Kachiyathu Recipe - Kerala Style Seasoned Buttermilk,4.0,13,13,13,13,1.0,1.0,False,166.0,8.8,19.2,6.1
+52,Raw Banana Thoran Recipe,4.0,12,12,12,12,1.0,1.0,False,120.9,2.6,18.7,3.7
+53,Kerala Thenga Chammanthi Recipe- Coconut Onion Chutney,4.0,8,8,8,8,1.0,1.0,False,121.9,2.0,8.9,8.7
+54,Malabar Parrot Recipe - Kerala Parrot Recipe,4.0,6,6,6,6,1.0,1.0,False,295.7,7.2,46.6,8.6
+55,Kerala Style Tomato Fry Recipe,4.0,12,12,12,12,1.0,1.0,False,107.7,1.9,6.6,8.0
+56,Kerala Chicken Curry Recipe - Nadan Kozhi Curry,3.0,18,18,18,18,1.0,1.0,False,642.6,34.5,11.1,51.0
+57,Kerala Pumpkin Black Eyed Beans Erissery Recipe,4.0,14,14,14,14,1.0,1.0,False,188.4,6.8,19.7,8.7
+58,Kerala Style Vattayappam Recipe (Steamed Coconut Rice Cakes Recipe),4.0,10,10,10,10,1.0,1.0,False,294.3,4.0,52.1,7.8
+59,Nadan Meen Kari Recipe (Kerala Style Fish Curry),4.0,15,14,14,13,0.8667,0.9906,False,355.6,24.1,6.9,25.6
+60,Pazhutha Manga Pachadi Recipe - Kerala Style Ripe Mango Curry,4.0,8,8,8,8,1.0,1.0,False,70.8,1.1,10.3,2.6
+61,Kerala Style Egg Roast Curry Recipe - Kerala Style Egg Roast Curry Recipe,3.0,15,15,15,15,1.0,1.0,False,159.9,5.7,6.0,12.4
+62,Spicy Crab Masala Recipe,2.0,16,16,16,16,1.0,1.0,False,393.5,18.3,15.9,28.1
+63,Chukku Kaapi Recipe - Dry Ginger Coffee,4.0,9,8,9,8,0.8889,0.8097,True,42.2,0.7,9.3,0.2
+64,Kerala Style Chena Mezhukkupuratty Recipe - Yam Stir Fry,4.0,10,10,10,10,1.0,1.0,False,133.0,3.4,19.2,4.2
+65,Kerala Style Chakka Chased Ari Payasam Recipe - Jagapriyat Brown Rice Kahir,4.0,6,6,6,6,1.0,1.0,False,231.6,6.6,34.5,7.1
+66,Kerala Style Appam Recipe - Fermented Rice Pancakes With Coconut,4.0,7,7,7,7,1.0,1.0,False,440.3,8.2,80.8,8.8
+67,Muringakka Manga Mulakushyam - Mango & Drumstick Kootu Curry,4.0,17,17,17,17,1.0,1.0,False,144.2,6.2,19.3,4.2
+68,Kerala Style Banana Dosa Recipe,4.0,9,9,9,9,1.0,1.0,False,341.4,5.2,58.4,8.9
+69,Kerala Mutton Roast Recipe - Kerala Mutton Masala,2.0,16,16,16,16,1.0,1.0,False,630.5,55.1,6.3,42.5
+70,Chicken Kappa Biryani Recipe,4.0,14,14,14,14,1.0,1.0,False,318.7,13.5,25.5,17.7
+74,Kerala Style Rich Creamy Egg Cashew Curry Recipe,2.0,16,16,16,16,1.0,1.0,False,321.2,11.0,17.9,22.1
+76,Fish Fry Recipe - Kerala Style Fish Split,4.0,9,9,9,9,1.0,1.0,False,221.8,24.2,0.9,13.3
+77,Chow Chow Thoran (Poriyal) Recipe,4.0,8,8,8,8,1.0,1.0,False,73.3,1.6,6.2,4.5
+78,Kerala Style Kanji Payar Recipe,4.0,10,9,10,9,0.9,0.9065,False,314.3,13.6,52.2,5.0
+79,Pattani Kootu Recipe (Green Peas Curry),4.0,10,10,10,10,1.0,1.0,False,108.8,4.9,9.0,5.6
+80,Nandan Kozhi Recipe  - Kerala Style Chicken Curry,4.0,13,13,13,13,1.0,1.0,False,434.4,25.0,8.6,33.3
+81,Kerala Chicken Curry Recipe,4.0,16,16,16,16,1.0,1.0,False,297.8,22.1,13.2,17.6
+82,Baby Potato Theeyal Recipe - Kerala Style Potatoes In Shallots And Roasted Coconut,4.0,17,17,17,17,1.0,1.0,False,236.5,3.8,19.0,15.9
+83,Pumpkin Erissery Recipe - Kerala Pumpkin Coconut Curry,4.0,12,12,12,12,1.0,1.0,False,125.6,2.1,5.7,10.3
+85,Nei Appam Recipe Using Rice Flour,4.0,7,7,7,7,1.0,1.0,False,402.2,3.6,78.5,7.3
+86,Kerala Style Avial Recipe - Onam Sadya Recipe,4.0,15,15,15,15,1.0,1.0,False,261.3,4.9,22.6,16.4
+87,Chakka Erissery Recipe - Kerala Style Coconut Laced Jackfruit Sabzi,2.0,14,14,14,14,1.0,1.0,False,349.7,6.8,26.1,23.7
+88,Ada Pradhaman Recipe - Kerala Style Rice Ada Pudding With Jaggery & Coconut Milk,4.0,10,9,10,9,0.9,0.9393,False,566.8,4.3,48.2,39.7
+89,Banana Stem Thoran Recipe - Ayurvedic No Onion No Garlic Recipe,4.0,9,9,9,9,1.0,1.0,False,84.0,1.0,7.6,5.4
+90,Kerala Style Chakka Adai Recipe-Rice Flour and Jackfruit Flatbread,4.0,6,6,6,6,1.0,1.0,False,326.9,5.1,69.5,2.6
+91,Kerala Pumpkin Pachadi Recipe (Parangikai Pachadi),4.0,12,12,12,12,1.0,1.0,False,79.9,1.3,6.0,5.4
+92,Kerala Style Kappa Ulathiyathu Recipe - Tapioca Stir Fry Recipe,4.0,10,10,10,10,1.0,1.0,False,262.5,3.3,41.4,8.6
+93,Kerala Style Cauliflower Kurma Recipe,3.0,19,19,19,19,1.0,1.0,False,393.8,5.4,11.3,36.2
+94,Malabar Prawn Curry Recipe,3.0,20,20,20,20,1.0,1.0,False,400.4,19.9,10.5,30.2
+95,Thalassery Chicken Biriyani Recipe,4.0,23,23,23,23,1.0,1.0,False,403.3,20.0,40.4,17.4
+97,Vellarikka Manga Curry Recipe - Cucumber Mango Pulissery,4.0,12,12,12,12,1.0,1.0,False,62.0,1.3,7.8,2.6
+99,Homemade Rice Puttu Recipe | Kerala Matta Rice or Basmati Rice,6.0,3,3,3,3,1.0,1.0,False,175.5,2.9,21.8,8.4
+100,Kerala Style Chicken Stew Recipe,4.0,19,19,19,19,1.0,1.0,False,343.5,16.3,9.7,26.4
+102,Kerala Style Chakkakuru Mezhukkupuratti Recipe-Jackfruit Seed Poriyal,4.0,10,10,10,10,1.0,1.0,False,166.4,3.8,12.3,11.2
+103,Raw Papaya Thoran Recipe,4.0,9,9,9,9,1.0,1.0,False,93.8,0.7,3.9,8.2
+105,Whole Wheat Flour Puttu Recipe,3.0,5,5,5,5,1.0,1.0,False,164.3,4.1,29.3,3.3
+106,Kerala Style Mutton Pepper Fry Recipe,3.0,16,16,16,16,1.0,1.0,False,346.2,30.4,6.6,21.7
+107,Oats Unni Appam/ Nei Appam Recipe,4.0,8,8,8,8,1.0,1.0,False,384.7,3.9,57.6,15.4
+108,Calicut Payyoli Chicken Fry Recipe,4.0,13,13,13,13,1.0,1.0,False,369.4,23.5,1.7,29.8
+109,Matta Rice/ Chemba Rice Recipe-Pressure Cooker Method,4.0,3,3,3,3,1.0,1.0,False,140.6,3.1,30.9,0.2
+110,Baked Chinese Potato Recipe (Koorka Mezhukuperatti),4.0,9,8,9,8,0.8889,0.5784,True,115.6,1.6,9.1,7.9
+111,Kerala Style Puttu Upma Recipe With Scrambled Eggs,2.0,10,10,10,10,1.0,1.0,False,296.6,7.6,48.7,7.1
+112,Sprouted Horse Gram Thoran Recipe - No Onion No Garlic,4.0,10,10,10,10,1.0,1.0,False,254.5,14.3,37.4,4.8
+113,Kaya Tholi Thoran Recipe (Raw Banana Thoran),2.0,14,13,14,13,0.9286,0.813,True,209.9,3.3,13.6,15.6
+114,Andi Unda (Kerala Special Cashew & Rice Balls) Recipe,2.0,4,4,4,4,1.0,1.0,False,1143.1,20.7,136.4,56.6
+115,Chemmeen Muringakka Curry Recipe -Prawn Drumstick Curry,4.0,16,16,16,16,1.0,1.0,False,190.2,16.5,5.7,10.3
+116,Mambhazam Pulissery Recipe,4.0,15,15,15,15,1.0,1.0,False,178.8,4.9,14.5,11.1
+117,Kerala Style Varutharacha Mutton Curry Recipe,3.0,25,25,25,25,1.0,1.0,False,493.9,40.2,14.2,30.3
+118,Chena Kaya Erissery Recipe,4.0,18,18,18,18,1.0,1.0,False,226.2,3.8,23.0,12.9
+119,Meen Peera (Kerala Style Fish Recipe With Shredded Coconut),4.0,14,12,14,12,0.8571,0.9936,False,330.6,24.9,11.0,20.8
+120,Chenakayi Erissery Recipe - Yam Erissery,4.0,10,10,10,10,1.0,1.0,False,160.4,3.0,14.9,9.7
+121,Kerala Style Karamani Thoran Recipe - Yard Beans Stir Fry With Coconut,4.0,10,10,10,10,1.0,1.0,False,71.4,2.7,7.1,3.7
+122,Nadan Tomato Curry Recipe (Kerala Style Tomato Curry),4.0,11,11,11,11,1.0,1.0,False,67.2,1.6,7.1,3.5
+123,Kerala Special Vegetable Stew Recipe,4.0,16,16,16,16,1.0,1.0,False,207.4,3.5,9.8,17.0
+124,Varutharacha Mutta Curry Recipe,2.0,17,17,17,17,1.0,1.0,False,397.1,18.6,21.6,25.7
+126,Calamari Roast Recipe (Kerala Style Squid),4.0,14,14,14,14,1.0,1.0,False,139.4,12.2,10.5,4.7
+127,Carrot Beans Thoran Recipe - Kerala Thoran For Onam Sadya,4.0,12,12,12,12,1.0,1.0,False,82.5,1.9,5.6,5.6
+128,Kerala Style Konju Curry With Thengakothu Recipe (Kerala Style Prawn Curry),4.0,17,15,16,14,0.8235,0.9913,False,191.0,25.3,4.5,6.6
+129,Mint Vegetables Moilee Recipe (Mixed Vegetables Cooked In Minty Coconut Milk),4.0,16,16,16,16,1.0,1.0,False,325.7,3.7,13.5,28.6
+130,Mushroom Thoran Recipe-Kerala Style Mushroom Sabzi,4.0,13,13,13,13,1.0,1.0,False,130.0,4.1,6.3,9.7
+131,Murungai Keerai Puttu - Drumstick Leaves Puttu Recipe,2.0,8,8,7,7,0.875,1.0,False,625.2,11.3,89.6,23.4
+132,Kerala Style Whole Wheat Parotta Recipe,4.0,7,7,6,6,0.8571,1.0,False,324.2,7.9,44.1,12.4
+133,Kerala Style Prawns & Shrimp Biryani  -Chemmeen Biryani Recipe,4.0,33,33,33,33,1.0,1.0,False,893.7,39.9,114.7,27.8
+134,Kerala Style Vettu Cake Recipe (Eggless Wholewheat Tea Shop Cake),10.0,9,9,8,8,0.8889,1.0,False,199.0,3.2,38.5,4.0
+135,Kerala Style Varutharacha Sambar Recipe - Tangy Coconut Sambar Recipe,3.0,28,28,28,28,1.0,1.0,False,434.8,14.4,64.8,11.8
+136,Kerala Kadala Curry Recipe - Spicy Chickpeas in Coconut Curry,5.0,15,15,15,15,1.0,1.0,False,271.8,10.5,29.0,12.1
+137,Pulikuthi Upperi Recipe - Spicy & Tangy Palakkad Poriyal Recipe,4.0,14,14,14,14,1.0,1.0,False,140.8,2.3,15.1,7.5
+139,Idichakka Thoran Recipe (Young Jack Fruit With Spiced Coconut),4.0,12,12,12,12,1.0,1.0,False,70.8,2.0,5.0,4.7
+140,Kerala style drumstick spinach pose recipe,4.0,11,11,11,11,1.0,1.0,False,148.7,2.4,7.9,11.8
+141,Fish Molee Recipe - Kerala Style Fish Curry,6.0,13,13,13,13,1.0,1.0,False,106.3,10.0,2.0,6.4
+142,Beans Mezhukkupuratti Recipe - Kerala Style Stir Fried Beans,4.0,8,8,8,8,1.0,1.0,False,44.7,2.2,5.3,1.4
+143,Chena Mezhukkupuratti Recipe ( Eggplant Foot Yam Stir Fry),4.0,11,11,11,11,1.0,1.0,False,109.3,2.6,15.4,3.8
+144,Cabbage And Carrot Thoran Recipe,4.0,11,11,11,11,1.0,1.0,False,109.5,2.0,6.7,8.0
+145,Perum Payaru Theeyal Recipe (Kerala Style Black Eyed Bean Curry),4.0,8,8,8,8,1.0,1.0,False,338.2,15.2,41.8,8.8

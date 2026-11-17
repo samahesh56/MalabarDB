@@ -129,7 +129,8 @@ def dry_fresh_patch(raw_line):
     vocabulary is small and closed enough for a keyword match."""
     
     m = DRY_FRESH_RE.search(str(raw_line))
-    return m.group(1).capitalize() if m else ''
+    DRY_FRESH = {'dry': 'Dry', 'dried': 'Dry', 'fresh': 'Fresh', 'frozen': 'Frozen'}
+    return DRY_FRESH[m.group(1).lower()] if m else ''
  
  
 def _tokens(s):

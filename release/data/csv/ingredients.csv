@@ -1,0 +1,209 @@
+ingredient_id,norm_key,generic_name,food_code,food_name,source_db,link_status,link_method,match_rule,candidate_rank,hierarchical,n_lines,notes
+1,aachi fish masala,Aachi Fish Masala,G520,"Curry powder (UK-13-876, via INDB)",INDB,linked,fallback,partial,,Y,1,chilli-coriander blend -> curry powder [flag: hierarchical]
+2,active dry yeast,Active dry yeast,K601,"Yeast, baker's, active dry (USDA SR Legacy, FDC 175043)",USDA,linked,fallback,partial,,,2,
+3,ada,Ada,,,,absent,absent,none,,,1,"Poha is similar but nutritionally different, requires fallbak"
+4,all purpose flour maida,All Purpose Flour (Maida),A018,"Wheat flour, refined",IFCT2017,linked,reviewer_manual,none,,N,5,maida = refined wheat flour
+5,arhar dal split toor dal,Arhar dal (Split Toor Dal),B021,"Red gram, dal",IFCT2017,linked,reviewer_manual,partial,,N,3,confirmed via lang column; Arhar Dal is red gram
+6,asafoetida hing,Asafoetida (hing),G019,Asafoetida,IFCT2017,linked,auto_confirmed,subset,1,N,7,
+8,baby potato,Baby Potatoes,F007,"Potato, brown skin, small",IFCT2017,linked,reviewer_selected,partial,3,N,1,"baby = small potato: F007 (was F006 big, contradicting the note)"
+9,badam almond,Badam (Almond),H001,Almond,IFCT2017,linked,auto_confirmed,subset,1,N,2,
+10,bajra flour pearl millet,Bajra Flour (Pearl Millet),A003,Bajra,IFCT2017,linked,auto_confirmed,subset,1,N,1,
+11,baking powder,Baking powder,K500,"Baking powder (UK-17-355, via INDB)",INDB,linked,fallback,partial,,N,2,
+12,baking soda,Baking soda,K602,"Baking soda (USDA SR Legacy, FDC 175040)",USDA,linked,fallback,none,,,6,
+13,banana flower vazhaipoo,Banana flower (Vazhaipoo),D062,"Plantain, flower",IFCT2017,linked,reviewer_selected,partial,1,N,1,
+14,banana stem,Banana Stem,D064,"Plantain, stem",IFCT2017,linked,reviewer_selected,partial,5,N,1,"No ""stem"" nutrition stats"
+15,basmati rice,Basmati rice,A015,"Rice, raw, milled",IFCT2017,linked,reviewer_selected,partial,5,N,2,general milled rice variant
+16,bay leaf tej patta,Bay leaf (tej patta),G512,"Bay leaf, dried (UK-13-806, via INDB)",INDB,linked,fallback,partial,,N,3,INDB recipes.xlsx maps bay leaf/leaves to G512 (64 rows)
+17,bhindi lady finger okra,Bhindi (Lady Finger/Okra),D056,Ladies finger,IFCT2017,linked,auto_confirmed,subset,1,N,5,
+18,black eyed bean lobia,Black Eyed Beans (Lobia),B006,"Cowpea, white",IFCT2017,linked,reviewer_manual,partial,,N,1,black eyed bean = cow
+19,black gram,black gram,B004,"Black gram, whole",IFCT2017,linked,reviewer_selected,subset,2,Y,1,default to whole
+20,black pepper powder,Black pepper powder,G031,"Pepper, black",IFCT2017,linked,auto_confirmed,subset,1,N,19,Whole peppercorn is not powder-specific; flag for future conisderation
+21,black urad dal split,Black Urad Dal (Split),B003,"Black gram, dal",IFCT2017,linked,reviewer_selected,partial,1,N,2,
+23,brinjal baingan eggplant,Brinjal (Baingan / Eggplant),D031,Brinjal - all varieties,IFCT2017,linked,auto_confirmed,subset,22,N,2,all varities
+24,brown rice,Brown Rice,A013,"Rice, raw, brown",IFCT2017,linked,auto_confirmed,subset,1,N,1,
+25,butter,Butter,T501,"Butter, unsalted (UK-17-661, via INDB)",INDB,linked,fallback,none,,Y,1,
+26,butter unsalted,Butter (unsalted),T501,"Butter, unsalted (UK-17-661, via INDB)",INDB,linked,fallback,none,,N,2,
+27,button mushroom,Button mushrooms,J001,"Button mushroom, fresh",IFCT2017,linked,auto_confirmed,subset,1,N,1,
+28,cabbage,cabbage,C015,"Cabbage, green",IFCT2017,linked,reviewer_selected,subset,3,Y,1,default to green cabbage
+29,cabbage patta gobi/ muttaikose,Cabbage (Patta Gobi/ Muttaikose),C015,"Cabbage, green",IFCT2017,linked,reviewer_selected,partial,2,Y,1,default to green vs violet
+30,candied orange peel,Candied orange peel,,,,absent,absent,partial,,,1,
+31,caramel sauce,Caramel Sauce,,,,absent,absent,none,,,1,USDA
+32,cardamom elaichi pod seed,Cardamom (Elaichi) Pods/Seeds,G020,"Cardamom, green",IFCT2017,linked,reviewer_selected,partial,1,Y,14,default to green cardamom (likely more common)
+34,cardamom powder elaichi,Cardamom Powder (Elaichi),G020,"Cardamom, green",IFCT2017,linked,reviewer_selected,partial,1,Y,10,elaichi' defaults to green cardamom
+35,carrot,carrots,F002,"Carrot, orange",IFCT2017,linked,reviewer_selected,subset,1,Y,1,default to orange carrot
+36,carrot gajjar,Carrots (Gajjar),F002,"Carrot, orange",IFCT2017,linked,reviewer_selected,partial,1,Y,9,default to orange
+37,cashew nut,Cashew nuts,H005,Cashew nut,IFCT2017,linked,auto_confirmed,exact,1,N,13,
+38,caster sugar,Caster Sugar,I502,"Sugar, white (UK-17-063, via INDB)",INDB,linked,fallback,partial,,N,1,caster = fine white sugar
+39,cauliflower gobi,Cauliflower (gobi),D036,Cauliflower,IFCT2017,linked,auto_confirmed,subset,1,N,1,
+40,champagne,Champagne,,,,absent,absent,none,,,1,USDA
+41,chana dal bengal gram dal,Chana dal (Bengal Gram Dal),B001,"Bengal gram, dal",IFCT2017,linked,auto_confirmed,subset,1,N,4,
+42,chayote,Chayote,D038,Cho-cho-marrow,IFCT2017,linked,reviewer_manual,none,,N,2,cho-cho-marrow is the same as chayote
+43,chicken,Chicken,N002,"Chicken, poultry, thigh, skinless",IFCT2017,linked,reviewer_selected,subset,3,Y,10,defaulted to thigh; check USDA for general
+44,chicken masala,Chicken masala,G523,"Garam masala (UK-13-829, via INDB)",INDB,linked,fallback,partial,,Y,1,spice blend -> nearest blend row [flag: hierarchical]
+45,chinese potato,Chinese Potato,,,,absent,absent,partial,,,1,USDA
+46,cinnamon powder dalchini,Cinnamon Powder (Dalchini),G602,"Cinnamon, ground (USDA SR Legacy, FDC 171320)",USDA,linked,fallback,partial,,,2,
+47,cinnamon stick dalchini,Cinnamon Stick (Dalchini),G602,"Cinnamon, ground (USDA SR Legacy, FDC 171320)",USDA,linked,reviewer_manual,none,,,15,stick and ground cinnamon are the same bark
+48,cloves laung,Cloves (Laung),G023,Cloves,IFCT2017,linked,auto_confirmed,subset,1,N,9,
+49,coconut,coconut,H007,"Coconut, kernel, fresh",IFCT2017,linked,reviewer_selected,subset,2,N,3,
+50,coconut milk,Coconut milk,H901,"Coconut milk (derived: IFCT H007 fresh coconut + water, 1:1 by mass)",DERIVED,linked,fallback,partial,,N,22,"IFCT H007 fresh coconut + water 1:1 by mass, all solids assumed extracted [flag: needs citable ratio; thick/thin not separated]"
+51,coconut oil,Coconut Oil,T001,Coconut oil,IFCT2017,linked,auto_confirmed,exact,1,N,65,
+52,colocasia root arbi,Colocasia Root (Arbi),F004,Colocasia,IFCT2017,linked,auto_confirmed,subset,1,N,1,
+53,cooked rice,Cooked rice,A601,"Rice, white, cooked (USDA SR Legacy, FDC 168930)",USDA,linked,fallback,partial,,,3,plain cooked white rice; rice variety not specified in the recipes [flag: hierarchical]
+54,cooking soda,Cooking soda,K602,"Baking soda (USDA SR Legacy, FDC 175040)",USDA,linked,fallback,none,,,1,cooking soda = baking soda (sodium bicarbonate)
+56,coriander dhania leaves,Coriander (Dhania) Leaves,G009,Coriander leaves,IFCT2017,linked,auto_confirmed,subset,1,N,15,
+57,coriander dhania seed,Coriander (Dhania) Seeds,G024,Coriander seeds,IFCT2017,linked,auto_confirmed,subset,1,N,10,
+58,coriander leaves,coriander leaves,G009,Coriander leaves,IFCT2017,linked,auto_confirmed,exact,1,N,1,
+59,coriander powder,coriander powder,G024,Coriander seeds,IFCT2017,linked,reviewer_selected,partial,2,N,1,coriander seed != powder
+60,coriander powder dhania,Coriander Powder (Dhania),G024,Coriander seeds,IFCT2017,linked,reviewer_selected,partial,2,N,14,"powder = ground seed, not leaf"
+61,crab,Crabs,Q005,Mud crab,IFCT2017,linked,reviewer_manual,exact,,Y,1,mud crab is most common in kerala cuisine
+62,cucumber,Cucumber,D043,"Cucumber, green, elongate",IFCT2017,linked,reviewer_selected,subset,1,Y,1,default to long cucumber
+64,cumin powder,cumin powder,G025,Cumin seeds,IFCT2017,linked,reviewer_selected,partial,1,N,1,
+65,cumin powder jeera,Cumin powder (Jeera),G025,Cumin seeds,IFCT2017,linked,reviewer_selected,partial,1,N,4,Cumin seed is not in powder form
+66,cumin seed,cumin seeds,G025,Cumin seeds,IFCT2017,linked,auto_confirmed,exact,1,N,2,
+67,cumin seed jeera,Cumin seeds (Jeera),G025,Cumin seeds,IFCT2017,linked,auto_confirmed,subset,1,N,41,
+68,curd,curd,L520,"Yogurt, whole milk, plain (UK-12-184, via INDB)",INDB,linked,fallback,none,,N,1,INDB recipes.xlsx maps curd/curds/yogurt to L520 (119 ingredient rows)
+69,curd dahi yogurt,Curd (Dahi / Yogurt),L520,"Yogurt, whole milk, plain (UK-12-184, via INDB)",INDB,linked,fallback,none,,N,9,INDB recipes.xlsx maps curd/curds/yogurt to L520 (119 ingredient rows)
+70,curry leaf,curry leaf,G010,Curry leaves,IFCT2017,linked,reviewer_manual,partial,,N,1,missed parser
+71,curry leaves,Curry leaves,G010,Curry leaves,IFCT2017,linked,auto_confirmed,exact,1,N,100,
+72,dried fig,Dried Figs,E601,"Figs, dried, uncooked (USDA SR Legacy, FDC 174665)",USDA,linked,fallback,subset,,,1,
+73,drumstick,Drumstick,D046,Drumstick,IFCT2017,linked,auto_confirmed,exact,1,N,4,
+74,drumstick leaf moringa murungai keerai,Drumstick Leaves (Moringa/Murungai Keerai),C019,Drumstick leaves,IFCT2017,linked,reviewer_selected,subset,1,N,2,
+75,dry coconut kopra,Dry coconut (kopra),H006,"Coconut, kernel, dry",IFCT2017,linked,reviewer_selected,partial,1,N,2,Kopra = kernal
+76,dry ginger powder,Dry ginger powder,G554,"Ginger, ground (UK-13-832, via INDB)",INDB,linked,fallback,partial,3,N,3,dried ground ginger; INDB UK_fct.xlsx G554 = UK-13-832
+77,dry red chili,dry red chili,G022,"Chillies, red",IFCT2017,linked,reviewer_selected,partial,7,N,1,"requires ""dry"" variant"
+78,dry red chilli,Dry Red Chillies,G022,"Chillies, red",IFCT2017,linked,auto_confirmed,subset,1,N,38,
+79,egg,eggs,M001,"Egg, poultry, whole, raw",IFCT2017,linked,reviewer_selected,subset,1,Y,1,
+80,egg white,Egg whites,M002,"Egg, poultry, white, raw",IFCT2017,linked,reviewer_selected,subset,1,N,1,
+81,egg yolk,Egg yolks,M003,"Egg, poultry, yolk, raw",IFCT2017,linked,reviewer_selected,subset,1,N,1,
+82,elephant yam suran senai ratalu,Elephant yam (Suran/Senai/Ratalu),F017,"Yam, elephant",IFCT2017,linked,auto_confirmed,subset,1,N,6,
+83,enos fruit salt,Enos fruit salt,,,,absent,absent,partial,,,1,USDA
+84,extra virgin olive oil,Extra Virgin Olive Oil,T502,"Oil, olive (UK-17-038, via INDB)",INDB,linked,fallback,partial,,N,1,
+86,fennel powder,Fennel Powder,G601,"Fennel seed (USDA SR Legacy, FDC 171323)",USDA,linked,fallback,partial,,,4,ground fennel seed; same food as the seed
+87,fennel seed saunf,Fennel seeds (Saunf),G601,"Fennel seed (USDA SR Legacy, FDC 171323)",USDA,linked,fallback,partial,,,12,
+89,fish,Fish,P057,"Pomfret, white",IFCT2017,linked,reviewer_manual,subset,,Y,2,default for unspecified fish
+90,fish fillet,Fish fillet,P057,"Pomfret, white",IFCT2017,linked,reviewer_manual,partial,,Y,1,default for unspecified fish
+91,fresh coconut,Fresh coconut,H007,"Coconut, kernel, fresh",IFCT2017,linked,auto_confirmed,subset,1,N,81,
+92,garam masala powder,Garam masala powder,G523,"Garam masala (UK-13-829, via INDB)",INDB,linked,fallback,partial,,N,9,INDB recipes.xlsx maps garam masala to G523 (187 ingredient rows)
+93,garlic,Garlic,G012,"Garlic, small cloves",IFCT2017,linked,reviewer_selected,subset,2,Y,47,
+94,ghee,Ghee,T013,Ghee,IFCT2017,linked,auto_confirmed,exact,1,N,18,
+95,ginger,Ginger,G014,"Ginger, fresh",IFCT2017,linked,reviewer_selected,subset,1,N,41,
+96,ginger garlic paste,Ginger Garlic Paste,G901,"Ginger-garlic paste (derived: IFCT G014 + G012, 1:1 by mass)",DERIVED,linked,fallback,partial,,N,6,50:50 IFCT G014 ginger + G012 garlic; INDB splits this paste into the same two codes
+98,glazed cherry,Glazed Cherries,E511,"Cherries, glace (UK-14-335, via INDB)",INDB,linked,fallback,partial,,N,1,
+99,gram flour besan,Gram flour (besan),B001,"Bengal gram, dal",IFCT2017,linked,reviewer_manual,none,,N,1,besan is a close match to bengal gram flour
+100,green bean,green beans,D050,"French beans, hybrid",IFCT2017,linked,reviewer_selected,partial,29,Y,1,Often written as green beans (french beans)
+101,green bean french bean,Green beans (French Beans),D050,"French beans, hybrid",IFCT2017,linked,reviewer_selected,partial,2,Y,6,default to hybrid
+102,green chawli bean yard long bean karamani barbati,Green Chawli Beans (Yard long beans/Karamani/Barbati),D601,"Yardlong bean, raw (USDA SR Legacy, FDC 169222)",USDA,linked,fallback,partial,,,1,yard-long bean = karamani; USDA SR Legacy raw pods
+103,green chili,green chili,G008,"Chillies, green - all varieties",IFCT2017,linked,reviewer_selected,partial,36,N,2,all varities
+104,green chilli,Green Chillies,G008,"Chillies, green - all varieties",IFCT2017,linked,auto_confirmed,tokenset,8,N,61,
+106,green moong dal whole,Green Moong Dal (Whole),B011,"Green gram, whole",IFCT2017,linked,reviewer_selected,partial,1,N,3,"whole green gram: B011 'Green gram, whole' (was B010 dal)"
+107,green pea,green peas,D061,"Peas, fresh",IFCT2017,linked,reviewer_selected,partial,19,N,1,fresy form default
+108,green peas matar,Green peas (Matar),D061,"Peas, fresh",IFCT2017,linked,reviewer_manual,partial,,N,4,difficult to distinguish between dry/fresh peaas
+109,guava,Guava,E028,"Guava, white flesh",IFCT2017,linked,reviewer_selected,subset,1,Y,1,default to white flesh
+110,guava juice,Guava juice,,,,absent,absent,partial,,,1,USDA
+111,homemade tomato puree,Homemade tomato puree,D075,"Tomato, ripe, hybrid",IFCT2017,linked,reviewer_manual,partial,,Y,1,puree is derived from tomato
+112,horse gram dal kollu/ kulith,Horse Gram Dal (Kollu/ Kulith),B012,"Horse gram, whole",IFCT2017,linked,reviewer_selected,partial,4,Y,1,
+113,hot masala powder,hot Masala powder,G523,"Garam masala (UK-13-829, via INDB)",INDB,linked,fallback,partial,,Y,1,spice blend -> nearest blend row [flag: hierarchical]
+114,hot water,Hot water,LOC002,"Water, drinking",LOCAL,linked,fallback,partial,,N,1,Water at a different temperature; same food as water
+115,hung curd greek yogurt,Hung Curd (Greek Yogurt),L520,"Yogurt, whole milk, plain (UK-12-184, via INDB)",INDB,linked,fallback,none,,Y,1,strained curd is more concentrated [flag: underestimates; or leave absent]
+116,icing sugar,Icing Sugar,I504,"Sugar, icing (UK-17-062, via INDB)",INDB,linked,fallback,partial,,N,1,
+117,instant coffee powder,Instant Coffee Powder,V502,"Coffee, powder, instant (UK-17-158, via INDB)",INDB,linked,fallback,partial,,N,1,
+118,instant oat oatmeal,Instant Oats (Oatmeal),A508,"Porridge oats, unfortified (UK-11-788, via INDB)",INDB,linked,fallback,none,,N,2,
+119,jackfruit raw kathal,Jackfruit Raw (Kathal),D051,"Jack fruit, raw",IFCT2017,linked,reviewer_manual,partial,,N,2,mismatch
+120,jackfruit ripe kathal,Jackfruit Ripe (Kathal),E030,"Jack fruit, ripe",IFCT2017,linked,reviewer_manual,partial,,N,3,"Jackfruit spelled as ""jack fruit"""
+121,jackfruit seed kathal,Jackfruit Seeds (Kathal),D052,"Jack fruit, seeds, mature",IFCT2017,linked,reviewer_manual,partial,,N,1,parse error
+122,jaggery,Jaggery,I001,"Jaggery, cane",IFCT2017,linked,auto_confirmed,subset,1,N,15,
+123,kaddu parangikai/ pumpkin,Kaddu (Parangikai/ Pumpkin),D066,"Pumpkin, orange, round",IFCT2017,linked,reviewer_manual,none,,Y,4,failure on language terms
+124,kala chana brown chickpea,Kala Chana (Brown Chickpeas),B002,"Bengal gram, whole",IFCT2017,linked,reviewer_manual,partial,,N,1,"Chana, kala = bengal gram, wholee"
+125,karela bitter gourd/ pavakkai,Karela (Bitter Gourd/ Pavakkai),D005,"Bitter gourd, jagged, teeth ridges, short",IFCT2017,linked,reviewer_manual,none,,Y,1,default to long bitter gourd
+126,kashmiri red chilli powder,Kashmiri Red Chilli Powder,G022,"Chillies, red",IFCT2017,linked,auto_confirmed,subset,1,N,10,"G022 is the whole/raw chilli entry, not a powder-specific row"
+127,kokum malabar tamarind,Kokum (Malabar Tamarind),,,,absent,absent,partial,,,6,kokum != tamarind
+128,lemon,Lemon,E033,"Lemon, juice",IFCT2017,linked,auto_confirmed,subset,1,N,2,lemon - lemon juice
+129,lemon juice,Lemon juice,E033,"Lemon, juice",IFCT2017,linked,auto_confirmed,exact,1,N,11,
+130,luke warm water,luke warm water,LOC002,"Water, drinking",LOCAL,linked,fallback,partial,,N,1,Water at a different temperature; same food as water
+131,lukewarm water,Lukewarm Water,LOC002,"Water, drinking",LOCAL,linked,fallback,partial,,N,2,Water at a different temperature; same food as water
+132,mango raw,Mango (Raw),D057,"Mango, green, raw",IFCT2017,linked,auto_confirmed,subset,1,N,3,
+133,mango ripe,Mango (Ripe),E036,"Mango, ripe, banganapalli",IFCT2017,linked,reviewer_selected,subset,1,Y,5,default to banganapalli
+134,meat masala,Meat masala,G523,"Garam masala (UK-13-829, via INDB)",INDB,linked,fallback,partial,,Y,2,spice blend -> nearest blend row [flag: hierarchical]
+135,methi powder fenugreek powder,Methi Powder (Fenugreek Powder),G026,Fenugreek seeds,IFCT2017,linked,reviewer_selected,partial,2,N,4,fenugreek seed - not powder
+136,methi seed fenugreek seed,Methi Seeds (Fenugreek Seeds),G026,Fenugreek seeds,IFCT2017,linked,auto_confirmed,subset,1,N,10,
+137,milk,Milk,L002,"Milk, whole, Cow",IFCT2017,linked,reviewer_selected,subset,2,Y,8,Whole Milk
+138,mint leaf pudina,Mint Leaves (Pudina),G016,Mint leaves,IFCT2017,linked,reviewer_selected,partial,4,N,7,
+139,mixed dry fruit apricot,Mixed dry fruits (Apricot),E005,"Apricot, dried",IFCT2017,linked,reviewer_selected,partial,3,Y,1,
+140,mixed nut almond,Mixed nuts (Almond),H001,Almond,IFCT2017,linked,auto_confirmed,subset,1,Y,1,
+141,mixed vegetable green bean,Mixed vegetables (Green Beans),D050,"French beans, hybrid",IFCT2017,linked,reviewer_manual,partial,,Y,1,"green bean = french bean, hybrid"
+142,mixed vegetable potato,Mixed vegetables (Potatoes),F007,"Potato, brown skin, small",IFCT2017,linked,reviewer_manual,none,,Y,1,default to small brown potatoes
+143,mooli/ mullangi radish,Mooli/ Mullangi (Radish),F011,"Radish, round, red skin",IFCT2017,linked,reviewer_manual,partial,,Y,1,"default to round, red radish"
+144,mustard,mustard,H013,Mustard seeds,IFCT2017,linked,reviewer_selected,subset,2,N,3,mustard defaults to seed (rather than the condiment)
+145,mustard oil,Mustard oil,T006,Mustard oil,IFCT2017,linked,auto_confirmed,exact,1,N,1,
+146,mustard seed,Mustard seeds,H013,Mustard seeds,IFCT2017,linked,auto_confirmed,exact,1,N,60,
+147,mutton,Mutton,O016,"Sheep, leg",IFCT2017,linked,reviewer_manual,none,,Y,4,"mutton =  sheep in IFCT, default to leg"
+148,nendra pazham banana ripe,Nendra Pazham Banana (Ripe),E009,"Banana, ripe, montham",IFCT2017,linked,reviewer_selected,partial,1,Y,2,default to montham
+149,nutmeg powder,Nutmeg powder,G028,Nutmeg,IFCT2017,linked,auto_confirmed,subset,1,N,2,nutmeg/nutmeg powder distinction
+150,oil,oil,T001,Coconut oil,IFCT2017,linked,reviewer_selected,subset,1,Y,4,defaulted to coconut oil for base fat (worth rescanning recipe base)
+151,okra,okra,D056,Ladies finger,IFCT2017,linked,reviewer_manual,none,,N,1,ladies finger = okra
+153,onion,Onion,G017,"Onion, big",IFCT2017,linked,reviewer_selected,subset,2,Y,42,"Check normalization for ""small"" onion"
+154,orange,Orange,E047,"Orange, pulp",IFCT2017,linked,reviewer_manual,subset,,N,1,Orange = orange pulp
+155,palm sugar,Palm sugar,I001,"Jaggery, cane",IFCT2017,linked,reviewer_manual,partial,,Y,1,USDA
+156,papad,Papad,,,,absent,absent,none,,,1,"pappadam, find somewhere else"
+157,papaya,Papaya,E049,"Papaya, ripe",IFCT2017,linked,reviewer_selected,subset,2,N,1,
+158,papaya juice,Papaya juice,,,,absent,absent,partial,,,1,USDA
+159,paprika powder,Paprika powder,G022,"Chillies, red",IFCT2017,linked,reviewer_manual,partial,,Y,1,treat as red chili powdeer
+160,pearl onion sambar onion,Pearl onions (Sambar Onions),G018,"Onion, small",IFCT2017,linked,reviewer_selected,partial,3,N,17,pearl/sambar liekly refers to small onions
+162,poppy seed,Poppy seeds,G032,Poppy seeds,IFCT2017,linked,auto_confirmed,exact,1,N,1,
+164,potato aloo,Potato (Aloo),F006,"Potato, brown skin, big",IFCT2017,linked,reviewer_selected,partial,1,Y,8,Default to brown-skinned as other types are likely less common
+165,prawn,Prawns,S008,"Prawns, big",IFCT2017,linked,reviewer_selected,subset,3,Y,5,default to large prawns
+166,ragi flour finger millet/ nagli,Ragi Flour (Finger Millet/ Nagli),A010,Ragi,IFCT2017,linked,auto_confirmed,subset,1,N,1,
+167,raisin,Raisins,E057,"Raisins, dried, black",IFCT2017,linked,reviewer_selected,subset,1,Y,4,default to black raisins
+168,rasam powder,Rasam Powder,G520,"Curry powder (UK-13-876, via INDB)",INDB,linked,fallback,partial,,Y,1,chilli-coriander blend -> curry powder [flag: hierarchical]
+169,raw banana,Raw Banana,D063,"Plantain, green",IFCT2017,linked,reviewer_manual,partial,,Y,6,Defaulted to Raw variant of plaintain
+170,raw banana peel,Raw banana peel,,,,absent,absent,partial,,,1,USDA
+171,raw papaya,Raw papaya,D059,"Papaya, raw",IFCT2017,linked,auto_confirmed,tokenset,1,N,2,
+172,raw peanut moongphali,Raw Peanuts (Moongphali),H012,Ground nut,IFCT2017,linked,reviewer_manual,partial,,N,1,"Moog Phali is found in ""lang"" of ground nut"
+173,red black eyed bean azuki,Red Black Eyed Beans (Azuki),B601,"Adzuki beans, mature seeds, raw (USDA SR Legacy, FDC 173727)",USDA,linked,fallback,partial,,,1,
+174,red chili,red chili,G022,"Chillies, red",IFCT2017,linked,reviewer_selected,partial,17,N,1,
+175,red chili powder,red chili powder,G022,"Chillies, red",IFCT2017,linked,reviewer_selected,partial,5,N,1,"G022 is the whole/raw chilli entry, not a powder-specific row"
+176,red chilli flake,Red Chilli flakes,G022,"Chillies, red",IFCT2017,linked,auto_confirmed,subset,1,N,1,"""flake"" may be different from regular red chili"
+178,red chilli powder,Red Chilli powder,G022,"Chillies, red",IFCT2017,linked,auto_confirmed,subset,1,N,33,"G022 is the whole/raw chilli entry, not a powder-specific row"
+179,red matta rice,Red matta rice,A014,"Rice, parboiled, milled",IFCT2017,linked,reviewer_manual,partial,,Y,6,rice parboiled/milled
+180,rice,Rice,A014,"Rice, parboiled, milled",IFCT2017,linked,reviewer_selected,subset,4,Y,7,parboiled is likely more standard than raw rice
+181,rice ada,Rice ada,,,,absent,absent,partial,,,1,rice ada has no IFCT equiv
+182,rice flour,Rice flour,A505,"Flour, rice (UK-11-021, via INDB)",INDB,linked,fallback,partial,,N,9,INDB recipes.xlsx maps rice flour to A505 (5 rows)
+183,rice puttu,Rice puttu,A505,"Flour, rice (UK-11-021, via INDB)",INDB,linked,fallback,partial,,Y,1,INDB recipes.xlsx maps 'puttu flour' to A505; puttu podi = roasted rice flour
+184,ripe banana,Ripe Bananas,E010,"Banana, ripe, poovam",IFCT2017,linked,reviewer_selected,subset,2,Y,4,default to poovam
+185,rum,Rum,K502,"Spirits, 40% volume (UK-17-247, via INDB)",INDB,linked,fallback,none,,N,2,values are per 100 ml [flag: alcohol; cake soak]
+186,rye,rye,H013,Mustard seeds,IFCT2017,linked,reviewer_manual,none,,N,1,rye = rai = mustard
+187,saffron strand,Saffron strands,G529,"Saffron (UK-13-852, via INDB)",INDB,linked,fallback,none,,N,1,
+188,salt,Salt,LOC001,"Salt, common (sodium chloride)",LOCAL,linked,fallback,none,,N,123,"NaCl. Zero for all tracked macronutrients. USDA FDC 'Salt, table' (SR Legacy 02047)."
+189,sambar powder,Sambar Powder,G520,"Curry powder (UK-13-876, via INDB)",INDB,linked,fallback,partial,,Y,1,chilli-coriander blend -> curry powder [flag: hierarchical]
+190,sardine fish,Sardine fish,P071,Sardine,IFCT2017,linked,auto_confirmed,subset,1,N,2,
+191,seer fish,Seer fish,P087,Vanjaram,IFCT2017,linked,reviewer_manual,partial,,N,2,panjaram = seer fish
+192,shallot,Shallots,G018,"Onion, small",IFCT2017,linked,reviewer_manual,none,,N,16,small onion = shallot
+193,shallot pearl onion,Shallots (pearl onions),G018,"Onion, small",IFCT2017,linked,reviewer_selected,partial,3,N,1,could replace with small onion
+194,shrimp,Shrimps,Q008,"Tiger Prawns, orange",IFCT2017,linked,reviewer_manual,none,,Y,1,giant tiger prawn likely found in Kerala
+195,small onion,small onions,G018,"Onion, small",IFCT2017,linked,auto_confirmed,tokenset,1,N,1,
+198,squid,Squid,R004,"Squid, black",IFCT2017,linked,reviewer_selected,subset,1,Y,1,default to black squid
+199,sugar,Sugar,I502,"Sugar, white (UK-17-063, via INDB)",INDB,linked,fallback,subset,,N,15,white sugar; INDB UK_fct.xlsx I502 = UK-17-063
+200,sunflower oil,Sunflower Oil,T012,Sunflower oil,IFCT2017,linked,auto_confirmed,exact,1,N,30,
+201,suran,suran,F017,"Yam, elephant",IFCT2017,linked,reviewer_manual,none,,N,1,suran = yam
+202,sweet potato,Sweet Potatoes,F013,"Sweet potato, brown skin",IFCT2017,linked,reviewer_selected,subset,1,Y,1,default to brown potato
+203,tamarind,Tamarind,E064,"Tamarind, pulp",IFCT2017,linked,reviewer_selected,subset,3,N,6,pulp is more accurate than leaves or manila
+204,tamarind paste,Tamarind Paste,E064,"Tamarind, pulp",IFCT2017,linked,reviewer_selected,partial,3,Y,2,"Paste != pulp, recheck"
+205,tamarind water,Tamarind Water,E901,"Tamarind water (derived: IFCT E064 pulp, 50 g per 240 g)",DERIVED,linked,fallback,partial,,N,3,"IFCT E064 pulp x 50/240: one 'ball' of tamarind (INDB Units, 50 g) per cup (240 g) [flag: one recipe line literally says 'extract from a big lemon sized tamarind']"
+206,tapioca root,Tapioca root,F015,Tapioca,IFCT2017,linked,auto_confirmed,subset,1,N,3,tapioca differs from tapioca root
+207,tomato,Tomato,D075,"Tomato, ripe, hybrid",IFCT2017,linked,reviewer_selected,subset,2,Y,25,default to hybrid
+209,tulsi holy basil,Tulsi (holy basil),,,,absent,absent,none,,,1,USDA
+211,turmeric powder,turmeric powder,G033,Turmeric powder,IFCT2017,linked,auto_confirmed,exact,1,N,4,
+212,turmeric powder haldi,Turmeric powder (Haldi),G033,Turmeric powder,IFCT2017,linked,auto_confirmed,subset,1,N,82,
+213,tutti frutti,Tutti frutti,,,,absent,absent,none,,,2,This is candied raw papaya
+214,vanilla extract,Vanilla Extract,G544,"Vanilla extract (US-173471, via INDB)",INDB,linked,fallback,none,,N,1,
+215,vellai poosanikai ash gourd white pumpkin,Vellai Poosanikai (Ash gourd/White Pumpkin),D001,Ash gourd,IFCT2017,linked,auto_confirmed,subset,1,N,3,
+216,vinegar,Vinegar,G532,"Vinegar (UK-17-339, via INDB)",INDB,linked,fallback,none,,N,2,
+217,vivatta maida,Vivatta Maida,A018,"Wheat flour, refined",IFCT2017,linked,reviewer_manual,none,,N,1,Maida = wheat flour
+218,water,Water,LOC002,"Water, drinking",LOCAL,linked,fallback,subset,,N,26,Zero for all tracked macronutrients.
+219,white urad dal,white urad dal,B003,"Black gram, dal",IFCT2017,linked,reviewer_manual,partial,,N,1,Urad dal = black gram dal
+220,white urad dal split,White Urad Dal (Split),B003,"Black gram, dal",IFCT2017,linked,reviewer_manual,partial,,N,12,urad dal = black gram
+221,whole black pepper,whole black pepper,G031,"Pepper, black",IFCT2017,linked,auto_confirmed,subset,1,N,1,
+222,whole black peppercorn,Whole Black Peppercorns,G031,"Pepper, black",IFCT2017,linked,reviewer_selected,partial,7,N,12,
+223,whole egg,Whole Eggs,M001,"Egg, poultry, whole, raw",IFCT2017,linked,reviewer_selected,subset,1,Y,5,
+225,whole wheat flour,Whole Wheat Flour,A020,"Wheat, whole",IFCT2017,linked,auto_confirmed,subset,1,N,5,
+227,yellow moong dal split,Yellow Moong Dal (Split),B010,"Green gram, dal",IFCT2017,linked,reviewer_manual,partial,,N,3,moong dal = green dal

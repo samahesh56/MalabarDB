@@ -37,3 +37,14 @@ luke warm water,LOC002,LOCAL,Water at a different temperature; same food as wate
 hot water,LOC002,LOCAL,Water at a different temperature; same food as water
 sugar,I502,INDB,white sugar; INDB UK_fct.xlsx I502 = UK-17-063
 dry ginger powder,G554,INDB,dried ground ginger; INDB UK_fct.xlsx G554 = UK-13-832
+green chawli bean yard long bean karamani barbati,D601,USDA,yard-long bean = karamani; USDA SR Legacy raw pods
+dried fig,E601,USDA,
+cooked rice,A601,USDA,plain cooked white rice; rice variety not specified in the recipes [flag: hierarchical]
+fennel seed saunf,G601,USDA,
+fennel powder,G601,USDA,ground fennel seed; same food as the seed
+cinnamon stick dalchini,G602,USDA,stick and ground cinnamon are the same bark
+cinnamon powder dalchini,G602,USDA,
+active dry yeast,K601,USDA,
+baking soda,K602,USDA,
+cooking soda,K602,USDA,cooking soda = baking soda (sodium bicarbonate)
+red black eyed bean azuki,B601,USDA,

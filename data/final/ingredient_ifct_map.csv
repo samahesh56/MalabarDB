@@ -22,13 +22,13 @@ pearl onion sambar onion,Pearl onions (Sambar Onions),17,G018,N,3,,,pearl/sambar
 jaggery,Jaggery,16,I001,N,1,,,
 shallot,Shallots,16,G018,N,miss,,,small onion = shallot
 sugar,Sugar,16,,N,miss,I502,INDB,white sugar now has an exact row: INDB I502 (was proxied by I001 jaggery)
-cinnamon stick dalchini,Cinnamon Stick (Dalchini),15,,,absent,,,gather from USDA
+cinnamon stick dalchini,Cinnamon Stick (Dalchini),15,,,absent,G602,USDA,gather from USDA
 coriander dhania leaves,Coriander (Dhania) Leaves,15,G009,N,1,,,
 cardamom elaichi pod seed,Cardamom (Elaichi) Pods/Seeds,14,G020,Y,1,,,default to green cardamom (likely more common)
 coriander powder dhania,Coriander Powder (Dhania),14,G024,N,2,,,"powder = ground seed, not leaf "
 cashew nut,Cashew nuts,13,H005,N,1,,,
 white urad dal split,White Urad Dal (Split),13,B003,N,miss,,,urad dal = black gram
-fennel seed saunf,Fennel seeds (Saunf),12,,,absent,,,gather from USDA
+fennel seed saunf,Fennel seeds (Saunf),12,,,absent,G601,USDA,gather from USDA
 whole black peppercorn,Whole Black Peppercorns,12,G031,N,7,,,
 turmeric powder,turmeric powder,12,G033,N,1,,,
 kashmiri red chilli powder,Kashmiri Red Chilli Powder,11,G022,N,1,,,"G022 is the whole/raw chilli entry, not a powder-specific row"
@@ -53,7 +53,7 @@ asafoetida hing,Asafoetida (hing),7,G019,N,1,,,
 ginger garlic paste,Ginger Garlic Paste,7,,N,absent,G901,DERIVED,ginger garlic paste is a specific blend - USDA
 mint leaf pudina,Mint Leaves (Pudina),7,G016,N,4,,,
 tamarind,Tamarind,7,E064,N,3,,,pulp is more accurate than leaves or manila
-baking soda,Baking soda,6,,,absent,,,
+baking soda,Baking soda,6,,,absent,K602,USDA,
 cumin seed,cumin seeds,6,G025,N,1,,,
 elephant yam suran senai ratalu,Elephant yam (Suran/Senai/Ratalu),6,F017,N,1,,,
 green bean french bean,Green beans (French Beans),6,D050,Y,2,,,default to hybrid
@@ -62,7 +62,7 @@ red matta rice,Red matta rice,6,A014,Y,miss,,,rice parboiled/milled
 all purpose flour maida,All Purpose Flour (Maida),5,A018,N,miss,,,maida = refined wheat flour
 bhindi lady finger okra,Bhindi (Lady Finger/Okra),5,D056,N,1,,,
 drumstick,Drumstick,5,D046,N,1,,,
-fennel powder,Fennel Powder,5,,,absent,,,gather from USDA
+fennel powder,Fennel Powder,5,,,absent,G601,USDA,gather from USDA
 mango ripe,Mango (Ripe),5,E036,Y,1,,,default to banganapalli
 prawn,Prawns,5,S008,Y,3,,,default to large prawns
 whole egg,Whole Eggs,5,M001,Y,1,,,
@@ -76,10 +76,10 @@ methi powder fenugreek powder,Methi Powder (Fenugreek Powder),4,G026,N,2,,,fenug
 mutton,Mutton,4,O016,Y,miss,,,"mutton =  sheep in IFCT, default to leg"
 raisin,Raisins,4,E057,Y,1,,,default to black raisins
 ripe banana,Ripe Bananas,4,E010,Y,2,,,default to poovam
-active dry yeast,Active dry yeast,3,,,absent,,,USDA 
+active dry yeast,Active dry yeast,3,,,absent,K601,USDA,USDA 
 arhar dal split toor dal,Arhar dal (Split Toor Dal),3,B021,N,miss,,,confirmed via lang column; Arhar Dal is red gram
 bay leaf tej patta,Bay leaf (tej patta),3,,N,absent,G512,INDB,
-cooked rice,Cooked rice,3,,,absent,,,USDA
+cooked rice,Cooked rice,3,,,absent,A601,USDA,USDA
 dry ginger powder,Dry ginger powder,3,,N,3,G554,INDB,dried ground ginger: INDB G554 (fresh ginger G014 is ~5x less energy-dense)
 green moong dal whole,Green Moong Dal (Whole),3,B011,N,1,,,"whole green gram: B011 'Green gram, whole' (was B010 dal)"
 jackfruit ripe kathal,Jackfruit Ripe (Kathal),3,E030,N,miss,,,"Jackfruit spelled as ""jack fruit"" "
@@ -97,7 +97,7 @@ black urad dal split,Black Urad Dal (Split),2,B003,N,1,,,
 brinjal baingan eggplant,Brinjal (Baingan / Eggplant),2,D031,N,22,,,all varities  
 butter unsalted,Butter (unsalted),2,,N,absent,T501,INDB,USDA
 chayote,Chayote,2,D038,N,miss,,,cho-cho-marrow is the same as chayote
-cinnamon powder dalchini,Cinnamon Powder (Dalchini),2,,,absent,,,USDA
+cinnamon powder dalchini,Cinnamon Powder (Dalchini),2,,,absent,G602,USDA,USDA
 colocasia root arbi,Colocasia Root (Arbi),2,F004,N,1,,,
 drumstick leaf moringa murungai keerai,Drumstick Leaves (Moringa/Murungai Keerai),2,C019,N,1,,,
 dry coconut kopra,Dry coconut (kopra),2,H006,N,1,,,Kopra = kernal
@@ -148,10 +148,10 @@ cauliflower gobi,Cauliflower (gobi),1,D036,N,1,,,
 champagne,Champagne,1,,,absent,,,USDA
 chicken masala,Chicken masala,1,,Y,absent,G523,INDB,USDA
 chinese potato,Chinese Potato,1,,,absent,,,USDA
-cooking soda,Cooking soda,1,,,absent,,,baking soda? 
+cooking soda,Cooking soda,1,,,absent,K602,USDA,baking soda? 
 crab,Crabs,1,Q005,Y,miss,,,mud crab is most common in kerala cuisine
 cucumber,Cucumber,1,D043,Y,1,,,default to long cucumber
-dried fig,Dried Figs,1,,,absent,,,dried fig != figs
+dried fig,Dried Figs,1,,,absent,E601,USDA,dried fig != figs
 egg white,Egg whites,1,M002,N,1,,,
 egg yolk,Egg yolks,1,M003,N,1,,,
 enos fruit salt,Enos fruit salt,1,,,absent,,,USDA
@@ -160,7 +160,7 @@ fennel,Fennel,1,,,absent,,,
 fish fillet,Fish fillet,1,P057,Y,miss,,,default for unspecified fish 
 glazed cherry,Glazed Cherries,1,,N,absent,E511,INDB,glazed cherries have very different nutrition compared to regular cherries
 gram flour besan,Gram flour (besan),1,B001,N,miss,,,besan is a close match to bengal gram flour
-green chawli bean yard long bean karamani barbati,Green Chawli Beans (Yard long beans/Karamani/Barbati),1,,,absent,,,only dried form exists in IFCT
+green chawli bean yard long bean karamani barbati,Green Chawli Beans (Yard long beans/Karamani/Barbati),1,,,absent,D601,USDA,only dried form exists in IFCT
 guava,Guava,1,E028,Y,1,,,default to white flesh
 guava juice,Guava juice,1,,,absent,,,USDA
 homemade tomato puree,Homemade tomato puree,1,D075,Y,miss,,,puree is derived from tomato
@@ -186,7 +186,7 @@ poppy seed,Poppy seeds,1,G032,N,1,,,
 ragi flour finger millet/ nagli,Ragi Flour (Finger Millet/ Nagli),1,A010,N,1,,,
 rasam powder,Rasam Powder,1,,Y,absent,G520,INDB,USDA
 raw peanut moongphali,Raw Peanuts (Moongphali),1,H012,N,miss,,,"Moog Phali is found in ""lang"" of ground nut "
-red black eyed bean azuki,Red Black Eyed Beans (Azuki),1,,,absent,,,azuki not found in ifct
+red black eyed bean azuki,Red Black Eyed Beans (Azuki),1,,,absent,B601,USDA,azuki not found in ifct
 red chilli flake,Red Chilli flakes,1,G022,N,1,,,"""flake"" may be different from regular red chili"
 rice ada,Rice ada,1,,,absent,,,rice ada has no IFCT equiv
 rice puttu,Rice puttu,1,,Y,absent,A505,INDB,puttu has no IFCT equiv

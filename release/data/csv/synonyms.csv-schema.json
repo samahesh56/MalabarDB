@@ -1,0 +1,72 @@
+{
+  "fields": [
+    {
+      "name": "name_raw",
+      "title": "Name as written",
+      "type": "string",
+      "description": "Ingredient name exactly as written in a recipe.",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "norm_key",
+      "title": "Canonical key",
+      "type": "string",
+      "description": "Key the name normalises to.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "ingredient_id",
+      "title": "Ingredient ID",
+      "type": "integer",
+      "description": "Canonical ingredient; see ingredients.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "food_code",
+      "title": "Food code",
+      "type": "string",
+      "description": "Linked nutrient profile. Blank when absent."
+    },
+    {
+      "name": "food_name",
+      "title": "Linked food",
+      "type": "string",
+      "description": "Name of the linked nutrient profile."
+    },
+    {
+      "name": "n_lines",
+      "title": "Lines",
+      "type": "integer",
+      "description": "Recipe lines in this release that use this spelling.",
+      "constraints": {
+        "required": true
+      }
+    }
+  ],
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": [
+    "name_raw"
+  ],
+  "foreignKeys": [
+    {
+      "fields": [
+        "ingredient_id"
+      ],
+      "reference": {
+        "resource": "ingredients",
+        "fields": [
+          "ingredient_id"
+        ]
+      }
+    }
+  ]
+}

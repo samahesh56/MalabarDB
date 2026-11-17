@@ -564,3 +564,11 @@ V502,"Coffee, powder, instant (UK-17-158, via INDB)",INDB supplementary,75.0,320
 H901,"Coconut milk (derived: IFCT H007 fresh coconut + water, 1:1 by mass)",Derived,204.45,855.5,derived,1.92,3.15,20.69,5.21
 G901,"Ginger-garlic paste (derived: IFCT G014 + G012, 1:1 by mass)",Derived,88.9,372.0,derived,4.49,15.4,0.5,5.42
 E901,"Tamarind water (derived: IFCT E064 pulp, 50 g per 240 g)",Derived,60.1,251.46,derived,0.61,14.03,0.03,1.11
+D601,"Yardlong bean, raw (USDA SR Legacy, FDC 169222)",USDA supplementary,47.0,197.0,usda,2.8,8.35,0.4,
+E601,"Figs, dried, uncooked (USDA SR Legacy, FDC 174665)",USDA supplementary,249.0,1040.0,usda,3.3,54.1,0.93,9.8
+A601,"Rice, white, cooked (USDA SR Legacy, FDC 168930)",USDA supplementary,130.0,544.0,usda,2.38,28.6,0.21,
+G601,"Fennel seed (USDA SR Legacy, FDC 171323)",USDA supplementary,345.0,1440.0,usda,15.8,12.5,14.9,39.8
+G602,"Cinnamon, ground (USDA SR Legacy, FDC 171320)",USDA supplementary,247.0,1040.0,usda,3.99,27.5,1.24,53.1
+K601,"Yeast, baker's, active dry (USDA SR Legacy, FDC 175043)",USDA supplementary,325.0,1360.0,usda,40.4,14.3,7.61,26.9
+K602,"Baking soda (USDA SR Legacy, FDC 175040)",USDA supplementary,0.0,0.0,usda,0.0,0.0,0.0,0.0
+B601,"Adzuki beans, mature seeds, raw (USDA SR Legacy, FDC 173727)",USDA supplementary,329.0,1380.0,usda,19.9,50.2,0.53,12.7

@@ -1,0 +1,132 @@
+food_code,food_name,food_group,data_source,energy_kcal,energy_kj,energy_source,protein_g,carb_g,fat_g,fibre_g,source_ref
+A003,Bajra,Cereals and Millets,IFCT2017,348.0,1456.0,published,10.96,61.78,5.43,11.49,
+A010,Ragi,Cereals and Millets,IFCT2017,320.7,1342.0,published,7.16,66.82,1.92,11.18,
+A013,"Rice, raw, brown",Cereals and Millets,IFCT2017,353.7,1480.0,published,9.16,74.8,1.24,4.43,
+A014,"Rice, parboiled, milled",Cereals and Millets,IFCT2017,351.6,1471.0,published,7.81,77.16,0.55,3.74,
+A015,"Rice, raw, milled",Cereals and Millets,IFCT2017,356.4,1491.0,published,7.94,78.24,0.52,2.81,
+A018,"Wheat flour, refined",Cereals and Millets,IFCT2017,351.8,1472.0,published,10.36,74.27,0.76,2.76,
+A020,"Wheat, whole",Cereals and Millets,IFCT2017,321.9,1347.0,published,10.59,64.72,1.47,11.23,
+A505,"Flour, rice (UK-11-021, via INDB)",INDB supplementary,INDB,366.0,1531.0,indb,6.4,80.1,0.8,,INDB UK_fct.xlsx row A505 = UK-11-021
+A508,"Porridge oats, unfortified (UK-11-788, via INDB)",INDB supplementary,INDB,381.0,1614.0,indb,10.9,70.7,8.1,7.8,INDB UK_fct.xlsx row A508 = UK-11-788
+A601,"Rice, white, cooked (USDA SR Legacy, FDC 168930)",USDA supplementary,USDA,130.0,544.0,usda,2.38,28.6,0.21,,"USDA FDC 168930 (SR Legacy); fibre not reported, so carb_g is carbohydrate by difference and includes fibre"
+B001,"Bengal gram, dal",Grain Legumes,IFCT2017,329.1,1377.0,published,21.55,46.72,5.31,15.15,
+B002,"Bengal gram, whole",Grain Legumes,IFCT2017,287.0,1201.0,published,18.77,39.56,5.11,25.22,
+B003,"Black gram, dal",Grain Legumes,IFCT2017,324.1,1356.0,published,23.06,51.0,1.69,11.93,
+B004,"Black gram, whole",Grain Legumes,IFCT2017,291.3,1219.0,published,21.97,43.99,1.58,20.41,
+B006,"Cowpea, white",Grain Legumes,IFCT2017,320.3,1340.0,published,21.25,53.77,1.14,11.7,
+B010,"Green gram, dal",Grain Legumes,IFCT2017,325.8,1363.0,published,23.88,52.59,1.35,9.37,
+B011,"Green gram, whole",Grain Legumes,IFCT2017,293.7,1229.0,published,22.53,46.13,1.14,17.04,
+B012,"Horse gram, whole",Grain Legumes,IFCT2017,329.6,1379.0,published,21.73,57.24,0.62,7.88,
+B021,"Red gram, dal",Grain Legumes,IFCT2017,330.8,1384.0,published,21.7,55.23,1.56,9.06,
+B601,"Adzuki beans, mature seeds, raw (USDA SR Legacy, FDC 173727)",USDA supplementary,USDA,329.0,1380.0,usda,19.9,50.2,0.53,12.7,USDA FDC 173727 (SR Legacy); carb_g = carbohydrate by difference 62.9 minus fibre 12.7
+C015,"Cabbage, green",Green Leafy Vegetables,IFCT2017,21.5,90.0,published,1.36,3.25,0.12,2.76,
+C019,Drumstick leaves,Green Leafy Vegetables,IFCT2017,67.4,282.0,published,6.41,5.62,1.64,8.21,
+D001,Ash gourd,Other Vegetables,IFCT2017,17.4,73.0,published,0.79,2.84,0.14,3.37,
+D005,"Bitter gourd, jagged, teeth ridges, short",Other Vegetables,IFCT2017,18.9,79.0,published,1.34,2.53,0.24,3.49,
+D031,Brinjal - all varieties,Other Vegetables,IFCT2017,25.3,106.0,published,1.48,3.52,0.32,3.98,
+D036,Cauliflower,Other Vegetables,IFCT2017,22.9,96.0,published,2.15,2.03,0.44,3.71,
+D038,Cho-cho-marrow,Other Vegetables,IFCT2017,18.9,79.0,published,0.66,3.47,0.15,1.55,
+D043,"Cucumber, green, elongate",Other Vegetables,IFCT2017,19.6,82.0,published,0.71,3.48,0.16,2.14,
+D046,Drumstick,Other Vegetables,IFCT2017,29.4,123.0,published,2.62,3.76,0.12,6.83,
+D050,"French beans, hybrid",Other Vegetables,IFCT2017,22.2,93.0,published,2.12,2.63,0.19,4.18,
+D051,"Jack fruit, raw",Other Vegetables,IFCT2017,26.3,110.0,published,1.98,3.48,0.35,7.69,
+D052,"Jack fruit, seeds, mature",Other Vegetables,IFCT2017,77.0,322.0,published,5.79,11.81,0.44,8.63,
+D056,Ladies finger,Other Vegetables,IFCT2017,27.5,115.0,published,2.08,3.62,0.22,4.08,
+D057,"Mango, green, raw",Other Vegetables,IFCT2017,49.0,205.0,published,0.69,10.59,0.08,3.01,
+D059,"Papaya, raw",Other Vegetables,IFCT2017,23.9,100.0,published,0.5,4.4,0.23,2.28,
+D061,"Peas, fresh",Other Vegetables,IFCT2017,81.3,340.0,published,7.25,11.88,0.13,6.32,
+D062,"Plantain, flower",Other Vegetables,IFCT2017,21.3,89.0,published,1.47,2.15,0.63,5.25,
+D063,"Plantain, green",Other Vegetables,IFCT2017,79.8,334.0,published,1.18,17.58,0.23,3.6,
+D064,"Plantain, stem",Other Vegetables,IFCT2017,39.4,165.0,published,0.35,8.64,0.16,2.12,
+D066,"Pumpkin, orange, round",Other Vegetables,IFCT2017,23.2,97.0,published,0.84,4.0,0.16,2.56,
+D075,"Tomato, ripe, hybrid",Other Vegetables,IFCT2017,18.9,79.0,published,0.76,3.2,0.25,1.58,
+D601,"Yardlong bean, raw (USDA SR Legacy, FDC 169222)",USDA supplementary,USDA,47.0,197.0,usda,2.8,8.35,0.4,,"USDA SR Legacy FDC 169222, Yardlong beans, raw; fibre not reported, so carb_g includes fibre"
+E005,"Apricot, dried",Fruits,IFCT2017,315.7,1321.0,published,3.17,72.63,0.74,3.32,
+E009,"Banana, ripe, montham",Fruits,IFCT2017,110.7,463.0,published,1.25,24.95,0.32,2.21,
+E010,"Banana, ripe, poovam",Fruits,IFCT2017,106.4,445.0,published,1.49,23.41,0.35,2.33,
+E028,"Guava, white flesh",Fruits,IFCT2017,32.3,135.0,published,1.44,5.13,0.32,8.59,
+E030,"Jack fruit, ripe",Fruits,IFCT2017,72.2,302.0,published,2.74,14.01,0.15,3.62,
+E033,"Lemon, juice",Fruits,IFCT2017,36.6,153.0,published,0.41,0.0,0.75,0.0,
+E036,"Mango, ripe, banganapalli",Fruits,IFCT2017,41.8,175.0,published,0.54,8.18,0.55,1.88,
+E047,"Orange, pulp",Fruits,IFCT2017,37.3,156.0,published,0.7,7.92,0.13,1.29,
+E049,"Papaya, ripe",Fruits,IFCT2017,23.9,100.0,published,0.42,4.61,0.16,2.83,
+E057,"Raisins, dried, black",Fruits,IFCT2017,305.7,1279.0,published,2.57,71.29,0.34,3.92,
+E064,"Tamarind, pulp",Fruits,IFCT2017,288.5,1207.0,published,2.92,67.35,0.15,5.31,
+E511,"Cherries, glace (UK-14-335, via INDB)",INDB supplementary,INDB,294.0,1256.0,indb,0.4,78.1,0.0,,INDB UK_fct.xlsx row E511 = UK-14-335
+E601,"Figs, dried, uncooked (USDA SR Legacy, FDC 174665)",USDA supplementary,USDA,249.0,1040.0,usda,3.3,54.1,0.93,9.8,USDA FDC 174665 (SR Legacy); carb_g = carbohydrate by difference 63.9 minus fibre 9.8
+E901,"Tamarind water (derived: IFCT E064 pulp, 50 g per 240 g)",Derived,DERIVED,60.1,251.46,derived,0.61,14.03,0.03,1.11,"E064 x 50/240; INDB Units: tamarind 1 ball = 50 g, one ball per cup (240 g)"
+F002,"Carrot, orange",Roots and Tubers,IFCT2017,33.2,139.0,published,0.95,5.55,0.47,4.18,
+F004,Colocasia,Roots and Tubers,IFCT2017,88.9,372.0,published,3.31,17.85,0.17,3.22,
+F006,"Potato, brown skin, big",Roots and Tubers,IFCT2017,69.8,292.0,published,1.54,14.89,0.23,1.71,
+F007,"Potato, brown skin, small",Roots and Tubers,IFCT2017,60.9,255.0,published,1.35,12.9,0.22,1.69,
+F011,"Radish, round, red skin",Roots and Tubers,IFCT2017,31.1,130.0,published,0.89,6.07,0.16,2.29,
+F013,"Sweet potato, brown skin",Roots and Tubers,IFCT2017,109.0,456.0,published,1.33,24.25,0.26,3.99,
+F015,Tapioca,Roots and Tubers,IFCT2017,79.8,334.0,published,1.03,17.81,0.2,4.61,
+F017,"Yam, elephant",Roots and Tubers,IFCT2017,84.4,353.0,published,2.56,17.46,0.14,4.17,
+G008,"Chillies, green - all varieties",Condiments and Spices,IFCT2017,42.3,177.0,published,2.36,5.86,0.72,4.77,
+G009,Coriander leaves,Condiments and Spices,IFCT2017,31.1,130.0,published,3.52,1.93,0.7,4.66,
+G010,Curry leaves,Condiments and Spices,IFCT2017,63.6,266.0,published,7.41,4.51,1.06,16.83,
+G012,"Garlic, small cloves",Condiments and Spices,IFCT2017,122.8,514.0,published,6.75,21.84,0.14,5.47,
+G014,"Ginger, fresh",Condiments and Spices,IFCT2017,55.0,230.0,published,2.22,8.97,0.85,5.36,
+G016,Mint leaves,Condiments and Spices,IFCT2017,37.0,155.0,published,4.66,2.39,0.65,5.89,
+G017,"Onion, big",Condiments and Spices,IFCT2017,48.0,201.0,published,1.5,9.56,0.24,2.45,
+G018,"Onion, small",Condiments and Spices,IFCT2017,56.6,237.0,published,1.82,11.58,0.16,1.16,
+G019,Asafoetida,Condiments and Spices,IFCT2017,331.5,1387.0,published,6.34,71.95,1.26,5.13,
+G020,"Cardamom, green",Condiments and Spices,IFCT2017,255.0,1067.0,published,8.1,47.76,2.6,23.1,
+G022,"Chillies, red",Condiments and Spices,IFCT2017,236.6,990.0,published,12.69,29.46,6.4,31.15,
+G023,Cloves,Condiments and Spices,IFCT2017,186.7,781.0,published,5.86,18.73,8.41,34.52,
+G024,Coriander seeds,Condiments and Spices,IFCT2017,268.9,1125.0,published,10.66,12.98,17.47,44.81,
+G025,Cumin seeds,Condiments and Spices,IFCT2017,304.5,1274.0,published,13.91,22.62,16.64,30.35,
+G026,Fenugreek seeds,Condiments and Spices,IFCT2017,234.9,983.0,published,25.41,10.57,5.72,47.55,
+G028,Nutmeg,Condiments and Spices,IFCT2017,463.7,1940.0,published,6.3,27.64,36.52,11.99,
+G031,"Pepper, black",Condiments and Spices,IFCT2017,217.5,910.0,published,10.12,36.22,2.74,33.16,
+G032,Poppy seeds,Condiments and Spices,IFCT2017,422.6,1768.0,published,20.31,12.37,30.38,26.68,
+G033,Turmeric powder,Condiments and Spices,IFCT2017,280.6,1174.0,published,7.66,49.22,5.03,21.38,
+G512,"Bay leaf, dried (UK-13-806, via INDB)",INDB supplementary,INDB,313.0,1312.0,indb,7.6,48.6,8.4,,INDB UK_fct.xlsx row G512 = UK-13-806
+G520,"Curry powder (UK-13-876, via INDB)",INDB supplementary,INDB,233.0,979.0,indb,9.5,26.1,10.8,,INDB UK_fct.xlsx row G520 = UK-13-876
+G523,"Garam masala (UK-13-829, via INDB)",INDB supplementary,INDB,379.0,1592.0,indb,15.6,45.2,15.1,,INDB UK_fct.xlsx row G523 = UK-13-829
+G529,"Saffron (UK-13-852, via INDB)",INDB supplementary,INDB,310.0,1298.0,indb,11.4,61.5,5.9,,INDB UK_fct.xlsx row G529 = UK-13-852
+G532,"Vinegar (UK-17-339, via INDB)",INDB supplementary,INDB,22.0,89.0,indb,0.4,0.6,0.0,0.0,INDB UK_fct.xlsx row G532 = UK-17-339
+G544,"Vanilla extract (US-173471, via INDB)",INDB supplementary,INDB,288.0,1200.0,indb,0.06,12.6,0.06,0.0,INDB US_fct.xlsx row G544 = US-173471
+G554,"Ginger, ground (UK-13-832, via INDB)",INDB supplementary,INDB,284.0,1208.0,indb,7.4,60.0,3.3,14.1,INDB UK_fct.xlsx row G554 = UK-13-832
+G601,"Fennel seed (USDA SR Legacy, FDC 171323)",USDA supplementary,USDA,345.0,1440.0,usda,15.8,12.5,14.9,39.8,USDA FDC 171323 (SR Legacy); carb_g = carbohydrate by difference 52.3 minus fibre 39.8
+G602,"Cinnamon, ground (USDA SR Legacy, FDC 171320)",USDA supplementary,USDA,247.0,1040.0,usda,3.99,27.5,1.24,53.1,USDA FDC 171320 (SR Legacy); carb_g = carbohydrate by difference 80.6 minus fibre 53.1
+G901,"Ginger-garlic paste (derived: IFCT G014 + G012, 1:1 by mass)",Derived,DERIVED,88.9,372.0,derived,4.49,15.4,0.5,5.42,0.5 x G014 + 0.5 x G012; INDB splits this paste into the same two codes
+H001,Almond,Nuts and Oil Seeds,IFCT2017,609.2,2549.0,published,18.41,3.04,58.49,13.06,
+H005,Cashew nut,Nuts and Oil Seeds,IFCT2017,582.7,2438.0,published,18.78,25.46,45.2,3.86,
+H006,"Coconut, kernel, dry",Nuts and Oil Seeds,IFCT2017,624.0,2611.0,published,7.27,8.01,63.26,15.88,
+H007,"Coconut, kernel, fresh",Nuts and Oil Seeds,IFCT2017,408.9,1711.0,published,3.84,6.3,41.38,10.42,
+H012,Ground nut,Nuts and Oil Seeds,IFCT2017,520.1,2176.0,published,23.65,17.27,39.63,10.38,
+H013,Mustard seeds,Nuts and Oil Seeds,IFCT2017,509.6,2132.0,published,19.51,16.8,40.19,14.1,
+H901,"Coconut milk (derived: IFCT H007 fresh coconut + water, 1:1 by mass)",Derived,DERIVED,204.45,855.5,derived,1.92,3.15,20.69,5.21,IFCT H007 x 0.5; assumes all kernel solids pass into the milk
+I001,"Jaggery, cane",Sugars,IFCT2017,353.7,1480.0,published,1.85,84.87,0.16,0.0,
+I502,"Sugar, white (UK-17-063, via INDB)",INDB supplementary,INDB,394.0,1680.0,indb,0.0,105.0,0.0,0.0,INDB UK_fct.xlsx row I502 = UK-17-063
+I504,"Sugar, icing (UK-17-062, via INDB)",INDB supplementary,INDB,393.0,1678.0,indb,0.0,104.9,0.0,0.0,INDB UK_fct.xlsx row I504 = UK-17-062
+J001,"Button mushroom, fresh",Mushrooms,IFCT2017,27.5,115.0,published,3.68,1.98,0.42,3.11,
+K500,"Baking powder (UK-17-355, via INDB)",INDB supplementary,INDB,163.0,693.0,indb,5.2,37.8,0.0,0.0,INDB UK_fct.xlsx row K500 = UK-17-355
+K502,"Spirits, 40% volume (UK-17-247, via INDB)",INDB supplementary,INDB,222.0,919.0,indb,0.0,0.0,0.0,0.0,INDB UK_fct.xlsx row K502 = UK-17-247; values per 100 ml
+K601,"Yeast, baker's, active dry (USDA SR Legacy, FDC 175043)",USDA supplementary,USDA,325.0,1360.0,usda,40.4,14.3,7.61,26.9,USDA FDC 175043 (SR Legacy); carb_g = carbohydrate by difference 41.2 minus fibre 26.9
+K602,"Baking soda (USDA SR Legacy, FDC 175040)",USDA supplementary,USDA,0.0,0.0,usda,0.0,0.0,0.0,0.0,USDA FDC 175040 (SR Legacy); zero for all tracked nutrients
+L002,"Milk, whole, Cow",Milk and Milk Products,IFCT2017,72.9,305.0,published,3.26,4.94,4.48,0.0,
+L520,"Yogurt, whole milk, plain (UK-12-184, via INDB)",INDB supplementary,INDB,79.0,333.0,indb,5.7,7.8,3.0,0.0,INDB UK_fct.xlsx row L520 = UK-12-184
+LOC001,"Salt, common (sodium chloride)",Local,LOCAL,0.0,0.0,local,0.0,0.0,0.0,0.0,"USDA FDC 'Salt, table' (SR Legacy 02047); zero macros"
+LOC002,"Water, drinking",Local,LOCAL,0.0,0.0,local,0.0,0.0,0.0,0.0,zero macros
+M001,"Egg, poultry, whole, raw",Egg and Egg Products,IFCT2017,134.8,564.0,published,13.28,0.0,9.15,0.0,
+M002,"Egg, poultry, white, raw",Egg and Egg Products,IFCT2017,44.7,187.0,published,10.84,0.0,0.06,0.0,
+M003,"Egg, poultry, yolk, raw",Egg and Egg Products,IFCT2017,296.8,1242.0,published,15.74,0.0,26.34,0.0,
+N002,"Chicken, poultry, thigh, skinless",Poultry,IFCT2017,199.8,836.0,published,18.18,0.0,14.23,0.0,
+O016,"Sheep, leg",Animal Meat,IFCT2017,164.0,686.0,published,21.42,0.0,8.69,0.0,
+P057,"Pomfret, white",Marine Fish,IFCT2017,122.6,513.0,published,19.02,0.0,5.12,0.0,
+P071,Sardine,Marine Fish,IFCT2017,152.2,637.0,published,17.91,0.0,8.99,0.0,
+P087,Vanjaram,Marine Fish,IFCT2017,136.2,570.0,published,22.28,0.0,5.18,0.0,
+Q005,Mud crab,Marine Shellfish,IFCT2017,45.4,190.0,published,10.0,0.0,0.55,0.0,
+Q008,"Tiger Prawns, orange",Marine Shellfish,IFCT2017,64.5,270.0,published,14.25,0.0,0.74,0.0,
+R004,"Squid, black",Marine Mollusks,IFCT2017,80.1,335.0,published,16.1,0.0,1.07,0.0,
+S008,"Prawns, big",Fresh Water Fish and Shellfish,IFCT2017,90.8,380.0,published,19.24,0.0,0.52,0.0,
+T001,Coconut oil,Edible Oils and Fats,IFCT2017,900.0,,atwater,0.0,0.0,100.0,0.0,
+T006,Mustard oil,Edible Oils and Fats,IFCT2017,900.0,,atwater,0.0,0.0,100.0,0.0,
+T012,Sunflower oil,Edible Oils and Fats,IFCT2017,900.0,,atwater,0.0,0.0,100.0,0.0,
+T013,Ghee,Edible Oils and Fats,IFCT2017,900.0,,atwater,0.0,0.0,100.0,0.0,
+T501,"Butter, unsalted (UK-17-661, via INDB)",INDB supplementary,INDB,744.0,3059.0,indb,0.6,0.6,82.2,0.0,INDB UK_fct.xlsx row T501 = UK-17-661
+T502,"Oil, olive (UK-17-038, via INDB)",INDB supplementary,INDB,899.0,3696.0,indb,0.0,0.0,99.9,0.0,INDB UK_fct.xlsx row T502 = UK-17-038
+V502,"Coffee, powder, instant (UK-17-158, via INDB)",INDB supplementary,INDB,75.0,320.0,indb,14.6,4.5,0.0,0.0,INDB UK_fct.xlsx row V502 = UK-17-158

@@ -1,0 +1,125 @@
+{
+  "fields": [
+    {
+      "name": "food_code",
+      "title": "Food code",
+      "type": "string",
+      "description": "IFCT 2017 code (e.g. G033); INDB supplementary code (5xx); USDA FoodData Central food, lettered by IFCT food group (6xx); KeralaDB derived composite (9xx); or KeralaDB local code (LOC*).",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "food_name",
+      "title": "Food",
+      "type": "string",
+      "description": "Food name as published by the source.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "food_group",
+      "title": "Food group",
+      "type": "string",
+      "description": "IFCT food group; 'INDB supplementary', 'USDA supplementary', 'Derived' or 'Local' for non-IFCT rows.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "data_source",
+      "title": "Data source",
+      "type": "string",
+      "description": "Database the values come from.",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "IFCT2017",
+          "INDB",
+          "USDA",
+          "DERIVED",
+          "LOCAL"
+        ]
+      }
+    },
+    {
+      "name": "energy_kcal",
+      "title": "Energy (kcal/100 g)",
+      "type": "number",
+      "description": "Energy in kilocalories. IFCT rows: published kJ / 4.184, or computed with Atwater general factors (4/4/9) where IFCT publishes none. Other rows: as published by their source; see energy_source.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "energy_kj",
+      "title": "Energy (kJ/100 g)",
+      "type": "number",
+      "description": "Energy in kilojoules as published. Blank on Atwater-derived rows."
+    },
+    {
+      "name": "energy_source",
+      "title": "Energy source",
+      "type": "string",
+      "description": "How energy_kcal was obtained.",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "published",
+          "atwater",
+          "indb",
+          "usda",
+          "derived",
+          "local"
+        ]
+      }
+    },
+    {
+      "name": "protein_g",
+      "title": "Protein (g/100 g)",
+      "type": "number",
+      "description": "Protein, grams per 100 g.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "carb_g",
+      "title": "Carbohydrate (g/100 g)",
+      "type": "number",
+      "description": "Carbohydrate, grams per 100 g. IFCT rows: available carbohydrate by difference (excludes fibre). USDA rows: carbohydrate by difference minus fibre, or carbohydrate by difference where the source reports no fibre (stated in source_ref). INDB rows: as published in the UK table, in monosaccharide equivalents.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "fat_g",
+      "title": "Fat (g/100 g)",
+      "type": "number",
+      "description": "Total fat, grams per 100 g.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "fibre_g",
+      "title": "Fibre (g/100 g)",
+      "type": "number",
+      "description": "Total dietary fibre, grams per 100 g. Blank where the source reports none. Not used in per-serving values."
+    },
+    {
+      "name": "source_ref",
+      "title": "Source reference",
+      "type": "string",
+      "description": "For non-IFCT rows: the originating database row, or how a derived value was computed."
+    }
+  ],
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": [
+    "food_code"
+  ]
+}

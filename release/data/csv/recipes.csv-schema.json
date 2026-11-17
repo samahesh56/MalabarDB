@@ -1,0 +1,64 @@
+{
+  "fields": [
+    {
+      "name": "recipe_id",
+      "title": "Recipe ID",
+      "type": "integer",
+      "description": "KeralaDB recipe identifier.",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "dish_name",
+      "title": "Dish name",
+      "type": "string",
+      "description": "Recipe title in English as given by the source. A few titles end in '(Recipe In Hindi)' because the source page was the Hindi edition of the recipe.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "servings",
+      "title": "Servings",
+      "type": "number",
+      "description": "Number of servings used for every per-serving value. Equal to servings_source unless the value was corrected after checking the source page.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "servings_source",
+      "title": "Servings in source dataset",
+      "type": "number",
+      "description": "Servings as recorded in the source dataset (Jain 2020). Differs from servings on the few recipes that were corrected against the source page.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "source_id",
+      "title": "Source record",
+      "type": "integer",
+      "description": "Srno of the recipe in the source dataset (Jain 2020).",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "source_url",
+      "title": "Source URL",
+      "type": "string",
+      "description": "The original recipe page. Instructions are not redistributed in this dataset; follow this link for them.",
+      "format": "uri"
+    }
+  ],
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": [
+    "recipe_id"
+  ]
+}

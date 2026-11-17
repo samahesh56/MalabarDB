@@ -1,0 +1,135 @@
+{
+  "fields": [
+    {
+      "name": "recipe_id",
+      "title": "Recipe ID",
+      "type": "integer",
+      "description": "Recipe identifier; see recipes.",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "dish_name",
+      "title": "Dish name",
+      "type": "string",
+      "description": "Recipe title, repeated from recipes for convenience.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "servings",
+      "title": "Servings",
+      "type": "number",
+      "description": "Servings used as the divisor for every per-serving value; see recipes.servings.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "n_lines",
+      "title": "Ingredient lines",
+      "type": "integer",
+      "description": "Number of ingredient lines in the recipe.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "n_linked",
+      "title": "Lines linked",
+      "type": "integer",
+      "description": "Lines whose ingredient is linked to a nutrient profile (any source_db).",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "n_grams",
+      "title": "Lines with grams",
+      "type": "integer",
+      "description": "Lines with a gram weight.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "n_counted",
+      "title": "Lines counted",
+      "type": "integer",
+      "description": "Lines with BOTH a gram weight and a nutrient profile: the only lines that contribute to the per-serving values.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "coverage_lines",
+      "title": "Line coverage",
+      "type": "number",
+      "description": "n_counted / n_lines (0-1).",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "coverage_mass",
+      "title": "Mass coverage",
+      "type": "number",
+      "description": "Share of the recipe's ingredient mass that is linked to a nutrient profile (0-1), excluding salt and water. The dataset's headline coverage metric, aggregated over all recipes."
+    },
+    {
+      "name": "low_coverage",
+      "title": "Low coverage",
+      "type": "boolean",
+      "description": "true when coverage_mass is below 0.90: a substantial ingredient has no nutrient profile, so the per-serving values are underestimates and should not be used as complete.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "kcal_per_serving",
+      "title": "Energy (kcal/serving)",
+      "type": "number",
+      "description": "Energy per serving in kilocalories."
+    },
+    {
+      "name": "protein_g_per_serving",
+      "title": "Protein (g/serving)",
+      "type": "number",
+      "description": "Protein per serving, grams."
+    },
+    {
+      "name": "carb_g_per_serving",
+      "title": "Carbohydrate (g/serving)",
+      "type": "number",
+      "description": "Carbohydrate per serving, grams. See nutrients.carb_g for how carbohydrate is defined in each source."
+    },
+    {
+      "name": "fat_g_per_serving",
+      "title": "Fat (g/serving)",
+      "type": "number",
+      "description": "Total fat per serving, grams."
+    }
+  ],
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": [
+    "recipe_id"
+  ],
+  "foreignKeys": [
+    {
+      "fields": [
+        "recipe_id"
+      ],
+      "reference": {
+        "resource": "recipes",
+        "fields": [
+          "recipe_id"
+        ]
+      }
+    }
+  ]
+}

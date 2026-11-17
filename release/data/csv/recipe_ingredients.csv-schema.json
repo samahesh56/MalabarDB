@@ -1,0 +1,178 @@
+{
+  "fields": [
+    {
+      "name": "recipe_id",
+      "title": "Recipe ID",
+      "type": "integer",
+      "description": "Recipe the line belongs to.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "line_no",
+      "title": "Line number",
+      "type": "integer",
+      "description": "Position of the line in the recipe's ingredient list. Numbers can skip where a fragment that was not an ingredient was removed.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "raw_line",
+      "title": "Ingredient line as written",
+      "type": "string",
+      "description": "The ingredient line as it appears in the source, e.g. '1/2 teaspoon Turmeric powder (Haldi)'.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "qty",
+      "title": "Quantity as written",
+      "type": "string",
+      "description": "Quantity text: '1', '3/4', '1-1/2'. Blank when the line states none ('salt to taste')."
+    },
+    {
+      "name": "qty_num",
+      "title": "Quantity",
+      "type": "number",
+      "description": "qty as a decimal number: '1-1/2' -> 1.5."
+    },
+    {
+      "name": "unit",
+      "title": "Unit as written",
+      "type": "string",
+      "description": "Unit named in the line, normalised to one spelling. Blank when the line names none.",
+      "constraints": {
+        "enum": [
+          "teaspoon",
+          "tablespoon",
+          "cup",
+          "gram",
+          "kilogram",
+          "milliliter",
+          "liter",
+          "pinch",
+          "sprig",
+          "clove",
+          "inch",
+          "handful",
+          "slice"
+        ]
+      }
+    },
+    {
+      "name": "unit_key",
+      "title": "Unit used for conversion",
+      "type": "string",
+      "description": "The unit looked up in unit_conversions: the parsed unit, else '(count)' or '(none)'.",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "teaspoon",
+          "tablespoon",
+          "cup",
+          "gram",
+          "kilogram",
+          "milliliter",
+          "liter",
+          "pinch",
+          "sprig",
+          "clove",
+          "inch",
+          "handful",
+          "slice",
+          "(count)",
+          "(none)"
+        ]
+      }
+    },
+    {
+      "name": "grams",
+      "title": "Weight (g)",
+      "type": "number",
+      "description": "Estimated weight of the line in grams: qty_num x the gram value in unit_conversions, or that value alone when there is no quantity. Blank for six 'water as required' lines."
+    },
+    {
+      "name": "name_raw",
+      "title": "Ingredient name as written",
+      "type": "string",
+      "description": "Ingredient name with quantity, unit and preparation removed. Joins to synonyms.name_raw.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "state",
+      "title": "Preparation",
+      "type": "string",
+      "description": "Preparation or form as written ('grated', 'finely chopped'). Free text."
+    },
+    {
+      "name": "dry_fresh",
+      "title": "Dry / fresh",
+      "type": "string",
+      "description": "Whether the line specifies a dry or fresh form.",
+      "constraints": {
+        "enum": [
+          "Dry",
+          "Fresh"
+        ]
+      }
+    },
+    {
+      "name": "parse_status",
+      "title": "Parse status",
+      "type": "string",
+      "description": "How the line's quantity, unit and name were decided.",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "auto",
+          "reviewed"
+        ]
+      }
+    },
+    {
+      "name": "ingredient_id",
+      "title": "Ingredient ID",
+      "type": "integer",
+      "description": "The canonical ingredient this line names; see ingredients.",
+      "constraints": {
+        "required": true
+      }
+    }
+  ],
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": [
+    "recipe_id",
+    "line_no"
+  ],
+  "foreignKeys": [
+    {
+      "fields": [
+        "recipe_id"
+      ],
+      "reference": {
+        "resource": "recipes",
+        "fields": [
+          "recipe_id"
+        ]
+      }
+    },
+    {
+      "fields": [
+        "ingredient_id"
+      ],
+      "reference": {
+        "resource": "ingredients",
+        "fields": [
+          "ingredient_id"
+        ]
+      }
+    }
+  ]
+}

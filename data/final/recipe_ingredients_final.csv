@@ -395,7 +395,7 @@ recipe_id,line_no,raw_line,qty,unit,name_raw,state,dry_fresh,parse_status
 36,6,1/4 cup Papaya - cubes (optional),1/4,cup,Papaya,cubed,,reviewed
 37,1,100 grams Raisins,100,gram,Raisins,,,auto
 37,2,100 grams Glazed Cherries,100,gram,Glazed Cherries,,,auto
-37,3,100 grams Dried Figs,100,gram,Dried Figs,,Dried,auto
+37,3,100 grams Dried Figs,100,gram,Dried Figs,,Dry,auto
 37,4,100 grams Tutti frutti,100,gram,Tutti frutti,,,auto
 37,5,50 grams Badam (Almond),50,gram,Badam (Almond),,,auto
 37,6,50 grams Cashew nuts,50,gram,Cashew nuts,,,auto

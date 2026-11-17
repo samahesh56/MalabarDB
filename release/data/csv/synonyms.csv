@@ -1,0 +1,231 @@
+name_raw,norm_key,ingredient_id,food_code,food_name,n_lines
+Red Black Eyed Beans (Azuki),red black eyed bean azuki,173,B601,"Adzuki beans, mature seeds, raw (USDA SR Legacy, FDC 173727)",1
+Badam (Almond),badam almond,9,H001,Almond,2
+Mixed nuts (Almond),mixed nut almond,140,H001,Almond,1
+Mixed dry fruits (Apricot),mixed dry fruit apricot,139,E005,"Apricot, dried",1
+Asafoetida (hing),asafoetida hing,6,G019,Asafoetida,7
+Vellai Poosanikai (Ash gourd/White Pumpkin),vellai poosanikai ash gourd white pumpkin,215,D001,Ash gourd,3
+Bajra Flour (Pearl Millet),bajra flour pearl millet,10,A003,Bajra,1
+Baking powder,baking powder,11,K500,"Baking powder (UK-17-355, via INDB)",2
+Baking soda,baking soda,12,K602,"Baking soda (USDA SR Legacy, FDC 175040)",6
+Cooking soda,cooking soda,54,K602,"Baking soda (USDA SR Legacy, FDC 175040)",1
+Nendra Pazham Banana (Ripe),nendra pazham banana ripe,148,E009,"Banana, ripe, montham",2
+Ripe Bananas,ripe banana,184,E010,"Banana, ripe, poovam",4
+Bay leaf (tej patta),bay leaf tej patta,16,G512,"Bay leaf, dried (UK-13-806, via INDB)",2
+Bay leaves (tej patta),bay leaf tej patta,16,G512,"Bay leaf, dried (UK-13-806, via INDB)",1
+Chana dal (Bengal Gram Dal),chana dal bengal gram dal,41,B001,"Bengal gram, dal",4
+Gram flour (besan),gram flour besan,99,B001,"Bengal gram, dal",1
+Kala Chana (Brown Chickpeas),kala chana brown chickpea,124,B002,"Bengal gram, whole",1
+Karela (Bitter Gourd/ Pavakkai),karela bitter gourd/ pavakkai,125,D005,"Bitter gourd, jagged, teeth ridges, short",1
+Black Urad Dal (Split),black urad dal split,21,B003,"Black gram, dal",2
+white urad dal,white urad dal,219,B003,"Black gram, dal",1
+White Urad Dal (Split),white urad dal split,220,B003,"Black gram, dal",12
+black gram,black gram,19,B004,"Black gram, whole",1
+Brinjal (Baingan / Eggplant),brinjal baingan eggplant,23,D031,Brinjal - all varieties,2
+Butter,butter,25,T501,"Butter, unsalted (UK-17-661, via INDB)",1
+Butter (unsalted),butter unsalted,26,T501,"Butter, unsalted (UK-17-661, via INDB)",2
+Button mushrooms,button mushroom,27,J001,"Button mushroom, fresh",1
+cabbage,cabbage,28,C015,"Cabbage, green",1
+Cabbage (Patta Gobi/ Muttaikose),cabbage patta gobi/ muttaikose,29,C015,"Cabbage, green",1
+Cardamom (Elaichi) Pods/Seeds,cardamom elaichi pod seed,32,G020,"Cardamom, green",14
+Cardamom Powder (Elaichi),cardamom powder elaichi,34,G020,"Cardamom, green",10
+carrots,carrot,35,F002,"Carrot, orange",1
+Carrot (Gajjar),carrot gajjar,36,F002,"Carrot, orange",4
+Carrots (Gajjar),carrot gajjar,36,F002,"Carrot, orange",5
+Cashew nuts,cashew nut,37,H005,Cashew nut,13
+Cauliflower (gobi),cauliflower gobi,39,D036,Cauliflower,1
+Glazed Cherries,glazed cherry,98,E511,"Cherries, glace (UK-14-335, via INDB)",1
+Chicken,chicken,43,N002,"Chicken, poultry, thigh, skinless",10
+green chili,green chili,103,G008,"Chillies, green - all varieties",2
+Green Chilli,green chilli,104,G008,"Chillies, green - all varieties",23
+Green Chillies,green chilli,104,G008,"Chillies, green - all varieties",36
+green chillies,green chilli,104,G008,"Chillies, green - all varieties",2
+dry red chili,dry red chili,77,G022,"Chillies, red",1
+Dry Red Chilli,dry red chilli,78,G022,"Chillies, red",10
+Dry Red Chillies,dry red chilli,78,G022,"Chillies, red",28
+Kashmiri Red Chilli Powder,kashmiri red chilli powder,126,G022,"Chillies, red",9
+Kashmiri red chilli powder,kashmiri red chilli powder,126,G022,"Chillies, red",1
+Paprika powder,paprika powder,159,G022,"Chillies, red",1
+red chili,red chili,174,G022,"Chillies, red",1
+red chili powder,red chili powder,175,G022,"Chillies, red",1
+Red Chilli flakes,red chilli flake,176,G022,"Chillies, red",1
+Red Chilli powder,red chilli powder,178,G022,"Chillies, red",33
+Chayote,chayote,42,D038,Cho-cho-marrow,2
+Cinnamon Powder (Dalchini),cinnamon powder dalchini,46,G602,"Cinnamon, ground (USDA SR Legacy, FDC 171320)",2
+Cinnamon Stick (Dalchini),cinnamon stick dalchini,47,G602,"Cinnamon, ground (USDA SR Legacy, FDC 171320)",15
+Cloves (Laung),cloves laung,48,G023,Cloves,9
+Coconut milk,coconut milk,50,H901,"Coconut milk (derived: IFCT H007 fresh coconut + water, 1:1 by mass)",22
+Coconut Oil,coconut oil,51,T001,Coconut oil,64
+coconut oil,coconut oil,51,T001,Coconut oil,1
+oil,oil,150,T001,Coconut oil,4
+Dry coconut (kopra),dry coconut kopra,75,H006,"Coconut, kernel, dry",2
+coconut,coconut,49,H007,"Coconut, kernel, fresh",3
+Fresh coconut,fresh coconut,91,H007,"Coconut, kernel, fresh",81
+Instant Coffee Powder,instant coffee powder,117,V502,"Coffee, powder, instant (UK-17-158, via INDB)",1
+Colocasia root (Arbi),colocasia root arbi,52,F004,Colocasia,1
+Coriander (Dhania) Leaves,coriander dhania leaves,56,G009,Coriander leaves,15
+coriander leaves,coriander leaves,58,G009,Coriander leaves,1
+Coriander (Dhania) Seeds,coriander dhania seed,57,G024,Coriander seeds,10
+coriander powder,coriander powder,59,G024,Coriander seeds,1
+Coriander Powder (Dhania),coriander powder dhania,60,G024,Coriander seeds,14
+Black Eyed Beans (Lobia),black eyed bean lobia,18,B006,"Cowpea, white",1
+Cucumber,cucumber,62,D043,"Cucumber, green, elongate",1
+cumin powder,cumin powder,64,G025,Cumin seeds,1
+Cumin powder (Jeera),cumin powder jeera,65,G025,Cumin seeds,4
+Cumin seeds,cumin seed,66,G025,Cumin seeds,1
+cumin seeds,cumin seed,66,G025,Cumin seeds,1
+Cumin seeds (Jeera),cumin seed jeera,67,G025,Cumin seeds,41
+curry leaf,curry leaf,70,G010,Curry leaves,1
+Curry leaves,curry leaves,71,G010,Curry leaves,96
+curry leaves,curry leaves,71,G010,Curry leaves,4
+Aachi Fish Masala,aachi fish masala,1,G520,"Curry powder (UK-13-876, via INDB)",1
+Rasam Powder,rasam powder,168,G520,"Curry powder (UK-13-876, via INDB)",1
+Sambar Powder,sambar powder,189,G520,"Curry powder (UK-13-876, via INDB)",1
+Drumstick,drumstick,73,D046,Drumstick,4
+Drumstick Leaves (Moringa/Murungai Keerai),drumstick leaf moringa murungai keerai,74,C019,Drumstick leaves,2
+Egg whites,egg white,80,M002,"Egg, poultry, white, raw",1
+eggs,egg,79,M001,"Egg, poultry, whole, raw",1
+Whole Egg,whole egg,223,M001,"Egg, poultry, whole, raw",1
+Whole Eggs,whole egg,223,M001,"Egg, poultry, whole, raw",4
+Egg yolks,egg yolk,81,M003,"Egg, poultry, yolk, raw",1
+Fennel Powder,fennel powder,86,G601,"Fennel seed (USDA SR Legacy, FDC 171323)",4
+Fennel seeds (Saunf),fennel seed saunf,87,G601,"Fennel seed (USDA SR Legacy, FDC 171323)",12
+Methi Powder (Fenugreek Powder),methi powder fenugreek powder,135,G026,Fenugreek seeds,4
+Methi Seeds (Fenugreek Seeds),methi seed fenugreek seed,136,G026,Fenugreek seeds,10
+Dried Figs,dried fig,72,E601,"Figs, dried, uncooked (USDA SR Legacy, FDC 174665)",1
+Rice flour,rice flour,182,A505,"Flour, rice (UK-11-021, via INDB)",9
+Rice puttu,rice puttu,183,A505,"Flour, rice (UK-11-021, via INDB)",1
+green beans,green bean,100,D050,"French beans, hybrid",1
+Green beans (French Beans),green bean french bean,101,D050,"French beans, hybrid",6
+Mixed vegetables (Green Beans),mixed vegetable green bean,141,D050,"French beans, hybrid",1
+Chicken masala,chicken masala,44,G523,"Garam masala (UK-13-829, via INDB)",1
+Garam masala powder,garam masala powder,92,G523,"Garam masala (UK-13-829, via INDB)",9
+hot Masala powder,hot masala powder,113,G523,"Garam masala (UK-13-829, via INDB)",1
+Meat masala,meat masala,134,G523,"Garam masala (UK-13-829, via INDB)",2
+Garlic,garlic,93,G012,"Garlic, small cloves",44
+garlic,garlic,93,G012,"Garlic, small cloves",3
+Ghee,ghee,94,T013,Ghee,18
+Ginger,ginger,95,G014,"Ginger, fresh",40
+ginger,ginger,95,G014,"Ginger, fresh",1
+Dry ginger powder,dry ginger powder,76,G554,"Ginger, ground (UK-13-832, via INDB)",3
+Ginger Garlic Paste,ginger garlic paste,96,G901,"Ginger-garlic paste (derived: IFCT G014 + G012, 1:1 by mass)",6
+Yellow Moong Dal (Split),yellow moong dal split,227,B010,"Green gram, dal",3
+Green Moong Dal (Whole),green moong dal whole,106,B011,"Green gram, whole",3
+Raw Peanuts (Moongphali),raw peanut moongphali,172,H012,Ground nut,1
+Guava,guava,109,E028,"Guava, white flesh",1
+Horse Gram Dal (Kollu/ Kulith),horse gram dal kollu/ kulith,112,B012,"Horse gram, whole",1
+Jackfruit Raw (Kathal),jackfruit raw kathal,119,D051,"Jack fruit, raw",2
+Jackfruit Ripe (Kathal),jackfruit ripe kathal,120,E030,"Jack fruit, ripe",3
+Jackfruit Seeds (Kathal),jackfruit seed kathal,121,D052,"Jack fruit, seeds, mature",1
+Jaggery,jaggery,122,I001,"Jaggery, cane",15
+Palm sugar,palm sugar,155,I001,"Jaggery, cane",1
+Bhindi (Lady Finger/Okra),bhindi lady finger okra,17,D056,Ladies finger,5
+okra,okra,151,D056,Ladies finger,1
+Lemon,lemon,128,E033,"Lemon, juice",2
+Lemon juice,lemon juice,129,E033,"Lemon, juice",11
+Mango (Raw),mango raw,132,D057,"Mango, green, raw",3
+Mango (Ripe),mango ripe,133,E036,"Mango, ripe, banganapalli",5
+Milk,milk,137,L002,"Milk, whole, Cow",8
+Mint Leaves (Pudina),mint leaf pudina,138,G016,Mint leaves,7
+Crabs,crab,61,Q005,Mud crab,1
+Mustard oil,mustard oil,145,T006,Mustard oil,1
+mustard,mustard,144,H013,Mustard seeds,3
+Mustard seeds,mustard seed,146,H013,Mustard seeds,60
+rye,rye,186,H013,Mustard seeds,1
+Nutmeg powder,nutmeg powder,149,G028,Nutmeg,2
+Extra Virgin Olive Oil,extra virgin olive oil,84,T502,"Oil, olive (UK-17-038, via INDB)",1
+Onion,onion,153,G017,"Onion, big",29
+Onions,onion,153,G017,"Onion, big",11
+onion,onion,153,G017,"Onion, big",1
+onions,onion,153,G017,"Onion, big",1
+Pearl onions (Sambar Onions),pearl onion sambar onion,160,G018,"Onion, small",17
+Shallots,shallot,192,G018,"Onion, small",16
+Shallots (pearl onions),shallot pearl onion,193,G018,"Onion, small",1
+small onions,small onion,195,G018,"Onion, small",1
+Orange,orange,154,E047,"Orange, pulp",1
+Raw papaya,raw papaya,171,D059,"Papaya, raw",2
+Papaya,papaya,157,E049,"Papaya, ripe",1
+green peas,green pea,107,D061,"Peas, fresh",1
+Green peas (Matar),green peas matar,108,D061,"Peas, fresh",4
+Black pepper powder,black pepper powder,20,G031,"Pepper, black",18
+black pepper powder,black pepper powder,20,G031,"Pepper, black",1
+whole black pepper,whole black pepper,221,G031,"Pepper, black",1
+Whole Black Peppercorns,whole black peppercorn,222,G031,"Pepper, black",12
+Banana flower (Vazhaipoo),banana flower vazhaipoo,13,D062,"Plantain, flower",1
+Raw Banana,raw banana,169,D063,"Plantain, green",5
+raw banana,raw banana,169,D063,"Plantain, green",1
+Banana Stem,banana stem,14,D064,"Plantain, stem",1
+Fish,fish,89,P057,"Pomfret, white",2
+Fish fillet,fish fillet,90,P057,"Pomfret, white",1
+Poppy seeds,poppy seed,162,G032,Poppy seeds,1
+Instant Oats (Oatmeal),instant oat oatmeal,118,A508,"Porridge oats, unfortified (UK-11-788, via INDB)",2
+Potato (Aloo),potato aloo,164,F006,"Potato, brown skin, big",6
+Potatoes (Aloo),potato aloo,164,F006,"Potato, brown skin, big",2
+Baby Potatoes,baby potato,8,F007,"Potato, brown skin, small",1
+Mixed vegetables (Potatoes),mixed vegetable potato,142,F007,"Potato, brown skin, small",1
+Prawns,prawn,165,S008,"Prawns, big",5
+Kaddu (Parangikai/ Pumpkin),kaddu parangikai/ pumpkin,123,D066,"Pumpkin, orange, round",4
+Mooli/ Mullangi (Radish),mooli/ mullangi radish,143,F011,"Radish, round, red skin",1
+Ragi Flour (Finger Millet/ Nagli),ragi flour finger millet/ nagli,166,A010,Ragi,1
+Raisins,raisin,167,E057,"Raisins, dried, black",4
+Arhar dal (Split Toor Dal),arhar dal split toor dal,5,B021,"Red gram, dal",3
+Red matta rice,red matta rice,179,A014,"Rice, parboiled, milled",6
+Rice,rice,180,A014,"Rice, parboiled, milled",7
+Brown Rice,brown rice,24,A013,"Rice, raw, brown",1
+Basmati rice,basmati rice,15,A015,"Rice, raw, milled",2
+Cooked rice,cooked rice,53,A601,"Rice, white, cooked (USDA SR Legacy, FDC 168930)",3
+Saffron strands,saffron strand,187,G529,"Saffron (UK-13-852, via INDB)",1
+Salt,salt,188,LOC001,"Salt, common (sodium chloride)",119
+salt,salt,188,LOC001,"Salt, common (sodium chloride)",4
+Sardine fish,sardine fish,190,P071,Sardine,2
+Mutton,mutton,147,O016,"Sheep, leg",4
+Rum,rum,185,K502,"Spirits, 40% volume (UK-17-247, via INDB)",2
+Squid,squid,198,R004,"Squid, black",1
+Icing Sugar,icing sugar,116,I504,"Sugar, icing (UK-17-062, via INDB)",1
+Caster Sugar,caster sugar,38,I502,"Sugar, white (UK-17-063, via INDB)",1
+Sugar,sugar,199,I502,"Sugar, white (UK-17-063, via INDB)",15
+Sunflower Oil,sunflower oil,200,T012,Sunflower oil,30
+Sweet Potatoes,sweet potato,202,F013,"Sweet potato, brown skin",1
+Tamarind Water,tamarind water,205,E901,"Tamarind water (derived: IFCT E064 pulp, 50 g per 240 g)",3
+Tamarind,tamarind,203,E064,"Tamarind, pulp",6
+Tamarind Paste,tamarind paste,204,E064,"Tamarind, pulp",2
+Tapioca root,tapioca root,206,F015,Tapioca,3
+Shrimps,shrimp,194,Q008,"Tiger Prawns, orange",1
+Homemade tomato puree,homemade tomato puree,111,D075,"Tomato, ripe, hybrid",1
+Tomato,tomato,207,D075,"Tomato, ripe, hybrid",12
+Tomatoes,tomato,207,D075,"Tomato, ripe, hybrid",12
+tomatoes,tomato,207,D075,"Tomato, ripe, hybrid",1
+turmeric powder,turmeric powder,211,G033,Turmeric powder,4
+Turmeric powder (Haldi),turmeric powder haldi,212,G033,Turmeric powder,82
+Vanilla Extract,vanilla extract,214,G544,"Vanilla extract (US-173471, via INDB)",1
+Seer fish,seer fish,191,P087,Vanjaram,2
+Vinegar,vinegar,216,G532,"Vinegar (UK-17-339, via INDB)",2
+Hot water,hot water,114,LOC002,"Water, drinking",1
+luke warm water,luke warm water,130,LOC002,"Water, drinking",1
+Lukewarm Water,lukewarm water,131,LOC002,"Water, drinking",2
+Water,water,218,LOC002,"Water, drinking",25
+water,water,218,LOC002,"Water, drinking",1
+All Purpose Flour (Maida),all purpose flour maida,4,A018,"Wheat flour, refined",5
+Vivatta Maida,vivatta maida,217,A018,"Wheat flour, refined",1
+Whole Wheat Flour,whole wheat flour,225,A020,"Wheat, whole",5
+Elephant yam (Suran/Senai/Ratalu),elephant yam suran senai ratalu,82,F017,"Yam, elephant",6
+suran,suran,201,F017,"Yam, elephant",1
+Green Chawli Beans (Yard long beans/Karamani/Barbati),green chawli bean yard long bean karamani barbati,102,D601,"Yardlong bean, raw (USDA SR Legacy, FDC 169222)",1
+Active dry yeast,active dry yeast,2,K601,"Yeast, baker's, active dry (USDA SR Legacy, FDC 175043)",2
+curd,curd,68,L520,"Yogurt, whole milk, plain (UK-12-184, via INDB)",1
+Curd (Dahi / Yogurt),curd dahi yogurt,69,L520,"Yogurt, whole milk, plain (UK-12-184, via INDB)",9
+Hung Curd (Greek Yogurt),hung curd greek yogurt,115,L520,"Yogurt, whole milk, plain (UK-12-184, via INDB)",1
+Ada,ada,3,,,1
+Candied orange peel,candied orange peel,30,,,1
+Caramel Sauce,caramel sauce,31,,,1
+Champagne,champagne,40,,,1
+Chinese Potato,chinese potato,45,,,1
+Enos fruit salt,enos fruit salt,83,,,1
+Guava juice,guava juice,110,,,1
+Kokum (Malabar Tamarind),kokum malabar tamarind,127,,,6
+Papad,papad,156,,,1
+Papaya juice,papaya juice,158,,,1
+Raw banana peel,raw banana peel,170,,,1
+Rice ada,rice ada,181,,,1
+Tulsi (holy basil),tulsi holy basil,209,,,1
+Tutti frutti,tutti frutti,213,,,2

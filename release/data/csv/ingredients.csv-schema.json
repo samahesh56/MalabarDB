@@ -1,0 +1,157 @@
+{
+  "fields": [
+    {
+      "name": "ingredient_id",
+      "title": "Ingredient ID",
+      "type": "integer",
+      "description": "KeralaDB ingredient identifier.",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "norm_key",
+      "title": "Canonical key",
+      "type": "string",
+      "description": "The ingredient name reduced to a comparison key: lowercased, nouns singularised, digits and one-letter tokens removed. 'Green Chillies' -> 'green chilli'.",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "generic_name",
+      "title": "Ingredient name",
+      "type": "string",
+      "description": "Readable name of the ingredient.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "food_code",
+      "title": "Food code",
+      "type": "string",
+      "description": "Code of the linked nutrient profile; see nutrients.food_code for the code ranges. Blank when no source has the food."
+    },
+    {
+      "name": "food_name",
+      "title": "Linked food",
+      "type": "string",
+      "description": "Name of the linked nutrient profile, from nutrients."
+    },
+    {
+      "name": "source_db",
+      "title": "Nutrient source",
+      "type": "string",
+      "description": "Which database the nutrient profile comes from. Blank when absent.",
+      "constraints": {
+        "enum": [
+          "IFCT2017",
+          "INDB",
+          "USDA",
+          "DERIVED",
+          "LOCAL"
+        ]
+      }
+    },
+    {
+      "name": "link_status",
+      "title": "Link status",
+      "type": "string",
+      "description": "Whether the ingredient has a nutrient profile.",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "linked",
+          "absent"
+        ]
+      }
+    },
+    {
+      "name": "link_method",
+      "title": "Link method",
+      "type": "string",
+      "description": "How the link was decided. Every ingredient was reviewed by a person.",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "auto_confirmed",
+          "reviewer_selected",
+          "reviewer_manual",
+          "fallback",
+          "absent"
+        ]
+      }
+    },
+    {
+      "name": "match_rule",
+      "title": "Matcher rule",
+      "type": "string",
+      "description": "The first rung of the string-matching ladder that found any IFCT candidate. Describes the machine's evidence, not the final decision.",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "exact",
+          "tokenset",
+          "subset",
+          "partial",
+          "none"
+        ]
+      }
+    },
+    {
+      "name": "candidate_rank",
+      "title": "Candidate rank",
+      "type": "integer",
+      "description": "Position of the chosen food in the matcher's ranked candidate list (1 = top). Blank when the food was not among the candidates."
+    },
+    {
+      "name": "hierarchical",
+      "title": "Proxy link",
+      "type": "string",
+      "description": "Whether the link is a proxy (hierarchical match, after Kalra et al. 2020). Blank when absent.",
+      "constraints": {
+        "enum": [
+          "Y",
+          "N"
+        ]
+      }
+    },
+    {
+      "name": "n_lines",
+      "title": "Lines using it",
+      "type": "integer",
+      "description": "Number of recipe lines in this release that use the ingredient (always at least 1).",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "notes",
+      "title": "Notes",
+      "type": "string",
+      "description": "Reviewer's note on the linking decision."
+    }
+  ],
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": [
+    "ingredient_id"
+  ],
+  "foreignKeys": [
+    {
+      "fields": [
+        "food_code"
+      ],
+      "reference": {
+        "resource": "nutrients",
+        "fields": [
+          "food_code"
+        ]
+      }
+    }
+  ]
+}

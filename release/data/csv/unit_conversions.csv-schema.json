@@ -1,0 +1,133 @@
+{
+  "fields": [
+    {
+      "name": "ingredient_id",
+      "title": "Ingredient ID",
+      "type": "integer",
+      "description": "Ingredient; see ingredients.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "norm_key",
+      "title": "Canonical key",
+      "type": "string",
+      "description": "Ingredient key, repeated for readability.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "unit",
+      "title": "Unit",
+      "type": "string",
+      "description": "Unit, as in recipe_ingredients.unit_key.",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "teaspoon",
+          "tablespoon",
+          "cup",
+          "gram",
+          "kilogram",
+          "milliliter",
+          "liter",
+          "pinch",
+          "sprig",
+          "clove",
+          "inch",
+          "handful",
+          "slice",
+          "(count)",
+          "(none)"
+        ]
+      }
+    },
+    {
+      "name": "has_qty",
+      "title": "Per unit?",
+      "type": "boolean",
+      "description": "true: grams is the weight of ONE unit and is multiplied by the line's quantity ('2 sprigs' -> 2 x 2 g). false: grams is the weight of the whole line, which states no quantity ('a few sprigs' -> 4 g).",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "grams",
+      "title": "Grams",
+      "type": "number",
+      "description": "Gram weight (per unit, or per line; see has_qty).",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "method",
+      "title": "Method",
+      "type": "string",
+      "description": "Where the gram value comes from.",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "exact",
+          "indb_rule",
+          "indb_units",
+          "indb_units_rule",
+          "indb_default",
+          "usda",
+          "estimate"
+        ]
+      }
+    },
+    {
+      "name": "by_analogy",
+      "title": "By analogy",
+      "type": "boolean",
+      "description": "true when the value was taken from a similar food (e.g. pumpkin cup weight from white gourd) because the source lists none for this one.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "assigned_by",
+      "title": "Assigned by",
+      "type": "string",
+      "description": "Whether the value was filled automatically or by a person.",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "pipeline",
+          "reviewer"
+        ]
+      }
+    },
+    {
+      "name": "notes",
+      "title": "Notes",
+      "type": "string",
+      "description": "Basis of the value (source row, rule line, reasoning)."
+    }
+  ],
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": [
+    "ingredient_id",
+    "unit",
+    "has_qty"
+  ],
+  "foreignKeys": [
+    {
+      "fields": [
+        "ingredient_id"
+      ],
+      "reference": {
+        "resource": "ingredients",
+        "fields": [
+          "ingredient_id"
+        ]
+      }
+    }
+  ]
+}
